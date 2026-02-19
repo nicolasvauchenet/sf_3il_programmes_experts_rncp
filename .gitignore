@@ -1,3 +1,9 @@
+###> programmes_experts_rncp/local ###
+.DS_Store
+.idea/
+programmes-experts-rncp.crt
+programmes-experts-rncp.key
+###< programmes_experts_rncp/local ###
 
 ###> symfony/framework-bundle ###
 /.env.local
