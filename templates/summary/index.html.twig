@@ -25,8 +25,13 @@
                         </h3>
                     </header>
 
+                    <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                        {% include '_charts/_avaluations_vs_skills.html.twig' with { chart: evaluationsVsSkillsChart } %}
+                        {% include '_charts/_modules_by_semester.html.twig' with { modulesBySemesterChart: modulesBySemesterChart } %}
+                    </section>
+
                     <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Dump</h3>
+                        <h3 class="text-lg font-semibold">Dump des données</h3>
                         <p class="text-sm text-slate-700 leading-relaxed">
                             {{ dump(framework) }}
                         </p>

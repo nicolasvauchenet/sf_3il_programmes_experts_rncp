@@ -1,0 +1,21 @@
+{
+    "code": "EC01",
+    "title": "...",
+    "officialText": "...",
+    "modalities": "...",
+    "deliverables": [
+        "..."
+    ],
+    "criteria": [
+        {
+            "code": "CR1",
+            "title": "...",
+            "items": [
+                "..."
+            ]
+        }
+    ],
+    "rules": [
+        "..."
+    ]
+}

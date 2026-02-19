@@ -1,0 +1,17 @@
+<section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <header class="mb-4">
+        <h3 class="text-base font-semibold text-slate-900">
+            Modules par semestre
+        </h3>
+        <p class="text-sm text-slate-600">
+            Nombre de modules listés dans le référentiel, par semestre.
+        </p>
+    </header>
+
+    <div class="relative w-full" style="height: {{ modulesBySemesterChart.heightPx }}px;">
+        {{ render_chart(modulesBySemesterChart.chart, {
+            'data-controller': 'modules-by-semester-chart',
+            'data-action': 'chartjs:connect->modules-by-semester-chart#onChartConnect'
+        }) }}
+    </div>
+</section>
