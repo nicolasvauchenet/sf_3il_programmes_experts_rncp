@@ -5,6 +5,7 @@
 {% block body %}
     <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
         {% include '_layout/default/_header_promotion.html.twig' %}
+        {% include '_layout/default/_flash_messages.html.twig' %}
 
         <main class="flex-1">
             <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
@@ -17,6 +18,13 @@
                             Année académique {{ year }}
                         </p>
                     </header>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">Dump</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            {{ dump(framework) }}
+                        </p>
+                    </section>
                 </article>
             </div>
         </main>
