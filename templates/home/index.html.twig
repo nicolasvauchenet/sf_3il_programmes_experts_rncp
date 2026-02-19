@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choisissez le contexte{% endblock %}
+
+{% block body %}
+    <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+        {% include '_layout/default/_header_home.html.twig' %}
+
+        <main class="flex-1 flex items-center">
+            <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
+                <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-lg font-semibold tracking-tight sm:text-xl">
+                            Choisissez le contexte
+                        </h2>
+                        <p class="text-sm text-slate-700">
+                            Sélectionnez le programme et le cadre d’évaluation pour continuer.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8">
+                        <form class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div class="flex flex-col gap-2">
+                                <label for="promotion" class="text-sm font-medium text-slate-700">
+                                    Promotion
+                                </label>
+                                <select
+                                    id="promotion"
+                                    name="promotion"
+                                    class="cursor-pointer rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-[#00556A] focus:outline-none focus:ring-2 focus:ring-[#00556A]/30"
+                                >
+                                    <option value="">Choisissez une Promotion</option>
+                                    <option value="asrc">ASRC</option>
+                                    <option value="cdwfs">CDWFS</option>
+                                    <option value="eadl">EADL</option>
+                                    <option value="eris">ERIS</option>
+                                </select>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="annee" class="text-sm font-medium text-slate-700">
+                                    Année académique
+                                </label>
+                                <select
+                                    id="annee"
+                                    name="annee"
+                                    class="cursor-pointer rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-[#00556A] focus:outline-none focus:ring-2 focus:ring-[#00556A]/30"
+                                >
+                                    <option value="">Choisissez un Millésime</option>
+                                    <option value="2026-2027">2026 - 2027</option>
+                                    <option value="2025-2026">2025 - 2026</option>
+                                </select>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <button
+                                    type="submit"
+                                    class="w-full rounded-lg bg-[#00556A] px-6 py-3 text-sm font-semibold text-white cursor-pointer shadow-md transition hover:bg-[#004454] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#00556A]/40"
+                                >
+                                    Aller au Référentiel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        {% include '_layout/default/_footer.html.twig' %}
+    </div>
+{% endblock %}

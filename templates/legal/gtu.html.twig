@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conditions Générales d’Utilisation{% endblock %}
+
+{% block body %}
+    <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+        {% include '_layout/default/_header.html.twig' %}
+
+        <main class="flex-1">
+            <div class="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10 space-y-8">
+
+                    <header class="space-y-2">
+                        <h2 class="text-2xl font-semibold tracking-tight">
+                            Conditions Générales d’Utilisation (CGU)
+                        </h2>
+                        <p class="text-sm text-slate-600">
+                            Dernière mise à jour : 15 janvier 2026
+                        </p>
+                    </header>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">1. Objet</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Les présentes Conditions Générales d’Utilisation définissent les modalités
+                            d’accès et d’utilisation du site « Référentiel RNCP – Programmes Experts »,
+                            édité par Groupe 3iL.
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            L’accès au site implique l’acceptation pleine et entière des présentes CGU.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">2. Accès au service</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Le site est accessible aux étudiants, intervenants et personnels habilités
+                            dans le cadre des programmes experts.
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            L’accès peut nécessiter une authentification via des identifiants personnels.
+                            L’utilisateur est responsable de la confidentialité de ses identifiants.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">3. Obligations de l’utilisateur</h3>
+                        <ul class="list-disc pl-6 text-sm text-slate-700 space-y-1">
+                            <li>Utiliser le site conformément à sa finalité pédagogique</li>
+                            <li>Ne pas tenter d’accéder frauduleusement aux systèmes informatiques</li>
+                            <li>Ne pas altérer, modifier ou perturber le fonctionnement du site</li>
+                            <li>Respecter la confidentialité des informations accessibles</li>
+                        </ul>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">4. Propriété intellectuelle</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Les contenus pédagogiques, documents, supports et référentiels sont protégés
+                            par le droit de la propriété intellectuelle.
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Toute reproduction ou diffusion non autorisée est strictement interdite.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">5. Responsabilité</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Groupe 3iL met tout en œuvre pour assurer la disponibilité du service.
+                            Toutefois, il ne peut garantir l’absence d’interruptions ou d’erreurs.
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            L’éditeur ne saurait être tenu responsable des dommages indirects
+                            résultant de l’utilisation du site.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">6. Suspension ou résiliation</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            En cas de non-respect des présentes CGU, Groupe 3iL se réserve le droit
+                            de suspendre ou supprimer l’accès au service sans préavis.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">7. Données personnelles</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Les traitements de données personnelles sont encadrés par la Politique
+                            de Confidentialité disponible sur le site.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">8. Modification des CGU</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Groupe 3iL se réserve le droit de modifier les présentes CGU à tout moment.
+                            Les utilisateurs seront informés de toute modification substantielle.
+                        </p>
+                    </section>
+
+                    <section class="space-y-3">
+                        <h3 class="text-lg font-semibold">9. Droit applicable</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Les présentes CGU sont soumises au droit français.
+                            En cas de litige, les tribunaux compétents seront ceux du ressort de Limoges.
+                        </p>
+                    </section>
+
+                </article>
+            </div>
+        </main>
+
+        {% include '_layout/default/_footer.html.twig' %}
+    </div>
+{% endblock %}

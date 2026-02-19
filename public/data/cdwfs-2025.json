@@ -1,0 +1,636 @@
+{
+  "parcours": {
+    "code": "CDWFS",
+    "intitule": "Concepteur Développeur Web Full Stack"
+  },
+  "annees": [
+    {
+      "annee": "CD3",
+      "semestres": [
+        {
+          "code": "S6",
+          "modules": [
+            "Développement d'interfaces Front-end",
+            "Ergonomie UX/UI et Accessibilité",
+            "Application web dynamiques et interactives",
+            "Framework et bibliothèque Front-end",
+            "Projet de développement Front-end (Fil rouge)",
+            "Développement et Frameworks Back-end",
+            "Analyse et modélisation (UML)",
+            "Base de données (SQL et NoSQL)",
+            "Administration Hébergement Web",
+            "Stratégie de sauvegarde et versionning",
+            "Conception et Développement d'API REST",
+            "Projet de développement Back-end (Fil rouge)",
+            "Linux : administration système et optimisation",
+            "Architectures sécurisées (Cloud et hybrides)",
+            "Versioning et gestion de versions décentralisé",
+            "Intégration et Déploiement Continus",
+            "Projet CI/CD : mise en place, monitoring, évolution",
+            "Etude d'avant projet (MOA)",
+            "Gestion de projet (MOE)",
+            "Méthodologie Agile",
+            "Gestion des coûts et du budget",
+            "Coordonner les équipes de projet (Communication)",
+            "Anglais Professionnel et Recherche documentaire",
+            "Veille Technologique multilingue",
+            "Qualité logicielle et amélioration continue",
+            "Projet Epreuves Certifiantes",
+            "PR1 - Front End",
+            "PR2 - Développement Back-end",
+            "PR3 - CI/CD",
+            "PR4 - Projet Gestion de Projet",
+            "Projet d'Etude Professionnel",
+            "Portfolio et Contribution Open Source",
+            "Préparation au Recrutement"
+          ]
+        }
+      ]
+    }
+  ],
+  "fiches_matieres": [
+    {
+      "code": "FM01",
+      "intitule": "Développement d'interfaces Front-end"
+    },
+    {
+      "code": "FM02",
+      "intitule": "Ergonomie UX/UI et Accessibilité"
+    },
+    {
+      "code": "FM03",
+      "intitule": "Application web dynamiques et interactives"
+    },
+    {
+      "code": "FM04",
+      "intitule": "Framework et bibliothèque Front-end"
+    },
+    {
+      "code": "FM05",
+      "intitule": "Projet de développement Front-end (Fil rouge)"
+    },
+    {
+      "code": "FM06",
+      "intitule": "Développement et Frameworks Back-end"
+    },
+    {
+      "code": "FM07",
+      "intitule": "Analyse et modélisation (UML)"
+    },
+    {
+      "code": "FM08",
+      "intitule": "Base de données (SQL et NoSQL)"
+    },
+    {
+      "code": "FM09",
+      "intitule": "Administration Hébergement Web"
+    },
+    {
+      "code": "FM10",
+      "intitule": "Stratégie de sauvegarde et versionning"
+    },
+    {
+      "code": "FM11",
+      "intitule": "Conception et Développement d'API REST"
+    },
+    {
+      "code": "FM12",
+      "intitule": "Projet de développement Back-end (Fil rouge)"
+    },
+    {
+      "code": "FM13",
+      "intitule": "Linux : administration système et optimisation"
+    },
+    {
+      "code": "FM14",
+      "intitule": "Architectures sécurisées (Cloud et hybrides)"
+    },
+    {
+      "code": "FM15",
+      "intitule": "Versioning et gestion de versions décentralisé"
+    },
+    {
+      "code": "FM16",
+      "intitule": "Intégration et Déploiement Continus"
+    },
+    {
+      "code": "FM17",
+      "intitule": "Projet CI/CD : mise en place, monitoring, évolution"
+    },
+    {
+      "code": "FM18",
+      "intitule": "Etude d'avant projet (MOA)"
+    },
+    {
+      "code": "FM19",
+      "intitule": "Gestion de projet (MOE)"
+    },
+    {
+      "code": "FM20",
+      "intitule": "Méthodologie Agile"
+    },
+    {
+      "code": "FM21",
+      "intitule": "Gestion des coûts et du budget"
+    },
+    {
+      "code": "FM22",
+      "intitule": "Coordonner les équipes de projet (Communication)"
+    },
+    {
+      "code": "FM23",
+      "intitule": "Anglais Professionnel et Recherche documentaire"
+    },
+    {
+      "code": "FM24",
+      "intitule": "Veille Technologique multilingue"
+    },
+    {
+      "code": "FM25",
+      "intitule": "Qualité logicielle et amélioration continue"
+    },
+    {
+      "code": "FM26",
+      "intitule": "Projet Epreuves Certifiantes"
+    }
+  ],
+  "competences": [
+    {
+      "code": "C01",
+      "intitule": "Concevoir et structurer des interfaces web"
+    },
+    {
+      "code": "C02",
+      "intitule": "Créer et intégrer en CSS3 des interfaces intuitives (UI)"
+    },
+    {
+      "code": "C03",
+      "intitule": "Élaborer et réaliser des interfaces web adaptatives"
+    },
+    {
+      "code": "C04",
+      "intitule": "Implémenter des interactions côté client"
+    },
+    {
+      "code": "C05",
+      "intitule": "Optimiser la communication asynchrone (client↔serveur)"
+    },
+    {
+      "code": "C06",
+      "intitule": "Structurer et intégrer des interfaces riches et réactives"
+    },
+    {
+      "code": "C07",
+      "intitule": "Configurer et personnaliser l’environnement de développement"
+    },
+    {
+      "code": "C08",
+      "intitule": "Élaborer et implémenter des solutions Back-end"
+    },
+    {
+      "code": "C09",
+      "intitule": "Optimiser et sécuriser les serveurs web"
+    },
+    {
+      "code": "C10",
+      "intitule": "Élaborer et administrer des bases de données relationnelles"
+    },
+    {
+      "code": "C11",
+      "intitule": "Concevoir et gérer des bases NoSQL"
+    },
+    {
+      "code": "C12",
+      "intitule": "Arbitrer entre bases relationnelles et NoSQL"
+    },
+    {
+      "code": "C13",
+      "intitule": "Mettre en œuvre des stratégies de sauvegarde et de récupération"
+    },
+    {
+      "code": "C14",
+      "intitule": "Concevoir des API"
+    },
+    {
+      "code": "C15",
+      "intitule": "Sécuriser les API"
+    },
+    {
+      "code": "C16",
+      "intitule": "Réaliser des tests sur les API"
+    },
+    {
+      "code": "C17",
+      "intitule": "Documenter et maintenir la documentation d’API"
+    },
+    {
+      "code": "C18",
+      "intitule": "Évaluer les besoins et intégrer des solutions cloud"
+    },
+    {
+      "code": "C19",
+      "intitule": "Analyser les besoins techniques"
+    },
+    {
+      "code": "C20",
+      "intitule": "Administrer et rationaliser les plateformes cloud"
+    },
+    {
+      "code": "C21",
+      "intitule": "Gérer et suivre les révisions de code source"
+    },
+    {
+      "code": "C22",
+      "intitule": "Définir et appliquer les procédures de fusion et résolution de conflits"
+    },
+    {
+      "code": "C23",
+      "intitule": "Développer des environnements virtualisés"
+    },
+    {
+      "code": "C24",
+      "intitule": "Orchestrer des conteneurs"
+    },
+    {
+      "code": "C25",
+      "intitule": "Automatiser la gestion et le déploiement des ressources cloud"
+    },
+    {
+      "code": "C26",
+      "intitule": "Analyser les besoins des utilisateurs et des parties prenantes"
+    },
+    {
+      "code": "C27",
+      "intitule": "Étudier et évaluer la faisabilité du projet"
+    },
+    {
+      "code": "C28",
+      "intitule": "Contribuer au cahier des charges / note de cadrage"
+    },
+    {
+      "code": "C29",
+      "intitule": "Planifier et conduire le projet (méthodo de gestion)"
+    },
+    {
+      "code": "C30",
+      "intitule": "Coordonner les équipes de projet"
+    },
+    {
+      "code": "C31",
+      "intitule": "Suivre en continu les indicateurs de performance"
+    },
+    {
+      "code": "C32",
+      "intitule": "Réaliser des évaluations périodiques de l’avancement"
+    },
+    {
+      "code": "C33",
+      "intitule": "Effectuer des revues de code"
+    },
+    {
+      "code": "C34",
+      "intitule": "Concevoir et mettre en œuvre des tests automatisés"
+    },
+    {
+      "code": "C35",
+      "intitule": "Rédiger et maintenir la documentation technique des applications"
+    },
+    {
+      "code": "C36",
+      "intitule": "Mobiliser l’anglais et une veille multilingue (sources spécialisées)"
+    },
+    {
+      "code": "C37",
+      "intitule": "Mettre en place une veille technologique"
+    },
+    {
+      "code": "C38",
+      "intitule": "Analyser les données brutes collectées"
+    },
+    {
+      "code": "C39",
+      "intitule": "Diffuser hypothèses ou scénarios à l’équipe de dev"
+    }
+  ],
+  "epreuves": [
+    {
+      "code": "EC01",
+      "intitule": "Interfaces Front End"
+    },
+    {
+      "code": "EC02",
+      "intitule": "Framework Front End"
+    },
+    {
+      "code": "EC03",
+      "intitule": "Back End"
+    },
+    {
+      "code": "EC04",
+      "intitule": "Développement d’API"
+    },
+    {
+      "code": "EC05",
+      "intitule": "Solution Technique"
+    },
+    {
+      "code": "EC06",
+      "intitule": "Intégration Continue"
+    },
+    {
+      "code": "EC07",
+      "intitule": "Avant Projet"
+    },
+    {
+      "code": "EC08",
+      "intitule": "Gestion de Projet – Livrables"
+    },
+    {
+      "code": "EC09",
+      "intitule": "Gestion de Projet – Oral"
+    },
+    {
+      "code": "EC10",
+      "intitule": "Bonnes Pratiques"
+    },
+    {
+      "code": "EC11",
+      "intitule": "Veille multilingue – Rapport"
+    },
+    {
+      "code": "EC12",
+      "intitule": "Veille multilingue – Oral"
+    }
+  ],
+  "mappings": {
+    "fm_to_competences": {
+      "FM01": [
+        "C01",
+        "C03"
+      ],
+      "FM05": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06"
+      ],
+      "FM02": [
+        "C02",
+        "C03"
+      ],
+      "FM03": [
+        "C04",
+        "C05"
+      ],
+      "FM04": [
+        "C06"
+      ],
+      "FM06": [
+        "C07",
+        "C08"
+      ],
+      "FM09": [
+        "C07",
+        "C09"
+      ],
+      "FM12": [
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17"
+      ],
+      "FM07": [
+        "C08"
+      ],
+      "FM08": [
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "FM10": [
+        "C13"
+      ],
+      "FM11": [
+        "C14",
+        "C15",
+        "C16",
+        "C17"
+      ],
+      "FM13": [
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25"
+      ],
+      "FM14": [
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "FM17": [
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25"
+      ],
+      "FM15": [
+        "C21",
+        "C22"
+      ],
+      "FM16": [
+        "C23",
+        "C24",
+        "C25"
+      ],
+      "FM18": [
+        "C26",
+        "C27",
+        "C28"
+      ],
+      "FM19": [
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "FM20": [
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "FM22": [
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "FM26": [
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "FM21": [
+        "C31"
+      ],
+      "FM25": [
+        "C33",
+        "C34",
+        "C35"
+      ],
+      "FM23": [
+        "C36"
+      ],
+      "FM24": [
+        "C37",
+        "C38",
+        "C39"
+      ]
+    },
+    "competence_to_epreuves": {
+      "C01": [
+        "EC01"
+      ],
+      "C02": [
+        "EC01"
+      ],
+      "C03": [
+        "EC01"
+      ],
+      "C04": [
+        "EC01"
+      ],
+      "C05": [
+        "EC01"
+      ],
+      "C06": [
+        "EC02"
+      ],
+      "C07": [
+        "EC03"
+      ],
+      "C08": [
+        "EC03"
+      ],
+      "C09": [
+        "EC03"
+      ],
+      "C10": [
+        "EC03"
+      ],
+      "C11": [
+        "EC03"
+      ],
+      "C12": [
+        "EC03"
+      ],
+      "C13": [
+        "EC03"
+      ],
+      "C14": [
+        "EC04"
+      ],
+      "C15": [
+        "EC04"
+      ],
+      "C16": [
+        "EC04"
+      ],
+      "C17": [
+        "EC04"
+      ],
+      "C18": [
+        "EC05"
+      ],
+      "C19": [
+        "EC05"
+      ],
+      "C20": [
+        "EC05"
+      ],
+      "C21": [
+        "EC06"
+      ],
+      "C22": [
+        "EC06"
+      ],
+      "C23": [
+        "EC06"
+      ],
+      "C24": [
+        "EC06"
+      ],
+      "C25": [
+        "EC06"
+      ],
+      "C26": [
+        "EC07"
+      ],
+      "C27": [
+        "EC07"
+      ],
+      "C28": [
+        "EC07"
+      ],
+      "C29": [
+        "EC08",
+        "EC09"
+      ],
+      "C30": [
+        "EC08",
+        "EC09"
+      ],
+      "C31": [
+        "EC08",
+        "EC09"
+      ],
+      "C32": [
+        "EC08",
+        "EC09"
+      ],
+      "C33": [
+        "EC10"
+      ],
+      "C34": [
+        "EC10"
+      ],
+      "C35": [
+        "EC10"
+      ],
+      "C36": [
+        "EC11",
+        "EC12"
+      ],
+      "C37": [
+        "EC11",
+        "EC12"
+      ],
+      "C38": [
+        "EC11",
+        "EC12"
+      ],
+      "C39": [
+        "EC11",
+        "EC12"
+      ]
+    }
+  }
+}

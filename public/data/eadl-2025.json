@@ -1,0 +1,607 @@
+{
+  "parcours": {
+    "code": "EADL",
+    "intitule": "Expert Architecture et Développement Logiciel"
+  },
+  "annees": [
+    {
+      "annee": "EA1",
+      "semestres": [
+        {
+          "code": "S1",
+          "modules": [
+            "Conception d'architectures logicielles",
+            "Principes et modélisation UML",
+            "Architecture Hexagonale",
+            "Etude d'avant-projet",
+            "Veille technologique et innovation",
+            "Test Driven Development",
+            "Management de projet numérique en agilité",
+            "Leadership Technique (en anglais)",
+            "Management des hommes",
+            "Gestion et maîtrise des budgets",
+            "Contrat de prestation",
+            "Règlementation des données et conformité",
+            "Responsabilité des entreprises et numérique responsable",
+            "Dévelopement avancé",
+            "eXtreme programming",
+            "Usine Logiciel",
+            "DevSecOps et outils d'analyse de vulnérabilités",
+            "Documentation Technique",
+            "Analyse de qualité et pratiques de Clean Code",
+            "Administration des infrastructures Cloud",
+            "Infrastructure As Code",
+            "Optimisation des performances Cloud",
+            "Stratégies de sécurité Cloud",
+            "Technologies de Blockchain",
+            "FinOps : Optimisation financière du Cloud",
+            "Architectures de données décisionnelles",
+            "Processus ETL et intégration de données",
+            "Big Data et Traitement Massif (Hadoop, Spark)",
+            "Traitement de Flux en Temps Réel (Kafka, Flink)",
+            "Processus décisionnels et modèles de données",
+            "Technologies RPA et automatisation des tâches",
+            "Machine Learning et Modélisation des Données",
+            "Gestion et déploiement des pipelines MLops",
+            "Documentation et spécifications techniques",
+            "Projet Fil Rouge",
+            "Stage",
+            "Anglais",
+            "Communication",
+            "Conférences et Evénements"
+          ]
+        }
+      ]
+    }
+  ],
+  "fiches_matieres": [
+    {
+      "code": "FM01",
+      "intitule": "Conception d'architectures logicielles"
+    },
+    {
+      "code": "FM02",
+      "intitule": "Principes et modélisation UML"
+    },
+    {
+      "code": "FM03",
+      "intitule": "Architecture Hexagonale"
+    },
+    {
+      "code": "FM04",
+      "intitule": "Etude d'avant-projet"
+    },
+    {
+      "code": "FM05",
+      "intitule": "Veille technologique et innovation"
+    },
+    {
+      "code": "FM06",
+      "intitule": "Test Driven Development"
+    },
+    {
+      "code": "FM07",
+      "intitule": "Management de projet numérique en agilité"
+    },
+    {
+      "code": "FM08",
+      "intitule": "Leadership Technique (en anglais)"
+    },
+    {
+      "code": "FM09",
+      "intitule": "Management des hommes"
+    },
+    {
+      "code": "FM10",
+      "intitule": "Gestion et maîtrise des budgets"
+    },
+    {
+      "code": "FM11",
+      "intitule": "Contrat de prestation"
+    },
+    {
+      "code": "FM12",
+      "intitule": "Règlementation des données et conformité"
+    },
+    {
+      "code": "FM13",
+      "intitule": "Responsabilité des entreprises et numérique responsable"
+    },
+    {
+      "code": "FM14",
+      "intitule": "Dévelopement avancé"
+    },
+    {
+      "code": "FM15",
+      "intitule": "eXtreme programming"
+    },
+    {
+      "code": "FM16",
+      "intitule": "Usine Logiciel"
+    },
+    {
+      "code": "FM17",
+      "intitule": "DevSecOps et outils d'analyse de vulnérabilités"
+    },
+    {
+      "code": "FM18",
+      "intitule": "Documentation Technique"
+    },
+    {
+      "code": "FM19",
+      "intitule": "Analyse de qualité et pratiques de Clean Code"
+    },
+    {
+      "code": "FM20",
+      "intitule": "Administration des infrastructures Cloud"
+    },
+    {
+      "code": "FM21",
+      "intitule": "Infrastructure As Code"
+    },
+    {
+      "code": "FM22",
+      "intitule": "Optimisation des performances Cloud"
+    },
+    {
+      "code": "FM23",
+      "intitule": "Stratégies de sécurité Cloud"
+    },
+    {
+      "code": "FM24",
+      "intitule": "Technologies de Blockchain"
+    },
+    {
+      "code": "FM25",
+      "intitule": "FinOps : Optimisation financière du Cloud"
+    },
+    {
+      "code": "FM26",
+      "intitule": "Architectures de données décisionnelles"
+    },
+    {
+      "code": "FM27",
+      "intitule": "Processus ETL et intégration de données"
+    },
+    {
+      "code": "FM28",
+      "intitule": "Big Data et Traitement Massif (Hadoop, Spark)"
+    },
+    {
+      "code": "FM29",
+      "intitule": "Traitement de Flux en Temps Réel (Kafka, Flink)"
+    },
+    {
+      "code": "FM30",
+      "intitule": "Processus décisionnels et modèles de données"
+    },
+    {
+      "code": "FM31",
+      "intitule": "Technologies RPA et automatisation des tâches"
+    },
+    {
+      "code": "FM32",
+      "intitule": "Machine Learning et Modélisation des Données"
+    },
+    {
+      "code": "FM33",
+      "intitule": "Gestion et déploiement des pipelines MLops"
+    },
+    {
+      "code": "FM34",
+      "intitule": "Documentation et spécifications techniques"
+    }
+  ],
+  "competences": [
+    {
+      "code": "C01",
+      "intitule": "Mettre en place une veille technologique, normative, et législative"
+    },
+    {
+      "code": "C02",
+      "intitule": "Analyser les besoins des utilisateurs et des parties prenantes"
+    },
+    {
+      "code": "C03",
+      "intitule": "Étudier et évaluer la faisabilité du projet"
+    },
+    {
+      "code": "C04",
+      "intitule": "Concevoir l’architecture logicielle"
+    },
+    {
+      "code": "C05",
+      "intitule": "Sélectionner les technologies et outils adaptés"
+    },
+    {
+      "code": "C06",
+      "intitule": "Présenter et valider l'architecture logicielle (technique et fonctionnel)"
+    },
+    {
+      "code": "C07",
+      "intitule": "Créer des diagrammes et modèles de données et de flux"
+    },
+    {
+      "code": "C08",
+      "intitule": "Intégrer les pratiques de Test Driven Development (TDD)"
+    },
+    {
+      "code": "C09",
+      "intitule": "Collaborer à la rédaction du cahier des charges fonctionnels"
+    },
+    {
+      "code": "C10",
+      "intitule": "Planifier et conduire le projet numérique"
+    },
+    {
+      "code": "C11",
+      "intitule": "Coordonner les équipes de projet"
+    },
+    {
+      "code": "C12",
+      "intitule": "Effectuer le suivi continu des indicateurs de performance"
+    },
+    {
+      "code": "C13",
+      "intitule": "Analyser des contenus de sources spécialisées"
+    },
+    {
+      "code": "C14",
+      "intitule": "Réaliser des évaluations périodiques de l'avancement"
+    },
+    {
+      "code": "C15",
+      "intitule": "Organiser ateliers, revues de code et RETEX"
+    },
+    {
+      "code": "C16",
+      "intitule": "Définir les méthodologies de déploiement et pipelines CI/CD"
+    },
+    {
+      "code": "C17",
+      "intitule": "Intégrer des tests automatisés fonctionnels et non-fonctionnels"
+    },
+    {
+      "code": "C18",
+      "intitule": "Intégrer des pratiques de sécurité DevSecOps"
+    },
+    {
+      "code": "C19",
+      "intitule": "Optimiser les développements et structurer en code modulaire (Clean Code)"
+    },
+    {
+      "code": "C20",
+      "intitule": "Rédiger et maintenir les documentations techniques"
+    },
+    {
+      "code": "C21",
+      "intitule": "Intégrer des services cloud via API/plateformes"
+    },
+    {
+      "code": "C22",
+      "intitule": "Automatiser la configuration et la gestion des ressources cloud"
+    },
+    {
+      "code": "C23",
+      "intitule": "Administrer et optimiser les infrastructures cloud"
+    },
+    {
+      "code": "C24",
+      "intitule": "Analyser et optimiser la performance des systèmes cloud"
+    },
+    {
+      "code": "C25",
+      "intitule": "Implémenter des stratégies de sécurité robustes (Cloud)"
+    },
+    {
+      "code": "C26",
+      "intitule": "Intégrer et mettre en œuvre des technologies blockchain"
+    },
+    {
+      "code": "C27",
+      "intitule": "Concevoir l’architecture d’entrepôts de données décisionnelles"
+    },
+    {
+      "code": "C28",
+      "intitule": "Mettre en œuvre des processus ETL"
+    },
+    {
+      "code": "C29",
+      "intitule": "Transformer des données massives en informations exploitables"
+    },
+    {
+      "code": "C30",
+      "intitule": "Développer des solutions de Business Intelligence (BI)"
+    },
+    {
+      "code": "C31",
+      "intitule": "Automatiser des tâches avec RPA"
+    },
+    {
+      "code": "C32",
+      "intitule": "Optimiser les processus de décision"
+    },
+    {
+      "code": "C33",
+      "intitule": "Assurer la surveillance et maintenance des systèmes automatisés"
+    },
+    {
+      "code": "C34",
+      "intitule": "Rédiger la documentation de support et spécifications"
+    },
+    {
+      "code": "C35",
+      "intitule": "Mesurer l'impact des solutions d'automatisation"
+    }
+  ],
+  "epreuves": [
+    {
+      "code": "EC01",
+      "intitule": "Conception & Architecture logicielle"
+    },
+    {
+      "code": "EC02",
+      "intitule": "Management de projet numérique"
+    },
+    {
+      "code": "EC03",
+      "intitule": "Intégration & Déploiement Continus (CI/CD) & Qualité"
+    },
+    {
+      "code": "EC04",
+      "intitule": "Cloud & Sécurité"
+    },
+    {
+      "code": "EC05",
+      "intitule": "Données décisionnelles & BI"
+    },
+    {
+      "code": "EC06",
+      "intitule": "Automatisation (RPA) & MLOps"
+    }
+  ],
+  "mappings": {
+    "fm_to_competences": {
+      "FM05": [
+        "C01"
+      ],
+      "FM04": [
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "FM01": [
+        "C04",
+        "C05"
+      ],
+      "FM02": [
+        "C04"
+      ],
+      "FM03": [
+        "C04",
+        "C05"
+      ],
+      "FM06": [
+        "C08"
+      ],
+      "FM07": [
+        "C10",
+        "C11",
+        "C12",
+        "C14"
+      ],
+      "FM10": [
+        "C10",
+        "C12"
+      ],
+      "FM11": [
+        "C10",
+        "C12"
+      ],
+      "FM12": [
+        "C10",
+        "C12"
+      ],
+      "FM13": [
+        "C10",
+        "C12",
+        "C14"
+      ],
+      "FM09": [
+        "C11"
+      ],
+      "FM08": [
+        "C13",
+        "C15"
+      ],
+      "FM14": [
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "FM15": [
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "FM16": [
+        "C16",
+        "C17",
+        "C18"
+      ],
+      "FM17": [
+        "C18"
+      ],
+      "FM19": [
+        "C19"
+      ],
+      "FM18": [
+        "C20"
+      ],
+      "FM20": [
+        "C21",
+        "C22",
+        "C23"
+      ],
+      "FM25": [
+        "C21"
+      ],
+      "FM21": [
+        "C22"
+      ],
+      "FM22": [
+        "C24"
+      ],
+      "FM23": [
+        "C25"
+      ],
+      "FM24": [
+        "C26"
+      ],
+      "FM26": [
+        "C27"
+      ],
+      "FM27": [
+        "C28"
+      ],
+      "FM28": [
+        "C29"
+      ],
+      "FM30": [
+        "C30"
+      ],
+      "FM31": [
+        "C31"
+      ],
+      "FM32": [
+        "C32",
+        "C33",
+        "C35"
+      ],
+      "FM33": [
+        "C32",
+        "C33",
+        "C35"
+      ],
+      "FM34": [
+        "C34"
+      ]
+    },
+    "competence_to_epreuves": {
+      "C01": [
+        "EC01"
+      ],
+      "C02": [
+        "EC01"
+      ],
+      "C03": [
+        "EC01"
+      ],
+      "C04": [
+        "EC01"
+      ],
+      "C05": [
+        "EC01"
+      ],
+      "C06": [
+        "EC01"
+      ],
+      "C07": [
+        "EC01"
+      ],
+      "C08": [
+        "EC01"
+      ],
+      "C09": [
+        "EC01"
+      ],
+      "C10": [
+        "EC02"
+      ],
+      "C11": [
+        "EC02"
+      ],
+      "C12": [
+        "EC02"
+      ],
+      "C13": [
+        "EC02"
+      ],
+      "C14": [
+        "EC02"
+      ],
+      "C15": [
+        "EC02"
+      ],
+      "C16": [
+        "EC03"
+      ],
+      "C17": [
+        "EC03"
+      ],
+      "C18": [
+        "EC03"
+      ],
+      "C19": [
+        "EC03"
+      ],
+      "C20": [
+        "EC03"
+      ],
+      "C21": [
+        "EC04"
+      ],
+      "C22": [
+        "EC04"
+      ],
+      "C23": [
+        "EC04"
+      ],
+      "C24": [
+        "EC04"
+      ],
+      "C25": [
+        "EC04"
+      ],
+      "C26": [
+        "EC04"
+      ],
+      "C27": [
+        "EC05"
+      ],
+      "C28": [
+        "EC05"
+      ],
+      "C29": [
+        "EC05"
+      ],
+      "C30": [
+        "EC05"
+      ],
+      "C31": [
+        "EC05"
+      ],
+      "C32": [
+        "EC06"
+      ],
+      "C33": [
+        "EC06"
+      ],
+      "C34": [
+        "EC06"
+      ],
+      "C35": [
+        "EC06"
+      ]
+    }
+  }
+}
