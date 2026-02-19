@@ -1,0 +1,75 @@
+<header class="w-full bg-[#00556A] lg:sticky lg:top-0 lg:z-50 lg:shadow-md">
+    <div class="mx-auto w-full max-w-5xl px-4 sm:px-6">
+        <!-- Mobile / Tablet -->
+        <div class="flex flex-col gap-3 py-3 lg:hidden">
+            <a href="{{ path('app_home') }}" class="inline-flex w-fit flex-col gap-2">
+                <img
+                    src="{{ asset('img/logo-3il.png') }}"
+                    alt="Logo 3iL"
+                    class="h-10 w-auto sm:h-12"
+                />
+                <div class="flex items-baseline gap-2 leading-tight text-white lg:block">
+                    <h1 class="text-sm font-semibold tracking-tight">
+                        Référentiel RNCP
+                    </h1>
+                    <p class="text-xs text-white/80 lg:block">
+                        Programmes Experts
+                    </p>
+                </div>
+            </a>
+
+            <nav class="-mx-4 overflow-x-auto px-4">
+                <div class="flex w-max items-center gap-6 text-sm font-medium text-white">
+                    <a href="{{ path('app_promotion_summary', { promotion: promotion, year: year }) }}" class="whitespace-nowrap transition hover:text-white/70">
+                        Résumé
+                    </a>
+                    <a href="{{ path('app_promotion_courses', { promotion: promotion, year: year }) }}" class="whitespace-nowrap transition hover:text-white/70">
+                        Matières
+                    </a>
+                    <a href="{{ path('app_promotion_skills', { promotion: promotion, year: year }) }}" class="whitespace-nowrap transition hover:text-white/70">
+                        Compétences
+                    </a>
+                    <a href="{{ path('app_promotion_evaluations', { promotion: promotion, year: year }) }}" class="whitespace-nowrap transition hover:text-white/70">
+                        Évaluations
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Desktop -->
+        <div class="hidden lg:flex lg:items-center lg:gap-6 lg:py-3">
+            <!-- Logo (contrôlé) -->
+            <a href="{{ path('app_home') }}" class="shrink-0">
+                <img
+                    src="{{ asset('img/logo-3il.png') }}"
+                    alt="Logo 3iL"
+                    class="h-7 w-auto sm:h-9"
+                />
+            </a>
+
+            <nav class="flex flex-1 items-center justify-center gap-6 text-base font-medium tracking-wide text-white">
+                <a href="{{ path('app_promotion_summary', { promotion: promotion, year: year }) }}" class="transition hover:text-white/70">
+                    Résumé
+                </a>
+                <a href="{{ path('app_promotion_courses', { promotion: promotion, year: year }) }}" class="transition hover:text-white/70">
+                    Matières
+                </a>
+                <a href="{{ path('app_promotion_skills', { promotion: promotion, year: year }) }}" class="transition hover:text-white/70">
+                    Compétences
+                </a>
+                <a href="{{ path('app_promotion_evaluations', { promotion: promotion, year: year }) }}" class="transition hover:text-white/70">
+                    Évaluations
+                </a>
+            </nav>
+
+            <div class="shrink-0 text-right leading-tight text-white">
+                <h1 class="text-base font-semibold tracking-tight">
+                    Référentiel RNCP
+                </h1>
+                <p class="text-sm text-white/80">
+                    Programmes Experts
+                </p>
+            </div>
+        </div>
+    </div>
+</header>

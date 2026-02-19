@@ -4,7 +4,7 @@
 
 {% block body %}
     <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-        {% include '_layout/default/_header_home.html.twig' %}
+        {% include '_layout/default/_header.html.twig' %}
 
         <main class="flex-1 flex items-center">
             <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
@@ -19,15 +19,22 @@
                     </div>
 
                     <div class="mt-6 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8">
-                        <form class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                        <form data-controller="context"
+                              data-context-target="form"
+                              class="grid grid-cols-1 gap-6 sm:grid-cols-2"
+                              action="{{ path('app_promotion_summary') }}"
+                        >
                             <div class="flex flex-col gap-2">
                                 <label for="promotion" class="text-sm font-medium text-slate-700">
                                     Promotion
                                 </label>
                                 <select
+                                    data-context-target="promotion"
+                                    data-action="change->context#check"
                                     id="promotion"
                                     name="promotion"
                                     class="cursor-pointer rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-[#00556A] focus:outline-none focus:ring-2 focus:ring-[#00556A]/30"
+                                    required
                                 >
                                     <option value="">Choisissez une Promotion</option>
                                     <option value="asrc">ASRC</option>
@@ -42,9 +49,12 @@
                                     Année académique
                                 </label>
                                 <select
-                                    id="annee"
-                                    name="annee"
+                                    data-context-target="year"
+                                    data-action="change->context#check"
+                                    id="year"
+                                    name="year"
                                     class="cursor-pointer rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-[#00556A] focus:outline-none focus:ring-2 focus:ring-[#00556A]/30"
+                                    required
                                 >
                                     <option value="">Choisissez un Millésime</option>
                                     <option value="2026-2027">2026 - 2027</option>
@@ -55,7 +65,9 @@
                             <div class="sm:col-span-2">
                                 <button
                                     type="submit"
-                                    class="w-full rounded-lg bg-[#00556A] px-6 py-3 text-sm font-semibold text-white cursor-pointer shadow-md transition hover:bg-[#004454] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#00556A]/40"
+                                    data-context-target="submit"
+                                    class="w-full rounded-lg bg-[#00556A] px-6 py-3 text-sm font-semibold text-white cursor-pointer shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#004454] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#00556A]/40"
+                                    disabled
                                 >
                                     Aller au Référentiel
                                 </button>
