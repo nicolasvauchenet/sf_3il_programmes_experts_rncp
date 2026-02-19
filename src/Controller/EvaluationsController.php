@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Framework\FrameworkJsonLoader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -10,8 +11,10 @@ use Symfony\Component\Routing\Attribute\Route;
 final class EvaluationsController extends AbstractController
 {
     #[Route('/evaluations', name: 'app_promotion_evaluations')]
-    public function index(Request $request): Response
-    {
+    public function index(
+        Request $request,
+        FrameworkJsonLoader $loader
+    ): Response {
         $promotion = $request->query->get('promotion');
         $year = $request->query->get('year');
 
@@ -19,9 +22,12 @@ final class EvaluationsController extends AbstractController
             return $this->redirectToRoute('app_home');
         }
 
+        $framework = $loader->load($promotion, $year);
+
         return $this->render('evaluations/index.html.twig', [
             'promotion' => $promotion,
             'year' => $year,
+            'framework' => $framework,
         ]);
     }
 }
