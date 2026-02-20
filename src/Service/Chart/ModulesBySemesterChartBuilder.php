@@ -8,13 +8,13 @@ use Symfony\UX\Chartjs\Model\Chart;
 
 final class ModulesBySemesterChartBuilder
 {
-    private const string COLOR_PRIMARY = '#00556A';
-    private const string COLOR_ACCENT = '#F36C30';
-    private const string COLOR_SECONDARY = '#00A78E';
+    private const COLOR_PRIMARY = '#00556A';
+    private const COLOR_ACCENT = '#F36C30';
+    private const COLOR_SECONDARY = '#00A78E';
 
-    private const int MIN_HEIGHT_PX = 260;
-    private const int MAX_HEIGHT_PX = 420;
-    private const int BAR_THICKNESS_PX = 28;
+    private const MIN_HEIGHT_PX = 260;
+    private const MAX_HEIGHT_PX = 420;
+    private const BAR_THICKNESS_PX = 28;
 
     public function __construct(
         private readonly ChartBuilderInterface $chartBuilder,
