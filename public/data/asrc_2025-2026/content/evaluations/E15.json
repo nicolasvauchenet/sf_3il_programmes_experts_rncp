@@ -1,0 +1,21 @@
+{
+  "code": "E15",
+  "title": "Projet d’Étude Professionnel",
+  "officialText": "Projet d’Étude Professionnel",
+  "modalities": "Rapport écrit",
+  "deliverables": [
+    "Projet d’Étude Professionnel"
+  ],
+  "criteria": [],
+  "rules": [
+    "Bloc: PEP",
+    "Coefficient: 4",
+    "Total: 200",
+    "Validation: Bloc validé si E15 ≥ 40 et E16 ≥ 60\nSinon Bloc non validé"
+  ],
+  "thresholds": {
+    "validatedMin": null,
+    "compensationMin": null,
+    "retakeBelow": null
+  }
+}

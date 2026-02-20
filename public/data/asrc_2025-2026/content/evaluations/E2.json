@@ -1,0 +1,37 @@
+{
+  "code": "E2",
+  "title": "Mise en place de la solution mise en œuvre",
+  "officialText": "Mise en place de la solution mise en œuvre",
+  "modalities": "Épreuve écrite",
+  "deliverables": [
+    "Mise en place de la solution mise en œuvre"
+  ],
+  "criteria": [
+    {
+      "code": "CR02",
+      "title": "Gestion des politiques",
+      "officialText": "Cr 2. Gestion des politiques\n(QoS) et aux méthodes ITIL. Il implémente des\nannuaire, en structurant efficacement les ressources d'accès\nservices d'annuaire tels qu'Active Directory et\ninformatiques et la gestion des identités et des accès aux\nutilise LDAP pour une gestion efficace des - Respect des politiques d'accès\ndifférentes ressources, pour répondre aux besoins\nidentités et des accès. Il développe et applique : L'implémentation des\nopérationnels, et respecter les politiques d'accès et\ndes stratégies via Group Policy Objects (GPO), en contrôles d'accès garantit les\nsécurité de l'entreprise\nadéquation avec les besoins de sécurité et directives de sécurité établies\nd'efficacité du système d'information. Chargé de par l'entreprise.\nla virtualisation, l'administrateur conçoit,\n- Accessibilité des ressources :\nconfigure et gère des environnements virtualisés\nLes systèmes mis en place\nsur des plateformes telles que VMware vSphere\nassurent un accès continu et\nou Microsoft Hyper-V, tout en évaluant et\nsécurisé aux ressources\nsélectionnant les solutions d'hébergement les\ninformatiques.\nplus appropriées, qu'elles soient On-premise ou\nsur des plateformes cloud telles qu'AWS, GCP ou\nAzure. Cette approche permet d'optimiser C3. Concevoir et déployer des environnements"
+    },
+    {
+      "code": "CR03",
+      "title": "Rationalisation des",
+      "officialText": "Cr 3. Rationalisation des\nl'utilisation des ressources et d'accroître la virtualisés à l'aide de plateformes spécialisées On- ressources\nflexibilité des services informatiques, fournissant Premise ou sur un cloud provider, en coopération avec\n- Conformité : L'architecture\nun soutien robuste aux ambitions du Système les architectes système, pour rationaliser l'utilisation des\nvirtualisée conçue garantit\nd'Information de l'entreprise en alignant la ressources informatiques et répondre à l'évolutivité des\nl'adéquation avec les besoins\nstratégie d'infrastructure avec les exigences besoins de l'entreprise.\nopérationnels et évolutifs de\nopérationnelles et stratégiques.\nl'entreprise.\n- Efficience des systèmes\nvirtualisés : Les systèmes\nvirtualisés sont gérés de\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nmanière à maximiser\nl'efficacité des ressources\nC4. Concevoir, gérer et administrer les systèmes de"
+    },
+    {
+      "code": "CR04",
+      "title": "Administration des Bases de",
+      "officialText": "Cr 4. Administration des Bases de\ngestion de bases de données relationnelles et NoSQL, en données\nappliquant les principes d'optimisation des bases de\n- Conformité du système de\ndonnées et en collaboration avec les développeurs et les\nbase de données : Le système\nanalystes de données, pour garantir la cohérence, la\nde base de données permet de\nqualité, la sécurité et l’accessibilité permanente des\nrépondre précisément aux\ninformations.\nexigences du cahier des\ncharges\n- Accessibilité sécurisée aux\ndonnées : Les mesures mises\nen place garantissent un accès\naux données sécurisé et\nexclusivement réservé aux\nutilisateurs autorisés.\n- Optimisation du système : Le\nsystème est ajusté pour\naméliorer l'efficacité en termes\nde délais de traitement des\ndonnées.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nActivité 1.2 Maintien de la haute disponibilité C5. Mettre en œuvre des solutions de redondance, de"
+    }
+  ],
+  "rules": [
+    "Bloc: 1",
+    "Coefficient: 4",
+    "Total: 120",
+    "Validation: Évaluation validée ≥ 60\nCompensation possible* ≥42 et <60 \nRattrapage obligatoire <42"
+  ],
+  "thresholds": {
+    "validatedMin": 60,
+    "compensationMin": 42,
+    "retakeBelow": 42
+  }
+}

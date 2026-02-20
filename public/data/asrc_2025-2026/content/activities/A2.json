@@ -1,0 +1,18 @@
+{
+  "code": "A2",
+  "title": "Configuration et administration de l’infrastructure réseau et des solutions cloud.",
+  "summary": null,
+  "officialText": null,
+  "subActivities": [
+    {
+      "code": "A2.1",
+      "title": "Configuration de l'infrastructure Réseaux",
+      "officialText": "L'administrateur réseau assure la configuration et la maintenance des réseaux Voix/data et des techniques et fonctionnelles aux communication fluide et sans VLAN pour une segmentation réseau stratégique nouveaux besoins ou interruption. de l'entreprise. Il maîtrise l'emploi de solutions amélioration avec la stratégie de surveillance et de suivi sécurisés, essentiels pour la protection des réponse apportée sécurise équipements réseau avancés, il renforce la solution (Topologie, Fiches de test, Cisco, Stormshield ou Fortinet. En collaboration réseaux de données et voix, en supervisant l'installation solutions Voix/Data solutions (2h) fiable et sécurisée, essentielle au maintien de la en collaboration avec les équipes techniques et les tests (de connectivité, continuité des activités. L'automatisation des fournisseurs, pour garantir l'efficacité des processus réseautiques avec des outils adaptés communications internes et externes et assurer la ...) couvrent le l'efficience opérationnelle. À travers les systèmes différents services installés de surveillance comme Zabbix et Centreon, il réalise une supervision proactive, permettant documentation des tests une réaction rapide face aux incidents et assurant permet à l'ensemble des une performance réseau optimale en accord avec collaborateurs de pouvoir les mettre en œuvre."
+    },
+    {
+      "code": "A2.2",
+      "title": "Conception et réalisation de l'intégration et le déploiement continu (Cloud & Devops)",
+      "officialText": "L'administrateur DevOps orchestre fonctionnelle de manière l'intégration et la continuité des opérations d'automatisation d'intégration et de identique sous tous types logiciel, jouant ainsi un rôle essentiel dans la plateforme tel que Docker ou Podman, pour d'intégration et de déploiement continus pour - L'outil d'orchestration garantit chaque composant de l'application, optimiser la résilience et la performance des la gestion dynamique des permettant une isolation efficace et une applications. ressources. gestion simplifiée des dépendances. Il implémente et configure des plateformes - La mise à l'échelle (Scaling) des d'orchestration de conteneurs tel que ressources orchestrées garantit Kubernetes, assurant leur fonctionnement la robustesse des pipelines optimal sur divers environnements. Il d'intégration et de déploiement continus. automatise les pipelines de développement avec des outils tel que Jenkins, où chaque"
+    }
+  ]
+}

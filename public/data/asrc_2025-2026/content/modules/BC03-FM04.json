@@ -1,0 +1,110 @@
+{
+  "code": "BC03-FM04",
+  "title": "Défenses Périmétriques",
+  "summary": "Les objectifs de ce module sont de comprendre les enjeux et principes de la défense périmétrique, maîtriser la configuration et l'utilisation des pare-feu, filtres de paquets, proxy et VPN pour sécuriser un réseau, et appliquer des solutions de sécurisation pour les accès distants.",
+  "workload": {
+    "days": 3,
+    "hours": 21
+  },
+  "prerequisites": [
+    "Connaissances de base en réseaux informatiques et en sécurité informatique."
+  ],
+  "objectives": [
+    "Les objectifs de ce module sont de comprendre les enjeux et principes de la défense périmétrique, maîtriser la configuration et l'utilisation des pare-feu, filtres de paquets, proxy et VPN pour sécuriser un réseau, et appliquer des solutions de sécurisation pour les accès distants."
+  ],
+  "skillsTargeted": [
+    "C18"
+  ],
+  "outline": [
+    {
+      "title": "Introduction aux défenses périmétriques",
+      "items": [
+        "Compréhension des enjeux de la défense périmétrique",
+        "Les différents types de menaces bloquées par la défense périmétrique",
+        "Principes de base de la défense périmétrique",
+        "Avantages et inconvénients des différentes approches de défense périmétrique",
+        "Étude de cas sur l'importance de la défense périmétrique"
+      ]
+    },
+    {
+      "title": "Pare-feu (Firewall)",
+      "items": [
+        "Fonctionnement et rôle d'un pare-feu",
+        "Types de pare-feu (stateful, proxy, applicatif, etc.)",
+        "Configuration d'un pare-feu",
+        "Gestion des règles de pare-feu",
+        "Tests de pare-feu et détection des failles"
+      ]
+    },
+    {
+      "title": "Filtres de paquets et Proxy",
+      "items": [
+        "Principes de base des filtres de paquets",
+        "Fonctionnement des proxy",
+        "Mise en place et configuration des filtres de paquets",
+        "Utilisation de proxy pour renforcer la sécurité périmétrique",
+        "Avantages et inconvénients des filtres de paquets et proxy"
+      ]
+    },
+    {
+      "title": "VPN (Virtual Private Network)",
+      "items": [
+        "Compréhension du fonctionnement des VPN",
+        "Types de VPN (site à site, distant, etc.)",
+        "Configuration d'un VPN",
+        "Sécurisation des échanges via VPN",
+        "Surveillance et maintenance des VPN"
+      ]
+    },
+    {
+      "title": "Sécurisation des accès distants",
+      "items": [
+        "Risques liés aux accès distants",
+        "Solutions de sécurisation des accès distants (VPN, SSL, etc.)",
+        "Politiques de sécurité pour les accès distants",
+        "Gestion des identités et des habilitations",
+        "Surveillance des accès distants et détection d'anomalies"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Compréhension des enjeux de la défense périmétrique",
+      "description": "Vous êtes chargé de rédiger un rapport synthétique sur les enjeux de la défense périmétrique, en mettant en avant les différentes menaces bloquées par cette approche de sécurité et en détaillant les principaux avantages et inconvénients des différentes approches de défense périmétrique.",
+      "deliverables": []
+    },
+    {
+      "title": "Configuration d'un pare-feu",
+      "description": "Vous allez mettre en pratique vos connaissances en configuration de pare-feu en simulant la mise en place de règles de pare-feu pour une entreprise. À partir d'un jeu de données simulant le trafic réseau, vous devrez élaborer un jeu de règles de pare-feu pour bloquer ou autoriser le trafic réseau en fonction de critères prédéfinis.",
+      "deliverables": []
+    },
+    {
+      "title": "Mise en place des filtres de paquets et des proxies",
+      "description": "Dans cet exercice, vous allez installer et configurer des filtres de paquets et des proxies sur un réseau local. Vous devrez mettre en place des règles de filtrage et de redirection du trafic pour bloquer certaines données malveillantes tout en autorisant le trafic légitime.",
+      "deliverables": []
+    },
+    {
+      "title": "Configuration d'un VPN",
+      "description": "Vous serez amené à configurer un réseau privé virtuel (VPN) pour une entreprise. En utilisant des logiciels et des équipements mis à votre disposition, vous devrez établir une connexion sécurisée entre deux sites distants et assurer la confidentialité et l'intégrité des échanges de données.",
+      "deliverables": []
+    },
+    {
+      "title": "Gestion des accès distants et surveillance",
+      "description": "Vous aurez pour mission de concevoir une politique de sécurité pour les accès distants d'une entreprise. Vous devrez établir des règles d'authentification, de contrôle d'accès et de surveillance des connexions distantes, tout en proposant des mesures de détection et de réponse aux anomalies détectées.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.)",
+    "Défenses Périmétriques"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "Philippe Biondi, 'Sécurité Réseaux et Internet : Concepts, Protocoles et Architecture', Eyrolles., Éric Filiol, 'Comprendre et optimiser la sécurité des réseaux', Dunod., Guillaume Prigent, 'Firewall : Sécurité des réseaux informatiques', ENI.",
+      "publisher": ""
+    }
+  ]
+}

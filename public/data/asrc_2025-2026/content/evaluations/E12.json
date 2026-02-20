@@ -1,0 +1,37 @@
+{
+  "code": "E12",
+  "title": "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)",
+  "officialText": "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)",
+  "modalities": "Épreuve orale",
+  "deliverables": [
+    "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)"
+  ],
+  "criteria": [
+    {
+      "code": "CR26",
+      "title": "Évaluations Périodiques",
+      "officialText": "Cr 26. Évaluations Périodiques\ns'assurer que toutes les livraisons correspondent\nd’avancement, gestion des priorités et ajustements de l'Avancement du Projet\naux exigences définies et apportent une valeur\ngrâce à des outils de gestion de projet tels que JIRA ou\n- Qualité des revues de\najoutée au business. L'administrateur système,\nTrello afin de maximiser l'efficacité de l'équipe,\nperformance : Les revues de\nspécialiste de la gestion de projet, intègre\nrespecter les délais et garantir la qualité des livrables.\nperformance sont complètes,\négalement le suivi financier dans ses\nreflétant fidèlement l'état\nresponsabilités pour garantir l'adéquation entre\nactuel du projet et l'atteinte\nles ressources allouées et les dépenses réelles. Il\ndes objectifs à chaque étape.\nélabore et suit le budget du projet, en veillant à\nl'optimisation des coûts et à la justification des - Pertinence des rapports\ninvestissements. À l'aide d'outils financiers et de d'étape : Les rapports\nrapports de gestion, il procède à des analyses d'étape fournissent des\ncoûts-bénéfices régulières, réajuste le informations actualisées et\nfinancement en fonction des retours sur pertinentes sur la\ninvestissement attendus et assure une progression du projet, avec\ncommunication transparente sur les aspects des preuves d'amélioration\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nfinanciers avec toutes les parties prenantes. Son continue basées sur les\nexpertise garantit que les décisions financières évaluations.\nsont prises sur la base de données fiables et\nconcourent à la rentabilité des projets.\nC27. Gérer le budget de projet en utilisant des outils de"
+    },
+    {
+      "code": "CR27",
+      "title": "Suivi Continu des",
+      "officialText": "Cr 27. Suivi Continu des\ngestion financière (ex. Microsoft Project, Excel, ou des Indicateurs de Performance\nlogiciels spécialisés comme SAP) et des techniques de\n- Précision du suivi budgétaire\nbudgétisation (ex. répartition des coûts, analyse de la\n: Les outils de suivi\nvaleur acquise), en respectant les contraintes financières\nbudgétaire sont\net temporelles du projet, afin d'assurer une utilisation\ncorrectement utilisés pour\noptimale des ressources et de garantir la rentabilité et le\nune gestion financière\nsuccès du projet.\nprécise, avec des indicateurs\nde performance financière\nqui sont régulièrement mis à\njour et analysés.\n- Réactivité aux écarts : Les\nécarts par rapport au budget\net aux autres indicateurs de\nperformance sont\nrapidement identifiés et des\nmesures correctives sont\nmises en place de manière\nproactive.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nActivité 4.3 Recherche documentaire et Veille C28. Analyser des contenus de diverses sources Mise en situation reconstituée écrit"
+    },
+    {
+      "code": "CR28",
+      "title": "Mobiliser ses",
+      "officialText": "Cr 28. Mobiliser ses\ntechnologique en contexte multilingue d'informations spécialisés, en mobilisant ses et/ou sur ordinateur connaissances\nconnaissances technologiques et sa maitrise de l'anglais, technologiques et maîtrise\nAu quotidien, l'administrateur système mène\npour résoudre des incidents ou répondre à des besoins"
+    }
+  ],
+  "rules": [
+    "Bloc: 4",
+    "Coefficient: 3",
+    "Total: 100",
+    "Validation: Évaluation validée ≥ 50\nCompensation possible* ≥35 et <50 \nRattrapage obligatoire <35"
+  ],
+  "thresholds": {
+    "validatedMin": 50,
+    "compensationMin": 35,
+    "retakeBelow": 35
+  }
+}

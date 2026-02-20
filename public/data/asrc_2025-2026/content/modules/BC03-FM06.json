@@ -1,0 +1,120 @@
+{
+  "code": "BC03-FM06",
+  "title": "Gestion des identités et accès sécurisés",
+  "summary": "Ce module vise à comprendre les enjeux de la gestion des identités et des accès sécurisés dans la cybersécurité.",
+  "workload": {
+    "days": 2,
+    "hours": 14
+  },
+  "prerequisites": [
+    "Des connaissances de base en cybersécurité et en gestion des systèmes d'information sont nécessaires pour suivre ce cours."
+  ],
+  "objectives": [
+    "Ce module vise à comprendre les enjeux de la gestion des identités et des accès sécurisés dans la cybersécurité. Il permet de connaître les concepts clés liés à l'authentification, l'autorisation, et la gestion des privilèges, ainsi que d'identifier les bonnes pratiques et les normes de sécurité. Les apprenants apprendront également à évaluer les solutions d'authentification, de gestion des identités et d'accès dans divers environnements, y compris le cloud."
+  ],
+  "skillsTargeted": [
+    "C19"
+  ],
+  "outline": [
+    {
+      "title": "Introduction à la gestion des identités et accès sécurisés",
+      "items": [
+        "Comprendre les enjeux de la gestion des identités et des accès dans la cybersécurité",
+        "Identifier les principaux risques liés à une gestion inadéquate des identités et des accès",
+        "Connaître les concepts clés tels que l'authentification, l'autorisation, la gestion des privilèges, etc.",
+        "Comprendre les normes et bonnes pratiques en matière de gestion des identités et accès sécurisés",
+        "Identifier les différents types d'identités et d'accès à protéger"
+      ]
+    },
+    {
+      "title": "Méthodes d'authentification et d'autorisation",
+      "items": [
+        "Comprendre les différentes méthodes d'authentification (mot de passe, biométrie, carte à puce, etc.)",
+        "Connaître les principes de l'authentification forte et multi-facteurs",
+        "Identifier les mécanismes d'autorisation (RBAC, ABAC, etc.) et leurs avantages",
+        "Comprendre les enjeux liés à la gestion des identifiants et mots de passe",
+        "Évaluer les solutions d'authentification et d'autorisation selon les besoins de l'organisation"
+      ]
+    },
+    {
+      "title": "Gestion des identités et des privilèges",
+      "items": [
+        "Comprendre les processus de gestion des identités (provisionnement, déprovisionnement, synchronisation, etc.)",
+        "Identifier les risques liés aux identités inactives ou obsolètes",
+        "Connaître les principes de gestion des privilèges et les concepts de moindre privilège",
+        "Évaluer les outils de gestion des identités et des privilèges sur le marché",
+        "Mettre en place des processus de revue des accès et de certification des droits"
+      ]
+    },
+    {
+      "title": "Sécurisation des accès aux données et applications",
+      "items": [
+        "Comprendre les enjeux de la sécurisation des accès aux données sensibles",
+        "Identifier les solutions de contrôle d'accès (DLP, DRM, etc.) et leurs fonctionnalités",
+        "Connaître les bonnes pratiques pour la gestion des accès aux applications critiques",
+        "Évaluer les risques liés aux accès à distance et mettre en place des mesures de sécurisation",
+        "Mettre en place des processus de surveillance des accès et de détection d'anomalies"
+      ]
+    },
+    {
+      "title": "Gestion des identités dans le cloud et les environnements hybrides",
+      "items": [
+        "Comprendre les spécificités de la gestion des identités dans les environnements cloud",
+        "Identifier les solutions d'IAM (Identity and Access Management) adaptées aux environnements hybrides",
+        "Connaître les bonnes pratiques pour sécuriser les identités dans un contexte de cloud computing",
+        "Évaluer les risques liés à la fédération d'identités et mettre en place des solutions adéquates",
+        "Intégrer la gestion des identités dans une stratégie globale de cybersécurité"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Conception d'une politique d'authentification forte",
+      "description": "Énoncé : Votre entreprise souhaite renforcer la sécurité de ses systèmes d'information en mettant en œuvre une politique d'authentification forte. Votre tâche est de concevoir une politique d'authentification qui inclut l'utilisation de l'authentification multi-facteurs (MFA). Vous devrez décrire les types de facteurs qui seront employés (quelque chose que l'utilisateur sait, quelque chose qu'il a, et quelque chose qu'il est), les conditions d'activation de l'authentification multi-facteurs (par exemple, lors de la connexion à des systèmes critiques ou de l'accès à distance) et les mesures à prendre en cas de perte d'un des facteurs d'authentification.",
+      "deliverables": []
+    },
+    {
+      "title": "Analyse de risques liés aux identités et accès inactifs",
+      "description": "Énoncé : Vous êtes chargé d'auditer les comptes utilisateurs d'une organisation. Votre mission consiste à identifier les comptes inactifs et à évaluer les risques associés à ces comptes. Pour cela, vous devrez élaborer une liste de critères pour déterminer ce qu'est un compte inactif, identifier ces comptes dans un système donné, et proposer une procédure pour les désactiver ou les supprimer, en prenant en compte les éventuelles contraintes règlementaires ou d'entreprise.",
+      "deliverables": []
+    },
+    {
+      "title": "Mise en place d'une revue des accès",
+      "description": "Énoncé : Afin de s'assurer que les employés ont uniquement accès aux ressources nécessaires à l'exercice de leurs fonctions, votre entreprise a décidé de mettre en place un processus de revue des accès. Vous êtes responsable de concevoir et de documenter ce processus. Il devra inclure les étapes à suivre pour réaliser la revue des accès, la fréquence des revues, les rôles et responsabilités des différentes parties prenantes, ainsi que la manière dont les modifications des accès seront suivies et documentées.",
+      "deliverables": []
+    },
+    {
+      "title": "Planification de la sécurisation des accès à distance",
+      "description": "Énoncé : Avec l'augmentation du télétravail, votre entreprise doit impérativement sécuriser les accès à distance à son réseau d'entreprise. Vous devez concevoir un plan de sécurisation qui comprendra la sélection d'une solution de VPN, la mise en place de pare-feu et de systèmes de détection d'intrusions, ainsi que des procédures pour la formation des employés aux bonnes pratiques de sécurité. Décrivez également comment vous comptez tester l'efficacité de ces mesures.",
+      "deliverables": []
+    },
+    {
+      "title": "Évaluation d'une solution IAM pour environnements hybrides",
+      "description": "Énoncé : Votre entreprise opère dans un environnement hybride avec des ressources tant sur site qu’en cloud. Vous êtes chargé d'évaluer différentes solutions d'IAM (Identity and Access Management) adaptées à cet environnement. Votre exercice consistera à élaborer une grille d'évaluation comprenant des critères tels que la compatibilité avec les infrastructures existantes, la facilité de gestion des identités, l'intégration de l'authentification forte, le support de la fédération d'identités, et la conformité aux règlementations en vigueur. Sur la base de cette grille, vous réaliserez une analyse comparative de trois solutions IAM du marché et formulerez une recommandation pour la solution la plus adaptée aux besoins de votre entreprise.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.)",
+    "Gestion des identités et accès sécurisés"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "Gricha Zhang. 'Gestion des identités en entreprise : Enjeux, pratiques et perspectives'. Dunod",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "Henri Entin. 'Sécurité des systèmes d'information : Authentification et contrôle d'accès'. Eyrolles",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "Claire Wollis. 'Cybersécurité dans le cloud : Stratégies et meilleures pratiques'. Vuibert",
+      "publisher": ""
+    }
+  ]
+}

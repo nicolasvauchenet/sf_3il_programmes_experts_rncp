@@ -1,0 +1,52 @@
+{
+  "code": "E7",
+  "title": "Rapport d’analyse et des préconisations",
+  "officialText": "Rapport d’analyse et des préconisations",
+  "modalities": "Épreuve écrite",
+  "deliverables": [
+    "Rapport d’analyse et des préconisations"
+  ],
+  "criteria": [
+    {
+      "code": "CR12",
+      "title": "Virtualisation et",
+      "officialText": "Cr 12. Virtualisation et\nl'intégration et le déploiement continu utilisant une plateforme conteneurisation pour situation reconstituée sur ordinateur conteneurisation :\n(Cloud & Devops) standardiser et simplifier le déploiement\n- La conteneurisation est\nd'applications sur tous types d'infrastructure. - Mise en place d'un système\nL'administrateur DevOps orchestre fonctionnelle de manière\nl'intégration et la continuité des opérations d'automatisation d'intégration et de identique sous tous types\ninformatiques avec le développement déploiement continu. d'environnement d'exécution.\nlogiciel, jouant ainsi un rôle essentiel dans la\nmise en place d'infrastructures modernes et C13. Coordonner les containeurs avec des logiciels Validation C12, C13 et C14"
+    },
+    {
+      "code": "CR13",
+      "title": "Orchestration et",
+      "officialText": "Cr 13. Orchestration et\nagiles. Il crée des conteneurs avec des d'orchestration en garantissant l'activité des pipelines déploiement continus :\nplateforme tel que Docker ou Podman, pour d'intégration et de déploiement continus pour\n- L'outil d'orchestration garantit\nchaque composant de l'application, optimiser la résilience et la performance des\nla gestion dynamique des\npermettant une isolation efficace et une applications.\nressources.\ngestion simplifiée des dépendances. Il\nimplémente et configure des plateformes - La mise à l'échelle (Scaling) des\nd'orchestration de conteneurs tel que ressources orchestrées garantit\nKubernetes, assurant leur fonctionnement la robustesse des pipelines\noptimal sur divers environnements. Il d'intégration et de\ndéploiement continus.\nautomatise les pipelines de développement\navec des outils tel que Jenkins, où chaque\nC14. Intégrer et déployer les pratiques de sécurité"
+    },
+    {
+      "code": "CR14",
+      "title": "Gestion et déploiement",
+      "officialText": "Cr 14. Gestion et déploiement\nmodification du code lance\ndans les processus de développement et cloud :\nautomatiquement des tests et déploiements,\nd'exploitation en collaborant avec les équipes de\nassurant que seules les versions vérifiées - Conformité de\ndéveloppement et en utilisant des outils DevOps,\nsoient publiées. Ces pratiques renforcent la l'automatisation : Les\npour maitriser les risques et assurer la conformité des\ncollaboration entre les équipes de processus d'automatisation mis\napplications sur des plateformes cloud.\ndéveloppement et opérations, essentielle en place pour la gestion et le\npour un déploiement rapide et sécurisé des déploiement des ressources\napplications sur des plateformes cloud cloud sont conformes aux\ncomme AWS, Azure, et Google Cloud. meilleures pratiques DevOps.\n- Sécurité des déploiements :\nLes mesures de sécurité\nappliquées lors de\nl'automatisation garantissent la\nprotection des applications et\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\ndes données hébergées contre\nles accès non autorisés et\nautres vulnérabilités\npotentielles.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nREFERENTIEL DE COMPETENCES\nREFERENTIEL D’ACTIVITES REFERENTIEL D’EVALUATION\nidentifie les compétences et les connaissances, y\ndécrit les situations de travail et les activités définit les critères et les modalités d'évaluation des acquis\ncompris transversales, qui découlent du référentiel\nexercées, les métiers ou emplois visés\nd’activités MODALITÉS D’ÉVALUATION CRITÈRES D’ÉVALUATION\nActivité 3. Sécurisation et mise en place de C15. Développer, documenter et mettre en œuvre des Epreuve 7 : Mise en situation"
+    },
+    {
+      "code": "CR15",
+      "title": "Développement de la",
+      "officialText": "Cr 15. Développement de la\nstratégies de cybersécurité et protection des politiques de sécurité informatique, en évaluant les reconstituée sur ordinateur politique de sécurité\ndonnées risques et en établissant des stratégies de mitigation en\n- Qualité de l’analyse de la\n- Analyser un SI et sa politique de\ncollaboration avec les équipes de gouvernance et de\nActivité 3.1 : Mise en œuvre des politiques de PSSI fournie : Les cadres tels\nsécurité pour détecter ses failles\nconformité, et en se servant d'outils d'analyse de risques\nsécurité et gestion des risques par l'Ethical que le RGPD (Règlement\néventuelles et proposer les\net en réalisant des procédures pour renforcer la posture\nHacking Général sur la Protection des\ncontre-mesures adaptées\nde sécurité de l'entreprise et protéger les actifs\nDonnées), ISO/IEC 27001\nL'administrateur contribue à l’élaboration et informationnels.\n- Analyser le résultat d’un audit (norme internationale pour\napplique des politiques de sécurité pour protéger\ntechnique de scan\nla gestion de la sécurité de\nles infrastructures informatiques contre les\nvulnérabilités et les cyberattaques. Il réalise des Rapport d’analyse et préconisations l'information), et autres\naudits de sécurité, évalue les risques et renforce (3h) réglementations sectorielles\nles systèmes avec des solutions de prévention, de spécifiques sont respectés.\ndétection et de réponse aux incidents. Cette Les processus d'audit\ntâche comprend la documentation de cette internes réguliers et des\npolitique de sécurité et sa communication aux revues indépendantes sont\néquipes à la cybersécurité ainsi que la mise à jour documentés.\ncontinue des pratiques de sécurité en réponse à\n- Pertinence : Les contre-\nl'évolution du paysage des menaces. En\ncomplément, il intègre l'Ethical Hacking comme mesures proposées sont\nun volet crucial de la stratégie de sécurité : il directement alignées avec les\nmène des tests de pénétration et des simulations vulnérabilités identifiées et\nd'attaque pour identifier et remédier aux assurent une réponse\nvulnérabilités avant qu'elles ne soient exploitées adéquate et ciblée pour\npar des acteurs malveillants, renforçant ainsi la renforcer la sécurité de\nrésilience des systèmes face aux menaces\nl'infrastructure.\némergentes.\nC16. Conduire des audits de sécurité réguliers pour"
+    },
+    {
+      "code": "CR16",
+      "title": "Conduite d'audit de",
+      "officialText": "Cr 16. Conduite d'audit de\névaluer l'efficacité des mesures de sécurité en place, en sécurité\nutilisant des méthodologies d'audit standardisées et en\n- Qualité de l’analyse de\ncollaboration avec les équipes internes et les auditeurs\nl’audit technique : L'analyse\nde l'audit technique permet\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nexternes, afin de détecter les faiblesses et de d'identifier clairement les\nrecommander des améliorations. failles de sécurité et\nproposer des\nrecommandations précises\npour y remédier. Au moins\n90% des points de\nvulnérabilité ont été\ndétectés et qualifies en\ntermes de risques.\n- Pertinence : Les\nvulnérabilités identifiées\ngarantissent que les risques\nles plus critiques sont pris en\ncompte de manière à\nsécuriser le SI\nC17. Élaborer et mettre en œuvre des actions"
+    },
+    {
+      "code": "CR17",
+      "title": "Élaboration d'actions",
+      "officialText": "Cr 17. Élaboration d'actions\ncorrectives en analysant les résultats des audits de correctives\nsécurité et en identifiant les vulnérabilités et les non-\n- Pertinence : Les contre-\nconformités, en coopération avec les équipes de sécurité\nmesures suggérées\net de conformité, afin d'améliorer continuellement les\nrépondent aux vulnérabilités\nmesures de sécurité de l'organisation et de garantir la\ndétectées lors des audits et\nconformité réglementaire.\nassurent une amélioration de\nla sécurité de l'infrastructure.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nActivité 3.2 Administration des systèmes de C18. Implémenter les outils et systèmes de sécurité tels"
+    }
+  ],
+  "rules": [
+    "Bloc: 3",
+    "Coefficient: 3",
+    "Total: 60",
+    "Validation: Évaluation validée ≥ 30\nCompensation possible* ≥21 et <30 \nRattrapage obligatoire <21"
+  ],
+  "thresholds": {
+    "validatedMin": 30,
+    "compensationMin": 21,
+    "retakeBelow": 21
+  }
+}

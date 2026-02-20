@@ -1,0 +1,93 @@
+{
+  "code": "BC01-FM03",
+  "title": "Supervision des infrastructures",
+  "summary": "Les objectifs de ce module de cours sont de comprendre les enjeux et les concepts de base de la supervision des infrastructures, de savoir mettre en place et configurer des solutions de supervision, et de maîtriser la supervision des performances, de la sécurité et la gestion des incidents.",
+  "workload": {
+    "days": 2,
+    "hours": 14
+  },
+  "prerequisites": [
+    "Connaissances de base en administration système et réseau, familiarité avec les concepts informatiques liés aux infrastructures IT."
+  ],
+  "objectives": [
+    "Les objectifs de ce module de cours sont de comprendre les enjeux et les concepts de base de la supervision des infrastructures, de savoir mettre en place et configurer des solutions de supervision, et de maîtriser la supervision des performances, de la sécurité et la gestion des incidents."
+  ],
+  "skillsTargeted": [
+    "C06"
+  ],
+  "outline": [
+    {
+      "title": "Introduction à la supervision des infrastructures",
+      "items": [
+        "Comprendre les enjeux de la supervision des infrastructures",
+        "Connaître les principaux outils de supervision disponibles sur le marché",
+        "Identifier les différents types de supervision (réactive, proactive, prédictive)",
+        "Comprendre les concepts de base de la supervision (agents, sondes, tableaux de bord)"
+      ]
+    },
+    {
+      "title": "Mise en place d'une solution de supervision",
+      "items": [
+        "Définir les besoins en supervision en fonction des infrastructures",
+        "Choisir les outils de supervision adaptés aux besoins spécifiques",
+        "Installer et configurer les outils de supervision",
+        "Mettre en place les alertes et les notifications",
+        "Tester la solution de supervision mise en place"
+      ]
+    },
+    {
+      "title": "Supervision des performances",
+      "items": [
+        "Comprendre l'importance de la surveillance des performances",
+        "Utiliser les outils de supervision pour analyser les performances",
+        "Mettre en place des indicateurs de performance pertinents",
+        "Optimiser les performances en se basant sur les données de supervision",
+        "Mettre en place des alertes en cas de dégradation des performances"
+      ]
+    },
+    {
+      "title": "Supervision de la sécurité",
+      "items": [
+        "Identifier les menaces potentielles à surveiller",
+        "Mettre en place des outils de supervision de la sécurité",
+        "Comprendre les indicateurs de sécurité à surveiller",
+        "Analyser les logs de sécurité pour détecter les incidents",
+        "Mettre en place des alertes en cas de comportements suspects"
+      ]
+    },
+    {
+      "title": "Gestion des incidents",
+      "items": [
+        "Comprendre le processus de gestion des incidents",
+        "Utiliser les données de supervision pour diagnostiquer les incidents",
+        "Mettre en place des procédures de remédiation basées sur la supervision",
+        "Améliorer les processus en se basant sur l'analyse des incidents",
+        "Utiliser la supervision pour évaluer l'efficacité des actions de remédiation"
+      ]
+    }
+  ],
+  "exercises": [],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.).",
+    "Supervision des infrastructures"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "'Supervision des systèmes et réseaux : Concepts, architectures et mises en œuvre' par Jean- François Chazal, Olivier Drean, Guillaume Florent.",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "'Nagios : Supervision open source' par Frédéric Boucault.",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "'Sécurité des systèmes d'information : Introduction à la cybersécurité' par Michel Lemoine.",
+      "publisher": ""
+    }
+  ]
+}

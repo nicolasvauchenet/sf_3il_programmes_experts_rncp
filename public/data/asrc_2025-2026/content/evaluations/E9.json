@@ -1,0 +1,47 @@
+{
+  "code": "E9",
+  "title": "Mise en place d’un plan de sauvegarde",
+  "officialText": "Mise en place d’un plan de sauvegarde",
+  "modalities": "Épreuve écrite",
+  "deliverables": [
+    "Mise en place d’un plan de sauvegarde"
+  ],
+  "criteria": [
+    {
+      "code": "CR18",
+      "title": "Protection et détection",
+      "officialText": "Cr 18. Protection et détection\nsécurité et des contrôles d'accès que les pares-feux, les IDS/IPS, en s'assurant de leur reconstituée sur ordinateur des intrusions\nconfiguration optimale et de leur mise à jour, en\nL'administrateur gère et configure les systèmes - Qualité des choix des outils :\nA partir d'une étude de cas d'une\ntravaillant de concert avec l'équipe réseau et les\nde sécurité tels que les pare-feu, les systèmes de Les outils sélectionnés pour\ninfrastructure réseau d'entreprise,\nspécialistes de la sécurité, pour prévenir les intrusions et\nprévention d'intrusion et les systèmes de la protection et la détection\nle candidat proposera un rapport\nprotéger les réseaux de l'entreprise.\ndétection des intrusions. Il administre également des intrusions répondent aux\nd’analyse et de préconisations\nle contrôle d'accès en mettant en œuvre des besoins de l'environnement\nd'amélioration de l'existant. (3h)\npolitiques d'authentification forte et adaptée aux spécifique de l'entreprise\nC18, C19\npersonnes en situation de handicap en\n- Qualité des règles de filtrage\nsupervisant la gestion des identités et en\n: Les règles de filtrage\ncontrôlant les accès aux ressources critiques de\npermettent d' alerter et de\nl'entreprise pour prévenir les accès non\nbloquer les activités\nautorisés.\nsuspectes sans impacter\nnégativement l'activité de\nl'entreprise\n- Pertinence du ou des outils :\nLa configuration du ou des\noutils de détection optimise\nla capacité à identifier et\nrépondre rapidement aux\ntentatives d'intrusion\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nC19. Administrer les systèmes de gestion des identités"
+    },
+    {
+      "code": "CR19",
+      "title": "Gestions des politiques",
+      "officialText": "Cr 19. Gestions des politiques\net des accès (IAM), en mettant en œuvre des politiques d'accès\nd'accès rigoureuses et en utilisant des technologies\n- Qualité des propositions\nd'authentification avancées (MFA) et tenant compte de\npour les systèmes de gestion\npersonnes en situation de handicap, pour garantir que\ndes identités : Les\nseul le personnel autorisé a accès aux systèmes critiques\npropositions faites pour le\net aux données sensibles.\nsystème de gestion des\nidentités facilité une\ncompréhension approfondie\ndes exigences de sécurité et\nfaciliter une gestion efficace\net sécurisée des accès\nutilisateurs.\n- Pertinence des politiques\nd’accès : Les politiques\nd'accès proposées sont\npertinentes et alignées avec\nles niveaux de sécurité requis\npar l'organisation.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nActivité 3.3 Supervision et contrôle de la C20. Superviser les opérations de sauvegarde et de Epreuve 9 : (Individuelle) : Mise en"
+    },
+    {
+      "code": "CR20",
+      "title": "Gestion et supervision des",
+      "officialText": "Cr 20. Gestion et supervision des\nprotection des données et de la conformité restauration des données, en élaborant des plans de situation reconstituée sur plan de sauvegarde\nréglementaire reprise après sinistre, en coopération avec les équipes IT ordinateur - Efficacité : Les solutions de\net les parties prenantes opérationnelles, pour assurer la\nL'administrateur est activement impliqué dans le sauvegarde mises en place\nPlan de Reprise d'Activité (PRA), collaborant\ncontinuité des activités et la protection des données.\n- Mise en place d'un plan de permettent de restaurer les\nétroitement avec la Direction du Système sauvegarde. données dans les délais\nd'Information (DSI) pour assurer la cohérence et prévus par le plan de reprise\nl'efficacité des stratégies de récupération. Il Validation C20, C21, C22 d'activité\ninstaure un système de support et de suivi des\n- Complétude : Les plans de\nincidents à travers un processus de ticketing\nreprise après sinistre\norganisé en niveaux N1, N2, N3, permettant une\ngarantissent le respect du\ngestion ordonnée et une résolution rapide des\nRPO (Recovery Point\nproblèmes. En outre, il garantit que les Objectifs\nObjective), quantité\nde Temps de Récupération (RTO) et les Objectifs\nmaximale de données qu'il\nde Point de Récupération (RPO) sont respectés\nest acceptable de perdre lors\nselon le plan de reprise d'activité établi par la DSI,\nd'une interruption.\nassurant ainsi la préparation et la résilience de\nl'entreprise face à des situations imprévues. Il\nC21. Assurer le support et le suivi des incidents IT en"
+    },
+    {
+      "code": "CR21",
+      "title": "Respect des Accords de",
+      "officialText": "Cr 21. Respect des Accords de\ns'assure que les pratiques de sauvegarde et de\nsupervisant les équipes techniques à l'aide d'outils de Niveaux de Services SLA\nrestauration sont conformes aux\ngestion d'incidents et en communiquant avec les\n- Efficacité : Les scénarios\nréglementations en vigueur, telles que le RGPD,\nutilisateurs et différentes parties prenantes, afin de\ndéfinis permettent une\npar des évaluations de conformité régulières et\nrespecter les objectifs en RTO et RPO établis par les SLA\nidentification rapide et\nl'application des mesures correctives nécessaires\ndans le Plan de Reprise d'Activité sous la Direction des\nefficace des problèmes,\npour répondre aux exigences légales et\nSystèmes d'Information.\ngarantissant une réponse\nnormatives, tout en minimisant l'interruption des\nadéquate et un\nactivités commerciales et la perte de données en\nrétablissement rapide des\ncas d'incident.\nservices conformément aux\nniveaux de service définis.\n- Pertinence : Les outils\nsélectionnés permettent une\ngestion et un suivi efficaces\ndes incidents, assurant une\nintervention rapide et\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nconforme aux exigences\nopérationnelles de\nl'entreprise.\nC22. Assurer la conformité aux réglementations de"
+    },
+    {
+      "code": "CR22",
+      "title": "Gestion de la conformité",
+      "officialText": "Cr 22. Gestion de la conformité\nprotection des données, telles que le RGPD, en menant\n- Adéquation des audits de\ndes évaluations et des audits de conformité, en\nconformité : Les audits\ncollaboration avec les conseillers juridiques et les\nréalisés permettent\nexperts en réglementation, et en mettant en place des\nd'identifier les non-\nactions correctives, pour éviter les sanctions et renforcer\nconformités aux\nla confiance des parties prenantes dans la gouvernance\nréglementations de\ndes données de l'entreprise.\nprotection des données,\ntelles que le RGPD.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nREFERENTIEL DE COMPETENCES\nREFERENTIEL D’ACTIVITES REFERENTIEL D’EVALUATION\nidentifie les compétences et les connaissances, y\ndécrit les situations de travail et les activités définit les critères et les modalités d'évaluation des acquis\ncompris transversales, qui découlent du référentiel\nexercées, les métiers ou emplois visés\nd’activités MODALITÉS D’ÉVALUATION CRITÈRES D’ÉVALUATION\nActivité 4. Conduite de projet d'infrastructure C23. Analyser les besoins opérationnels et les traduire"
+    }
+  ],
+  "rules": [
+    "Bloc: 3",
+    "Coefficient: 4",
+    "Total: 80",
+    "Validation: Évaluation validée ≥ 40\nCompensation possible* ≥28 et <40 \nRattrapage obligatoire <28"
+  ],
+  "thresholds": {
+    "validatedMin": 40,
+    "compensationMin": 28,
+    "retakeBelow": 28
+  }
+}

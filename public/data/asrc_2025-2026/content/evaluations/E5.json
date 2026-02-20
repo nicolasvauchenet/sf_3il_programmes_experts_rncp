@@ -1,0 +1,32 @@
+{
+  "code": "E5",
+  "title": "Mise en service de la solution",
+  "officialText": "Mise en service de la solution",
+  "modalities": "Épreuve écrite",
+  "deliverables": [
+    "Mise en service de la solution"
+  ],
+  "criteria": [
+    {
+      "code": "CR10",
+      "title": "Mise en service de",
+      "officialText": "Cr 10. Mise en service de\nCisco, Stormshield ou Fortinet. En collaboration réseaux de données et voix, en supervisant l'installation solutions Voix/Data\navec l'équipe réseau, il garantit une connectivité et la configuration dans l'environnement de production, Epreuve 5 : Mise en service de la\n- Couverture des tests : Les\nsolutions (2h)\nfiable et sécurisée, essentielle au maintien de la en collaboration avec les équipes techniques et les\ntests (de connectivité,\ncontinuité des activités. L'automatisation des fournisseurs, pour garantir l'efficacité des\nGNS3 d'authentification, d'appel,\nprocessus réseautiques avec des outils adaptés communications internes et externes et assurer la\n...) couvrent le\nest au cœur de ses missions pour augmenter continuité des services. Validation C9, C10, C11 fonctionnement des\nl'efficience opérationnelle. À travers les systèmes\ndifférents services installés\nde surveillance comme Zabbix et Centreon, il\n- Clarté des tests : La\nréalise une supervision proactive, permettant\ndocumentation des tests\nune réaction rapide face aux incidents et assurant\npermet à l'ensemble des\nune performance réseau optimale en accord avec\ncollaborateurs de pouvoir les\nmettre en œuvre.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nles besoins du système d'information de\nC11. Superviser et assurer la maintenance du réseau en"
+    },
+    {
+      "code": "CR11",
+      "title": "Supervision du réseau",
+      "officialText": "Cr 11. Supervision du réseau\nl'entreprise.\nutilisant des systèmes de monitoring, en collaboration\n- Complétude de la\navec les équipes de sécurité informatique et\nSurveillance : la solution\nd'exploitation, pour maintenir une performance réseau\npermet d'assurer un suivi en\noptimale.\ntemps réel des différents\nservices\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nActivité 2.2 Conception et réalisation de C12. Développer des environnements virtualisés en"
+    }
+  ],
+  "rules": [
+    "Bloc: 2",
+    "Coefficient: 2",
+    "Total: 120",
+    "Validation: Évaluation validée ≥ 60\nCompensation possible* ≥42 et <60 \nRattrapage obligatoire <42"
+  ],
+  "thresholds": {
+    "validatedMin": 60,
+    "compensationMin": 42,
+    "retakeBelow": 42
+  }
+}

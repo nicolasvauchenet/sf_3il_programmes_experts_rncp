@@ -1,0 +1,37 @@
+{
+  "code": "E11",
+  "title": "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)",
+  "officialText": "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)",
+  "modalities": "Épreuve écrite",
+  "deliverables": [
+    "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)"
+  ],
+  "criteria": [
+    {
+      "code": "CR23",
+      "title": "Analyse des Besoins",
+      "officialText": "Cr 23. Analyse des Besoins\nsystèmes et réseaux sécurisée en exigences fonctionnelles et techniques détaillées, en Mise en situation reconstituée écrit\n- Exhaustivité de l'analyse :\nActivité 4.1 Étude de faisabilité et définition\nconduisant des études de faisabilité et en évaluant les et/ou sur ordinateur\nAu moins 80% des besoins\noptions technologiques, pour définir des solutions\ndes exigences techniques - Rédaction d'une étude d'avant- des utilisateurs et des parties\ninformatiques qui s'alignent avec les objectifs\nprojet prenantes sont identifiés par\nL'administrateur système, en tant qu'expert stratégiques de l'entreprise.\nrapport à ceux mentionnés\ntechnique, joue un rôle essentiel dans la phase de\nValidation C23, C24 dans les résultats d'enquêtes\nconception préliminaire des projets\net d'interviews. L'intégralité\ninformatiques. Il est chargé de la traduction\nprécise des besoins opérationnels en exigences des sources a été exploitée.\nfonctionnelles et techniques détaillées. À ce titre,\n- Précision de l'identification\nil conduit les études de faisabilité, analysant avec\ndes objectifs : Les objectifs\nrigueur les critères de performance et les\nidentifiés par le candidat\nspécifications techniques requises pour chaque\ncouvrent 100% des objectifs\nsolution proposée. Son travail consiste à évaluer\némis par les utilisateurs.\nles options technologiques, à identifier les\nressources nécessaires et à estimer les risques\n- Qualité des choix\nassociés, en tenant compte de la stratégie globale\ntechnologiques définies : Les\nde l'entreprise et des impératifs de coût et de\nchoix technologiques en\ndélai. Il rédige des documents de spécifications\ntermes de protocole de\nqui serviront de base aux choix technologiques et\ncommunication,\naux décisions d'investissement, garantissant ainsi\néquipements réseau,\nque les solutions retenues sont non seulement\ntechnologie de virtualisation\nviables mais aussi alignées sur les objectifs à long\nterme de l'organisation et les normes de proposés correspondent aux\nl'industrie. besoins exprimés.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nC24. Rédiger des documents de spécification technique"
+    },
+    {
+      "code": "CR24",
+      "title": "Rédaction de Documents",
+      "officialText": "Cr 24. Rédaction de Documents\nqui serviront de référence pour les décisions de Projet\ntechnologiques et les investissements, en assurant que\n- Conformité du cahier des\nles solutions choisies soient viables, rentables et\ncharges : Le cahier des\nconformes aux normes de l'industrie.\ncharges, la note de cadrage\ncorrespondent aux exigences\nétablies par les parties\nprenantes et les standards\nde l'entreprise.\n- Clarté et précision : Les\ndocuments sont rédigés de\nmanière précise et\ncompréhensible par les\ndifférentes parties\nprenantes.\n- Solutions techniques et\nperformance : Les solutions\ntechniques et leurs\nperformances attendues\nsont correctement évaluées\net décrites dans les\ndocuments de projet.\nIntitulé : Administrateur Système, Réseaux et Cybersécurité\nActivité 4.2 Planification et suivi de projet C25. Orchestrer et animer des projets informatiques en Mise en situation professionnelle"
+    },
+    {
+      "code": "CR25",
+      "title": "Planification et Conduite",
+      "officialText": "Cr 25. Planification et Conduite\nselon les méthodologies agiles utilisant des méthodologies agiles pour planifier, reconstituée d’une durée de 2 à 5 de Projet\nexécuter et surveiller le travail de développement, et en\nL'administrateur participe à la planification, le jour consécutifs. - Alignement méthodologique\nfacilitant la communication entre toutes les parties\nsuivi et l'exécution de projets informatiques en se : Le choix et l'application de\nbasant sur les principes agiles. Il coanime les\nprenantes y compris en situation de handicap pour\nEpreuve 11 : (Collective): la méthodologie de gestion\natteindre les objectifs définis.\nsprints, prépare les backlogs et facilite les stand- Compte rendu d'activité (livrables de projet sont appropriés au\nups quotidiens pour garantir une progression collectifs) contexte du projet, avec des\ncohérente et continue du projet. En s'appuyant preuves de prise en compte\nsur des outils comme JIRA, Trello ou Kanban, il"
+    }
+  ],
+  "rules": [
+    "Bloc: 4",
+    "Coefficient: 2",
+    "Total: 100",
+    "Validation: Évaluation validée ≥ 50\nCompensation possible* ≥35 et <50 \nRattrapage obligatoire <35"
+  ],
+  "thresholds": {
+    "validatedMin": 50,
+    "compensationMin": 35,
+    "retakeBelow": 35
+  }
+}

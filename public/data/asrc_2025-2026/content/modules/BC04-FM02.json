@@ -1,0 +1,121 @@
+{
+  "code": "BC04-FM02",
+  "title": "Gestion de projet (MOE)",
+  "summary": "Acquérir une compréhension approfondie des outils collaboratifs et savoir les utiliser pour améliorer la communication et la gestion des projets.",
+  "workload": {
+    "days": 2,
+    "hours": 14
+  },
+  "prerequisites": [
+    "Connaissance de base en gestion de projet, familier avec les principes fondamentaux de la gestion d'équipe et de communication, et expérience pratique préalable avec au moins un outil collaboratif."
+  ],
+  "objectives": [
+    "Acquérir une compréhension approfondie des outils collaboratifs et savoir les utiliser pour améliorer la communication et la gestion des projets. Apprendre à sélectionner et adapter les méthodologies de gestion de projet en fonction des besoins spécifiques d'un projet donné. Développer des compétences en élaboration de plans de projet, gestion proactive des risques et surveillance des indicateurs de performance pour assurer la réussite des projets."
+  ],
+  "skillsTargeted": [
+    "C25",
+    "C26",
+    "C27"
+  ],
+  "outline": [
+    {
+      "title": "Mise en œuvre d'outils collaboratifs",
+      "items": [
+        "Comprendre l'importance des outils collaboratifs dans la coordination des équipes",
+        "Identifier les différents types d'outils collaboratifs disponibles",
+        "Choisir les outils collaboratifs les plus adaptés à la gestion globale du projet",
+        "Mettre en place une communication fluide au sein des équipes grâce aux outils collaboratifs",
+        "Assurer un suivi efficace des tâches à l'aide des outils collaboratifs"
+      ]
+    },
+    {
+      "title": "Sélection et adaptation de la méthodologie de gestion de projet",
+      "items": [
+        "Comprendre les spécificités des méthodologies traditionnelles et agiles",
+        "Identifier les critères de choix entre méthodologie traditionnelle et agile",
+        "Adapter la méthodologie choisie aux besoins et à la dynamique du projet",
+        "Définir les étapes clés et les jalons à atteindre en fonction de la méthodologie sélectionnée",
+        "Assurer une vision claire et un suivi précis du projet grâce à la méthodologie adaptée"
+      ]
+    },
+    {
+      "title": "Élaboration d'un plan de projet exhaustif",
+      "items": [
+        "Identifier les éléments essentiels à inclure dans un plan de projet",
+        "Établir les étapes clés du projet, les jalons à atteindre et les livrables attendus",
+        "Garantir une vision claire du projet à travers un plan exhaustif",
+        "Assurer la cohérence et la complétude du plan de projet",
+        "Communiquer efficacement le plan de projet à l'ensemble des parties prenantes"
+      ]
+    },
+    {
+      "title": "Constitution d'une matrice des risques",
+      "items": [
+        "Comprendre l'importance de la gestion proactive des risques dans un projet",
+        "Évaluer, hiérarchiser et anticiper les risques à l'aide d'une matrice",
+        "Mettre en place des interventions correctives ciblées pour gérer les risques",
+        "Assurer une surveillance constante des risques tout au long du projet",
+        "Minimiser l'impact des risques sur le déroulement du projet"
+      ]
+    },
+    {
+      "title": "Surveillance constante des indicateurs de performance",
+      "items": [
+        "Mettre en place un suivi budgétaire précis pour détecter les écarts éventuels",
+        "Suivre le planning du projet pour assurer le respect des délais",
+        "Utiliser les indicateurs de performance pour réagir et réajuster en temps réel",
+        "Assurer une détection rapide des écarts par rapport au plan initial",
+        "Favoriser une amélioration continue des stratégies de gestion grâce à la surveillance des indicateurs de performance"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Mise en pratique des outils collaboratifs",
+      "description": "Vous travaillez sur un projet de développement logiciel avec une équipe dispersée géographiquement. Choisissez trois outils collaboratifs que vous estimez les plus adaptés pour faciliter la communication et la coordination au sein de votre équipe. Justifiez brièvement votre choix pour chaque outil en expliquant comment il pourrait contribuer à la gestion globale du projet.",
+      "deliverables": []
+    },
+    {
+      "title": "Adaptation de la méthodologie de gestion de projet",
+      "description": "Vous êtes responsable d'un projet de lancement d'un nouveau produit. Identifiez les spécificités de votre projet qui pourraient favoriser l'utilisation d'une méthodologie agile plutôt que traditionnelle, ou vice versa. En fonction de ces spécificités, choisissez et justifiez la méthode de gestion de projet la plus adaptée à votre situation.",
+      "deliverables": []
+    },
+    {
+      "title": "Élaboration d'un plan de projet exhaustif",
+      "description": "Imaginez que vous lancez un nouveau service dans votre entreprise. Établissez les étapes clés du projet, les jalons à atteindre et les livrables attendus. Assurez-vous d'inclure tous les éléments essentiels dans votre plan de projet et expliquez comment vous garantissez sa cohérence et sa complétude.",
+      "deliverables": []
+    },
+    {
+      "title": "Gestion proactive des risques",
+      "description": "En utilisant un exemple concret de projet, créez une matrice des risques en identifiant au moins cinq risques, en les évaluant et en proposant des interventions correctives pour chacun. Assurez-vous de hiérarchiser les risques en fonction de leur impact et de leur probabilité.",
+      "deliverables": []
+    },
+    {
+      "title": "Surveillance des indicateurs de performance",
+      "description": "Supposons que vous avez un budget limité pour un projet donné. Proposez trois indicateurs de performance que vous surveillerez régulièrement pour détecter les écarts budgétaires et réagir en conséquence. Expliquez comment chacun de ces indicateurs vous aidera à assurer le contrôle budgétaire et à garantir la réussite du projet.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Travaux de groupe.",
+    "Gestion de projet (MOE)"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "'Le Grand Livre du Management de Projet' par Michel-Henry Bouchet.",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "'La boîte à outils du chef de projet' par Sébastien Soulez.",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "'Gestion de projet - Approche classique et agile' par Thierry Cros et Farid Moslehi.",
+      "publisher": ""
+    }
+  ]
+}

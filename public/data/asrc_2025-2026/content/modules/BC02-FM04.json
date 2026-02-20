@@ -1,0 +1,116 @@
+{
+  "code": "BC02-FM04",
+  "title": "Intégration et Déploiement Continus",
+  "summary": "Ce module vise à comprendre les concepts clés de l'intégration continue et du déploiement continu, à identifier leurs avantages dans le développement logiciel, et à maîtriser les outils, technologies, et bonnes pratiques associés pour les mettre en œuvre efficacement.",
+  "workload": {
+    "days": 3,
+    "hours": 21
+  },
+  "prerequisites": [
+    "Connaissance de base du cycle de vie logiciel (Software Development Life Cycle), en gestion de versions, familiarité avec les concepts de déploiement d'applications, et expérience pratique avec des environnements de développement, test et production."
+  ],
+  "objectives": [
+    "Ce module vise à comprendre les concepts clés de l'intégration continue et du déploiement continu, à identifier leurs avantages dans le développement logiciel, et à maîtriser les outils, technologies, et bonnes pratiques associés pour les mettre en œuvre efficacement."
+  ],
+  "skillsTargeted": [
+    "C12",
+    "C13",
+    "C14"
+  ],
+  "outline": [
+    {
+      "title": "Introduction à l'intégration et déploiement continus",
+      "items": [
+        "Comprendre les concepts clés de l'intégration continue et du déploiement continu",
+        "Identifier les avantages de l'intégration et déploiement continus dans le développement logiciel",
+        "Connaître les outils et technologies utilisés dans le processus d'intégration et déploiement continus",
+        "Comprendre les bonnes pratiques pour mettre en place l'intégration et déploiement continus",
+        "Définir les objectifs à atteindre à travers l'intégration et déploiement continus"
+      ]
+    },
+    {
+      "title": "La mise en place d'un environnement d'intégration continue",
+      "items": [
+        "Les éléments clés à prendre en compte pour mettre en place un environnement d'intégration continue",
+        "Présentation des principaux outils d'intégration continue",
+        "Comprendre le fonctionnement de chaque outil et ses cas d'utilisation",
+        "Configurer un environnement d'intégration continue avec l'un de ces outils",
+        "Comprendre les bonnes pratiques et les stratégies pour l'utilisation efficace des outils d'intégration continue",
+        "Gérer les pipelines d'intégration continue et les workflows associés"
+      ]
+    },
+    {
+      "title": "Processus de déploiement continu",
+      "items": [
+        "Comprendre les principes du déploiement continu et son importance dans le cycle de développement logiciel",
+        "Identifier les étapes clés du processus de déploiement continu",
+        "Mettre en place un processus de déploiement continu pour une application donnée",
+        "Gérer les environnements de déploiement pour assurer la cohérence et la fiabilité des déploiements",
+        "Mettre en place des tests automatisés dans le processus de déploiement continu"
+      ]
+    },
+    {
+      "title": "Gestion des versions, configurations et environnements",
+      "items": [
+        "Rappeler l’importance de la gestion de versions (tags, branches, releases).",
+        "Distinguer configurations par environnement (dev, test, prod) et bonnes pratiques (config externalisée).",
+        "Introduire les notions de reproductibilité et de rollback (revenir à une version stable).",
+        "Présenter rapidement l’idée d’Infrastructure as Code (au moins au niveau conceptuel)."
+      ]
+    },
+    {
+      "title": "Sécurité, suivi et amélioration continue",
+      "items": [
+        "Sensibiliser aux risques de sécurité dans une chaîne CI/CD (secrets, dépendances, droits).",
+        "Découvrir les scans de sécurité intégrés au pipeline (analyse de dépendances / code).",
+        "Suivre quelques indicateurs simples : taux de réussite, durée des builds, fréquence de déploiement.",
+        "Mettre en place une logique d’amélioration continue : identifier les goulots d’étranglement, simplifier/optimiser les pipelines."
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Les principes de l'intégration continue",
+      "description": "Objectif : Comprendre l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement.\nÉnoncé : Imaginez que vous avez la charge d'une équipe de développement et que vous devez présenter les principes de l'intégration continue à vos collègues. Rédigez une présentation qui met en avant l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement. Votre présentation devra inclure des exemples concrets et des cas d'utilisation.",
+      "deliverables": []
+    },
+    {
+      "title": "Les fondamentaux du déploiement continu",
+      "description": "Objectif : Comprendre les avantages du déploiement continu dans le cycle de développement logiciel et les bonnes pratiques pour assurer un déploiement continu fiable et sécurisé.\nÉnoncé : Élaborez un plan de déploiement continu pour un projet de développement logiciel de votre choix. Identifiez les étapes clés, les outils et technologies à utiliser, ainsi que les bonnes pratiques à adopter pour assurer un déploiement continu fiable et sécurisé. Présentez votre plan avec des justifications pour chaque élément choisi.",
+      "deliverables": []
+    },
+    {
+      "title": "Configuration d'un pipeline d'intégration continue",
+      "description": "Vous êtes chargé de mettre en place un pipeline d'intégration continue pour un projet de développement web. Utilisez l'outil Jenkins pour configurer les étapes du pipeline, y compris la récupération du code source depuis un référentiel (par exemple GitHub), l'exécution des tests unitaires et la génération d'artefacts de déploiement.",
+      "deliverables": []
+    },
+    {
+      "title": "Déploiement continu d'une application",
+      "description": "Vous devez mettre en place un processus de déploiement continu pour une application web. Choisissez l'outil de déploiement que vous avez étudié (par exemple Travis CI) et configurez le déploiement automatique à chaque validation de code sur la branche principale du référentiel.",
+      "deliverables": []
+    },
+    {
+      "title": "La gestion des configurations et des environnements",
+      "description": "Objectif : Comprendre les concepts de gestion des configurations et des environnements, ainsi que l'automatisation de la gestion des environnements de développement, de test et de production.\nÉnoncé : Implémentez un système de gestion de configurations pour un projet de développement logiciel. Choisissez un outil de gestion de configurations et décrivez comment vous allez l'intégrer dans le processus de développement. Identifiez également les moyens d'automatiser la gestion des environnements de développement, de test et de production, en mettant en avant les avantages de cette automatisation.",
+      "deliverables": []
+    },
+    {
+      "title": "L'optimisation des processus d'intégration et de déploiement continus",
+      "description": "Objectif : Apprendre à analyser les métriques et les KPI pour évaluer la performance des processus et à identifier les goulots d'étranglement et les points d'optimisation.\nÉnoncé : Analysez les métriques de performance d'un processus d'intégration continue et de déploiement continu. Identifiez les éventuels goulots d'étranglement et les points d'optimisation. Proposez des solutions concrètes pour améliorer la performance de ces processus en vous basant sur les données recueillies.\nPrésentez vos analyses et propositions dans un rapport détaillé.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "utilisation de supports (ppt",
+    "etc.).",
+    "Intégration et Déploiement Continus"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "Jean-Michel Doudoux, 'Les bases de Jenkins : Mise en œuvre de l'intégration continue'. Emilie Lebel, 'DevOps : Développement et Exploitation – Intégration continue, livraison continue et industrialisation des applications'. François Lambert, 'L'intégration continue : Outil indispensable du développement agile'.",
+      "publisher": ""
+    }
+  ]
+}

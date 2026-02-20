@@ -1,0 +1,18 @@
+{
+  "code": "A1",
+  "title": "Administration et optimisation des systèmes d’exploitation et la virtualisation pour la sécurité et la performance.",
+  "summary": null,
+  "officialText": null,
+  "subActivities": [
+    {
+      "code": "A1.1",
+      "title": "Administration des serveurs, de la virtualisation et Gestion de la qualité de services",
+      "officialText": "L'administrateur système est en charge de d'exploitation Unix, Linux et Windows, assurant opérationnelle du système l'installation, la configuration et le paramétrage conçu permet d'atteindre les Intitulé : Administrateur Système, Réseaux et Cybersécurité besoins de l'entreprise, y compris les serveurs solution mise en œuvre par la qualité de service (QoS) dédiés aux bases de données relationnelles et système conçu assure une l'optimisation des requêtes et l'amélioration des performances des bases de données, jouant un continuité de service conforme rôle clé dans la gestion et l'analyse des données à la qualité de service (QoS) stratégiques. En collaboration étroite avec la avec une minimisation des Direction des Systèmes d'Information (DSI), il pannes ou interruptions participe activement à la gestion des critiques. configurations et des services informatiques, en se conformant aux principes de qualité de service"
+    },
+    {
+      "code": "A1.2",
+      "title": "Maintien de la haute disponibilité et automatisation des systèmes",
+      "officialText": "continuité de l'activité de l'entreprise. maintenance et la gestion avancée des serveurs, améliorations proposées : avec un focus sur la haute disponibilité et la Les améliorations proposées PCA pour proposer des continuité des opérations par la mise en place de permettent d'accroître améliorations et des outils de Plans de Continuité d'Activité (PCA) et de Plans de l'efficacité et la résilience des monitoring adaptés Reprise d'Activité (PRA) structurés. Il supervise le systèmes. Une matrice des stockage et la connectivité réseau, cruciaux pour risques est proposée et les l'architecture l'activité opérationnelle quotidienne. En charge solutions répondent aux du monitoring systématique des infrastructures temps réel et l'analyse des performances, ce qui L'amélioration du Plan de lui permet d'identifier et de traiter Continuité d'Activité garantit proactivement les anomalies avant qu'elles ne la continuité opérationnelle deviennent des problèmes critiques. Il met des services. également en œuvre des scripts automatisés en Python, Shell, et Bash pour optimiser les"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "code": "A3",
+  "title": "Sécurisation et mise en place de stratégies de cybersécurité et protection des données",
+  "summary": null,
+  "officialText": null,
+  "subActivities": [
+    {
+      "code": "A3.1",
+      "title": "Mise en œuvre des politiques de sécurité et gestion des risques par l'Ethical Hacking",
+      "officialText": "L'administrateur contribue à l’élaboration et informationnels. applique des politiques de sécurité pour protéger technique de scan la gestion de la sécurité de les infrastructures informatiques contre les audits de sécurité, évalue les risques et renforce (3h) réglementations sectorielles les systèmes avec des solutions de prévention, de spécifiques sont respectés. détection et de réponse aux incidents. Cette Les processus d'audit tâche comprend la documentation de cette internes réguliers et des politique de sécurité et sa communication aux revues indépendantes sont équipes à la cybersécurité ainsi que la mise à jour documentés. continue des pratiques de sécurité en réponse à l'évolution du paysage des menaces. En complément, il intègre l'Ethical Hacking comme mesures proposées sont un volet crucial de la stratégie de sécurité : il directement alignées avec les mène des tests de pénétration et des simulations vulnérabilités identifiées et d'attaque pour identifier et remédier aux assurent une réponse vulnérabilités avant qu'elles ne soient exploitées adéquate et ciblée pour par des acteurs malveillants, renforçant ainsi la renforcer la sécurité de résilience des systèmes face aux menaces l'infrastructure. émergentes. évaluer l'efficacité des mesures de sécurité en place, en sécurité utilisant des méthodologies d'audit standardisées et en collaboration avec les équipes internes et les auditeurs l’audit technique : L'analyse de l'audit technique permet"
+    },
+    {
+      "code": "A3.2",
+      "title": "Administration des systèmes de sécurité et des contrôles d'accès",
+      "officialText": "A partir d'une étude de cas d'une travaillant de concert avec l'équipe réseau et les de sécurité tels que les pare-feu, les systèmes de Les outils sélectionnés pour infrastructure réseau d'entreprise, spécialistes de la sécurité, pour prévenir les intrusions et prévention d'intrusion et les systèmes de la protection et la détection le candidat proposera un rapport protéger les réseaux de l'entreprise. détection des intrusions. Il administre également des intrusions répondent aux d’analyse et de préconisations le contrôle d'accès en mettant en œuvre des besoins de l'environnement d'amélioration de l'existant. (3h) politiques d'authentification forte et adaptée aux spécifique de l'entreprise C18, C19 personnes en situation de handicap en supervisant la gestion des identités et en : Les règles de filtrage contrôlant les accès aux ressources critiques de permettent d' alerter et de l'entreprise pour prévenir les accès non bloquer les activités autorisés. suspectes sans impacter négativement l'activité de l'entreprise La configuration du ou des outils de détection optimise la capacité à identifier et répondre rapidement aux tentatives d'intrusion"
+    },
+    {
+      "code": "A3.3",
+      "title": "Supervision et contrôle de la protection des données et de la conformité réglementaire",
+      "officialText": "L'administrateur est activement impliqué dans le sauvegarde mises en place Plan de Reprise d'Activité (PRA), collaborant continuité des activités et la protection des données. étroitement avec la Direction du Système sauvegarde. données dans les délais d'Information (DSI) pour assurer la cohérence et prévus par le plan de reprise instaure un système de support et de suivi des incidents à travers un processus de ticketing reprise après sinistre organisé en niveaux N1, N2, N3, permettant une garantissent le respect du gestion ordonnée et une résolution rapide des RPO (Recovery Point problèmes. En outre, il garantit que les Objectifs Objective), quantité de Temps de Récupération (RTO) et les Objectifs maximale de données qu'il de Point de Récupération (RPO) sont respectés est acceptable de perdre lors selon le plan de reprise d'activité établi par la DSI, d'une interruption. assurant ainsi la préparation et la résilience de l'entreprise face à des situations imprévues. Il"
+    }
+  ]
+}

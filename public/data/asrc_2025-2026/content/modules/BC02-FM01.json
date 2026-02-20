@@ -1,0 +1,122 @@
+{
+  "code": "BC02-FM01",
+  "title": "Infrastructures réseaux sécurisées",
+  "summary": "Les objectifs de ce module de cours sont de permettre aux apprenants de configurer et maintenir des réseaux Voix/data ainsi que des VLAN, de renforcer la sécurité réseau à l'aide d'équipements avancés et de solutions VPN, et d'automatiser les processus réseautiques pour améliorer l'efficience opérationnelle.",
+  "workload": {
+    "days": 4,
+    "hours": 28
+  },
+  "prerequisites": [
+    "Connaissances de base en réseaux informatiques, compréhension des protocoles IP et expérience préalable avec des équipements de réseau tels que routeurs et switches."
+  ],
+  "objectives": [
+    "Les objectifs de ce module de cours sont de permettre aux apprenants de configurer et maintenir des réseaux Voix/data ainsi que des VLAN, de renforcer la sécurité réseau à l'aide d'équipements avancés et de solutions VPN, et d'automatiser les processus réseautiques pour améliorer l'efficience opérationnelle."
+  ],
+  "skillsTargeted": [
+    "C09",
+    "C10",
+    "C11"
+  ],
+  "outline": [
+    {
+      "title": "Configuration et maintenance des réseaux Voix/data et VLAN",
+      "items": [
+        "Comprendre les principes de segmentation réseau",
+        "Maîtriser la configuration des réseaux Voix/data",
+        "Savoir mettre en place et gérer des VLAN",
+        "Assurer la maintenance des réseaux Voix/data et VLAN",
+        "Appliquer une segmentation réseau stratégique"
+      ]
+    },
+    {
+      "title": "Les solutions VPN pour établir des réseaux privés virtuels sécurisés",
+      "items": [
+        "Comprendre le fonctionnement des VPN",
+        "Maîtriser l'installation et la configuration des VPN",
+        "Assurer la sécurité des échanges de données via les VPN",
+        "Gérer les réseaux privés virtuels au sein de l'entreprise",
+        "Mettre en place une politique de sécurité adaptée aux VPN"
+      ]
+    },
+    {
+      "title": "Renforcement de la sécurité réseau avec des équipements avancés",
+      "items": [
+        "Connaître les solutions de sécurité réseau Cisco, Stormshield et Fortinet",
+        "Savoir configurer et administrer ces équipements avancés",
+        "Assurer la protection des données et des échanges via ces équipements",
+        "Mettre en place des stratégies de sécurité adaptées aux besoins de l'entreprise",
+        "Garantir une connectivité fiable et sécurisée grâce à ces équipements"
+      ]
+    },
+    {
+      "title": "Automatisation des processus réseautiques",
+      "items": [
+        "Comprendre l'importance de l'automatisation dans l'efficience opérationnelle",
+        "Maîtriser les outils d'automatisation des processus réseautiques",
+        "Mettre en place des processus automatisés pour augmenter l'efficacité",
+        "Assurer la supervision et la maintenance des processus automatisés",
+        "Adapter l'automatisation aux besoins spécifiques de l'infrastructure réseau"
+      ]
+    },
+    {
+      "title": "Supervision proactive des réseaux",
+      "items": [
+        "Savoir utiliser les outils de surveillance tels que Wireshark, Prometheus et Zabbix",
+        "Assurer une surveillance continue et proactive des réseaux",
+        "Réagir rapidement aux incidents grâce à une supervision proactive",
+        "Optimiser la performance réseau en accord avec les besoins du système d'information",
+        "Mettre en place des mesures préventives basées sur la supervision proactive"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Configuration des réseaux Voix/data et VLAN",
+      "description": "Vous avez la charge de configurer un réseau d'entreprise en mettant en place des réseaux Voix/data et des VLAN. Pour cela, vous devez :\nIdentifier les besoins spécifiques liés à la séparation des réseaux Voix et Data.\nConfigurer les équipements réseau pour assurer une segmentation efficace.\nMettre en place des VLAN pour optimiser la gestion du trafic réseau.\nAssurer la maintenance des réseaux Voix/data et des VLAN en cas de dysfonctionnement.",
+      "deliverables": []
+    },
+    {
+      "title": "Mise en place d'un réseau privé virtuel (VPN)",
+      "description": "Vous devez mettre en place un VPN pour assurer la sécurité des échanges de données au sein de l'entreprise. Les étapes à suivre sont les suivantes :\nSélectionner le type de VPN le plus adapté aux besoins de l'entreprise.\nInstaller et configurer le VPN sur les équipements réseau concernés.\nMettre en place des politiques de sécurité pour garantir la confidentialité des communications.\nMettre en œuvre une gestion efficace des réseaux privés virtuels au sein de l'entreprise.",
+      "deliverables": []
+    },
+    {
+      "title": "Configuration d'équipements avancés de sécurité réseau",
+      "description": "Vous devez configurer des équipements avancés de sécurité réseau (tels que Cisco, Stormshield ou Fortinet) pour garantir la protection des données et des échanges. Les actions à effectuer sont les suivantes :\nComprendre le fonctionnement des équipements de sécurité sélectionnés.\nConfigurer ces équipements pour répondre aux besoins spécifiques de l'entreprise.\nMettre en place des stratégies de sécurité adaptées aux menaces potentielles.\nAssurer une connectivité fiable et sécurisée grâce à ces équipements.",
+      "deliverables": []
+    },
+    {
+      "title": "Automatisation des processus réseautiques",
+      "description": "Vous devez mettre en place des processus automatisés pour augmenter l'efficacité opérationnelle du réseau. Pour cela, vous devez :\nIdentifier les processus réseautiques qui peuvent bénéficier de l'automatisation.\nSélectionner les outils d'automatisation adaptés aux besoins spécifiques de l'infrastructure réseau.\nMettre en place ces processus automatisés et les superviser régulièrement.\nAdapter l'automatisation aux besoins évolutifs de l'infrastructure réseau.",
+      "deliverables": []
+    },
+    {
+      "title": "Supervision proactive des réseaux",
+      "description": "Vous devez mettre en place une surveillance proactive des réseaux en utilisant des outils tels que Wireshark, Prometheus et Zabbix. Les étapes à suivre sont les suivantes :\nConfigurer ces outils de surveillance pour collecter les données pertinentes.\nAssurer une surveillance continue et proactive des performances réseau.\nRéagir rapidement aux incidents détectés grâce à une supervision proactive.\nMettre en place des mesures préventives basées sur l'analyse des données de supervision.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.).",
+    "Infrastructures réseaux sécurisées"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "Olivier Bonaventure, 'Réseaux : Cours et exercices corrigés', Dunod",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "Jean-Philippe Lemaire, 'Les réseaux numériques de données : Internet et les réseaux de télécommunications', Hermès Science Publications",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "Guy Pujolle, 'Les Réseaux', Eyrolles",
+      "publisher": ""
+    }
+  ]
+}

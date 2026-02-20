@@ -1,0 +1,120 @@
+{
+  "code": "BC01-FM05",
+  "title": "Administration des Bases de Données",
+  "summary": "Comprendre les principes fondamentaux et les différences entre les bases de données relationnelles et NoSQL.",
+  "workload": {
+    "days": 2,
+    "hours": 14
+  },
+  "prerequisites": [
+    "Connaissance de base en informatique et en systèmes d'information. Compréhension générale des principes de stockage et de gestion des données."
+  ],
+  "objectives": [
+    "Comprendre les principes fondamentaux et les différences entre les bases de données relationnelles et NoSQL. Acquérir les compétences nécessaires pour concevoir, modéliser, gérer et administrer des bases de données de différents types. Apprendre à optimiser les performances et à sécuriser les bases de données tout en garantissant la qualité et l'accessibilité des données."
+  ],
+  "skillsTargeted": [
+    "C04"
+  ],
+  "outline": [
+    {
+      "title": "Introduction aux bases de données relationnelles et NoSQL",
+      "items": [
+        "Principes de base des bases de données relationnelles",
+        "Principes de base des bases de données NoSQL",
+        "Différences entre les deux types de bases de données",
+        "Avantages et inconvénients des bases de données relationnelles et NoSQL",
+        "Cas d'utilisation appropriés pour chaque type de base de données"
+      ]
+    },
+    {
+      "title": "Conception et modélisation des bases de données",
+      "items": [
+        "Les concepts de modélisation des données",
+        "Les différentes étapes de conception d'une base de données",
+        "Les types de modèles de données (entité-association, relationnel, conceptuel)",
+        "Les bonnes pratiques de modélisation des données",
+        "L'importance de la normalisation des données"
+      ]
+    },
+    {
+      "title": "Gestion et administration des bases de données relationnelles",
+      "items": [
+        "Installation et configuration d'un système de gestion de base de données relationnelle",
+        "Gestion des utilisateurs et des autorisations",
+        "Sauvegarde et restauration de bases de données",
+        "Surveillance des performances et optimisation des requêtes",
+        "Maintenance et gestion des incidents"
+      ]
+    },
+    {
+      "title": "Gestion et administration des bases de données NoSQL",
+      "items": [
+        "Installation et configuration d'un système de gestion de base de données NoSQL",
+        "Modélisation des données dans un environnement NoSQL",
+        "Réplication et sharding dans les bases de données NoSQL",
+        "Surveillance des performances et optimisation des requêtes NoSQL",
+        "Sauvegarde et restauration dans un environnement NoSQL"
+      ]
+    },
+    {
+      "title": "Sécurité et optimisation des bases de données",
+      "items": [
+        "Stratégies de sécurité pour les bases de données relationnelles et NoSQL",
+        "Méthodes d'optimisation des performances des bases de données",
+        "Gestion des index et des statistiques",
+        "Utilisation des outils de monitoring et de diagnostic",
+        "Bonnes pratiques pour garantir la cohérence, la qualité et l'accessibilité des données"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Comparaison des bases de données relationnelles et NoSQL",
+      "description": "Description : Vous venez de découvrir les principes de base des bases de données relationnelles et NoSQL. Pour mettre en pratique vos connaissances, comparez les avantages et inconvénients de ces deux types de bases de données dans un cas d'utilisation spécifique. Choisissez un exemple concret et détaillez les raisons pour lesquelles vous opteriez pour une base de données relationnelle ou NoSQL dans ce cas.",
+      "deliverables": []
+    },
+    {
+      "title": "Modélisation des données",
+      "description": "Description : Quels sont les différents types de modèles de données et comment les utilise-t-on dans la conception d'une base de données ? Pour cet exercice, choisissez un domaine d'application (par exemple, un système de gestion d'une bibliothèque ou d'un magasin en ligne) et créez un schéma conceptuel d'une base de données en utilisant le modèle entité-association. Ensuite, expliquez comment vous pourriez traduire ce schéma en un modèle relationnel.",
+      "deliverables": []
+    },
+    {
+      "title": "Gestion des utilisateurs et des autorisations",
+      "description": "Description : Vous venez d'apprendre à gérer les utilisateurs et les autorisations dans une base de données relationnelle. Mettez en pratique vos connaissances en créant deux utilisateurs avec des rôles différents (par exemple, administrateur et utilisateur) et en leur attribuant des autorisations spécifiques sur une base de données de test. Documentez les étapes que vous avez suivies pour effectuer cette configuration.",
+      "deliverables": []
+    },
+    {
+      "title": "Modélisation des données dans un environnement NoSQL",
+      "description": "Description : Après avoir appris les principes de modélisation des données dans un environnement NoSQL, choisissez un cas d'utilisation adapté à une base de données NoSQL (comme la gestion de données non structurées ou semi-structurées) et créez un schéma de données pour ce cas. Expliquez pourquoi ce modèle est approprié dans un environnement NoSQL et comment il diffère d'un modèle relationnel.",
+      "deliverables": []
+    },
+    {
+      "title": "Stratégies de sécurité pour les bases de données",
+      "description": "Description : Vous avez étudié les stratégies de sécurité pour les bases de données relationnelles et NoSQL. Imaginez que vous êtes administrateur d'une base de données sensible contenant des informations confidentielles. Proposez un plan détaillé pour sécuriser cette base de données, en incluant des mesures spécifiques pour protéger les données contre les accès non autorisés et les attaques. Argumentez vos choix de stratégies de sécurité.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.).",
+    "Administration des Bases de Données"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "'Système de gestion de bases de données - Concepts et applications' de Philippe Rigaux.",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "'Bases de données NoSQL et Big Data' de Luc Meertens.",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "'Bonnes pratiques pour la conception et l'optimisation des bases de données' de Claire Mélisson.",
+      "publisher": ""
+    }
+  ]
+}

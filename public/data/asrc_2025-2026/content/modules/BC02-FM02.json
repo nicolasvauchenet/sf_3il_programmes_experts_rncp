@@ -1,0 +1,122 @@
+{
+  "code": "BC02-FM02",
+  "title": "Architectures sécurisées (Cloud et hybrides)",
+  "summary": "Développer une compréhension approfondie des architectures Cloud et hybrides et de leurs implications en matière de sécurité.",
+  "workload": {
+    "days": 3,
+    "hours": 21
+  },
+  "prerequisites": [
+    "Une connaissance de base des systèmes d'information et des concepts de sécurité informatique est recommandée. Familiarité avec les technologies Cloud serait un plus."
+  ],
+  "objectives": [
+    "Développer une compréhension approfondie des architectures Cloud et hybrides et de leurs implications en matière de sécurité. Apprendre à gérer les risques et à implémenter des stratégies de protection pour les données et applications dans ces environnements. Acquérir une expertise pratique à travers l'analyse de cas concrets pour proposer des solutions de sécurité efficaces."
+  ],
+  "skillsTargeted": [
+    "C12",
+    "C13",
+    "C14"
+  ],
+  "outline": [
+    {
+      "title": "Introduction aux architectures Cloud et hybrides",
+      "items": [
+        "Comprendre les concepts de base des architectures Cloud et hybrides",
+        "Identifier les avantages et les défis liés à ces environnements",
+        "Connaître les principaux acteurs du marché (Azure, AWS, Google Cloud Platform)",
+        "Comprendre les enjeux de sécurité spécifiques à ces architectures",
+        "Connaître les bonnes pratiques en termes de protection des données et des applications"
+      ]
+    },
+    {
+      "title": "Gestion des risques liés aux architectures Cloud et hybrides",
+      "items": [
+        "Identifier les risques liés à la sécurité dans les environnements Cloud et hybrides",
+        "Évaluer l'impact des risques sur les données et les applications",
+        "Mettre en place des mesures de prévention et de détection des risques",
+        "Comprendre les enjeux de conformité et de gouvernance liés à la sécurité",
+        "Adopter une approche proactive dans la gestion des risques"
+      ]
+    },
+    {
+      "title": "Stratégies de protection des données en environnement Cloud",
+      "items": [
+        "Comprendre les mécanismes de chiffrement des données",
+        "Mettre en place des politiques de gestion des clés",
+        "Utiliser des solutions de sauvegarde et de restauration des données adaptées au Cloud",
+        "Établir des stratégies de gestion des accès aux données sensibles",
+        "Assurer la conformité aux réglementations en matière de protection des données"
+      ]
+    },
+    {
+      "title": "Stratégies de protection des applications en environnement Cloud",
+      "items": [
+        "Mettre en place des mécanismes d'authentification et d'autorisation robustes",
+        "Utiliser des outils de gestion des identités et des accès",
+        "Intégrer la sécurité dès la conception des applications (DevSecOps)",
+        "Mettre en place des solutions de détection et de réponse aux incidents",
+        "Évaluer et améliorer en continu la sécurité des applications"
+      ]
+    },
+    {
+      "title": "Mise en pratique à travers des études de cas",
+      "items": [
+        "Analyser des cas concrets de sécurité dans des environnements Cloud et hybrides",
+        "Proposer des solutions de sécurité adaptées à chaque cas d'usage",
+        "Mettre en place des scénarios de test et d'évaluation de la sécurité",
+        "Apprendre à documenter et à présenter les recommandations de sécurité",
+        "Échanger sur les retours d'expérience et les bonnes pratiques en matière de sécurité"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Mise en situation",
+      "description": "Vous avez été amené à travailler sur la migration d'une infrastructure informatique vers un environnement Cloud\nHybride. Identifiez les avantages et les défis spécifiques à cette migration, en mettant l'accent sur les enjeux de sécurité. Proposez des recommandations pour assurer la protection des données et des applications dans cet environnement.",
+      "deliverables": []
+    },
+    {
+      "title": "Évaluation des risques",
+      "description": "À l'aide d'un cas d'étude fourni par le formateur, identifiez les principaux risques liés à la sécurité dans un environnement Cloud hybride. Évaluez l'impact de ces risques sur les données et les applications. Proposez des mesures de prévention et de détection des risques, en justifiant votre choix pour chaque mesure.",
+      "deliverables": []
+    },
+    {
+      "title": "Stratégies de protection des données",
+      "description": "Imaginez que vous devez mettre en place une stratégie de protection des données pour une entreprise qui migre vers un environnement Cloud. Décrivez en détail les mécanismes de chiffrement des données que vous envisagez d'utiliser, les politiques de gestion des clés, ainsi que les solutions de sauvegarde et de restauration des données que vous recommandez.",
+      "deliverables": []
+    },
+    {
+      "title": "Sécurité des applications",
+      "description": "En vous basant sur un exemple d'application déployée dans un environnement Cloud, proposez une série de mesures pour garantir sa sécurité. Décrivez comment vous allez mettre en place des mécanismes d'authentification et d'autorisation, des solutions de détection et de réponse aux incidents, ainsi que des outils de gestion des identités et des accès.",
+      "deliverables": []
+    },
+    {
+      "title": "Étude de cas et recommandations",
+      "description": "À partir d'une étude de cas réelle ou simulée, documentez les différentes étapes de votre analyse de sécurité. Proposez des recommandations spécifiques pour renforcer la sécurité dans cet environnement. Préparez une présentation pour exposer vos recommandations et échanger avec vos pairs sur les bonnes pratiques en matière de sécurité dans un environnement Cloud hybride.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.).",
+    "Architectures sécurisées (Cloud et hybrides)"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "Murat Karslioglu, 'Sécurité des systèmes d'information : Guide des bonnes pratiques', Eyrolles",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "Florian Ledoux, 'Le Cloud Computing : Concepts, acteurs, et stratégie', Dunod",
+      "publisher": ""
+    },
+    {
+      "author": "",
+      "title": "Roland Tretau, 'Guide pratique du Cloud Computing : Enjeux techniques et gouvernance', Editions ENI",
+      "publisher": ""
+    }
+  ]
+}

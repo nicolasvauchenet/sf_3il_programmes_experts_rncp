@@ -1,0 +1,111 @@
+{
+  "code": "BC03-FM03",
+  "title": "Audit de sécurité́ et amélioration continue",
+  "summary": "Les objectifs sont de comprendre les principes et objectifs de l'audit de sécurité, de maîtriser les méthodologies et normes associées, ainsi que de savoir analyser les risques et communiquer efficacement les résultats d'un audit.",
+  "workload": {
+    "days": 3,
+    "hours": 21
+  },
+  "prerequisites": [
+    "Connaissance des fondamentaux de la cybersécurité, familiarité avec les systèmes d'information, et compréhension de base des concepts de risque et de vulnérabilités informatiques."
+  ],
+  "objectives": [
+    "Les objectifs sont de comprendre les principes et objectifs de l'audit de sécurité, de maîtriser les méthodologies et normes associées, ainsi que de savoir analyser les risques et communiquer efficacement les résultats d'un audit."
+  ],
+  "skillsTargeted": [
+    "C16",
+    "C17"
+  ],
+  "outline": [
+    {
+      "title": "Introduction à l'audit de sécurité",
+      "items": [
+        "Les principes de base de l'audit de sécurité",
+        "Les objectifs de l'audit de sécurité",
+        "Les différentes approches méthodologiques de l'audit de sécurité",
+        "Les normes et bonnes pratiques en matière d'audit de sécurité",
+        "Les outils et techniques d'audit de sécurité"
+      ]
+    },
+    {
+      "title": "Identification des actifs et des vulnérabilités",
+      "items": [
+        "Méthodes d'identification des actifs informatiques",
+        "Les types de vulnérabilités courantes",
+        "Les outils d'identification des vulnérabilités",
+        "La cartographie des actifs et des vulnérabilités",
+        "L'évaluation de l'impact des vulnérabilités sur la sécurité"
+      ]
+    },
+    {
+      "title": "Méthodes d'analyse de risques",
+      "items": [
+        "Les principes de l'analyse de risques",
+        "Les méthodes quantitatives et qualitatives d'analyse de risques",
+        "L'évaluation des risques liés à la cybersécurité",
+        "L'identification des scénarios d'attaques potentielles",
+        "La hiérarchisation des risques identifiés"
+      ]
+    },
+    {
+      "title": "Techniques d'audit des systèmes d'information",
+      "items": [
+        "Les différentes phases d'un audit des systèmes d'information",
+        "L'identification des contrôles de sécurité mis en place",
+        "L'évaluation de l'efficacité des contrôles de sécurité",
+        "L'analyse des journaux d'activité et des traces d'audit",
+        "La vérification de la conformité aux normes et réglementations en vigueur"
+      ]
+    },
+    {
+      "title": "Rapport d'audit et plan d'action",
+      "items": [
+        "La rédaction d'un rapport d'audit de sécurité",
+        "La communication des résultats de l'audit aux parties prenantes",
+        "L'identification des mesures correctives et préventives à mettre en place",
+        "L'élaboration d'un plan d'action pour donner suite à l'audit",
+        "Le suivi des recommandations et des actions correctives pour donner suite à l'audit"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Analyse des objectifs de l'audit de sécurité",
+      "description": "Description : Les apprenants devront lire un cas d'entreprise fictif et identifier les objectifs spécifiques d'un audit de sécurité qui pourraient s'appliquer à ce cas. Ensuite, ils devront expliquer comment ces objectifs pourraient orienter l'approche méthodologique de l'audit.",
+      "deliverables": []
+    },
+    {
+      "title": "Identification des vulnérabilités courantes",
+      "description": "Description : Les apprenants recevront une liste de scénarios de vulnérabilités courantes et devront associer chaque scénario à une méthode d'identification appropriée. Ils devront également expliquer en quoi la cartographie des actifs et des vulnérabilités est importante pour prioriser les actions de sécurité.",
+      "deliverables": []
+    },
+    {
+      "title": "Analyse de risques liés à la cybersécurité",
+      "description": "Description : Les apprenants seront confrontés à un environnement technologique spécifique et devront identifier les scénarios d'attaques potentielles ainsi que les risques associés. Ensuite, ils devront évaluer ces risques en utilisant à la fois des méthodes quantitatives et qualitatives, et proposer des mesures de mitigation.",
+      "deliverables": []
+    },
+    {
+      "title": "Analyse des contrôles de sécurité",
+      "description": "Description : Les apprenants auront accès à des rapports d'audit fictifs contenant des informations sur les contrôles de sécurité mis en place. Leur tâche consistera à évaluer l'efficacité de ces contrôles en se basant sur les journaux d'activité et les traces d'audit.",
+      "deliverables": []
+    },
+    {
+      "title": "Rédaction d'un rapport d'audit de sécurité",
+      "description": "Description : Les apprenants seront amenés à rédiger un rapport d'audit de sécurité synthétisant les résultats d'un audit fictif. Ils devront aussi inclure un plan d'action comprenant des mesures correctives et préventives, ainsi qu'un suivi des recommandations.",
+      "deliverables": []
+    }
+  ],
+  "teachingMethods": [
+    "Étude de cas",
+    "Utilisation de supports (ppt",
+    "etc.)",
+    "Audit de sécurité́ et amélioration continue"
+  ],
+  "bibliography": [
+    {
+      "author": "",
+      "title": "Guide pratique de la sécurité des systèmes d'information par Olivier Kempf, Audit et contrôle internes : maîtrise des risques et sécurité du système d'information par Didier Bensadon, Norme ISO/ IEC 27001 : Systèmes de management de la sécurité de l'information",
+      "publisher": ""
+    }
+  ]
+}
