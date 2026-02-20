@@ -38,10 +38,11 @@
                                     required
                                 >
                                     <option value="">Choisissez une Promotion</option>
-                                    <option value="asrc">ASRC</option>
-                                    <option value="cdwfs">CDWFS</option>
-                                    <option value="eadl">EADL</option>
-                                    <option value="eris">ERIS</option>
+                                    {% for p in promotions %}
+                                        <option value="{{ p }}" {% if p == selectedPromotion %}selected{% endif %}>
+                                            {{ p|upper }}
+                                        </option>
+                                    {% endfor %}
                                 </select>
                             </div>
 
@@ -58,8 +59,18 @@
                                     required
                                 >
                                     <option value="">Choisissez un Millésime</option>
-                                    <option value="2026-2027">2026 - 2027</option>
-                                    <option value="2025-2026">2025 - 2026</option>
+
+                                    {% if selectedPromotion and yearsByPromotion[selectedPromotion] is defined %}
+                                        {% set years = yearsByPromotion[selectedPromotion] %}
+                                    {% else %}
+                                        {% set years = allYears %}
+                                    {% endif %}
+
+                                    {% for y in years %}
+                                        <option value="{{ y }}" {% if y == selectedYear %}selected{% endif %}>
+                                            {{ y|replace({'-':' - '}) }}
+                                        </option>
+                                    {% endfor %}
                                 </select>
                             </div>
 

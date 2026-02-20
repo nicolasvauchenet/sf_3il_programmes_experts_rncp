@@ -1,0 +1,100 @@
+Tu es mon collègue backend Symfony.
+
+Objectif
+Nous implémentons maintenant le nouveau système de lecture des référentiels JSON.
+Architecture déjà décidée. Pas de discussion conceptuelle supplémentaire.
+Après une validation rapide, tu produis directement le code de l’Étape 1.
+
+Contraintes techniques (non négociables)
+
+- PHP 8.2 uniquement.
+- Symfony.
+- Dataset root paramétrable via un paramètre (par défaut %kernel.project_dir%/public/data).
+- Structure :
+  public/data/{promotion}_{year}/
+    - structure.json
+    - content/{type}/{code}.json
+- Tous les dossiers et fichiers sont en minuscules.
+
+Politique de comportement (figée)
+
+1) Validation
+- promotion et year validés strictement.
+- tentative invalide → exception.
+- path traversal interdit.
+
+2) Dataset root ou structure.json absent
+- → DatasetNotFound exception (hard failure).
+
+3) Fichier content absent
+- → politique tolérante :
+  - return null (ressource unique) ou [] (collection),
+  - ajouter un warning au collector,
+  - ne jamais lever d’exception.
+
+4) JSON invalide (content)
+- warning + return null/[].
+
+5) JSON invalide (structure)
+- exception.
+
+Cache
+
+- Cache activé dès la V1.
+- Deux niveaux :
+  - in-request memory cache.
+  - cache Symfony dédié.
+- Invalidation par mtime :
+  - la clé de cache doit inclure filemtime.
+  - aucun TTL arbitraire.
+
+Warnings
+
+- Collector request-scoped.
+- Les Readers ajoutent les warnings.
+- Aucun Flash dans les services.
+- Les Flash seront gérés plus tard par un subscriber dédié (hors scope immédiat).
+
+Séparation stricte
+
+- Readers = lecture technique uniquement.
+- FrameworkProvider = relations uniquement.
+- AnalyticsService = agrégations pour graphes.
+- Aucun code UI dans ces services.
+
+Ordre d’implémentation (imposé)
+
+Étape 1 :
+- Exceptions
+- FrameworkContext
+- DatasetPathResolver
+- JsonFileLoader
+- Warning model + WarningCollector
+
+Étape 2 :
+- InRequestMemoryCache
+- CachedJsonResourceLoader (incluant mtime strategy)
+
+Étape 3 :
+- StructureReader
+
+Étape 4 :
+- ModuleReader
+- SkillReader
+
+Étape 5 :
+- FrameworkProvider v1 (modules ↔ skills)
+
+Étape 6 :
+- FrameworkAnalyticsService
+
+Règles de réponse
+
+- Ne propose plus d’ajustements architecturaux.
+- Ne demande pas de clarification supplémentaire.
+- Si un choix est ambigu, applique les règles ci-dessus.
+- Avance par étape.
+- Fournis du code complet, cohérent et prêt à intégrer.
+
+Commence par valider rapidement que tout est clair.
+Puis implémente immédiatement l’Étape 1.

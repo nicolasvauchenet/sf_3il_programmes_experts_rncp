@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ framework.parcours.intitule }}{% endblock %}
+{% block title %}{{ structure.meta.certificationName }}{% endblock %}
 
 {% block body %}
     <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
@@ -13,28 +13,85 @@
                     <header class="space-y-3">
                         <div class="flex items-center justify-between rounded-lg bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 mb-3">
                             <span>Année académique {{ year }}</span>
-                            <span>{{ framework.parcours.code | upper }}</span>
+                            <span>{{ (structure.parcours.code ?? promotion) | upper }}</span>
                         </div>
 
                         <h2 class="text-2xl font-semibold tracking-tight text-center">
-                            {{ framework.parcours.intitule }}
+                            {{ structure.meta.certificationName }}
                         </h2>
+
                         <h3 class="text-xl font-semibold tracking-tight text-center">
-                            {{ framework.annees | length }}
-                            année{{ framework.annees | length > 1 ? 's' : '' }} d'études
+                            {{ summary.modulesTotal }} module{{ summary.modulesTotal > 1 ? 's' : '' }}
+                            •
+                            {{ summary.skillsTotal }} compétence{{ summary.skillsTotal > 1 ? 's' : '' }}
                         </h3>
                     </header>
 
                     <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-                        {% include '_charts/_avaluations_vs_skills.html.twig' with { chart: evaluationsVsSkillsChart } %}
-                        {% include '_charts/_modules_by_semester.html.twig' with { modulesBySemesterChart: modulesBySemesterChart } %}
+                        <div class="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200">
+                            <h3 class="text-sm font-semibold text-slate-900">Couverture des relations</h3>
+                            <dl class="mt-4 space-y-2 text-sm text-slate-700">
+                                <div class="flex justify-between">
+                                    <dt>Modules avec compétences</dt>
+                                    <dd class="font-medium text-slate-900">{{ summary.modulesWithSkills }}</dd>
+                                </div>
+                                <div class="flex justify-between">
+                                    <dt>Modules sans compétences</dt>
+                                    <dd class="font-medium text-slate-900">{{ summary.modulesWithoutSkills }}</dd>
+                                </div>
+                                <div class="flex justify-between">
+                                    <dt>Compétences reliées (uniques)</dt>
+                                    <dd class="font-medium text-slate-900">{{ summary.linkedSkillsUnique }}</dd>
+                                </div>
+                                <div class="flex justify-between">
+                                    <dt>Compétences non reliées</dt>
+                                    <dd class="font-medium text-slate-900">{{ summary.unlinkedSkills }}</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <div class="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200">
+                            <h3 class="text-sm font-semibold text-slate-900">À venir</h3>
+                            <p class="mt-3 text-sm text-slate-700">
+                                Charts basés sur
+                                <code class="rounded bg-white px-1 py-0.5 ring-1 ring-slate-200">skillsPerModule</code>
+                                et
+                                <code class="rounded bg-white px-1 py-0.5 ring-1 ring-slate-200">unlinkedSkills</code>
+                                .
+                            </p>
+                        </div>
                     </section>
+
+                    {% if warnings is not empty %}
+                        <section class="space-y-3">
+                            <h3 class="text-lg font-semibold">Warnings</h3>
+                            <div class="rounded-xl bg-amber-50 p-4 ring-1 ring-amber-200">
+                                <ul class="space-y-1 text-sm text-amber-900">
+                                    {% for w in warnings %}
+                                        <li>
+                                            <span class="font-medium">{{ w.code.value }}</span>
+                                            —
+                                            {{ w.message }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </section>
+                    {% endif %}
 
                     <section class="space-y-3">
                         <h3 class="text-lg font-semibold">Dump des données</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            {{ dump(framework) }}
-                        </p>
+
+                        <div class="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200 overflow-auto">
+                            <pre class="text-xs leading-relaxed text-slate-800">{{ dump({
+                                    structure: structure,
+                                    modulesCount: modules|length,
+                                    skillsCount: skills|length,
+                                    summary: summary,
+                                    skillsPerModule: skillsPerModule,
+                                    unlinkedSkills: unlinkedSkills
+                                }) }}</pre>
+                        </div>
                     </section>
                 </article>
             </div>

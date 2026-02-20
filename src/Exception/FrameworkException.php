@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Exception;
 
-final class FrameworkException extends \RuntimeException {}
+abstract class FrameworkException extends \RuntimeException {}
