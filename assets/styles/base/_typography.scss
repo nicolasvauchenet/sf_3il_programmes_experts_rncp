@@ -1,0 +1,30 @@
+h1,
+h2 {
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $primary;
+}
+
+hr {
+    margin-bottom: 1rem;
+    border: 1px solid rgba($black, 0.2);
+}
+
+p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.subtitle {
+        font-style: italic;
+        text-align: center;
+        color: rgba($black, 0.5);
+    }
+}

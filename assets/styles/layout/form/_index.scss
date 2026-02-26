@@ -1,0 +1,9 @@
+.app-form {
+    padding: 0.5rem;
+
+    @include respondTo(sm) {
+        padding: 1.5rem;
+    }
+
+    @import "./group";
+}

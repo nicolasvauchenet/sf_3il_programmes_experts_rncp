@@ -1,0 +1,33 @@
+.app-footer {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    color: $white;
+    background-color: rgba($black, 0.85);
+
+    .copyrights {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include respondTo(sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    .footerlinks {
+        @include displayFlex(center, center, 0.5rem);
+
+        a {
+            text-decoration: none;
+            color: rgba($white, 0.75);
+            transition: color 0.3s;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    @include respondTo(sm) {
+        @include displayFlex(space-between, center, 0.5rem);
+    }
+}

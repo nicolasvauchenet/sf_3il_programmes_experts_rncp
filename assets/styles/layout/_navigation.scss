@@ -1,0 +1,19 @@
+.app-navigation {
+    @include displayFlex(center, center, 0.5rem);
+
+    a {
+        padding: 0.5rem;
+        font-family: $font-secondary;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgba($white, 0.75);
+        transition: color 0.3s;
+
+        &:hover,
+        &.active {
+            color: $white;
+        }
+    }
+}

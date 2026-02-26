@@ -1,0 +1,44 @@
+.app-header {
+    @include displayFlex(space-between, center, 0.5rem);
+    padding: 0.5rem 1rem;
+    color: $white;
+    background-color: $primary;
+
+    .app-logo {
+        display: block;
+
+        img {
+            display: block;
+            width: 40dvw;
+
+            @include respondTo(sm) {
+                width: 20dvw;
+            }
+        }
+    }
+
+    .app-sitename {
+        @include displayFlex(flex-end, null, 0.25rem, column);
+        font-family: $font-secondary;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: right;
+
+        @include respondTo(md) {
+            font-size: 1.25rem;
+        }
+
+        small {
+            font-size: 0.7rem;
+            font-weight: normal;
+            letter-spacing: 3.1px;
+            color: rgba($white, 0.75);
+
+            @include respondTo(md) {
+                font-size: 1.15rem;
+                letter-spacing: 3.3px;
+            }
+        }
+    }
+}

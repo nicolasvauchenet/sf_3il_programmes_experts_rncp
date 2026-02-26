@@ -1,0 +1,4 @@
+.ribbon {
+    @include displayFlex(space-evenly, center, 1rem);
+    margin-bottom: 1rem;
+}

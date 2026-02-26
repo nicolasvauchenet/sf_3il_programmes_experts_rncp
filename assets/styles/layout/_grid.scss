@@ -1,0 +1,25 @@
+.app-grid {
+    &.two {
+        @include respondTo(sm) {
+            @include displayGrid(repeat(2, 1fr), 1.5rem);
+        }
+    }
+
+    &.four {
+        @include respondTo(sm) {
+            @include displayGrid(repeat(4, 1fr), 1.5rem);
+        }
+    }
+
+    &.third {
+        @include respondTo(sm) {
+            @include displayGrid(7fr 3fr, 1.5rem);
+        }
+
+        &.reverse {
+            @include respondTo(sm) {
+                @include displayGrid(3fr 7fr, 1.5rem);
+            }
+        }
+    }
+}

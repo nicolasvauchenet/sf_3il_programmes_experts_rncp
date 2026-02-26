@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        @include displayFlex(space-between, null, null, column);
+        min-height: 100dvh;
+        font-family: $font-primary;
+        color: $black;
+        background-color: rgba($black, 0.15);
+
+        @import "./header";
+        @import "./navigation";
+        @import "./main";
+        @import "./toc";
+        @import "./form";
+        @import "./footer";
+    }
+}

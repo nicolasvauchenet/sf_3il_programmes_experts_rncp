@@ -1,0 +1,37 @@
+.app-alert {
+    margin: 1.5rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid $black;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px rgba($black, 0.2);
+
+    @include respondTo(sm) {
+        margin: 1.5rem;
+    }
+
+    &.info {
+        color: $info;
+        background-color: rgba($info, 0.25);
+        border-color: $info;
+    }
+
+    &.success {
+        color: $success;
+        background-color: rgba($success, 0.25);
+        border-color: $success;
+    }
+
+    &.warning {
+        color: $warning;
+        background-color: rgba($warning, 0.25);
+        border-color: $warning;
+    }
+
+    &.error {
+        color: $error;
+        background-color: rgba($error, 0.25);
+        border-color: $error;
+    }
+}

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fiche Matière{% endblock %}
+
+{% block body %}
+    {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main">
+        <div class="app-grid third reverse">
+            <aside class="app-section">
+                <h2>Matières</h2>
+
+                <nav class="app-toc">
+                    {% for i in 1..30 %}
+                        <a href="#">
+                            <span class="app-badge">FM{{ i < 10 ? '0' ~ i : i }}</span>
+                            Nom de la matière sur plusieurs lignes
+                        </a>
+                    {% endfor %}
+                </nav>
+            </aside>
+
+            <article>
+                <div class="app-grid third">
+                    <section class="app-section">
+                        <h1>Fiche matière</h1>
+
+                        <div class="ribbon">
+                            <span class="app-badge">{{ promotion | upper }}</span>
+                        </div>
+
+                        <p class="subtitle">
+                            ...
+                        </p>
+                    </section>
+
+                    <section class="app-section">
+                        <h2>Métriques</h2>
+
+                        <div class="app-grid four">
+                            <span>...</span>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="app-section mx-0 mt-2 mb-0">
+                    <h2>Contenu</h2>
+                    <p>...</p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

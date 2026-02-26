@@ -1,0 +1,26 @@
+<nav class="app-navigation">
+    <a
+        href="{{ path('app_promotion_summary', { promotion: promotion, year: year }) }}"
+        class="{% if 'app_promotion_summary' == app.request.get('_route') %}active{% endif %}"
+    >
+        Résumé
+    </a>
+    <a
+        href="{{ path('app_promotion_courses', { promotion: promotion, year: year }) }}"
+        class="{% if 'app_promotion_courses' == app.request.get('_route') %}active{% endif %}"
+    >
+        Matières
+    </a>
+    <a
+        href="{{ path('app_promotion_skills', { promotion: promotion, year: year }) }}"
+        class="{% if 'app_promotion_skills' == app.request.get('_route') %}active{% endif %}"
+    >
+        Compétences
+    </a>
+    <a
+        href="{{ path('app_promotion_evaluations', { promotion: promotion, year: year }) }}"
+        class="{% if 'app_promotion_evaluations' == app.request.get('_route') %}active{% endif %}"
+    >
+        Évaluations
+    </a>
+</nav>

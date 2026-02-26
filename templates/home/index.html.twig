@@ -3,93 +3,73 @@
 {% block title %}Choisissez le contexte{% endblock %}
 
 {% block body %}
-    <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-        {% include '_layout/default/_header.html.twig' %}
-        {% include '_layout/default/_flash_messages.html.twig' %}
+    {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
 
-        <main class="flex-1 flex items-center">
-            <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
-                <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-                    <div class="flex flex-col gap-2">
-                        <h2 class="text-lg font-semibold tracking-tight sm:text-xl">
-                            Choisissez le contexte
-                        </h2>
-                        <p class="text-sm text-slate-700">
-                            Sélectionnez le programme et le cadre d’évaluation pour continuer.
-                        </p>
-                    </div>
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Choisissez le référentiel</h1>
+            <p class="subtitle">Sélectionnez la promotion et le millésime pour continuer.</p>
 
-                    <div class="mt-6 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8">
-                        <form data-controller="context"
-                              data-context-target="form"
-                              class="grid grid-cols-1 gap-6 sm:grid-cols-2"
-                              action="{{ path('app_promotion_summary') }}"
-                        >
-                            <div class="flex flex-col gap-2">
-                                <label for="promotion" class="text-sm font-medium text-slate-700">
-                                    Promotion
-                                </label>
-                                <select
-                                    data-context-target="promotion"
-                                    data-action="change->context#check"
-                                    id="promotion"
-                                    name="promotion"
-                                    class="cursor-pointer rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-[#00556A] focus:outline-none focus:ring-2 focus:ring-[#00556A]/30"
-                                    required
-                                >
-                                    <option value="">Choisissez une Promotion</option>
-                                    {% for p in promotions %}
-                                        <option value="{{ p }}" {% if p == selectedPromotion %}selected{% endif %}>
-                                            {{ p|upper }}
-                                        </option>
-                                    {% endfor %}
-                                </select>
-                            </div>
+            <hr/>
 
-                            <div class="flex flex-col gap-2">
-                                <label for="annee" class="text-sm font-medium text-slate-700">
-                                    Année académique
-                                </label>
-                                <select
-                                    data-context-target="year"
-                                    data-action="change->context#check"
-                                    id="year"
-                                    name="year"
-                                    class="cursor-pointer rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-[#00556A] focus:outline-none focus:ring-2 focus:ring-[#00556A]/30"
-                                    required
-                                >
-                                    <option value="">Choisissez un Millésime</option>
+            <form data-controller="context"
+                  data-context-target="form"
+                  class="app-form"
+                  action="{{ path('app_promotion_summary') }}"
+            >
+                <div class="form-group">
+                    <label for="promotion" class="form-label">
+                        Promotion
+                    </label>
+                    <select
+                        data-context-target="promotion"
+                        data-action="change->context#check"
+                        id="promotion"
+                        name="promotion"
+                        class="form-control"
+                        required
+                    >
+                        <option value="">Choisissez une Promotion</option>
+                        {% for promotion in allPromotions %}
+                            <option value="{{ promotion }}"
+                                    {% if promotion == selectedPromotion %}selected{% endif %}>
+                                {{ promotion | upper }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
 
-                                    {% if selectedPromotion and yearsByPromotion[selectedPromotion] is defined %}
-                                        {% set years = yearsByPromotion[selectedPromotion] %}
-                                    {% else %}
-                                        {% set years = allYears %}
-                                    {% endif %}
+                <div class="form-group">
+                    <label for="year" class="form-label">
+                        Année académique
+                    </label>
+                    <select
+                        data-context-target="year"
+                        data-action="change->context#check"
+                        id="year"
+                        name="year"
+                        class="form-control"
+                        required
+                    >
+                        <option value="">Choisissez un Millésime</option>
+                        {% for year in allYears %}
+                            <option value="{{ year }}" {% if year == selectedYear %}selected{% endif %}>
+                                {{ year | replace({'-':' - '}) }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
 
-                                    {% for y in years %}
-                                        <option value="{{ y }}" {% if y == selectedYear %}selected{% endif %}>
-                                            {{ y|replace({'-':' - '}) }}
-                                        </option>
-                                    {% endfor %}
-                                </select>
-                            </div>
+                <div class="form-group">
+                    <div class="hidden-xs">&nbsp;</div>
+                    <button type="submit" data-context-target="submit" class="app-button form-submit" disabled>
+                        Aller au Référentiel
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-                            <div class="sm:col-span-2">
-                                <button
-                                    type="submit"
-                                    data-context-target="submit"
-                                    class="w-full rounded-lg bg-[#00556A] px-6 py-3 text-sm font-semibold text-white cursor-pointer shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#004454] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#00556A]/40"
-                                    disabled
-                                >
-                                    Aller au Référentiel
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        {% include '_layout/default/_footer.html.twig' %}
-    </div>
+    {% include '_layout/default/_footer.html.twig' %}
 {% endblock %}

@@ -2,38 +2,38 @@
 
 namespace App\Controller;
 
-use App\Service\Framework\DatasetCatalog;
+use App\Service\Context\AvailableFrameworksProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 final class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(Request $request, DatasetCatalog $catalog): Response
+    public function index(
+        AvailableFrameworksProvider $provider
+    ): Response
     {
-        $available = $catalog->listAvailable();
+        $contexts = $provider->listAvailable();
 
-        $selectedPromotion = strtolower((string)$request->query->get('promotion', ''));
-        $selectedYear = (string)$request->query->get('year', '');
+        $allPromotions = array_values(array_unique(array_map(
+            static fn($c) => $c->promotionCode,
+            $contexts
+        )));
 
-        $allYears = [];
-        foreach ($available['yearsByPromotion'] as $years) {
-            foreach ($years as $y) {
-                $allYears[$y] = true;
-            }
-        }
+        $allYears = array_values(array_unique(array_map(
+            static fn($c) => $c->academicYear,
+            $contexts
+        )));
 
-        $allYears = array_keys($allYears);
+        sort($allPromotions);
         rsort($allYears);
 
         return $this->render('home/index.html.twig', [
-            'promotions' => $available['promotions'],
-            'yearsByPromotion' => $available['yearsByPromotion'],
+            'allPromotions' => $allPromotions,
             'allYears' => $allYears,
-            'selectedPromotion' => $selectedPromotion,
-            'selectedYear' => $selectedYear,
+            'selectedPromotion' => null,
+            'selectedYear' => null,
         ]);
     }
 }

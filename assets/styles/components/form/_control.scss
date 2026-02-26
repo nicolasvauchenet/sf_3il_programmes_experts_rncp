@@ -1,0 +1,11 @@
+.form-control {
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    font-family: $font-primary;
+    font-size: 1rem;
+    color: $black;
+    background-color: $white;
+    border: 1px solid rgba($black, 0.5);
+    border-radius: 0.5rem;
+}

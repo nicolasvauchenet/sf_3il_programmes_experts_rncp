@@ -24,3 +24,7 @@ programmes-experts-rncp.key
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> symfonycasts/sass-bundle ###
+/public/assets/
+###< symfonycasts/sass-bundle ###

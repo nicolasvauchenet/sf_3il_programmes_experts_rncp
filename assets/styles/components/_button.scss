@@ -1,0 +1,28 @@
+.app-button {
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    font-family: $font-primary;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary;
+    background-color: rgba($primary, 0.25);
+    border: 2px solid $primary;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $white;
+        background-color: rgba($primary, 1);
+    }
+
+    &:disabled {
+        color: rgba($black, 0.15);
+        border-color: rgba($primary, 0.25);
+        pointer-events: none;
+        user-select: none;
+        cursor: not-allowed;
+    }
+}
