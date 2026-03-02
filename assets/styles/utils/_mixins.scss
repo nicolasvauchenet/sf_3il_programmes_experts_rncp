@@ -28,4 +28,9 @@
             @content;
         }
     }
+    @if $breakpoint == lg {
+        @media (min-width: 1281px) {
+            @content;
+        }
+    }
 }

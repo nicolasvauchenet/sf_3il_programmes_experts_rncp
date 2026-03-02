@@ -4,6 +4,10 @@
     color: $white;
     background-color: rgba($black, 0.85);
 
+    @include respondTo(lg) {
+        padding: 0.5rem 3rem;
+    }
+
     .copyrights {
         margin-bottom: 1rem;
         text-align: center;

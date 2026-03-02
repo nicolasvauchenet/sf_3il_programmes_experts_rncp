@@ -4,6 +4,10 @@
     color: $white;
     background-color: $primary;
 
+    @include respondTo(lg) {
+        padding: 0.5rem 3rem;
+    }
+
     .app-logo {
         display: block;
 

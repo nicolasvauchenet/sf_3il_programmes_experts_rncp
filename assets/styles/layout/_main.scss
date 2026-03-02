@@ -5,5 +5,10 @@
         @include displayFlex(center, null, null, column);
     }
 
+    @include respondTo(lg) {
+        margin: 0 auto;
+        width: 85dvw;
+    }
+
     @import "./section";
 }

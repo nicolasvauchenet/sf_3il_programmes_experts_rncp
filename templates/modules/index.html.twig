@@ -8,30 +8,36 @@
 
     <main class="app-main">
         <div class="app-grid third reverse">
-            <aside class="app-section">
-                <h2>Matières</h2>
-
-                <nav class="app-toc">
-                    {% for i in 1..30 %}
-                        <a href="#">
-                            <span class="app-badge">FM{{ i < 10 ? '0' ~ i : i }}</span>
-                            Nom de la matière sur plusieurs lignes
-                        </a>
-                    {% endfor %}
-                </nav>
-            </aside>
+            {% include '_layout/default/_toc.html.twig' with {
+                'title': 'Matière',
+                'path': 'app_promotion_modules',
+                'promotion': promotion,
+                'year': year,
+                'content': modules,
+                'selectedCode': selectedCode
+            } %}
 
             <article>
                 <div class="app-grid third">
                     <section class="app-section">
-                        <h1>Fiche matière</h1>
+                        <h1>{{ module.meta.title ?? 'Matière' }}</h1>
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
+                            {% if module.meta.academicYear is defined and module.meta.academicYear %}
+                                <span class="app-badge">{{ module.meta.academicYear }}</span>
+                            {% endif %}
+                            {% if module.meta.blocCode is defined and module.meta.blocCode %}
+                                <span class="app-badge">{{ module.meta.blocCode }}</span>
+                            {% endif %}
                         </div>
 
                         <p class="subtitle">
-                            ...
+                            {% if module.meta.blocName is defined and module.meta.blocName %}
+                                {{ module.meta.blocName }}
+                            {% else %}
+                                Fiche matière du référentiel {{ promotion|upper }} — {{ year }}
+                            {% endif %}
                         </p>
                     </section>
 
@@ -39,14 +45,103 @@
                         <h2>Métriques</h2>
 
                         <div class="app-grid four">
-                            <span>...</span>
+                            <div>
+                                <strong>Durée</strong>
+                                <br>
+                                {{ module.meta.durationDays ?? 0 }} j • {{ module.meta.durationHours ?? 0 }} h
+                            </div>
+                            <div>
+                                <strong>Compétences</strong>
+                                <br>
+                                {{ module.skills|length }}
+                            </div>
+                            <div>
+                                <strong>Chapitres</strong>
+                                <br>
+                                {{ (module.outline.chapters ?? [])|length }}
+                            </div>
+                            <div>
+                                <strong>Exercices</strong>
+                                <br>
+                                {{ module.exercises|length }}
+                            </div>
                         </div>
                     </section>
                 </div>
 
                 <section class="app-section mx-0 mt-2 mb-0">
                     <h2>Contenu</h2>
-                    <p>...</p>
+
+                    {% if module.objectives.description is defined and module.objectives.description %}
+                        <h3>Objectifs</h3>
+                        <p>{{ module.objectives.description }}</p>
+                    {% endif %}
+
+                    {% if module.prerequisites.description is defined and module.prerequisites.description %}
+                        <h3>Prérequis</h3>
+                        <p>{{ module.prerequisites.description }}</p>
+                    {% endif %}
+
+                    {% if module.skills is not empty %}
+                        <h3>Compétences mobilisées</h3>
+                        <ul>
+                            {% for s in module.skills %}
+                                <li>
+                                    <strong>{{ s.code }}</strong> — {{ s.description }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                    {% set chapters = module.outline.chapters ?? [] %}
+                    {% if chapters is not empty %}
+                        <h3>Plan</h3>
+                        {% for ch in chapters %}
+                            <h4>{{ ch.title ?? 'Chapitre' }}</h4>
+                            {% set items = ch.items ?? [] %}
+                            {% if items is not empty %}
+                                <ul>
+                                    {% for it in items %}
+                                        <li>{{ it }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if module.exercises is not empty %}
+                        <h3>Exercices</h3>
+                        {% for ex in module.exercises %}
+                            <h4>{{ ex.title ?? 'Exercice' }}</h4>
+                            {% if ex.context is defined and ex.context %}
+                                <p><strong>Contexte :</strong> {{ ex.context }}</p>
+                            {% endif %}
+                            {% if ex.objective is defined and ex.objective %}
+                                <p><strong>Objectif :</strong> {{ ex.objective }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if module.bibliography is not empty %}
+                        <h3>Bibliographie</h3>
+                        <ul>
+                            {% for b in module.bibliography %}
+                                <li>
+                                    {{ b.title ?? '—' }}
+                                    {% if b.author is defined and b.author %} — {{ b.author }}{% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                    {% if module.teachingMethods is not empty %}
+                        <h3>Méthodes pédagogiques</h3>
+                        <ul>
+                            {% for m in module.teachingMethods %}
+                                <li>{{ m }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                 </section>
             </article>
         </div>

@@ -1,0 +1,20 @@
+<aside class="app-section app-toc">
+    <h2>{{ title }}s</h2>
+    <p class="subtitle">{{ content | length }} {{ title | lower }}{{ content | length > 1 ? 's' : '' }}</p>
+
+    <div class="app-filters">
+        <input type="search" class="form-control" placeholder="Filtrer"/>
+    </div>
+
+    <nav class="toc">
+        {% for c in content %}
+            <a
+                href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
+                class="{% if selectedCode == c.fileCode %}active{% endif %}"
+            >
+                <span class="app-badge">{{ c.fileCode|upper }}</span>
+                {{ c.meta.title ?? c.fileCode|upper }}
+            </a>
+        {% endfor %}
+    </nav>
+</aside>
