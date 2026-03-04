@@ -7,7 +7,7 @@
     {% include '_layout/default/_alert.html.twig' %}
 
     <main class="app-main">
-        <div class="app-grid third reverse">
+        <div class="app-grid third layout">
             {% include '_layout/default/_toc.html.twig' with {
                 'title': 'Matière',
                 'path': 'app_promotion_modules',
@@ -22,29 +22,33 @@
                     <section class="app-section">
                         <h1>{{ module.meta.title ?? 'Matière' }}</h1>
 
+                        <p class="subtitle">
+                            {% if module.meta.blocName is defined and module.meta.blocName %}
+                                {{ promotionContext.promotionTitle }}
+                            {% endif %}
+                            {% if module.meta.blocName is defined and module.meta.blocName %}
+                                <br/>
+                                {{ module.meta.blocCode }} : {{ module.meta.blocName }}
+                            {% endif %}
+                        </p>
+
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
+
+                            {% if module.meta.blocCode is defined and module.meta.blocCode %}
+                                <span class="app-badge">{{ module.meta.blocCode }}{{ module.meta.code }}</span>
+                            {% endif %}
+
                             {% if module.meta.academicYear is defined and module.meta.academicYear %}
                                 <span class="app-badge">{{ module.meta.academicYear }}</span>
                             {% endif %}
-                            {% if module.meta.blocCode is defined and module.meta.blocCode %}
-                                <span class="app-badge">{{ module.meta.blocCode }}</span>
-                            {% endif %}
                         </div>
-
-                        <p class="subtitle">
-                            {% if module.meta.blocName is defined and module.meta.blocName %}
-                                {{ module.meta.blocName }}
-                            {% else %}
-                                Fiche matière du référentiel {{ promotion|upper }} — {{ year }}
-                            {% endif %}
-                        </p>
                     </section>
 
                     <section class="app-section">
                         <h2>Métriques</h2>
 
-                        <div class="app-grid four">
+                        <div class="app-grid two">
                             <div>
                                 <strong>Durée</strong>
                                 <br>
@@ -69,80 +73,121 @@
                     </section>
                 </div>
 
-                <section class="app-section mx-0 mt-2 mb-0">
-                    <h2>Contenu</h2>
-
-                    {% if module.objectives.description is defined and module.objectives.description %}
-                        <h3>Objectifs</h3>
+                {% if module.objectives.description is defined and module.objectives.description %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Objectifs</h2>
                         <p>{{ module.objectives.description }}</p>
-                    {% endif %}
+                    </section>
+                {% endif %}
 
-                    {% if module.prerequisites.description is defined and module.prerequisites.description %}
-                        <h3>Prérequis</h3>
+                {% if module.prerequisites.description is defined and module.prerequisites.description %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Prérequis</h2>
                         <p>{{ module.prerequisites.description }}</p>
-                    {% endif %}
+                    </section>
+                {% endif %}
 
-                    {% if module.skills is not empty %}
-                        <h3>Compétences mobilisées</h3>
-                        <ul>
-                            {% for s in module.skills %}
-                                <li>
-                                    <strong>{{ s.code }}</strong> — {{ s.description }}
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
+                {% if module.skills is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Compétences mobilisées</h2>
+                        {% for s in module.skills %}
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <p>
+                                    <strong>{{ s.code }}</strong> - {{ s.description }}
+                                </p>
+                            </section>
+                        {% endfor %}
+                    </section>
+                {% endif %}
 
-                    {% set chapters = module.outline.chapters ?? [] %}
-                    {% if chapters is not empty %}
-                        <h3>Plan</h3>
+                {% set chapters = module.outline.chapters ?? [] %}
+                {% if chapters is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Plan des cours</h2>
                         {% for ch in chapters %}
-                            <h4>{{ ch.title ?? 'Chapitre' }}</h4>
-                            {% set items = ch.items ?? [] %}
-                            {% if items is not empty %}
-                                <ul>
-                                    {% for it in items %}
-                                        <li>{{ it }}</li>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <h3>{{ ch.title ?? 'Chapitre' }}</h3>
+                                {% set items = ch.items ?? [] %}
+                                {% if items is not empty %}
+                                    <ul>
+                                        {% for it in items %}
+                                            <li>{{ it }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </section>
                         {% endfor %}
-                    {% endif %}
+                    </section>
+                {% endif %}
 
-                    {% if module.exercises is not empty %}
-                        <h3>Exercices</h3>
+                {% if module.exercises is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Exercices</h2>
+
                         {% for ex in module.exercises %}
-                            <h4>{{ ex.title ?? 'Exercice' }}</h4>
-                            {% if ex.context is defined and ex.context %}
-                                <p><strong>Contexte :</strong> {{ ex.context }}</p>
-                            {% endif %}
-                            {% if ex.objective is defined and ex.objective %}
-                                <p><strong>Objectif :</strong> {{ ex.objective }}</p>
-                            {% endif %}
-                        {% endfor %}
-                    {% endif %}
+                            {% set title = ex.title ?? 'Exercice' %}
 
+                            {# On récupère proprement les champs #}
+                            {% set context = (ex.context ?? '')|trim %}
+                            {% set objective = (ex.objective ?? '')|trim %}
+
+                            {# Fallback : certains exercices n'ont que l'un des deux #}
+                            {% set objectiveText = objective ?: context %}
+                            {% set hasObjective = objectiveText|length > 0 %}
+                            {% set hasContext = context|length > 0 and objective|length > 0 %}
+
+                            {# Comparaison normalisée (casse + espaces) #}
+                            {% set normContext = context|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
+                            {% set normObjective = objective|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
+
+                            {# On compresse les espaces multiples #}
+                            {% set normContext = normContext|split(' ')|filter(v => v != '')|join(' ') %}
+                            {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
+
+                            {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
+
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <h3>{{ title }}</h3>
+
+                                {% if showContextAndObjective %}
+                                    <p><strong>Contexte :</strong> {{ context }}</p>
+                                    <p><strong>Objectif :</strong> {{ objective }}</p>
+                                {% else %}
+                                    {% if hasObjective %}
+                                        <p><strong>Objectif :</strong> {{ objectiveText }}</p>
+                                    {% endif %}
+                                {% endif %}
+                            </section>
+                        {% endfor %}
+                    </section>
+                {% endif %}
+
+                <div class="app-grid two">
                     {% if module.bibliography is not empty %}
-                        <h3>Bibliographie</h3>
-                        <ul>
-                            {% for b in module.bibliography %}
-                                <li>
-                                    {{ b.title ?? '—' }}
-                                    {% if b.author is defined and b.author %} — {{ b.author }}{% endif %}
-                                </li>
-                            {% endfor %}
-                        </ul>
+                        <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Bibliographie</h2>
+                            <ul>
+                                {% for b in module.bibliography %}
+                                    <li>
+                                        <em>{{ b.title ?? '-' }}</em>
+                                        {% if b.author is defined and b.author %} - {{ b.author }}{% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </section>
                     {% endif %}
 
                     {% if module.teachingMethods is not empty %}
-                        <h3>Méthodes pédagogiques</h3>
-                        <ul>
-                            {% for m in module.teachingMethods %}
-                                <li>{{ m }}</li>
-                            {% endfor %}
-                        </ul>
+                        <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Méthodes pédagogiques</h2>
+                            <ul>
+                                {% for m in module.teachingMethods %}
+                                    <li>{{ m }}</li>
+                                {% endfor %}
+                            </ul>
+                        </section>
                     {% endif %}
-                </section>
+                </div>
             </article>
         </div>
     </main>

@@ -12,9 +12,10 @@ final class ModulesController extends AbstractController
 {
     #[Route('/matieres', name: 'app_promotion_modules', methods: ['GET'])]
     public function index(
-        Request $request,
+        Request                  $request,
         FrameworkModulesProvider $modulesProvider,
-    ): Response {
+    ): Response
+    {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -31,7 +32,7 @@ final class ModulesController extends AbstractController
         }
 
         $rawSelected = (string)$request->query->get('code', '');
-        $selectedFileCode = $this->normalizeSelectedCode($rawSelected);
+        $selectedFileCode = $this->normalizeSelectedCode($rawSelected, $modules);
 
         if ($selectedFileCode === null) {
             $selectedModule = $modules[0];
@@ -59,7 +60,7 @@ final class ModulesController extends AbstractController
         ]);
     }
 
-    private function normalizeSelectedCode(string $raw): ?string
+    private function normalizeSelectedCode(string $raw, array $modules): ?string
     {
         $raw = strtolower(trim($raw));
 
@@ -67,17 +68,10 @@ final class ModulesController extends AbstractController
             return null;
         }
 
-        if (preg_match('/^fm(\d{2})$/', $raw)) {
-            return $raw;
-        }
-
-        if (preg_match('/^\d+$/', $raw)) {
-            $n = (int)$raw;
-            if ($n < 1) {
-                return null;
+        foreach ($modules as $m) {
+            if (strtolower((string)$m->fileCode) === $raw) {
+                return (string)$m->fileCode;
             }
-
-            return sprintf('fm%02d', $n);
         }
 
         return null;

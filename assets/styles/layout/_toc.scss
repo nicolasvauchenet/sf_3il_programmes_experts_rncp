@@ -1,4 +1,7 @@
 .app-toc {
+    position: sticky;
+    top: 1rem;
+
     h2 {
         margin-bottom: 0.25rem;
     }
@@ -13,12 +16,11 @@
         padding: 0.5rem 0.5rem 0.5rem 0;
 
         @include respondTo(sm) {
-            max-height: 68dvh;
+            max-height: 71vh;
         }
 
         a {
-            @include displayGrid(3rem 1fr, 0.25rem);
-            align-items: center;
+            display: block;
             margin-bottom: 0.5rem;
             padding: 0.5rem;
             font-family: $font-secondary;
@@ -39,14 +41,15 @@
                 border-color: $primary;
 
                 .app-badge {
-                    color: $primary;
-                    background-color: $white;
                 }
             }
 
             .app-badge {
-                @include displayFlex(center, center);
-                padding: 0.25rem;
+                display: block;
+                margin-bottom: 0.25rem;
+                padding: 0;
+                color: $primary;
+                background-color: transparent;
                 transition: all 0.3s;
             }
         }

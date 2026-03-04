@@ -2,6 +2,7 @@ twig:
     file_name_pattern: '*.twig'
     globals:
         app.locale: '%app.locale%'
+        promotionContext: '@App\Twig\PromotionContext'
 
 when@test:
     twig:

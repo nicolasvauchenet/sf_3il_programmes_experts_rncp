@@ -1,5 +1,7 @@
 h1,
-h2 {
+h2,
+h3,
+h4 {
     margin-bottom: 1rem;
     font-family: $font-secondary;
     font-size: 1.25rem;
@@ -10,13 +12,58 @@ h2 {
     color: $primary;
 }
 
+h3,
+h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-transform: initial;
+    text-align: left;
+}
+
 hr {
     margin-bottom: 1rem;
     border: 1px solid rgba($black, 0.2);
 }
 
+ul {
+    padding-left: 1.25rem;
+    list-style: initial;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    li {
+        margin-left: 1.25rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.15rem;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        orphans: 2;
+        widows: 2;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 p {
     margin-bottom: 1rem;
+    line-height: 1.15rem;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    orphans: 2;
+    widows: 2;
 
     &:last-child {
         margin-bottom: 0;
@@ -27,4 +74,13 @@ p {
         text-align: center;
         color: rgba($black, 0.5);
     }
+}
+
+strong {
+    font-weight: bold;
+    color: $primary;
+}
+
+em {
+    font-style: italic;
 }

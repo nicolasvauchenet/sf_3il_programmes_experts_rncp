@@ -2,9 +2,9 @@
     <h2>{{ title }}s</h2>
     <p class="subtitle">{{ content | length }} {{ title | lower }}{{ content | length > 1 ? 's' : '' }}</p>
 
-    <div class="app-filters">
+    {#<div class="app-filters">
         <input type="search" class="form-control" placeholder="Filtrer"/>
-    </div>
+    </div>#}
 
     <nav class="toc">
         {% for c in content %}

@@ -23,5 +23,12 @@
                 @include displayGrid(3fr 7fr, 1.5rem);
             }
         }
+
+        &.layout {
+            @include respondTo(sm) {
+                @include displayGrid(2.5fr 7.5fr, 1.5rem);
+                align-items: flex-start;
+            }
+        }
     }
 }

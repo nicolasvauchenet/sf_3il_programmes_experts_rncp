@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM09",
+        "title": "Documentation et spécifications techniques",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C34",
+            "description": "Rédiger la documentation de support et les spécifications des éléments de services ou modèles développés pour les utilisateurs des systèmes automatisés afin de garantir une adoption efficace et une utilisation optimale des technologies déployées."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre l'importance de la documentation technique dans les projets d'IA et ses types. Maîtriser les bonnes pratiques de rédaction et les outils de gestion de la documentation technique. Savoir concevoir, valider et gérer les spécifications techniques pour les architectures de données décisionnelles."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en intelligence artificielle et en architecture de données, ainsi qu'une familiarité avec les méthodologies de gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la documentation technique",
+                "items": [
+                    "Importance de la documentation technique dans les projets d'IA",
+                    "Types de documentation technique (spécifications, manuels, guides, etc.)",
+                    "Bonnes pratiques de rédaction de la documentation technique",
+                    "Outils de gestion de la documentation technique",
+                    "Exemples de documentation technique dans le domaine de l'IA"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Spécifications techniques pour les architectures de données décisionnelles",
+                "items": [
+                    "Compréhension des besoins métier et traduction en spécifications techniques",
+                    "Modèles de spécifications techniques pour les architectures de données décisionnelles",
+                    "Méthodologies de conception et de rédaction des spécifications techniques",
+                    "Validation et approbation des spécifications techniques",
+                    "Gestion des évolutions des spécifications techniques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Documentation des processus et flux métier",
+                "items": [
+                    "Importance de la documentation des processus et flux métier",
+                    "Techniques de modélisation des processus métier (BPMN, UML, etc.)",
+                    "Intégration de la documentation des processus dans l'architecture de données décisionnelles",
+                    "Mise à jour et maintenance de la documentation des processus et flux métier",
+                    "Utilisation de la documentation des processus pour l'automatisation des tâches"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion de la documentation technique dans un projet d'IA",
+                "items": [
+                    "Organisation et structuration de la documentation technique",
+                    "Gestion des versions et historique de la documentation technique",
+                    "Collaboration et partage de la documentation technique au sein de l'équipe projet",
+                    "Sécurité et confidentialité de la documentation technique",
+                    "Intégration de la documentation technique dans les outils de gestion de projet"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Présentation des spécifications techniques",
+                "items": [
+                    "Communication des spécifications techniques aux différentes parties prenantes",
+                    "Techniques de présentation et de documentation visuelle des spécifications techniques",
+                    "Utilisation de la documentation technique pour la prise de décision et la planification",
+                    "Suivi et rétroaction sur les spécifications techniques présentées",
+                    "Intégration des retours dans la documentation technique"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Réalisation d'une documentation technique",
+            "context": "Rédiger une documentation technique complète pour un projet d'IA comprenant spécifications, guides et documents pertinents.",
+            "objective": "Structurer une documentation technique complète et cohérente."
+        },
+        {
+            "title": "Traduction des besoins métier en spécifications techniques",
+            "context": "Traduire les besoins métier d'un cas d'utilisation IA en spécifications techniques détaillées.",
+            "objective": "Transformer des exigences métier en spécifications formalisées."
+        },
+        {
+            "title": "Modélisation des processus métier",
+            "context": "Représenter graphiquement un processus métier (BPMN, UML, etc.) lié à un projet d'IA et expliquer son intégration dans l'architecture décisionnelle.",
+            "objective": "Modéliser un processus métier en cohérence avec l'architecture de données."
+        },
+        {
+            "title": "Gestion de la documentation technique",
+            "context": "Élaborer un plan complet de gestion de la documentation pour un projet d'IA incluant organisation, versioning et sécurité.",
+            "objective": "Mettre en place une gouvernance documentaire robuste."
+        },
+        {
+            "title": "Présentation des spécifications techniques",
+            "context": "Préparer une présentation des spécifications techniques à destination des parties prenantes en intégrant les retours et rétroactions.",
+            "objective": "Communiquer efficacement des spécifications techniques."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Écrire pour être publié : Un guide pour la rédaction scientifique et technique en français",
+            "author": "Jean-Luc Lebrun"
+        },
+        {
+            "title": "La Documentation technique : Conception et rédaction des documents",
+            "author": "Bernard Mallet"
+        },
+        {
+            "title": "Transcrire et communiquer l'expertise : La documentation technique et ses enjeux",
+            "author": "Lucille Deslandes"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}

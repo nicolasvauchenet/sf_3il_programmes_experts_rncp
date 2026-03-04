@@ -1,0 +1,124 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC01-FM06",
+        "title": "Test Driven Development",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l'architecture logicielle",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C8",
+            "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module de cours sont de comprendre et appliquer les principes du Test Driven Development (TDD), d'intégrer efficacement le TDD dans le processus de développement logiciel, et d'adopter des pratiques de refactoring et d'intégration continue pour améliorer la qualité du code."
+    },
+    "prerequisites": {
+        "description": "Les apprenants devraient avoir des connaissances de base en programmation et une compréhension des principes fondamentaux du développement logiciel pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction au Test Driven Development",
+                "items": [
+                    "Principe de base du Test Driven Development",
+                    "Avantages et inconvénients du Test Driven Development",
+                    "Méthodologie du cycle de développement en Test Driven Development",
+                    "Outils et Framework pour le Test Driven Development",
+                    "Bonnes pratiques et recommandations"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Rédaction des tests unitaires",
+                "items": [
+                    "Compréhension des tests unitaires",
+                    "Choix des cas de tests à couvrir",
+                    "Utilisation des assertions pour valider les résultats",
+                    "Gestion des dépendances et isolation des tests",
+                    "Stratégies de nommage des tests"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Intégration continue et Test Driven Development",
+                "items": [
+                    "Concept d'intégration continue",
+                    "Intégration des tests unitaires dans le processus d'intégration continue",
+                    "Outils d'intégration continue compatibles avec le Test Driven Development",
+                    "Bonnes pratiques pour l'intégration continue avec le Test Driven Development",
+                    "Feedback rapide et amélioration continue grâce à l'intégration continue"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Refactoring et Test Driven Development",
+                "items": [
+                    "Comprendre le processus de refactoring",
+                    "Intégration du refactoring dans le cycle du Test Driven Development",
+                    "Techniques de refactoring et leurs implications sur les tests",
+                    "Assurer l'intégrité des tests lors du refactoring",
+                    "Mesurer l'impact du refactoring sur la qualité du code et des tests"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas pratiques et études de cas",
+                "items": [
+                    "Exemples concrets d'implémentation du Test Driven Development",
+                    "Résolution de problèmes courants rencontrés lors de l'intégration du Test Driven Development",
+                    "Retours d'expérience et témoignages de professionnels utilisant le Test Driven Development",
+                    "Analyse de cas d'études pour identifier les bonnes pratiques et les pièges à éviter",
+                    "Mise en pratique à travers des exercices et des mini-projets"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Principe de base du Test Driven Development",
+            "context": "Vous êtes un développeur nouvellement intégré à une équipe qui pratique le Test Driven Development. Votre responsable vous demande de rédiger des tests unitaires pour une fonction qui calcule le carré d'un nombre entier.",
+            "objective": "Rédiger les tests unitaires en respectant le principe de base du Test Driven Development."
+        },
+        {
+            "title": "Utilisation des assertions pour valider les résultats",
+            "context": "Vous travaillez sur un projet où la gestion des dépendances et l'isolation des tests sont des aspects critiques. Vous devez écrire des tests unitaires pour une fonction de recherche dans une liste.",
+            "objective": "Utiliser des assertions appropriées pour valider les résultats de la fonction de recherche, tout en respectant les bonnes pratiques de gestion des dépendances et d'isolation des tests."
+        },
+        {
+            "title": "Intégration des tests unitaires dans le processus d'intégration continue",
+            "context": "Vous avez la charge de configurer un outil d'intégration continue pour un projet en Test Driven Development. Votre tâche consiste à intégrer les tests unitaires dans le processus d'intégration continue.",
+            "objective": "Configurer l'outil d'intégration continue pour exécuter les tests unitaires automatiquement à chaque validation de code, et assurer la rapidité du feedback."
+        },
+        {
+            "title": "Intégration du refactoring dans le cycle du Test Driven Development",
+            "context": "Vous travaillez sur un projet existant et vous identifiez des portions de code nécessitant du refactoring. Votre objectif est d'intégrer le refactoring dans le cycle du Test Driven Development.",
+            "objective": "Appliquer le processus de refactoring sur une portion de code tout en assurant l'intégrité des tests unitaires associés."
+        },
+        {
+            "title": "Mise en pratique à travers des exercices et des mini-projets",
+            "context": "Vous êtes amené à travailler sur un mini-projet où vous devrez mettre en pratique les concepts du Test Driven Development.",
+            "objective": "Implémenter les fonctionnalités demandées en suivant la méthodologie du Test Driven Development, en rédigeant des tests unitaires et en les intégrant dans le processus d'intégration continue."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Clean Code : A Handbook of Agile Software Craftsmanship",
+            "author": "Robert C. Martin"
+        },
+        {
+            "title": "Test Driven Development : By Example",
+            "author": "Kent Beck"
+        },
+        {
+            "title": "Refactoring : Improving the Design of Existing Code",
+            "author": "Martin Fowler"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Support (Présentations, vidéos, etc.)"
+    ]
+}
