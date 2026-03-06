@@ -1,6 +1,8 @@
 .app-toc {
-    position: sticky;
-    top: 5.2em;
+    @include respondTo(sm) {
+        position: sticky;
+        top: 5.2em;
+    }
 
     h2 {
         margin-bottom: 0.25rem;
@@ -16,7 +18,7 @@
         padding: 0.5rem 0.5rem 0.5rem 0;
 
         @include respondTo(sm) {
-            max-height: 58dvh;
+            max-height: 75dvh;
         }
 
         a {
@@ -48,6 +50,7 @@
                 display: block;
                 margin-bottom: 0.25rem;
                 padding: 0;
+                text-align: left;
                 color: $primary;
                 background-color: transparent;
                 transition: all 0.3s;
