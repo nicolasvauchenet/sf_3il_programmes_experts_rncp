@@ -1,0 +1,74 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM09",
+        "title": "Projet : Management de projet",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 10,
+        "durationHours": null,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du bloc « Piloter les projets et la conduite du changement » sont mobilisées dans ce projet."
+        }
+    ],
+    "objectives": {
+        "description": "Mettre en pratique les principes fondamentaux du management de projet, planifier et ordonnancer un projet, gérer les risques et imprévus, assurer le suivi et le contrôle, piloter une équipe projet et conduire la phase de clôture et d'évaluation."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi l'ensemble des modules du bloc « Piloter les projets et la conduite du changement »."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Élaboration d'un plan de projet",
+            "context": "Développement d'une nouvelle application mobile.",
+            "objective": "Définir les phases du projet, identifier les tâches, estimer les délais, construire un diagramme de Gantt et identifier les ressources nécessaires."
+        },
+        {
+            "title": "Gestion des risques",
+            "context": "Organisation d'un événement important.",
+            "objective": "Identifier les risques, analyser leur probabilité et leur impact, et définir une stratégie de gestion des risques."
+        },
+        {
+            "title": "Suivi de projet",
+            "context": "Projet de création d'un site web à mi-parcours.",
+            "objective": "Mettre en place des indicateurs de suivi, construire un tableau de bord, analyser un écart et proposer une action corrective."
+        },
+        {
+            "title": "Gestion d'équipe",
+            "context": "Implémentation d'un nouveau système informatique.",
+            "objective": "Constituer une équipe projet, définir les rôles, mettre en place des stratégies de motivation, de gestion des conflits et d'évaluation des performances."
+        },
+        {
+            "title": "Analyse et retour d'expérience",
+            "context": "Clôture d'un projet de refonte de site web.",
+            "objective": "Comparer les résultats aux objectifs initiaux, identifier les bonnes pratiques et produire un rapport de retour d'expérience."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Guide du Corpus des connaissances en management de projet (PMBOK)",
+            "author": "Project Management Institute"
+        },
+        {
+            "title": "La gestion de projet : Méthodes et pratiques",
+            "author": "Jean-Michel Jourdain"
+        },
+        {
+            "title": "Management de projet : un guide pratique",
+            "author": "Claude Besner et Brian Hobbs"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Management de projet",
+        "Travail en groupe"
+    ]
+}
