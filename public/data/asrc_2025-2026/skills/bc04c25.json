@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC04-C25",
+        "title": "Orchestrer et animer des projets informatiques avec des méthodologies agiles",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduite de projet d'infrastructure systèmes et réseaux sécurisée",
+        "academicYear": "2025-2026"
+    },
+    "description": "Orchestrer et animer des projets informatiques en utilisant des méthodologies agiles pour planifier, exécuter et surveiller le travail, en facilitant la communication entre toutes les parties prenantes, y compris en situation de handicap, afin d'atteindre les objectifs définis.",
+    "criteria": [
+        "Alignement méthodologique : la méthodologie choisie est appropriée au contexte, avec prise en compte des risques identifiés.",
+        "Efficacité de la planification : le plan est détaillé, réaliste, respecte les jalons, avec preuves de suivi et d'ajustement."
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC05-C32",
+        "title": "Optimisation des processus de décision par le machine learning",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Conception et optimisation d'architecture de données décisionnelles et automatisation des processus et flux métier",
+        "academicYear": "2025-2026"
+    },
+    "description": "Optimiser les processus de décision en analysant les opérations métiers à l'aide de méthodes de machine learning et en intégrant des modèles prédictifs pour améliorer l'automatisation et l'efficacité opérationnelle.",
+    "criteria": [
+        "Les modèles prédictifs sont correctement intégrés : Les solutions développées permettent d'améliorer les processus décisionnels.",
+        "Les pratiques de MLOps améliorent la performance : Les méthodes utilisées prennent en compte les contraintes de données et de performance."
+    ]
+}

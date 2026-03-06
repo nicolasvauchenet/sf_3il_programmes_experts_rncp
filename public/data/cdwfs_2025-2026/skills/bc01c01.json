@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC01-C01",
+        "title": "Concevoir et structurer des interfaces web en HTML5",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Front-End - Conception et réalisation des interfaces utilisateurs adaptatives et de l'expérience interactive.",
+        "academicYear": "2025"
+    },
+    "description": "Concevoir et structurer des interfaces web en utilisant le langage HTML5 en appliquant des pratiques de codage sémantique avancées pour produire des sites conformes aux besoins des personnes en situation de handicap (standards d'accessibilité du W3C) et à l'optimisation pour le référencement (SEO).",
+    "criteria": [
+        "Indicateurs de validation W3C : le code HTML est conforme aux normes du W3C.",
+        "Accessibilité : des normes d'accessibilité (ex : ARIA, attribut alt, etc.) sont mises en place et permettent l’accessibilité universelle.",
+        "Clarté du code : la clarté et la structure du code permettent une maintenance facile et une compréhension rapide par d’autres développeurs (indentation, espacement, commentaires, nommage compréhensible…)."
+    ]
+}

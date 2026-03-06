@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC03-C21",
+        "title": "Assurer la gestion et le suivi des révisions de code source avec Git",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Architectures Systèmes d'Information, Cloud and Devops pour l'intégration et la livraison continue des solutions logicielles.",
+        "academicYear": "2025"
+    },
+    "description": "Assurer la gestion et le suivi des révisions de code source à l’aide d'un logiciel de gestion de versions comme Git afin de garantir la traçabilité des changements et la coordination des versions au sein de l’équipe de développement.",
+    "criteria": [
+        "Gestion de versions : une politique de suivi des modifications est traçable et adaptée aux besoins du projet."
+    ]
+}

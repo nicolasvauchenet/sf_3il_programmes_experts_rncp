@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM03",
+        "title": "Méthodologies Agile",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C29",
+            "description": "Planifier et conduire le projet en appliquant des méthodologies de gestion de projet (méthodologie en V, en cascade ou Agile) selon le contexte, pour une planification et exécution efficaces des projets informatiques en respectant le plan de projet établi et en tenant compte des risques identifiés."
+        },
+        {
+            "code": "C30",
+            "description": "Coordonner les équipes de projet, en utilisant des outils collaboratifs pour la planification et le suivi des tâches et en accompagnant les compétences individuelles et collectives de l'équipe afin de garantir l'alignement des ressources avec les besoins du projet et d'ajuster la planification en fonction des écarts identifiés."
+        },
+        {
+            "code": "C31",
+            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet."
+        },
+        {
+            "code": "C32",
+            "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape, pour mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes fondamentaux et les valeurs du Manifeste Agile ainsi que les bénéfices de l'approche Agile. Explorer les principaux Frameworks Agiles tels que Scrum, Kanban et Extreme Programming, y compris leurs rôles, événements et artefacts spécifiques. Apprendre à mettre en œuvre la méthodologie Agile de manière adaptable dans différents projets en favorisant la collaboration, la gestion des changements et l'auto-organisation."
+    },
+    "prerequisites": {
+        "description": "Une compréhension de base des concepts de gestion de projet et une expérience pratique en développement logiciel seraient bénéfiques, bien que non indispensables."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Principes de la méthodologie Agile",
+                "items": [
+                    "Manifeste Agile et ses valeurs",
+                    "Les principes fondamentaux de l'Agilité",
+                    "Les avantages de l'approche Agile",
+                    "Les principaux Frameworks Agiles (Scrum, Kanban, XP, etc.)",
+                    "Les rôles clés dans une équipe Agile"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Scrum, un framework Agile incontournable",
+                "items": [
+                    "Les différents rôles dans une équipe Scrum (Product Owner, Scrum Master, Equipe de développement)",
+                    "Les événements Scrum (Sprint, Daily Scrum, Sprint Review, Sprint Retrospective)",
+                    "Les artefacts Scrum (Product Backlog, Sprint Backlog, Increment)",
+                    "La gestion des exigences dans Scrum (User Stories, Definition of Done)",
+                    "Les bonnes pratiques pour une implémentation réussie de Scrum"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Kanban, une approche visuelle de la gestion de projet",
+                "items": [
+                    "Les principes de base de Kanban (flux de travail, limites de travaux en cours, visualisation)",
+                    "La mise en place d'un tableau Kanban",
+                    "L'optimisation du flux de travail grâce à Kanban",
+                    "L'utilisation des métriques Kanban pour l'amélioration continue",
+                    "Les cas d'utilisation et les avantages de Kanban dans différents contextes"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Extreme Programming (XP)",
+                "items": [
+                    "Les pratiques clés de l'Extreme Programming (programmation en binôme, programmation test- driven, intégration continue, refactoring)",
+                    "L'importance de la communication et de la rétroaction dans l'XP",
+                    "Les principes de base de la qualité logicielle dans l'XP",
+                    "L'intégration de l'XP dans un environnement Agile plus large",
+                    "Les défis potentiels et les solutions pour une mise en œuvre réussie de l'XP"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Mise en œuvre de la méthodologie Agile dans un projet",
+                "items": [
+                    "L'adaptation de l'approche Agile en fonction du contexte et des besoins du projet",
+                    "Les pratiques pour favoriser la collaboration et la communication dans une équipe Agile",
+                    "La gestion des changements et des risques dans un environnement Agile",
+                    "L'importance de l'auto-organisation et de l'amélioration continue dans une équipe Agile",
+                    "Les outils et techniques pour le suivi et l'évaluation des progrès dans un projet Agile"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Identifiez les valeurs et principes de l'Agilité",
+            "context": "Analyse du Manifeste Agile.",
+            "objective": "Identifier les quatre valeurs fondamentales et illustrer deux principes par des exemples concrets."
+        },
+        {
+            "title": "Implémentation de Scrum",
+            "context": "Adoption de Scrum pour un projet.",
+            "objective": "Identifier les rôles clés et élaborer un plan de Sprint avec tâches et livrables."
+        },
+        {
+            "title": "Conception d'un tableau Kanban",
+            "context": "Projet de développement logiciel.",
+            "objective": "Créer un tableau Kanban, définir les colonnes, attribuer des tâches et gérer les limites de travaux en cours."
+        },
+        {
+            "title": "Pratiques clés de l'Extreme Programming",
+            "context": "Mise en œuvre de deux pratiques XP.",
+            "objective": "Expliquer leur implémentation, bénéfices attendus, défis potentiels et solutions."
+        },
+        {
+            "title": "Adaptation de l'approche Agile à un projet spécifique",
+            "context": "Cas d'utilisation réel ou fictif.",
+            "objective": "Proposer une adaptation Agile adaptée aux besoins, en justifiant les pratiques et outils retenus."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "La méthode Agile dans la gestion de projet : Les fondamentaux",
+            "author": "Gérard Peliks"
+        },
+        {
+            "title": "Scrum : le guide pratique de la méthode Agile la plus populaire",
+            "author": "Claude Aubry"
+        },
+        {
+            "title": "Kanban et Scrum, tirer le meilleur des deux",
+            "author": "Henrick Kniberg"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

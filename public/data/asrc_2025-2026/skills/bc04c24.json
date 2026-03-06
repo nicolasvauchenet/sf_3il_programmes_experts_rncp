@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC04-C24",
+        "title": "Rédiger des documents de spécification technique",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduite de projet d'infrastructure systèmes et réseaux sécurisée",
+        "academicYear": "2025-2026"
+    },
+    "description": "Rédiger des documents de spécification technique servant de référence pour les décisions technologiques et les investissements, en assurant que les solutions choisies soient viables, rentables et conformes aux normes de l'industrie.",
+    "criteria": [
+        "Conformité : le cahier des charges / la note de cadrage correspond aux exigences des parties prenantes et aux standards de l'entreprise.",
+        "Clarté et précision : les documents sont rédigés de manière précise et compréhensible.",
+        "Solutions techniques et performances : les solutions techniques et performances attendues sont correctement évaluées et décrites."
+    ]
+}

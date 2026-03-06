@@ -1,0 +1,129 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC01-FM03",
+        "title": "Application web dynamiques et interactives",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives Front-end",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C04",
+            "description": "Implémenter des interactions côté client en utilisant JavaScript et TypeScript et respectant les standards ECMAScript pour concevoir des fonctionnalités interactives (validation de formulaires, animations…) permettant d’améliorer l’engagement utilisateur et l’interactivité du site web."
+        },
+        {
+            "code": "C05",
+            "description": "Optimiser la communication asynchrone entre les utilisateurs et les serveurs en développant des requêtes AJAX pour accroître la réactivité et la performance des applications web."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les concepts fondamentaux des interactions utilisateur et leur importance dans la conception ergonomique. Acquérir les bases de la programmation en JavaScript et TypeScript pour développer des interfaces utilisateur dynamiques et réactives. Maîtriser l'utilisation d'AJAX pour améliorer la performance et l'efficacité des applications web."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en programmation web, notamment en HTML et CSS."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux interactions utilisateur",
+                "items": [
+                    "Comprendre les différents types d'interactions utilisateur",
+                    "Importance de l'ergonomie dans la conception des interactions",
+                    "Principes de base de l'expérience utilisateur (UX)",
+                    "Bonnes pratiques en matière d'interactions utilisateur",
+                    "Exemples d'interactions utilisateur réussies"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Fondamentaux de JavaScript",
+                "items": [
+                    "Syntaxe de base de JavaScript",
+                    "Manipulation du DOM avec JavaScript",
+                    "Gestion des événements en JavaScript",
+                    "Utilisation des fonctions et des objets en JavaScript",
+                    "Débogage et gestion des erreurs en JavaScript"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Introduction à TypeScript",
+                "items": [
+                    "Avantages de l'utilisation de TypeScript par rapport à JavaScript",
+                    "Syntaxe de base de TypeScript",
+                    "Types de données et annotations de type en TypeScript",
+                    "Interfaces et classes en TypeScript",
+                    "Migration d'un projet JavaScript vers TypeScript"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Utilisation de TypeScript pour l'interaction",
+                "items": [
+                    "Intégration de TypeScript dans des projets front-end",
+                    "Utilisation de TypeScript pour améliorer les interactions utilisateur",
+                    "Création de composants interactifs en utilisant TypeScript",
+                    "Gestion des événements et des états avec TypeScript",
+                    "Exemples concrets d'utilisation de TypeScript pour l'interaction"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : AJAX pour la performance des applications web",
+                "items": [
+                    "Compréhension du fonctionnement d'AJAX",
+                    "Utilisation d'AJAX pour charger des données de manière asynchrone",
+                    "Optimisation des performances à l'aide d'AJAX",
+                    "Gestion des erreurs et des retours d'AJAX",
+                    "Bonnes pratiques en matière d'utilisation d'AJAX pour la performance des applications web"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des interactions utilisateur",
+            "context": "Les apprenants devront sélectionner un site web ou une application avec des interactions utilisateur et les analyser.",
+            "objective": "Les apprenants devront identifier les différents types d'interactions utilisateur présents, évaluer l'ergonomie et l'expérience utilisateur, et proposer des améliorations pour optimiser ces interactions."
+        },
+        {
+            "title": "Manipulation du DOM avec JavaScript",
+            "context": "Les apprenants seront amenés à créer une page web simple et à utiliser JavaScript pour manipuler le DOM.",
+            "objective": "Ils devront ajouter et supprimer des éléments, modifier des attributs et des styles, et gérer les événements utilisateur (clic, survol, etc.)."
+        },
+        {
+            "title": "Conversion de code JavaScript en TypeScript",
+            "context": "Les apprenants devront prendre un petit projet JavaScript et le convertir en TypeScript.",
+            "objective": "Ils devront mettre en pratique la syntaxe de base de TypeScript, annoter les types de données, créer des interfaces et des classes, et adapter le code existant pour qu'il fonctionne avec TypeScript."
+        },
+        {
+            "title": "Création d'un composant interactif en TypeScript",
+            "context": "Les apprenants auront pour tâche de créer un composant interactif, tel qu'une fenêtre modale, un carrousel d'images ou un formulaire dynamique, en utilisant TypeScript.",
+            "objective": "Ils devront gérer les événements liés à ce composant, maintenir son état et optimiser son interaction avec l'utilisateur."
+        },
+        {
+            "title": "Utilisation d'AJAX pour charger des données",
+            "context": "Les apprenants devront améliorer une application web existante en utilisant AJAX pour charger des données de manière asynchrone.",
+            "objective": "Ils devront gérer les requêtes AJAX, afficher les données chargées sur la page, gérer les erreurs éventuelles et optimiser les performances de l'application grâce à cette approche."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "JavaScript : de l'initiation à la maîtrise",
+            "author": "Benayoun, S."
+        },
+        {
+            "title": "TypeScript - Apprentissage avancé",
+            "author": "Richet, D."
+        },
+        {
+            "title": "UX Design et ergonomie des interfaces",
+            "author": "Sénac, P."
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)",
+        "Vidéos"
+    ]
+}

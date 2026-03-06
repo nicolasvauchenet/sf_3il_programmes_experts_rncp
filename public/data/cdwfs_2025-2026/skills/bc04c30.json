@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C30",
+        "title": "Coordonner les équipes de projet avec des outils collaboratifs",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+        "academicYear": "2025"
+    },
+    "description": "Coordonner les équipes de projet (incluant les personnes en situation de handicap), en utilisant des outils collaboratifs pour la planification et le suivi des tâches et en accompagnant les compétences individuelles et collectives de l'équipe afin de garantir l'alignement des ressources avec les besoins du projet et d'ajuster la planification en fonction des écarts identifiés.",
+    "criteria": [
+        "Cohérence de la planification des tâches : les outils collaboratifs sont utilisés efficacement pour planifier, suivre les tâches et ajuster les ressources en fonction des écarts.",
+        "Communication et collaboration : la communication est claire et régulière au sein de l'équipe, avec des preuves de coordination efficace entre les membres.",
+        "Actions de formation proposées : des actions de formation sont proposées pour permettre l'alignement des ressources humaines avec les objectifs du projet."
+    ]
+}

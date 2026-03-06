@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC03-C16",
+        "title": "Conduire des audits de sécurité réguliers",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Sécurisation et mise en place de stratégies de cybersécurité et protection des données",
+        "academicYear": "2025-2026"
+    },
+    "description": "Conduire des audits de sécurité réguliers pour évaluer l'efficacité des mesures de sécurité en place, en utilisant des méthodologies standardisées et en collaboration avec les équipes internes et auditeurs externes, afin de détecter les faiblesses et recommander des améliorations.",
+    "criteria": [
+        "Qualité de l’analyse de l’audit technique : l'analyse identifie clairement les failles, propose des recommandations précises ; au moins 90% des vulnérabilités sont détectées et qualifiées en termes de risques.",
+        "Pertinence : les vulnérabilités identifiées couvrent les risques les plus critiques afin de sécuriser le SI."
+    ]
+}

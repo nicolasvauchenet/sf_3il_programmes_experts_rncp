@@ -1,4 +1,7 @@
 .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     @include displayFlex(space-between, center, 0.5rem);
     padding: 0.5rem 1rem;
     color: $white;

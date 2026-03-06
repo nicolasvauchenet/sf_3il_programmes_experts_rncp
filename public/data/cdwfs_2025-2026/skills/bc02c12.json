@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC02-C12",
+        "title": "Arbitrer entre bases de données relationnelles et NoSQL",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "academicYear": "2025"
+    },
+    "description": "Arbitrer et décider du choix entre les bases de données relationnelles et NoSQL en tenant compte des caractéristiques de chaque catégorie de base de données pour optimiser l'application en fonction de ses besoins.",
+    "criteria": [
+        "Prise de décision : l’arbitrage prend en considération des critères de performance, de coûts et d’évolutivité, et des hypothèses sont détaillées pour chaque critère.",
+        "Prise en compte des caractéristiques : les caractéristiques des bases de données sont prises en compte dans l'arbitrage."
+    ]
+}

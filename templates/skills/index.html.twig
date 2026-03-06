@@ -7,36 +7,77 @@
     {% include '_layout/default/_alert.html.twig' %}
 
     <main class="app-main">
-        <div class="app-grid third reverse">
-            {% include '_layout/default/_toc.html.twig' with {'title': 'Compétences', 'path': 'app_promotion_skills', 'code': code} %}
+        <div class="app-grid third layout">
+            {% include '_layout/default/_toc.html.twig' with {
+                'title': 'Compétence',
+                'path': 'app_promotion_skills',
+                'promotion': promotion,
+                'year': year,
+                'content': skills,
+                'selectedCode': selectedCode
+            } %}
 
             <article>
                 <div class="app-grid third">
                     <section class="app-section">
-                        <h1>Fiche compétence {{ code }}</h1>
+                        <h1>{{ skill.title ?: 'Compétence' }}</h1>
+
+                        <p class="subtitle">
+                            {{ promotionContext.promotionTitle }}
+                            {% if skill.blocName %}
+                                <br/>
+                                {{ skill.blocCode }} : {{ skill.blocName }}
+                            {% endif %}
+                        </p>
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
-                        </div>
 
-                        <p class="subtitle">
-                            ...
-                        </p>
+                            {% if skill.skillCode %}
+                                <span class="app-badge">{{ skill.skillCode }}</span>
+                            {% endif %}
+
+                            {% if skill.academicYear %}
+                                <span class="app-badge">{{ skill.academicYear }}</span>
+                            {% endif %}
+                        </div>
                     </section>
 
                     <section class="app-section">
                         <h2>Métriques</h2>
 
-                        <div class="app-grid four">
-                            <span>...</span>
+                        <div class="app-grid two">
+                            <div>
+                                <strong>Critères</strong>
+                                <br>
+                                {{ skill.criteria|length }}
+                            </div>
+                            <div>
+                                <strong>RNCP</strong>
+                                <br>
+                                {{ skill.meta.rncpCode ?? '-' }}
+                            </div>
                         </div>
                     </section>
                 </div>
 
-                <section class="app-section mx-0 mt-2 mb-0">
-                    <h2>Contenu</h2>
-                    <p>...</p>
-                </section>
+                {% if skill.description %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Définition</h2>
+                        <p>{{ skill.description }}</p>
+                    </section>
+                {% endif %}
+
+                {% if skill.criteria is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Critères d’évaluation</h2>
+                        <ul>
+                            {% for c in skill.criteria %}
+                                <li>{{ c }}</li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endif %}
             </article>
         </div>
     </main>

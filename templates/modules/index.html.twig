@@ -20,27 +20,27 @@
             <article>
                 <div class="app-grid third">
                     <section class="app-section">
-                        <h1>{{ module.meta.title ?? 'Matière' }}</h1>
+                        <h1>{{ module.title ?: 'Matière' }}</h1>
 
                         <p class="subtitle">
-                            {% if module.meta.blocName is defined and module.meta.blocName %}
-                                {{ promotionContext.promotionTitle }}
-                            {% endif %}
-                            {% if module.meta.blocName is defined and module.meta.blocName %}
+                            {{ promotionContext.promotionTitle }}
+                            {% if module.blocName %}
                                 <br/>
-                                {{ module.meta.blocCode }} : {{ module.meta.blocName }}
+                                {{ module.blocCode }} : {{ module.blocName }}
                             {% endif %}
                         </p>
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
-                            {% if module.meta.blocCode is defined and module.meta.blocCode %}
-                                <span class="app-badge">{{ module.meta.blocCode }}{{ module.meta.code }}</span>
+                            {% if module.blocCode and module.moduleCode %}
+                                <span class="app-badge">{{ module.moduleCode }}</span>
+                            {% elseif module.moduleCode %}
+                                <span class="app-badge">{{ module.moduleCode }}</span>
                             {% endif %}
 
-                            {% if module.meta.academicYear is defined and module.meta.academicYear %}
-                                <span class="app-badge">{{ module.meta.academicYear }}</span>
+                            {% if module.academicYear %}
+                                <span class="app-badge">{{ module.academicYear }}</span>
                             {% endif %}
                         </div>
                     </section>
@@ -52,7 +52,7 @@
                             <div>
                                 <strong>Durée</strong>
                                 <br>
-                                {{ module.meta.durationDays ?? 0 }} j • {{ module.meta.durationHours ?? 0 }} h
+                                {{ module.durationDays }} j • {{ module.durationHours }} h
                             </div>
                             <div>
                                 <strong>Compétences</strong>
@@ -93,7 +93,7 @@
                         {% for s in module.skills %}
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <p>
-                                    <strong>{{ s.code }}</strong> - {{ s.description }}
+                                    <strong>Compétence {{ s.code }}</strong> : {{ s.description }}
                                 </p>
                             </section>
                         {% endfor %}
@@ -126,28 +126,19 @@
 
                         {% for ex in module.exercises %}
                             {% set title = ex.title ?? 'Exercice' %}
-
-                            {# On récupère proprement les champs #}
                             {% set context = (ex.context ?? '')|trim %}
                             {% set objective = (ex.objective ?? '')|trim %}
-
-                            {# Fallback : certains exercices n'ont que l'un des deux #}
                             {% set objectiveText = objective ?: context %}
                             {% set hasObjective = objectiveText|length > 0 %}
                             {% set hasContext = context|length > 0 and objective|length > 0 %}
-
-                            {# Comparaison normalisée (casse + espaces) #}
                             {% set normContext = context|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
                             {% set normObjective = objective|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-
-                            {# On compresse les espaces multiples #}
                             {% set normContext = normContext|split(' ')|filter(v => v != '')|join(' ') %}
                             {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
-
                             {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
 
                             <section class="app-section mx-0 mt-2 mb-0">
-                                <h3>{{ title }}</h3>
+                                <h3>Exercice {{ loop.index }} : {{ title }}</h3>
 
                                 {% if showContextAndObjective %}
                                     <p><strong>Contexte :</strong> {{ context }}</p>

@@ -1,0 +1,129 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM05",
+        "title": "Management des pratiques sécuritaires",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise en s’appuyant sur les standards et une analyse des risques afin de protéger les données et les systèmes."
+        },
+        {
+            "code": "C21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les recommandations de l’ANSSI au moyen d’ateliers, de documentation, de simulations d’attaque et de campagnes de phishing afin de réduire les comportements à risque."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les enjeux et les bonnes pratiques de sécurité des systèmes d'information, maîtriser les principes du management de la sécurité et apprendre à élaborer une politique de sécurité efficace tout en intégrant la gestion des incidents et les dimensions physiques et environnementales."
+    },
+    "prerequisites": {
+        "description": "Compréhension de base des systèmes d'information et des réseaux. Une connaissance préalable des notions de gouvernance d'entreprise et de gestion des risques est recommandée."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la sécurité des systèmes d'information",
+                "items": [
+                    "Enjeux de la sécurité des systèmes d'information",
+                    "Menaces et vulnérabilités principales",
+                    "Types d'attaques et impacts potentiels",
+                    "Bonnes pratiques de sécurité",
+                    "Importance du management de la sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Fondements du management de la sécurité",
+                "items": [
+                    "Normes et standards de sécurité",
+                    "Concepts de gouvernance, risque et conformité (GRC)",
+                    "Approches et méthodologies de management de la sécurité",
+                    "Aspects juridiques et réglementaires",
+                    "Rôles et responsabilités des acteurs de la sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Élaboration d'une politique de sécurité",
+                "items": [
+                    "Étapes d'élaboration d'une politique de sécurité",
+                    "Objectifs, principes et règles de sécurité",
+                    "Gestion des identités et des accès (IAM)",
+                    "Sensibilisation et formation des utilisateurs",
+                    "Dimension humaine de la sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents de sécurité",
+                "items": [
+                    "Processus de gestion des incidents",
+                    "Détection, tri et classification des incidents",
+                    "Réponse aux incidents",
+                    "Techniques d'investigation et de résolution",
+                    "Communication et remédiation"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurité physique et environnementale",
+                "items": [
+                    "Enjeux de la sécurité physique",
+                    "Mesures de protection des locaux et équipements",
+                    "Gestion des risques environnementaux",
+                    "Bonnes pratiques de sécurité physique",
+                    "Intégration dans la politique globale de sécurité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de menaces et vulnérabilités",
+            "context": "Réalisation d'une analyse de menaces pour une entreprise.",
+            "objective": "Identifier les menaces, les vulnérabilités associées et proposer des mesures de mitigation."
+        },
+        {
+            "title": "Étude de cas sur la gouvernance de la sécurité",
+            "context": "Suite à une violation de données dans une organisation.",
+            "objective": "Élaborer un plan d'action intégrant les principes de gouvernance, risque et conformité (GRC)."
+        },
+        {
+            "title": "Création d'une politique de sécurité",
+            "context": "Rédaction d'une politique de sécurité pour une PME.",
+            "objective": "Définir objectifs, règles de sécurité, plan de sensibilisation et gestion des identités."
+        },
+        {
+            "title": "Simulation de gestion d'incident",
+            "context": "Détection d'une activité suspecte sur un réseau d'entreprise.",
+            "objective": "Décrire les étapes de détection, de réponse et de communication lors d'un incident de sécurité."
+        },
+        {
+            "title": "Planification de la sécurité physique",
+            "context": "Conception des mesures de sécurité physique pour une installation informatique.",
+            "objective": "Identifier les menaces physiques et proposer des mesures de protection adaptées."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "La sécurité des systèmes d'information : enjeux et stratégies",
+            "author": "Alain Bouillé"
+        },
+        {
+            "title": "Cybersécurité : anticiper et agir",
+            "author": "Hervé Schauer"
+        },
+        {
+            "title": "Sécurité informatique : principes et méthodes",
+            "author": "Gilles Gronier"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Conférence professionnelle",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

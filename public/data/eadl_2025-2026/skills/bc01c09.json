@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC01-C09",
+        "title": "Rédaction du cahier des charges et des spécifications techniques",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Conception et modélisation de l'architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet.",
+    "criteria": [
+        "Conformité du cahier des charges : Le cahier des charges, la note de cadrage correspondent aux exigences établies par les parties prenantes et les standards de l'entreprise.",
+        "Clarté et précision : Les documents sont rédigés de manière précise et compréhensible par les différentes parties prenantes.",
+        "Solutions techniques et performance : Les solutions techniques et leurs performances attendues sont correctement évaluées et décrites dans les documents de projet."
+    ]
+}

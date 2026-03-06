@@ -1,0 +1,115 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM06",
+        "title": "Numérique Responsable et RSE",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C10",
+            "description": "Mettre en œuvre le Numérique Responsable en adaptant des pratiques durables et d’accessibilité (personnes en situation de handicap), en se basant sur l’inventaire exhaustif des actifs informatiques et en utilisant les outils de référence afin de mesurer et d’améliorer la performance environnementale du SI et les pratiques RSE afférentes."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les enjeux environnementaux, sociaux et sociétaux du numérique ainsi que les attentes en matière de RSE. Développer des stratégies de numérique responsable intégrant les principes d’écoconception et d’achats responsables. Utiliser des outils et méthodes permettant d’évaluer, suivre et améliorer les actions responsables dans le domaine IT."
+    },
+    "prerequisites": {
+        "description": "Une compréhension générale de la Responsabilité Sociétale des Entreprises (RSE) et des notions de base en technologies de l'information est recommandée."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Enjeux du numérique responsable et RSE",
+                "items": [
+                    "Comprendre les enjeux environnementaux liés au numérique",
+                    "Appréhender les impacts sociaux et sociétaux du numérique",
+                    "Connaître les attentes sociétales vis-à-vis des entreprises en matière de RSE",
+                    "Identifier les bénéfices d'une approche responsable du numérique pour l'entreprise",
+                    "Connaître les réglementations et normes en matière de numérique responsable et RSE"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Stratégies de numérique responsable",
+                "items": [
+                    "Comprendre les principes de l'écoconception des services numériques",
+                    "Mettre en place une politique d'achat responsable pour les équipements IT",
+                    "Maîtriser les bonnes pratiques de gestion des données et de consommation énergétique",
+                    "Mettre en place des actions pour réduire l'empreinte carbone des infrastructures IT",
+                    "Élaborer une stratégie RSE intégrant les enjeux du numérique responsable"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et méthodes pour le numérique responsable",
+                "items": [
+                    "Connaître les outils d'évaluation de l'empreinte environnementale des infrastructures IT",
+                    "Réaliser un diagnostic RSE dans le domaine du numérique",
+                    "Maîtriser les méthodes de mesure et de suivi des actions de numérique responsable",
+                    "Mettre en place un tableau de bord RSE pour le suivi des objectifs",
+                    "Sensibiliser et former les équipes aux enjeux du numérique responsable"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Bonnes pratiques et retours d'expérience",
+                "items": [
+                    "Étudier des cas concrets de démarches RSE réussies dans le domaine du numérique",
+                    "Analyser les bonnes pratiques mises en place par les entreprises",
+                    "Comprendre les bénéfices économiques et sociaux d'une démarche RSE numérique",
+                    "Identifier les difficultés et freins à la mise en œuvre",
+                    "Tirer des retours d'expérience pour améliorer les démarches responsables"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de l'impact environnemental",
+            "context": "Évaluer l'impact environnemental des infrastructures IT d'une entreprise.",
+            "objective": "Réaliser un inventaire des équipements, utiliser un outil d'évaluation environnementale et identifier les postes les plus énergivores."
+        },
+        {
+            "title": "Élaboration d'une politique d'achat responsable",
+            "context": "Concevoir une politique d'achat responsable pour les équipements IT.",
+            "objective": "Définir des critères de sélection des fournisseurs et des produits intégrant durabilité, réparabilité et certifications écologiques."
+        },
+        {
+            "title": "Diagnostic RSE et plan d'action",
+            "context": "Réaliser un diagnostic RSE orienté numérique pour une organisation.",
+            "objective": "Proposer un plan d'action incluant objectifs mesurables, indicateurs de suivi et initiatives concrètes."
+        },
+        {
+            "title": "Sensibilisation et formation des équipes",
+            "context": "Concevoir un programme de formation interne sur le numérique responsable.",
+            "objective": "Créer des modules pédagogiques et définir des indicateurs d'évaluation de l'efficacité du programme."
+        },
+        {
+            "title": "Étude de cas et amélioration continue",
+            "context": "Analyser une entreprise ayant mis en place une stratégie de numérique responsable.",
+            "objective": "Identifier les bonnes pratiques, les difficultés rencontrées et proposer un plan d'amélioration continue."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Le numérique responsable : concevoir, réaliser et utiliser des services numériques plus respectueux de l'environnement",
+            "author": "Y. Demilly"
+        },
+        {
+            "title": "RSE et développement durable : Stratégies pour un numérique responsable",
+            "author": "J.-P. Trousse"
+        },
+        {
+            "title": "Green IS : Building Sustainable Business Practices",
+            "author": "M.-C. Boudreau, A. J. Chen, M. Huber"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)",
+        "Conférence professionnelle"
+    ]
+}

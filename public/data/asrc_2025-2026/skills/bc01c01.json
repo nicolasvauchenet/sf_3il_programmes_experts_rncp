@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC01-C01",
+        "title": "Administrer et optimiser les systèmes d’exploitation Unix, Linux et Windows",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administration et optimisation des systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
+        "academicYear": "2025-2026"
+    },
+    "description": "Administrer et optimiser les systèmes d'exploitation Unix, Linux et Windows en tenant compte des bonnes pratiques de la qualité de service (QoS), en collaboration avec les équipes techniques, pour assurer les exigences de performance et de fiabilité de l'entreprise.",
+    "criteria": [
+        "Conformité au cahier des charges : l'architecture conçue répond aux besoins exprimés dans le cahier des charges.",
+        "Performance : l'efficacité opérationnelle du système permet d'atteindre les niveaux de performance exigés par la qualité de service (QoS).",
+        "Fiabilité : la stabilité du système assure une continuité de service conforme à la QoS avec une minimisation des pannes ou interruptions critiques."
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM06",
+        "title": "Gestion des identités et accès sécurisés",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Administrer les systèmes de gestion des identités et des accès (IAM), en mettant en œuvre des politiques d'accès rigoureuses et en utilisant des technologies d'authentification avancées (MFA) et tenant compte de personnes en situation de handicap, pour garantir que seul le personnel autorisé a accès aux systèmes critiques et aux données sensibles"
+        }
+    ],
+    "objectives": {
+        "description": "Ce module vise à comprendre les enjeux de la gestion des identités et des accès sécurisés dans la cybersécurité. Il permet de connaître les concepts clés liés à l'authentification, l'autorisation, et la gestion des privilèges, ainsi que d'identifier les bonnes pratiques et les normes de sécurité. Les apprenants apprendront également à évaluer les solutions d'authentification, de gestion des identités et d'accès dans divers environnements, y compris le cloud."
+    },
+    "prerequisites": {
+        "description": "Des connaissances de base en cybersécurité et en gestion des systèmes d'information sont nécessaires pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gestion des identités et accès sécurisés",
+                "items": [
+                    "Comprendre les enjeux de la gestion des identités et des accès dans la cybersécurité",
+                    "Identifier les principaux risques liés à une gestion inadéquate des identités et des accès",
+                    "Connaître les concepts clés tels que l'authentification, l'autorisation, la gestion des privilèges, etc.",
+                    "Comprendre les normes et bonnes pratiques en matière de gestion des identités et accès sécurisés",
+                    "Identifier les différents types d'identités et d'accès à protéger"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodes d'authentification et d'autorisation",
+                "items": [
+                    "Comprendre les différentes méthodes d'authentification (mot de passe, biométrie, carte à puce, etc.)",
+                    "Connaître les principes de l'authentification forte et multi-facteurs",
+                    "Identifier les mécanismes d'autorisation (RBAC, ABAC, etc.) et leurs avantages",
+                    "Comprendre les enjeux liés à la gestion des identifiants et mots de passe",
+                    "Évaluer les solutions d'authentification et d'autorisation selon les besoins de l'organisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion des identités et des privilèges",
+                "items": [
+                    "Comprendre les processus de gestion des identités (provisionnement, déprovisionnement, synchronisation, etc.)",
+                    "Identifier les risques liés aux identités inactives ou obsolètes",
+                    "Connaître les principes de gestion des privilèges et les concepts de moindre privilège",
+                    "Évaluer les outils de gestion des identités et des privilèges sur le marché",
+                    "Mettre en place des processus de revue des accès et de certification des droits"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sécurisation des accès aux données et applications",
+                "items": [
+                    "Comprendre les enjeux de la sécurisation des accès aux données sensibles",
+                    "Identifier les solutions de contrôle d'accès (DLP, DRM, etc.) et leurs fonctionnalités",
+                    "Connaître les bonnes pratiques pour la gestion des accès aux applications critiques",
+                    "Évaluer les risques liés aux accès à distance et mettre en place des mesures de sécurisation",
+                    "Mettre en place des processus de surveillance des accès et de détection d'anomalies"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des identités dans le cloud et les environnements hybrides",
+                "items": [
+                    "Comprendre les spécificités de la gestion des identités dans les environnements cloud",
+                    "Identifier les solutions d'IAM (Identity and Access Management) adaptées aux environnements hybrides",
+                    "Connaître les bonnes pratiques pour sécuriser les identités dans un contexte de cloud computing",
+                    "Évaluer les risques liés à la fédération d'identités et mettre en place des solutions adéquates",
+                    "Intégrer la gestion des identités dans une stratégie globale de cybersécurité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Conception d'une politique d'authentification forte",
+            "context": "Concevoir une politique d'authentification incluant l'utilisation de l'authentification multi-facteurs (MFA).",
+            "objective": "Décrire les facteurs utilisés, les conditions d'activation du MFA et les mesures à prendre en cas de perte d'un facteur."
+        },
+        {
+            "title": "Analyse de risques liés aux identités et accès inactifs",
+            "context": "Identifier les comptes inactifs d'une organisation et évaluer les risques associés.",
+            "objective": "Définir des critères d'inactivité et proposer une procédure de désactivation ou suppression des comptes."
+        },
+        {
+            "title": "Mise en place d'une revue des accès",
+            "context": "Concevoir un processus de revue des accès.",
+            "objective": "Documenter les étapes, la fréquence, les rôles et le suivi des modifications d'accès."
+        },
+        {
+            "title": "Planification de la sécurisation des accès à distance",
+            "context": "Concevoir un plan de sécurisation des accès à distance dans un contexte de télétravail.",
+            "objective": "Sélectionner une solution VPN, définir des mesures de protection et proposer un plan de test d'efficacité."
+        },
+        {
+            "title": "Évaluation d'une solution IAM pour environnements hybrides",
+            "context": "Élaborer une grille d'évaluation pour comparer des solutions IAM adaptées à un environnement hybride.",
+            "objective": "Réaliser une analyse comparative de trois solutions IAM et formuler une recommandation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Gestion des identités en entreprise : Enjeux, pratiques et perspectives",
+            "author": "Gricha Zhang"
+        },
+        {
+            "title": "Sécurité des systèmes d'information : Authentification et contrôle d'accès",
+            "author": "Henri Entin"
+        },
+        {
+            "title": "Cybersécurité dans le cloud : Stratégies et meilleures pratiques",
+            "author": "Claire Wollis"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

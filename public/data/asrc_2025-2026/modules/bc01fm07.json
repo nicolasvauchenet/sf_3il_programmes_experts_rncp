@@ -1,0 +1,57 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM07",
+        "title": "Projet Infrastructures",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences de ce bloc sont mobilisées pour vérifier qu'elles ont bien été acquises par les étudiants avant les épreuves certifiantes 1, 2 et 3. Ce projet permet aussi à l'étudiant de se rendre compte de son niveau par rapport au niveau de compétences attendu dans ce bloc."
+        }
+    ],
+    "objectives": {
+        "description": "Le module vise à former les apprenants à la planification, la conception et la gestion d'infrastructures informatiques. Les participants apprendront à mettre en place, configurer et sécuriser les composants d'infrastructure. Ils seront également capables de gérer la documentation et la formation associées à l'infrastructure informatique."
+    },
+    "prerequisites": {
+        "description": ""
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Planification d'infrastructure",
+            "context": "En utilisant un cas d'étude fictif ou réel, demandez aux apprenants de réaliser une analyse des besoins et des contraintes pour la mise en place d'une infrastructure informatique.",
+            "objective": "Définir les objectifs du projet, identifier les ressources nécessaires et proposer une architecture globale pour répondre aux besoins identifiés."
+        },
+        {
+            "title": "Configuration des serveurs",
+            "context": "Installer et configurer plusieurs serveurs physiques et virtuels en fonction des besoins exprimés dans l'exercice précédent.",
+            "objective": "Mettre en place le réseau, les équipements actifs, les solutions de stockage et les outils de sécurité nécessaires."
+        },
+        {
+            "title": "Administration des services",
+            "context": "Simuler la gestion des services de messagerie, des services de fichiers et d'impression, ainsi que la configuration des services d'annuaire.",
+            "objective": "Mettre en place une stratégie de sauvegarde et de récupération, et surveiller les performances et les capacités de l'infrastructure."
+        },
+        {
+            "title": "Sécurisation de l'infrastructure",
+            "context": "Élaborer des politiques de sécurité adaptées au cas d'étude proposé.",
+            "objective": "Gérer les correctifs et les mises à jour, surveiller les journaux d'événements, prévoir des actions en cas d'incidents de sécurité et élaborer un plan opérationnel de maintenance."
+        },
+        {
+            "title": "Gestion de la documentation",
+            "context": "Créer et mettre à jour la documentation technique correspondant à l'infrastructure mise en place.",
+            "objective": "Organiser des sessions de formation pour les utilisateurs et les administrateurs, gérer les connaissances et documenter les procédures d'exploitation et de résolution d'incidents."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

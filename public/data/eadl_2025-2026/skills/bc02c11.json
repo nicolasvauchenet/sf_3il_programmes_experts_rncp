@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC02-C11",
+        "title": "Coordination des équipes de projet",
+        "rncpCode": "39765",
+        "blocCode": "BC02",
+        "blocName": "Management des projets numériques",
+        "academicYear": "2025-2026"
+    },
+    "description": "Coordonner les équipes de projet (incluant les personnes en situation de handicap), en utilisant des outils collaboratifs tel que Trello ou Kanban et des outils de ticketing comme Jira pour le suivi des tâches, la résolution des problèmes en lien avec les équipes exploitation afin de garantir la maintenabilité du projet et d'ajuster la planification en fonction des écarts identifiés.",
+    "criteria": [
+        "Cohérence de la planification des tâches : Les outils collaboratifs sont utilisés de manière efficace pour planifier, suivre les tâches et ajuster les ressources en fonction des écarts par rapport au plan initial.",
+        "Communication et collaboration : Il y a une communication claire et régulière au sein de l'équipe de projet, avec des preuves de coordination efficace entre les membres.",
+        "Actions de formation proposées : Elles permettent l'alignement des RH avec les objectifs du projet."
+    ]
+}

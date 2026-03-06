@@ -1,0 +1,52 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM08",
+        "title": "Projet : Conception et pilotage d'infrastructure",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 7,
+        "durationHours": 49,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du bloc 02 « Concevoir et Piloter les Infrastructures Systèmes et Réseaux » nécessaires à la validation de l'épreuve certifiante 2 (C11 à C16)."
+        }
+    ],
+    "objectives": {
+        "description": "Mettre en pratique la capacité à planifier, concevoir et mettre en œuvre des infrastructures informatiques en tenant compte des contraintes techniques et budgétaires. Les apprenants apprennent à gérer les changements, les évolutions et les incidents afin d'assurer une infrastructure fiable et performante, tout en intégrant la sécurité, la haute disponibilité et le support technique continu."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi tous les modules du bloc de compétences « Concevoir et Piloter les Infrastructures Systèmes et Réseaux »."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Étude de cas : planification des infrastructures",
+            "context": "Modernisation de l'infrastructure informatique d'une entreprise.",
+            "objective": "Analyser les besoins, identifier les contraintes techniques et budgétaires et proposer un plan de déploiement détaillé incluant les spécifications techniques, les risques et le calendrier."
+        },
+        {
+            "title": "Conception d'une architecture d'infrastructure",
+            "context": "Conception d'une infrastructure informatique pour une PME.",
+            "objective": "Choisir les composants matériels et logiciels, proposer une architecture physique et logique, intégrer la sécurité et analyser la performance et la scalabilité."
+        },
+        {
+            "title": "Configuration et tests d'infrastructure",
+            "context": "Configuration et validation d'une nouvelle infrastructure informatique.",
+            "objective": "Configurer les services et applications, mettre en place la supervision et le monitoring, réaliser les tests et produire une documentation technique."
+        },
+        {
+            "title": "Simulation de gestion des changements",
+            "context": "Introduction d'une nouvelle technologie dans une infrastructure existante.",
+            "objective": "Élaborer un processus de gestion des changements, planifier une mise à jour et analyser les impacts potentiels afin de minimiser les perturbations."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

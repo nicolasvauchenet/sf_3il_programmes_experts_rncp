@@ -1,0 +1,107 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM07",
+        "title": "Projet : Gestion des services",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du bloc BC01 « Gouvernance des infrastructures systèmes et réseaux » sont mobilisées dans ce projet préparant au passage de l’épreuve certifiante 1."
+        }
+    ],
+    "objectives": {
+        "description": "Mettre en pratique l’ensemble des matières du bloc de compétences « Gouvernance des infrastructures systèmes et réseaux » à travers un projet appliqué permettant de mobiliser les concepts de gouvernance IT, de gestion des services, d’audit, de continuité d’activité et d’amélioration continue."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi l’ensemble des matières du bloc de compétences « Gouvernance des infrastructures systèmes et réseaux »."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Compréhension des concepts de gestion des services",
+                "items": [
+                    "Identifier les principaux concepts de gestion des services",
+                    "Comprendre le rôle de la gestion des services dans une organisation",
+                    "Illustrer les concepts à l’aide d’exemples concrets issus du monde professionnel"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Conception et mise en œuvre des processus",
+                "items": [
+                    "Identifier un processus de gestion des services (ex : gestion des incidents)",
+                    "Décrire les étapes du processus",
+                    "Identifier les rôles et responsabilités",
+                    "Identifier les outils utilisés",
+                    "Proposer un schéma de mise en œuvre dans une organisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Évaluation et surveillance de la qualité des services",
+                "items": [
+                    "Définir les critères de qualité d’un service informatique",
+                    "Mettre en place des méthodes de collecte de données",
+                    "Définir des indicateurs de performance (KPI)",
+                    "Prévoir des actions correctives en cas de défaillance"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Intégration des outils de gestion des services",
+                "items": [
+                    "Identifier des outils de gestion des services",
+                    "Identifier d’autres systèmes d’information de l’entreprise",
+                    "Analyser les possibilités d’intégration entre ces systèmes",
+                    "Décrire les bénéfices pour la gestion des services"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des services dans un contexte de projet",
+                "items": [
+                    "Intégrer la gestion des services dans le cycle de vie d’un projet",
+                    "Identifier les risques liés à la mise en production",
+                    "Définir les actions de communication et de formation des utilisateurs",
+                    "Évaluer la satisfaction des utilisateurs"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Compréhension des concepts de gestion des services",
+            "context": "Rédiger un texte expliquant les principales notions de gestion des services dans un département informatique.",
+            "objective": "Illustrer les concepts à l’aide d’exemples concrets issus d’un contexte professionnel."
+        },
+        {
+            "title": "Conception d’un processus de gestion des services",
+            "context": "Choisir un processus de gestion des services (ex : gestion des incidents) et en concevoir le fonctionnement.",
+            "objective": "Produire un schéma détaillé identifiant étapes, rôles et outils."
+        },
+        {
+            "title": "Évaluation de la qualité des services",
+            "context": "Créer un plan d’évaluation de la qualité pour un service informatique.",
+            "objective": "Définir des KPI, méthodes de collecte de données et actions correctives."
+        },
+        {
+            "title": "Intégration d’outils de gestion des services",
+            "context": "Identifier des outils ITSM et des systèmes de l’entreprise pouvant être interconnectés.",
+            "objective": "Décrire une architecture d’intégration améliorant la gestion des services."
+        },
+        {
+            "title": "Gestion des services dans un projet",
+            "context": "Analyser un projet réel ou fictif et intégrer la gestion des services dans son cycle de vie.",
+            "objective": "Identifier les actions liées à la mise en production, à la communication et à l’évaluation de la satisfaction utilisateur."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Projet pédagogique"
+    ]
+}

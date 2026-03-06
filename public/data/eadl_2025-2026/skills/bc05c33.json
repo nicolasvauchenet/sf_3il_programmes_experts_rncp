@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC05-C33",
+        "title": "Surveillance et maintenabilité des systèmes automatisés",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Conception et optimisation d'architecture de données décisionnelles et automatisation des processus et flux métier",
+        "academicYear": "2025-2026"
+    },
+    "description": "Assurer la surveillance et la maintenance des systèmes automatisés en utilisant des outils de monitoring et en effectuant des mises à jour régulières afin de garantir leur performance et leur fiabilité.",
+    "criteria": [
+        "Les systèmes automatisés sont surveillés efficacement : Les outils de monitoring permettent de suivre en continu les performances.",
+        "Les mises à jour maintiennent la performance et la fiabilité : Les systèmes sont maintenus et optimisés régulièrement."
+    ]
+}

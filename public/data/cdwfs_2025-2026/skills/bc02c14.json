@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC02-C14",
+        "title": "Concevoir des API pour l'intégration et l'interopérabilité",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "academicYear": "2025"
+    },
+    "description": "Concevoir des API (application programming interface) en utilisant des architectures et des langages de programmation pertinents en prenant en compte les besoins d'intégration et d'interopérabilité des systèmes pour faciliter et optimiser les échanges de données entre différents services.",
+    "criteria": [
+        "Adéquation avec les besoins : l'API répond précisément aux besoins d'intégration identifiés, et son architecture facilite la communication entre différents services.",
+        "Pertinence des technologies utilisées : les langages de programmation et les technologies utilisées pour construire l'API sont adaptés aux objectifs fixés."
+    ]
+}

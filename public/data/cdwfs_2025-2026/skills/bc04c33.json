@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "type": "skill",
+    "code": "RNCP39608-BC04-C33",
+    "title": "Effectuer des revues de code et utiliser des outils d’analyse",
+    "rncpCode": "39608",
+    "blocCode": "BC04",
+    "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+    "academicYear": "2025"
+  },
+  "description": "Effectuer des revues de code en utilisant des outils d'analyse en respectant les principes de développement et les standards de l'entreprise afin d'assurer une qualité et une maintenabilité élevées du code.",
+  "criteria": [
+    "Conformité aux standards : le code révisé respecte les standards de développement de l'entreprise.",
+    "Maintenabilité du code : les corrections et améliorations apportées lors des revues de code facilitent la maintenance et les évolutions futures."
+  ]
+}

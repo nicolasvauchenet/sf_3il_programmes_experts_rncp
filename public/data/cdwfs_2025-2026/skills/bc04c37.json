@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C37",
+        "title": "Mettre en place une veille technologique et informationnelle",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+        "academicYear": "2025"
+    },
+    "description": "Mettre en place une veille technologique en relation avec le périmètre d'un projet ou l'activité de l'entreprise en sélectionnant des sources d'information multilingues et en utilisant des outils de collecte et d'organisation de l'information.",
+    "criteria": [
+        "Sélection des sources : les sources d'information sont pertinentes, crédibles et adaptées aux objectifs du projet.",
+        "Vérification de l'information : les informations collectées sont vérifiées pour garantir leur exactitude et leur actualité.",
+        "Utilisation d’outils de veille : des outils de collecte et d'organisation de l'information sont utilisés efficacement."
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC04-C21",
+        "title": "Intégration de services cloud dans des applications via des API et plateformes Cloud Provider",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimisation du Système d'Information par l'apport du Cloud computing",
+        "academicYear": "2025-2026"
+    },
+    "description": "Intégrer divers services cloud dans des applications en utilisant les API et les plateformes Cloud Provider en tenant compte de l’impact écologique notamment par le vecteur financier (FinOps) pour automatiser les processus afin de développer des solutions personnalisées qui améliorent l'efficacité opérationnelle et répondent aux besoins spécifiques des entreprises.",
+    "criteria": [
+        "Les services sélectionnés améliorent les fonctionnalités existantes : La sélection des services cloud permet d'améliorer les fonctionnalités existantes des applications, répondant ainsi mieux aux besoins spécifiques des entreprises.",
+        "L'automatisation des processus à l'aide des services cloud sélectionnés permet de réduire les erreurs, accélérer les déploiements et améliorer l'efficacité opérationnelle des entreprises."
+    ]
+}

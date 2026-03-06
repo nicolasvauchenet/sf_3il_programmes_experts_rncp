@@ -1,6 +1,6 @@
 .app-toc {
     position: sticky;
-    top: 1rem;
+    top: 5.2em;
 
     h2 {
         margin-bottom: 0.25rem;
@@ -16,7 +16,7 @@
         padding: 0.5rem 0.5rem 0.5rem 0;
 
         @include respondTo(sm) {
-            max-height: 71vh;
+            max-height: 58dvh;
         }
 
         a {

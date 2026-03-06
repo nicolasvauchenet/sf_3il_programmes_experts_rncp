@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC01-C04",
+        "title": "Elaborer , documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et /ou référentiels tels que ISO 9001 et ITIL",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Elaborer , documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et /ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services.",
+    "criteria": [
+        "Les processus et procédures sont documentés et s’appuient sur des normes et/ou référentiels de bonnes pratiques.",
+        "Les processus et procédures définis permettent d’atteindre le niveau de qualité et d’efficacité des services souhaité."
+    ]
+}

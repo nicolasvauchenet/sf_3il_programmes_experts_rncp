@@ -28,7 +28,7 @@ final class ModulesController extends AbstractController
         if ($modules === []) {
             $this->addFlash('warning', 'Aucune matière disponible pour ce référentiel.');
 
-            return $this->redirectToRoute('app_home');
+            return $this->redirectToRoute('app_promotion_summary', ['promotion' => $promotion, 'year' => $year]);
         }
 
         $rawSelected = (string)$request->query->get('code', '');

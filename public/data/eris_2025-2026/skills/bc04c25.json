@@ -1,0 +1,18 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC04-C25",
+        "title": "Piloter un projet au moyen d’une méthode de gestion de projet et des outils adapté s au contexte",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Pilotage de Projets et Conduite du Changement",
+        "academicYear": "2025-2026"
+    },
+    "description": "Piloter un projet au moyen d’une méthode de gestion de projet et des outils adapté s au contexte , en analysant le besoin, en rédigeant les documents d’initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l’entreprise et garantir la qualité des livrables , le respect des délais et des coûts.",
+    "criteria": [
+        "L’analyse des besoins est précise et fidèle à la demande et permet d’organiser le projet et arbitrer son traitement interne ou externe.",
+        "La méthode de gestion de projet et outils retenus permettent un suivi efficace et adapté au projet.",
+        "Les documents d’initialisation et de suivi permettent de cadrer le projet de façon efficace.",
+        "Les ressources et moyens mobilisés (internes ou externes) sont adaptés aux objectifs en termes de qualité, de délais et de coûts de façon optimisée ."
+    ]
+}

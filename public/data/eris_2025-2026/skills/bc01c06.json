@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC01-C06",
+        "title": "Evaluer les risques pesant sur la production en lien avec l’informatique",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Evaluer les risques pesant sur la production en lien avec l’informatique , en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité.",
+    "criteria": [
+        "L’analyse de risque couvre les processus critiques en lien avec l’informatique pour l’activité de l’entreprise.",
+        "L’analyse de risque constitue une base suffisante pour définir des plans de continuité et de reprise d’activité.",
+        "Chaque menace est correctement évaluée en termes de probabilité et impacts."
+    ]
+}

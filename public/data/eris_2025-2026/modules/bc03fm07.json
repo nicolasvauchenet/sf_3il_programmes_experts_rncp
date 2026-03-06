@@ -1,0 +1,131 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM07",
+        "title": "SOC et Analyse Forensique",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l’infrastructure sous la responsabilité du RSSI au moyen de tests de pénétration, de simulations d’attaques et d’outils d’analyse de sécurité afin d’évaluer la robustesse des systèmes et la réactivité des équipes."
+        },
+        {
+            "code": "C23",
+            "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l’ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes et en collectant les preuves."
+        },
+        {
+            "code": "C24",
+            "description": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC) en gérant les incidents au moyen de solutions SIEM, en analysant les données de sécurité, en détectant les anomalies et en orchestrant des réponses rapides afin d’assurer une surveillance continue et la résilience de l’infrastructure."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre le rôle et l'importance de la gestion des incidents en cybersécurité, apprendre à mettre en place un SOC (Security Operations Center) et maîtriser les techniques d'analyse forensique pour investiguer et réagir efficacement aux incidents de sécurité."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en sécurité informatique et en gestion des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gestion des incidents en sécurité informatique",
+                "items": [
+                    "Rôle et importance de la gestion des incidents",
+                    "Types d'incidents de sécurité",
+                    "Objectifs de la gestion des incidents",
+                    "Processus de gestion des incidents",
+                    "Bonnes pratiques de gestion des incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Mise en place d'un SOC",
+                "items": [
+                    "Rôle et responsabilités d'un SOC",
+                    "Étapes de mise en place d'un SOC",
+                    "Outils et technologies utilisés dans un SOC",
+                    "Bonnes pratiques de déploiement",
+                    "Défis organisationnels et techniques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Analyse forensique",
+                "items": [
+                    "Principes de l'analyse forensique",
+                    "Étapes d'une analyse forensique",
+                    "Outils et techniques d'investigation",
+                    "Bonnes pratiques d'analyse forensique"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents et réaction aux attaques",
+                "items": [
+                    "Phases de gestion des incidents",
+                    "Réaction aux attaques",
+                    "Techniques de containment et d'éradication",
+                    "Communication pendant la gestion d'incident",
+                    "Défis de la réponse aux incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Exercices pratiques et études de cas",
+                "items": [
+                    "Mise en pratique des concepts",
+                    "Analyse de cas réels",
+                    "Méthodologie de résolution d'incidents",
+                    "Identification des leçons apprises",
+                    "Évaluation des compétences"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Simulation d'identification d'incident",
+            "context": "Analyse de journaux système contenant des événements suspects.",
+            "objective": "Identifier les activités suspectes, catégoriser l'incident et rédiger un rapport d'analyse."
+        },
+        {
+            "title": "Planification d'un SOC",
+            "context": "Accompagnement d'une organisation dans la mise en place de son premier SOC.",
+            "objective": "Définir les étapes de mise en place, les outils nécessaires et les rôles des équipes."
+        },
+        {
+            "title": "Analyse forensique d'un disque dur",
+            "context": "Analyse d'un support dans le cadre d'une enquête sur un incident de sécurité.",
+            "objective": "Documenter la procédure d'analyse et identifier les traces d'activité malveillante."
+        },
+        {
+            "title": "Réaction à une attaque simulée",
+            "context": "Gestion d'un scénario d'attaque informatique.",
+            "objective": "Mettre en œuvre les phases de gestion d'incident, containment, éradication et communication."
+        },
+        {
+            "title": "Étude de cas d'incident réel",
+            "context": "Analyse d'un incident de sécurité survenu dans une organisation.",
+            "objective": "Identifier les erreurs de gestion d'incident et proposer des améliorations."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Gestion des incidents de sécurité : De la détection à la reprise d'activité",
+            "author": "Patrick Vandeputte"
+        },
+        {
+            "title": "Sécurité informatique : Principes et méthode",
+            "author": "Laurent Bloch"
+        },
+        {
+            "title": "SSI - La Sécurité des Systèmes d'Information",
+            "author": "Erwan Pain et Aymeric Ancelin"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

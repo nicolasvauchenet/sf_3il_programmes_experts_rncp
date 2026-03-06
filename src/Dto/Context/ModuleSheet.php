@@ -18,16 +18,17 @@ final readonly class ModuleSheet
     public function __construct(
         public string $fileCode,
         public string $path,
-        public array $meta,
-        public array $skills,
-        public array $objectives,
-        public array $prerequisites,
-        public array $outline,
-        public array $exercises,
-        public array $bibliography,
-        public array $teachingMethods,
-        public array $raw,
-    ) {
+        public array  $meta,
+        public array  $skills,
+        public array  $objectives,
+        public array  $prerequisites,
+        public array  $outline,
+        public array  $exercises,
+        public array  $bibliography,
+        public array  $teachingMethods,
+        public array  $raw,
+    )
+    {
     }
 
     public function moduleCode(): string
@@ -43,5 +44,25 @@ final readonly class ModuleSheet
     public function academicYear(): string
     {
         return (string)($this->meta['academicYear'] ?? '');
+    }
+
+    public function blocCode(): string
+    {
+        return (string)($this->meta['blocCode'] ?? '');
+    }
+
+    public function blocName(): string
+    {
+        return (string)($this->meta['blocName'] ?? '');
+    }
+
+    public function durationDays(): int
+    {
+        return (int)($this->meta['durationDays'] ?? 0);
+    }
+
+    public function durationHours(): int
+    {
+        return (int)($this->meta['durationHours'] ?? 0);
     }
 }

@@ -1,0 +1,57 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM08",
+        "title": "Projet : Audit d'infrastructures sécurisées",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du bloc « Piloter la Sécurité des Systèmes d'Information » seront mobilisées dans ce projet."
+        }
+    ],
+    "objectives": {
+        "description": "Mettre en pratique les principes fondamentaux de la sécurité des systèmes d'information, concevoir et mettre en œuvre des solutions adaptées aux besoins de sécurité des SI et maîtriser le processus d'audit afin d'évaluer et améliorer l'efficacité d'une infrastructure de sécurité."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi l'ensemble des modules du bloc de compétences « Piloter la Sécurité des Systèmes d'Information »."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Évaluation des principes de base",
+            "context": "Réalisation d'un guide sur les principes fondamentaux d'une infrastructure de sécurité des systèmes d'information.",
+            "objective": "Présenter les composants clés d'une infrastructure de sécurité, analyser les enjeux de mise en place et proposer des bonnes pratiques adaptées à une organisation."
+        },
+        {
+            "title": "Simulation d'audit de sécurité",
+            "context": "Réalisation d'un audit de sécurité pour une organisation fictive.",
+            "objective": "Définir les objectifs de l'audit, identifier les étapes du processus, sélectionner les outils d'audit et proposer des recommandations d'amélioration."
+        },
+        {
+            "title": "Conception d'une infrastructure de sécurité",
+            "context": "Création d'une infrastructure de sécurité pour une nouvelle filiale d'entreprise.",
+            "objective": "Identifier les besoins de sécurité, concevoir l'architecture de sécurité et planifier la mise en œuvre en tenant compte des contraintes techniques."
+        },
+        {
+            "title": "Gestion d'incidents de sécurité",
+            "context": "Élaboration d'un plan de réponse à incident pour une infrastructure de sécurité.",
+            "objective": "Définir les étapes de détection, d'isolation, d'éradication et de récupération tout en mettant en place des mécanismes de suivi et de reporting."
+        },
+        {
+            "title": "Préparation et présentation d'un rapport d'audit",
+            "context": "Restitution d'un audit de sécurité à une direction d'entreprise.",
+            "objective": "Rédiger un rapport d'audit détaillé, identifier les priorités d'amélioration et présenter les résultats de manière claire aux parties prenantes."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

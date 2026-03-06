@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC02-C11",
+        "title": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Conception et Pilotage des Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions , en conformité avec le schéma directeur de la DSI , en combinant des ressources locales (on -premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications.",
+    "criteria": [
+        "Tous besoins métiers recensés sont couverts par l’infrastructure proposée.",
+        "L’infrastructure proposée est conforme au schéma directeur de la DSI.",
+        "L’infrastructure proposée répond aux exigences de l’entreprise en termes d’optimisation, de robustesse , et de sécurité."
+    ]
+}

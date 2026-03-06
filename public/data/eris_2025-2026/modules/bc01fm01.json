@@ -1,0 +1,122 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM01",
+        "title": "Gouvernance des Infrastructures (ITIL)",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du bloc 01 \"Gouvernance des infrastructures systèmes et réseaux\" sont en lien avec cette matière. Ce module est l'introduction au bloc et se base sur principalement sur ITIL et de participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique, et en contribuant à la structuration de la gestion des services IT, pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module sont de permettre aux apprenants de comprendre les principes fondamentaux de la gouvernance des infrastructures, d'identifier et d'appliquer les bonnes pratiques ITIL, ainsi que de maîtriser les processus clés de gestion des incidents, des changements et des niveaux de services au sein d'une organisation."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et systèmes d'information, compréhension des concepts de gestion d'entreprise et de stratégie, familiarité avec les principes de base de la gestion des projets IT."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gouvernance des infrastructures",
+                "items": [
+                    "Comprendre les principes de base de la gouvernance des infrastructures",
+                    "Identifier les enjeux liés à la gouvernance des infrastructures",
+                    "Connaître les bonnes pratiques en matière de gouvernance des infrastructures",
+                    "Comprendre le rôle de l'ITIL dans la gouvernance des infrastructures",
+                    "Analyser les bénéfices de la mise en place d'une gouvernance des infrastructures"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Les processus ITIL",
+                "items": [
+                    "Appréhender les différents processus ITIL",
+                    "Comprendre le rôle et l'importance de chaque processus dans la gouvernance des infrastructures",
+                    "Identifier les interactions entre les processus ITIL",
+                    "Analyser les bonnes pratiques associées à chaque processus",
+                    "Mettre en place une cartographie des processus ITIL au sein de l'organisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : La gestion des incidents et des problèmes",
+                "items": [
+                    "Comprendre les concepts de base liés à la gestion des incidents et des problèmes",
+                    "Identifier les étapes clés dans la gestion des incidents et des problèmes",
+                    "Maîtriser les outils et les techniques de résolution des incidents et des problèmes",
+                    "Élaborer des procédures efficaces pour la gestion des incidents et des problèmes",
+                    "Mettre en place un système de suivi et de reporting pour la gestion des incidents et des problèmes"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : La gestion des changements et des mises en production",
+                "items": [
+                    "Comprendre les enjeux liés à la gestion des changements et des mises en production",
+                    "Identifier les étapes clés dans la gestion des changements et des mises en production",
+                    "Maîtriser les outils et les techniques de planification et de suivi des changements",
+                    "Élaborer des procédures efficaces pour la gestion des changements et des mises en production",
+                    "Mettre en place un processus d'évaluation post-implémentation pour les changements et les mises en production"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : La gestion des niveaux de services",
+                "items": [
+                    "Comprendre les concepts de base liés à la gestion des niveaux de services",
+                    "Identifier les étapes clés dans la gestion des niveaux de services",
+                    "Maîtriser les outils et les techniques de définition et de suivi des niveaux de services",
+                    "Élaborer des accords de niveaux de services (SLA) pertinents et adaptés à l'organisation",
+                    "Mettre en place un processus de reporting et d'amélioration continue des niveaux de services"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des enjeux de la gouvernance des infrastructures",
+            "context": "Divisez les apprenants en groupes de travail. Demandez à chaque groupe de lister 5 enjeux majeurs liés à la gouvernance des infrastructures. Chaque groupe devra ensuite présenter ses résultats et expliquer en quoi ces enjeux sont importants pour la gestion des infrastructures.",
+            "objective": "Comprendre les enjeux liés à la gouvernance des infrastructures."
+        },
+        {
+            "title": "Cartographie des processus ITIL",
+            "context": "Distribuez un cas pratique à chaque apprenant, décrivant une organisation fictive. Demandez à chaque apprenant de cartographier les processus ITIL pertinents pour cette organisation, en identifiant les interactions entre ces processus. Chaque apprenant devra ensuite présenter sa cartographie et expliquer ses choix.",
+            "objective": "Mettre en place une cartographie des processus ITIL au sein de l'organisation."
+        },
+        {
+            "title": "Résolution d'incidents et de problèmes",
+            "context": "Simulez des scénarios d'incidents et de problèmes techniques. Demandez aux apprenants de travailler en binômes pour résoudre ces scénarios, en utilisant les techniques et les outils vus en cours. Chaque binôme devra présenter sa démarche de résolution et expliquer les outils utilisés.",
+            "objective": "Maîtriser les outils et les techniques de résolution des incidents et des problèmes."
+        },
+        {
+            "title": "Planification et suivi des changements",
+            "context": "Présentez un cas de changement majeur à mettre en œuvre au sein d'une organisation. Demandez aux apprenants de développer un plan de changement détaillé, en incluant les étapes clés, les outils de suivi, ainsi que les procédures de rollback. Chaque apprenant devra présenter son plan de changement et le justifier.",
+            "objective": "Maîtriser les outils et les techniques de planification et de suivi des changements."
+        },
+        {
+            "title": "Définition des accords de niveaux de services (SLA)",
+            "context": "Présentez aux apprenants le contexte d'une organisation avec des besoins spécifiques en termes de niveaux de services. Demandez aux apprenants de rédiger un accord de niveau de service (SLA) adapté à ce contexte, en détaillant les indicateurs de performance et les engagements de service. Chaque apprenant devra présenter son SLA et expliquer ses choix de manière argumentée.",
+            "objective": "Élaborer des accords de niveaux de services pertinents et adaptés à l'organisation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "ITIL Foundation: Manuel de référence",
+            "author": "Prosser, A. (2013). Van Haren Publishing."
+        },
+        {
+            "title": "Les infrastructures IT: gestion et optimisation",
+            "author": "Lepage, R., & Bourdon, F. (2015). Dunod."
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)",
+        "Travaux de groupe",
+        "Autre"
+    ]
+}

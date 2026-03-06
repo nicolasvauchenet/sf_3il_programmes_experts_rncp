@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC01-C08",
+        "title": "Automatiser les tâches d’administration avec des scripts",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administration et optimisation des systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
+        "academicYear": "2025-2026"
+    },
+    "description": "Automatiser les tâches d'administration en développant et en appliquant des scripts en Python, Shell et Bash pour augmenter l'efficacité opérationnelle et réduire les délais de réponse en cas de problèmes ou de besoins de maintenance.",
+    "criteria": [
+        "Conformité : le choix de la technologie de script répond à l'étude de cas et couvre 100% des besoins identifiés.",
+        "Argumentation du choix : l'argumentation justifie comment la technologie sélectionnée optimise les processus et répond aux exigences spécifiques du système."
+    ]
+}

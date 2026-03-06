@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC01-C02",
+        "title": "Analyse des besoins des utilisateurs et des parties prenantes",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Conception et modélisation de l'architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews et de la cartographie du SI pour identifier les objectifs et déterminer les besoins d'évolution du Système d'Information",
+    "criteria": [
+        "Exhaustivité de l'analyse : Au moins 80% des besoins des utilisateurs et des parties prenantes sont identifiés par rapport à ceux mentionnés dans les résultats d'enquêtes et d'interviews. L'intégralité des sources a été exploitée.",
+        "Précision de l'identification des objectifs : Les objectifs identifiés par le candidat couvrent 100% des objectifs émis par les utilisateurs."
+    ]
+}

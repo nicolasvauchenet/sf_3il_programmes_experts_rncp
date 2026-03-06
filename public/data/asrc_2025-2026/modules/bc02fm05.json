@@ -1,0 +1,57 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC02-FM05",
+        "title": "Projet CI/CD : mise en place, monitoring, évolution + IAC",
+        "rncpCode": "39611",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l'infrastructure réseau et les solutions cloud",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du BC02."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs pédagogiques de ce module sont de mettre en application dans un projet en situation réelle les concepts et les avantages du CI/ CD, d'implémenter des processus et outils adaptés à la gestion de projets CI/CD, et d'intégrer l'amélioration continue dans le cycle de vie du développement logiciel ainsi que son industrialisation."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en développement logiciel et en gestion de projet, familiarité avec les systèmes de versionnage, et notions élémentaires en automatisation des processus de développement."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Analyse des avantages de l'intégration continue et du déploiement continu",
+            "context": "Travail en groupe pour identifier et analyser les avantages de l'intégration continue et du déploiement continu à partir d'études de cas réels ou d'exemples concrets.",
+            "objective": "Produire un rapport présentant la liste des avantages accompagnés d'exemples concrets ou d'études de cas pour illustrer chaque avantage identifié."
+        },
+        {
+            "title": "Mise en place d'outils de monitoring pour le CI/CD",
+            "context": "Configurer un système de monitoring pour un processus CI/CD à l'aide d'outils tels que Prometheus, Grafana ou autre outil équivalent.",
+            "objective": "Rédiger un rapport détaillant les outils utilisés, les métriques surveillées, les actions prises en cas d'incident, avec captures d'écran ou supports visuels."
+        },
+        {
+            "title": "Proposition d'améliorations pour le CI/CD",
+            "context": "Identifier un processus CI/CD présentant des lacunes ou des opportunités d'amélioration.",
+            "objective": "Rédiger un document présentant les lacunes identifiées, les actions d'amélioration proposées et une estimation des bénéfices attendus."
+        },
+        {
+            "title": "Simulation de déploiement et gestion de l'infrastructure avec Terraform",
+            "context": "Simuler le déploiement d'une infrastructure avec au moins trois composants (serveur web, base de données, load balancer) à l'aide de Terraform.",
+            "objective": "Fournir un script Terraform décrivant l'infrastructure ainsi qu'une série de commandes illustrant sa gestion (mise à jour, modification, suppression)."
+        },
+        {
+            "title": "Automatisation du déploiement avec Ansible",
+            "context": "Automatiser le déploiement d'une application sur une infrastructure configurée à l'aide d'Ansible.",
+            "objective": "Fournir un playbook Ansible détaillant l'automatisation complète du déploiement, avec supports visuels illustrant le bon déroulement."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

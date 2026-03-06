@@ -1,0 +1,85 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM08",
+        "title": "Projet Cybersécurité",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C15",
+            "description": "Développer, documenter et mettre en œuvre des politiques de sécurité informatique, en évaluant les risques et en établissant des stratégies de mitigation en collaboration avec les équipes de gouvernance et de conformité, et en se servant d'outils d'analyse de risques et en réalisant des procédures pour renforcer la posture de sécurité de l'entreprise et protéger les actifs informationnels."
+        },
+        {
+            "code": "C16",
+            "description": "Conduire des audits de sécurité réguliers pour évaluer l'efficacité des mesures de sécurité en place, en utilisant des méthodologies d'audit standardisées et en collaboration avec les équipes internes et les auditeurs externes, afin de détecter les faiblesses et de recommander des améliorations."
+        },
+        {
+            "code": "C17",
+            "description": "Élaborer et mettre en œuvre des actions correctives en analysant les résultats des audits de sécurité et en identifiant les vulnérabilités et les non- conformités, en coopération avec les équipes de sécurité et de conformité, afin d'améliorer continuellement les mesures de sécurité de l'organisation et de garantir la conformité réglementaire."
+        },
+        {
+            "code": "C18",
+            "description": "Implémenter les outils et systèmes de sécurité tels que les pares-feux, les IDS/IPS, en s'assurant de leur configuration optimale et de leur mise à jour, en travaillant de concert avec l'équipe réseau et les spécialistes de la sécurité, pour prévenir les intrusions et protéger les réseaux de l'entreprise."
+        },
+        {
+            "code": "C19",
+            "description": "Administrer les systèmes de gestion des identités et des accès (IAM), en mettant en œuvre des politiques d'accès rigoureuses et en utilisant des technologies d'authentification avancées (MFA) et tenant compte de personnes en situation de handicap, pour garantir que seul le personnel autorisé a accès aux systèmes critiques et aux données sensibles."
+        },
+        {
+            "code": "C20",
+            "description": "Superviser les opérations de sauvegarde et de restauration des données, en élaborant des plans de reprise après sinistre, en coopération avec les équipes IT et les parties prenantes opérationnelles, pour assurer la continuité des activités et la protection des données."
+        },
+        {
+            "code": "C21",
+            "description": "Assurer le support et le suivi des incidents IT en supervisant les équipes techniques à l'aide d'outils de gestion d'incidents et en communiquant avec les utilisateurs et différentes parties prenantes, afin de respecter les objectifs en RTO et RPO établis par les SLA dans le Plan de Reprise d'Activité sous la Direction des Systèmes d'Information."
+        },
+        {
+            "code": "C22",
+            "description": "Assurer la conformité aux réglementations de protection des données, telles que le RGPD, en menant des évaluations et des audits de conformité, en collaboration avec les conseillers juridiques et les experts en réglementation, et en mettant en place des actions correctives, pour éviter les sanctions et renforcer la confiance des parties prenantes dans la gouvernance des données de l'entreprise."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs pédagogiques de ce module sont de permettre aux apprenants de maîtriser l'identification et l'évaluation des risques de sécurité dans un projet, d'intégrer des mesures de sécurité efficaces dans la gestion de projet, et d'implanter une politique de gestion des incidents et d'amélioration continue en matière de sécurité."
+    },
+    "prerequisites": {
+        "description": "Les pré-requis pour ce module est d'avoir suivi les différents modules de ce bloc de compétences."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Analyse de l'environnement de sécurité",
+            "context": "Choisir un projet fictif et réaliser une analyse de l'environnement de sécurité.",
+            "objective": "Identifier les actifs sensibles, les vulnérabilités, les menaces, analyser les risques et définir les objectifs de sécurité ainsi que les outils d'analyse adaptés."
+        },
+        {
+            "title": "Conception et planification de la sécurité",
+            "context": "Élaborer un plan détaillé de sécurité pour un projet.",
+            "objective": "Sélectionner les mesures de sécurité, les intégrer dans la planification globale, proposer une architecture de sécurité, planifier les tests et élaborer un plan de réponse aux incidents."
+        },
+        {
+            "title": "Mise en œuvre des mesures de sécurité",
+            "context": "Simuler la mise en place des mesures de sécurité pour un scénario de projet.",
+            "objective": "Installer et configurer les outils de sécurité, former le personnel, mettre en place des procédures, superviser la conformité et tester l'efficacité des mesures."
+        },
+        {
+            "title": "Gestion des changements et des incidents de sécurité",
+            "context": "Élaborer un plan de gestion des changements et des incidents pour un scénario donné.",
+            "objective": "Identifier les changements impactant la sécurité, établir un dispositif de surveillance, préparer un plan de réponse et définir une démarche post-incident et d'amélioration."
+        },
+        {
+            "title": "Évaluation et amélioration continue de la sécurité du projet",
+            "context": "Réaliser un audit de sécurité pour un projet fictif.",
+            "objective": "Présenter les méthodes utilisées, analyser les résultats, proposer des recommandations et définir un processus d'amélioration continue et de sensibilisation."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

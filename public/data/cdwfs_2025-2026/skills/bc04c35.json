@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C35",
+        "title": "Maintenir une documentation technique complète et collaborative",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+        "academicYear": "2025"
+    },
+    "description": "Mettre en place, éditer et maintenir la documentation technique complète des applications et partager les connaissances au sein de l'équipe en utilisant des plateformes collaboratives afin de faciliter la maintenance et l'évolutivité des systèmes.",
+    "criteria": [
+        "Exhaustivité de la documentation : la documentation couvre tous les aspects de l'application.",
+        "Clarté et accessibilité : les documents sont compréhensibles et accessibles à l'ensemble de l'équipe.",
+        "Utilisation d’outils collaboratifs : la documentation est partagée et maintenue via des plateformes collaboratives."
+    ]
+}

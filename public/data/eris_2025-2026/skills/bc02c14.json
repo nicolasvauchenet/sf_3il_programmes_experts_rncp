@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC02-C14",
+        "title": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Conception et Pilotage des Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites, en tenant compte des engagements de disponibilité, de capacité afin de garantir la qualité de service (QoS), la résilience (PCA) et la sécurité des communications.",
+    "criteria": [
+        "La topologie proposée permet la mise en place des services nécessaires au bon fonctionnement de l’activité de l’entreprise.",
+        "Les équipements retenus et leur implantation dans la topologie permettent d’atteindre les objectifs en matière de QoS, de résilience et de sécurité."
+    ]
+}

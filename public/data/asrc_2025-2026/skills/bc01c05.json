@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC01-C05",
+        "title": "Mettre en œuvre des solutions de redondance, réplication et clustering",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administration et optimisation des systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
+        "academicYear": "2025-2026"
+    },
+    "description": "Mettre en œuvre des solutions de redondance, de réplication et de clustering, en tenant compte des contraintes de sécurité et de performance, afin d'assurer la continuité de l'activité de l'entreprise.",
+    "criteria": [
+        "Pertinence des améliorations proposées : les améliorations accroissent l'efficacité et la résilience ; une matrice des risques est proposée et les solutions répondent aux risques référencés.",
+        "Qualité du PCA modifié : l'amélioration du Plan de Continuité d'Activité garantit la continuité opérationnelle des services."
+    ]
+}

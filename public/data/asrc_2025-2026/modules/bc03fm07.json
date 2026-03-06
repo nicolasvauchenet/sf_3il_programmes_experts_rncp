@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM07",
+        "title": "Protection des données et respect de la conformité",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C20",
+            "description": "Superviser les opérations de sauvegarde et de restauration des données, en élaborant des plans de reprise après sinistre, en coopération avec les équipes IT et les parties prenantes opérationnelles, pour assurer la continuité des activités et la protection des données."
+        },
+        {
+            "code": "C21",
+            "description": "Assurer le support et le suivi des incidents IT en supervisant les équipes techniques à l'aide d'outils de gestion d'incidents et en communiquant avec les utilisateurs et différentes parties prenantes, afin de respecter les objectifs en RTO et RPO établis par les SLA dans le Plan de Reprise d'Activité sous la Direction des Systèmes d'Information."
+        },
+        {
+            "code": "C22",
+            "description": "Assurer la conformité aux réglementations de protection des données, telles que le RGPD, en menant des évaluations et des audits de conformité, en collaboration avec les conseillers juridiques et les experts en réglementation, et en mettant en place des actions correctives, pour éviter les sanctions et renforcer la confiance des parties prenantes dans la gouvernance des données de l'entreprise."
+        }
+    ],
+    "objectives": {
+        "description": "Ce module vise à sensibiliser les apprenants à l'importance de la protection des données personnelles et aux risques associés en cas de non-conformité. Il explore les principes fondamentaux et les cadres légaux qui régissent la protection des données. Les apprenants apprendront aussi à gérer les incidents de sécurité et à mettre en œuvre des bonnes pratiques au sein des entreprises."
+    },
+    "prerequisites": {
+        "description": "Une compréhension de base des concepts liés à la sécurité de l'information et aux systèmes d'information est recommandée. Une familiarité avec les notions de confidentialité et de gestion des risques serait bénéfique pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Enjeux de la protection des données",
+                "items": [
+                    "Importance de la protection des données personnelles",
+                    "Risques liés à la violation de la confidentialité des données",
+                    "Cadre légal et réglementaire en matière de protection des données",
+                    "Conséquences d'une violation des règles de protection des données",
+                    "Obligations des entreprises en matière de protection des données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Principes de protection des données",
+                "items": [
+                    "Principes de minimisation des données",
+                    "Sécurisation des données au repos et en transit",
+                    "Chiffrement des données",
+                    "Gestion des accès aux données sensibles",
+                    "Politique de conservation et d'archivage des données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Conformité aux réglementations",
+                "items": [
+                    "Règlement général sur la protection des données (RGPD)",
+                    "Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE)",
+                    "Autres réglementations nationales et internationales",
+                    "Responsabilités des entreprises vis-à-vis des réglementations",
+                    "Sanctions en cas de non-conformité"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents de sécurité des données",
+                "items": [
+                    "Détection et gestion des violations de données",
+                    "Plan de réponse aux incidents de sécurité des données",
+                    "Notification des violations de données aux autorités compétentes",
+                    "Communication avec les parties prenantes en cas de violation de données",
+                    "Mesures de correction et d'amélioration après un incident"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Bonnes pratiques et outils de protection des données",
+                "items": [
+                    "Sensibilisation des employés à la protection des données",
+                    "Mise en place de processus de sécurisation des données",
+                    "Utilisation d'outils de sécurité des données (chiffrement, DLP, etc.)",
+                    "Gestion des consentements et des droits des personnes concernées",
+                    "Évaluation et amélioration continue des mesures de protection des données"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Identification des risques liés à la violation de la confidentialité des données",
+            "context": "Identifier au moins 5 risques liés à la violation de la confidentialité des données dans un environnement de travail.",
+            "objective": "Expliquer les conséquences potentielles de chaque risque sur la sécurité des données et sur l'entreprise."
+        },
+        {
+            "title": "Analyse de cas de non-conformité à la réglementation sur la protection des données",
+            "context": "Étudier le cas d'une entreprise sanctionnée pour non-conformité.",
+            "objective": "Analyser les causes, les conséquences et les mesures correctives mises en place, et présenter les leçons à retenir."
+        },
+        {
+            "title": "Élaboration d'un plan de réponse aux incidents de sécurité des données",
+            "context": "Imaginer un scénario fictif de violation de données.",
+            "objective": "Concevoir un plan de réponse incluant les étapes, responsables, communications et mesures correctives."
+        },
+        {
+            "title": "Audit de sécurité des données",
+            "context": "Mener un audit de sécurité des données dans un contexte donné.",
+            "objective": "Identifier les points forts et faibles et proposer des recommandations en lien avec la minimisation, la sécurisation et la gestion des accès."
+        },
+        {
+            "title": "Élaboration d'une politique de conservation et d'archivage des données",
+            "context": "Concevoir une politique de conservation et d'archivage des données conforme aux réglementations.",
+            "objective": "Décrire les choix de conservation, les mesures de sécurisation et les procédures d'archivage mises en place."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Data Protection & Privacy: The Age of Intelligent Machines",
+            "author": "Bert-Jaap Koops et al."
+        },
+        {
+            "title": "Droit de la protection des données personnelles",
+            "author": "Séverine Dusollier et al."
+        },
+        {
+            "title": "La Protection des données à caractère personnel en droit européen",
+            "author": "Jean-Marc Dinant"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

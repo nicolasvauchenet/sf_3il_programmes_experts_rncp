@@ -1,0 +1,57 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM07",
+        "title": "Projet : Management du Support",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences du Bloc de compétences 02 « Concevoir et Piloter les Infrastructures Systèmes et Réseaux »."
+        }
+    ],
+    "objectives": {
+        "description": "Mobiliser les compétences des apprenants pour gérer efficacement les demandes de support, les incidents, les problèmes et les changements dans une organisation. Utiliser des tableaux de bord et mettre en œuvre des plans d'amélioration continue afin d'optimiser la satisfaction client et la performance du support tout en développant une compréhension approfondie des processus de gestion IT."
+    },
+    "prerequisites": {
+        "description": "Avoir terminé le module « Gestion des incidents et support ITSM »."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Simulation de gestion des demandes de support",
+            "context": "Un utilisateur signale un problème de blocage aléatoire sur son ordinateur portable.",
+            "objective": "Enregistrer la demande dans un système de ticketing, définir une priorité, décrire le processus de résolution, communiquer avec l'utilisateur et évaluer la satisfaction client."
+        },
+        {
+            "title": "Classification des incidents",
+            "context": "Des utilisateurs rencontrent des problèmes d'accès à une application bancaire en ligne.",
+            "objective": "Identifier, classifier et prioriser l'incident, établir un plan de diagnostic et définir un processus d'escalade et de suivi."
+        },
+        {
+            "title": "Analyse de scénario de gestion des problèmes",
+            "context": "Des incidents récurrents liés à un serveur de base de données indiquent un problème sous-jacent.",
+            "objective": "Créer un enregistrement de problème, diagnostiquer la cause racine, définir un plan d'action et produire un rapport final."
+        },
+        {
+            "title": "Planification d'un changement",
+            "context": "Mise à jour du système de messagerie de l'entreprise.",
+            "objective": "Documenter le processus de gestion des changements, évaluer les risques, planifier la mise en œuvre et suivre l'impact du changement."
+        },
+        {
+            "title": "Création d'un tableau de bord de support IT",
+            "context": "Améliorer la performance du support IT à l'aide d'indicateurs de performance.",
+            "objective": "Définir des KPIs, concevoir un rapport d'activité mensuel et élaborer un plan d'amélioration continue."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

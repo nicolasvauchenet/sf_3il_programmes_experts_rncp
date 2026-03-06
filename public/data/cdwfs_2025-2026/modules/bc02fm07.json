@@ -1,0 +1,123 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM07",
+        "title": "Projet de développement Back-end (Fil rouge)",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "BC02",
+            "description": "Toutes celles du bloc de compétences BC02."
+        }
+    ],
+    "objectives": {
+        "description": "Les apprenants seront capables d'analyser les besoins utilisateurs et de définir les spécifications d'un projet. Ils sauront choisir une architecture et des technologies adaptées puis concevoir et développer une base de données efficace. Ils maîtriseront le développement d'une API performante et sécurisée, ainsi que la mise en place de tests pour optimiser le projet."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en développement logiciel et compréhension des principes de programmation. Expérience préalable avec au moins un langage de programmation orienté objet et une compréhension basique des bases de données relationnelles."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Analyse des besoins et spécifications du projet",
+                "items": [
+                    "Comprendre les besoins des utilisateurs",
+                    "Identifier les fonctionnalités clés",
+                    "Définir les spécifications techniques",
+                    "Estimer les ressources nécessaires",
+                    "Planifier les étapes du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Choix de l'architecture et des technologies",
+                "items": [
+                    "Comparer les différentes architectures Back-end",
+                    "Sélectionner les technologies adaptées aux besoins du projet",
+                    "Évaluer les avantages et inconvénients des différentes solutions",
+                    "Choisir les outils de développement et de déploiement",
+                    "Définir l'infrastructure nécessaire"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Conception de la base de données",
+                "items": [
+                    "Modéliser la structure de la base de données",
+                    "Définir les relations entre les entités",
+                    "Optimiser les requêtes SQL",
+                    "Intégrer des mécanismes de sécurité",
+                    "Prévoir la scalabilité de la base de données"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Développement de l'API",
+                "items": [
+                    "Créer les endpoints pour les différentes fonctionnalités",
+                    "Gérer les requêtes et les réponses",
+                    "Implémenter l'authentification et l'autorisation",
+                    "Optimiser les performances de l'API",
+                    "Documenter l'API pour les développeurs tiers"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Tests et optimisation",
+                "items": [
+                    "Mettre en place des tests unitaires et des tests d'intégration",
+                    "Optimiser les requêtes et les algorithmes",
+                    "Identifier et corriger les potentiels points faibles",
+                    "Mesurer les performances de l'application",
+                    "Valider la conformité aux spécifications initiales"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et spécifications du projet",
+            "context": "Identifier les besoins utilisateurs, définir les fonctionnalités clés et estimer les ressources nécessaires.",
+            "objective": "Rédiger un document détaillé regroupant les spécifications techniques et les étapes de planification du projet."
+        },
+        {
+            "title": "Choix de l'architecture et des technologies",
+            "context": "Comparer différentes architectures back-end et sélectionner les technologies adaptées.",
+            "objective": "Justifier les choix technologiques et définir l'infrastructure nécessaire."
+        },
+        {
+            "title": "Conception de la base de données",
+            "context": "Modéliser la structure d'une base de données à partir d'un scénario donné.",
+            "objective": "Définir les relations, intégrer des mécanismes de sécurité et proposer des solutions de scalabilité tout en optimisant les requêtes SQL."
+        },
+        {
+            "title": "Développement de l'API",
+            "context": "Concevoir et mettre en place les endpoints d'une API.",
+            "objective": "Gérer requêtes et réponses, implémenter authentification et autorisation, documenter l'API."
+        },
+        {
+            "title": "Tests et optimisation",
+            "context": "Mettre en place une batterie de tests unitaires et d'intégration.",
+            "objective": "Identifier et corriger les points faibles et assurer la conformité aux spécifications initiales."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Méthodes de design UX",
+            "author": "Carine Lallemand et Guillaume Gronier"
+        },
+        {
+            "title": "Architecture logicielle : Principes et méthode pour des logiciels robustes et performants",
+            "author": "Rémy Mingant"
+        },
+        {
+            "title": "Conception et implémentation des API Web : Efficacité, performance et sécurité",
+            "author": "Bruno Barret"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas."
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC01-C05",
+        "title": "Définition des technologies composant l’architecture logiciel",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Conception et modélisation de l'architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "description": "Sélectionner les technologies et outils les plus adaptés pour le développement, en comparant leurs performances, sécurité et interopérabilité et afin de répondre aux besoins du projet tout en respectant les contraintes de budget et de temps.",
+    "criteria": [
+        "Pertinence et justification des critères de sélection : L'élaboration d'une grille de comparaison détaillée des technologies et outils permet de garantir que leurs performances, sécurité et interopérabilité sont soigneusement évaluées, assurant ainsi une sélection qui répond de manière optimale aux besoins du projet.",
+        "La réalisation de tests de performance et de sécurité sur des prototypes permet de vérifier que les technologies et outils choisis respectent les contraintes de budget et de temps, tout en répondant aux exigences du projet."
+    ]
+}

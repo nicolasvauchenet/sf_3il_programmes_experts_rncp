@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC03-C15",
+        "title": "Développer et mettre en œuvre des politiques de sécurité informatique",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Sécurisation et mise en place de stratégies de cybersécurité et protection des données",
+        "academicYear": "2025-2026"
+    },
+    "description": "Développer, documenter et mettre en œuvre des politiques de sécurité informatique, en évaluant les risques et en établissant des stratégies de mitigation en collaboration avec les équipes de gouvernance et de conformité, afin de renforcer la posture de sécurité de l'entreprise et protéger les actifs informationnels.",
+    "criteria": [
+        "Qualité de l’analyse de la PSSI fournie : respect des cadres (RGPD, ISO/IEC 27001, et autres réglementations sectorielles) ; audits internes et revues indépendantes documentés.",
+        "Pertinence : les contre-mesures proposées sont alignées avec les vulnérabilités identifiées et renforcent la sécurité de l'infrastructure."
+    ]
+}

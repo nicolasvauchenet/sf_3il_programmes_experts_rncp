@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C36",
+        "title": "Mobiliser ses connaissances technologiques et l’anglais technique pour résoudre des problématiques",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+        "academicYear": "2025"
+    },
+    "description": "Mobiliser ses connaissances technologiques, sa maîtrise de l'anglais et les fonctionnalités avancées des moteurs de recherche afin d'analyser des contenus provenant de différentes sources (forums, documentation, sites spécialisés) pour résoudre des problèmes rencontrés lors du développement ou évaluer différentes solutions techniques.",
+    "criteria": [
+        "Pertinence des informations trouvées : les informations recueillies sont directement applicables aux problématiques rencontrées.",
+        "Maîtrise de l’anglais technique : l’utilisation de sources multilingues permet d'élargir le périmètre de recherche.",
+        "Analyse et synthèse : les informations collectées sont analysées et synthétisées pour produire des conclusions applicables."
+    ]
+}

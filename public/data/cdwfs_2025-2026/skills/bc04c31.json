@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C31",
+        "title": "Assurer le suivi continu des indicateurs de performance d’un projet",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+        "academicYear": "2025"
+    },
+    "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet.",
+    "criteria": [
+        "Précision du suivi budgétaire : les outils de suivi budgétaire sont correctement utilisés pour assurer une gestion financière précise.",
+        "Réactivité aux écarts : les écarts par rapport au budget et aux indicateurs de performance sont rapidement identifiés et des mesures correctives sont mises en place."
+    ]
+}

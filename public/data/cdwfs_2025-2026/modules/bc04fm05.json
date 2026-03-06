@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM05",
+        "title": "Coordonner les équipes de projet (Communication)",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C29",
+            "description": "Planifier et conduire le projet en appliquant des méthodologies de gestion de projet (méthodologie en V, en cascade ou Agile) selon le contexte, pour une planification et exécution efficaces des projets informatiques en respectant le plan de projet établi et en tenant compte des risques identifiés."
+        },
+        {
+            "code": "C30",
+            "description": "Coordonner les équipes de projet (incluant les personnes en situation de handicap), en utilisant des outils collaboratifs pour la planification et le suivi des tâches et en accompagnant les compétences individuelles et collectives de l'équipe afin de garantir l'alignement des ressources avec les besoins du projet et d'ajuster la planification en fonction des écarts identifiés."
+        },
+        {
+            "code": "C31",
+            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet."
+        },
+        {
+            "code": "C32",
+            "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape, pour mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre l'importance de la coordination des équipes de projet pour optimiser les performances et la motivation. Savoir utiliser des outils collaboratifs pour une gestion efficace de la planification et du suivi des tâches. Développer les compétences individuelles et collectives au sein des équipes pour améliorer la réactivité face aux évolutions des projets."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet et en management d'équipe."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Comprendre les enjeux de la coordination des équipes de projet",
+                "items": [
+                    "Importance de la coordination dans la réussite d'un projet",
+                    "Impact de la coordination sur la performance et la motivation des équipes",
+                    "Gestion des ressources humaines et des compétences pour une coordination efficace",
+                    "Adaptation de la coordination pour inclure les personnes en situation de handicap",
+                    "Utilisation d'outils collaboratifs pour faciliter la coordination"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Utilisation des outils collaboratifs pour la planification et le suivi des tâches",
+                "items": [
+                    "Sélection des outils collaboratifs adaptés aux besoins du projet",
+                    "Formation des équipes à l'utilisation des outils collaboratifs",
+                    "Gestion des plannings et des deadlines à travers les outils collaboratifs",
+                    "Suivi des tâches et des avancements grâce aux outils collaboratifs",
+                    "Gestion des documents et des échanges à travers les outils collaboratifs"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Accompagnement des compétences individuelles et collectives de l'équipe",
+                "items": [
+                    "Identification des besoins en formation et développement des compétences",
+                    "Mise en place de programmes d'accompagnement individuel et collectif",
+                    "Gestion des conflits et des dynamiques de groupe",
+                    "Encouragement de la collaboration et du partage de connaissances au sein de l'équipe",
+                    "Évaluation régulière des compétences et ajustement des plans d'accompagnement"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Garantir l'alignement des ressources avec les besoins du projet",
+                "items": [
+                    "Analyse des besoins en ressources humaines et matérielles",
+                    "Planification des ressources en fonction des besoins du projet",
+                    "Suivi et ajustement des ressources en fonction des évolutions du projet",
+                    "Gestion des contraintes et des imprévus liés aux ressources",
+                    "Optimisation de l'allocation des ressources pour une meilleure efficacité"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Ajustement de la planification en fonction des écarts identifiés",
+                "items": [
+                    "Détection des écarts par rapport à la planification initiale",
+                    "Analyse des causes des écarts et identification des actions correctives",
+                    "Communication des ajustements de planification à l'équipe",
+                    "Suivi des effets des ajustements sur le déroulement du projet",
+                    "Amélioration continue de la planification en fonction des retours d'expérience"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Développer un plan de coordination pour un projet spécifique",
+            "context": "Choix d'un projet concret.",
+            "objective": "Élaborer un plan de coordination incluant ressources, compétences, inclusion et outils collaboratifs."
+        },
+        {
+            "title": "Simulation de l'utilisation d'outils collaboratifs",
+            "context": "Mise en situation de planification et suivi des tâches.",
+            "objective": "Mettre en place un planning, attribuer des tâches, suivre l'avancement et présenter les résultats."
+        },
+        {
+            "title": "Plan d'accompagnement des compétences",
+            "context": "Équipe fictive ou réelle.",
+            "objective": "Identifier besoins en formation, gérer conflits et proposer un plan d'accompagnement structuré."
+        },
+        {
+            "title": "Analyse et planification des ressources",
+            "context": "Projet spécifique.",
+            "objective": "Analyser besoins en ressources humaines et matérielles et planifier leur allocation."
+        },
+        {
+            "title": "Gestion des ajustements de planification",
+            "context": "Écart par rapport à la planification initiale.",
+            "objective": "Analyser causes, proposer actions correctives et assurer le suivi des ajustements."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "La gestion de projet pour les nuls",
+            "author": "Stanley E. Portny"
+        },
+        {
+            "title": "S'organiser pour réussir : La méthode Getting Things Done ou l'art de l'efficacité sans le stress",
+            "author": "David Allen"
+        },
+        {
+            "title": "Collaborer efficacement : Les clés pour construire des équipes performantes",
+            "author": "Bruno Toutain"
+        }
+    ],
+    "teachingMethods": [
+        "Etude de cas",
+        "Travaux de groupe",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

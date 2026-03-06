@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC01-C08",
+        "title": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3 -2- 1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle , afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre.",
+    "criteria": [
+        "L’ordre de priorisation des applications et services du plan de reprise d’activité est déterminé par leur degré de criticité par rapport aux activités de l’entreprise.",
+        "Les stratégies de sauvegarde et de restauration s’appuient sur cet ordre et définissent les éléments techniques et organisationnels nécessaires.",
+        "Le plan de reprise d’activité permet d’atteindre les objectifs de l’entreprise en termes de niveau de protection contre les risques de perte de données et d’efficacité de restauration."
+    ]
+}

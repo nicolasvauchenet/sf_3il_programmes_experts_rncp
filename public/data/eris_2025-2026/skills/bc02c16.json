@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC02-C16",
+        "title": "Automatiser les processus d'intégration",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Conception et Pilotage des Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications en utilisant des outils d’orchestration, de gestion de déploiement et de DevOps et en contrôlant le résultat par l’analyse des logs produits pour assurer la fiabilité et la reproductibilité des mises en production.",
+    "criteria": [
+        "Les outils sélectionnés et configurés permettent l’automatisation de l’intégration, le déploiement et la maintenance des systèmes et applications.",
+        "Les mises en production satisfont les critères de fiabilité et de reproductibilité.",
+        "Les contrôles opérés permettent d’assurer la traçabilité des mises en production et attester de leur succès."
+    ]
+}

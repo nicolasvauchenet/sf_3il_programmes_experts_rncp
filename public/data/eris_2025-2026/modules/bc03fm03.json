@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM03",
+        "title": "Infrastructures sécurisées",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise en s’appuyant sur les standards et une analyse des risques afin de protéger les données et les systèmes."
+        },
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le RSSI en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue."
+        },
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l’infrastructure sous la responsabilité du RSSI au moyen de tests de pénétration, de simulations d’attaques et d’outils d’analyse de sécurité afin d’évaluer la robustesse des systèmes."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes fondamentaux de la sécurisation des infrastructures, des réseaux, des systèmes d'exploitation, des applications et de la sécurité physique. Identifier les menaces et attaques courantes et appliquer les meilleures pratiques pour protéger les infrastructures informatiques."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et en réseau ainsi qu'une compréhension des concepts fondamentaux de la sécurité de l'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondements des infrastructures sécurisées",
+                "items": [
+                    "Principes de base de la sécurité des infrastructures",
+                    "Modèles de menaces et attaques courantes",
+                    "Mécanismes de défense des infrastructures",
+                    "Enjeux de la sécurisation des infrastructures",
+                    "Bonnes pratiques de sécurisation"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Sécurité des réseaux",
+                "items": [
+                    "Concepts de base des réseaux sécurisés",
+                    "Protocoles de sécurité des réseaux",
+                    "Sécurisation des accès distants",
+                    "Gestion des identités et des accès",
+                    "Surveillance et détection des menaces réseau"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Sécurité des systèmes d'exploitation",
+                "items": [
+                    "Mécanismes de sécurité des systèmes d'exploitation",
+                    "Gestion des correctifs de sécurité",
+                    "Configuration sécurisée des systèmes",
+                    "Surveillance des activités système",
+                    "Protection contre malwares et ransomwares"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sécurité des applications",
+                "items": [
+                    "Principes de sécurité des applications",
+                    "Méthodes d'authentification et d'autorisation",
+                    "Gestion des vulnérabilités applicatives",
+                    "Sécurisation des échanges de données",
+                    "Bonnes pratiques de développement sécurisé"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurité physique et environnementale",
+                "items": [
+                    "Contrôle d'accès physique",
+                    "Surveillance des locaux et équipements",
+                    "Sécurisation des infrastructures énergétiques",
+                    "Gestion des incidents physiques",
+                    "Protection des équipements sensibles"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Plan de sécurisation des infrastructures",
+            "context": "Analyse des failles potentielles dans les infrastructures d'une entreprise.",
+            "objective": "Identifier les modèles de menaces, proposer des mécanismes de défense et recommander des bonnes pratiques de sécurisation."
+        },
+        {
+            "title": "Sécurisation des réseaux",
+            "context": "Mise en place de mesures de sécurité pour protéger le réseau d'une entreprise.",
+            "objective": "Identifier les protocoles de sécurité, définir un plan de sécurisation des accès distants et mettre en place une stratégie de détection des menaces."
+        },
+        {
+            "title": "Sécurité des systèmes d'exploitation",
+            "context": "Protection des systèmes d'exploitation contre les attaques.",
+            "objective": "Mettre en place des mécanismes de sécurité, gérer les correctifs et définir une configuration sécurisée."
+        },
+        {
+            "title": "Sécurité des applications",
+            "context": "Protection des applications internes et externes d'une entreprise.",
+            "objective": "Définir des méthodes d'authentification, gérer les vulnérabilités et sécuriser les échanges de données."
+        },
+        {
+            "title": "Sécurité physique et environnementale",
+            "context": "Protection des infrastructures physiques et des équipements sensibles.",
+            "objective": "Mettre en place des contrôles d'accès physiques, surveiller les installations et prévoir la gestion des incidents physiques."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Sécurité informatique : principes et méthodes",
+            "author": "Gérald Lacoste"
+        },
+        {
+            "title": "Réseaux : Guide pratique de sécurité",
+            "author": "Yves Grandmontagne"
+        },
+        {
+            "title": "Sécurité des systèmes d'information : Concepts et pratiques",
+            "author": "Gilles Dubois"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Étude de texte / d'ouvrage",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

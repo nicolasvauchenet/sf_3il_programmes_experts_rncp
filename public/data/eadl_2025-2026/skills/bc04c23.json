@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC04-C23",
+        "title": "Administration et optimisation des infrastructures cloud",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimisation du Système d'Information par l'apport du Cloud computing",
+        "academicYear": "2025-2026"
+    },
+    "description": "Administrer et optimiser les infrastructures cloud, en utilisant des commandes Unix et des scripts Bash ou Shells ou des programmes en Python, pour faciliter l'automatisation et améliorer la sécurité et l'efficacité des environnements cloud.",
+    "criteria": [
+        "Efficacité du script ou du programme réalisé : L'efficacité du script ou du programme réalisé permet de garantir que les opérations d'administration et d'optimisation des infrastructures cloud sont automatisées de manière performante et sécurisée.",
+        "Pertinence du choix de la technologie : La pertinence du choix de la technologie utilisée assure que les solutions d'optimisation sont adaptées aux besoins spécifiques des environnements cloud, améliorant ainsi leur efficacité et leur sécurité."
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM03",
+        "title": "Management de projet",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "",
+            "description": "Toutes les compétences liées au bloc 4 sont mobilisées dans ce module dans leur mise en pratique."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les fondamentaux du management de projet, apprendre à planifier, suivre et contrôler efficacement un projet, et développer des compétences en gestion des risques ainsi qu'en clôture de projet."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base de la gestion d'entreprise ou première expérience en gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction au management de projet",
+                "items": [
+                    "Définition du management de projet",
+                    "Caractéristiques d'un projet",
+                    "Enjeux du management de projet",
+                    "Rôles et responsabilités du chef de projet",
+                    "Compétences nécessaires au management de projet"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Planification du projet",
+                "items": [
+                    "Importance de la planification",
+                    "Étapes de planification d'un projet",
+                    "Construction d'un diagramme de Gantt",
+                    "Estimation des ressources et des délais",
+                    "Gestion des risques dans la planification"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Suivi et contrôle du projet",
+                "items": [
+                    "Outils de suivi (tableaux de bord, indicateurs de performance)",
+                    "Gestion des écarts et des déviations",
+                    "Techniques de contrôle de projet",
+                    "Communication avec l'équipe et les parties prenantes",
+                    "Ajustement du plan selon les résultats du suivi"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des risques et des problèmes",
+                "items": [
+                    "Identification et évaluation des risques",
+                    "Stratégies de réponse aux risques",
+                    "Gestion des problèmes dans un projet",
+                    "Mise en place d'un plan de gestion des risques",
+                    "Mesures correctives face aux impacts des risques"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Clôture du projet",
+                "items": [
+                    "Étapes de clôture d'un projet",
+                    "Rédaction du rapport de clôture",
+                    "Analyse des résultats et retour d'expérience",
+                    "Gestion des livrables et archivage documentaire",
+                    "Reconnaissance et valorisation du travail de l'équipe"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Définition et initialisation du projet",
+            "context": "Nomination comme chef de projet pour le lancement d'un nouveau produit.",
+            "objective": "Rédiger un document d'initialisation définissant objectifs, livrables, ressources, enjeux et rôles dans l'équipe."
+        },
+        {
+            "title": "Planification du projet",
+            "context": "Élaboration du plan du projet précédemment défini.",
+            "objective": "Construire un diagramme de Gantt, estimer ressources et délais et établir un plan initial de gestion des risques."
+        },
+        {
+            "title": "Suivi et contrôle du projet",
+            "context": "Projet arrivé à mi-parcours.",
+            "objective": "Construire un tableau de bord avec indicateurs de performance, analyser un écart et proposer des ajustements."
+        },
+        {
+            "title": "Gestion des risques et des problèmes",
+            "context": "Analyse approfondie des risques du projet.",
+            "objective": "Identifier de nouveaux risques, évaluer leur impact et définir des stratégies de mitigation."
+        },
+        {
+            "title": "Clôture du projet",
+            "context": "Projet terminé.",
+            "objective": "Rédiger un rapport de clôture, analyser les résultats et organiser les livrables et le retour d'expérience."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Le management de projet : Stratégies et méthodes",
+            "author": "Jean-Louis Levard"
+        },
+        {
+            "title": "Management par projets : Stratégies et implémentation",
+            "author": "Michel Thiry"
+        },
+        {
+            "title": "Le guide du management de projet",
+            "author": "Pierre Lévy"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

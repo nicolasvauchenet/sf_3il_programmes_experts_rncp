@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C32",
+        "title": "Réaliser des évaluations périodiques de l’avancement d’un projet",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Étude, Management de Projet Numérique et amélioration continue du SI.",
+        "academicYear": "2025"
+    },
+    "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape afin de mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre.",
+    "criteria": [
+        "Qualité des revues de performance : les revues sont complètes et reflètent fidèlement l'état d'avancement du projet.",
+        "Pertinence des rapports d'étape : les rapports fournissent des informations actualisées et pertinentes sur la progression du projet."
+    ]
+}
