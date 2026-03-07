@@ -26,7 +26,6 @@
 
     .app-sitename {
         @include displayFlex(flex-end, null, 0.25rem, column);
-        font-family: $font-secondary;
         font-size: 0.85rem;
         font-weight: bold;
         text-transform: uppercase;
@@ -37,14 +36,15 @@
         }
 
         small {
+            font-family: $font-secondary;
             font-size: 0.7rem;
             font-weight: normal;
             letter-spacing: 3.1px;
-            color: rgba($white, 0.75);
+            color: $secondary;
 
             @include respondTo(md) {
                 font-size: 1.15rem;
-                letter-spacing: 3.3px;
+                letter-spacing: 4.7px;
             }
         }
     }

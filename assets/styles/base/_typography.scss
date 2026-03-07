@@ -14,7 +14,7 @@ h4 {
 
 h3,
 h4 {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.25rem;
     text-transform: initial;
     text-align: left;
@@ -71,13 +71,17 @@ p {
 
     &.subtitle {
         font-style: italic;
+        line-height: 1.25rem;
         text-align: center;
         color: rgba($black, 0.5);
     }
 }
 
 strong {
+    font-family: $font-secondary;
+    font-size: 1.1em;
     font-weight: bold;
+    letter-spacing: 1px;
     color: $primary;
 }
 

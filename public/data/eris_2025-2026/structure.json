@@ -3,11 +3,756 @@
         "datasetCode": "eris_2025-2026",
         "rncpCode": "39781",
         "programCode": "ERIS",
-        "programTitle": "Expert en Réseau, Infrastructure et Sécurité",
+        "programTitle": "Expert Réseaux Infrastructures et Sécurité",
         "academicYear": "2025-2026"
     },
-    "modules": [],
-    "blocks": [],
-    "skills": [],
-    "evaluations": []
+    "modules": [
+        {
+            "code": "FM01",
+            "fullCode": "RNCP39781-BC01-FM01",
+            "title": "Gouvernance des Infrastructures (ITIL)",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM02",
+            "fullCode": "RNCP39781-BC01-FM02",
+            "title": "Audit des infrastructure et conformité",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM03",
+            "fullCode": "RNCP39781-BC01-FM03",
+            "title": "Fourniture des services",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM04",
+            "fullCode": "RNCP39781-BC01-FM04",
+            "title": "Support de services et Plan de Reprise d’Activité",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM05",
+            "fullCode": "RNCP39781-BC01-FM05",
+            "title": "Mise en production et amélioration continue",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM06",
+            "fullCode": "RNCP39781-BC01-FM06",
+            "title": "Numérique responsable",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM07",
+            "fullCode": "RNCP39781-BC01-FM07",
+            "title": "Projet : Gestion des Services (Prépa EC)",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM01",
+            "fullCode": "RNCP39781-BC02-FM01",
+            "title": "Conception d'infrastructures",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM02",
+            "fullCode": "RNCP39781-BC02-FM02",
+            "title": "Gestion des identités",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM03",
+            "fullCode": "RNCP39781-BC02-FM03",
+            "title": "IT Assets Management (ITAM)",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM04",
+            "fullCode": "RNCP39781-BC02-FM04",
+            "title": "Security Information and Event Management (SIEM)",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM05",
+            "fullCode": "RNCP39781-BC02-FM05",
+            "title": "Automatisation - Usine Logicielle",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM06",
+            "fullCode": "RNCP39781-BC02-FM06",
+            "title": "Gestion des incidents et support ITSM",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM07",
+            "fullCode": "RNCP39781-BC02-FM07",
+            "title": "Projet : Management du Support",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM08",
+            "fullCode": "RNCP39781-BC02-FM08",
+            "title": "Projet : Conception et pilotage d'infrastructure",
+            "blockCode": "BC02"
+        },
+        {
+            "code": "FM01",
+            "fullCode": "RNCP39781-BC03-FM01",
+            "title": "Veille multilingue en cybersécurité",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM02",
+            "fullCode": "RNCP39781-BC03-FM02",
+            "title": "Politique de sécurité",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM03",
+            "fullCode": "RNCP39781-BC03-FM03",
+            "title": "Infrastructure sécurisée",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM04",
+            "fullCode": "RNCP39781-BC03-FM04",
+            "title": "Audit de sécurité et conformité",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM05",
+            "fullCode": "RNCP39781-BC03-FM05",
+            "title": "Management des pratiques sécuritaires",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM06",
+            "fullCode": "RNCP39781-BC03-FM06",
+            "title": "Ethical Hacking et sécurité défensive",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM07",
+            "fullCode": "RNCP39781-BC03-FM07",
+            "title": "SOC et Analyse Forensique",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM08",
+            "fullCode": "RNCP39781-BC03-FM08",
+            "title": "Projet : Audit d'infrastructures sécurisées",
+            "blockCode": "BC03"
+        },
+        {
+            "code": "FM01",
+            "fullCode": "RNCP39781-BC04-FM01",
+            "title": "Etude d'avant-projet",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM02",
+            "fullCode": "RNCP39781-BC04-FM02",
+            "title": "Cahier des Charges et Appels d'Offres",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM03",
+            "fullCode": "RNCP39781-BC04-FM03",
+            "title": "Management de projet",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM04",
+            "fullCode": "RNCP39781-BC04-FM04",
+            "title": "Management des Hommes",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM05",
+            "fullCode": "RNCP39781-BC04-FM05",
+            "title": "Gestion de la recette",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM06",
+            "fullCode": "RNCP39781-BC04-FM06",
+            "title": "Gestion des coûts",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM07",
+            "fullCode": "RNCP39781-BC04-FM07",
+            "title": "Droit et Contrats de Prestation",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM08",
+            "fullCode": "RNCP39781-BC04-FM08",
+            "title": "Techniques de communication professionnelle",
+            "blockCode": "BC04"
+        },
+        {
+            "code": "FM09",
+            "fullCode": "RNCP39781-BC04-FM09",
+            "title": "Projet : Management de projet",
+            "blockCode": "BC04"
+        }
+    ],
+    "blocks": [
+        {
+            "code": "BC01",
+            "title": "Gouverner les infrastructures Systèmes et Réseaux"
+        },
+        {
+            "code": "BC02",
+            "title": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux"
+        },
+        {
+            "code": "BC03",
+            "title": "Piloter la Sécurité des Systèmes d'Information"
+        },
+        {
+            "code": "BC04",
+            "title": "Piloter les Projets et la Conduite du Changement"
+        }
+    ],
+    "skills": [
+        {
+            "code": "C01",
+            "title": "Participer aux politiques de gouvernance IT",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C02",
+            "title": "Auditer l’infrastructure de l’entreprise",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C03",
+            "title": "Etablir des accords de niveaux de service (SLA)",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C04",
+            "title": "Elaborer, documenter et mettre en œuvre des processus et procédures standardisées",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C05",
+            "title": "Analyser les causes de non-respect des SLA",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C06",
+            "title": "Evaluer les risques pesant sur la production en lien avec l’informatique",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C07",
+            "title": "Elaborer un plan de continuité d’activité (PCA)",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C08",
+            "title": "Définir un plan de reprise d’activité (PRA)",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C09",
+            "title": "Etablir et mettre en œuvre des tests des plans de continuité (PCA)",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C10",
+            "title": "Mettre en œuvre le Numérique Responsable",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM06",
+                "RNCP39781-BC01-FM07"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C11",
+            "title": "Concevoir une infrastructure système et réseau optimisée et sécurisée",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM08"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        },
+        {
+            "code": "C12",
+            "title": "Définir, implémenter et contrôler les règles d’accès aux données et aux services",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM08"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        },
+        {
+            "code": "C13",
+            "title": "Arbitrer la technologie d’hébergement des systèmes et/ou applications",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM08"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        },
+        {
+            "code": "C14",
+            "title": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM08"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        },
+        {
+            "code": "C15",
+            "title": "Contribuer à la mise en place, au contrôle et à l’administration de l'infrastructure",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM08"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        },
+        {
+            "code": "C16",
+            "title": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM08"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        },
+        {
+            "code": "C17",
+            "title": "Organiser et piloter la gestion des incidents et du support",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM06",
+                "RNCP39781-BC02-FM07"
+            ],
+            "evaluations": [
+                "EC03"
+            ]
+        },
+        {
+            "code": "C18",
+            "title": "Conduire une veille active en cybersécurité",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC04"
+            ]
+        },
+        {
+            "code": "C19",
+            "title": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC05"
+            ]
+        },
+        {
+            "code": "C20",
+            "title": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI)",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC05"
+            ]
+        },
+        {
+            "code": "C21",
+            "title": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC05"
+            ]
+        },
+        {
+            "code": "C22",
+            "title": "Eprouver la sécurité de l’infrastructure",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC06"
+            ]
+        },
+        {
+            "code": "C23",
+            "title": "Investiguer et analyser les incidents de sécurité",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC06"
+            ]
+        },
+        {
+            "code": "C24",
+            "title": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC)",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM07",
+                "RNCP39781-BC03-FM08"
+            ],
+            "evaluations": [
+                "EC06"
+            ]
+        },
+        {
+            "code": "C25",
+            "title": "Piloter un projet",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
+                "RNCP39781-BC04-FM03",
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08",
+                "RNCP39781-BC04-FM09"
+            ],
+            "evaluations": [
+                "EC07"
+            ]
+        },
+        {
+            "code": "C26",
+            "title": "Assurer le suivi et le reporting du projet",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39781-BC04-FM03",
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM08",
+                "RNCP39781-BC04-FM09"
+            ],
+            "evaluations": [
+                "EC07"
+            ]
+        },
+        {
+            "code": "C27",
+            "title": "Elaborer et mettre en œuvre la conduite du changement",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39781-BC04-FM03",
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM08",
+                "RNCP39781-BC04-FM09"
+            ],
+            "evaluations": [
+                "EC07"
+            ]
+        },
+        {
+            "code": "C28",
+            "title": "Développer la performance de l’équipe",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39781-BC04-FM03",
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM08",
+                "RNCP39781-BC04-FM09"
+            ],
+            "evaluations": [
+                "EC07"
+            ]
+        },
+        {
+            "code": "C29",
+            "title": "Contribuer au recrutement des collaborateurs",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM08",
+                "RNCP39781-BC04-FM09"
+            ],
+            "evaluations": [
+                "EC07"
+            ]
+        }
+    ],
+    "evaluations": [
+        {
+            "code": "EC01",
+            "blockCode": "BC01",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06",
+                "RNCP39781-BC01-FM07"
+            ]
+        },
+        {
+            "code": "EC02",
+            "blockCode": "BC02",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16"
+            ],
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM08"
+            ]
+        },
+        {
+            "code": "EC03",
+            "blockCode": "BC02",
+            "skills": [
+                "C17"
+            ],
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM06",
+                "RNCP39781-BC02-FM07"
+            ]
+        },
+        {
+            "code": "EC04",
+            "blockCode": "BC03",
+            "skills": [
+                "C18"
+            ],
+            "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM08"
+            ]
+        },
+        {
+            "code": "EC05",
+            "blockCode": "BC03",
+            "skills": [
+                "C19",
+                "C20",
+                "C21"
+            ],
+            "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM08"
+            ]
+        },
+        {
+            "code": "EC06",
+            "blockCode": "BC03",
+            "skills": [
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "modules": [
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07",
+                "RNCP39781-BC03-FM08"
+            ]
+        },
+        {
+            "code": "EC07",
+            "blockCode": "BC04",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
+                "RNCP39781-BC04-FM03",
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08",
+                "RNCP39781-BC04-FM09"
+            ]
+        }
+    ]
 }

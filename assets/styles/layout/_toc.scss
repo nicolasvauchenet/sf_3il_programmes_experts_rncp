@@ -25,8 +25,8 @@
             display: block;
             margin-bottom: 0.5rem;
             padding: 0.5rem;
-            font-family: $font-secondary;
             font-size: 0.75rem;
+            line-height: 1rem;
             text-decoration: none;
             color: $black;
             border: 1px solid rgba($black, 0.25);
@@ -37,12 +37,20 @@
                 margin-bottom: 0;
             }
 
-            &:hover,
-            &.active {
+            &:hover {
                 background-color: rgba($primary, 0.15);
                 border-color: $primary;
 
                 .app-badge {
+                }
+            }
+
+            &.active {
+                background-color: rgba($secondary, 0.15);
+                border-color: $secondary;
+
+                .app-badge {
+                    color: $secondary;
                 }
             }
 

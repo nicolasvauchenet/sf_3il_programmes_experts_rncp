@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Chart\EvaluationChartService;
 use App\Service\Context\FrameworkEvaluationsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,6 +15,7 @@ final class EvaluationsController extends AbstractController
     public function index(
         Request $request,
         FrameworkEvaluationsProvider $evaluationsProvider,
+        EvaluationChartService $evaluationChartService,
     ): Response {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
@@ -55,12 +57,15 @@ final class EvaluationsController extends AbstractController
             }
         }
 
+        $evaluationVolumeChart = $evaluationChartService->createEvaluationVolumeChart($selectedEvaluation);
+
         return $this->render('evaluations/index.html.twig', [
             'promotion' => $promotion,
             'year' => $year,
             'evaluations' => $evaluations,
             'selectedCode' => $selectedFileCode,
             'evaluation' => $selectedEvaluation,
+            'evaluationVolumeChart' => $evaluationVolumeChart,
         ]);
     }
 

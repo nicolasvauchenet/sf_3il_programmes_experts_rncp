@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Chart\SummaryChartService;
 use App\Service\Context\FrameworkStructureLoader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,10 +13,10 @@ final class SummaryController extends AbstractController
 {
     #[Route('/promotion', name: 'app_promotion_summary', methods: ['GET'])]
     public function index(
-        Request                  $request,
+        Request $request,
         FrameworkStructureLoader $loader,
-    ): Response
-    {
+        SummaryChartService $summaryChartService,
+    ): Response {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -41,6 +42,12 @@ final class SummaryController extends AbstractController
             'promotion' => $promotion,
             'year' => $year,
             'structure' => $structure,
+            'referentialVolumeChart' => $summaryChartService->createReferentialVolumeChart($structure),
+            'skillsPerBlockChart' => $summaryChartService->createSkillsPerBlockChart($structure),
+            'evaluationsPerBlockChart' => $summaryChartService->createEvaluationsPerBlockChart($structure),
+            'modulesPerBlockChart' => $summaryChartService->createModulesPerBlockChart($structure),
+            'skillsPerEvaluationChart' => $summaryChartService->createSkillsPerEvaluationChart($structure),
+            'modulesPerEvaluationChart' => $summaryChartService->createModulesPerEvaluationChart($structure),
         ]);
     }
 }

@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Fiche Compétence{% endblock %}
+{% block title %}
+    {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
+    - Compétence -
+    {{ skill.title ?: '' }}
+{% endblock %}
 
 {% block body %}
     {% include '_layout/default/_header.html.twig' %}
@@ -18,48 +22,29 @@
             } %}
 
             <article>
-                <div class="app-grid third">
-                    <section class="app-section">
-                        <h1>{{ skill.title ?: 'Compétence' }}</h1>
+                <section class="app-section">
+                    <h1>{{ skill.title ?: 'Compétence' }}</h1>
 
-                        <p class="subtitle">
-                            {{ promotionContext.promotionTitle }}
-                            {% if skill.blocName %}
-                                <br/>
-                                {{ skill.blocCode }} : {{ skill.blocName }}
-                            {% endif %}
-                        </p>
+                    <p class="subtitle">
+                        {{ promotionContext.promotionTitle }}
+                        {% if skill.blocName %}
+                            <br/>
+                            {{ skill.blocCode }} : {{ skill.blocName }}
+                        {% endif %}
+                    </p>
 
-                        <div class="ribbon">
-                            <span class="app-badge">{{ promotion | upper }}</span>
+                    <div class="ribbon">
+                        <span class="app-badge">{{ promotion | upper }}</span>
 
-                            {% if skill.skillCode %}
-                                <span class="app-badge">{{ skill.skillCode }}</span>
-                            {% endif %}
+                        {% if skill.skillCode %}
+                            <span class="app-badge">{{ skill.skillCode }}</span>
+                        {% endif %}
 
-                            {% if skill.academicYear %}
-                                <span class="app-badge">{{ skill.academicYear }}</span>
-                            {% endif %}
-                        </div>
-                    </section>
-
-                    <section class="app-section">
-                        <h2>Métriques</h2>
-
-                        <div class="app-grid two">
-                            <div>
-                                <strong>Critères</strong>
-                                <br>
-                                {{ skill.criteria|length }}
-                            </div>
-                            <div>
-                                <strong>RNCP</strong>
-                                <br>
-                                {{ skill.meta.rncpCode ?? '-' }}
-                            </div>
-                        </div>
-                    </section>
-                </div>
+                        {% if skill.academicYear %}
+                            <span class="app-badge">{{ skill.academicYear }}</span>
+                        {% endif %}
+                    </div>
+                </section>
 
                 {% if skill.description %}
                     <section class="app-section mx-0 mt-2 mb-0">

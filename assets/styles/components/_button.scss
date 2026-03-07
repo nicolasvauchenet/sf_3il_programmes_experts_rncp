@@ -6,20 +6,21 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: $primary;
-    background-color: rgba($primary, 0.25);
-    border: 2px solid $primary;
+    color: $secondary;
+    background-color: rgba($secondary, 0.25);
+    border: 2px solid $secondary;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover {
         color: $white;
-        background-color: rgba($primary, 1);
+        background-color: rgba($secondary, 1);
     }
 
     &:disabled {
         color: rgba($black, 0.15);
+        background-color: rgba($primary, 0.25);
         border-color: rgba($primary, 0.25);
         pointer-events: none;
         user-select: none;

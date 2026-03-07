@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Chart\ModuleChartService;
 use App\Service\Context\FrameworkModulesProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,10 +13,10 @@ final class ModulesController extends AbstractController
 {
     #[Route('/matieres', name: 'app_promotion_modules', methods: ['GET'])]
     public function index(
-        Request                  $request,
+        Request $request,
         FrameworkModulesProvider $modulesProvider,
-    ): Response
-    {
+        ModuleChartService $moduleChartService,
+    ): Response {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -28,7 +29,10 @@ final class ModulesController extends AbstractController
         if ($modules === []) {
             $this->addFlash('warning', 'Aucune matière disponible pour ce référentiel.');
 
-            return $this->redirectToRoute('app_promotion_summary', ['promotion' => $promotion, 'year' => $year]);
+            return $this->redirectToRoute('app_promotion_summary', [
+                'promotion' => $promotion,
+                'year' => $year,
+            ]);
         }
 
         $rawSelected = (string)$request->query->get('code', '');
@@ -39,17 +43,21 @@ final class ModulesController extends AbstractController
             $selectedFileCode = $selectedModule->fileCode;
         } else {
             $selectedModule = null;
+
             foreach ($modules as $m) {
                 if ($m->fileCode === $selectedFileCode) {
                     $selectedModule = $m;
                     break;
                 }
             }
+
             if ($selectedModule === null) {
                 $selectedModule = $modules[0];
                 $selectedFileCode = $selectedModule->fileCode;
             }
         }
+
+        $moduleVolumeChart = $moduleChartService->createModuleVolumeChart($selectedModule);
 
         return $this->render('modules/index.html.twig', [
             'promotion' => $promotion,
@@ -57,6 +65,7 @@ final class ModulesController extends AbstractController
             'modules' => $modules,
             'selectedCode' => $selectedFileCode,
             'module' => $selectedModule,
+            'moduleVolumeChart' => $moduleVolumeChart,
         ]);
     }
 

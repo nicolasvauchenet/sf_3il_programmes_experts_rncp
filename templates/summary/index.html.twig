@@ -1,14 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ structure.meta.programTitle ?? 'Résumé du Référentiel' }}{% endblock %}
+{% block title %}{{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}{% endblock %}
 
 {% block body %}
     {% include '_layout/default/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
     <main class="app-main">
-        <div class="app-grid third">
-            <section class="app-section">
+        <div class="app-grid two">
+            <section class="app-section centered">
                 <h1>{{ structure.meta.programTitle ?? 'Résumé du Référentiel' }}</h1>
 
                 <div class="ribbon">
@@ -24,40 +24,52 @@
             </section>
 
             <section class="app-section">
-                <h2>Métriques</h2>
+                <h2>Volumétrie globale</h2>
 
-                <div class="app-grid four">
-                    <span>{{ structure.blocks | length }} Blocs</span>
-                    <span>{{ structure.modules | length }} Modules</span>
-                    <span>{{ structure.skills | length }} Compétences</span>
-                    <span>{{ structure.evaluations | length }} Evaluations</span>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(referentialVolumeChart) }}
                 </div>
             </section>
         </div>
 
-        <section class="app-section">
-            <div class="app-grid two">
-                <div class="app-stats">
-                    <h2>Densité des Blocs</h2>
-                    <p>(modules par bloc)</p>
+        <div class="app-grid three">
+            <section class="app-section">
+                <h2>Compétences par Bloc</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(skillsPerBlockChart) }}
                 </div>
+            </section>
 
-                <div class="app-stats">
-                    <h2>Densité des Modules</h2>
-                    <p>(compétences par module)</p>
+            <section class="app-section">
+                <h2>Évaluations par Bloc</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(evaluationsPerBlockChart) }}
                 </div>
+            </section>
 
-                <div class="app-stats">
-                    <h2>Densité des Evaluations</h2>
-                    <p>(modules par évaluation)</p>
+            <section class="app-section">
+                <h2>Modules par Bloc</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(modulesPerBlockChart) }}
                 </div>
+            </section>
+        </div>
 
-                <div class="app-stats">
-                    <h2>Densité des Evaluations</h2>
-                    <p>(compétences par évaluation)</p>
+        <div class="app-grid two">
+            <section class="app-section">
+                <h2>Compétences par Évaluation</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(skillsPerEvaluationChart) }}
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section class="app-section">
+                <h2>Modules par Évaluation</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(modulesPerEvaluationChart) }}
+                </div>
+            </section>
+        </div>
     </main>
 
     {% include '_layout/default/_footer.html.twig' %}

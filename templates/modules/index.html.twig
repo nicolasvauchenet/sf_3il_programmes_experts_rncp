@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Fiche Matière{% endblock %}
+{% block title %}
+    {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
+    - Matière -
+    {{ module.title ?: '' }}
+{% endblock %}
 
 {% block body %}
     {% include '_layout/default/_header.html.twig' %}
@@ -19,18 +23,17 @@
 
             <article>
                 <div class="app-grid third">
-                    <section class="app-section">
+                    <section class="app-section centered">
                         <h1>{{ module.title ?: 'Matière' }}</h1>
 
+                        <h3 class="text-center">{{ promotionContext.promotionTitle }}</h3>
+
+                        <h4 class="text-center mb-0">Fiche Matière - Bloc {{ module.blocCode }}</h4>
                         <p class="subtitle">
-                            {{ promotionContext.promotionTitle }}
-                            {% if module.blocName %}
-                                <br/>
-                                {{ module.blocCode }} : {{ module.blocName }}
-                            {% endif %}
+                            {{ module.blocName }}
                         </p>
 
-                        <div class="ribbon">
+                        <div class="ribbon mt-2">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
                             {% if module.blocCode and module.moduleCode %}
@@ -39,36 +42,17 @@
                                 <span class="app-badge">{{ module.moduleCode }}</span>
                             {% endif %}
 
-                            {% if module.academicYear %}
-                                <span class="app-badge">{{ module.academicYear }}</span>
-                            {% endif %}
+                            <span class="app-badge">
+                                {{ module.durationDays }}j • {{ module.durationHours }}h
+                            </span>
                         </div>
                     </section>
 
-                    <section class="app-section">
+                    <section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div class="app-grid two">
-                            <div>
-                                <strong>Durée</strong>
-                                <br>
-                                {{ module.durationDays }} j • {{ module.durationHours }} h
-                            </div>
-                            <div>
-                                <strong>Compétences</strong>
-                                <br>
-                                {{ module.skills|length }}
-                            </div>
-                            <div>
-                                <strong>Chapitres</strong>
-                                <br>
-                                {{ (module.outline.chapters ?? [])|length }}
-                            </div>
-                            <div>
-                                <strong>Exercices</strong>
-                                <br>
-                                {{ module.exercises|length }}
-                            </div>
+                        <div style="height: 200px">
+                            {{ render_chart(moduleVolumeChart) }}
                         </div>
                     </section>
                 </div>
