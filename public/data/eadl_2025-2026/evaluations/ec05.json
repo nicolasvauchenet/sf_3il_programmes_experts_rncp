@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-EC05",
+        "title": "Piloter la qualité et la sécurité d’un projet logiciel",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Piloter la qualité et la sécurité d’un projet logiciel",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 5,
+    "description": "Pilotage de la qualité et de la sécurité d’un projet logiciel",
+    "skills": [
+        {
+            "code": "C27",
+            "description": "Mettre en œuvre une démarche qualité dans un projet logiciel en définissant des indicateurs de qualité, des procédures de contrôle et des outils de suivi afin de garantir la conformité des livrables aux exigences du projet."
+        },
+        {
+            "code": "C28",
+            "description": "Mettre en œuvre des pratiques de sécurité des applications en identifiant les risques, en appliquant les bonnes pratiques de sécurité et en utilisant des outils d’analyse afin de protéger les données et les systèmes."
+        },
+        {
+            "code": "C29",
+            "description": "Mettre en place des processus de revue de code et d’audit technique afin d’améliorer la qualité du code, de réduire les défauts et de favoriser le partage des bonnes pratiques au sein de l’équipe."
+        },
+        {
+            "code": "C30",
+            "description": "Analyser les résultats des outils de qualité logicielle et de sécurité afin d’identifier les anomalies, proposer des actions correctives et améliorer en continu la qualité du projet."
+        },
+        {
+            "code": "C31",
+            "description": "Sensibiliser et accompagner les équipes aux bonnes pratiques de qualité et de sécurité afin de renforcer la culture qualité au sein du projet et de l’organisation."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr27",
+            "description": "Mise en œuvre de la démarche qualité",
+            "indicators": [
+                "Les indicateurs de qualité sont définis et pertinents par rapport aux objectifs du projet.",
+                "Les procédures de contrôle et les outils de suivi permettent de vérifier la conformité des livrables."
+            ]
+        },
+        {
+            "code": "Cr28",
+            "description": "Sécurité des applications",
+            "indicators": [
+                "Les risques de sécurité sont identifiés et analysés.",
+                "Les bonnes pratiques de sécurité sont appliquées pour protéger les données et les systèmes."
+            ]
+        },
+        {
+            "code": "Cr29",
+            "description": "Revue de code et audit technique",
+            "indicators": [
+                "Les revues de code sont organisées et permettent d’améliorer la qualité du code.",
+                "Les audits techniques permettent d’identifier les défauts et de diffuser les bonnes pratiques."
+            ]
+        },
+        {
+            "code": "Cr30",
+            "description": "Analyse des outils de qualité logicielle",
+            "indicators": [
+                "Les résultats des outils de qualité et de sécurité sont correctement interprétés.",
+                "Les actions correctives proposées permettent d’améliorer la qualité du projet."
+            ]
+        },
+        {
+            "code": "Cr31",
+            "description": "Culture qualité et sécurité",
+            "indicators": [
+                "Les actions de sensibilisation aux bonnes pratiques de qualité et de sécurité sont pertinentes.",
+                "Les équipes adoptent progressivement les bonnes pratiques diffusées."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation professionnelle et soutenance orale",
+        "delivery": "Individuelle",
+        "totalDuration": "1 à 3 jours + 20 mn"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E5-P1",
+                "title": "Audit qualité et sécurité d’un projet logiciel",
+                "type": "Épreuve pratique",
+                "coefficient": 6,
+                "points": 120,
+                "duration": "1 à 3 jours"
+            },
+            {
+                "code": "E5-P2",
+                "title": "Présentation des résultats et recommandations",
+                "type": "Épreuve orale",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "20 mn"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
+            "blockThreshold": 100
+        }
+    }
+}

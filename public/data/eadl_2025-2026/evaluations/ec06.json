@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-EC06",
+        "title": "Piloter la stratégie technologique et l’évolution du système d’information",
+        "rncpCode": "39765",
+        "blocCode": "BC06",
+        "blocName": "Piloter la stratégie technologique et l’évolution du système d’information",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 6,
+    "description": "Pilotage de la stratégie technologique et de l’évolution du système d’information",
+    "skills": [
+        {
+            "code": "C32",
+            "description": "Mettre en place une veille technologique, normative et réglementaire en analysant des sources spécialisées afin d’identifier les évolutions technologiques, les standards et les obligations légales applicables au système d’information."
+        },
+        {
+            "code": "C33",
+            "description": "Analyser l’existant du système d’information en identifiant les forces, faiblesses et contraintes techniques afin de proposer des axes d’évolution cohérents avec la stratégie de l’organisation."
+        },
+        {
+            "code": "C34",
+            "description": "Définir une stratégie d’évolution du système d’information en proposant des orientations technologiques et organisationnelles permettant d’améliorer la performance, la sécurité et la pérennité des systèmes."
+        },
+        {
+            "code": "C35",
+            "description": "Évaluer l’impact technique, organisationnel et financier des choix technologiques afin d’éclairer la prise de décision stratégique."
+        },
+        {
+            "code": "C36",
+            "description": "Présenter et argumenter les recommandations technologiques auprès des parties prenantes afin de faciliter la prise de décision et l’adhésion aux orientations proposées."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr32",
+            "description": "Veille technologique et réglementaire",
+            "indicators": [
+                "Les sources de veille sélectionnées sont pertinentes et permettent d’identifier les évolutions technologiques et réglementaires.",
+                "Les informations collectées sont analysées et synthétisées de manière structurée."
+            ]
+        },
+        {
+            "code": "Cr33",
+            "description": "Analyse du système d’information existant",
+            "indicators": [
+                "Les forces, faiblesses et contraintes techniques du système d’information sont correctement identifiées.",
+                "L’analyse de l’existant permet de mettre en évidence des axes d’amélioration pertinents."
+            ]
+        },
+        {
+            "code": "Cr34",
+            "description": "Définition de la stratégie d’évolution",
+            "indicators": [
+                "Les orientations technologiques proposées sont cohérentes avec les objectifs de l’organisation.",
+                "Les solutions proposées permettent d’améliorer la performance, la sécurité et la pérennité du système."
+            ]
+        },
+        {
+            "code": "Cr35",
+            "description": "Évaluation des impacts des choix technologiques",
+            "indicators": [
+                "Les impacts techniques, organisationnels et financiers sont identifiés et analysés.",
+                "L’évaluation des impacts permet d’éclairer la prise de décision stratégique."
+            ]
+        },
+        {
+            "code": "Cr36",
+            "description": "Présentation et argumentation des recommandations",
+            "indicators": [
+                "Les recommandations technologiques sont présentées de manière claire et structurée.",
+                "L’argumentation permet de faciliter la prise de décision et l’adhésion des parties prenantes."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Étude de cas et soutenance orale",
+        "delivery": "Individuelle",
+        "totalDuration": "1 à 3 jours + 20 mn"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E6-P1",
+                "title": "Analyse stratégique et recommandations technologiques",
+                "type": "Épreuve écrite",
+                "coefficient": 6,
+                "points": 120,
+                "duration": "1 à 3 jours"
+            },
+            {
+                "code": "E6-P2",
+                "title": "Soutenance des recommandations technologiques",
+                "type": "Épreuve orale",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "20 mn"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
+            "blockThreshold": 100
+        }
+    }
+}

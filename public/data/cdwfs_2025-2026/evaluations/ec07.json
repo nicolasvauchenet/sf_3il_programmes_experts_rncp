@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-EC07",
+        "title": "Rédaction d'une étude d'avant-projet",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 7,
+    "description": "Rédaction d'une étude d'avant-projet.",
+    "skills": [
+        {
+            "code": "C26",
+            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir de résultats d'enquêtes et d'interviews pour identifier les objectifs et déterminer les fonctionnalités du projet numérique."
+        },
+        {
+            "code": "C27",
+            "description": "Étudier et évaluer la faisabilité du projet en tenant compte de la mobilisation des ressources humaines et matériels disponibles et nécessaires et de la pertinence et la faisabilité technique du projet numérique, afin d'atteindre les objectifs de l'application."
+        },
+        {
+            "code": "C28",
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités du projet."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C26",
+            "description": "Analyse des Besoins",
+            "indicators": [
+                "Exhaustivité de l'analyse : Au moins 80% des besoins des utilisateurs et des parties prenantes sont identifiés par rapport à ceux mentionnés dans les résultats d'enquêtes et d'interviews. L'intégralité des sources a été exploitée.",
+                "Précision de l'identification des objectifs : Les objectifs identifiés par le candidat couvrent 100% des objectifs émis par les utilisateurs.",
+                "Qualité des fonctionnalités définies : Les fonctionnalités proposées correspondent aux besoins exprimés."
+            ]
+        },
+        {
+            "code": "C27",
+            "description": "Étude de Faisabilité",
+            "indicators": [
+                "Adéquation des ressources : L'évaluation des ressources humaines et matérielles nécessaires correspond aux besoins réels du projet.",
+                "Évaluation technique : Chaque critère technique est scoré (par exemple: compatibilité, performance, sécurité) pour mesurer la faisabilité technique des solutions proposées.",
+                "Réalisme du projet : Notation de la faisabilité globale du projet (par exemple, haute, moyenne, basse) basée sur l'analyse de la mobilisation des ressources et des contraintes techniques."
+            ]
+        },
+        {
+            "code": "C28",
+            "description": "Rédaction de Documents de Projet",
+            "indicators": [
+                "Conformité du cahier des charges : Le cahier des charges, la note de cadrage correspondent aux exigences établies par les parties prenantes et les standards de l'entreprise.",
+                "Clarté et précision : Les documents sont rédigés de manière précise et compréhensible par les différentes parties prenantes.",
+                "Solutions techniques et performance : Les solutions techniques et leurs performances attendues sont correctement évaluées et décrites dans les documents de projet."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E7",
+                "title": "Rédaction d'une étude d'avant-projet",
+                "type": "Épreuve écrite",
+                "coefficient": 3,
+                "points": 60,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 30,
+            "compensationMin": 21,
+            "remedialBelow": 21,
+            "blockThreshold": 140
+        }
+    }
+}

@@ -1,0 +1,170 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-EC01",
+        "title": "Concevoir et modéliser l’architecture logicielle",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l’architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 1,
+    "description": "Conception et modélisation de l'architecture logicielle",
+    "skills": [
+        {
+            "code": "C1",
+            "description": "Mettre en place une veille technologique, normative, et législative en analysant des contenus de diverses sources d'informations multilingues afin d’identifier les nouvelles tendances, technologies et meilleures pratiques dans le domaine du développement et de l'architecture logicielle, afin de proposer des solutions innovantes et d'anticiper les évolutions du marché."
+        },
+        {
+            "code": "C2",
+            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews et de la cartographie du SI pour identifier les objectifs et déterminer les besoins d'évolution du Système d'Information"
+        },
+        {
+            "code": "C3",
+            "description": "Étudier et évaluer la faisabilité du projet en tenant compte de la mobilisation des ressources humaines et matériels disponibles nécessaires afin d'atteindre les objectifs d'évolution et de pérennisation du Système d'Information."
+        },
+        {
+            "code": "C4",
+            "description": "Concevoir l’architecture logicielle en analysant les exigences fonctionnelles et non fonctionnelles, en choisissant le modèle d'architecture et de modélisation et de prototypage adapté aux besoins, en sélectionnant les technologies associées, ainsi que les outils appropriés et en tenant compte des contraintes du système d’information, telles que la compatibilité avec les infrastructures existantes, la sécurité, et les performances requises, tout en anticipant la maintenance et les potentielles évolutions technologiques et organisationnelles, afin de garantir que la solution réponde de manière optimale aux besoins métiers identifiés et puisse évoluer sans interruption significative des services."
+        },
+        {
+            "code": "C5",
+            "description": "Sélectionner les technologies et outils les plus adaptés pour le développement, en comparant leurs performances, sécurité et interopérabilité et afin de répondre aux besoins du projet tout en respectant les contraintes de budget et de temps."
+        },
+        {
+            "code": "C6",
+            "description": "Présenter et valider l'architecture logicielle et les aspects techniques et fonctionnels, en organisant des revues de conception avec les parties prenantes et en intégrant les retours, afin d'assurer une compréhension et une acceptation complète."
+        },
+        {
+            "code": "C7",
+            "description": "Créer des diagrammes et modèles de données et de flux en utilisant des outils comme UML pour définir les structures et les relations de données nécessaires, optimisant ainsi la gestion et l'accessibilité des données et des flux pour les applications tout en garantissant leur évolutivité et performance."
+        },
+        {
+            "code": "C8",
+            "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel."
+        },
+        {
+            "code": "C9",
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr1",
+            "description": "Veille technologique et décisionnelle",
+            "indicators": [
+                "Sélection et pertinence des sources : Les sources d'information choisies doivent être pertinentes et crédibles, couvrant divers domaines technologiques liés aux objectifs du projet.",
+                "Maîtrise de l'anglais technique : L’exploitation des sources en langue anglaise à contribuer à obtenir des informations pertinentes pour optimiser la gestion de projet.",
+                "Vérification et exactitude des informations : Les informations collectées sont vérifiées pour leur exactitude et leur actualité, en utilisant des critères d'évaluation clairs pour établir la fiabilité de chaque source.",
+                "Utilisation d'outils de collecte : Des outils de collecte et d'analyse de données sont employés efficacement pour organiser et stocker les informations dans une base de connaissance structurée et consultable.",
+                "Analyse et synthèse des données : Aptitude à analyser les informations recueillies, à en faire la synthèse et à en tirer des conclusions logiques et applicables au contexte du projet."
+            ]
+        },
+        {
+            "code": "Cr2",
+            "description": "Analyse des Besoins",
+            "indicators": [
+                "Exhaustivité de l'analyse : Au moins 80% des besoins des utilisateurs et des parties prenantes sont identifiés par rapport à ceux mentionnés dans les résultats d'enquêtes et d'interviews. L'intégralité des sources a été exploitée.",
+                "Précision de l'identification des objectifs : Les objectifs identifiés par le candidat couvrent 100% des objectifs émis par les utilisateurs."
+            ]
+        },
+        {
+            "code": "Cr3",
+            "description": "Étude de Faisabilité",
+            "indicators": [
+                "Adéquation des ressources : L'évaluation de l'adéquation des ressources humaines et matérielles disponibles permet de garantir que les objectifs du projet d'évolution du Système d'Information peuvent être atteints de manière réaliste et efficace",
+                "Évaluation technique : Chaque critère technique est scoré (par exemple: compatibilité, performance, sécurité) pour mesurer la faisabilité technique des solutions proposées.",
+                "Réalisme du projet : Notation de la faisabilité globale du projet (par exemple, haute, moyenne, basse) basée sur l'analyse de la mobilisation des ressources et des contraintes techniques."
+            ]
+        },
+        {
+            "code": "Cr4",
+            "description": "Conception de l'architecture",
+            "indicators": [
+                "L'utilisation d'un modèle d'architecture détaillé et documenté permet de garantir que les exigences fonctionnelles et non fonctionnelles sont correctement analysées et intégrées, assurant ainsi une compatibilité optimale avec les infrastructures existantes et le respect des contraintes de sécurité et de performance.",
+                "La mise en place de prototypes et de tests de validation permet de vérifier que l'architecture choisie peut évoluer sans interruption significative des services, anticipant efficacement les besoins de maintenance et les évolutions technologiques et organisationnelles, pour répondre de manière optimale aux besoins métiers identifiés."
+            ]
+        },
+        {
+            "code": "Cr5",
+            "description": "Pertinence et justification des critères de sélection",
+            "indicators": [
+                "L'élaboration d'une grille de comparaison détaillée des technologies et outils permet de garantir que leurs performances, sécurité et interopérabilité sont soigneusement évaluées, assurant ainsi une sélection qui répond de manière optimale aux besoins du projet.",
+                "La réalisation de tests de performance et de sécurité sur des prototypes permet de vérifier que les technologies et outils choisis respectent les contraintes de budget et de temps, tout en répondant aux exigences du projet."
+            ]
+        },
+        {
+            "code": "Cr6",
+            "description": "Qualité des revues de conception",
+            "indicators": [
+                "Pertinence de l’analyse à partir des retours et suggestions des revues de conception : La pertinence des retours et suggestions du candidat lors des revues de conception permet d'assurer que les améliorations proposées sont alignées avec les besoins fonctionnels et techniques du projet.",
+                "Intégration efficace des retours et suggestions dans l'architecture : L'intégration efficace des retours et suggestions dans l'architecture garantit que les modifications apportées renforcent la robustesse et la faisabilité de la solution logicielle."
+            ]
+        },
+        {
+            "code": "Cr7",
+            "description": "Qualité des modélisations",
+            "indicators": [
+                "Pertinence des choix des diagrammes et modèles : La pertinence des choix des diagrammes et modèles permet de s'assurer que les outils utilisés sont adaptés aux structures et relations de données nécessaires, optimisant ainsi la gestion et l'accessibilité des données.",
+                "Cohérence des modélisations par rapport aux besoins : La cohérence des modélisations par rapport aux besoins garantit que les diagrammes et modèles reflètent fidèlement les exigences fonctionnelles et techniques du projet, assurant leur évolutivité et performance."
+            ]
+        },
+        {
+            "code": "Cr8",
+            "description": "Tests automatisés",
+            "indicators": [
+                "Couverture des tests : La couverture des tests automatisés permet de s'assurer que les fonctionnalités de l'application, y compris les cas limites et les scénarios d'erreur, sont testées de manière exhaustive, garantissant ainsi une qualité élevée du logiciel.",
+                "Conformité aux meilleures pratiques et documentation des tests : La conformité des scripts de test et des suites de tests aux meilleures pratiques de test logiciel, ainsi que la documentation complète des procédures et résultats de test, fournissent une base claire pour les futures références et améliorations, assurant une maintenance efficace du logiciel.",
+                "Documentation des tests : La documentation complète des procédures et résultats de test fournit une base claire pour les futures références et améliorations, facilitant ainsi la maintenance et l'évolution du logiciel."
+            ]
+        },
+        {
+            "code": "Cr9",
+            "description": "Rédaction de Documents de Projet",
+            "indicators": [
+                "Conformité du cahier des charges : Le cahier des charges, la note de cadrage correspondent aux exigences établies par les parties prenantes et les standards de l'entreprise.",
+                "Clarté et précision : Les documents sont rédigés de manière précise et compréhensible par les différentes parties prenantes.",
+                "Solutions techniques et performance : Les solutions techniques et leurs performances attendues sont correctement évaluées et décrites dans les documents de projet."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée à l’écrit et présentation orale",
+        "delivery": "Individuelle",
+        "totalDuration": "5h20"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E1-P1",
+                "title": "Conception d’architecture et justification",
+                "type": "Épreuve écrite",
+                "coefficient": 3,
+                "points": 60,
+                "duration": "3h00"
+            },
+            {
+                "code": "E1-P2",
+                "title": "Oral de présentation",
+                "type": "Épreuve orale",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "20 mn"
+            },
+            {
+                "code": "E1-P3",
+                "title": "Modélisation des données flux et conception des tests",
+                "type": "Épreuve écrite",
+                "coefficient": 3,
+                "points": 60,
+                "duration": "2h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
+            "blockThreshold": 100
+        }
+    }
+}

@@ -7,36 +7,201 @@
     {% include '_layout/default/_alert.html.twig' %}
 
     <main class="app-main">
-        <div class="app-grid third reverse">
-            {% include '_layout/default/_toc.html.twig' with {'title': 'Évaluations', 'path': 'app_promotion_evaluations', 'code': code} %}
+        <div class="app-grid third layout">
+            {% include '_layout/default/_toc.html.twig' with {
+                'title': 'Évaluation',
+                'path': 'app_promotion_evaluations',
+                'promotion': promotion,
+                'year': year,
+                'content': evaluations,
+                'selectedCode': selectedCode
+            } %}
 
             <article>
                 <div class="app-grid third">
                     <section class="app-section">
-                        <h1>Fiche évaluation {{ code }}</h1>
+                        <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
+
+                        <p class="subtitle">
+                            {{ promotionContext.promotionTitle }}
+                            {% if evaluation.blocName %}
+                                <br/>
+                                {{ evaluation.blocCode }} : {{ evaluation.blocName }}
+                            {% endif %}
+                        </p>
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
-                        </div>
 
-                        <p class="subtitle">
-                            ...
-                        </p>
+                            {% if evaluation.evaluationCode %}
+                                <span class="app-badge">{{ evaluation.evaluationCode }}</span>
+                            {% endif %}
+
+                            {% if evaluation.academicYear %}
+                                <span class="app-badge">{{ evaluation.academicYear }}</span>
+                            {% endif %}
+                        </div>
                     </section>
 
                     <section class="app-section">
                         <h2>Métriques</h2>
 
-                        <div class="app-grid four">
-                            <span>...</span>
+                        <div class="app-grid two">
+                            <div>
+                                <strong>Évaluation</strong>
+                                <br>
+                                {% if evaluation.evaluationNumber > 0 %}
+                                    EC{{ '%02d'|format(evaluation.evaluationNumber) }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </div>
+                            <div>
+                                <strong>Compétences</strong>
+                                <br>
+                                {{ evaluation.skills|length }}
+                            </div>
+                            <div>
+                                <strong>Critères</strong>
+                                <br>
+                                {{ evaluation.criteria|length }}
+                            </div>
+                            <div>
+                                <strong>Durée totale</strong>
+                                <br>
+                                {{ evaluation.totalDuration ?: '-' }}
+                            </div>
                         </div>
                     </section>
                 </div>
 
-                <section class="app-section mx-0 mt-2 mb-0">
-                    <h2>Contenu</h2>
-                    <p>...</p>
-                </section>
+                {% if evaluation.description %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Description</h2>
+                        <p>{{ evaluation.description }}</p>
+                    </section>
+                {% endif %}
+
+                {% if evaluation.format or evaluation.delivery or evaluation.totalDuration %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Modalités</h2>
+
+                        <p>
+                            <strong>Format :</strong>
+                            {{ evaluation.format ?: '-' }}
+                        </p>
+                        <p>
+                            <strong>Déroulé :</strong>
+                            {{ evaluation.delivery ?: '-' }}
+                        </p>
+                        <p>
+                            <strong>Durée totale :</strong>
+                            {{ evaluation.totalDuration ?: '-' }}
+                        </p>
+                    </section>
+                {% endif %}
+
+                {% set examParts = evaluation.examParts %}
+                {% if examParts is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Épreuves</h2>
+
+                            {% if examParts | length > 1 %}
+                            <div class="app-grid two">
+                            {% endif %}
+                                {% for part in examParts %}
+                                    <section class="app-section mx-0 my-0">
+                                        <h3 class="mb-0">{{ evaluation.evaluationCode }}.{{ loop.index }}</h3>
+
+                                        <p class="subtitle text-left">{{ part.title }}</p>
+
+                                        <p>
+                                            <strong>Type :</strong>
+                                            {{ part.type ?? '-' }}
+                                        </p>
+                                        <p>
+                                            <strong>Coefficient :</strong>
+                                            {{ part.coefficient ?? '-' }}
+                                        </p>
+                                        <p>
+                                            <strong>Points :</strong>
+                                            {{ part.points ?? '-' }}
+                                        </p>
+                                        <p>
+                                            <strong>Durée :</strong>
+                                            {{ part.duration ?? '-' }}
+                                        </p>
+                                    </section>
+                                {% endfor %}
+                            {% if examParts | length > 1 %}
+                            </div>
+                            {% endif %}
+                    </section>
+                {% endif %}
+
+                {% if evaluation.skills is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Compétences mobilisées</h2>
+
+                        {% for s in evaluation.skills %}
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <p>
+                                    <strong>Compétence {{ s.code }}</strong> : {{ s.description }}
+                                </p>
+                            </section>
+                        {% endfor %}
+                    </section>
+                {% endif %}
+
+                {% if evaluation.criteria is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Critères d’évaluation</h2>
+
+                        {% for criterion in evaluation.criteria %}
+                            <section class="app-section mx-0 mb-2">
+                                <h3>
+                                    Critère {{ criterion.code }} :
+                                    {% if criterion.description %}
+                                        {{ criterion.description }}
+                                    {% endif %}
+                                </h3>
+
+                                {% if criterion.indicators is defined and criterion.indicators is not empty %}
+                                    <ul>
+                                        {% for indicator in criterion.indicators %}
+                                            <li>{{ indicator }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </section>
+                        {% endfor %}
+                    </section>
+                {% endif %}
+
+                {% if evaluation.examThreshold or evaluation.compensationMin or evaluation.remedialBelow or evaluation.blockThreshold %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Règles de validation</h2>
+
+                        <div class="app-grid two">
+                            <div class="app-section mx-0 my-0">
+                                <strong>Validation de l’évaluation :</strong>
+                                {{ evaluation.examThreshold ?: '-' }}
+                            </div>
+                            <div class="app-section mx-0 my-0">
+                                <strong>Compensation possible à partir de :</strong>
+                                {{ evaluation.compensationMin ?: '-' }}
+                            </div>
+                            <div class="app-section mx-0 my-0">
+                                <strong>Rattrapage obligatoire en dessous de :</strong>
+                                {{ evaluation.remedialBelow ?: '-' }}
+                            </div>
+                            <div class="app-section mx-0 my-0">
+                                <strong>Validation du bloc :</strong>
+                                {{ evaluation.blockThreshold ?: '-' }}
+                            </div>
+                        </div>
+                    </section>
+                {% endif %}
             </article>
         </div>
     </main>

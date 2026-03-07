@@ -1,0 +1,175 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-EC01",
+        "title": "Gouvernance des Infrastructures Systèmes et Réseaux",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouverner les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 1,
+    "description": "Mise en situation professionnelle simulée à partir d’un scénario d’entreprise fictive dont il faut gérer les services informatiques. Préparation collective des livrables écrits et oral individuel.",
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique, et en contribuant à la structuration de la gestion des services IT, pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité."
+        },
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire."
+        },
+        {
+            "code": "C03",
+            "description": "Etablir des accords de niveaux de service (SLA) en collaboration avec les clients internes et/ou externes, en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise."
+        },
+        {
+            "code": "C04",
+            "description": "Elaborer, documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et/ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services."
+        },
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives."
+        },
+        {
+            "code": "C06",
+            "description": "Evaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité."
+        },
+        {
+            "code": "C07",
+            "description": "Elaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel."
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre."
+        },
+        {
+            "code": "C09",
+            "description": "Etablir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux."
+        },
+        {
+            "code": "C10",
+            "description": "Mettre en œuvre le Numérique Responsable en adaptant des pratiques durables et d’accessibilité (personnes en situation de handicap), en se basant sur l’inventaire exhaustif des actifs informatiques et en utilisant les outils de référence afin de mesurer et d’améliorer la performance environnementale du SI et les pratiques RSE afférentes."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C01",
+            "description": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique, et en contribuant à la structuration de la gestion des services IT, pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité.",
+            "indicators": [
+                "Les politiques de gouvernance définies permettent d’assurer la cohérence et l’homogénéité des pratiques.",
+                "Les politiques de gouvernance définies s’inscrivent dans le cadre du schéma directeur de la DSI.",
+                "Les politiques de gouvernance permettent à l’entreprise d’atteindre ses objectifs en matière de performance, sécurité et conformité."
+            ]
+        },
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire.",
+            "indicators": [
+                "L’audit couvre les volets techniques et organisationnels.",
+                "L’audit précise les éléments contrôlés, les mesures à effectuer et les valeurs cibles.",
+                "Toutes les normes et réglementations retenues par l’entreprise sont prises en compte."
+            ]
+        },
+        {
+            "code": "C03",
+            "description": "Etablir des accords de niveaux de service (SLA) en collaboration avec les clients internes et/ou externes, en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise.",
+            "indicators": [
+                "Les accords de niveau de service proposés permettent à l’entreprise d’atteindre ses objectifs et niveaux d’exigence fixés.",
+                "Les indicateurs clés de performance choisis permettent de mesurer le respect des SLA.",
+                "Les valeurs cibles associées sont en accord avec les niveaux d’exigence"
+            ]
+        },
+        {
+            "code": "C04",
+            "description": "Elaborer, documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et/ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services.",
+            "indicators": [
+                "Les processus et procédures sont documentés et s’appuient sur des normes et/ou référentiels de bonnes pratiques.",
+                "Les processus et procédures définis permettent d’atteindre le niveau de qualité et d’efficacité des services souhaité."
+            ]
+        },
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives.",
+            "indicators": [
+                "La méthodologie suivie pour interpréter les données et les KPI permet d’identifier les causes de non-respect des SLA.",
+                "Les actions correctives proposées permettent de se replacer dans le contexte de respect des SLA."
+            ]
+        },
+        {
+            "code": "C06",
+            "description": "Evaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité.",
+            "indicators": [
+                "L’analyse de risque couvre les processus critiques en lien avec l’informatique pour l’activité de l’entreprise.",
+                "L’analyse de risque constitue une base suffisante pour définir des plans de continuité et de reprise d’activité.",
+                "Chaque menace est correctement évaluée en termes de probabilité et impacts."
+            ]
+        },
+        {
+            "code": "C07",
+            "description": "Elaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel.",
+            "indicators": [
+                "Le plan de continuité d’activité est en lien avec un risque clairement identifié et contribue au respect des SLA.",
+                "Les moyens humains et techniques mobilisés sont en cohérence avec le contexte de l’entreprise et permettent d’atteindre l’objectif de façon optimisée.",
+                "La documentation est complète et permet d’identifier les rôles et actions nécessaires à la mise en œuvre du plan."
+            ]
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre.",
+            "indicators": [
+                "L’ordre de priorisation des applications et services du plan de reprise d’activité est déterminé par leur degré de criticité par rapport aux activités de l’entreprise.",
+                "Les stratégies de sauvegarde et de restauration s’appuient sur cet ordre et définissent les éléments techniques et organisationnels nécessaires.",
+                "Le plan de reprise d’activité permet d’atteindre les objectifs de l’entreprise en termes de niveau de protection contre les risques de perte de données et d’efficacité de restauration."
+            ]
+        },
+        {
+            "code": "C09",
+            "description": "Etablir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux.",
+            "indicators": [
+                "Les exercices mis en place pour les tests permettent d’évaluer la viabilité du PCA ou PRA visé.",
+                "Les observations et conclusions tirés des tests permettent une amélioration de la gestion des situations de crise."
+            ]
+        },
+        {
+            "code": "C10",
+            "description": "Mettre en œuvre le Numérique Responsable en adaptant des pratiques durables et d’accessibilité (personnes en situation de handicap), en se basant sur l’inventaire exhaustif des actifs informatiques et en utilisant les outils de référence afin de mesurer et d’améliorer la performance environnementale du SI et les pratiques RSE afférentes.",
+            "indicators": [
+                "L’inventaire des actifs informatiques est complet et permet de construire une mesure de performance environnementale fiable.",
+                "Les pratiques mises en œuvre permettent d’atteindre les objectifs RSE et environnementales de l’entreprise.",
+                "La conformité avec les réglementations en vigueur est assurée."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée",
+        "delivery": "Épreuve écrite collective et épreuve orale individuelle en centre de formation",
+        "totalDuration": "04h30"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E1",
+                "title": "Évaluation des livrables",
+                "type": "Épreuve écrite collective",
+                "coefficient": 1,
+                "points": 20,
+                "duration": "04h00"
+            },
+            {
+                "code": "E2",
+                "title": "Épreuve orale",
+                "type": "Épreuve orale individuelle",
+                "coefficient": 3,
+                "points": 60,
+                "duration": "00h30"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
+            "blockThreshold": 40
+        }
+    }
+}

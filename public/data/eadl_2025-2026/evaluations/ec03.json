@@ -1,0 +1,112 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-EC03",
+        "title": "Développer des applications logicielles",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Développer des applications logicielles",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 3,
+    "description": "Développement d'applications logicielles",
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Planifier et préparer les phases de développement de l'application logicielle en choisissant les méthodes et outils de développement appropriés, afin d'assurer une organisation efficace et adaptée aux besoins spécifiques du projet."
+        },
+        {
+            "code": "C17",
+            "description": "Développer des interfaces utilisateur en créant des maquettes et prototypes interactifs à l'aide d'outils de design et en programmant des composants réutilisables, afin de concevoir des interfaces esthétiques, ergonomiques et accessibles."
+        },
+        {
+            "code": "C18",
+            "description": "Développer les fonctionnalités back-end de l'application en utilisant des langages de programmation adaptés et en intégrant des API et services externes, afin de garantir une logique métier robuste et une interopérabilité optimale."
+        },
+        {
+            "code": "C19",
+            "description": "Concevoir et implémenter des bases de données en créant des schémas relationnels ou NoSQL, afin d'assurer un stockage efficace, sécurisé et scalable des données de l'application."
+        },
+        {
+            "code": "C20",
+            "description": "Développer des tests automatisés en utilisant des frameworks adaptés pour valider les fonctionnalités développées, afin de garantir la qualité, la stabilité et la non-régression de l'application."
+        },
+        {
+            "code": "C21",
+            "description": "Documenter le code, les choix techniques et les procédures de déploiement en rédigeant une documentation claire et structurée, afin de faciliter la maintenance, la compréhension et l'évolutivité de l'application."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr16",
+            "description": "Préparation des phases de développement",
+            "indicators": [
+                "Les méthodes et outils de développement choisis sont adaptés aux besoins du projet et justifiés.",
+                "La planification des phases de développement est cohérente, réaliste et structurée."
+            ]
+        },
+        {
+            "code": "Cr17",
+            "description": "Développement des interfaces utilisateur",
+            "indicators": [
+                "Les maquettes et prototypes réalisés traduisent fidèlement les besoins fonctionnels et ergonomiques.",
+                "Les interfaces développées sont esthétiques, ergonomiques et accessibles."
+            ]
+        },
+        {
+            "code": "Cr18",
+            "description": "Développement des fonctionnalités back-end",
+            "indicators": [
+                "Les fonctionnalités back-end répondent aux besoins métiers exprimés.",
+                "Les API et services externes sont intégrés correctement et de manière sécurisée."
+            ]
+        },
+        {
+            "code": "Cr19",
+            "description": "Conception et implémentation des bases de données",
+            "indicators": [
+                "Le modèle de données est cohérent avec les besoins fonctionnels et techniques.",
+                "Le stockage des données est conçu de manière efficace, sécurisée et scalable."
+            ]
+        },
+        {
+            "code": "Cr20",
+            "description": "Développement des tests automatisés",
+            "indicators": [
+                "Les tests couvrent les principales fonctionnalités de l'application.",
+                "Les tests permettent de garantir la qualité, la stabilité et la non-régression de l'application."
+            ]
+        },
+        {
+            "code": "Cr21",
+            "description": "Documentation technique",
+            "indicators": [
+                "La documentation du code, des choix techniques et des procédures de déploiement est claire et structurée.",
+                "La documentation facilite la maintenance, la compréhension et l'évolutivité de l'application."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation professionnelle",
+        "delivery": "Individuelle",
+        "totalDuration": "3 jours"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E3-P1",
+                "title": "Développement d'une application logicielle",
+                "type": "Épreuve pratique",
+                "coefficient": 10,
+                "points": 200,
+                "duration": "3 jours"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
+            "blockThreshold": 100
+        }
+    }
+}

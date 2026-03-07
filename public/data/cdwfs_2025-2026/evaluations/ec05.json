@@ -1,0 +1,78 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-EC05",
+        "title": "Rédaction d'un rapport d'audit avec description et justification de la solution technique",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 5,
+    "description": "Rédaction d'un rapport d'audit avec description et justification de la solution technique.",
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Évaluer les besoins et intégrer les solutions cloud, en tenant compte des exigences de flexibilité et d'évolutivité, pour améliorer et moderniser les architectures des systèmes d'information."
+        },
+        {
+            "code": "C19",
+            "description": "Analyser les besoins techniques en s'appuyant sur des connaissances avancées des structures telles que monolithiques, microservices, serverless ou n-tiers pour sélectionner l'architecture d'application la plus appropriée aux exigences spécifiques du projet."
+        },
+        {
+            "code": "C20",
+            "description": "Administrer et rationaliser les plateformes cloud en collaborant avec des expert et, en optimisant la mobilisation des ressources et des données hébergées pour assurer l'équilibre entre la performance élevée et la gestion budgétaire efficace des services cloud."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C18",
+            "description": "Évaluation des Besoins et Intégration des Solutions Cloud",
+            "indicators": [
+                "Compréhension des Besoins: Les besoins actuels et futurs de l'entreprise pour la transformation numérique sont identifiés et détaillés avec précision.",
+                "Adéquation des Solutions: Les solutions cloud proposées sont en adéquation avec les exigences de flexibilité et d'évolutivité de l'entreprise.",
+                "Justification des Choix: L'argumentation fournie pour le choix des solutions cloud spécifiques permettent l'alignement avec les objectifs stratégiques de l'entreprise."
+            ]
+        },
+        {
+            "code": "C19",
+            "description": "Analyse Technique pour la Sélection de l'Architecture d'Application",
+            "indicators": [
+                "Analyse des Structures: Les structures d'architecture d'application sélectionnées comme monolithique, microservices, serverless, ou n-tiers répondent aux besoins et contraintes spécifiques de l'application.",
+                "Vision à Long Terme: Le candidat a anticipé les impacts à long terme de l'architecture choisie en termes de maintenance, évolutivité et d'intégration des technologies futures."
+            ]
+        },
+        {
+            "code": "C20",
+            "description": "Administration et Rationalisation des Plateformes Cloud",
+            "indicators": [
+                "Optimisation des Ressources: L'équilibre entre les coûts et les performances est démontré.",
+                "Planification Budgétaire: Le plan budgétaire proposé est en alignement avec les objectifs et ressources financières du commanditaire",
+                "Stratégies de Sécurité: Les mesures de sécurité appliquées permettent de protéger les données et les services dans le cloud."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E5",
+                "title": "Rédaction d'un rapport d'audit avec description et justification de la solution technique",
+                "type": "Épreuve écrite",
+                "coefficient": 5,
+                "points": 100,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 50,
+            "compensationMin": 35,
+            "remedialBelow": 35,
+            "blockThreshold": 80
+        }
+    }
+}

@@ -12,8 +12,44 @@
     },
     "skills": [
         {
-            "code": "",
-            "description": "Toutes les compétences du bloc 01 \"Gouvernance des infrastructures systèmes et réseaux\" sont en lien avec cette matière. Ce module est l'introduction au bloc et se base sur principalement sur ITIL et de participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique, et en contribuant à la structuration de la gestion des services IT, pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité."
+            "code": "C01",
+            "description": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique , et en contribuant à la structuration de la gestion des services IT , pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité ."
+        },
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire ."
+        },
+        {
+            "code": "C03",
+            "description": "Etablir des accords de niveau x de service (SLA) en collaboration avec les clients internes et/ou externes , en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise."
+        },
+        {
+            "code": "C04",
+            "description": "Elaborer , documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et /ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services."
+        },
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non -respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives."
+        },
+        {
+            "code": "C06",
+            "description": "Evaluer les risques pesant sur la production en lien avec l’informatique , en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité."
+        },
+        {
+            "code": "C07",
+            "description": "Elaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel."
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3 -2- 1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle , afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre."
+        },
+        {
+            "code": "C09",
+            "description": "Etablir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux ."
+        },
+        {
+            "code": "C10",
+            "description": "Mettre en œuvre le Numérique Responsable en adaptant des pratiques durables et d’accessibilité (personnes en situation de handicap), en se basant sur l’inventaire exhaustif des actifs informatiques et en utilisant les outils de référence afin de mesurer et d’améliorer la performance environnementale du SI et les pratiques RSE afférentes ."
         }
     ],
     "objectives": {

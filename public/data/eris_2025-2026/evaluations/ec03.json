@@ -1,0 +1,118 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-EC03",
+        "title": "Maintien en condition opérationnelle et sécurisation des infrastructures",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Maintenir et sécuriser les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 3,
+    "description": "Mise en situation professionnelle simulée de maintien en condition opérationnelle et de sécurisation d’une infrastructure. Épreuve pratique individuelle avec interrogation orale.",
+    "skills": [
+        {
+            "code": "C17",
+            "description": "Superviser les infrastructures systèmes et réseaux en s’appuyant sur des outils de supervision et d’analyse afin d’identifier les anomalies, anticiper les incidents et garantir la disponibilité des services."
+        },
+        {
+            "code": "C18",
+            "description": "Maintenir les infrastructures en condition opérationnelle en appliquant des procédures de maintenance préventive et corrective afin d’assurer la continuité de service et la performance des systèmes."
+        },
+        {
+            "code": "C19",
+            "description": "Diagnostiquer les incidents et dysfonctionnements affectant les infrastructures systèmes et réseaux en mobilisant des outils d’analyse, de supervision et de diagnostic afin d’identifier les causes et rétablir le service."
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en œuvre des solutions de sécurisation des infrastructures systèmes et réseaux en appliquant les politiques de sécurité, en configurant les équipements et en contrôlant les accès afin de protéger les systèmes et les données."
+        },
+        {
+            "code": "C21",
+            "description": "Déployer et administrer des solutions de sécurité (pare-feu, IDS/IPS, segmentation réseau, authentification forte) afin de renforcer la protection des infrastructures contre les menaces internes et externes."
+        },
+        {
+            "code": "C22",
+            "description": "Mettre en œuvre une politique de gestion des mises à jour et des correctifs de sécurité en s’appuyant sur des outils d’administration et de gestion des vulnérabilités afin de maintenir le niveau de sécurité des infrastructures."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C17",
+            "description": "Superviser les infrastructures systèmes et réseaux en s’appuyant sur des outils de supervision et d’analyse afin d’identifier les anomalies, anticiper les incidents et garantir la disponibilité des services.",
+            "indicators": [
+                "Les outils de supervision permettent de collecter et analyser les indicateurs de fonctionnement des infrastructures.",
+                "Les anomalies détectées sont correctement interprétées afin d’anticiper les incidents.",
+                "Les actions mises en œuvre permettent de garantir la disponibilité des services."
+            ]
+        },
+        {
+            "code": "C18",
+            "description": "Maintenir les infrastructures en condition opérationnelle en appliquant des procédures de maintenance préventive et corrective afin d’assurer la continuité de service et la performance des systèmes.",
+            "indicators": [
+                "Les procédures de maintenance sont correctement appliquées.",
+                "Les opérations réalisées permettent de maintenir la continuité de service.",
+                "Les actions mises en œuvre garantissent le niveau de performance attendu."
+            ]
+        },
+        {
+            "code": "C19",
+            "description": "Diagnostiquer les incidents et dysfonctionnements affectant les infrastructures systèmes et réseaux en mobilisant des outils d’analyse, de supervision et de diagnostic afin d’identifier les causes et rétablir le service.",
+            "indicators": [
+                "Les outils de diagnostic permettent d’identifier les causes des incidents.",
+                "L’analyse réalisée permet de proposer des actions correctives adaptées.",
+                "Les actions mises en œuvre permettent de rétablir le service."
+            ]
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en œuvre des solutions de sécurisation des infrastructures systèmes et réseaux en appliquant les politiques de sécurité, en configurant les équipements et en contrôlant les accès afin de protéger les systèmes et les données.",
+            "indicators": [
+                "Les configurations appliquées respectent la politique de sécurité définie.",
+                "Les mécanismes de contrôle d’accès permettent de protéger les ressources.",
+                "Les dispositifs mis en place permettent de sécuriser les infrastructures."
+            ]
+        },
+        {
+            "code": "C21",
+            "description": "Déployer et administrer des solutions de sécurité (pare-feu, IDS/IPS, segmentation réseau, authentification forte) afin de renforcer la protection des infrastructures contre les menaces internes et externes.",
+            "indicators": [
+                "Les solutions de sécurité sont correctement déployées et configurées.",
+                "Les dispositifs mis en place permettent de détecter et prévenir les intrusions.",
+                "Les solutions retenues renforcent efficacement la protection des infrastructures."
+            ]
+        },
+        {
+            "code": "C22",
+            "description": "Mettre en œuvre une politique de gestion des mises à jour et des correctifs de sécurité en s’appuyant sur des outils d’administration et de gestion des vulnérabilités afin de maintenir le niveau de sécurité des infrastructures.",
+            "indicators": [
+                "Les mises à jour et correctifs sont correctement appliqués.",
+                "Les outils de gestion des vulnérabilités permettent d’identifier les failles de sécurité.",
+                "Les actions mises en œuvre permettent de maintenir le niveau de sécurité attendu."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée sur infrastructure simulée",
+        "delivery": "Épreuve pratique individuelle avec interrogation orale",
+        "totalDuration": "04h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E4",
+                "title": "Épreuve technique de maintien en condition opérationnelle et sécurisation",
+                "type": "Épreuve individuelle",
+                "coefficient": 5,
+                "points": 100,
+                "duration": "04h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 50,
+            "compensationMin": 35,
+            "remedialBelow": 35,
+            "blockThreshold": 80
+        }
+    }
+}

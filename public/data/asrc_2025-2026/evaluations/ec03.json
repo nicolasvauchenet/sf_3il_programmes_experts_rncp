@@ -1,0 +1,83 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-EC03",
+        "title": "Configuration de l’infrastructure réseaux",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud.",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 3,
+    "description": "Définition des spécifications techniques et fonctionnelles aux nouveaux besoins ou amélioration avec la stratégie de surveillance et de suivi, rédaction d’un dossier technique et mise en service de la solution.",
+    "skills": [
+        {
+            "code": "C9",
+            "description": "Configurer l'infrastructure réseau à l'aide de protocoles et d'équipements adaptés aux besoins fonctionnels et en collaboration avec l'équipe réseau, pour assurer une connectivité fluide et sécurisée du système d'information."
+        },
+        {
+            "code": "C10",
+            "description": "Déployer les solutions de télécommunications, de réseaux de données et voix, en supervisant l'installation et la configuration dans l'environnement de production, en collaboration avec les équipes techniques et les fournisseurs, pour garantir l'efficacité des communications internes et externes et assurer la continuité des services."
+        },
+        {
+            "code": "C11",
+            "description": "Superviser et assurer la maintenance du réseau en utilisant des systèmes de monitoring, en collaboration avec les équipes de sécurité informatique et d'exploitation, pour maintenir une performance réseau optimale."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr9",
+            "description": "Configuration et intégration de solutions réseaux",
+            "indicators": [
+                "Adéquation aux besoins : Les protocoles et les équipements assurent une communication fluide et sans interruption.",
+                "Gestion de la Sécurité : La réponse apportée sécurise l'infrastructure réseau."
+            ]
+        },
+        {
+            "code": "Cr10",
+            "description": "Mise en service de solutions Voix/Data",
+            "indicators": [
+                "Couverture des tests : Les tests (de connectivité, d'authentification, d'appel, ...) couvrent le fonctionnement des différents services installés.",
+                "Clarté des tests : La documentation des tests permet à l'ensemble des collaborateurs de pouvoir les mettre en œuvre."
+            ]
+        },
+        {
+            "code": "Cr11",
+            "description": "Supervision du réseau",
+            "indicators": [
+                "Complétude de la Surveillance : la solution permet d'assurer un suivi en temps réel des différents services."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée sur ordinateur",
+        "delivery": "Rédaction d’un dossier technique de la solution et mise en service de la solution",
+        "totalDuration": "6h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E4",
+                "title": "Dossier technique de la solution",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 120,
+                "duration": "4h00"
+            },
+            {
+                "code": "E5",
+                "title": "Mise en service de la solution",
+                "type": "Épreuve écrite",
+                "coefficient": 2,
+                "points": 0,
+                "duration": "2h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 60,
+            "compensationMin": 42,
+            "remedialBelow": 42,
+            "blockThreshold": 100
+        }
+    }
+}

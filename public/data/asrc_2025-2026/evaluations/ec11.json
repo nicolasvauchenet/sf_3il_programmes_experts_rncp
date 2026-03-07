@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-EC11",
+        "title": "Projet d’étude professionnel",
+        "rncpCode": "39608",
+        "blocCode": "PEP",
+        "blocName": "Projet d’étude professionnel",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 11,
+    "description": "Analyse et réalisation d’un projet d’infrastructure systèmes, réseaux ou cybersécurité, ou évolution significative d’une infrastructure existante, donnant lieu à un rapport écrit et une soutenance devant un jury de professionnels.",
+    "skills": [],
+    "criteria": [],
+    "modalities": {
+        "format": "Projet d’étude professionnel",
+        "delivery": "Rapport écrit et soutenance orale devant un jury",
+        "totalDuration": "30 mn"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E15",
+                "title": "Rapport écrit du projet d’étude professionnel",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 200,
+                "duration": ""
+            },
+            {
+                "code": "E16",
+                "title": "Soutenance du projet d’étude professionnel",
+                "type": "Épreuve orale",
+                "coefficient": 6,
+                "points": 0,
+                "duration": "30 mn"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 0,
+            "remedialBelow": 0,
+            "blockThreshold": 0
+        }
+    }
+}

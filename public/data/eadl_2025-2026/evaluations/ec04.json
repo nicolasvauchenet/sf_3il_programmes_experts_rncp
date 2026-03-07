@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-EC04",
+        "title": "Déployer et maintenir des applications logicielles",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Déployer et maintenir des applications logicielles",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 4,
+    "description": "Déploiement et maintenance d'applications logicielles",
+    "skills": [
+        {
+            "code": "C22",
+            "description": "Mettre en place des environnements de développement, de test et de production en configurant les outils nécessaires et en automatisant les processus d'intégration et de déploiement continus afin de garantir la qualité et la fiabilité des livraisons logicielles."
+        },
+        {
+            "code": "C23",
+            "description": "Déployer les applications logicielles sur des infrastructures adaptées en utilisant des outils d'orchestration et de conteneurisation afin d'assurer la disponibilité, la performance et la scalabilité des services."
+        },
+        {
+            "code": "C24",
+            "description": "Mettre en œuvre des stratégies de surveillance et de journalisation afin de détecter les anomalies, suivre les performances et garantir la disponibilité des applications en production."
+        },
+        {
+            "code": "C25",
+            "description": "Diagnostiquer et résoudre les incidents techniques en analysant les journaux, les métriques et les comportements des applications afin de rétablir le fonctionnement normal du service."
+        },
+        {
+            "code": "C26",
+            "description": "Mettre en œuvre des actions de maintenance corrective, évolutive et préventive afin d'assurer la pérennité, la sécurité et l'évolution des applications logicielles."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr22",
+            "description": "Mise en place des environnements",
+            "indicators": [
+                "Les environnements de développement, de test et de production sont correctement configurés.",
+                "Les processus d'intégration et de déploiement continus sont automatisés et fonctionnels."
+            ]
+        },
+        {
+            "code": "Cr23",
+            "description": "Déploiement des applications",
+            "indicators": [
+                "Les applications sont déployées sur des infrastructures adaptées.",
+                "Les outils d'orchestration et de conteneurisation sont correctement utilisés."
+            ]
+        },
+        {
+            "code": "Cr24",
+            "description": "Surveillance et journalisation",
+            "indicators": [
+                "Les mécanismes de surveillance permettent de suivre les performances et la disponibilité des applications.",
+                "Les journaux applicatifs et systèmes permettent de détecter et d'analyser les anomalies."
+            ]
+        },
+        {
+            "code": "Cr25",
+            "description": "Gestion des incidents",
+            "indicators": [
+                "Les incidents techniques sont correctement diagnostiqués à partir des journaux et métriques.",
+                "Les actions mises en œuvre permettent de rétablir rapidement le fonctionnement normal du service."
+            ]
+        },
+        {
+            "code": "Cr26",
+            "description": "Maintenance des applications",
+            "indicators": [
+                "Les actions de maintenance corrective, évolutive et préventive sont pertinentes.",
+                "Les actions mises en œuvre garantissent la pérennité, la sécurité et l'évolution des applications."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation professionnelle",
+        "delivery": "Individuelle",
+        "totalDuration": "1 à 3 jours"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E4-P1",
+                "title": "Mise en place d'une chaîne d'intégration et de déploiement continu",
+                "type": "Épreuve pratique",
+                "coefficient": 5,
+                "points": 100,
+                "duration": "1 à 3 jours"
+            },
+            {
+                "code": "E4-P2",
+                "title": "Présentation et justification des choix techniques",
+                "type": "Épreuve orale",
+                "coefficient": 5,
+                "points": 100,
+                "duration": "20 mn"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
+            "blockThreshold": 100
+        }
+    }
+}

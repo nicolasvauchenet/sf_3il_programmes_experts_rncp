@@ -1,0 +1,121 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-EC02",
+        "title": "Manager les projets numériques",
+        "rncpCode": "39765",
+        "blocCode": "BC02",
+        "blocName": "Manager les projets numériques",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 2,
+    "description": "Management des projets numériques",
+    "skills": [
+        {
+            "code": "C10",
+            "description": "Planifier et conduire le projet numérique en appliquant des méthodologies de gestion de projet adaptées au contexte, pour une planification et exécution efficaces des projets informatiques en respectant le plan de projet établi, le budget et en tenant compte des risques identifiés."
+        },
+        {
+            "code": "C11",
+            "description": "Coordonner les équipes de projet (incluant les personnes en situation de handicap), en utilisant des outils collaboratifs tel que Trello ou Kanban et des outils de ticketing comme Jira pour le suivi des tâches, la résolution des problèmes en lien avec les équipes exploitation afin de garantir la maintenabilité du projet et d'ajuster la planification en fonction des écarts identifiés."
+        },
+        {
+            "code": "C12",
+            "description": "Effectuer le suivi continu des indicateurs de performance en respectant les normes et méthodes de qualité utilisées dans l'entreprise et en utilisant des tableaux de bord interactifs, des rapports réguliers, afin de maintenir l'avancement et la réalisation du projet en respectant les contraintes budgétaires, les délais et les objectifs stratégiques."
+        },
+        {
+            "code": "C13",
+            "description": "Analyser des contenus de diverses sources d'informations spécialisées, en mobilisant ses connaissances technologiques et sa maîtrise de l'anglais, pour résoudre ou aider l'équipe de développement dans la résolution de problèmes complexes rencontrés lors du développement des applications, garantir la disponibilité opérationnelle des services et contribuer à la résolution efficace des incidents."
+        },
+        {
+            "code": "C14",
+            "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape pour mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre."
+        },
+        {
+            "code": "C15",
+            "description": "Organiser des ateliers pratiques, des revues de code collaboratives, et des séances de retour d'expérience (RETEX) en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence et maintien de la performance collective de l'équipe de développement."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr10",
+            "description": "Planification et Conduite de Projet",
+            "indicators": [
+                "Alignement méthodologique : Le choix et l'application de la méthodologie de gestion de projet sont appropriés au contexte du projet, avec des preuves de prise en compte des spécificités du projet et des risques identifiés.",
+                "Efficacité de la planification : Le plan de projet est détaillé, réaliste et respecte les jalons établis, avec des preuves de suivi et d'ajustement basés sur l'évolution du projet."
+            ]
+        },
+        {
+            "code": "Cr11",
+            "description": "Coordination des Équipes de Projet",
+            "indicators": [
+                "Cohérence de la planification des tâches : Les outils collaboratifs sont utilisés de manière efficace pour planifier, suivre les tâches et ajuster les ressources en fonction des écarts par rapport au plan initial.",
+                "Communication et collaboration : Il y a une communication claire et régulière au sein de l'équipe de projet, avec des preuves de coordination efficace entre les membres.",
+                "Actions de formation proposées : Elles permettent l'alignement des RH avec les objectifs du projet."
+            ]
+        },
+        {
+            "code": "Cr12",
+            "description": "Suivi Continu des Indicateurs de Performance",
+            "indicators": [
+                "Précision du suivi budgétaire : Les outils de suivi budgétaire sont correctement utilisés pour une gestion financière précise, avec des indicateurs de performance financière qui sont régulièrement mis à jour et analysés.",
+                "Réactivité aux écarts : Les écarts par rapport au budget et aux autres indicateurs de performance sont rapidement identifiés et des mesures correctives sont mises en place de manière proactive."
+            ]
+        },
+        {
+            "code": "Cr13",
+            "description": "Mobilisation ses connaissances technologiques dans la résolution d’incidents",
+            "indicators": [
+                "Pertinence des solutions trouvées : Les informations extraites des recherches sont directement applicables pour résoudre des problèmes spécifiques rencontrés lors du développement ou pour optimiser la gestion de projet.",
+                "Maîtrise de l'anglais technique : L’exploitation des sources en langue anglaise à contribuer à la résolution de problème."
+            ]
+        },
+        {
+            "code": "Cr14",
+            "description": "Évaluations de l'Avancement du Projet",
+            "indicators": [
+                "Qualité des revues de performance : Les revues de performance sont complètes, reflétant fidèlement l'état actuel du projet et l'atteinte des objectifs à chaque étape.",
+                "Pertinence des rapports d'étape : Les rapports d'étape fournissent des informations actualisées et pertinentes sur la progression du projet, avec des preuves d'amélioration continue basées sur les évaluations."
+            ]
+        },
+        {
+            "code": "Cr15",
+            "description": "Montée en compétences des équipes",
+            "indicators": [
+                "Le feedback recueilli lors des séances de retour d'expérience (RETEX) permet de vérifier l’efficacité des sessions collaboratives, ainsi que l'amélioration de la compréhension et de l'application des nouvelles connaissances par les membres de l'équipe.",
+                "L’évolution des indicateurs de qualité du code (ex. réduction des erreurs, meilleure structure du code, réduction des duplications) permet de vérifier l’impact sur les pratiques de développement au sein de l’équipe."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation professionnelle reconstituée et présentation orale",
+        "delivery": "Collective et individuelle",
+        "totalDuration": "1 à 3 jours consécutifs + 20 mn"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E2-P1",
+                "title": "Compte rendu d'activité (livrables collectifs) à la fin de la mise en situation",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "1 à 3 jours"
+            },
+            {
+                "code": "E2-P2",
+                "title": "Oral de présentation",
+                "type": "Épreuve orale",
+                "coefficient": 6,
+                "points": 120,
+                "duration": "20 mn"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
+            "blockThreshold": 100
+        }
+    }
+}

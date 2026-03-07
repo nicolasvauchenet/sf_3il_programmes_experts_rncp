@@ -1,0 +1,88 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-EC04",
+        "title": "Conception et développement Back-end d'une API sécurisée et documentée",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 4,
+    "description": "Conception et développement Back-end d'une API sécurisée et documentée.",
+    "skills": [
+        {
+            "code": "C14",
+            "description": "Concevoir des API (application programming interface) en utilisant des architectures et des langages de programmation pertinents en prenant en compte les besoins d'intégration et d'interopérabilité des systèmes pour faciliter et optimiser les échanges de données entre différents services."
+        },
+        {
+            "code": "C15",
+            "description": "Sécuriser les API, en mettant en œuvre des protocoles d'authentification et d'autorisation en utilisant des outils et des pratiques de sécurité standardisés pour protéger les données et les interactions contre les accès non autorisés et les vulnérabilités."
+        },
+        {
+            "code": "C16",
+            "description": "Réaliser différents tests sur les API (tests unitaires, d'intégration, de charge et de performance) avec des frameworks pour garantir la fiabilité et la robustesse des API dans des conditions d'utilisation variées et à fort trafic."
+        },
+        {
+            "code": "C17",
+            "description": "Réaliser et maintenir la documentation de l'API en collaboration avec les développeurs, en utilisant des outils tels que Swagger pour les API ou des générateurs de documentation de code dans le but de faciliter la maintenabilité et l'évolutivité de l'API."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C14",
+            "description": "Conception des API",
+            "indicators": [
+                "Adéquation avec les besoins : L'API répond précisément aux besoins d'intégration identifiés, son architecture facilite la communication entre différents services.",
+                "Pertinence des technologies utilisées : Les langages de programmation et les technologies utilisées pour construire l'API sont plus adaptés pour les objectifs fixés."
+            ]
+        },
+        {
+            "code": "C15",
+            "description": "Sécurisation des API",
+            "indicators": [
+                "Robustesse de la sécurité : Les méthodes d'authentification et d'autorisation (OAuth ou JWT) mises en place suivent les bonnes pratiques de sécurité et empêchent efficacement les accès non autorisés.",
+                "Utilisation des outils standardisés : Les outils et pratiques de sécurité sont en accord avec les standards de l'industrie et appliqués de manière cohérente."
+            ]
+        },
+        {
+            "code": "C16",
+            "description": "Tests des API",
+            "indicators": [
+                "Couverture des tests : Les tests (unitaires, fonctionnels ...) couvrent tous les aspects de l'API",
+                "Qualité des tests : Les tests automatisés fournissent des résultats fiables et mesurables."
+            ]
+        },
+        {
+            "code": "C17",
+            "description": "Documentation des API",
+            "indicators": [
+                "Clarté et complétude de la documentation : La documentation est complète, facile à comprendre, et fournit toutes les informations nécessaires pour que les développeurs puissent utiliser l'API sans assistance supplémentaire.",
+                "Conformité avec les normes internes : La documentation suit les normes internes de programmation et de documentation de l'entreprise permettant d'assurer la cohérence et la maintenabilité de l'API."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée sur ordinateur",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E4",
+                "title": "Conception et développement Back-end d'une API sécurisée et documentée",
+                "type": "Épreuve écrite",
+                "coefficient": 5,
+                "points": 100,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 50,
+            "compensationMin": 35,
+            "remedialBelow": 35,
+            "blockThreshold": 100
+        }
+    }
+}

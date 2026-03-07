@@ -1,0 +1,87 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-EC06",
+        "title": "Valorisation des compétences professionnelles",
+        "rncpCode": "39781",
+        "blocCode": "BC06",
+        "blocName": "Valoriser ses compétences professionnelles",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 6,
+    "description": "Présentation d’un dossier professionnel basé sur l’expérience en entreprise et soutenance orale devant un jury.",
+    "skills": [
+        {
+            "code": "C34",
+            "description": "Analyser son expérience professionnelle en identifiant les compétences mobilisées, les activités réalisées et les résultats obtenus afin de valoriser son parcours et ses acquis."
+        },
+        {
+            "code": "C35",
+            "description": "Formaliser un dossier professionnel en présentant les missions réalisées, les contextes techniques et organisationnels et les compétences mobilisées afin de démontrer la maîtrise des activités professionnelles."
+        },
+        {
+            "code": "C36",
+            "description": "Présenter et argumenter son expérience professionnelle à l’oral en structurant son discours et en répondant aux questions du jury afin de démontrer la maîtrise des compétences professionnelles."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C34",
+            "description": "Analyser son expérience professionnelle en identifiant les compétences mobilisées, les activités réalisées et les résultats obtenus afin de valoriser son parcours et ses acquis.",
+            "indicators": [
+                "Les activités professionnelles sont décrites de manière claire et structurée.",
+                "Les compétences mobilisées sont identifiées et analysées.",
+                "Les résultats obtenus sont explicités et mis en perspective."
+            ]
+        },
+        {
+            "code": "C35",
+            "description": "Formaliser un dossier professionnel en présentant les missions réalisées, les contextes techniques et organisationnels et les compétences mobilisées afin de démontrer la maîtrise des activités professionnelles.",
+            "indicators": [
+                "Le dossier professionnel présente clairement les missions réalisées.",
+                "Les contextes techniques et organisationnels sont décrits.",
+                "Les compétences professionnelles sont mises en évidence."
+            ]
+        },
+        {
+            "code": "C36",
+            "description": "Présenter et argumenter son expérience professionnelle à l’oral en structurant son discours et en répondant aux questions du jury afin de démontrer la maîtrise des compétences professionnelles.",
+            "indicators": [
+                "La présentation orale est structurée et argumentée.",
+                "Les réponses apportées aux questions du jury sont pertinentes.",
+                "La présentation permet de démontrer la maîtrise des compétences professionnelles."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Dossier professionnel et soutenance",
+        "delivery": "Remise d’un dossier écrit et soutenance orale devant un jury",
+        "totalDuration": "01h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E9",
+                "title": "Dossier professionnel",
+                "type": "Épreuve écrite",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "00h00"
+            },
+            {
+                "code": "E10",
+                "title": "Soutenance du dossier professionnel",
+                "type": "Épreuve orale individuelle",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "01h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
+            "blockThreshold": 40
+        }
+    }
+}

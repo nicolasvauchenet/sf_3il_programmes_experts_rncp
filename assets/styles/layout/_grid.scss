@@ -7,6 +7,12 @@
         }
     }
 
+    &.three {
+        @include respondTo(sm) {
+            @include displayGrid(repeat(3, 1fr), 1.5rem);
+        }
+    }
+
     &.four {
         @include respondTo(sm) {
             @include displayGrid(repeat(4, 1fr), 1.5rem);

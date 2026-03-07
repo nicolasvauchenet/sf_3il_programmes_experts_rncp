@@ -1,0 +1,113 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-EC05",
+        "title": "Management d’équipe et amélioration continue des infrastructures",
+        "rncpCode": "39781",
+        "blocCode": "BC05",
+        "blocName": "Manager les équipes et accompagner l’amélioration continue des infrastructures systèmes et réseaux",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 5,
+    "description": "Mise en situation professionnelle simulée de management d’équipe et d’amélioration continue des infrastructures systèmes et réseaux. Production de livrables écrits et soutenance orale.",
+    "skills": [
+        {
+            "code": "C29",
+            "description": "Organiser l’activité d’une équipe technique en répartissant les tâches, en définissant les priorités et en mettant en place des outils de suivi afin d’assurer l’efficacité collective et la réalisation des objectifs."
+        },
+        {
+            "code": "C30",
+            "description": "Accompagner les membres de l’équipe dans le développement de leurs compétences en identifiant les besoins de formation, en mettant en place des actions d’accompagnement et en favorisant le partage de connaissances."
+        },
+        {
+            "code": "C31",
+            "description": "Mettre en œuvre une démarche d’amélioration continue des infrastructures systèmes et réseaux en analysant les retours d’expérience, les indicateurs de performance et les incidents afin d’optimiser les processus et les services."
+        },
+        {
+            "code": "C32",
+            "description": "Piloter la qualité des services d’infrastructure en définissant des indicateurs de performance, en analysant les résultats et en mettant en place des actions d’amélioration afin de garantir la satisfaction des utilisateurs."
+        },
+        {
+            "code": "C33",
+            "description": "Accompagner les transformations technologiques et organisationnelles en anticipant les évolutions, en adaptant les pratiques de travail et en impliquant les équipes afin de faciliter l’adoption des changements."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "C29",
+            "description": "Organiser l’activité d’une équipe technique en répartissant les tâches, en définissant les priorités et en mettant en place des outils de suivi afin d’assurer l’efficacité collective et la réalisation des objectifs.",
+            "indicators": [
+                "La répartition des tâches est cohérente avec les compétences des membres de l’équipe.",
+                "Les priorités définies permettent d’atteindre les objectifs fixés.",
+                "Les outils de suivi permettent de piloter l’activité de l’équipe."
+            ]
+        },
+        {
+            "code": "C30",
+            "description": "Accompagner les membres de l’équipe dans le développement de leurs compétences en identifiant les besoins de formation, en mettant en place des actions d’accompagnement et en favorisant le partage de connaissances.",
+            "indicators": [
+                "Les besoins en compétences sont identifiés.",
+                "Les actions d’accompagnement mises en place permettent le développement des compétences.",
+                "Le partage de connaissances est encouragé au sein de l’équipe."
+            ]
+        },
+        {
+            "code": "C31",
+            "description": "Mettre en œuvre une démarche d’amélioration continue des infrastructures systèmes et réseaux en analysant les retours d’expérience, les indicateurs de performance et les incidents afin d’optimiser les processus et les services.",
+            "indicators": [
+                "Les retours d’expérience et incidents sont analysés.",
+                "Les indicateurs de performance sont exploités pour identifier les axes d’amélioration.",
+                "Les actions mises en place permettent l’amélioration des processus et services."
+            ]
+        },
+        {
+            "code": "C32",
+            "description": "Piloter la qualité des services d’infrastructure en définissant des indicateurs de performance, en analysant les résultats et en mettant en place des actions d’amélioration afin de garantir la satisfaction des utilisateurs.",
+            "indicators": [
+                "Les indicateurs définis permettent de mesurer la qualité de service.",
+                "Les analyses réalisées permettent d’identifier les écarts de performance.",
+                "Les actions d’amélioration mises en œuvre permettent d’améliorer la qualité de service."
+            ]
+        },
+        {
+            "code": "C33",
+            "description": "Accompagner les transformations technologiques et organisationnelles en anticipant les évolutions, en adaptant les pratiques de travail et en impliquant les équipes afin de faciliter l’adoption des changements.",
+            "indicators": [
+                "Les évolutions technologiques et organisationnelles sont anticipées.",
+                "Les pratiques de travail sont adaptées aux transformations.",
+                "Les actions menées facilitent l’adhésion des équipes au changement."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Étude de cas et soutenance",
+        "delivery": "Production de livrables écrits et présentation orale individuelle",
+        "totalDuration": "03h30"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E7",
+                "title": "Étude de cas de management et amélioration continue",
+                "type": "Épreuve écrite",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "03h00"
+            },
+            {
+                "code": "E8",
+                "title": "Soutenance orale",
+                "type": "Épreuve orale individuelle",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "00h30"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
+            "blockThreshold": 40
+        }
+    }
+}
