@@ -6,9 +6,9 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: $secondary;
-    background-color: rgba($secondary, 0.25);
-    border: 2px solid $secondary;
+    color: $primary;
+    background-color: rgba($primary, 0.25);
+    border: 2px solid $primary;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s;
@@ -16,6 +16,7 @@
     &:hover {
         color: $white;
         background-color: rgba($secondary, 1);
+        border-color: $secondary;
     }
 
     &:disabled {

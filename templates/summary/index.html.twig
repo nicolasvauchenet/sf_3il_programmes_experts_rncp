@@ -11,20 +11,19 @@
             <section class="app-section centered">
                 <h1>{{ structure.meta.programTitle ?? 'Résumé du Référentiel' }}</h1>
 
+                <p class="subtitle">
+                    Tableau de bord du référentiel : visualisation de la répartition des blocs de compétences, des matières enseignées, des compétences et des évaluations du programme.
+                </p>
+
                 <div class="ribbon">
                     <span class="app-badge">RNCP{{ structure.meta.rncpCode }}</span>
                     <span class="app-badge">{{ promotion | upper }}</span>
                     <span class="app-badge">{{ structure.meta.academicYear ?? year }}</span>
                 </div>
-
-                <p class="subtitle">
-                    Vue d’ensemble du référentiel : volumes globaux et emplacements réservés aux futurs
-                    graphiques de densité.
-                </p>
             </section>
 
             <section class="app-section">
-                <h2>Volumétrie globale</h2>
+                <h2>Structure du référentiel</h2>
 
                 <div class="summary-card" style="height: 200px;">
                     {{ render_chart(referentialVolumeChart) }}
@@ -34,39 +33,39 @@
 
         <div class="app-grid three">
             <section class="app-section">
-                <h2>Compétences par Bloc</h2>
+                <h2>Répartition des matières par bloc</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(modulesPerBlockChart) }}
+                </div>
+            </section>
+
+            <section class="app-section">
+                <h2>Répartition des compétences par bloc</h2>
                 <div class="summary-card" style="height: 200px;">
                     {{ render_chart(skillsPerBlockChart) }}
                 </div>
             </section>
 
             <section class="app-section">
-                <h2>Évaluations par Bloc</h2>
+                <h2>Répartition des évaluations par bloc</h2>
                 <div class="summary-card" style="height: 200px;">
                     {{ render_chart(evaluationsPerBlockChart) }}
-                </div>
-            </section>
-
-            <section class="app-section">
-                <h2>Modules par Bloc</h2>
-                <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(modulesPerBlockChart) }}
                 </div>
             </section>
         </div>
 
         <div class="app-grid two">
             <section class="app-section">
-                <h2>Compétences par Évaluation</h2>
+                <h2>Répartition des matières par Évaluation (EC)</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(skillsPerEvaluationChart) }}
+                    {{ render_chart(modulesPerEvaluationChart) }}
                 </div>
             </section>
 
             <section class="app-section">
-                <h2>Modules par Évaluation</h2>
+                <h2>Répartition des compétences par Évaluation (EC)</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(modulesPerEvaluationChart) }}
+                    {{ render_chart(skillsPerEvaluationChart) }}
                 </div>
             </section>
         </div>

@@ -3,7 +3,7 @@
 {% block title %}
     {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
     - Compétence -
-    {{ skill.title ?: '' }}
+    {{ skill.title() ?: '' }}
 {% endblock %}
 
 {% block body %}
@@ -22,31 +22,38 @@
             } %}
 
             <article>
-                <section class="app-section">
-                    <h1>{{ skill.title ?: 'Compétence' }}</h1>
+                <div class="app-grid third">
+                    <section class="app-section centered">
+                        <h1>{{ skill.title() ?: 'Compétence' }}</h1>
 
-                    <p class="subtitle">
-                        {{ promotionContext.promotionTitle }}
-                        {% if skill.blocName %}
-                            <br/>
-                            {{ skill.blocCode }} : {{ skill.blocName }}
-                        {% endif %}
-                    </p>
+                        <h3 class="text-center">{{ promotionContext.promotionTitle }}</h3>
 
-                    <div class="ribbon">
-                        <span class="app-badge">{{ promotion | upper }}</span>
+                        <div class="info">
+                            <h4 class="text-center mb-0">Fiche Compétence - Bloc {{ skill.blocCode }}</h4>
+                            <p class="subtitle">
+                                {{ skill.blocName }}
+                            </p>
+                        </div>
 
-                        {% if skill.skillCode %}
-                            <span class="app-badge">{{ skill.skillCode }}</span>
-                        {% endif %}
+                        <div class="ribbon">
+                            <span class="app-badge">{{ promotion | upper }}</span>
+                            <span class="app-badge">{{ skill.fullSkillCode() }}</span>
+                            {% if skill.academicYear() %}
+                                <span class="app-badge">{{ skill.academicYear() }}</span>
+                            {% endif %}
+                        </div>
+                    </section>
 
-                        {% if skill.academicYear %}
-                            <span class="app-badge">{{ skill.academicYear }}</span>
-                        {% endif %}
-                    </div>
-                </section>
+                    <section class="app-section centered">
+                        <h2>Métriques</h2>
 
-                {% if skill.description %}
+                        <div style="height: 200px">
+                            {{ render_chart(skillMetricsChart) }}
+                        </div>
+                    </section>
+                </div>
+
+                {% if skill.description is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Définition</h2>
                         <p>{{ skill.description }}</p>
@@ -56,13 +63,58 @@
                 {% if skill.criteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Critères d’évaluation</h2>
-                        <ul>
-                            {% for c in skill.criteria %}
-                                <li>{{ c }}</li>
-                            {% endfor %}
-                        </ul>
+
+                        <div class="skill-criteria-list">
+                            <ul>
+                                {% for criterion in skill.criteria %}
+                                    <li>{{ criterion }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </section>
                 {% endif %}
+
+                <div class="app-grid two">
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Matières associées</h2>
+
+                        {% if skill.modules is not empty %}
+                            {% for module in skill.modules %}
+                                <section class="app-section mb-2">
+                                    <p>
+                                        <a href="{{ path('app_promotion_modules', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ module.code) | lower}) }}" target="_blank">
+                                            <strong>Matière {{ module.code }}</strong>
+                                        </a>
+                                        <br/>
+                                        {{ module.title }}
+                                    </p>
+                                </section>
+                            {% endfor %}
+                        {% else %}
+                            <p class="subtitle">Aucun module associé pour cette compétence.</p>
+                        {% endif %}
+                    </section>
+
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Épreuves certifiantes associées</h2>
+
+                        {% if skill.evaluations is not empty %}
+                            {% for evaluation in skill.evaluations %}
+                                <section class="app-section mb-2">
+                                    <p>
+                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ evaluation.code) | lower}) }}" target="_blank">
+                                            <strong>Évaluation {{ evaluation.code }}</strong>
+                                        </a>
+                                        <br/>
+                                        Bloc évalué : {{ evaluation.blockCode }}
+                                    </p>
+                                </section>
+                            {% endfor %}
+                        {% else %}
+                            <p class="subtitle">Aucune épreuve certifiante associée pour cette compétence.</p>
+                        {% endif %}
+                    </section>
+                </div>
             </article>
         </div>
     </main>

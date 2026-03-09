@@ -12,19 +12,19 @@
     "description": "Analyser une architecture et son PCA pour proposer des améliorations et des outils de monitoring adaptés, puis produire un compte-rendu d'amélioration de l'architecture.",
     "skills": [
         {
-            "code": "C5",
+            "code": "C05",
             "description": "Mettre en œuvre des solutions de redondance, de réplication et de clustering, en tenant compte des contraintes de sécurité et de performance, afin la continuité de l'activité de l'entreprise."
         },
         {
-            "code": "C6",
+            "code": "C06",
             "description": "Surveiller et optimiser les performances des systèmes informatiques en utilisant des outils de monitoring et d'analyse, en coordination avec les équipes d'exploitation, pour détecter et résoudre proactivement les problèmes techniques et améliorer la performance des systèmes."
         },
         {
-            "code": "C7",
+            "code": "C07",
             "description": "Manager le processus de gestion des incidents informatiques en utilisant un système de ticketing pour conduire, hiérarchiser ou escalader les incidents en collaboration avec les équipes techniques et en respectant les SLA définis pour assurer une reprise ou continuité des activités de l'entreprise."
         },
         {
-            "code": "C8",
+            "code": "C08",
             "description": "Automatiser les tâches d'administration en développant et en appliquant des scripts en Python, Shell, et Bash, pour augmenter l'efficacité opérationnelle et réduire les délais de réponse en cas de problèmes ou de besoins de maintenance"
         }
     ],

@@ -20,7 +20,7 @@ final readonly class SummaryChartService
     {
         return $this->createDoughnutChart(
             title: 'Volumétrie du référentiel',
-            labels: ['Blocs', 'Modules', 'Compétences', 'Évaluations'],
+            labels: ['Blocs', 'Matières', 'Compétences', 'Évaluations'],
             data: [
                 count($structure->blocks),
                 count($structure->modules),

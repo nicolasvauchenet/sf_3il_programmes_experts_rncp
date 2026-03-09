@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Dto\Context\ResolvedSkillSheet;
+use App\Service\Chart\SkillChartService;
 use App\Service\Context\FrameworkSkillsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,10 +14,10 @@ final class SkillsController extends AbstractController
 {
     #[Route('/competences', name: 'app_promotion_skills', methods: ['GET'])]
     public function index(
-        Request                 $request,
+        Request $request,
         FrameworkSkillsProvider $skillsProvider,
-    ): Response
-    {
+        SkillChartService $skillChartService,
+    ): Response {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -28,7 +30,10 @@ final class SkillsController extends AbstractController
         if ($skills === []) {
             $this->addFlash('warning', 'Aucune compétence disponible pour ce référentiel.');
 
-            return $this->redirectToRoute('app_promotion_summary', ['promotion' => $promotion, 'year' => $year]);
+            return $this->redirectToRoute('app_promotion_summary', [
+                'promotion' => $promotion,
+                'year' => $year,
+            ]);
         }
 
         $rawSelected = (string)$request->query->get('code', '');
@@ -38,18 +43,15 @@ final class SkillsController extends AbstractController
             $selectedSkill = $skills[0];
             $selectedFileCode = $selectedSkill->fileCode;
         } else {
-            $selectedSkill = null;
-            foreach ($skills as $s) {
-                if ($s->fileCode === $selectedFileCode) {
-                    $selectedSkill = $s;
-                    break;
-                }
-            }
+            $selectedSkill = $this->findSelectedSkill($skills, $selectedFileCode);
+
             if ($selectedSkill === null) {
                 $selectedSkill = $skills[0];
                 $selectedFileCode = $selectedSkill->fileCode;
             }
         }
+
+        $skillMetricsChart = $skillChartService->createSkillMetricsChart($selectedSkill);
 
         return $this->render('skills/index.html.twig', [
             'promotion' => $promotion,
@@ -57,9 +59,13 @@ final class SkillsController extends AbstractController
             'skills' => $skills,
             'selectedCode' => $selectedFileCode,
             'skill' => $selectedSkill,
+            'skillMetricsChart' => $skillMetricsChart,
         ]);
     }
 
+    /**
+     * @param ResolvedSkillSheet[] $skills
+     */
     private function normalizeSelectedCode(string $raw, array $skills): ?string
     {
         $raw = strtolower(trim($raw));
@@ -68,9 +74,23 @@ final class SkillsController extends AbstractController
             return null;
         }
 
-        foreach ($skills as $s) {
-            if (strtolower((string)$s->fileCode) === $raw) {
-                return (string)$s->fileCode;
+        foreach ($skills as $skill) {
+            if (strtolower($skill->fileCode) === $raw) {
+                return $skill->fileCode;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @param ResolvedSkillSheet[] $skills
+     */
+    private function findSelectedSkill(array $skills, string $selectedFileCode): ?ResolvedSkillSheet
+    {
+        foreach ($skills as $skill) {
+            if ($skill->fileCode === $selectedFileCode) {
+                return $skill;
             }
         }
 

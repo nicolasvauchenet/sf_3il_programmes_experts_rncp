@@ -9,4 +9,10 @@
     color:  $white;
     background-color: $secondary;
     border-radius: 0.25rem;
+
+    &.outline{
+        font-size: 0.85rem;
+        color:  $secondary;
+        background-color: transparent;
+    }
 }

@@ -12,15 +12,15 @@
     "description": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL.",
     "skills": [
         {
-            "code": "C7",
+            "code": "C07",
             "description": "Configurer et personnaliser l’environnement de développement en paramétrant un IDE et en utilisant le terminal afin de l'aligner de l'environnement de production cible."
         },
         {
-            "code": "C8",
+            "code": "C08",
             "description": "Élaborer et implémenter des solutions back-end en appliquant la programmation orientée objet (POO), en utilisant des architectures MVC ainsi que les Frameworks adaptés pour structurer un code robuste et maintenable."
         },
         {
-            "code": "C9",
+            "code": "C09",
             "description": "Optimiser et sécuriser les serveurs web, en ajustant les paramètres serveur et en employant des commandes avancées via le terminal pour améliorer les performances et la sécurité (SSH, MFA) des applications web en fonction de son OS (Linux, Windows)."
         },
         {

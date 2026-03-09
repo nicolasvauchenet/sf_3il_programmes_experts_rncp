@@ -1,10 +1,12 @@
 .app-footer {
+    margin-bottom: 2.75rem;
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
     color: $white;
     background-color: rgba($black, 0.85);
 
     @include respondTo(lg) {
+        margin-bottom: 0;
         padding: 0.5rem 3rem;
     }
 

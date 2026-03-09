@@ -21,7 +21,7 @@
 
     &.third {
         @include respondTo(sm) {
-            @include displayGrid(7fr 3fr, 1.5rem);
+            @include displayGrid(6fr 4fr, 1.5rem);
         }
 
         &.reverse {

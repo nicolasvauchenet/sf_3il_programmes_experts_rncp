@@ -12,19 +12,19 @@
     "description": "Conception et installation d'un système d'information à partir d'un cahier des charges incluant la rédaction d’un dossier d’architecture technique et la mise en place de la solution.",
     "skills": [
         {
-            "code": "C1",
+            "code": "C01",
             "description": "Administrer et optimiser les systèmes d'exploitation Unix, Linux et Windows en tenant compte des bonnes pratiques de la qualité de service (QoS), en collaboration avec les équipes techniques, pour assurer les exigences de performance et de fiabilité de l'entreprise."
         },
         {
-            "code": "C2",
+            "code": "C02",
             "description": "Concevoir des topologies systèmes à l'aide d'un annuaire, en structurant efficacement les ressources informatiques et la gestion des identités et des accès aux différentes ressources, pour répondre aux besoins opérationnels, et respecter les politiques d'accès et sécurité de l'entreprise"
         },
         {
-            "code": "C3",
+            "code": "C03",
             "description": "Concevoir et déployer des environnements virtualisés à l'aide de plateformes spécialisées On-Premise ou sur un cloud provider, en coopération avec les architectes système, pour rationaliser l'utilisation des ressources informatiques et répondre à l'évolutivité des besoins de l'entreprise."
         },
         {
-            "code": "C4",
+            "code": "C04",
             "description": "Concevoir, gérer et administrer les systèmes de gestion de bases de données relationnelles et NoSQL, en appliquant les principes d'optimisation des bases de données et en collaboration avec les développeurs et les analystes de données, pour garantir la cohérence, la qualité, la sécurité et l’accessibilité permanente des informations."
         }
     ],

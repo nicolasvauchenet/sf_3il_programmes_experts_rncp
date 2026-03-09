@@ -9,16 +9,16 @@
     }
 
     .subtitle {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .toc {
         overflow-y: auto;
-        max-height: 25dvh;
+        max-height: 76.5dvh;
         padding: 0.5rem 0.5rem 0.5rem 0;
 
         @include respondTo(sm) {
-            max-height: 75dvh;
+            max-height: 76.5dvh;
         }
 
         a {
@@ -46,17 +46,17 @@
             }
 
             &.active {
-                background-color: rgba($secondary, 0.15);
+                color: $white;
+                background-color: $secondary;
                 border-color: $secondary;
 
                 .app-badge {
-                    color: $secondary;
+                    color: $white;
                 }
             }
 
             .app-badge {
                 display: block;
-                margin-bottom: 0.25rem;
                 padding: 0;
                 text-align: left;
                 color: $primary;
