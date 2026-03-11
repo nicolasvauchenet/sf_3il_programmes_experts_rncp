@@ -3,140 +3,133 @@
 {% block title %}Confidentialité & Cookies{% endblock %}
 
 {% block body %}
-    <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-        {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
 
-        <main class="flex-1">
-            <div class="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
-                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10 space-y-8">
+    <main class="app-main mb-2">
+        <article class="app-section">
+            <header>
+                <h1>Politique de Confidentialité & Cookies</h1>
+                <p class="subtitle">
+                    Dernière mise à jour : 15 janvier 2026
+                </p>
+            </header>
 
-                    <header class="space-y-2">
-                        <h2 class="text-2xl font-semibold tracking-tight">
-                            Politique de Confidentialité & Cookies
-                        </h2>
-                        <p class="text-sm text-slate-600">
-                            Dernière mise à jour : 15 janvier 2026
-                        </p>
-                    </header>
+            <section class="app-section">
+                <h3>1. Responsable du traitement</h3>
+                <p>
+                    Les données personnelles collectées sur le site « Référentiel RNCP – Programmes Experts »
+                    sont traitées par Groupe 3iL Enseignement Supérieur,
+                    12 Avenue de l’Innovation, 87000 Limoges, France.
+                </p>
+                <p>
+                    Pour toute question relative à la protection des données, vous pouvez contacter
+                    notre Délégué à la Protection des Données (DPO) à l’adresse suivante :
+                    dpo@3il-experts.fr.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">1. Responsable du traitement</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les données personnelles collectées sur le site « Référentiel RNCP – Programmes Experts »
-                            sont traitées par Groupe 3iL Enseignement Supérieur,
-                            12 Avenue de l’Innovation, 87000 Limoges, France.
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Pour toute question relative à la protection des données, vous pouvez contacter
-                            notre Délégué à la Protection des Données (DPO) à l’adresse suivante :
-                            dpo@3il-experts.fr.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>2. Données collectées</h3>
+                <p>
+                    Nous pouvons collecter les catégories de données suivantes :
+                </p>
+                <ul>
+                    <li>Données d’identification (nom, prénom, email professionnel)</li>
+                    <li>Données académiques (promotion, année académique)</li>
+                    <li>Données techniques (adresse IP, navigateur, système d’exploitation)</li>
+                    <li>Données de connexion et journaux applicatifs</li>
+                </ul>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">2. Données collectées</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Nous pouvons collecter les catégories de données suivantes :
-                        </p>
-                        <ul class="list-disc pl-6 text-sm text-slate-700 space-y-1">
-                            <li>Données d’identification (nom, prénom, email professionnel)</li>
-                            <li>Données académiques (promotion, année académique)</li>
-                            <li>Données techniques (adresse IP, navigateur, système d’exploitation)</li>
-                            <li>Données de connexion et journaux applicatifs</li>
-                        </ul>
-                    </section>
+            <section class="app-section">
+                <h3>3. Finalités du traitement</h3>
+                <ul>
+                    <li>Accès et gestion du référentiel pédagogique</li>
+                    <li>Authentification des utilisateurs</li>
+                    <li>Suivi administratif et académique</li>
+                    <li>Amélioration des performances et de l’expérience utilisateur</li>
+                    <li>Sécurisation du système d’information</li>
+                </ul>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">3. Finalités du traitement</h3>
-                        <ul class="list-disc pl-6 text-sm text-slate-700 space-y-1">
-                            <li>Accès et gestion du référentiel pédagogique</li>
-                            <li>Authentification des utilisateurs</li>
-                            <li>Suivi administratif et académique</li>
-                            <li>Amélioration des performances et de l’expérience utilisateur</li>
-                            <li>Sécurisation du système d’information</li>
-                        </ul>
-                    </section>
+            <section class="app-section">
+                <h3>4. Base légale</h3>
+                <p>
+                    Les traitements sont fondés sur :
+                </p>
+                <ul>
+                    <li>L’exécution d’une mission d’intérêt public</li>
+                    <li>L’exécution d’un contrat ou de mesures précontractuelles</li>
+                    <li>Le respect d’obligations légales</li>
+                    <li>Le consentement de l’utilisateur lorsque requis</li>
+                </ul>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">4. Base légale</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les traitements sont fondés sur :
-                        </p>
-                        <ul class="list-disc pl-6 text-sm text-slate-700 space-y-1">
-                            <li>L’exécution d’une mission d’intérêt public</li>
-                            <li>L’exécution d’un contrat ou de mesures précontractuelles</li>
-                            <li>Le respect d’obligations légales</li>
-                            <li>Le consentement de l’utilisateur lorsque requis</li>
-                        </ul>
-                    </section>
+            <section class="app-section">
+                <h3>5. Durée de conservation</h3>
+                <p>
+                    Les données sont conservées pendant la durée strictement nécessaire aux finalités
+                    pour lesquelles elles sont collectées, conformément aux obligations légales applicables.
+                </p>
+                <p>
+                    Les journaux techniques sont conservés pour une durée maximale de 12 mois.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">5. Durée de conservation</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les données sont conservées pendant la durée strictement nécessaire aux finalités
-                            pour lesquelles elles sont collectées, conformément aux obligations légales applicables.
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les journaux techniques sont conservés pour une durée maximale de 12 mois.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>6. Destinataires des données</h3>
+                <p>
+                    Les données sont accessibles uniquement aux services internes habilités
+                    (administration pédagogique, direction académique, service informatique).
+                </p>
+                <p>
+                    Aucun transfert de données hors Union Européenne n’est effectué sans garanties appropriées.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">6. Destinataires des données</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les données sont accessibles uniquement aux services internes habilités
-                            (administration pédagogique, direction académique, service informatique).
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Aucun transfert de données hors Union Européenne n’est effectué sans garanties appropriées.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>7. Droits des utilisateurs</h3>
+                <p>
+                    Conformément au RGPD, vous disposez des droits suivants :
+                </p>
+                <ul>
+                    <li>Droit d’accès</li>
+                    <li>Droit de rectification</li>
+                    <li>Droit à l’effacement</li>
+                    <li>Droit à la limitation du traitement</li>
+                    <li>Droit d’opposition</li>
+                    <li>Droit à la portabilité des données</li>
+                </ul>
+                <p>
+                    Vous pouvez exercer ces droits en contactant dpo@3il-experts.fr.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">7. Droits des utilisateurs</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Conformément au RGPD, vous disposez des droits suivants :
-                        </p>
-                        <ul class="list-disc pl-6 text-sm text-slate-700 space-y-1">
-                            <li>Droit d’accès</li>
-                            <li>Droit de rectification</li>
-                            <li>Droit à l’effacement</li>
-                            <li>Droit à la limitation du traitement</li>
-                            <li>Droit d’opposition</li>
-                            <li>Droit à la portabilité des données</li>
-                        </ul>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Vous pouvez exercer ces droits en contactant dpo@3il-experts.fr.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>8. Cookies</h3>
+                <p>
+                    Le site utilise des cookies strictement nécessaires au fonctionnement
+                    de l’application (cookies de session, authentification).
+                </p>
+                <p>
+                    Des cookies analytiques peuvent être utilisés afin de mesurer l’audience
+                    et améliorer le service, sous réserve du consentement préalable de l’utilisateur.
+                </p>
+                <p>
+                    Vous pouvez configurer votre navigateur pour refuser tout ou partie des cookies.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">8. Cookies</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Le site utilise des cookies strictement nécessaires au fonctionnement
-                            de l’application (cookies de session, authentification).
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Des cookies analytiques peuvent être utilisés afin de mesurer l’audience
-                            et améliorer le service, sous réserve du consentement préalable de l’utilisateur.
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Vous pouvez configurer votre navigateur pour refuser tout ou partie des cookies.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>9. Sécurité</h3>
+                <p>
+                    Groupe 3iL met en œuvre des mesures techniques et organisationnelles appropriées
+                    afin d’assurer la sécurité, la confidentialité et l’intégrité des données personnelles.
+                </p>
+            </section>
+        </article>
+    </main>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">9. Sécurité</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Groupe 3iL met en œuvre des mesures techniques et organisationnelles appropriées
-                            afin d’assurer la sécurité, la confidentialité et l’intégrité des données personnelles.
-                        </p>
-                    </section>
-
-                </article>
-            </div>
-        </main>
-
-        {% include '_layout/default/_footer.html.twig' %}
-    </div>
+    {% include '_layout/default/_footer.html.twig' %}
 {% endblock %}

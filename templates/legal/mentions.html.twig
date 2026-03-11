@@ -3,108 +3,101 @@
 {% block title %}Mentions Légales{% endblock %}
 
 {% block body %}
-    <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-        {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
 
-        <main class="flex-1">
-            <div class="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
-                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10 space-y-8">
+    <main class="app-main mb-2">
+        <article class="app-section">
+            <header>
+                <h1>Mentions Légales</h1>
+                <p class="subtitle">
+                    Dernière mise à jour : 15 janvier 2026
+                </p>
+            </header>
 
-                    <header class="space-y-2">
-                        <h2 class="text-2xl font-semibold tracking-tight">
-                            Mentions Légales
-                        </h2>
-                        <p class="text-sm text-slate-600">
-                            Dernière mise à jour : 15 janvier 2026
-                        </p>
-                    </header>
+            <section class="app-section">
+                <h3>Éditeur du site</h3>
+                <p>
+                    Le site « Référentiel RNCP – Programmes Experts » est édité par :
+                </p>
+                <ul>
+                    <li><strong>Dénomination :</strong> Groupe 3iL Enseignement Supérieur</li>
+                    <li><strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)</li>
+                    <li><strong>Capital social :</strong> 1 000 000 €</li>
+                    <li><strong>Siège social :</strong> 12 Avenue de l’Innovation, 87000 Limoges, France</li>
+                    <li><strong>RCS :</strong> Limoges B 123 456 789</li>
+                    <li><strong>Numéro TVA :</strong> FR12 123456789</li>
+                    <li><strong>Email :</strong> contact@3il-experts.fr</li>
+                    <li><strong>Téléphone :</strong> +33 (0)5 55 00 00 00</li>
+                </ul>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Éditeur du site</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Le site « Référentiel RNCP – Programmes Experts » est édité par :
-                        </p>
-                        <ul class="text-sm text-slate-700 space-y-1">
-                            <li><strong>Dénomination :</strong> Groupe 3iL Enseignement Supérieur</li>
-                            <li><strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)</li>
-                            <li><strong>Capital social :</strong> 1 000 000 €</li>
-                            <li><strong>Siège social :</strong> 12 Avenue de l’Innovation, 87000 Limoges, France</li>
-                            <li><strong>RCS :</strong> Limoges B 123 456 789</li>
-                            <li><strong>Numéro TVA :</strong> FR12 123456789</li>
-                            <li><strong>Email :</strong> contact@3il-experts.fr</li>
-                            <li><strong>Téléphone :</strong> +33 (0)5 55 00 00 00</li>
-                        </ul>
-                    </section>
+            <section class="app-section">
+                <h3>Directeur de la publication</h3>
+                <p>
+                    Le directeur de la publication est Monsieur Jean Dupont,
+                    en qualité de Directeur Général.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Directeur de la publication</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Le directeur de la publication est Monsieur Jean Dupont,
-                            en qualité de Directeur Général.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>Hébergement</h3>
+                <ul>
+                    <li><strong>Hébergeur :</strong> OVHcloud</li>
+                    <li><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</li>
+                    <li><strong>Site web :</strong> www.ovhcloud.com</li>
+                    <li><strong>Téléphone :</strong> +33 (0)9 72 10 10 07</li>
+                </ul>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Hébergement</h3>
-                        <ul class="text-sm text-slate-700 space-y-1">
-                            <li><strong>Hébergeur :</strong> OVHcloud</li>
-                            <li><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</li>
-                            <li><strong>Site web :</strong> www.ovhcloud.com</li>
-                            <li><strong>Téléphone :</strong> +33 (0)9 72 10 10 07</li>
-                        </ul>
-                    </section>
+            <section class="app-section">
+                <h3>Propriété intellectuelle</h3>
+                <p>
+                    L’ensemble des contenus présents sur ce site (textes, images, graphismes,
+                    logo, icônes, structure, code source) est protégé par le droit de la propriété
+                    intellectuelle et demeure la propriété exclusive de Groupe 3iL, sauf mention contraire.
+                </p>
+                <p>
+                    Toute reproduction, représentation, modification, publication ou adaptation,
+                    totale ou partielle, de ces éléments est interdite sans autorisation écrite préalable.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Propriété intellectuelle</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            L’ensemble des contenus présents sur ce site (textes, images, graphismes,
-                            logo, icônes, structure, code source) est protégé par le droit de la propriété
-                            intellectuelle et demeure la propriété exclusive de Groupe 3iL, sauf mention contraire.
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Toute reproduction, représentation, modification, publication ou adaptation,
-                            totale ou partielle, de ces éléments est interdite sans autorisation écrite préalable.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>Responsabilité</h3>
+                <p>
+                    Les informations diffusées sur ce site sont fournies à titre indicatif.
+                    Groupe 3iL s’efforce d’assurer l’exactitude et la mise à jour des informations,
+                    mais ne saurait garantir l’absence d’erreurs ou d’omissions.
+                </p>
+                <p>
+                    L’éditeur ne pourra être tenu responsable des dommages directs ou indirects
+                    résultant de l’accès ou de l’utilisation du site.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Responsabilité</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les informations diffusées sur ce site sont fournies à titre indicatif.
-                            Groupe 3iL s’efforce d’assurer l’exactitude et la mise à jour des informations,
-                            mais ne saurait garantir l’absence d’erreurs ou d’omissions.
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            L’éditeur ne pourra être tenu responsable des dommages directs ou indirects
-                            résultant de l’accès ou de l’utilisation du site.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>Données personnelles</h3>
+                <p>
+                    Les données personnelles collectées via ce site sont traitées conformément
+                    au Règlement Général sur la Protection des Données (RGPD).
+                </p>
+                <p>
+                    Pour toute question relative au traitement de vos données ou pour exercer
+                    vos droits (accès, rectification, suppression, opposition), vous pouvez écrire à :
+                    dpo@3il-experts.fr.
+                </p>
+            </section>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Données personnelles</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Les données personnelles collectées via ce site sont traitées conformément
-                            au Règlement Général sur la Protection des Données (RGPD).
-                        </p>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Pour toute question relative au traitement de vos données ou pour exercer
-                            vos droits (accès, rectification, suppression, opposition), vous pouvez écrire à :
-                            dpo@3il-experts.fr.
-                        </p>
-                    </section>
+            <section class="app-section">
+                <h3>Droit applicable</h3>
+                <p>
+                    Le présent site est soumis au droit français. En cas de litige,
+                    les tribunaux compétents seront ceux du ressort de Limoges.
+                </p>
+            </section>
+        </article>
+    </main>
 
-                    <section class="space-y-3">
-                        <h3 class="text-lg font-semibold">Droit applicable</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            Le présent site est soumis au droit français. En cas de litige,
-                            les tribunaux compétents seront ceux du ressort de Limoges.
-                        </p>
-                    </section>
-
-                </article>
-            </div>
-        </main>
-
-        {% include '_layout/default/_footer.html.twig' %}
-    </div>
+    {% include '_layout/default/_footer.html.twig' %}
 {% endblock %}
