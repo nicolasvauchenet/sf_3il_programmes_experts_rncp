@@ -18,7 +18,7 @@
     ],
     "criteria": [
         {
-            "code": "C6",
+            "code": "Cr1",
             "description": "Utilisation de Frameworks",
             "indicators": [
                 "Productivité: Le code conçu et réalisé à l'aide de frameworks modernes tels que React, Vue.js ou Angular est bien organisé et suit les principes de DRY (Don't Repeat Yourself).",
@@ -29,7 +29,7 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Épreuve individuelle",
+        "delivery": "Conception d'interfaces Front-end adaptatives et interactives élaborées à partir d'un Framework",
         "totalDuration": "4h00"
     },
     "exam": {

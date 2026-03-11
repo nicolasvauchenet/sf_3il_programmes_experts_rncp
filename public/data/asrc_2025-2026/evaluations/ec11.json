@@ -1,46 +1,76 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39608-EC11",
-        "title": "Projet d’étude professionnel",
-        "rncpCode": "39608",
-        "blocCode": "PEP",
-        "blocName": "Projet d’étude professionnel",
+        "code": "RNCP39611-EC11",
+        "title": "Planification et suivi de projet selon les méthodologies agiles",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d’infrastructure systèmes et réseaux sécurisée.",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 11,
-    "description": "Analyse et réalisation d’un projet d’infrastructure systèmes, réseaux ou cybersécurité, ou évolution significative d’une infrastructure existante, donnant lieu à un rapport écrit et une soutenance devant un jury de professionnels.",
-    "skills": [],
-    "criteria": [],
+    "description": "Compte rendu d'activité (livrables collectifs).",
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Orchestrer et animer des projets informatiques en utilisant des méthodologies agiles"
+        },
+        {
+            "code": "C26",
+            "description": "Optimiser la gestion des projets"
+        },
+        {
+            "code": "C27",
+            "description": "Gérer le budget de projet en utilisant des outils de gestion financière"
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr25",
+            "description": "Planification et Conduite de Projet",
+            "indicators": [
+                "Alignement méthodologique : Le choix et l'application de la méthodologie de gestion de projet sont appropriés au contexte du projet, avec des preuves de prise en compte des spécificités du projet et des risques identifiés.",
+                "Efficacité de la planification : Le plan de projet est détaillé, réaliste et respecte les jalons établis, avec des preuves de suivi et d'ajustement basés sur l'évolution du projet."
+            ]
+        },
+        {
+            "code": "Cr26",
+            "description": "Évaluations Périodiques de l'Avancement du Projet",
+            "indicators": [
+                "Qualité des revues de performance : Les revues de performance sont complètes, reflétant fidèlement l'état actuel du projet et l'atteinte des objectifs à chaque étape.",
+                "Pertinence des rapports d'étape : Les rapports d'étape fournissent des informations actualisées et pertinentes sur la progression du projet, avec des preuves d'amélioration continue basées sur les évaluations."
+            ]
+        },
+        {
+            "code": "Cr27",
+            "description": "Suivi Continu des Indicateurs de Performance",
+            "indicators": [
+                "Précision du suivi budgétaire : Les outils de suivi budgétaire sont correctement utilisés pour une gestion financière précise, avec des indicateurs de performance financière qui sont régulièrement mis à jour et analysés.",
+                "Réactivité aux écarts : Les écarts par rapport au budget et aux autres indicateurs de performance sont rapidement identifiés et des mesures correctives sont mises en place de manière proactive."
+            ]
+        }
+    ],
     "modalities": {
-        "format": "Projet d’étude professionnel",
-        "delivery": "Rapport écrit et soutenance orale devant un jury",
-        "totalDuration": "30 mn"
+        "format": "Mise en situation professionnelle reconstituée d’une durée de 2 à 5 jours consécutifs.",
+        "delivery": "Compte rendu d'activité (livrables collectifs)",
+        "totalDuration": "2 à 5 jours"
     },
     "exam": {
         "parts": [
             {
-                "code": "E15",
-                "title": "Rapport écrit du projet d’étude professionnel",
+                "code": "E11",
+                "title": "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)",
                 "type": "Épreuve écrite",
-                "coefficient": 4,
-                "points": 200,
-                "duration": ""
-            },
-            {
-                "code": "E16",
-                "title": "Soutenance du projet d’étude professionnel",
-                "type": "Épreuve orale",
-                "coefficient": 6,
-                "points": 0,
-                "duration": "30 mn"
+                "coefficient": 2,
+                "points": 100,
+                "duration": "2 à 5 jours"
             }
         ],
         "validation": {
-            "evaluationThreshold": 40,
-            "compensationMin": 0,
-            "remedialBelow": 0,
-            "blockThreshold": 0
+            "evaluationThreshold": 50,
+            "compensationMin": 35,
+            "remedialBelow": 35,
+            "blockThreshold": 110
         }
     }
 }

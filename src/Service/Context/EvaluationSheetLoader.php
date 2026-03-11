@@ -49,6 +49,8 @@ final class EvaluationSheetLoader
         $modalities = is_array($decoded['modalities'] ?? null) ? $decoded['modalities'] : [];
         $exam = is_array($decoded['exam'] ?? null) ? $decoded['exam'] : [];
 
+        $skillsWithCriteria = $this->buildSkillsWithCriteria($skills, $criteria);
+
         return new EvaluationSheet(
             fileCode: strtolower(trim($fileCode)),
             path: $path,
@@ -57,10 +59,71 @@ final class EvaluationSheetLoader
             description: is_string($decoded['description'] ?? null) ? trim((string)$decoded['description']) : '',
             skills: $skills,
             criteria: $criteria,
+            skillsWithCriteria: $skillsWithCriteria,
             modalities: $modalities,
             exam: $exam,
             raw: $decoded,
         );
+    }
+
+    /**
+     * @param array<int,array{code:string,description:string}> $skills
+     * @param array<int,array{
+     *     code:string,
+     *     title:string,
+     *     description:string,
+     *     indicators:array<int,string>
+     * }> $criteria
+     * @return array<int,array{
+     *     code:string,
+     *     description:string,
+     *     criteria:array<int,array{
+     *         code:string,
+     *         title:string,
+     *         description:string,
+     *         indicators:array<int,string>
+     *     }>
+     * }>
+     */
+    private function buildSkillsWithCriteria(array $skills, array $criteria): array
+    {
+        $out = [];
+
+        foreach ($skills as $skill) {
+            $skillNumber = $this->extractCodeNumber($skill['code']);
+            $matchedCriteria = [];
+
+            foreach ($criteria as $criterion) {
+                $criterionNumber = $this->extractCodeNumber($criterion['code']);
+
+                if ($skillNumber !== null && $criterionNumber !== null && $skillNumber === $criterionNumber) {
+                    $matchedCriteria[] = $criterion;
+                }
+            }
+
+            $out[] = [
+                'code' => $skill['code'],
+                'description' => $skill['description'],
+                'criteria' => $matchedCriteria,
+            ];
+        }
+
+        return $out;
+    }
+
+    private function extractCodeNumber(string $code): ?string
+    {
+        $code = trim($code);
+
+        if ($code === '') {
+            return null;
+        }
+
+        if (preg_match('/(\d+)$/', $code, $matches) !== 1) {
+            return null;
+        }
+
+        return ltrim($matches[1], '0') === '' ? '0' : ltrim($matches[1], '0');
     }
 
     /**

@@ -2,125 +2,51 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39781-EC04",
-        "title": "Gestion et pilotage de projet d’infrastructure systèmes et réseaux",
+        "title": "Veille cybersécurité (en anglais)",
         "rncpCode": "39781",
-        "blocCode": "BC04",
-        "blocName": "Gérer et piloter les projets d’infrastructures systèmes et réseaux",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 4,
-    "description": "Mise en situation professionnelle simulée de gestion et pilotage de projet d’infrastructure systèmes et réseaux. Production de livrables écrits et soutenance orale individuelle.",
+    "description": "Veille cybersécurité en anglais.",
     "skills": [
         {
-            "code": "C23",
-            "description": "Analyser les besoins d’un projet d’infrastructure systèmes et réseaux en identifiant les exigences fonctionnelles et non fonctionnelles, les contraintes techniques, organisationnelles et réglementaires afin de définir le périmètre et les objectifs du projet."
-        },
-        {
-            "code": "C24",
-            "description": "Planifier un projet d’infrastructure systèmes et réseaux en définissant les étapes, les ressources, les délais et les livrables, en s’appuyant sur des outils et méthodes de gestion de projet afin d’assurer la bonne conduite du projet."
-        },
-        {
-            "code": "C25",
-            "description": "Piloter la réalisation d’un projet d’infrastructure systèmes et réseaux en coordonnant les équipes techniques et les parties prenantes afin de garantir le respect du périmètre, des délais, des coûts et de la qualité."
-        },
-        {
-            "code": "C26",
-            "description": "Gérer les risques d’un projet d’infrastructure systèmes et réseaux en identifiant les menaces, en évaluant leurs impacts et probabilités et en définissant des actions de prévention et de mitigation afin de sécuriser le projet."
-        },
-        {
-            "code": "C27",
-            "description": "Assurer la communication et le reporting d’un projet d’infrastructure systèmes et réseaux en produisant des documents de suivi et en présentant l’avancement aux parties prenantes afin de faciliter la prise de décision."
-        },
-        {
-            "code": "C28",
-            "description": "Clôturer un projet d’infrastructure systèmes et réseaux en évaluant les résultats obtenus, en capitalisant les retours d’expérience et en formalisant la documentation finale afin d’améliorer les pratiques et assurer la transmission des connaissances."
+            "code": "C18",
+            "description": "Conduire une veille active en matière de cybersécurité, en analysant régulièrement les bulletins de sécurité, les publications des organismes de référence tant francophones qu’anglophones et en partageant les fruits de ses recherches conformément aux us de l’équipe (rapport/article, réseau social interne, plateforme collaborative), afin d’anticiper les menaces et vulnérabilités émergentes et mener des actions correctives."
         }
     ],
     "criteria": [
         {
-            "code": "C23",
-            "description": "Analyser les besoins d’un projet d’infrastructure systèmes et réseaux en identifiant les exigences fonctionnelles et non fonctionnelles, les contraintes techniques, organisationnelles et réglementaires afin de définir le périmètre et les objectifs du projet.",
+            "code": "Cr18",
+            "description": "Conduire une veille active en matière de cybersécurité, en analysant régulièrement les bulletins de sécurité, les publications des organismes de référence tant francophones qu’anglophones et en partageant les fruits de ses recherches conformément aux us de l’équipe (rapport/article, réseau social interne, plateforme collaborative), afin d’anticiper les menaces et vulnérabilités émergentes et mener des actions correctives.",
             "indicators": [
-                "Les besoins fonctionnels et non fonctionnels sont correctement identifiés.",
-                "Les contraintes techniques, organisationnelles et réglementaires sont prises en compte.",
-                "Le périmètre et les objectifs du projet sont clairement définis."
-            ]
-        },
-        {
-            "code": "C24",
-            "description": "Planifier un projet d’infrastructure systèmes et réseaux en définissant les étapes, les ressources, les délais et les livrables, en s’appuyant sur des outils et méthodes de gestion de projet afin d’assurer la bonne conduite du projet.",
-            "indicators": [
-                "Le planning du projet identifie clairement les étapes et jalons.",
-                "Les ressources et délais sont cohérents avec les objectifs du projet.",
-                "Les livrables attendus sont clairement définis."
-            ]
-        },
-        {
-            "code": "C25",
-            "description": "Piloter la réalisation d’un projet d’infrastructure systèmes et réseaux en coordonnant les équipes techniques et les parties prenantes afin de garantir le respect du périmètre, des délais, des coûts et de la qualité.",
-            "indicators": [
-                "La coordination des équipes permet de respecter le périmètre du projet.",
-                "Les actions menées permettent de respecter les délais et les coûts.",
-                "Le niveau de qualité attendu est respecté."
-            ]
-        },
-        {
-            "code": "C26",
-            "description": "Gérer les risques d’un projet d’infrastructure systèmes et réseaux en identifiant les menaces, en évaluant leurs impacts et probabilités et en définissant des actions de prévention et de mitigation afin de sécuriser le projet.",
-            "indicators": [
-                "Les risques du projet sont identifiés et analysés.",
-                "Les impacts et probabilités sont correctement évalués.",
-                "Les actions de prévention et de mitigation permettent de sécuriser le projet."
-            ]
-        },
-        {
-            "code": "C27",
-            "description": "Assurer la communication et le reporting d’un projet d’infrastructure systèmes et réseaux en produisant des documents de suivi et en présentant l’avancement aux parties prenantes afin de faciliter la prise de décision.",
-            "indicators": [
-                "Les documents de suivi permettent d’évaluer l’avancement du projet.",
-                "Les informations communiquées sont pertinentes pour les parties prenantes.",
-                "La communication facilite la prise de décision."
-            ]
-        },
-        {
-            "code": "C28",
-            "description": "Clôturer un projet d’infrastructure systèmes et réseaux en évaluant les résultats obtenus, en capitalisant les retours d’expérience et en formalisant la documentation finale afin d’améliorer les pratiques et assurer la transmission des connaissances.",
-            "indicators": [
-                "Les résultats du projet sont évalués au regard des objectifs initiaux.",
-                "Les retours d’expérience sont formalisés.",
-                "La documentation finale permet la transmission des connaissances."
+                "Le rapport de veille est rédigé en anglais technique. La qualité de la rédaction permet la compréhension pour un collaborateur anglophone.",
+                "Le contenu du rapport de veille identifie clairement les sources, les confronte et permet d’adapter des actions correctives."
             ]
         }
     ],
     "modalities": {
-        "format": "Étude de cas et soutenance",
-        "delivery": "Production de livrables écrits et présentation orale individuelle",
-        "totalDuration": "03h30"
+        "format": "Mise en situation reconstituée, écrit et/ou sur ordinateur (en anglais)",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
                 "code": "E5",
-                "title": "Étude de cas de gestion de projet",
+                "title": "Épreuve écrite",
                 "type": "Épreuve écrite",
-                "coefficient": 2,
-                "points": 40,
-                "duration": "03h00"
-            },
-            {
-                "code": "E6",
-                "title": "Soutenance du projet",
-                "type": "Épreuve orale individuelle",
-                "coefficient": 2,
-                "points": 40,
-                "duration": "00h30"
+                "coefficient": 3,
+                "points": 60,
+                "duration": "4h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 40,
-            "compensationMin": 28,
-            "remedialBelow": 28,
-            "blockThreshold": 40
+            "evaluationThreshold": 30,
+            "compensationMin": 21,
+            "remedialBelow": 21,
+            "blockThreshold": 110
         }
     }
 }

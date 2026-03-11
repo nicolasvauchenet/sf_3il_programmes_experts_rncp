@@ -2,14 +2,14 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39765-EC01",
-        "title": "Concevoir et modéliser l’architecture logicielle",
+        "title": "Conception et modélisation de l’architecture logicielle",
         "rncpCode": "39765",
         "blocCode": "BC01",
         "blocName": "Concevoir et modéliser l’architecture logicielle",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 1,
-    "description": "Conception et modélisation de l'architecture logicielle",
+    "description": "Conception d’architecture, présentation orale, modélisation des données flux et conception des tests.",
     "skills": [
         {
             "code": "C01",
@@ -17,7 +17,7 @@
         },
         {
             "code": "C02",
-            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews et de la cartographie du SI pour identifier les objectifs et déterminer les besoins d'évolution du Système d'Information"
+            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews et de la cartographie du SI pour identifier les objectifs et déterminer les besoins d'évolution du Système d'Information."
         },
         {
             "code": "C03",
@@ -72,7 +72,7 @@
             "code": "Cr3",
             "description": "Étude de Faisabilité",
             "indicators": [
-                "Adéquation des ressources : L'évaluation de l'adéquation des ressources humaines et matérielles disponibles permet de garantir que les objectifs du projet d'évolution du Système d'Information peuvent être atteints de manière réaliste et efficace",
+                "Adéquation des ressources : L'évaluation de l'adéquation des ressources humaines et matérielles disponibles permet de garantir que les objectifs du projet d'évolution du Système d'Information peuvent être atteints de manière réaliste et efficace.",
                 "Évaluation technique : Chaque critère technique est scoré (par exemple: compatibilité, performance, sécurité) pour mesurer la faisabilité technique des solutions proposées.",
                 "Réalisme du projet : Notation de la faisabilité globale du projet (par exemple, haute, moyenne, basse) basée sur l'analyse de la mobilisation des ressources et des contraintes techniques."
             ]
@@ -130,7 +130,7 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée à l’écrit et présentation orale",
-        "delivery": "Individuelle",
+        "delivery": "Partie 1 : Conception d’architecture et justification ; Partie 2 : Oral de présentation ; Partie 3 : Modélisation des données flux et conception des tests",
         "totalDuration": "5h20"
     },
     "exam": {

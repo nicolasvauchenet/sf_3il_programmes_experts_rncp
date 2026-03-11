@@ -5,7 +5,7 @@
     color: $white;
     background-color: rgba($black, 0.85);
 
-    @include respondTo(lg) {
+    @include respondTo(sm) {
         margin-bottom: 0;
         padding: 0.5rem 3rem;
     }

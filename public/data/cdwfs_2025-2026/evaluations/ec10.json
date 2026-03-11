@@ -2,92 +2,71 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39608-EC10",
-        "title": "Rédaction d'un rapport de veille multilingue",
+        "title": "Rédaction d'un guide de bonnes pratiques (Gestion des revus de code et des différents tests, documentation.)",
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 10,
-    "description": "Rédaction et présentation d'un rapport de veille multilingue.",
+    "description": "Rédaction d'un guide de bonnes pratiques (Gestion des revus de code et des différents tests, documentation.).",
     "skills": [
         {
-            "code": "C36",
-            "description": "Mobiliser ses connaissances technologiques, sa maîtrise de l'anglais et l'utilisation des fonctionnalités avancées des moteurs de recherches, en analysant les contenus de diverses sources d'informations tel que les forums, sites spécialisés pour résoudre des problèmes rencontrés lors du développement des applications ou évaluer les solutions les plus optimales dans la gestion de projet."
+            "code": "C33",
+            "description": "Effectuer des revues de code en utilisant des outils d'analyse en respectant les principes de développement et les standards de l'entreprise, pour assurer une qualité et une maintenabilité élevées du code."
         },
         {
-            "code": "C37",
-            "description": "Mettre en place une veille technologique en relation avec le périmètre d'un projet ou l'activité de l'entreprise en sélectionnant des sources d'information multilingues, en s'assurant de la véracité de leurs contenus et en utilisant des outils de collecte avancés pour un stockage et une organisation efficace des données récoltées dans une base de connaissance."
+            "code": "C34",
+            "description": "Concevoir et mettre en œuvre des tests automatisés en employant les meilleures pratiques et outils de test et en tenant compte des contraintes techniques et des exigences de performance pour valider la fiabilité et l'efficacité des applications."
         },
         {
-            "code": "C38",
-            "description": "Analyser les données brutes collectées dans la base de connaissance en comparant les différents résultats afin d'établir différentes hypothèses ou scénarii."
-        },
-        {
-            "code": "C39",
-            "description": "Diffuser les hypothèses ou scénarii à l'équipe de développement en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence de l'équipe de développement et le soutien du processus décisionnel et l'innovation au sein du projet."
+            "code": "C35",
+            "description": "Mettre en place, éditer et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes."
         }
     ],
     "criteria": [
         {
-            "code": "C36",
-            "description": "Mobiliser ses connaissances technologiques et maîtrise de l'anglais",
+            "code": "Cr1",
+            "description": "Revues de code et outils d'analyse",
             "indicators": [
-                "Pertinence des informations trouvées : Les informations extraites des recherches sont directement applicables et pertinentes pour résoudre des problèmes spécifiques rencontrés lors du développement ou pour optimiser la gestion de projet.",
-                "Maitrise de l'anglais technique : Un élargissement du périmètre de veille et recherche est mis en place à partir de sources d'informations multilingues, telles que des forums ou des sites anglophones spécialisés.",
-                "Analyse et synthèse des données : Aptitude à analyser les informations recueillies, à en faire la synthèse et à en tirer des conclusions logiques et applicables au contexte du projet."
+                "Conformité aux standards : Le code révisé est en adéquation avec les standards de développement de l'entreprise.",
+                "Maintenabilité du code : Les modifications apportées lors des revues de code améliorent la maintenabilité du code, facilitant ainsi les évolutions futures et la gestion des correctifs."
             ]
         },
         {
-            "code": "C37",
-            "description": "Veille technologique et gestion de l'information",
+            "code": "Cr2",
+            "description": "Tests automatisés",
             "indicators": [
-                "Sélection et pertinence des sources : Les sources d'information choisies doivent être pertinentes et crédibles, couvrant divers domaines technologiques liés aux objectifs du projet.",
-                "Vérification et exactitude des informations : Les informations collectées sont vérifiées pour leur exactitude et leur actualité, en utilisant des critères d'évaluation clairs pour établir la fiabilité de chaque source.",
-                "Utilisation d'outils de collecte : Des outils de collecte et d'analyse de données sont employés efficacement pour organiser et stocker les informations dans une base de connaissance structurée et consultable."
+                "Couverture des tests : Les tests automatisés couvrent une large étendue des fonctionnalités de l'application, incluant les cas limites et les scénarios d'erreur.",
+                "Conformité aux meilleures pratiques : Les scripts de test et les suites de tests sont conçus en suivant les meilleures pratiques de test logiciel.",
+                "Documentation des tests : Les procédures et résultats des tests sont bien documentés, fournissant une base claire pour les futures références et améliorations."
             ]
         },
         {
-            "code": "C38",
-            "description": "Analyse des données collectées",
+            "code": "Cr3",
+            "description": "Documentation technique et partage des connaissances",
             "indicators": [
-                "Création de base de connaissances : Les données sont organisées de manière à permettre un accès facile et rapide, en utilisant des méthodes de classification et de catégorisation adaptées aux besoins de l'équipe de développement.",
-                "Génération d'hypothèses : Les données analysées permettent de formuler des hypothèses ou scénarii cohérents et pertinents, qui seront utilisés pour diriger des prises de décision ou de nouvelles lignes de recherche.",
-                "Comparaison et contraste : Les informations issues de différentes sources permettent d'identifier des tendances, des divergences ou des corrélations significatives.",
-                "Synthèse des informations : Les informations sont résumées et présentées de manière à éclairer les décisions ou les futures directions du projet."
-            ]
-        },
-        {
-            "code": "C39",
-            "description": "Diffusion des hypothèses ou scénarios",
-            "indicators": [
-                "Diffusion des informations : Les résultats de l'analyse sont communiqués clairement à l'équipe de développement, en utilisant des outils collaboratifs pour encourager la discussion et le partage des connaissances.",
-                "Support à la prise de décision : Les résultats de l'analyse des données sont présentés de manière à faciliter la compréhension et à soutenir le processus décisionnel au sein de l'équipe de développement."
+                "Exhaustivité de la documentation : La documentation couvre tous les aspects de l'application, y compris les configurations, l'utilisation et le dépannage.",
+                "Clarté et accessibilité : Les documents sont rédigés de manière à être compréhensibles par tous les membres de l'équipe, avec un langage clair et des instructions précises.",
+                "Utilisation des plateformes collaboratives : La documentation est facilement accessible et modifiable via des plateformes collaboratives, encourageant la mise à jour et le partage des connaissances.",
+                "Support à la maintenance et à l'évolutivité : Les documents inclut des informations qui facilitent la maintenance et permettent l'évolution des systèmes à l'avenir."
             ]
         }
     ],
     "modalities": {
         "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Épreuve individuelle écrite et orale",
-        "totalDuration": "2h00"
+        "delivery": "Rédaction d'un guide de bonnes pratiques (Gestion des revus de code et des différents tests, documentation.)",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E11",
-                "title": "Rédaction d'un rapport de veille multilingue",
+                "code": "E10",
+                "title": "Rédaction d'un guide de bonnes pratiques (Gestion des revus de code et des différents tests, documentation.)",
                 "type": "Épreuve écrite",
-                "coefficient": 1,
+                "coefficient": 3,
                 "points": 60,
-                "duration": "2h00"
-            },
-            {
-                "code": "E12",
-                "title": "Présentation orale du rapport de veille multilingue",
-                "type": "Épreuve orale",
-                "coefficient": 2,
-                "points": 0,
-                "duration": "20 mn"
+                "duration": "4h00"
             }
         ],
         "validation": {

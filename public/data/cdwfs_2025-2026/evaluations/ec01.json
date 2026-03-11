@@ -34,16 +34,16 @@
     ],
     "criteria": [
         {
-            "code": "C1",
+            "code": "Cr1",
             "description": "Qualité de la Conception et Structure en HTML5",
             "indicators": [
                 "Indicateurs de validation W3C : le code HTML est conforme aux normes du W3C.",
-                "Accessibilité : des normes d'accessibilité (tel que l'attribut ARIA (Accessible Rich Internet Applications), l'attribut alt, ...) pour les personnes en situation de handicap sont mises en place et permettent l’accessibilité universelle.",
+                "Accessibilité : des normes d'accessibilité (tel que l'attribut \"ARIA\" (Accessible Rich Internet Applications), l'attribut \"alt\", ...) pour les personnes en situation de handicap sont mises en place et permettent l’accessibilité universelle.",
                 "Clarté du code : La clarté et la structure du code permettent une maintenance facile et une compréhension rapide par d’autres développeurs. (Indentation et Espacement, Commentaires, Nommage compréhensible des Variables et Fonctions...)"
             ]
         },
         {
-            "code": "C2",
+            "code": "Cr2",
             "description": "Création et Intégration avec CSS3",
             "indicators": [
                 "Consistance du design : Les éléments graphiques présentent un cohérence visuelle et une uniformité sur les différentes pages du site.",
@@ -51,23 +51,23 @@
             ]
         },
         {
-            "code": "C3",
+            "code": "Cr3",
             "description": "Responsive Web Design",
             "indicators": [
-                "Responsivité : L'interface s'adapte sur tous types d'appareils (desktop, tablette, mobile ...)."
+                "Responsivité : L'interface s'adapte sur tous types d'appareils (desktop, tablette, mobile...)."
             ]
         },
         {
-            "code": "C4",
+            "code": "Cr4",
             "description": "Interactions avec JavaScript/TypeScript",
             "indicators": [
-                "Fonctionnalités interactives : Les fonctionnalités interactives demandées sont implémentées : les menus déroulants, les validations de formulaires ….",
+                "Fonctionnalités interactives : Les fonctionnalités interactives demandées sont implémentées : les menus déroulants, les validations de formulaires ....",
                 "Compatibilité cross-browser : Les scripts fonctionnent de manière identique sur les principaux navigateurs web.",
                 "Conformité ECMAScript : Le code JavaScript/TypeScript est à jour avec les dernières spécifications ECMAScript."
             ]
         },
         {
-            "code": "C5",
+            "code": "Cr5",
             "description": "Fonctionnalités AJAX",
             "indicators": [
                 "Interaction client/serveur : Des requêtes AJAX sont utilisées pour interagir avec le serveur (par exemple, sauvegarder une nouvelle tâche) sans recharger la page web.",
@@ -77,7 +77,7 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Épreuve individuelle",
+        "delivery": "Conception d'interfaces Front-end adaptatives et interactives sans Framework",
         "totalDuration": "4h00"
     },
     "exam": {

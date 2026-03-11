@@ -2,14 +2,14 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39765-EC02",
-        "title": "Manager les projets numériques",
+        "title": "Management des projets numériques",
         "rncpCode": "39765",
         "blocCode": "BC02",
         "blocName": "Manager les projets numériques",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 2,
-    "description": "Management des projets numériques",
+    "description": "Compte rendu d'activité de mise en situation professionnelle et oral de présentation.",
     "skills": [
         {
             "code": "C10",
@@ -82,15 +82,15 @@
             "code": "Cr15",
             "description": "Montée en compétences des équipes",
             "indicators": [
-                "Le feedback recueilli lors des séances de retour d'expérience (RETEX) permet de vérifier l’efficacité des sessions collaboratives, ainsi que l'amélioration de la compréhension et de l'application des nouvelles connaissances par les membres de l'équipe.",
+                "Le feedback recueilli lors des séances de retour d'expérience idéale de diffusion pour améliorer les connaissances et une montée en compétence et maintien de la performance collective de l'équipe de développement. (RETEX) permet de vérifier l’efficacité des sessions collaboratives, ainsi que l'amélioration de la compréhension et de l'application des nouvelles connaissances par les membres de l'équipe.",
                 "L’évolution des indicateurs de qualité du code (ex. réduction des erreurs, meilleure structure du code, réduction des duplications) permet de vérifier l’impact sur les pratiques de développement au sein de l’équipe."
             ]
         }
     ],
     "modalities": {
-        "format": "Mise en situation professionnelle reconstituée et présentation orale",
-        "delivery": "Collective et individuelle",
-        "totalDuration": "1 à 3 jours consécutifs + 20 mn"
+        "format": "Mise en situation professionnelle reconstituée",
+        "delivery": "Partie 1 : Compte rendu d'activité (livrables collectifs) à la fin de la mise en situation ; Partie 2 : Oral de présentation",
+        "totalDuration": "1 à 3 jours + 20 mn"
     },
     "exam": {
         "parts": [

@@ -9,7 +9,7 @@
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 2,
-    "description": "Mise en situation professionnelle simulée de montage d’infrastructure. Epreuve pratique individuelle avec interrogation orale au fil de l’épreuve.",
+    "description": "Conception et montage d’infrastructure.",
     "skills": [
         {
             "code": "C11",
@@ -38,7 +38,7 @@
     ],
     "criteria": [
         {
-            "code": "C11",
+            "code": "Cr11",
             "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions, en conformité avec le schéma directeur de la DSI, en combinant des ressources locales (on-premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications.",
             "indicators": [
                 "Tous besoins métiers recensés sont couverts par l’infrastructure proposée.",
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "code": "C12",
+            "code": "Cr12",
             "description": "Définir, implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*) afin de protéger les systèmes et les données sensibles contre les accès non autorisés.",
             "indicators": [
                 "Les règles d’accès mises en place dans l’IAM sont conformes aux règles métiers de l’entreprise.",
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "code": "C13",
+            "code": "Cr13",
             "description": "Arbitrer la technologie d’hébergement des systèmes et/ou applications (serveur dédié, virtualisation, conteneurisation/orchestration ou cloud) en évaluant et optimisant les ressources nécessaires à leur usage (telles que machine, stockage, bande passante, processeur, mémoire, consommation électrique), pour les déployer, les mettre en production et les gérer de manière fiable, flexible et scalable.",
             "indicators": [
                 "Le type d’hébergement retenu permet de répondre aux critères métiers prévus (performance, fiabilité, flexibilité et scalabilité).",
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "code": "C14",
+            "code": "Cr14",
             "description": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites, en tenant compte des engagements de disponibilité, de capacité afin de garantir la qualité de service (QoS), la résilience (PCA) et la sécurité des communications.",
             "indicators": [
                 "La topologie proposée permet la mise en place des services nécessaires au bon fonctionnement de l’activité de l’entreprise.",
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "code": "C15",
+            "code": "Cr15",
             "description": "Contribuer à la mise en place, au contrôle et à l’administration de l'infrastructure, en mobilisant ses compétences techniques, en collaborant avec les équipes pluridisciplinaires et en documentant la solution pour déployer les éléments techniques de la solution.",
             "indicators": [
                 "Les éléments techniques mis en place respectent la topologie.",
@@ -80,7 +80,7 @@
             ]
         },
         {
-            "code": "C16",
+            "code": "Cr16",
             "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications en utilisant des outils d’orchestration, de gestion de déploiement et de DevOps et en contrôlant le résultat par l’analyse des logs produits pour assurer la fiabilité et la reproductibilité des mises en production.",
             "indicators": [
                 "Les outils sélectionnés et configurés permettent l’automatisation de l’intégration, le déploiement et la maintenance des systèmes et applications.",
@@ -91,18 +91,18 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Épreuve technique individuelle avec interrogation orale au fil de l’épreuve",
-        "totalDuration": "04h00"
+        "delivery": "Épreuve technique individuelle",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
                 "code": "E3",
                 "title": "Épreuve technique",
-                "type": "Épreuve individuelle",
+                "type": "Épreuve technique",
                 "coefficient": 5,
                 "points": 100,
-                "duration": "04h00"
+                "duration": "4h00"
             }
         ],
         "validation": {

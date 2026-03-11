@@ -30,7 +30,7 @@
     ],
     "criteria": [
         {
-            "code": "C14",
+            "code": "Cr1",
             "description": "Conception des API",
             "indicators": [
                 "Adéquation avec les besoins : L'API répond précisément aux besoins d'intégration identifiés, son architecture facilite la communication entre différents services.",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "code": "C15",
+            "code": "Cr2",
             "description": "Sécurisation des API",
             "indicators": [
                 "Robustesse de la sécurité : Les méthodes d'authentification et d'autorisation (OAuth ou JWT) mises en place suivent les bonnes pratiques de sécurité et empêchent efficacement les accès non autorisés.",
@@ -46,7 +46,7 @@
             ]
         },
         {
-            "code": "C16",
+            "code": "Cr3",
             "description": "Tests des API",
             "indicators": [
                 "Couverture des tests : Les tests (unitaires, fonctionnels ...) couvrent tous les aspects de l'API",
@@ -54,7 +54,7 @@
             ]
         },
         {
-            "code": "C17",
+            "code": "Cr4",
             "description": "Documentation des API",
             "indicators": [
                 "Clarté et complétude de la documentation : La documentation est complète, facile à comprendre, et fournit toutes les informations nécessaires pour que les développeurs puissent utiliser l'API sans assistance supplémentaire.",
@@ -64,7 +64,7 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Épreuve individuelle",
+        "delivery": "Conception et développement Back-end d'une API sécurisée et documentée",
         "totalDuration": "4h00"
     },
     "exam": {

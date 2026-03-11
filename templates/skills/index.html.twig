@@ -24,15 +24,11 @@
             <article>
                 <div class="app-grid third">
                     <section class="app-section centered">
-                        <h1>{{ skill.title() ?: 'Compétence' }}</h1>
-
-                        <h3 class="text-center">{{ promotionContext.promotionTitle }}</h3>
+                        <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
-                            <h4 class="text-center mb-0">Fiche Compétence - Bloc {{ skill.blocCode }}</h4>
-                            <p class="subtitle">
-                                {{ skill.blocName }}
-                            </p>
+                            <h4 class="text-center">Bloc {{ skill.blocCode }} - Fiche Compétence</h4>
+                            <h1>{{ skill.title() ?: 'Compétence' }}</h1>
                         </div>
 
                         <div class="ribbon">
@@ -65,11 +61,26 @@
                         <h2>Critères d’évaluation</h2>
 
                         <div class="skill-criteria-list">
-                            <ul>
-                                {% for criterion in skill.criteria %}
-                                    <li>{{ criterion }}</li>
-                                {% endfor %}
-                            </ul>
+
+                            {% for criterion in skill.criteria %}
+                                {% set rawCriterion = criterion|trim %}
+                                {% set parts = rawCriterion|split(':', 2) %}
+                                {% set label = (parts[0] ?? '')|trim %}
+                                {% set details = (parts[1] ?? '')|trim %}
+
+                                <section class="app-section mb-2">
+                                    <p>
+                                        {% if details %}
+                                            <strong>{{ label }}</strong>
+                                            <br/>
+                                            {{ details }}
+                                        {% else %}
+                                            {{ rawCriterion }}
+                                        {% endif %}
+                                    </p>
+                                </section>
+                            {% endfor %}
+
                         </div>
                     </section>
                 {% endif %}
@@ -82,10 +93,11 @@
                             {% for module in skill.modules %}
                                 <section class="app-section mb-2">
                                     <p>
-                                        <a href="{{ path('app_promotion_modules', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ module.code) | lower}) }}" target="_blank">
-                                            <strong>Matière {{ module.code }}</strong>
+                                        <a href="{{ path('app_promotion_modules', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ module.code) | lower}) }}"
+                                           target="_blank">
+                                            <strong>{{ module.code }}</strong>
                                         </a>
-                                        <br/>
+                                        :
                                         {{ module.title }}
                                     </p>
                                 </section>
@@ -102,10 +114,11 @@
                             {% for evaluation in skill.evaluations %}
                                 <section class="app-section mb-2">
                                     <p>
-                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ evaluation.code) | lower}) }}" target="_blank">
-                                            <strong>Évaluation {{ evaluation.code }}</strong>
+                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ evaluation.code) | lower}) }}"
+                                           target="_blank">
+                                            <strong>{{ evaluation.code }}</strong>
                                         </a>
-                                        <br/>
+                                        :
                                         Bloc évalué : {{ evaluation.blockCode }}
                                     </p>
                                 </section>

@@ -10,5 +10,23 @@
         width: 1200px;
     }
 
+    article {
+        margin: 0 0.5rem;
+
+        @include respondTo(sm) {
+            margin: 1.5rem;
+            margin-left: 0;
+        }
+    }
+
+    aside {
+        margin: 0 0.5rem;
+
+        @include respondTo(sm) {
+            margin-right: 0 !important;
+            padding: 1.5rem 0.5rem 1.5rem 1.5rem !important;
+        }
+    }
+
     @import "./section";
 }

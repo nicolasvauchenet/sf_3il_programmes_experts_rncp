@@ -13,6 +13,16 @@ final readonly class EvaluationSheet
      *     description:string,
      *     indicators:array<int,string>
      * }> $criteria
+     * @param array<int,array{
+     *     code:string,
+     *     description:string,
+     *     criteria:array<int,array{
+     *         code:string,
+     *         title:string,
+     *         description:string,
+     *         indicators:array<int,string>
+     *     }>
+     * }> $skillsWithCriteria
      * @param array<string,mixed> $modalities
      * @param array<string,mixed> $exam
      * @param array<string,mixed> $raw
@@ -20,15 +30,17 @@ final readonly class EvaluationSheet
     public function __construct(
         public string $fileCode,
         public string $path,
-        public array $meta,
-        public int $evaluationNumber,
+        public array  $meta,
+        public int    $evaluationNumber,
         public string $description,
-        public array $skills,
-        public array $criteria,
-        public array $modalities,
-        public array $exam,
-        public array $raw,
-    ) {
+        public array  $skills,
+        public array  $criteria,
+        public array  $skillsWithCriteria,
+        public array  $modalities,
+        public array  $exam,
+        public array  $raw,
+    )
+    {
     }
 
     public function evaluationCode(): string

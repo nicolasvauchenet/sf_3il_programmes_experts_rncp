@@ -1,82 +1,86 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39608-EC03",
-        "title": "Configuration de l’infrastructure réseaux",
-        "rncpCode": "39608",
-        "blocCode": "BC02",
-        "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud.",
+        "code": "RNCP39611-EC03",
+        "title": "Maintien de la haute disponibilité et automatisation des systèmes",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d’exploitation et la virtualisation pour la sécurité et la performance.",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 3,
-    "description": "Définition des spécifications techniques et fonctionnelles aux nouveaux besoins ou amélioration avec la stratégie de surveillance et de suivi, rédaction d’un dossier technique et mise en service de la solution.",
+    "description": "Analyser une architecture et son PCA pour proposer des améliorations et des outils de monitoring adaptés.",
     "skills": [
         {
-            "code": "C09",
-            "description": "Configurer l'infrastructure réseau à l'aide de protocoles et d'équipements adaptés aux besoins fonctionnels et en collaboration avec l'équipe réseau, pour assurer une connectivité fluide et sécurisée du système d'information."
+            "code": "C05",
+            "description": "Mettre en œuvre des solutions de redondance, de réplication et de clustering"
         },
         {
-            "code": "C10",
-            "description": "Déployer les solutions de télécommunications, de réseaux de données et voix, en supervisant l'installation et la configuration dans l'environnement de production, en collaboration avec les équipes techniques et les fournisseurs, pour garantir l'efficacité des communications internes et externes et assurer la continuité des services."
+            "code": "C06",
+            "description": "Surveiller et optimiser les performances des systèmes informatiques"
         },
         {
-            "code": "C11",
-            "description": "Superviser et assurer la maintenance du réseau en utilisant des systèmes de monitoring, en collaboration avec les équipes de sécurité informatique et d'exploitation, pour maintenir une performance réseau optimale."
+            "code": "C07",
+            "description": "Manager le processus de gestion des incidents informatiques"
+        },
+        {
+            "code": "C08",
+            "description": "Automatiser les tâches d'administration en développant et en appliquant des scripts"
         }
     ],
     "criteria": [
         {
-            "code": "Cr9",
-            "description": "Configuration et intégration de solutions réseaux",
+            "code": "Cr5",
+            "description": "Garantie de la continuité de services",
             "indicators": [
-                "Adéquation aux besoins : Les protocoles et les équipements assurent une communication fluide et sans interruption.",
-                "Gestion de la Sécurité : La réponse apportée sécurise l'infrastructure réseau."
+                "Pertinence des améliorations proposées : Les améliorations proposées permettent d'accroître l'efficacité et la résilience des systèmes. Une matrice des risques est proposée et les solutions répondent aux risques référencés.",
+                "Qualité du PCA modifié : L'amélioration du Plan de Continuité d'Activité garantit la continuité opérationnelle des services."
             ]
         },
         {
-            "code": "Cr10",
-            "description": "Mise en service de solutions Voix/Data",
+            "code": "Cr6",
+            "description": "Gestion de la performance",
             "indicators": [
-                "Couverture des tests : Les tests (de connectivité, d'authentification, d'appel, ...) couvrent le fonctionnement des différents services installés.",
-                "Clarté des tests : La documentation des tests permet à l'ensemble des collaborateurs de pouvoir les mettre en œuvre."
+                "Pertinence du choix de l'outil de monitoring : La surveillance et l'analyse des performances du système permettent un temps de réponse correspondant aux accords de niveaux de Services (SLA) définis dans le Plan de reprise d'activité (PRA).",
+                "Pertinence de la sélection des données monitorées : La sélection des données à surveiller permet une évaluation précise de la performance opérationnelle."
             ]
         },
         {
-            "code": "Cr11",
-            "description": "Supervision du réseau",
+            "code": "Cr7",
+            "description": "Gestion des incidents",
             "indicators": [
-                "Complétude de la Surveillance : la solution permet d'assurer un suivi en temps réel des différents services."
+                "Gestion des incidents : La procédure proposée permet de minimiser ainsi les interruptions de service et de garantir une reprise rapide des opérations."
+            ]
+        },
+        {
+            "code": "Cr8",
+            "description": "Automatisation et optimisation de l'administration",
+            "indicators": [
+                "Conformité : Le choix de la technologie de script répond à l'étude de cas donnée et de couvrir 100% des besoins identifiés",
+                "Argumentation du choix : L'argumentation justifie comment la technologie sélectionnée optimise les processus et répond aux exigences spécifiques du système"
             ]
         }
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Rédaction d’un dossier technique de la solution et mise en service de la solution",
-        "totalDuration": "6h00"
+        "delivery": "Compte rendu d’amélioration de l’architecture",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E4",
-                "title": "Dossier technique de la solution",
+                "code": "E3",
+                "title": "Compte rendu d’amélioration de l’architecture",
                 "type": "Épreuve écrite",
                 "coefficient": 4,
-                "points": 120,
+                "points": 80,
                 "duration": "4h00"
-            },
-            {
-                "code": "E5",
-                "title": "Mise en service de la solution",
-                "type": "Épreuve écrite",
-                "coefficient": 2,
-                "points": 0,
-                "duration": "2h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 60,
-            "compensationMin": 42,
-            "remedialBelow": 42,
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
             "blockThreshold": 100
         }
     }

@@ -2,112 +2,76 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39781-EC05",
-        "title": "Management d’équipe et amélioration continue des infrastructures",
+        "title": "Politique de sécurité",
         "rncpCode": "39781",
-        "blocCode": "BC05",
-        "blocName": "Manager les équipes et accompagner l’amélioration continue des infrastructures systèmes et réseaux",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 5,
-    "description": "Mise en situation professionnelle simulée de management d’équipe et d’amélioration continue des infrastructures systèmes et réseaux. Production de livrables écrits et soutenance orale.",
+    "description": "Politique de sécurité.",
     "skills": [
         {
-            "code": "C29",
-            "description": "Organiser l’activité d’une équipe technique en répartissant les tâches, en définissant les priorités et en mettant en place des outils de suivi afin d’assurer l’efficacité collective et la réalisation des objectifs."
+            "code": "C19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s’appuyant sur les standards, en s’appuyant sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) pour protéger les données et les systèmes de l'entreprise."
         },
         {
-            "code": "C30",
-            "description": "Accompagner les membres de l’équipe dans le développement de leurs compétences en identifiant les besoins de formation, en mettant en place des actions d’accompagnement et en favorisant le partage de connaissances."
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue."
         },
         {
-            "code": "C31",
-            "description": "Mettre en œuvre une démarche d’amélioration continue des infrastructures systèmes et réseaux en analysant les retours d’expérience, les indicateurs de performance et les incidents afin d’optimiser les processus et les services."
-        },
-        {
-            "code": "C32",
-            "description": "Piloter la qualité des services d’infrastructure en définissant des indicateurs de performance, en analysant les résultats et en mettant en place des actions d’amélioration afin de garantir la satisfaction des utilisateurs."
-        },
-        {
-            "code": "C33",
-            "description": "Accompagner les transformations technologiques et organisationnelles en anticipant les évolutions, en adaptant les pratiques de travail et en impliquant les équipes afin de faciliter l’adoption des changements."
+            "code": "C21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les préconisations de l’ANSSI au moyen d’ateliers, de documentation, d’exercices de simulation d'attaque, et de campagnes de phishing afin de diminuer les comportements à risques et de contribuer à l’amélioration continue de la sécurité de l’entreprise."
         }
     ],
     "criteria": [
         {
-            "code": "C29",
-            "description": "Organiser l’activité d’une équipe technique en répartissant les tâches, en définissant les priorités et en mettant en place des outils de suivi afin d’assurer l’efficacité collective et la réalisation des objectifs.",
+            "code": "Cr19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s’appuyant sur les standards, en s’appuyant sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) pour protéger les données et les systèmes de l'entreprise.",
             "indicators": [
-                "La répartition des tâches est cohérente avec les compétences des membres de l’équipe.",
-                "Les priorités définies permettent d’atteindre les objectifs fixés.",
-                "Les outils de suivi permettent de piloter l’activité de l’équipe."
+                "L’analyse des risques de sécurité est actualisée, à la fois au niveau des menaces, mais aussi pour intégrer les évolutions de l’infrastructure. Elle permet de prioriser les évolutions à apporter à la PSSI.",
+                "Les dispositions prises pour faire évoluer la PSSI prennent en compte les risques, les recommandations de l’ANSSI et les moyens mobilisables pour la mise en œuvre.",
+                "Les dispositions prises sont conformes avec les standards et réglementations en vigueur (ISO 2700x, RGPD)."
             ]
         },
         {
-            "code": "C30",
-            "description": "Accompagner les membres de l’équipe dans le développement de leurs compétences en identifiant les besoins de formation, en mettant en place des actions d’accompagnement et en favorisant le partage de connaissances.",
+            "code": "Cr20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue.",
             "indicators": [
-                "Les besoins en compétences sont identifiés.",
-                "Les actions d’accompagnement mises en place permettent le développement des compétences.",
-                "Le partage de connaissances est encouragé au sein de l’équipe."
+                "L’audit couvre de façon méthodique les volets physiques, techniques et organisationnels de la politique de sécurité et s’appuie sur une méthodologie d’audit existante (telle que ISO 27001).",
+                "Les résultats de l’audit sont consignés dans un rapport permettant de conclure quant à la conformité de la mise en œuvre de la politique de sécurité et l’atteinte de ses objectifs. Des axes d’améliorations sont mis en avant le cas échéant."
             ]
         },
         {
-            "code": "C31",
-            "description": "Mettre en œuvre une démarche d’amélioration continue des infrastructures systèmes et réseaux en analysant les retours d’expérience, les indicateurs de performance et les incidents afin d’optimiser les processus et les services.",
+            "code": "Cr21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les préconisations de l’ANSSI au moyen d’ateliers, de documentation, d’exercices de simulation d'attaque, et de campagnes de phishing afin de diminuer les comportements à risques et de contribuer à l’amélioration continue de la sécurité de l’entreprise.",
             "indicators": [
-                "Les retours d’expérience et incidents sont analysés.",
-                "Les indicateurs de performance sont exploités pour identifier les axes d’amélioration.",
-                "Les actions mises en place permettent l’amélioration des processus et services."
-            ]
-        },
-        {
-            "code": "C32",
-            "description": "Piloter la qualité des services d’infrastructure en définissant des indicateurs de performance, en analysant les résultats et en mettant en place des actions d’amélioration afin de garantir la satisfaction des utilisateurs.",
-            "indicators": [
-                "Les indicateurs définis permettent de mesurer la qualité de service.",
-                "Les analyses réalisées permettent d’identifier les écarts de performance.",
-                "Les actions d’amélioration mises en œuvre permettent d’améliorer la qualité de service."
-            ]
-        },
-        {
-            "code": "C33",
-            "description": "Accompagner les transformations technologiques et organisationnelles en anticipant les évolutions, en adaptant les pratiques de travail et en impliquant les équipes afin de faciliter l’adoption des changements.",
-            "indicators": [
-                "Les évolutions technologiques et organisationnelles sont anticipées.",
-                "Les pratiques de travail sont adaptées aux transformations.",
-                "Les actions menées facilitent l’adhésion des équipes au changement."
+                "Les actions de sensibilisation proposées diffusent et vulgarisent la PSSI et sont adaptées au public concerné (format, durée, fréquence).",
+                "L’ensemble des actions proposées suit une démarche d’amélioration continue afin de pouvoir en évaluer la pertinence et l’efficacité."
             ]
         }
     ],
     "modalities": {
-        "format": "Étude de cas et soutenance",
-        "delivery": "Production de livrables écrits et présentation orale individuelle",
-        "totalDuration": "03h30"
+        "format": "Mise en situation reconstituée, écrit et/ou sur ordinateur",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E7",
-                "title": "Étude de cas de management et amélioration continue",
+                "code": "E6",
+                "title": "Épreuve écrite",
                 "type": "Épreuve écrite",
-                "coefficient": 2,
-                "points": 40,
-                "duration": "03h00"
-            },
-            {
-                "code": "E8",
-                "title": "Soutenance orale",
-                "type": "Épreuve orale individuelle",
-                "coefficient": 2,
-                "points": 40,
-                "duration": "00h30"
+                "coefficient": 4,
+                "points": 80,
+                "duration": "4h00"
             }
         ],
         "validation": {
             "evaluationThreshold": 40,
             "compensationMin": 28,
             "remedialBelow": 28,
-            "blockThreshold": 40
+            "blockThreshold": 110
         }
     }
 }

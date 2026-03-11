@@ -34,14 +34,14 @@
     ],
     "criteria": [
         {
-            "code": "C21",
+            "code": "Cr1",
             "description": "Gestion de versions",
             "indicators": [
                 "Une politique de suivi des modifications est traçable et adaptée aux besoins du projet."
             ]
         },
         {
-            "code": "C22",
+            "code": "Cr2",
             "description": "Collaboration et intégration continue",
             "indicators": [
                 "Le processus de fusion de code et de résolution de conflits est fluide.",
@@ -49,14 +49,14 @@
             ]
         },
         {
-            "code": "C23",
+            "code": "Cr3",
             "description": "Virtualisation et conteneurisation",
             "indicators": [
                 "La conteneurisation est fonctionnelle de manière identique sous tous types d'environnement d'exécution."
             ]
         },
         {
-            "code": "C24",
+            "code": "Cr4",
             "description": "Orchestration et déploiement continus",
             "indicators": [
                 "L'outil d'orchestration garantit la gestion dynamique des ressources.",
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "code": "C25",
+            "code": "Cr5",
             "description": "Gestion et déploiement cloud",
             "indicators": [
                 "Conformité de l'automatisation : Les processus d'automatisation mis en place pour la gestion et le déploiement des ressources cloud sont conformes aux meilleures pratiques DevOps.",
@@ -74,7 +74,7 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Épreuve individuelle",
+        "delivery": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu avec gestion du Versionning",
         "totalDuration": "4h00"
     },
     "exam": {

@@ -12,11 +12,11 @@
     },
     "skills": [
         {
-            "code": "C4",
+            "code": "C04",
             "description": "Concevoir l’architecture logicielle en analysant les exigences fonctionnelles et non fonctionnelles, en choisissant le modèle d'architecture et de modélisation et de prototypage adapté aux besoins, en sélectionnant les technologies associées, ainsi que les outils appropriés et en tenant compte des contraintes du système d’information, telles que la compatibilité avec les infrastructures existantes, la sécurité, et les performances requises, tout en anticipant la maintenance et les potentielles évolutions technologiques et organisationnelles, afin de garantir que la solution réponde de manière optimale aux besoins métiers identifiés et puisse évoluer sans interruption significative des services."
         },
         {
-            "code": "C5",
+            "code": "C05",
             "description": "Sélectionner les technologies et outils les plus adaptés pour le développement, en comparant leurs performances, sécurité et interopérabilité et afin de répondre aux besoins du projet tout en respectant les contraintes de budget et de temps."
         }
     ],

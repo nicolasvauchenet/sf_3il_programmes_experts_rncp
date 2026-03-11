@@ -6,6 +6,7 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     color: $primary;
     background-color: rgba($primary, 0.25);
     border: 2px solid $primary;
@@ -19,6 +20,10 @@
         border-color: $secondary;
     }
 
+    &.download {
+        font-size: 0.75rem;
+    }
+
     &:disabled {
         color: rgba($black, 0.15);
         background-color: rgba($primary, 0.25);
@@ -26,5 +31,12 @@
         pointer-events: none;
         user-select: none;
         cursor: not-allowed;
+    }
+
+    small {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-size: 0.5em;
+        text-align: center;
     }
 }

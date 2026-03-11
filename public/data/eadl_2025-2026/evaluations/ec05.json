@@ -2,107 +2,106 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39765-EC05",
-        "title": "Piloter la qualité et la sécurité d’un projet logiciel",
+        "title": "Conception et optimisation d'architectures de données décisionnelles",
         "rncpCode": "39765",
         "blocCode": "BC05",
-        "blocName": "Piloter la qualité et la sécurité d’un projet logiciel",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 5,
-    "description": "Pilotage de la qualité et de la sécurité d’un projet logiciel",
+    "description": "Conception et mise en place d’une interface d’analyse des données et réalisation d’une interface programmée d’automatisation.",
     "skills": [
         {
             "code": "C27",
-            "description": "Mettre en œuvre une démarche qualité dans un projet logiciel en définissant des indicateurs de qualité, des procédures de contrôle et des outils de suivi afin de garantir la conformité des livrables aux exigences du projet."
+            "description": "Concevoir l’architecture d’entrepôts de données décisionnelles (Data Warehouse et Data Lake) en stockant et organisant de grands volumes de données structurées et non structurées pour développer des solutions adaptées aux exigences des utilisateurs et des décideurs."
         },
         {
             "code": "C28",
-            "description": "Mettre en œuvre des pratiques de sécurité des applications en identifiant les risques, en appliquant les bonnes pratiques de sécurité et en utilisant des outils d’analyse afin de protéger les données et les systèmes."
+            "description": "Mettre en œuvre des processus ETL (Extract, Transform, Load) par l'extraction de données de différentes sources, et en les transformant selon les besoins métier pour les charger dans des systèmes de stockage centralisés."
         },
         {
             "code": "C29",
-            "description": "Mettre en place des processus de revue de code et d’audit technique afin d’améliorer la qualité du code, de réduire les défauts et de favoriser le partage des bonnes pratiques au sein de l’équipe."
+            "description": "Transformer les données de masse brutes en informations exploitables à l'aide des technologies Big Data (Hadoop, Spark, etc.) pour aider les entreprises à prendre des décisions éclairées, à optimiser leurs opérations, à mieux comprendre leurs clients et à se protéger contre les menaces."
         },
         {
             "code": "C30",
-            "description": "Analyser les résultats des outils de qualité logicielle et de sécurité afin d’identifier les anomalies, proposer des actions correctives et améliorer en continu la qualité du projet."
+            "description": "Développer des solutions de Business Intelligence (BI) en créant des tableaux de bord et des rapports interactifs à l'aide d'outils comme Power BI, Tableau, ou QlikView pour fournir des insights pertinents et adaptés aux besoins spécifiques des utilisateurs et des décideurs pour piloter les performances des activités (DAS) de l'entreprise."
         },
         {
             "code": "C31",
-            "description": "Sensibiliser et accompagner les équipes aux bonnes pratiques de qualité et de sécurité afin de renforcer la culture qualité au sein du projet et de l’organisation."
+            "description": "Automatiser les tâches répétitives en utilisant des technologies RPA (Automatisation des Processus Robotiques) tels que UiPath, Blue Prism, Automation Anywhere, pour maximiser l'efficacité opérationnelle, à améliorer la précision et la rapidité des décisions, et à libérer des ressources pour des activités stratégiques, tout en garantissant la conformité et la traçabilité des opérations."
         }
     ],
     "criteria": [
         {
             "code": "Cr27",
-            "description": "Mise en œuvre de la démarche qualité",
+            "description": "Qualité de l'architecture",
             "indicators": [
-                "Les indicateurs de qualité sont définis et pertinents par rapport aux objectifs du projet.",
-                "Les procédures de contrôle et les outils de suivi permettent de vérifier la conformité des livrables."
+                "L'architecture conçue répond aux besoins des utilisateurs et des décideurs : La conception de l'architecture d'entrepôts de données permet de stocker et organiser efficacement de grands volumes de données, assurant ainsi leur accessibilité et leur utilité pour les utilisateurs et les décideurs.",
+                "La solution développée est évolutive et performante : La solution mise en œuvre permet d'optimiser la gestion des données structurées et non structurées, garantissant une évolutivité et une performance adéquates pour répondre aux exigences actuelles et futures."
             ]
         },
         {
             "code": "Cr28",
-            "description": "Sécurité des applications",
+            "description": "Qualité des processus ETL",
             "indicators": [
-                "Les risques de sécurité sont identifiés et analysés.",
-                "Les bonnes pratiques de sécurité sont appliquées pour protéger les données et les systèmes."
+                "Les processus ETL sont correctement implémentés : La mise en œuvre des processus ETL permet d'extraire, transformer et charger efficacement les données de différentes sources dans des systèmes de stockage centralisés.",
+                "Les données transformées répondent aux besoins métier : Les transformations appliquées aux données permettent de les adapter aux besoins spécifiques des métiers, garantissant leur utilité et leur intégration dans les systèmes centralisés."
             ]
         },
         {
             "code": "Cr29",
-            "description": "Revue de code et audit technique",
+            "description": "Qualité des informations",
             "indicators": [
-                "Les revues de code sont organisées et permettent d’améliorer la qualité du code.",
-                "Les audits techniques permettent d’identifier les défauts et de diffuser les bonnes pratiques."
+                "Les données brutes sont efficacement transformées : La transformation des données de masse brutes en informations exploitables permet d'extraire des insights pertinents à l'aide des technologies Big Data."
             ]
         },
         {
             "code": "Cr30",
-            "description": "Analyse des outils de qualité logicielle",
+            "description": "Qualité des Insights",
             "indicators": [
-                "Les résultats des outils de qualité et de sécurité sont correctement interprétés.",
-                "Les actions correctives proposées permettent d’améliorer la qualité du projet."
+                "Les tableaux de bord et rapports interactifs sont pertinents : La création de tableaux de bord et de rapports interactifs permet de fournir des insights pertinents et adaptés aux besoins spécifiques des utilisateurs et des décideurs.",
+                "Les solutions BI améliorent le pilotage des performances : Les solutions de Business Intelligence développées permettent de piloter efficacement les performances des activités de l'entreprise, en offrant une visibilité claire et en temps réel des indicateurs clés."
             ]
         },
         {
             "code": "Cr31",
-            "description": "Culture qualité et sécurité",
+            "description": "Efficacité des RPA",
             "indicators": [
-                "Les actions de sensibilisation aux bonnes pratiques de qualité et de sécurité sont pertinentes.",
-                "Les équipes adoptent progressivement les bonnes pratiques diffusées."
+                "Les tâches répétitives sont efficacement automatisées : L'automatisation des tâches répétitives à l'aide de technologies RPA permet de maximiser l'efficacité opérationnelle et d'améliorer la précision et la rapidité des décisions.",
+                "Les solutions RPA garantissent la conformité et la traçabilité : Les solutions d'automatisation mises en œuvre permettent de libérer des ressources pour des activités stratégiques tout en garantissant la conformité et la traçabilité des opérations."
             ]
         }
     ],
     "modalities": {
-        "format": "Mise en situation professionnelle et soutenance orale",
-        "delivery": "Individuelle",
-        "totalDuration": "1 à 3 jours + 20 mn"
+        "format": "Mise en situation professionnelle reconstituée sur ordinateur",
+        "delivery": "Partie 1 : Conception et mise en place d’une interface d’analyse des données ; Partie 2 : Réalisation d’une interface programmée d’automatisation",
+        "totalDuration": "6h00"
     },
     "exam": {
         "parts": [
             {
                 "code": "E5-P1",
-                "title": "Audit qualité et sécurité d’un projet logiciel",
-                "type": "Épreuve pratique",
-                "coefficient": 6,
-                "points": 120,
-                "duration": "1 à 3 jours"
+                "title": "Conception et mise en place d’une interface d’analyse des données",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "3h00"
             },
             {
                 "code": "E5-P2",
-                "title": "Présentation des résultats et recommandations",
-                "type": "Épreuve orale",
-                "coefficient": 4,
-                "points": 80,
-                "duration": "20 mn"
+                "title": "Réalisation d’une interface programmée d’automatisation",
+                "type": "Épreuve écrite",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "3h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 100,
-            "compensationMin": 70,
-            "remedialBelow": 70,
-            "blockThreshold": 100
+            "evaluationThreshold": 60,
+            "compensationMin": 42,
+            "remedialBelow": 42,
+            "blockThreshold": 120
         }
     }
 }

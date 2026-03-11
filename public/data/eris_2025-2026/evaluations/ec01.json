@@ -9,7 +9,7 @@
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 1,
-    "description": "Mise en situation professionnelle simulée à partir d’un scénario d’entreprise fictive dont il faut gérer les services informatiques. Préparation collective des livrables écrits et oral individuel.",
+    "description": "Gouvernance des Infrastructures Systèmes et Réseaux.",
     "skills": [
         {
             "code": "C01",
@@ -41,7 +41,7 @@
         },
         {
             "code": "C08",
-            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre."
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2- 1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre."
         },
         {
             "code": "C09",
@@ -54,7 +54,7 @@
     ],
     "criteria": [
         {
-            "code": "C01",
+            "code": "Cr01",
             "description": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique, et en contribuant à la structuration de la gestion des services IT, pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité.",
             "indicators": [
                 "Les politiques de gouvernance définies permettent d’assurer la cohérence et l’homogénéité des pratiques.",
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "code": "C02",
+            "code": "Cr02",
             "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire.",
             "indicators": [
                 "L’audit couvre les volets techniques et organisationnels.",
@@ -72,16 +72,16 @@
             ]
         },
         {
-            "code": "C03",
+            "code": "Cr03",
             "description": "Etablir des accords de niveaux de service (SLA) en collaboration avec les clients internes et/ou externes, en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise.",
             "indicators": [
                 "Les accords de niveau de service proposés permettent à l’entreprise d’atteindre ses objectifs et niveaux d’exigence fixés.",
                 "Les indicateurs clés de performance choisis permettent de mesurer le respect des SLA.",
-                "Les valeurs cibles associées sont en accord avec les niveaux d’exigence"
+                "Les valeurs cibles associées sont en accord avec les niveaux d’exigence."
             ]
         },
         {
-            "code": "C04",
+            "code": "Cr04",
             "description": "Elaborer, documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et/ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services.",
             "indicators": [
                 "Les processus et procédures sont documentés et s’appuient sur des normes et/ou référentiels de bonnes pratiques.",
@@ -89,7 +89,7 @@
             ]
         },
         {
-            "code": "C05",
+            "code": "Cr05",
             "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives.",
             "indicators": [
                 "La méthodologie suivie pour interpréter les données et les KPI permet d’identifier les causes de non-respect des SLA.",
@@ -97,7 +97,7 @@
             ]
         },
         {
-            "code": "C06",
+            "code": "Cr06",
             "description": "Evaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité.",
             "indicators": [
                 "L’analyse de risque couvre les processus critiques en lien avec l’informatique pour l’activité de l’entreprise.",
@@ -106,7 +106,7 @@
             ]
         },
         {
-            "code": "C07",
+            "code": "Cr07",
             "description": "Elaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel.",
             "indicators": [
                 "Le plan de continuité d’activité est en lien avec un risque clairement identifié et contribue au respect des SLA.",
@@ -115,8 +115,8 @@
             ]
         },
         {
-            "code": "C08",
-            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre.",
+            "code": "Cr08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2- 1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre.",
             "indicators": [
                 "L’ordre de priorisation des applications et services du plan de reprise d’activité est déterminé par leur degré de criticité par rapport aux activités de l’entreprise.",
                 "Les stratégies de sauvegarde et de restauration s’appuient sur cet ordre et définissent les éléments techniques et organisationnels nécessaires.",
@@ -124,7 +124,7 @@
             ]
         },
         {
-            "code": "C09",
+            "code": "Cr09",
             "description": "Etablir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux.",
             "indicators": [
                 "Les exercices mis en place pour les tests permettent d’évaluer la viabilité du PCA ou PRA visé.",
@@ -132,7 +132,7 @@
             ]
         },
         {
-            "code": "C10",
+            "code": "Cr10",
             "description": "Mettre en œuvre le Numérique Responsable en adaptant des pratiques durables et d’accessibilité (personnes en situation de handicap), en se basant sur l’inventaire exhaustif des actifs informatiques et en utilisant les outils de référence afin de mesurer et d’améliorer la performance environnementale du SI et les pratiques RSE afférentes.",
             "indicators": [
                 "L’inventaire des actifs informatiques est complet et permet de construire une mesure de performance environnementale fiable.",
@@ -143,26 +143,26 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée",
-        "delivery": "Épreuve écrite collective et épreuve orale individuelle en centre de formation",
-        "totalDuration": "04h30"
+        "delivery": "Évaluation des livrables et épreuve orale",
+        "totalDuration": "0h40"
     },
     "exam": {
         "parts": [
             {
                 "code": "E1",
                 "title": "Évaluation des livrables",
-                "type": "Épreuve écrite collective",
+                "type": "Épreuve écrite",
                 "coefficient": 1,
-                "points": 20,
-                "duration": "04h00"
+                "points": 80,
+                "duration": "Non précisée"
             },
             {
                 "code": "E2",
                 "title": "Épreuve orale",
-                "type": "Épreuve orale individuelle",
+                "type": "Épreuve orale",
                 "coefficient": 3,
-                "points": 60,
-                "duration": "00h30"
+                "points": 0,
+                "duration": "0h40"
             }
         ],
         "validation": {

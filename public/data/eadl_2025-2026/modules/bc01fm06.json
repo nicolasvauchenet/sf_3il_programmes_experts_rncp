@@ -12,7 +12,7 @@
     },
     "skills": [
         {
-            "code": "C8",
+            "code": "C08",
             "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel."
         }
     ],

@@ -1,64 +1,74 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39608-EC06",
-        "title": "Administration des systèmes de sécurité et des contrôles d’accès",
-        "rncpCode": "39608",
-        "blocCode": "BC03",
-        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "code": "RNCP39611-EC06",
+        "title": "Conception et réalisation de l’intégration et le déploiement continu (Cloud & Devops)",
+        "rncpCode": "39611",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud.",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 6,
-    "description": "À partir d'une étude de cas d'une infrastructure réseau d'entreprise, proposer un rapport d’analyse et de préconisations d'amélioration de l'existant.",
+    "description": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu.",
     "skills": [
         {
-            "code": "C18",
-            "description": "Implémenter les outils et systèmes de sécurité tels que les pares-feux, les IDS/IPS, en s'assurant de leur configuration optimale et de leur mise à jour, en travaillant de concert avec l'équipe réseau et les spécialistes de la sécurité, pour prévenir les intrusions et protéger les réseaux de l'entreprise."
+            "code": "C12",
+            "description": "Développer des environnements virtualisés en utilisant une plateforme conteneurisation"
         },
         {
-            "code": "C19",
-            "description": "Administrer les systèmes de gestion des identités et des accès (IAM), en mettant en œuvre des politiques d'accès rigoureuses et en utilisant des technologies d'authentification avancées (MFA) et tenant compte de personnes en situation de handicap, pour garantir que seul le personnel autorisé a accès aux systèmes critiques et aux données sensibles."
+            "code": "C13",
+            "description": "Coordonner les containeurs avec des logiciels d'orchestration"
+        },
+        {
+            "code": "C14",
+            "description": "Intégrer et déployer les pratiques de sécurité dans les processus de développement"
         }
     ],
     "criteria": [
         {
-            "code": "Cr18",
-            "description": "Protection et détection des intrusions",
+            "code": "Cr12",
+            "description": "Virtualisation et conteneurisation",
             "indicators": [
-                "Qualité des choix des outils : Les outils sélectionnés pour la protection et la détection des intrusions répondent aux besoins de l'environnement spécifique de l'entreprise",
-                "Qualité des règles de filtrage : Les règles de filtrage permettent d'alerter et de bloquer les activités suspectes sans impacter négativement l'activité de l'entreprise",
-                "Pertinence du ou des outils : La configuration du ou des outils de détection optimise la capacité à identifier et répondre rapidement aux tentatives d'intrusion"
+                "La conteneurisation est fonctionnelle de manière identique sous tous types d'environnement d'exécution."
             ]
         },
         {
-            "code": "Cr19",
-            "description": "Gestions des politiques d'accès",
+            "code": "Cr13",
+            "description": "Orchestration et déploiement continus",
             "indicators": [
-                "Qualité des propositions pour les systèmes de gestion des identités : Les propositions faites pour le système de gestion des identités facilité une compréhension approfondie des exigences de sécurité et faciliter une gestion efficace et sécurisée des accès utilisateurs.",
-                "Pertinence des politiques d’accès : Les politiques d'accès proposées sont pertinentes et alignées avec les niveaux de sécurité requis par l'organisation."
+                "L'outil d'orchestration garantit la gestion dynamique des ressources.",
+                "La mise à l'échelle (Scaling) des ressources orchestrées garantit la robustesse des pipelines d'intégration et de déploiement continus."
+            ]
+        },
+        {
+            "code": "Cr14",
+            "description": "Gestion et déploiement cloud",
+            "indicators": [
+                "Conformité de l'automatisation : Les processus d'automatisation mis en place pour la gestion et le déploiement des ressources cloud sont conformes aux meilleures pratiques DevOps.",
+                "Sécurité des déploiements : Les mesures de sécurité appliquées lors de l'automatisation garantissent la protection des applications et des données hébergées contre les accès non autorisés et autres vulnérabilités potentielles."
             ]
         }
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Analyse d’une infrastructure réseau et rédaction d’un rapport d’analyse et de préconisations",
-        "totalDuration": "3h00"
+        "delivery": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu.",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E8",
-                "title": "Rapport d’analyse et de préconisations d'amélioration de l'existant",
+                "code": "E6",
+                "title": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu.",
                 "type": "Épreuve écrite",
-                "coefficient": 3,
-                "points": 60,
-                "duration": "3h00"
+                "coefficient": 4,
+                "points": 80,
+                "duration": "4h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 30,
-            "compensationMin": 21,
-            "remedialBelow": 21,
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
             "blockThreshold": 100
         }
     }

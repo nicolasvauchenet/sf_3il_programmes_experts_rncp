@@ -1,20 +1,100 @@
-<aside class="app-section app-toc">
-    <h2>{{ title }}s</h2>
-    <p class="subtitle">{{ content | length }} {{ title | lower }}{{ content | length > 1 ? 's' : '' }}</p>
+<div
+    class="app-toc-wrapper"
+    data-controller="toc"
+>
+    {# Bouton mobile #}
+    <div class="app-toc-mobile-trigger">
+        <button
+            type="button"
+            class="app-toc-mobile-button"
+            data-action="click->toc#open"
+            data-toc-target="trigger"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="mobile-toc-drawer"
+        >
+            <span>
+                {{ title }}s
+                {% if selectedCode %}
+                    • {{ selectedCode|upper }}
+                {% endif %}
+            </span>
 
-    {#<div class="app-filters">
-        <input type="search" class="form-control" placeholder="Filtrer"/>
-    </div>#}
+            <span class="app-toc-mobile-button-count">
+                {{ content|length }}
+            </span>
+        </button>
+    </div>
 
-    <nav class="toc">
-        {% for c in content %}
-            <a
-                href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
-                class="{% if selectedCode == c.fileCode %}active{% endif %}"
-            >
-                <span class="app-badge">{{ c.fileCode|upper }}</span>
-                {{ c.meta.title ?? c.fileCode|upper }}
-            </a>
-        {% endfor %}
-    </nav>
-</aside>
+    {# Aside desktop #}
+    <aside class="app-section app-toc app-toc-desktop">
+        <h2>{{ title }}s</h2>
+        <p class="subtitle">
+            {{ content|length }} {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
+        </p>
+
+        <nav class="toc" aria-label="Navigation des {{ title|lower }}s">
+            {% for c in content %}
+                <a
+                    href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
+                    class="{% if selectedCode == c.fileCode %}active{% endif %}"
+                >
+                    <span class="app-badge">{{ c.fileCode|upper }}</span>
+                    {{ c.meta.title ?? c.fileCode|upper }}
+                </a>
+            {% endfor %}
+        </nav>
+    </aside>
+
+    {# Bottom drawer mobile #}
+    <div
+        id="mobile-toc-drawer"
+        class="app-toc-drawer-backdrop"
+        data-toc-target="backdrop"
+        data-action="click->toc#backdropClose"
+        hidden
+    >
+        <div
+            class="app-toc-drawer"
+            data-toc-target="panel"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-toc-title"
+        >
+            <div class="app-toc-drawer-handle"></div>
+
+            <div class="app-toc-drawer-header">
+                <div>
+                    <h2 id="mobile-toc-title">{{ title }}s</h2>
+                    <p class="subtitle">
+                        {{ content|length }} {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    class="app-toc-drawer-close"
+                    data-action="click->toc#close"
+                    aria-label="Fermer la navigation"
+                >
+                    Fermer
+                </button>
+            </div>
+
+            <div class="app-toc app-toc-mobile">
+                <nav class="toc" aria-label="Navigation mobile des {{ title|lower }}s">
+                    {% for c in content %}
+                        <a
+                            href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
+                            class="{% if selectedCode == c.fileCode %}active{% endif %}"
+                            data-action="click->toc#close"
+                        >
+                            <span class="app-badge">{{ c.fileCode|upper }}</span>
+                            {{ c.meta.title ?? c.fileCode|upper }}
+                        </a>
+                    {% endfor %}
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

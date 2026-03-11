@@ -1,6 +1,6 @@
 .app-section {
     margin: 1rem 0.5rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     background-color: $white;
     border: 1px solid rgba($black, 0.5);
     border-radius: 0.5rem;
@@ -21,6 +21,25 @@
             margin-right: auto;
             width: 50dvw;
         }
+    }
+
+    &.sub {
+        margin-top: 0 !important;
+        margin-left: 1rem !important;
+        margin-right: 0.5rem !important;
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        @include respondTo(sm) {
+            margin-left: 3rem !important;
+            padding: 1rem;
+        }
+    }
+
+    :has(+ .app-section.sub) {
+        margin-bottom: 0 !important;
+        background-color: rgba($black, 0.05);
     }
 
     .app-grid {

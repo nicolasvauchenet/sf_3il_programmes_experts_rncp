@@ -2,107 +2,95 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39765-EC06",
-        "title": "Piloter la stratégie technologique et l’évolution du système d’information",
+        "title": "Optimisation des architectures et automatisation des processus et flux métier par l’apport de l’IA",
         "rncpCode": "39765",
-        "blocCode": "BC06",
-        "blocName": "Piloter la stratégie technologique et l’évolution du système d’information",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 6,
-    "description": "Pilotage de la stratégie technologique et de l’évolution du système d’information",
+    "description": "Mise en place d’une automatisation et rédaction de la documentation.",
     "skills": [
         {
             "code": "C32",
-            "description": "Mettre en place une veille technologique, normative et réglementaire en analysant des sources spécialisées afin d’identifier les évolutions technologiques, les standards et les obligations légales applicables au système d’information."
+            "description": "Optimiser les processus de décision en analysant et améliorant les opérations métiers à l'aide de méthodes de machine learning, en intégrant des modèles prédictifs qui facilitent l'automatisation et l'amélioration continue des processus par les pratiques de MLOps, tout en tenant compte des contraintes de qualité des données, de puissance de calcul et des objectifs de performance afin d'augmenter l'efficacité opérationnelle et la compétitivité de l'entreprise."
         },
         {
             "code": "C33",
-            "description": "Analyser l’existant du système d’information en identifiant les forces, faiblesses et contraintes techniques afin de proposer des axes d’évolution cohérents avec la stratégie de l’organisation."
+            "description": "Assurer la surveillance et la maintenance des systèmes automatisés en utilisant des outils de monitoring et en effectuant des mises à jour régulières pour garantir leur performance et leur fiabilité."
         },
         {
             "code": "C34",
-            "description": "Définir une stratégie d’évolution du système d’information en proposant des orientations technologiques et organisationnelles permettant d’améliorer la performance, la sécurité et la pérennité des systèmes."
+            "description": "Rédiger la documentation de support et les spécifications des éléments de services ou modèles développés pour les utilisateurs des systèmes automatisés afin de garantir une adoption efficace et une utilisation optimale des technologies déployées."
         },
         {
             "code": "C35",
-            "description": "Évaluer l’impact technique, organisationnel et financier des choix technologiques afin d’éclairer la prise de décision stratégique."
-        },
-        {
-            "code": "C36",
-            "description": "Présenter et argumenter les recommandations technologiques auprès des parties prenantes afin de faciliter la prise de décision et l’adhésion aux orientations proposées."
+            "description": "Mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation en utilisant des indicateurs clés de performance (KPI) ainsi que des outils d'analyse de données, des sondages de satisfaction des employés et des clients, et des audits de processus, tout en tenant compte des contraintes budgétaires, des délais de mise en œuvre et des exigences de conformité, afin d'identifier les améliorations et les ajustements nécessaires pour maximiser l'efficacité opérationnelle et la satisfaction des parties prenantes."
         }
     ],
     "criteria": [
         {
             "code": "Cr32",
-            "description": "Veille technologique et réglementaire",
+            "description": "Efficience du Machine Learning",
             "indicators": [
-                "Les sources de veille sélectionnées sont pertinentes et permettent d’identifier les évolutions technologiques et réglementaires.",
-                "Les informations collectées sont analysées et synthétisées de manière structurée."
+                "Les modèles prédictifs sont efficacement intégrés : L'intégration de modèles prédictifs permet d'optimiser les processus de décision en facilitant l'automatisation et l'amélioration continue des opérations métiers.",
+                "Les pratiques de MLOps augmentent l'efficacité opérationnelle : L'application des méthodes de machine learning et des pratiques de MLOps permet de tenir compte des contraintes de qualité des données, de puissance de calcul et des objectifs de performance, augmentant ainsi l'efficacité opérationnelle et la compétitivité de l'entreprise."
             ]
         },
         {
             "code": "Cr33",
-            "description": "Analyse du système d’information existant",
+            "description": "Efficacité des outils de surveillance",
             "indicators": [
-                "Les forces, faiblesses et contraintes techniques du système d’information sont correctement identifiées.",
-                "L’analyse de l’existant permet de mettre en évidence des axes d’amélioration pertinents."
+                "Les systèmes automatisés sont surveillés de manière efficace : L'utilisation d'outils de monitoring permet de garantir une surveillance continue des systèmes automatisés, assurant ainsi leur performance et leur fiabilité.",
+                "Les mises à jour régulières maintiennent la performance et la fiabilité : L'exécution régulière des mises à jour permet de maintenir et d'optimiser la performance et la fiabilité des systèmes automatisés."
             ]
         },
         {
             "code": "Cr34",
-            "description": "Définition de la stratégie d’évolution",
+            "description": "Qualité de la documentation",
             "indicators": [
-                "Les orientations technologiques proposées sont cohérentes avec les objectifs de l’organisation.",
-                "Les solutions proposées permettent d’améliorer la performance, la sécurité et la pérennité du système."
+                "La documentation de support est complète et claire : La rédaction de la documentation de support et des spécifications des éléments de services ou modèles développés permet de garantir une compréhension claire et une adoption efficace des systèmes automatisés par les utilisateurs.",
+                "Les utilisateurs adoptent et utilisent efficacement les technologies : La documentation fournie permet aux utilisateurs d'adopter rapidement et d'utiliser de manière optimale les technologies déployées, assurant ainsi leur efficacité opérationnelle."
             ]
         },
         {
             "code": "Cr35",
-            "description": "Évaluation des impacts des choix technologiques",
+            "description": "Amélioration continue des processus d'automatisation",
             "indicators": [
-                "Les impacts techniques, organisationnels et financiers sont identifiés et analysés.",
-                "L’évaluation des impacts permet d’éclairer la prise de décision stratégique."
-            ]
-        },
-        {
-            "code": "Cr36",
-            "description": "Présentation et argumentation des recommandations",
-            "indicators": [
-                "Les recommandations technologiques sont présentées de manière claire et structurée.",
-                "L’argumentation permet de faciliter la prise de décision et l’adhésion des parties prenantes."
+                "Les KPI et outils d'analyse sont utilisés efficacement : L'utilisation efficace des indicateurs clés de performance (KPI) et des outils d'analyse de données permet de mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation.",
+                "Les améliorations et ajustements nécessaires sont identifiés : Les sondages de satisfaction des employés et des clients, ainsi que les audits de processus, permettent d'identifier les améliorations et ajustements nécessaires pour maximiser l'efficacité opérationnelle et la satisfaction des parties prenantes, tout en tenant compte des contraintes budgétaires, des délais de mise en œuvre et des exigences de conformité."
             ]
         }
     ],
     "modalities": {
-        "format": "Étude de cas et soutenance orale",
-        "delivery": "Individuelle",
-        "totalDuration": "1 à 3 jours + 20 mn"
+        "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
+        "delivery": "Partie 1 : Mise en place d’une automatisation ; Partie 2 : Rédaction documentation",
+        "totalDuration": "6h00"
     },
     "exam": {
         "parts": [
             {
                 "code": "E6-P1",
-                "title": "Analyse stratégique et recommandations technologiques",
+                "title": "Mise en place d’une automatisation",
                 "type": "Épreuve écrite",
-                "coefficient": 6,
-                "points": 120,
-                "duration": "1 à 3 jours"
+                "coefficient": 4,
+                "points": 80,
+                "duration": "3h00"
             },
             {
                 "code": "E6-P2",
-                "title": "Soutenance des recommandations technologiques",
-                "type": "Épreuve orale",
-                "coefficient": 4,
-                "points": 80,
-                "duration": "20 mn"
+                "title": "Rédaction Documentation",
+                "type": "Épreuve écrite",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "3h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 100,
-            "compensationMin": 70,
-            "remedialBelow": 70,
-            "blockThreshold": 100
+            "evaluationThreshold": 60,
+            "compensationMin": 42,
+            "remedialBelow": 42,
+            "blockThreshold": 120
         }
     }
 }

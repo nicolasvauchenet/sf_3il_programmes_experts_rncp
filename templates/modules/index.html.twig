@@ -24,15 +24,11 @@
             <article>
                 <div class="app-grid third">
                     <section class="app-section centered">
-                        <h1>{{ module.title ?: 'Matière' }}</h1>
-
-                        <h3 class="text-center">{{ promotionContext.promotionTitle }}</h3>
+                        <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
-                            <h4 class="text-center mb-0">Fiche Matière - Bloc {{ module.blocCode }}</h4>
-                            <p class="subtitle">
-                                {{ module.blocName }}
-                            </p>
+                            <h4 class="text-center">Bloc {{ module.blocCode }} - Fiche Compétence</h4>
+                            <h1>{{ module.title ?: 'Matière' }}</h1>
                         </div>
 
                         <div class="ribbon mt-2">
@@ -44,9 +40,9 @@
                                 <span class="app-badge">{{ module.moduleCode }}</span>
                             {% endif %}
 
-                            <span class="app-badge">
+                            {# <span class="app-badge">
                                 {{ module.durationDays }}j • {{ module.durationHours }}h
-                            </span>
+                            </span> #}
                         </div>
                     </section>
 
@@ -73,13 +69,50 @@
                     </section>
                 {% endif %}
 
-                {% if module.skills is not empty %}
+                {% if module.skillsWithCriteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Compétences mobilisées</h2>
+
+                        {% for s in module.skillsWithCriteria %}
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <p>
+                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (module.blocCode ~ s.code) | lower}) }}"
+                                       target="_blank">
+                                        <strong>Compétence {{ s.code }}</strong>
+                                    </a>
+                                    :
+                                    {{ s.description }}
+                                </p>
+                            </section>
+
+                            {% if s.criteria is not empty %}
+                                <section class="app-section sub">
+                                    <p class="mb-1">
+                                        <strong>Critères d’évaluation</strong>
+                                    </p>
+
+                                    <ul>
+                                        {% for criterion in s.criteria %}
+                                            <li>{{ criterion }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </section>
+                            {% endif %}
+                        {% endfor %}
+                    </section>
+                {% elseif module.skills is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Compétences mobilisées</h2>
+
                         {% for s in module.skills %}
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <p>
-                                    <strong>Compétence {{ s.code }}</strong> : {{ s.description }}
+                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (module.blocCode ~ s.code) | lower}) }}"
+                                       target="_blank">
+                                        <strong>Compétence {{ s.code }}</strong>
+                                    </a>
+                                    :
+                                    {{ s.description }}
                                 </p>
                             </section>
                         {% endfor %}
@@ -108,7 +141,7 @@
 
                 {% if module.exercises is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Exercices</h2>
+                        <h2>Exemples d'Exercices</h2>
 
                         {% for ex in module.exercises %}
                             {% set title = ex.title ?? 'Exercice' %}
@@ -138,33 +171,6 @@
                         {% endfor %}
                     </section>
                 {% endif %}
-
-                <div class="app-grid two">
-                    {% if module.bibliography is not empty %}
-                        <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Bibliographie</h2>
-                            <ul>
-                                {% for b in module.bibliography %}
-                                    <li>
-                                        <em>{{ b.title ?? '-' }}</em>
-                                        {% if b.author is defined and b.author %} - {{ b.author }}{% endif %}
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </section>
-                    {% endif %}
-
-                    {% if module.teachingMethods is not empty %}
-                        <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Méthodes pédagogiques</h2>
-                            <ul>
-                                {% for m in module.teachingMethods %}
-                                    <li>{{ m }}</li>
-                                {% endfor %}
-                            </ul>
-                        </section>
-                    {% endif %}
-                </div>
             </article>
         </div>
     </main>

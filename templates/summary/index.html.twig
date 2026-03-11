@@ -12,7 +12,8 @@
                 <h1>{{ structure.meta.programTitle ?? 'Résumé du Référentiel' }}</h1>
 
                 <p class="subtitle">
-                    Tableau de bord du référentiel : visualisation de la répartition des blocs de compétences, des matières enseignées, des compétences et des évaluations du programme.
+                    Tableau de bord du référentiel : visualisation de la répartition des blocs de compétences, des
+                    matières enseignées, des compétences et des évaluations du programme.
                 </p>
 
                 <div class="ribbon">
@@ -23,10 +24,35 @@
             </section>
 
             <section class="app-section">
-                <h2>Structure du référentiel</h2>
+                <div class="app-grid third">
+                    <div class="grid-item">
+                        <h2>Structure du référentiel</h2>
 
-                <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(referentialVolumeChart) }}
+                        <div class="summary-card" style="height: 200px;">
+                            {{ render_chart(referentialVolumeChart) }}
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <h2>Téléchargements</h2>
+                        <div class="app-grid mt-2">
+                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/referentiel-rncp.pdf') }}"
+                               class="app-button download"
+                               target="_blank">
+                                Référentiel RNCP
+                            </a>
+                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/matrice-de-couverture.xlsx') }}"
+                               class="app-button download"
+                               target="_blank">
+                                Matrice de couverture
+                            </a>
+                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/reglement-des-examens.pdf') }}"
+                               class="app-button download"
+                               target="_blank">
+                                Règlement des examens
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

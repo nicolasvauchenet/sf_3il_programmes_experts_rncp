@@ -1,66 +1,65 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39608-EC08",
-        "title": "Étude de faisabilité et définition des exigences techniques",
-        "rncpCode": "39608",
-        "blocCode": "BC04",
-        "blocName": "Conduire la gestion de projets d’infrastructure systèmes et réseaux sécurisée",
+        "code": "RNCP39611-EC08",
+        "title": "Administration des systèmes de sécurité et des contrôles d’accès",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de Cybersécurité pour la protection des données.",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 8,
-    "description": "Rédaction d'une étude d'avant-projet.",
+    "description": "À partir d'une étude de cas d'une infrastructure réseau d'entreprise, le candidat proposera un rapport d’analyse et de préconisations d'amélioration de l'existant.",
     "skills": [
         {
-            "code": "C23",
-            "description": "Analyser les besoins opérationnels et les traduire en exigences fonctionnelles et techniques détaillées, en conduisant des études de faisabilité et en évaluant les options technologiques, pour définir des solutions informatiques qui s'alignent avec les objectifs stratégiques de l'entreprise."
+            "code": "C18",
+            "description": "Implémenter les outils et systèmes de sécurité tels que les pares-feux, les IDS/IPS"
         },
         {
-            "code": "C24",
-            "description": "Rédiger des documents de spécification technique qui serviront de référence pour les décisions technologiques et les investissements, en assurant que les solutions choisies soient viables, rentables et conformes aux normes de l'industrie."
+            "code": "C19",
+            "description": "Administrer les systèmes de gestion des identités et des accès (IAM)"
         }
     ],
     "criteria": [
         {
-            "code": "Cr23",
-            "description": "Analyse des Besoins",
+            "code": "Cr18",
+            "description": "Protection et détection des intrusions",
             "indicators": [
-                "Exhaustivité de l'analyse : Au moins 80% des besoins des utilisateurs et des parties prenantes sont identifiés par rapport à ceux mentionnés dans les résultats d'enquêtes et d'interviews. L'intégralité des sources a été exploitée.",
-                "Précision de l'identification des objectifs : Les objectifs identifiés par le candidat couvrent 100% des objectifs émis par les utilisateurs.",
-                "Qualité des choix technologiques définies : Les choix technologiques en termes de protocole de communication, équipements réseau, technologie de virtualisation proposés correspondent aux besoins exprimés."
+                "Qualité des choix des outils : Les outils sélectionnés pour la protection et la détection des intrusions répondent aux besoins de l'environnement spécifique de l'entreprise",
+                "Qualité des règles de filtrage : Les règles de filtrage permettent d' alerter et de bloquer les activités suspectes sans impacter négativement l'activité de l'entreprise",
+                "Pertinence du ou des outils : La configuration du ou des outils de détection optimise la capacité à identifier et répondre rapidement aux tentatives d'intrusion"
             ]
         },
         {
-            "code": "Cr24",
-            "description": "Rédaction de Documents de Projet",
+            "code": "Cr19",
+            "description": "Gestions des politiques d'accès",
             "indicators": [
-                "Conformité du cahier des charges : Le cahier des charges, la note de cadrage correspondent aux exigences établies par les parties prenantes et les standards de l'entreprise.",
-                "Clarté et précision : Les documents sont rédigés de manière précise et compréhensible par les différentes parties prenantes.",
-                "Solutions techniques et performance : Les solutions techniques et leurs performances attendues sont correctement évaluées et décrites dans les documents de projet."
+                "Qualité des propositions pour les systèmes de gestion des identités : Les propositions faites pour le système de gestion des identités facilité une compréhension approfondie des exigences de sécurité et faciliter une gestion efficace et sécurisée des accès utilisateurs.",
+                "Pertinence des politiques d’accès : Les politiques d'accès proposées sont pertinentes et alignées avec les niveaux de sécurité requis par l'organisation."
             ]
         }
     ],
     "modalities": {
-        "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Rédaction d'une étude d'avant-projet",
-        "totalDuration": "4h00"
+        "format": "Mise en situation reconstituée sur ordinateur",
+        "delivery": "Rapport d’analyse et de préconisations d'amélioration de l'existant",
+        "totalDuration": "3h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E10",
-                "title": "Rédaction d'une étude d'avant-projet",
+                "code": "E8",
+                "title": "Rapport d’analyse et de préconisations d'amélioration de l'existant",
                 "type": "Épreuve écrite",
                 "coefficient": 3,
                 "points": 60,
-                "duration": "4h00"
+                "duration": "3h00"
             }
         ],
         "validation": {
             "evaluationThreshold": 30,
             "compensationMin": 21,
             "remedialBelow": 21,
-            "blockThreshold": 110
+            "blockThreshold": 100
         }
     }
 }

@@ -26,7 +26,7 @@
     ],
     "criteria": [
         {
-            "code": "C18",
+            "code": "Cr1",
             "description": "Évaluation des Besoins et Intégration des Solutions Cloud",
             "indicators": [
                 "Compréhension des Besoins: Les besoins actuels et futurs de l'entreprise pour la transformation numérique sont identifiés et détaillés avec précision.",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "code": "C19",
+            "code": "Cr2",
             "description": "Analyse Technique pour la Sélection de l'Architecture d'Application",
             "indicators": [
                 "Analyse des Structures: Les structures d'architecture d'application sélectionnées comme monolithique, microservices, serverless, ou n-tiers répondent aux besoins et contraintes spécifiques de l'application.",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "code": "C20",
+            "code": "Cr3",
             "description": "Administration et Rationalisation des Plateformes Cloud",
             "indicators": [
                 "Optimisation des Ressources: L'équilibre entre les coûts et les performances est démontré.",
@@ -54,7 +54,7 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Épreuve individuelle",
+        "delivery": "Rédaction d'un rapport d'audit avec description et justification de la solution technique",
         "totalDuration": "4h00"
     },
     "exam": {

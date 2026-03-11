@@ -23,15 +23,17 @@
 
             <article>
                 <div class="app-grid third">
-                    <section class="app-section">
-                        <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
+                    <section class="app-section centered">
+                        <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
-                        <h3 class="text-center">{{ promotionContext.promotionTitle }}</h3>
+                        <div class="info">
+                            <h4 class="text-center">Bloc {{ evaluation.blocCode }} - Fiche Compétence</h4>
+                            <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
+                        </div>
 
-                        <h4 class="text-center mb-0">Fiche Évaluation - Bloc {{ evaluation.blocCode }}</h4>
-                        <p class="subtitle">
-                            {{ evaluation.blocName }}
-                        </p>
+                        {% if evaluation.description %}
+                            <p class="subtitle">{{ evaluation.description }}</p>
+                        {% endif %}
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
@@ -46,7 +48,7 @@
                         </div>
                     </section>
 
-                    <section class="app-section">
+                    <section class="app-section centered">
                         <h2>Métriques</h2>
 
                         <div style="height: 200px;">
@@ -54,13 +56,6 @@
                         </div>
                     </section>
                 </div>
-
-                {% if evaluation.description %}
-                    <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Description</h2>
-                        <p>{{ evaluation.description }}</p>
-                    </section>
-                {% endif %}
 
                 {% if evaluation.format or evaluation.delivery or evaluation.totalDuration %}
                     <section class="app-section mx-0 mt-2 mb-0">
@@ -85,6 +80,7 @@
                         {% if examParts | length > 1 %}
                         <div class="app-grid two">
                             {% endif %}
+
                             {% for part in examParts %}
                                 <section class="app-section mx-0 my-0">
                                     <h3 class="mb-0">{{ evaluation.evaluationCode }}.{{ loop.index }}</h3>
@@ -109,51 +105,49 @@
                                     </p>
                                 </section>
                             {% endfor %}
+
                             {% if examParts | length > 1 %}
                         </div>
                         {% endif %}
                     </section>
                 {% endif %}
 
-                {% if evaluation.skills is not empty %}
+                {% if evaluation.skillsWithCriteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Compétences mobilisées</h2>
 
-                        {% for s in evaluation.skills %}
+                        {% for s in evaluation.skillsWithCriteria %}
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <p>
-                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (evaluation.blocCode ~ s.code) | lower}) }}" target="_blank">
+                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (evaluation.blocCode ~ s.code) | lower}) }}"
+                                       target="_blank">
                                         <strong>Compétence {{ s.code }}</strong>
                                     </a>
-                                    <br/>
+                                    :
                                     {{ s.description }}
                                 </p>
                             </section>
-                        {% endfor %}
-                    </section>
-                {% endif %}
 
-                {% if evaluation.criteria is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Critères d’évaluation</h2>
+                            {% if s.criteria is not empty %}
+                                <section class="app-section sub">
+                                    {% for criterion in s.criteria %}
+                                        {% set criterionDescription = criterion.description|trim %}
+                                        {% set skillDescription = s.description|trim %}
 
-                        {% for criterion in evaluation.criteria %}
-                            <section class="app-section mx-0 mb-2">
-                                <h3>
-                                    Critère {{ criterion.code }} :
-                                    {% if criterion.description %}
-                                        {{ criterion.description }}
-                                    {% endif %}
-                                </h3>
+                                        <p class="mb-1">
+                                            <strong>Critère {{ criterion.code }}</strong>
+                                        </p>
 
-                                {% if criterion.indicators is defined and criterion.indicators is not empty %}
-                                    <ul>
-                                        {% for indicator in criterion.indicators %}
-                                            <li>{{ indicator }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                {% endif %}
-                            </section>
+                                        {% if criterion.indicators is defined and criterion.indicators is not empty %}
+                                            <ul>
+                                                {% for indicator in criterion.indicators %}
+                                                    <li>{{ indicator }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    {% endfor %}
+                                </section>
+                            {% endif %}
                         {% endfor %}
                     </section>
                 {% endif %}

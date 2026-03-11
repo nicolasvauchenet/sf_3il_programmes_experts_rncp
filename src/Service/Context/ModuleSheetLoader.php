@@ -60,6 +60,7 @@ final class ModuleSheetLoader
             path: $path,
             meta: $meta,
             skills: $skills,
+            skillsWithCriteria: [],
             objectives: $objectives,
             prerequisites: $prerequisites,
             outline: $outline,
@@ -89,13 +90,14 @@ final class ModuleSheetLoader
             if (!is_string($code) || $code === '') {
                 continue;
             }
+
             if (!is_string($desc) || $desc === '') {
                 continue;
             }
 
             $out[] = [
-                'code' => $code,
-                'description' => $desc,
+                'code' => trim($code),
+                'description' => trim($desc),
             ];
         }
 
@@ -118,7 +120,8 @@ final class ModuleSheetLoader
             if (!is_string($item) || $item === '') {
                 continue;
             }
-            $out[] = $item;
+
+            $out[] = trim($item);
         }
 
         return $out;
