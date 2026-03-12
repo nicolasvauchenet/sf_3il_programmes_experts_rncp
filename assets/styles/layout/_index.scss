@@ -14,5 +14,11 @@ html {
         @import "./toc";
         @import "./form";
         @import "./footer";
+
+        &:not(:has(.app-navigation)) {
+            .app-footer {
+                margin-bottom: 0;
+            }
+        }
     }
 }
