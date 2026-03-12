@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "EC01",
+        "title": "Épreuve certifiante 1",
+        "academicYear": "2025-2026",
+        "rncpCode": "RNCP39608",
+        "blocCode": "BC01",
+        "blocName": "Conception"
+    },
+    "evaluationNumber": 1,
+    "description": "  Réaliser une première évaluation certifiante.  ",
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Concevoir une architecture"
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr01",
+            "title": "Critère 1",
+            "description": "Description 1",
+            "indicators": [
+                "Indicateur 1",
+                " Indicateur 2 "
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Projet",
+        "delivery": "Individuel",
+        "totalDuration": "4h"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "EC01",
+                "title": "Partie 1"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 10,
+            "compensationMin": 8,
+            "remedialBelow": 6,
+            "blockThreshold": 10
+        }
+    }
+}

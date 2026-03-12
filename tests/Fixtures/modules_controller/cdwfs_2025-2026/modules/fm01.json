@@ -1,0 +1,54 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM01",
+        "title": "Architecture logicielle",
+        "academicYear": "2025-2026",
+        "blocCode": "BC01",
+        "blocName": "Conception",
+        "durationDays": 5,
+        "durationHours": 35
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Concevoir une architecture robuste"
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes d’architecture logicielle."
+    },
+    "prerequisites": {
+        "description": "Connaître les bases de la programmation orientée objet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Introduction",
+                "items": [
+                    "Définitions",
+                    "Contraintes"
+                ]
+            },
+            {
+                "title": "Patterns",
+                "items": [
+                    "MVC",
+                    "Hexagonal"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Étude de cas",
+            "context": "Application métier existante",
+            "objective": "Identifier une architecture adaptée"
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": [
+        "Cours",
+        "Atelier"
+    ]
+}

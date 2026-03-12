@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "C2",
+        "title": "Implémenter une solution",
+        "academicYear": "2025-2026",
+        "blocCode": "BC02",
+        "blocName": "Développement"
+    },
+    "description": "   ",
+    "criteria": [
+        " Écrire du code propre ",
+        "",
+        "Tester le code",
+        false,
+        null,
+        "   "
+    ]
+}

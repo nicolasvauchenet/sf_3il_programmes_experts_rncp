@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM01",
+        "title": "Architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C1",
+            "description": "Modéliser une architecture"
+        }
+    ]

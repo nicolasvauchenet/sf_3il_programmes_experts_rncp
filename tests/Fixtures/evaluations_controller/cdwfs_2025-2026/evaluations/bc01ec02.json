@@ -1,0 +1,52 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "EC02",
+        "title": "Épreuve certifiante 2",
+        "academicYear": "2025-2026",
+        "rncpCode": "RNCP39608",
+        "blocCode": "BC01",
+        "blocName": "Conception"
+    },
+    "evaluationNumber": 2,
+    "description": "Deuxième évaluation orientée développement Symfony.",
+    "skills": [
+        {
+            "code": "C02",
+            "description": "Développer une application Symfony"
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr02",
+            "title": "Critère 2",
+            "description": "Qualité de l’implémentation",
+            "indicators": [
+                "Structurer le code",
+                "Respecter les conventions Symfony"
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Étude de cas",
+        "delivery": "Collectif",
+        "totalDuration": "6h"
+    },
+    "exam": {
+        "parts": [
+            {
+                "title": "Production technique",
+                "type": "Projet",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "6h"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 12,
+            "compensationMin": 9,
+            "remedialBelow": 7,
+            "blockThreshold": 10
+        }
+    }
+}

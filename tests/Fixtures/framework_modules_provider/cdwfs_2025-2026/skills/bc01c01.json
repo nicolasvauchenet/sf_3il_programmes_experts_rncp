@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC01-C01",
+        "title": "Skill C01 BC01",
+        "academicYear": "2025-2026",
+        "blocCode": "BC01",
+        "blocName": "Conception",
+        "rncpCode": "RNCP39608"
+    },
+    "description": "Description BC01",
+    "criteria": [
+        "Critère BC01 - A",
+        "Critère BC01 - B"
+    ]
+}

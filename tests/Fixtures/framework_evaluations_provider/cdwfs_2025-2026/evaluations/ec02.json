@@ -1,0 +1,64 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "EC02",
+        "title": "Épreuve certifiante 2",
+        "academicYear": "2025-2026",
+        "rncpCode": "RNCP39608",
+        "blocCode": "BC02",
+        "blocName": "Développement"
+    },
+    "evaluationNumber": 2,
+    "description": "Deuxième évaluation.",
+    "skills": [
+        {
+            "code": "C02",
+            "description": "Développer une application"
+        },
+        {
+            "code": "C09",
+            "description": "Compétence inconnue"
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr02",
+            "title": "Critère 2",
+            "description": "Description 2",
+            "indicators": [
+                "Indicateur A"
+            ]
+        },
+        {
+            "code": "Cr09",
+            "title": "Critère 9",
+            "description": "Description 9",
+            "indicators": [
+                "Indicateur Z"
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Étude de cas",
+        "delivery": "Collectif",
+        "totalDuration": "6h"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "EC01",
+                "title": "Analyse"
+            },
+            {
+                "code": "EC02",
+                "title": "Production"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 12,
+            "compensationMin": 9,
+            "remedialBelow": 7,
+            "blockThreshold": 10
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "EC01",
+        "title": "Épreuve certifiante 1",
+        "academicYear": "2025-2026",
+        "rncpCode": "RNCP39608",
+        "blocCode": "BC01",
+        "blocName": "Conception"
+    },
+    "evaluationNumber": 1,
+    "description": "Première évaluation centrée sur l’analyse et la conception.",
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Concevoir une architecture"
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr01",
+            "title": "Critère 1",
+            "description": "Qualité de l’analyse",
+            "indicators": [
+                "Identifier les besoins",
+                "Justifier les choix"
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Projet",
+        "delivery": "Individuel",
+        "totalDuration": "4h"
+    },
+    "exam": {
+        "parts": [
+            {
+                "title": "Analyse du besoin",
+                "type": "Étude",
+                "coefficient": 1,
+                "points": 20,
+                "duration": "2h"
+            },
+            {
+                "title": "Conception de solution",
+                "type": "Dossier",
+                "coefficient": 1,
+                "points": 20,
+                "duration": "2h"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 10,
+            "compensationMin": 8,
+            "remedialBelow": 6,
+            "blockThreshold": 10
+        }
+    }
+}

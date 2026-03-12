@@ -1,0 +1,67 @@
+{
+    "meta": {
+        "datasetCode": "cdwfs_2025-2026",
+        "rncpCode": "RNCP39608",
+        "programCode": "CDWFS",
+        "programTitle": "Bachelor Développeur Web Full Stack",
+        "academicYear": "2025-2026"
+    },
+    "blocks": [
+        {
+            "code": "BC01",
+            "title": "Conception"
+        },
+        {
+            "code": "BC02",
+            "title": "Développement"
+        }
+    ],
+    "modules": [
+        {
+            "code": "FM01",
+            "fullCode": "RNCP39608-BC01-FM01",
+            "title": "Module BC01",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "FM02",
+            "fullCode": "RNCP39608-BC02-FM02",
+            "title": "Module BC02",
+            "blockCode": "BC02"
+        }
+    ],
+    "skills": [
+        {
+            "code": "C1",
+            "title": "Concevoir en BC01",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39608-BC01-FM01"
+            ],
+            "evaluations": [
+                "EC01"
+            ]
+        },
+        {
+            "code": "C1",
+            "title": "Concevoir en BC02",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39608-BC02-FM02"
+            ],
+            "evaluations": [
+                "EC02"
+            ]
+        }
+    ],
+    "evaluations": [
+        {
+            "code": "EC01",
+            "blockCode": "BC01"
+        },
+        {
+            "code": "EC02",
+            "blockCode": "BC02"
+        }
+    ]
+}

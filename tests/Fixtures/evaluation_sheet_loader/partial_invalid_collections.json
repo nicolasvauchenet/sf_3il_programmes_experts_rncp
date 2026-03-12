@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "EC99",
+        "title": "Évaluation partielle",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": "7",
+    "description": 12345,
+    "skills": "not-an-array",
+    "criteria": "still-not-an-array",
+    "modalities": "broken",
+    "exam": false
+}

@@ -1,0 +1,32 @@
+{
+    "meta": {
+        "datasetCode": "cdwfs_2025-2026",
+        "certificationName": "Bachelor Développeur Web Full Stack",
+        "rncpCode": "39608",
+        "academicYear": "2025-2026"
+    },
+    "blocks": [
+        {
+            "code": "BC01",
+            "title": "Bloc 1"
+        }
+    ],
+    "modules": [
+        {
+            "code": "FM01",
+            "title": "Module 1"
+        }
+    ],
+    "skills": [
+        {
+            "code": "C1",
+            "description": "Compétence 1"
+        }
+    ],
+    "evaluations": [
+        {
+            "code": "EC01",
+            "title": "Évaluation 1"
+        }
+    ]
+}

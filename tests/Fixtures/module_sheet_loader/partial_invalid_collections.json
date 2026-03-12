@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM99",
+        "title": "Module partiel",
+        "academicYear": "2025-2026"
+    },
+    "skills": "not-an-array",
+    "objectives": "not-an-array",
+    "prerequisites": false,
+    "outline": null,
+    "exercises": "broken",
+    "bibliography": 123,
+    "teachingMethods": "still-not-an-array"
+}

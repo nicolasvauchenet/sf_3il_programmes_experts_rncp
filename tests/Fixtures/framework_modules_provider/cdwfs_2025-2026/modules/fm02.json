@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM02",
+        "title": "Module BC02",
+        "academicYear": "2025-2026",
+        "blocCode": "BC02",
+        "blocName": "Développement"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Compétence commune"
+        },
+        {
+            "code": "C09",
+            "description": "Compétence inconnue"
+        }
+    ]
+}

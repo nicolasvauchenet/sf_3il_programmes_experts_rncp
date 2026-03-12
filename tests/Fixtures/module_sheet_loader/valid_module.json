@@ -1,0 +1,60 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM01",
+        "title": "Architecture logicielle",
+        "academicYear": "2025-2026",
+        "blocCode": "BC01",
+        "blocName": "Conception",
+        "durationDays": 5,
+        "durationHours": 35
+    },
+    "skills": [
+        {
+            "code": "C1",
+            "description": "Modéliser une architecture"
+        },
+        {
+            "code": " C2 ",
+            "description": " Concevoir une solution logicielle "
+        },
+        {
+            "code": "",
+            "description": "Ne doit pas remonter"
+        },
+        {
+            "code": "C3"
+        },
+        "n'importe quoi"
+    ],
+    "objectives": {
+        "summary": "Comprendre les bases"
+    },
+    "prerequisites": {
+        "level": "Intermédiaire"
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Intro"
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Exercice 1"
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Clean Architecture"
+        }
+    ],
+    "teachingMethods": [
+        "Cours magistral",
+        " Atelier pratique ",
+        "",
+        42,
+        null
+    ]
+}

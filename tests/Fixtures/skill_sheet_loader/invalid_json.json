@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "C1",
+        "title": "Concevoir une architecture logicielle",
+        "academicYear": "2025-2026",
+        "blocCode": "BC01",
+        "blocName": "Conception"
+    },
+    "criteria": [
+        "Identifier les besoins"
+    ]

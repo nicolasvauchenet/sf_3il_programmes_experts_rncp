@@ -1,0 +1,85 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "EC01",
+        "title": "Épreuve certifiante 1",
+        "academicYear": "2025-2026",
+        "rncpCode": "RNCP39608",
+        "blocCode": "BC01",
+        "blocName": "Conception"
+    },
+    "evaluationNumber": 1,
+    "description": "  Réaliser une première évaluation certifiante.  ",
+    "skills": [
+        {
+            "code": "C1",
+            "description": "Concevoir une architecture"
+        },
+        {
+            "code": " C2 ",
+            "description": " Développer une application "
+        },
+        {
+            "code": "",
+            "description": "Ne doit pas remonter"
+        },
+        {
+            "code": "C3"
+        },
+        "n'importe quoi"
+    ],
+    "criteria": [
+        {
+            "code": "CR1",
+            "title": "Critère 1",
+            "description": "Description 1",
+            "indicators": [
+                "Indicateur 1",
+                " Indicateur 2 ",
+                "",
+                null,
+                42
+            ]
+        },
+        {
+            "code": " CR2 ",
+            "title": " Critère 2 ",
+            "description": " Description 2 ",
+            "indicators": [
+                " Indicateur A "
+            ]
+        },
+        {
+            "code": "CR9",
+            "title": "Critère orphelin",
+            "description": "Ne matche aucune skill",
+            "indicators": [
+                "Seul"
+            ]
+        },
+        {
+            "code": "",
+            "title": "Invalide",
+            "description": "Doit sauter"
+        }
+    ],
+    "modalities": {
+        "format": "Projet",
+        "delivery": "Individuel",
+        "totalDuration": "4h"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E1",
+                "title": "Partie 1"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 10,
+            "compensationMin": 8,
+            "remedialBelow": 6,
+            "blockThreshold": 10
+        }
+    }
+}

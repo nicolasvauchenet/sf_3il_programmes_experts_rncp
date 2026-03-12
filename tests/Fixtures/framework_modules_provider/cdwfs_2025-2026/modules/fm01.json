@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM01",
+        "title": "Module BC01",
+        "academicYear": "2025-2026",
+        "blocCode": "BC01",
+        "blocName": "Conception"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Compétence commune"
+        }
+    ]
+}

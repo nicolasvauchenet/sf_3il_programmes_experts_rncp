@@ -114,7 +114,7 @@
                             {% for evaluation in skill.evaluations %}
                                 <section class="app-section mb-2">
                                     <p>
-                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ evaluation.code) | lower}) }}"
+                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (evaluation.code) | lower}) }}"
                                            target="_blank">
                                             <strong>{{ evaluation.code }}</strong>
                                         </a>

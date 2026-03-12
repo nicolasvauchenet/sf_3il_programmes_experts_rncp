@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "FM02",
+        "title": "Symfony avancé",
+        "academicYear": "2025-2026",
+        "blocCode": "BC01",
+        "blocName": "Conception",
+        "durationDays": 4,
+        "durationHours": 28
+    },
+    "skills": [
+        {
+            "code": "C02",
+            "description": "Développer une application Symfony maintenable"
+        }
+    ],
+    "objectives": {
+        "description": "Approfondir les composants et bonnes pratiques Symfony."
+    },
+    "prerequisites": {
+        "description": "Avoir déjà développé une application Symfony simple."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Services et DI",
+                "items": [
+                    "Autowiring",
+                    "Configuration"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Refactorisation de contrôleur",
+            "objective": "Extraire la logique métier dans des services"
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": [
+        "TP",
+        "Projet"
+    ]
+}
