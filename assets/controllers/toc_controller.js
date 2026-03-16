@@ -1,11 +1,17 @@
 import {Controller} from '@hotwired/stimulus';
 
 export default class extends Controller {
-    static targets = ['backdrop', 'panel', 'trigger'];
+    static targets = ['backdrop', 'panel', 'trigger', 'desktopNav', 'mobileNav'];
+
+    static values = {
+        selectedCode: String,
+    };
 
     connect() {
         this.isOpen = false;
         this.boundKeydown = this.handleKeydown.bind(this);
+
+        this.scrollDesktopToActiveItem();
     }
 
     disconnect() {
@@ -32,7 +38,9 @@ export default class extends Controller {
             this.triggerTarget.setAttribute('aria-expanded', 'true');
         }
 
-        this.scrollToActiveItem();
+        requestAnimationFrame(() => {
+            this.scrollMobileToActiveItem();
+        });
     }
 
     close() {
@@ -68,16 +76,48 @@ export default class extends Controller {
         }
     }
 
-    scrollToActiveItem() {
-        const activeItem = this.panelTarget.querySelector('.toc a.active');
+    scrollDesktopToActiveItem() {
+        if (!this.hasDesktopNavTarget) {
+            return;
+        }
+
+        this.scrollContainerToActiveItem(this.desktopNavTarget);
+    }
+
+    scrollMobileToActiveItem() {
+        if (!this.hasMobileNavTarget) {
+            return;
+        }
+
+        this.scrollContainerToActiveItem(this.mobileNavTarget);
+    }
+
+    scrollContainerToActiveItem(container) {
+        const activeItem = this.findActiveItem(container);
 
         if (!activeItem) {
             return;
         }
 
-        activeItem.scrollIntoView({
-            block: 'nearest',
+        const targetTop =
+            activeItem.offsetTop - container.clientHeight / 2 + activeItem.clientHeight / 2;
+
+        container.scrollTo({
+            top: Math.max(targetTop, 0),
             behavior: 'smooth',
         });
+    }
+
+    findActiveItem(container) {
+        if (this.hasSelectedCodeValue && this.selectedCodeValue) {
+            const selectedCode = this.selectedCodeValue.toLowerCase();
+            const item = container.querySelector(`a[data-code="${selectedCode}"]`);
+
+            if (item) {
+                return item;
+            }
+        }
+
+        return container.querySelector('a.active');
     }
 }

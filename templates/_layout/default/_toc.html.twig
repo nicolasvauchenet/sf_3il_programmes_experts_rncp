@@ -1,6 +1,7 @@
 <div
     class="app-toc-wrapper"
     data-controller="toc"
+    data-toc-selected-code-value="{{ selectedCode|default('')|lower }}"
 >
     {# Bouton mobile #}
     <div class="app-toc-mobile-trigger">
@@ -33,11 +34,16 @@
             {{ content|length }} {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
         </p>
 
-        <nav class="toc" aria-label="Navigation des {{ title|lower }}s">
+        <nav
+            class="toc"
+            aria-label="Navigation des {{ title|lower }}s"
+            data-toc-target="desktopNav"
+        >
             {% for c in content %}
                 <a
                     href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
                     class="{% if selectedCode == c.fileCode %}active{% endif %}"
+                    data-code="{{ c.fileCode|lower }}"
                 >
                     <span class="app-badge">{{ c.fileCode|upper }}</span>
                     {{ c.meta.title ?? c.fileCode|upper }}
@@ -82,12 +88,17 @@
             </div>
 
             <div class="app-toc app-toc-mobile">
-                <nav class="toc" aria-label="Navigation mobile des {{ title|lower }}s">
+                <nav
+                    class="toc"
+                    aria-label="Navigation mobile des {{ title|lower }}s"
+                    data-toc-target="mobileNav"
+                >
                     {% for c in content %}
                         <a
                             href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
                             class="{% if selectedCode == c.fileCode %}active{% endif %}"
                             data-action="click->toc#close"
+                            data-code="{{ c.fileCode|lower }}"
                         >
                             <span class="app-badge">{{ c.fileCode|upper }}</span>
                             {{ c.meta.title ?? c.fileCode|upper }}
