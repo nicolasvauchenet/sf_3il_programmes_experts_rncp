@@ -2,7 +2,7 @@
 
 {% block title %}
     {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
-    - Matière -
+    - Matière {{ module.moduleCode }} -
     {{ module.title ?: '' }}
 {% endblock %}
 
@@ -27,7 +27,7 @@
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
-                            <h4 class="text-center">Bloc {{ module.blocCode }} - Fiche Matière</h4>
+                            <h4 class="text-center">Fiche Matière {{ module.moduleCode }}</h4>
                             <h1>{{ module.title ?: 'Matière' }}</h1>
                         </div>
 
@@ -40,9 +40,7 @@
                                 <span class="app-badge">{{ module.moduleCode }}</span>
                             {% endif %}
 
-                            {# <span class="app-badge">
-                                {{ module.durationDays }}j • {{ module.durationHours }}h
-                            </span> #}
+                            <span class="app-badge">{{ year }}</span>
                         </div>
                     </section>
 

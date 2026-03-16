@@ -2,8 +2,8 @@
 
 {% block title %}
     {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
-    - Compétence -
-    {{ skill.title() ?: '' }}
+    - Compétence {{ skill.fullSkillCode }} -
+    {{ skill.title ?: '' }}
 {% endblock %}
 
 {% block body %}
@@ -27,15 +27,15 @@
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
-                            <h4 class="text-center">Bloc {{ skill.blocCode }} - Fiche Compétence</h4>
-                            <h1>{{ skill.title() ?: 'Compétence' }}</h1>
+                            <h4 class="text-center">Fiche Compétence {{ skill.fullSkillCode }}</h4>
+                            <h1>{{ skill.title ?: 'Compétence' }}</h1>
                         </div>
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
-                            <span class="app-badge">{{ skill.fullSkillCode() }}</span>
-                            {% if skill.academicYear() %}
-                                <span class="app-badge">{{ skill.academicYear() }}</span>
+                            <span class="app-badge">{{ skill.fullSkillCode }}</span>
+                            {% if skill.academicYear %}
+                                <span class="app-badge">{{ skill.academicYear }}</span>
                             {% endif %}
                         </div>
                     </section>
