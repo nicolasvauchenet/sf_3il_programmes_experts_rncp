@@ -1,9 +1,13 @@
 <?php
 
-namespace App\Service\Context;
+namespace App\Service\Context\Provider;
 
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Dto\Context\SkillSheet;
+use App\Service\Context\FrameworkFolderScanner;
+use App\Service\Context\Loader\FrameworkStructureLoader;
+use App\Service\Context\Loader\SkillSheetLoader;
+use App\Service\Context\SkillSheetResolver;
 
 final readonly class FrameworkSkillsProvider
 {

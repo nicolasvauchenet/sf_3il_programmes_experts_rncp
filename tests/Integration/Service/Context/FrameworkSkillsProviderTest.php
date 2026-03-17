@@ -6,9 +6,9 @@ namespace App\Tests\Integration\Service\Context;
 
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Service\Context\FrameworkFolderScanner;
-use App\Service\Context\FrameworkSkillsProvider;
-use App\Service\Context\FrameworkStructureLoader;
-use App\Service\Context\SkillSheetLoader;
+use App\Service\Context\Loader\FrameworkStructureLoader;
+use App\Service\Context\Loader\SkillSheetLoader;
+use App\Service\Context\Provider\FrameworkSkillsProvider;
 use App\Service\Context\SkillSheetResolver;
 use PHPUnit\Framework\TestCase;
 

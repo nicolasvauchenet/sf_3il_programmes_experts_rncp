@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Service\Context;
 
 use App\Dto\Context\EvaluationSheet;
-use App\Service\Context\EvaluationSheetLoader;
+use App\Service\Context\Loader\EvaluationSheetLoader;
 use PHPUnit\Framework\TestCase;
 
 final class EvaluationSheetLoaderTest extends TestCase

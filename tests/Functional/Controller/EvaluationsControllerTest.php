@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Tests\Functional\Controller;
 
-use App\Service\Context\EvaluationSheetLoader;
-use App\Service\Context\FrameworkEvaluationsProvider;
 use App\Service\Context\FrameworkFolderScanner;
+use App\Service\Context\Loader\EvaluationSheetLoader;
+use App\Service\Context\Provider\FrameworkEvaluationsProvider;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 final class EvaluationsControllerTest extends WebTestCase

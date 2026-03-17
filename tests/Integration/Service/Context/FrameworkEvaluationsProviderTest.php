@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Tests\Integration\Service\Context;
 
 use App\Dto\Context\EvaluationSheet;
-use App\Service\Context\EvaluationSheetLoader;
-use App\Service\Context\FrameworkEvaluationsProvider;
 use App\Service\Context\FrameworkFolderScanner;
+use App\Service\Context\Loader\EvaluationSheetLoader;
+use App\Service\Context\Provider\FrameworkEvaluationsProvider;
 use PHPUnit\Framework\TestCase;
 
 final class FrameworkEvaluationsProviderTest extends TestCase

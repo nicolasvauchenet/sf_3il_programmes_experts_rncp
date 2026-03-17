@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Service\Chart\SkillChartService;
-use App\Service\Context\FrameworkSkillsProvider;
+use App\Service\Context\Provider\FrameworkSkillsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

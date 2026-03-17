@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Service\Context;
+namespace App\Service\Context\Provider;
 
 use App\Dto\Context\EvaluationSheet;
+use App\Service\Context\FrameworkFolderScanner;
+use App\Service\Context\Loader\EvaluationSheetLoader;
 
 final readonly class FrameworkEvaluationsProvider
 {

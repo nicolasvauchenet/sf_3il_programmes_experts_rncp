@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Service\Context;
 
 use App\Dto\Context\SkillSheet;
-use App\Service\Context\SkillSheetLoader;
+use App\Service\Context\Loader\SkillSheetLoader;
 use PHPUnit\Framework\TestCase;
 
 final class SkillSheetLoaderTest extends TestCase

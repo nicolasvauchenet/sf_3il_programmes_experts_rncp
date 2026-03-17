@@ -3,7 +3,7 @@
 namespace App\Twig;
 
 use App\Dto\Context\FrameworkStructure;
-use App\Service\Context\FrameworkStructureLoader;
+use App\Service\Context\Loader\FrameworkStructureLoader;
 use Symfony\Component\HttpFoundation\RequestStack;
 
 final class PromotionContext

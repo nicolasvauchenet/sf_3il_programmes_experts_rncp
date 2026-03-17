@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace App\Tests\Functional\Controller;
 
 use App\Service\Context\FrameworkFolderScanner;
-use App\Service\Context\FrameworkModulesProvider;
-use App\Service\Context\FrameworkSkillsProvider;
-use App\Service\Context\FrameworkStructureLoader;
-use App\Service\Context\ModuleSheetLoader;
-use App\Service\Context\SkillSheetLoader;
+use App\Service\Context\Loader\FrameworkStructureLoader;
+use App\Service\Context\Loader\ModuleSheetLoader;
+use App\Service\Context\Loader\SkillSheetLoader;
+use App\Service\Context\Provider\FrameworkModulesProvider;
+use App\Service\Context\Provider\FrameworkSkillsProvider;
 use App\Service\Context\SkillSheetResolver;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Functional\Controller;
 
-use App\Service\Context\AvailableFrameworksProvider;
+use App\Service\Context\Provider\AvailableFrameworksProvider;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 final class HomeControllerTest extends WebTestCase

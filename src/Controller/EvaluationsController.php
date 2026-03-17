@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Service\Chart\EvaluationChartService;
-use App\Service\Context\FrameworkEvaluationsProvider;
+use App\Service\Context\Provider\FrameworkEvaluationsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Context;
+namespace App\Service\Context\Provider;
 
 use App\Dto\Context\ContextReference;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;

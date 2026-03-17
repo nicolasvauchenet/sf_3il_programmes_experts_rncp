@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Service\Context;
 
 use App\Dto\Context\ModuleSheet;
-use App\Service\Context\ModuleSheetLoader;
+use App\Service\Context\Loader\ModuleSheetLoader;
 use PHPUnit\Framework\TestCase;
 
 final class ModuleSheetLoaderTest extends TestCase

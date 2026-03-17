@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Functional\Controller;
 
-use App\Service\Context\FrameworkStructureLoader;
+use App\Service\Context\Loader\FrameworkStructureLoader;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 final class SummaryControllerTest extends WebTestCase

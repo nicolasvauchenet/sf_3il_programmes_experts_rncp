@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Context;
+namespace App\Service\Context\Loader;
 
 use App\Dto\Context\ModuleSheet;
 

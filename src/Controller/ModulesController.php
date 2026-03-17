@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Service\Chart\ModuleChartService;
-use App\Service\Context\FrameworkModulesProvider;
+use App\Service\Context\Provider\FrameworkModulesProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

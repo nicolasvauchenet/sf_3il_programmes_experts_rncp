@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Service\Context;
+namespace App\Service\Context\Provider;
 
 use App\Dto\Context\ModuleSheet;
 use App\Dto\Context\ResolvedSkillSheet;
+use App\Service\Context\FrameworkFolderScanner;
+use App\Service\Context\Loader\ModuleSheetLoader;
 
 final readonly class FrameworkModulesProvider
 {

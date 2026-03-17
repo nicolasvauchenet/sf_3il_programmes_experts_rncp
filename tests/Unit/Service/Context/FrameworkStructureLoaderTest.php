@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Service\Context;
 
 use App\Dto\Context\FrameworkStructure;
-use App\Service\Context\FrameworkStructureLoader;
+use App\Service\Context\Loader\FrameworkStructureLoader;
 use PHPUnit\Framework\TestCase;
 
 final class FrameworkStructureLoaderTest extends TestCase
