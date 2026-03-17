@@ -60,6 +60,10 @@
                 }
             }
 
+            &[hidden] {
+                display: none !important;
+            }
+
             .app-badge {
                 display: block;
                 padding: 0;
@@ -214,5 +218,25 @@ body.toc-drawer-open {
 @include respondTo(sm) {
     .app-toc-drawer-backdrop {
         display: none;
+    }
+}
+
+.app-toc-filter {
+    margin: 1rem 0;
+
+    .app-toc-filter-input {
+        box-sizing: border-box;
+        padding: 0.25rem 0.5rem;
+        width: 100%;
+        font-family: $font-primary;
+        font-size: 1rem;
+        color: $black;
+        background-color: $white;
+        border: 1px solid rgba($black, 0.5);
+        border-radius: 0.5rem;
+
+        @include respondTo(sm) {
+            width: calc(100% - 1.5rem);
+        }
     }
 }

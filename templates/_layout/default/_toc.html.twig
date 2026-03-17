@@ -1,6 +1,6 @@
 <div
     class="app-toc-wrapper"
-    data-controller="toc"
+    data-controller="toc toc-filter"
     data-toc-selected-code-value="{{ selectedCode|default('')|lower }}"
 >
     {# Bouton mobile #}
@@ -34,22 +34,44 @@
             {{ content|length }} {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
         </p>
 
+        <div class="app-toc-filter">
+            <input
+                id="desktop-toc-filter"
+                type="search"
+                class="app-toc-filter-input"
+                placeholder="Filtrer par code ou titre"
+                autocomplete="off"
+                data-toc-filter-target="input"
+                data-action="input->toc-filter#filter search->toc-filter#filter keyup->toc-filter#filter"
+            >
+        </div>
+
         <nav
             class="toc"
             aria-label="Navigation des {{ title|lower }}s"
             data-toc-target="desktopNav"
         >
             {% for c in content %}
+                {% set tocTitle = c.meta.title ?? c.fileCode|upper %}
                 <a
                     href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
                     class="{% if selectedCode == c.fileCode %}active{% endif %}"
-                    data-code="{{ c.fileCode|lower }}"
+                    data-search="{{ (c.fileCode ~ ' ' ~ tocTitle)|lower }}"
+                    data-toc-filter-target="item"
                 >
                     <span class="app-badge">{{ c.fileCode|upper }}</span>
-                    {{ c.meta.title ?? c.fileCode|upper }}
+                    {{ tocTitle }}
                 </a>
             {% endfor %}
         </nav>
+
+        <p
+            class="app-toc-filter-empty"
+            data-toc-filter-target="empty"
+            hidden
+        >
+            Aucun résultat.
+        </p>
     </aside>
 
     {# Bottom drawer mobile #}
@@ -87,6 +109,18 @@
                 </button>
             </div>
 
+            <div class="app-toc-filter">
+                <input
+                    id="mobile-toc-filter"
+                    type="search"
+                    class="app-toc-filter-input"
+                    placeholder="Filtrer par code ou titre"
+                    autocomplete="off"
+                    data-toc-filter-target="input"
+                    data-action="input->toc-filter#filter search->toc-filter#filter keyup->toc-filter#filter"
+                >
+            </div>
+
             <div class="app-toc app-toc-mobile">
                 <nav
                     class="toc"
@@ -94,18 +128,28 @@
                     data-toc-target="mobileNav"
                 >
                     {% for c in content %}
+                        {% set tocTitle = c.meta.title ?? c.fileCode|upper %}
                         <a
                             href="{{ path(path, {'promotion': promotion, 'year': year, 'code': c.fileCode}) }}"
                             class="{% if selectedCode == c.fileCode %}active{% endif %}"
                             data-action="click->toc#close"
-                            data-code="{{ c.fileCode|lower }}"
+                            data-search="{{ (c.fileCode ~ ' ' ~ tocTitle)|lower }}"
+                            data-toc-filter-target="item"
                         >
                             <span class="app-badge">{{ c.fileCode|upper }}</span>
-                            {{ c.meta.title ?? c.fileCode|upper }}
+                            {{ tocTitle }}
                         </a>
                     {% endfor %}
                 </nav>
             </div>
+
+            <p
+                class="app-toc-filter-empty"
+                data-toc-filter-target="empty"
+                hidden
+            >
+                Aucun résultat.
+            </p>
         </div>
     </div>
 </div>
