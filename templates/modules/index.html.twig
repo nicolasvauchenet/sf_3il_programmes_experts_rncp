@@ -79,7 +79,8 @@
                                     <p class="mb-0">
                                         <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (evaluation.code) | lower}) }}"
                                            target="_blank">
-                                            <strong>{{ evaluation.code }} - {{ evaluation.title }}</strong>
+                                            <strong>{{ evaluation.code }} :</strong>
+                                            {{ evaluation.title }}
                                         </a>
                                     </p>
                                 </section>
