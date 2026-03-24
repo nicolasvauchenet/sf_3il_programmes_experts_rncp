@@ -60,6 +60,7 @@ final class EvaluationSheetLoader
             skills: $skills,
             criteria: $criteria,
             skillsWithCriteria: $skillsWithCriteria,
+            modules: [], // ⚠️ IMPORTANT : injecté vide, sera enrichi par le resolver
             modalities: $modalities,
             exam: $exam,
             raw: $decoded,

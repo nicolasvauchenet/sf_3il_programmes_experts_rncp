@@ -68,26 +68,56 @@
                     </section>
                 {% endif %}
 
-                {% if module.evaluations is not empty %}
+                {% set chapters = module.outline.chapters ?? [] %}
+                {% if chapters is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2 class="mb-0">Évaluations concernées</h2>
+                        <h2>Plan des cours</h2>
+                        {% for ch in chapters %}
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <h3>{{ ch.title ?? 'Chapitre' }}</h3>
+                                {% set items = ch.items ?? [] %}
+                                {% if items is not empty %}
+                                    <ul>
+                                        {% for it in items %}
+                                            <li>{{ it }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </section>
+                        {% endfor %}
+                    </section>
+                {% endif %}
 
-                        {% if module.evaluations | length > 1 %}
-                        <div class="app-grid two">
-                        {% endif %}
-                            {% for evaluation in module.evaluations %}
-                                <section class="app-section mx-0 mt-2 mb-0">
-                                    <p class="mb-0">
-                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (evaluation.code) | lower}) }}">
-                                            <strong>{{ evaluation.code }} :</strong>
-                                            {{ evaluation.title }}
-                                        </a>
-                                    </p>
-                                </section>
-                            {% endfor %}
-                        {% if module.evaluations | length > 1 %}
-                        </div>
-                        {% endif %}
+                {% if module.exercises is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Exemples d'Exercices</h2>
+
+                        {% for ex in module.exercises %}
+                            {% set title = ex.title ?? 'Exercice' %}
+                            {% set context = (ex.context ?? '')|trim %}
+                            {% set objective = (ex.objective ?? '')|trim %}
+                            {% set objectiveText = objective ?: context %}
+                            {% set hasObjective = objectiveText|length > 0 %}
+                            {% set hasContext = context|length > 0 and objective|length > 0 %}
+                            {% set normContext = context|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
+                            {% set normObjective = objective|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
+                            {% set normContext = normContext|split(' ')|filter(v => v != '')|join(' ') %}
+                            {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
+                            {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
+
+                            <section class="app-section mx-0 mt-2 mb-0">
+                                <h3>Exercice {{ loop.index }} : {{ title }}</h3>
+
+                                {% if showContextAndObjective %}
+                                    <p><strong>Contexte :</strong> {{ context }}</p>
+                                    <p><strong>Objectif :</strong> {{ objective }}</p>
+                                {% else %}
+                                    {% if hasObjective %}
+                                        <p><strong>Objectif :</strong> {{ objectiveText }}</p>
+                                    {% endif %}
+                                {% endif %}
+                            </section>
+                        {% endfor %}
                     </section>
                 {% endif %}
 
@@ -139,56 +169,27 @@
                     </section>
                 {% endif %}
 
-                {% set chapters = module.outline.chapters ?? [] %}
-                {% if chapters is not empty %}
+                {% if module.evaluations is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Plan des cours</h2>
-                        {% for ch in chapters %}
-                            <section class="app-section mx-0 mt-2 mb-0">
-                                <h3>{{ ch.title ?? 'Chapitre' }}</h3>
-                                {% set items = ch.items ?? [] %}
-                                {% if items is not empty %}
-                                    <ul>
-                                        {% for it in items %}
-                                            <li>{{ it }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                {% endif %}
-                            </section>
-                        {% endfor %}
-                    </section>
-                {% endif %}
+                        <h2>Evaluations associées</h2>
 
-                {% if module.exercises is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Exemples d'Exercices</h2>
+                        <div class="app-grid two">
+                            {% for evaluation in module.evaluations %}
+                                <section class="app-section mx-0 my-0">
+                                    <p class="mb-0">
+                                        <a href="{{ path('app_promotion_evaluations', {
+                                            'promotion': promotion,
+                                            'year': year,
+                                            'code': evaluation.code
+                                        }) }}">
+                                            <strong>{{ module.blocCode }}{{ evaluation.code | upper }}</strong>
+                                        </a>
+                                    </p>
 
-                        {% for ex in module.exercises %}
-                            {% set title = ex.title ?? 'Exercice' %}
-                            {% set context = (ex.context ?? '')|trim %}
-                            {% set objective = (ex.objective ?? '')|trim %}
-                            {% set objectiveText = objective ?: context %}
-                            {% set hasObjective = objectiveText|length > 0 %}
-                            {% set hasContext = context|length > 0 and objective|length > 0 %}
-                            {% set normContext = context|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-                            {% set normObjective = objective|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-                            {% set normContext = normContext|split(' ')|filter(v => v != '')|join(' ') %}
-                            {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
-                            {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
-
-                            <section class="app-section mx-0 mt-2 mb-0">
-                                <h3>Exercice {{ loop.index }} : {{ title }}</h3>
-
-                                {% if showContextAndObjective %}
-                                    <p><strong>Contexte :</strong> {{ context }}</p>
-                                    <p><strong>Objectif :</strong> {{ objective }}</p>
-                                {% else %}
-                                    {% if hasObjective %}
-                                        <p><strong>Objectif :</strong> {{ objectiveText }}</p>
-                                    {% endif %}
-                                {% endif %}
-                            </section>
-                        {% endfor %}
+                                    <p class="subtitle text-left mb-0">{{ evaluation.title ?: '-' }}</p>
+                                </section>
+                            {% endfor %}
+                        </div>
                     </section>
                 {% endif %}
             </article>

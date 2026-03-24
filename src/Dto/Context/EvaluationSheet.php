@@ -23,6 +23,11 @@ final readonly class EvaluationSheet
      *         indicators:array<int,string>
      *     }>
      * }> $skillsWithCriteria
+     * @param array<int,array{
+     *     code:string,
+     *     title:string,
+     *     blockCode:string
+     * }> $modules
      * @param array<string,mixed> $modalities
      * @param array<string,mixed> $exam
      * @param array<string,mixed> $raw
@@ -36,6 +41,7 @@ final readonly class EvaluationSheet
         public array  $skills,
         public array  $criteria,
         public array  $skillsWithCriteria,
+        public array  $modules,
         public array  $modalities,
         public array  $exam,
         public array  $raw,

@@ -118,8 +118,11 @@ final class SkillSheetResolver
                     continue;
                 }
 
+                $title = $this->extractNullableString($evaluation['title'] ?? null) ?? '';
+
                 $resolved[] = [
                     'code' => $code,
+                    'title' => $title,
                     'blockCode' => $this->extractNullableString($evaluation['blockCode'] ?? null) ?? '',
                 ];
 

@@ -118,6 +118,31 @@
                     </section>
                 {% endif %}
 
+                {% if evaluation.examThreshold or evaluation.compensationMin or evaluation.remedialBelow or evaluation.blockThreshold %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Règles de validation</h2>
+
+                        <div class="app-grid two">
+                            <div class="app-section mx-0 my-0">
+                                <strong>Validation de l’évaluation :</strong>
+                                {{ evaluation.examThreshold ?: '-' }}
+                            </div>
+                            <div class="app-section mx-0 my-0">
+                                <strong>Compensation possible à partir de :</strong>
+                                {{ evaluation.compensationMin ?: '-' }}
+                            </div>
+                            <div class="app-section mx-0 my-0">
+                                <strong>Rattrapage obligatoire en dessous de :</strong>
+                                {{ evaluation.remedialBelow ?: '-' }}
+                            </div>
+                            <div class="app-section mx-0 my-0">
+                                <strong>Validation du bloc :</strong>
+                                {{ evaluation.blockThreshold ?: '-' }}
+                            </div>
+                        </div>
+                    </section>
+                {% endif %}
+
                 {% if evaluation.skillsWithCriteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Compétences mobilisées</h2>
@@ -157,27 +182,26 @@
                     </section>
                 {% endif %}
 
-                {% if evaluation.examThreshold or evaluation.compensationMin or evaluation.remedialBelow or evaluation.blockThreshold %}
+                {% if evaluation.modules is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Règles de validation</h2>
+                        <h2>Matières associées</h2>
 
                         <div class="app-grid two">
-                            <div class="app-section mx-0 my-0">
-                                <strong>Validation de l’évaluation :</strong>
-                                {{ evaluation.examThreshold ?: '-' }}
-                            </div>
-                            <div class="app-section mx-0 my-0">
-                                <strong>Compensation possible à partir de :</strong>
-                                {{ evaluation.compensationMin ?: '-' }}
-                            </div>
-                            <div class="app-section mx-0 my-0">
-                                <strong>Rattrapage obligatoire en dessous de :</strong>
-                                {{ evaluation.remedialBelow ?: '-' }}
-                            </div>
-                            <div class="app-section mx-0 my-0">
-                                <strong>Validation du bloc :</strong>
-                                {{ evaluation.blockThreshold ?: '-' }}
-                            </div>
+                            {% for module in evaluation.modules %}
+                                <section class="app-section mx-0 my-0">
+                                    <p class="mb-0">
+                                        <a href="{{ path('app_promotion_modules', {
+                                            'promotion': promotion,
+                                            'year': year,
+                                            'code': module.code
+                                        }) }}">
+                                            <strong>{{ module.code | upper }}</strong>
+                                        </a>
+                                    </p>
+
+                                    <p class="subtitle text-left mb-0">{{ module.title ?: '-' }}</p>
+                                </section>
+                            {% endfor %}
                         </div>
                     </section>
                 {% endif %}

@@ -9,7 +9,7 @@ final readonly class ResolvedSkillSheet
      * @param array<int,string> $criteria
      * @param array<string,mixed> $raw
      * @param array<int,array{code:string,title:string,fullCode:string}> $modules
-     * @param array<int,array{code:string,blockCode:string}> $evaluations
+     * @param array<int,array{code:string,blockCode:string,title:string}> $evaluations
      * @param array<int,array{fileCode:string,code:string,title:string}> $relatedSkills
      */
     public function __construct(
