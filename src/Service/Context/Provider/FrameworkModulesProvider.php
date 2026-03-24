@@ -5,14 +5,18 @@ namespace App\Service\Context\Provider;
 use App\Dto\Context\ModuleSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Service\Context\FrameworkFolderScanner;
+use App\Service\Context\Loader\FrameworkStructureLoader;
 use App\Service\Context\Loader\ModuleSheetLoader;
+use App\Service\Context\ModuleSheetResolver;
 
 final readonly class FrameworkModulesProvider
 {
     public function __construct(
-        private FrameworkFolderScanner  $scanner,
-        private ModuleSheetLoader       $loader,
-        private FrameworkSkillsProvider $skillsProvider,
+        private FrameworkFolderScanner   $scanner,
+        private ModuleSheetLoader        $loader,
+        private FrameworkSkillsProvider  $skillsProvider,
+        private FrameworkStructureLoader $structureLoader,
+        private ModuleSheetResolver      $resolver,
     )
     {
     }
@@ -23,6 +27,7 @@ final readonly class FrameworkModulesProvider
     public function listModules(string $promotion, string $year): array
     {
         $refs = $this->scanner->listJsonFiles($promotion, $year, 'modules');
+        $structure = $this->structureLoader->load($promotion, $year);
         $resolvedSkills = $this->skillsProvider->listSkills($promotion, $year);
         $skillsIndex = $this->indexSkills($resolvedSkills);
 
@@ -31,7 +36,7 @@ final readonly class FrameworkModulesProvider
         foreach ($refs as $ref) {
             try {
                 $module = $this->loader->load($ref->fileCode, $ref->path);
-                $modules[] = $this->enrichModuleWithCriteria($module, $skillsIndex);
+                $modules[] = $this->resolver->resolve($module, $structure, $skillsIndex);
             } catch (\Throwable) {
                 continue;
             }
@@ -56,52 +61,6 @@ final readonly class FrameworkModulesProvider
         }
 
         return $index;
-    }
-
-    /**
-     * @param array<string,ResolvedSkillSheet> $skillsIndex
-     */
-    private function enrichModuleWithCriteria(ModuleSheet $module, array $skillsIndex): ModuleSheet
-    {
-        $skillsWithCriteria = [];
-
-        foreach ($module->skills as $skill) {
-            $code = (string)($skill['code'] ?? '');
-            $description = (string)($skill['description'] ?? '');
-
-            if ($code === '' || $description === '') {
-                continue;
-            }
-
-            $key = $this->buildSkillKey($module->blocCode(), $code);
-            $resolvedSkill = $skillsIndex[$key] ?? null;
-
-            $criteria = [];
-            if ($resolvedSkill instanceof ResolvedSkillSheet) {
-                $criteria = $resolvedSkill->criteria;
-            }
-
-            $skillsWithCriteria[] = [
-                'code' => $code,
-                'description' => $description,
-                'criteria' => $criteria,
-            ];
-        }
-
-        return new ModuleSheet(
-            fileCode: $module->fileCode,
-            path: $module->path,
-            meta: $module->meta,
-            skills: $module->skills,
-            skillsWithCriteria: $skillsWithCriteria,
-            objectives: $module->objectives,
-            prerequisites: $module->prerequisites,
-            outline: $module->outline,
-            exercises: $module->exercises,
-            bibliography: $module->bibliography,
-            teachingMethods: $module->teachingMethods,
-            raw: $module->raw,
-        );
     }
 
     private function buildSkillKey(string $blocCode, string $skillCode): string

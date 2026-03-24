@@ -657,6 +657,7 @@
         {
             "code": "EC01",
             "blockCode": "BC01",
+            "title": "Conception et modélisation de l’architecture logicielle",
             "skills": [
                 "C01",
                 "C02",
@@ -680,6 +681,7 @@
         {
             "code": "EC02",
             "blockCode": "BC02",
+            "title": "Management des projets numériques",
             "skills": [
                 "C10",
                 "C11",
@@ -701,6 +703,7 @@
         {
             "code": "EC03",
             "blockCode": "BC03",
+            "title": "Pilotage de l'intégration et du déploiement continu dans le Systèmes d'Information (SI)",
             "skills": [
                 "C16",
                 "C17",
@@ -720,6 +723,7 @@
         {
             "code": "EC04",
             "blockCode": "BC04",
+            "title": "Optimisation du Système d'Information (SI) par l'apport du Cloud Computing",
             "skills": [
                 "C21",
                 "C22",
@@ -740,6 +744,7 @@
         {
             "code": "EC05",
             "blockCode": "BC05",
+            "title": "Conception et optimisation d'architectures de données décisionnelles",
             "skills": [
                 "C27",
                 "C28",
@@ -758,6 +763,7 @@
         {
             "code": "EC06",
             "blockCode": "BC05",
+            "title": "Optimisation des architectures et automatisation des processus et flux métier par l’apport de l’IA",
             "skills": [
                 "C32",
                 "C33",

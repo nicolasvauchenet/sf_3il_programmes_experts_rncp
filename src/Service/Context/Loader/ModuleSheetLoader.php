@@ -61,6 +61,7 @@ final class ModuleSheetLoader
             meta: $meta,
             skills: $skills,
             skillsWithCriteria: [],
+            evaluations: [],
             objectives: $objectives,
             prerequisites: $prerequisites,
             outline: $outline,

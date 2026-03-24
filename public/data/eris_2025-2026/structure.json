@@ -632,6 +632,7 @@
         {
             "code": "EC01",
             "blockCode": "BC01",
+            "title": "Gouvernance des Infrastructures Systèmes et Réseaux",
             "skills": [
                 "C01",
                 "C02",
@@ -657,6 +658,7 @@
         {
             "code": "EC02",
             "blockCode": "BC02",
+            "title": "Conception et montage d’infrastructure",
             "skills": [
                 "C11",
                 "C12",
@@ -677,6 +679,7 @@
         {
             "code": "EC03",
             "blockCode": "BC02",
+            "title": "Organisation du support",
             "skills": [
                 "C17"
             ],
@@ -689,6 +692,7 @@
         {
             "code": "EC04",
             "blockCode": "BC03",
+            "title": "Veille cybersécurité (en anglais)",
             "skills": [
                 "C18"
             ],
@@ -701,6 +705,7 @@
         {
             "code": "EC05",
             "blockCode": "BC03",
+            "title": "Politique de sécurité",
             "skills": [
                 "C19",
                 "C20",
@@ -719,6 +724,7 @@
         {
             "code": "EC06",
             "blockCode": "BC03",
+            "title": "Évaluation de la sécurité et Forensic",
             "skills": [
                 "C22",
                 "C23",
@@ -735,6 +741,7 @@
         {
             "code": "EC07",
             "blockCode": "BC04",
+            "title": "Pilotage de projets et conduite du changement",
             "skills": [
                 "C25",
                 "C26",

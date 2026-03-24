@@ -67,6 +67,29 @@
                     </section>
                 {% endif %}
 
+                {% if module.evaluations is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2 class="mb-0">Évaluations concernées</h2>
+
+                        {% if module.evaluations | length > 1 %}
+                        <div class="app-grid two">
+                        {% endif %}
+                            {% for evaluation in module.evaluations %}
+                                <section class="app-section mx-0 mt-2 mb-0">
+                                    <p class="mb-0">
+                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (evaluation.code) | lower}) }}"
+                                           target="_blank">
+                                            <strong>{{ evaluation.code }} - {{ evaluation.title }}</strong>
+                                        </a>
+                                    </p>
+                                </section>
+                            {% endfor %}
+                        {% if module.evaluations | length > 1 %}
+                        </div>
+                        {% endif %}
+                    </section>
+                {% endif %}
+
                 {% if module.skillsWithCriteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Compétences mobilisées</h2>

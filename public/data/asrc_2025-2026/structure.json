@@ -604,6 +604,7 @@
         {
             "code": "EC01",
             "blockCode": "BC01",
+            "title": "Administration et optimisation des systèmes d’exploitation et de la virtualisation pour la sécurité et la performance",
             "skills": [
                 "C01",
                 "C02",
@@ -619,6 +620,7 @@
         {
             "code": "EC02",
             "blockCode": "BC01",
+            "title": "Administration et optimisation des systèmes d’exploitation et de la virtualisation pour la sécurité et la performance",
             "skills": [
                 "C01",
                 "C02",
@@ -634,6 +636,7 @@
         {
             "code": "EC03",
             "blockCode": "BC01",
+            "title": "Maintien de la haute disponibilité et automatisation des systèmes",
             "skills": [
                 "C05",
                 "C06",
@@ -651,6 +654,7 @@
         {
             "code": "EC04",
             "blockCode": "BC02",
+            "title": "Configuration de l’infrastructure Réseaux",
             "skills": [
                 "C09",
                 "C10",
@@ -664,6 +668,7 @@
         {
             "code": "EC05",
             "blockCode": "BC02",
+            "title": "Configuration de l’infrastructure Réseaux",
             "skills": [
                 "C09",
                 "C10",
@@ -677,6 +682,7 @@
         {
             "code": "EC06",
             "blockCode": "BC02",
+            "title": "Conception et réalisation de l’intégration et du déploiement continu (Cloud & Devops)",
             "skills": [
                 "C12",
                 "C13",
@@ -692,6 +698,7 @@
         {
             "code": "EC07",
             "blockCode": "BC03",
+            "title": "Mise en œuvre des politiques de sécurité et gestion des risques par l'Ethical Hacking",
             "skills": [
                 "C15",
                 "C16",
@@ -708,6 +715,7 @@
         {
             "code": "EC08",
             "blockCode": "BC03",
+            "title": "Administration des systèmes de sécurité et des contrôles d’accès",
             "skills": [
                 "C18",
                 "C19"
@@ -722,6 +730,7 @@
         {
             "code": "EC09",
             "blockCode": "BC03",
+            "title": "Supervision et contrôle de la protection des données et de la conformité réglementaire",
             "skills": [
                 "C20",
                 "C21",
@@ -735,6 +744,7 @@
         {
             "code": "EC10",
             "blockCode": "BC04",
+            "title": "Étude de faisabilité et définition des exigences techniques",
             "skills": [
                 "C23",
                 "C24"
@@ -747,6 +757,7 @@
         {
             "code": "EC11",
             "blockCode": "BC04",
+            "title": "Planification et suivi de projet selon les méthodologies agiles",
             "skills": [
                 "C25",
                 "C26",
@@ -763,6 +774,7 @@
         {
             "code": "EC12",
             "blockCode": "BC04",
+            "title": "Planification et suivi de projet selon les méthodologies agiles",
             "skills": [
                 "C25",
                 "C26",
@@ -779,6 +791,7 @@
         {
             "code": "EC13",
             "blockCode": "BC04",
+            "title": "Recherche documentaire et Veille technologique en contexte multilingue",
             "skills": [
                 "C28",
                 "C29",
@@ -794,6 +807,7 @@
         {
             "code": "EC14",
             "blockCode": "BC04",
+            "title": "Recherche documentaire et Veille technologique en contexte multilingue",
             "skills": [
                 "C28",
                 "C29",
