@@ -14,10 +14,11 @@ final class SkillsController extends AbstractController
 {
     #[Route('/competences', name: 'app_promotion_skills', methods: ['GET'])]
     public function index(
-        Request $request,
+        Request                 $request,
         FrameworkSkillsProvider $skillsProvider,
-        SkillChartService $skillChartService,
-    ): Response {
+        SkillChartService       $skillChartService,
+    ): Response
+    {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -37,16 +38,19 @@ final class SkillsController extends AbstractController
         }
 
         $rawSelected = (string)$request->query->get('code', '');
+        $rawSelectedBlock = (string)$request->query->get('block', '');
+
         $selectedFileCode = $this->normalizeSelectedCode($rawSelected, $skills);
+        $selectedBlock = $this->normalizeBlockCode($rawSelectedBlock);
 
         if ($selectedFileCode === null) {
-            $selectedSkill = $skills[0];
+            $selectedSkill = $this->findFirstSkillForBlock($skills, $selectedBlock) ?? $skills[0];
             $selectedFileCode = $selectedSkill->fileCode;
         } else {
             $selectedSkill = $this->findSelectedSkill($skills, $selectedFileCode);
 
             if ($selectedSkill === null) {
-                $selectedSkill = $skills[0];
+                $selectedSkill = $this->findFirstSkillForBlock($skills, $selectedBlock) ?? $skills[0];
                 $selectedFileCode = $selectedSkill->fileCode;
             }
         }
@@ -58,6 +62,7 @@ final class SkillsController extends AbstractController
             'year' => $year,
             'skills' => $skills,
             'selectedCode' => $selectedFileCode,
+            'selectedBlock' => $selectedBlock,
             'skill' => $selectedSkill,
             'skillMetricsChart' => $skillMetricsChart,
         ]);
@@ -83,6 +88,17 @@ final class SkillsController extends AbstractController
         return null;
     }
 
+    private function normalizeBlockCode(string $raw): ?string
+    {
+        $raw = strtoupper(trim($raw));
+
+        if ($raw === '') {
+            return null;
+        }
+
+        return $raw;
+    }
+
     /**
      * @param ResolvedSkillSheet[] $skills
      */
@@ -95,5 +111,30 @@ final class SkillsController extends AbstractController
         }
 
         return null;
+    }
+
+    /**
+     * @param ResolvedSkillSheet[] $skills
+     */
+    private function findFirstSkillForBlock(array $skills, ?string $blockCode): ?ResolvedSkillSheet
+    {
+        if ($blockCode === null) {
+            return null;
+        }
+
+        foreach ($skills as $skill) {
+            $skillBlockCode = strtoupper(trim($this->extractBlockCodeFromFileCode($skill->fileCode)));
+
+            if ($skillBlockCode === $blockCode) {
+                return $skill;
+            }
+        }
+
+        return null;
+    }
+
+    private function extractBlockCodeFromFileCode(string $fileCode): string
+    {
+        return strtoupper(substr($fileCode, 0, 4));
     }
 }

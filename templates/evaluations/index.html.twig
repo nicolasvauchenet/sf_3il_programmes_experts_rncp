@@ -125,8 +125,7 @@
                         {% for s in evaluation.skillsWithCriteria %}
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <p>
-                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (evaluation.blocCode ~ s.code) | lower}) }}"
-                                       target="_blank">
+                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (evaluation.blocCode ~ s.code) | lower}) }}">
                                         <strong>Compétence {{ s.code }}</strong>
                                     </a>
                                     :

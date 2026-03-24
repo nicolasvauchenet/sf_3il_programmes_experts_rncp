@@ -13,7 +13,8 @@ final readonly class SummaryChartService
 
     public function __construct(
         private ChartBuilderInterface $chartBuilder,
-    ) {
+    )
+    {
     }
 
     public function createReferentialVolumeChart(FrameworkStructure $structure): Chart
@@ -37,9 +38,14 @@ final readonly class SummaryChartService
 
         $labels = [];
         $data = [];
+        $blockCodes = [];
+        $fileCodes = [];
 
         foreach ($blocks as $block) {
             $blockCode = $this->getBlockCode($block);
+            $blockSkills = $this->getSkillsForBlock($skills, $blockCode);
+            $firstSkill = $blockSkills[0] ?? null;
+
             $labels[] = $this->getBlockLabel($block);
 
             $skillsCount = 0;
@@ -47,26 +53,24 @@ final readonly class SummaryChartService
             if (is_array($block['skills'] ?? null)) {
                 $skillsCount = count($block['skills']);
             } else {
-                foreach ($skills as $skill) {
-                    $skillBlockCode = $this->normalizeCode(
-                        $skill['blockCode']
-                        ?? $skill['block']
-                        ?? null
-                    );
-
-                    if ($skillBlockCode === $blockCode) {
-                        ++$skillsCount;
-                    }
-                }
+                $skillsCount = count($blockSkills);
             }
 
             $data[] = $skillsCount;
+            $blockCodes[] = $blockCode;
+            $fileCodes[] = $firstSkill !== null
+                ? $this->getSkillFileCode($firstSkill, $blockCode)
+                : '';
         }
 
         return $this->createBarChart(
             title: 'Compétences par bloc',
             labels: $labels,
             data: $data,
+            datasetExtra: [
+                'blockCodes' => $blockCodes,
+                'fileCodes' => $fileCodes,
+            ],
         );
     }
 
@@ -77,32 +81,30 @@ final readonly class SummaryChartService
 
         $labels = [];
         $data = [];
+        $blockCodes = [];
+        $fileCodes = [];
 
         foreach ($blocks as $block) {
             $blockCode = $this->getBlockCode($block);
+            $blockEvaluations = $this->getEvaluationsForBlock($evaluations, $blockCode);
+            $firstEvaluation = $blockEvaluations[0] ?? null;
+
             $labels[] = $this->getBlockLabel($block);
-
-            $count = 0;
-
-            foreach ($evaluations as $evaluation) {
-                $evaluationBlockCode = $this->normalizeCode(
-                    $evaluation['blockCode']
-                    ?? $evaluation['block']
-                    ?? null
-                );
-
-                if ($evaluationBlockCode === $blockCode) {
-                    ++$count;
-                }
-            }
-
-            $data[] = $count;
+            $data[] = count($blockEvaluations);
+            $blockCodes[] = $blockCode;
+            $fileCodes[] = $firstEvaluation !== null
+                ? $this->getEvaluationFileCode($firstEvaluation, $blockCode)
+                : '';
         }
 
         return $this->createBarChart(
             title: 'Évaluations par bloc',
             labels: $labels,
             data: $data,
+            datasetExtra: [
+                'blockCodes' => $blockCodes,
+                'fileCodes' => $fileCodes,
+            ],
         );
     }
 
@@ -113,62 +115,30 @@ final readonly class SummaryChartService
 
         $labels = [];
         $data = [];
+        $blockCodes = [];
+        $fileCodes = [];
 
         foreach ($blocks as $block) {
             $blockCode = $this->getBlockCode($block);
+            $blockModules = $this->getModulesForBlock($modules, $blockCode);
+            $firstModule = $blockModules[0] ?? null;
+
             $labels[] = $this->getBlockLabel($block);
-
-            $modulesCount = 0;
-
-            if (is_array($block['modules'] ?? null)) {
-                $modulesCount = count($block['modules']);
-            } else {
-                foreach ($modules as $module) {
-                    $moduleBlockCode = $this->normalizeCode(
-                        $module['blockCode']
-                        ?? $module['block']
-                        ?? null
-                    );
-
-                    if ($moduleBlockCode === $blockCode) {
-                        ++$modulesCount;
-                    }
-                }
-            }
-
-            $data[] = $modulesCount;
+            $data[] = count($blockModules);
+            $blockCodes[] = $blockCode;
+            $fileCodes[] = $firstModule !== null
+                ? $this->getModuleFileCode($firstModule, $blockCode)
+                : '';
         }
 
         return $this->createBarChart(
             title: 'Modules par bloc',
             labels: $labels,
             data: $data,
-        );
-    }
-
-    public function createSkillsPerEvaluationChart(FrameworkStructure $structure): Chart
-    {
-        $evaluations = $structure->evaluations;
-
-        $labels = [];
-        $data = [];
-
-        foreach ($evaluations as $evaluation) {
-            $labels[] = $this->getEvaluationLabel($evaluation);
-
-            $skillsCount = 0;
-
-            if (is_array($evaluation['skills'] ?? null)) {
-                $skillsCount = count($evaluation['skills']);
-            }
-
-            $data[] = $skillsCount;
-        }
-
-        return $this->createBarChart(
-            title: 'Compétences par évaluation',
-            labels: $labels,
-            data: $data,
+            datasetExtra: [
+                'blockCodes' => $blockCodes,
+                'fileCodes' => $fileCodes,
+            ],
         );
     }
 
@@ -178,6 +148,7 @@ final readonly class SummaryChartService
 
         $labels = [];
         $data = [];
+        $fileCodes = [];
 
         foreach ($evaluations as $evaluation) {
             $labels[] = $this->getEvaluationLabel($evaluation);
@@ -189,12 +160,49 @@ final readonly class SummaryChartService
             }
 
             $data[] = $modulesCount;
+
+            $fileCodes[] = $this->getEvaluationFileCode($evaluation);
         }
 
         return $this->createBarChart(
             title: 'Modules par évaluation',
             labels: $labels,
             data: $data,
+            datasetExtra: [
+                'fileCodes' => $fileCodes,
+            ],
+        );
+    }
+
+    public function createSkillsPerEvaluationChart(FrameworkStructure $structure): Chart
+    {
+        $evaluations = $structure->evaluations;
+
+        $labels = [];
+        $data = [];
+        $fileCodes = [];
+
+        foreach ($evaluations as $evaluation) {
+            $labels[] = $this->getEvaluationLabel($evaluation);
+
+            $skillsCount = 0;
+
+            if (is_array($evaluation['skills'] ?? null)) {
+                $skillsCount = count($evaluation['skills']);
+            }
+
+            $data[] = $skillsCount;
+
+            $fileCodes[] = $this->getEvaluationFileCode($evaluation);
+        }
+
+        return $this->createBarChart(
+            title: 'Compétences par évaluation',
+            labels: $labels,
+            data: $data,
+            datasetExtra: [
+                'fileCodes' => $fileCodes,
+            ],
         );
     }
 
@@ -203,10 +211,10 @@ final readonly class SummaryChartService
         $chart = $this->chartBuilder->createChart(Chart::TYPE_DOUGHNUT);
 
         $colors = [
-            '#005067', // bleu
-            '#0f766e', // vert canard / teal profond
-            '#e84d0d', // orange
-            '#b45309', // ambre foncé / ocre chaud
+            '#005067',
+            '#0f766e',
+            '#e84d0d',
+            '#b45309',
         ];
 
         $chart->setData([
@@ -246,25 +254,25 @@ final readonly class SummaryChartService
         return $chart;
     }
 
-    private function createBarChart(string $title, array $labels, array $data): Chart
+    private function createBarChart(string $title, array $labels, array $data, array $datasetExtra = []): Chart
     {
         $chart = $this->chartBuilder->createChart(Chart::TYPE_BAR);
 
         $colors = $this->buildAlternatingColors(count($data));
 
+        $dataset = array_merge([
+            'label' => $title,
+            'data' => $data,
+            'backgroundColor' => $colors['background'],
+            'borderColor' => $colors['border'],
+            'borderWidth' => 1,
+            'borderRadius' => 2,
+            'borderSkipped' => false,
+        ], $datasetExtra);
+
         $chart->setData([
             'labels' => $labels,
-            'datasets' => [
-                [
-                    'label' => $title,
-                    'data' => $data,
-                    'backgroundColor' => $colors['background'],
-                    'borderColor' => $colors['border'],
-                    'borderWidth' => 1,
-                    'borderRadius' => 2,
-                    'borderSkipped' => false,
-                ],
-            ],
+            'datasets' => [$dataset],
         ]);
 
         $chart->setOptions([
@@ -299,6 +307,161 @@ final readonly class SummaryChartService
         ]);
 
         return $chart;
+    }
+
+    private function getModulesForBlock(array $modules, string $blockCode): array
+    {
+        $blockModules = [];
+
+        foreach ($modules as $module) {
+            $moduleBlockCode = $this->normalizeCode(
+                $module['blockCode']
+                ?? $module['block']
+                ?? null
+            );
+
+            if ($moduleBlockCode === $blockCode) {
+                $blockModules[] = $module;
+            }
+        }
+
+        return $blockModules;
+    }
+
+    private function getSkillsForBlock(array $skills, string $blockCode): array
+    {
+        $blockSkills = [];
+
+        foreach ($skills as $skill) {
+            $skillBlockCode = $this->normalizeCode(
+                $skill['blockCode']
+                ?? $skill['block']
+                ?? null
+            );
+
+            if ($skillBlockCode === $blockCode) {
+                $blockSkills[] = $skill;
+            }
+        }
+
+        return $blockSkills;
+    }
+
+    private function getEvaluationsForBlock(array $evaluations, string $blockCode): array
+    {
+        $blockEvaluations = [];
+
+        foreach ($evaluations as $evaluation) {
+            $evaluationBlockCode = $this->normalizeCode(
+                $evaluation['blockCode']
+                ?? $evaluation['blocCode']
+                ?? $evaluation['block']
+                ?? null
+            );
+
+            if ($evaluationBlockCode === $blockCode) {
+                $blockEvaluations[] = $evaluation;
+            }
+        }
+
+        return $blockEvaluations;
+    }
+
+    private function getModuleFileCode(array $module, string $fallbackBlockCode = ''): string
+    {
+        $explicitFileCode = trim((string)($module['fileCode'] ?? ''));
+
+        if ($explicitFileCode !== '') {
+            return strtolower($explicitFileCode);
+        }
+
+        $blockCode = $this->normalizeCode(
+            $module['blockCode']
+            ?? $module['block']
+            ?? $fallbackBlockCode
+        );
+
+        $moduleCode = $this->normalizeCode(
+            $module['code']
+            ?? ''
+        );
+
+        if ($blockCode !== '' && $moduleCode !== '') {
+            return strtolower($blockCode . $moduleCode);
+        }
+
+        $fullCode = trim((string)($module['fullCode'] ?? ''));
+
+        if ($fullCode !== '' && preg_match('/-(BC\d+)-(FM\d+)$/i', $fullCode, $matches) === 1) {
+            return strtolower($matches[1] . $matches[2]);
+        }
+
+        return '';
+    }
+
+    private function getSkillFileCode(array $skill, string $fallbackBlockCode = ''): string
+    {
+        $explicitFileCode = trim((string)($skill['fileCode'] ?? ''));
+
+        if ($explicitFileCode !== '') {
+            return strtolower($explicitFileCode);
+        }
+
+        $blockCode = $this->normalizeCode(
+            $skill['blockCode']
+            ?? $skill['block']
+            ?? $fallbackBlockCode
+        );
+
+        $skillCode = $this->normalizeCode(
+            $skill['code']
+            ?? ''
+        );
+
+        if ($blockCode !== '' && $skillCode !== '') {
+            return strtolower($blockCode . $skillCode);
+        }
+
+        $fullCode = trim((string)($skill['fullCode'] ?? ''));
+
+        if ($fullCode !== '' && preg_match('/-(BC\d+)-([A-Z]+\d+)$/i', $fullCode, $matches) === 1) {
+            return strtolower($matches[1] . $matches[2]);
+        }
+
+        return '';
+    }
+
+    private function getEvaluationFileCode(array $evaluation, string $fallbackBlockCode = ''): string
+    {
+        $explicitFileCode = trim((string)($evaluation['fileCode'] ?? ''));
+
+        if ($explicitFileCode !== '') {
+            return strtolower($explicitFileCode);
+        }
+
+        $blockCode = $this->normalizeCode(
+            $evaluation['blockCode']
+            ?? $evaluation['blocCode']
+            ?? $evaluation['block']
+            ?? $fallbackBlockCode
+        );
+
+        $evaluationCode = $this->normalizeCode(
+            $evaluation['code']
+            ?? ''
+        );
+
+        if ($blockCode !== '' && $evaluationCode !== '') {
+            return strtolower($blockCode . $evaluationCode);
+        }
+
+        $fullCode = trim((string)($evaluation['fullCode'] ?? ''));
+
+        if ($fullCode !== '' && preg_match('/-(BC\d+)-(EC\d+)$/i', $fullCode, $matches) === 1) {
+            return strtolower($matches[1] . $matches[2]);
+        }
+
+        return '';
     }
 
     private function buildAlternatingColors(int $count): array

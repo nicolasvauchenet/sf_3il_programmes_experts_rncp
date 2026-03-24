@@ -3,8 +3,26 @@ import {Controller} from '@hotwired/stimulus';
 export default class extends Controller {
     static targets = ['input', 'item', 'empty'];
 
+    static values = {
+        block: String,
+    };
+
     connect() {
-        this.applyFilter('');
+        const hasBlock = this.hasBlockValue && this.blockValue !== '';
+
+        let initialQuery = '';
+
+        if (hasBlock) {
+            initialQuery = this.blockValue;
+
+            this.inputTargets.forEach((input) => {
+                input.value = this.blockValue;
+            });
+        } else if (this.hasInputTarget) {
+            initialQuery = this.normalize(this.inputTargets[0].value ?? '');
+        }
+
+        this.applyFilter(this.normalize(initialQuery));
     }
 
     filter(event) {
@@ -26,9 +44,17 @@ export default class extends Controller {
     applyFilter(query) {
         let visibleCount = 0;
 
+        const expectedBlock = this.hasBlockValue
+            ? this.normalize(this.blockValue)
+            : '';
+
         this.itemTargets.forEach((item) => {
             const haystack = this.normalize(item.dataset.search ?? '');
-            const matches = query === '' || haystack.includes(query);
+            const itemBlock = this.normalize(item.dataset.block ?? '');
+
+            const matchesQuery = query === '' || haystack.includes(query);
+            const matchesBlock = expectedBlock === '' || itemBlock === expectedBlock;
+            const matches = matchesQuery && matchesBlock;
 
             item.toggleAttribute('hidden', !matches);
 

@@ -93,8 +93,7 @@
                             {% for module in skill.modules %}
                                 <section class="app-section mb-2">
                                     <p>
-                                        <a href="{{ path('app_promotion_modules', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ module.code) | lower}) }}"
-                                           target="_blank">
+                                        <a href="{{ path('app_promotion_modules', {'promotion': promotion, 'year': year, 'code': (skill.blocCode ~ module.code) | lower}) }}">
                                             <strong>{{ module.code }}</strong>
                                         </a>
                                         :
@@ -114,8 +113,7 @@
                             {% for evaluation in skill.evaluations %}
                                 <section class="app-section mb-2">
                                     <p>
-                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (evaluation.code) | lower}) }}"
-                                           target="_blank">
+                                        <a href="{{ path('app_promotion_evaluations', {'promotion': promotion, 'year': year, 'code': (evaluation.code) | lower}) }}">
                                             <strong>{{ evaluation.code }}</strong>
                                         </a>
                                         :

@@ -13,10 +13,11 @@ final class ModulesController extends AbstractController
 {
     #[Route('/matieres', name: 'app_promotion_modules', methods: ['GET'])]
     public function index(
-        Request $request,
+        Request                  $request,
         FrameworkModulesProvider $modulesProvider,
-        ModuleChartService $moduleChartService,
-    ): Response {
+        ModuleChartService       $moduleChartService,
+    ): Response
+    {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -36,25 +37,32 @@ final class ModulesController extends AbstractController
         }
 
         $rawSelected = (string)$request->query->get('code', '');
+        $rawSelectedBlock = (string)$request->query->get('block', '');
+
         $selectedFileCode = $this->normalizeSelectedCode($rawSelected, $modules);
+        $selectedBlock = $this->normalizeBlockCode($rawSelectedBlock);
 
         if ($selectedFileCode === null) {
-            $selectedModule = $modules[0];
+            $selectedModule = $this->findFirstModuleForBlock($modules, $selectedBlock) ?? $modules[0];
             $selectedFileCode = $selectedModule->fileCode;
         } else {
             $selectedModule = null;
 
-            foreach ($modules as $m) {
-                if ($m->fileCode === $selectedFileCode) {
-                    $selectedModule = $m;
+            foreach ($modules as $module) {
+                if ($module->fileCode === $selectedFileCode) {
+                    $selectedModule = $module;
                     break;
                 }
             }
 
             if ($selectedModule === null) {
-                $selectedModule = $modules[0];
+                $selectedModule = $this->findFirstModuleForBlock($modules, $selectedBlock) ?? $modules[0];
                 $selectedFileCode = $selectedModule->fileCode;
             }
+        }
+
+        if ($selectedBlock === null) {
+            $selectedBlock = $this->normalizeBlockCode((string)($selectedModule->meta['blockCode'] ?? ''));
         }
 
         $moduleVolumeChart = $moduleChartService->createModuleVolumeChart($selectedModule);
@@ -64,6 +72,7 @@ final class ModulesController extends AbstractController
             'year' => $year,
             'modules' => $modules,
             'selectedCode' => $selectedFileCode,
+            'selectedBlock' => $selectedBlock,
             'module' => $selectedModule,
             'moduleVolumeChart' => $moduleVolumeChart,
         ]);
@@ -77,9 +86,37 @@ final class ModulesController extends AbstractController
             return null;
         }
 
-        foreach ($modules as $m) {
-            if (strtolower((string)$m->fileCode) === $raw) {
-                return (string)$m->fileCode;
+        foreach ($modules as $module) {
+            if (strtolower((string)$module->fileCode) === $raw) {
+                return (string)$module->fileCode;
+            }
+        }
+
+        return null;
+    }
+
+    private function normalizeBlockCode(string $raw): ?string
+    {
+        $raw = strtoupper(trim($raw));
+
+        if ($raw === '') {
+            return null;
+        }
+
+        return $raw;
+    }
+
+    private function findFirstModuleForBlock(array $modules, ?string $blockCode): mixed
+    {
+        if ($blockCode === null) {
+            return null;
+        }
+
+        foreach ($modules as $module) {
+            $moduleBlockCode = strtoupper(trim((string)($module->meta['blockCode'] ?? '')));
+
+            if ($moduleBlockCode === $blockCode) {
+                return $module;
             }
         }
 

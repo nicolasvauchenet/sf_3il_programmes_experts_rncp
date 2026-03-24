@@ -61,21 +61,33 @@
             <section class="app-section">
                 <h2>Répartition des matières par bloc</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(modulesPerBlockChart) }}
+                    {{ render_chart(modulesPerBlockChart, {
+                        'data-controller': 'chart-modules-by-block-link',
+                        'data-chart-modules-by-block-link-promotion-value': promotion,
+                        'data-chart-modules-by-block-link-year-value': year
+                    }) }}
                 </div>
             </section>
 
             <section class="app-section">
                 <h2>Répartition des compétences par bloc</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(skillsPerBlockChart) }}
+                    {{ render_chart(skillsPerBlockChart, {
+                        'data-controller': 'chart-skills-by-block-link',
+                        'data-chart-skills-by-block-link-promotion-value': promotion,
+                        'data-chart-skills-by-block-link-year-value': year
+                    }) }}
                 </div>
             </section>
 
             <section class="app-section">
                 <h2>Répartition des évaluations par bloc</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(evaluationsPerBlockChart) }}
+                    {{ render_chart(evaluationsPerBlockChart, {
+                        'data-controller': 'chart-evaluations-by-block-link',
+                        'data-chart-evaluations-by-block-link-promotion-value': promotion,
+                        'data-chart-evaluations-by-block-link-year-value': year
+                    }) }}
                 </div>
             </section>
         </div>
@@ -84,14 +96,22 @@
             <section class="app-section">
                 <h2>Répartition des matières par Évaluation (EC)</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(modulesPerEvaluationChart) }}
+                    {{ render_chart(modulesPerEvaluationChart, {
+                        'data-controller': 'chart-evaluations-link',
+                        'data-chart-evaluations-link-promotion-value': promotion,
+                        'data-chart-evaluations-link-year-value': year
+                    }) }}
                 </div>
             </section>
 
             <section class="app-section">
                 <h2>Répartition des compétences par Évaluation (EC)</h2>
                 <div class="summary-card" style="height: 200px;">
-                    {{ render_chart(skillsPerEvaluationChart) }}
+                    {{ render_chart(skillsPerEvaluationChart, {
+                        'data-controller': 'chart-evaluations-link',
+                        'data-chart-evaluations-link-promotion-value': promotion,
+                        'data-chart-evaluations-link-year-value': year
+                    }) }}
                 </div>
             </section>
         </div>

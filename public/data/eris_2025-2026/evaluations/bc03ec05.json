@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-BC03-EC05",
+        "title": "Politique de sécurité",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 5,
+    "description": "Politique de sécurité.",
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s’appuyant sur les standards, en s’appuyant sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) pour protéger les données et les systèmes de l'entreprise."
+        },
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue."
+        },
+        {
+            "code": "C21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les préconisations de l’ANSSI au moyen d’ateliers, de documentation, d’exercices de simulation d'attaque, et de campagnes de phishing afin de diminuer les comportements à risques et de contribuer à l’amélioration continue de la sécurité de l’entreprise."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s’appuyant sur les standards, en s’appuyant sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) pour protéger les données et les systèmes de l'entreprise.",
+            "indicators": [
+                "L’analyse des risques de sécurité est actualisée, à la fois au niveau des menaces, mais aussi pour intégrer les évolutions de l’infrastructure. Elle permet de prioriser les évolutions à apporter à la PSSI.",
+                "Les dispositions prises pour faire évoluer la PSSI prennent en compte les risques, les recommandations de l’ANSSI et les moyens mobilisables pour la mise en œuvre.",
+                "Les dispositions prises sont conformes avec les standards et réglementations en vigueur (ISO 2700x, RGPD)."
+            ]
+        },
+        {
+            "code": "Cr20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue.",
+            "indicators": [
+                "L’audit couvre de façon méthodique les volets physiques, techniques et organisationnels de la politique de sécurité et s’appuie sur une méthodologie d’audit existante (telle que ISO 27001).",
+                "Les résultats de l’audit sont consignés dans un rapport permettant de conclure quant à la conformité de la mise en œuvre de la politique de sécurité et l’atteinte de ses objectifs. Des axes d’améliorations sont mis en avant le cas échéant."
+            ]
+        },
+        {
+            "code": "Cr21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les préconisations de l’ANSSI au moyen d’ateliers, de documentation, d’exercices de simulation d'attaque, et de campagnes de phishing afin de diminuer les comportements à risques et de contribuer à l’amélioration continue de la sécurité de l’entreprise.",
+            "indicators": [
+                "Les actions de sensibilisation proposées diffusent et vulgarisent la PSSI et sont adaptées au public concerné (format, durée, fréquence).",
+                "L’ensemble des actions proposées suit une démarche d’amélioration continue afin de pouvoir en évaluer la pertinence et l’efficacité."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée, écrit et/ou sur ordinateur",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E6",
+                "title": "Épreuve écrite",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
+            "blockThreshold": 110
+        }
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-BC04-EC04",
+        "title": "Optimisation du Système d'Information (SI) par l'apport du Cloud Computing",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 4,
+    "description": "Implémentation d’une application utilisant les services cloud et sécurisation de l’application.",
+    "skills": [
+        {
+            "code": "C21",
+            "description": "Intégrer divers services cloud dans des applications en utilisant les API et les plateformes Cloud Provider en tenant compte de l’impact écologique notamment par le vecteur financier (FinOps) pour automatiser les processus afin de développer des solutions personnalisées qui améliorent l'efficacité opérationnelle et répondent aux besoins spécifiques des entreprises."
+        },
+        {
+            "code": "C22",
+            "description": "Automatiser la configuration et la gestion des ressources cloud en utilisant des outils comme Terraform et Ansible, assurant ainsi une gestion précise et reproductible des environnements pour réduire les erreurs manuelles et accélérer les déploiements."
+        },
+        {
+            "code": "C23",
+            "description": "Administrer et optimiser les infrastructures cloud, en utilisant des commandes Unix et des scripts Bash ou Shells ou des programmes en Python, pour faciliter l'automatisation et améliorer la sécurité et l'efficacité des environnements cloud."
+        },
+        {
+            "code": "C24",
+            "description": "Analyser et optimiser la performance des systèmes cloud en employant des outils de monitoring pour identifier les goulets d'étranglement et optimiser les configurations, garantissant des performances optimales et une expérience utilisateur améliorée."
+        },
+        {
+            "code": "C25",
+            "description": "Implémenter des stratégies de sécurité robustes dans les environnements cloud en appliquant des politiques de sécurité, utilisant des outils de gestion des identités et des accès, et conduisant des audits de sécurité réguliers pour protéger les infrastructures contre les menaces."
+        },
+        {
+            "code": "C26",
+            "description": "Intégrer et mettre en œuvre des technologies blockchain, en utilisant des plateformes telles que Ethereum ou Hyperledger et en réalisant des smart contract (Contrats Intelligents) pour assurer la traçabilité, la sécurité et l'intégrité des transactions et des données dans le système d'information."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr21",
+            "description": "Qualité des services Cloud sélectionnés",
+            "indicators": [
+                "Les services sélectionnés améliorent les fonctionnalités existantes : La sélection des services cloud permet d'améliorer les fonctionnalités existantes des applications, répondant ainsi mieux aux besoins spécifiques des entreprises.",
+                "L'automatisation des processus à l'aide des services cloud sélectionnés permet de réduire les erreurs, accélérer les déploiements, et améliorer l'efficacité opérationnelle des entreprises."
+            ]
+        },
+        {
+            "code": "Cr22",
+            "description": "Efficacité de déploiement",
+            "indicators": [
+                "La configuration de l'outil répond au besoin : La configuration précise et adéquate des outils utilisés garantit que les ressources cloud sont gérées de manière optimale, répondant ainsi aux besoins du projet.",
+                "Les déploiements sont fonctionnels : La gestion reproductible des environnements cloud permet d'assurer des déploiements fiables et rapides, réduisant les erreurs manuelles et améliorant l'efficacité globale des opérations."
+            ]
+        },
+        {
+            "code": "Cr23",
+            "description": "Qualité des outils d'optimisation",
+            "indicators": [
+                "Efficacité du script ou du programme réalisé : L'efficacité du script ou du programme réalisé permet de garantir que les opérations d'administration et d'optimisation des infrastructures cloud sont automatisées de manière performante et sécurisée.",
+                "Pertinence du choix de la technologie : La pertinence du choix de la technologie utilisée assure que les solutions d'optimisation sont adaptées aux besoins spécifiques des environnements cloud, améliorant ainsi leur efficacité et leur sécurité."
+            ]
+        },
+        {
+            "code": "Cr24",
+            "description": "Qualité du monitoring",
+            "indicators": [
+                "Pertinence du choix des indicateurs : Les indicateurs choisis permettent de garantir que les outils de monitoring capturent les données essentielles pour analyser et optimiser la performance des systèmes cloud.",
+                "Le monitoring permet d'analyser la performance : Les outils de monitoring utilisés permettent une analyse approfondie de la performance, identifiant les goulets d'étranglement et fournissant des informations précises pour optimiser les configurations et améliorer l'expérience utilisateur."
+            ]
+        },
+        {
+            "code": "Cr25",
+            "description": "Stratégie de sécurité",
+            "indicators": [
+                "Les solutions proposées correspondent aux besoins de sécurité et de réglementation : Les solutions proposées répondent aux exigences de sécurité et de conformité réglementaire, assurant ainsi la protection des infrastructures cloud contre les menaces.",
+                "Les solutions mises en œuvre sont fonctionnelles : Les solutions de sécurité déployées garantissent une protection robuste des environnements cloud et une gestion adéquate des identités et des accès."
+            ]
+        },
+        {
+            "code": "Cr26",
+            "description": "Sécurité des transactions et des données",
+            "indicators": [
+                "La solution mise en œuvre est fonctionnelle : La solution blockchain mise en œuvre permet de garantir la traçabilité, la sécurité et l'intégrité des transactions et des données.",
+                "L'intégration dans le logiciel est opérationnelle : L'intégration de la technologie blockchain dans le logiciel permet d'assurer une opérationnalité fluide et efficace des smart contract, renforçant ainsi la sécurité des transactions et des données."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée sur ordinateur",
+        "delivery": "Partie 1 : Implémentation d’une application utilisant les services cloud ; Partie 2 : Sécurisation de l’application",
+        "totalDuration": "7h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E4-P1",
+                "title": "Implémentation d’une application utilisant les services Cloud",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "3h30"
+            },
+            {
+                "code": "E4-P2",
+                "title": "Sécurisation de l’application",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "3h30"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 80,
+            "compensationMin": 56,
+            "remedialBelow": 56,
+            "blockThreshold": 80
+        }
+    }
+}
