@@ -31,10 +31,6 @@
                             <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
                         </div>
 
-                        {% if evaluation.description %}
-                            <p class="subtitle">{{ evaluation.description }}</p>
-                        {% endif %}
-
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
@@ -58,6 +54,14 @@
                         </div>
                     </section>
                 </div>
+
+                {% if evaluation.description %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>{{ evaluation.blocCode }} - {{ evaluation.blocName }}</h2>
+
+                        <p>{{ evaluation.description }}</p>
+                    </section>
+                {% endif %}
 
                 {% if evaluation.format or evaluation.delivery or evaluation.totalDuration %}
                     <section class="app-section mx-0 mt-2 mb-0">
