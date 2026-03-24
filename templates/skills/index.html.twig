@@ -51,7 +51,8 @@
 
                 {% if skill.description is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Définition</h2>
+                        <h2>{{ skill.blocCode }} : {{ skill.blocName }}</h2>
+
                         <p>{{ skill.description }}</p>
                     </section>
                 {% endif %}

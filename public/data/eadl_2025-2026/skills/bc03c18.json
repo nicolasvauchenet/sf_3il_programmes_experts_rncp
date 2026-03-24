@@ -5,7 +5,7 @@
         "title": "Intégration des pratiques DevSecOps",
         "rncpCode": "39765",
         "blocCode": "BC03",
-        "blocName": "Pilotage de l'intégration et du déploiement continu dans le Système d'Information (SI)",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
         "academicYear": "2025-2026"
     },
     "description": "Intégrer des pratiques de sécurité DevSecOps tout au long du cycle de développement logiciel par la mise en œuvre d'outils d'analyse et de sécurité tel que OWASP zap, Burp Suite pour identifier et corriger les vulnérabilités, assurer la conformité aux normes de sécurité et protéger les applications contre les menaces courantes.",

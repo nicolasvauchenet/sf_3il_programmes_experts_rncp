@@ -55,7 +55,8 @@
 
                 {% if module.objectives.description is defined and module.objectives.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Objectifs</h2>
+                        <h2>{{ module.blocCode }} : {{ module.blocName }}</h2>
+
                         <p>{{ module.objectives.description }}</p>
                     </section>
                 {% endif %}

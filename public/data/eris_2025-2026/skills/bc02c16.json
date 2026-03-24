@@ -5,7 +5,7 @@
         "title": "Automatiser les processus d'intégration",
         "rncpCode": "39781",
         "blocCode": "BC02",
-        "blocName": "Conception et Pilotage des Infrastructures Systèmes et Réseaux",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
         "academicYear": "2025-2026"
     },
     "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications en utilisant des outils d’orchestration, de gestion de déploiement et de DevOps et en contrôlant le résultat par l’analyse des logs produits pour assurer la fiabilité et la reproductibilité des mises en production.",

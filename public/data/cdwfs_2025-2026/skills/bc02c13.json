@@ -5,7 +5,7 @@
         "title": "Mettre en œuvre des stratégies de sauvegarde et de récupération",
         "rncpCode": "39608",
         "blocCode": "BC02",
-        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
         "academicYear": "2025"
     },
     "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération en tenant compte des politiques de sécurité et de continuité d'entreprise pour protéger les données contre les pertes et les sinistres.",

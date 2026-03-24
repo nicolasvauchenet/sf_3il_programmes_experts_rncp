@@ -5,7 +5,7 @@
         "title": "Automatisation de la configuration et de la gestion des ressources cloud",
         "rncpCode": "39765",
         "blocCode": "BC04",
-        "blocName": "Optimisation du Système d'Information par l'apport du Cloud computing",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing",
         "academicYear": "2025-2026"
     },
     "description": "Automatiser la configuration et la gestion des ressources cloud en utilisant des outils comme Terraform et Ansible, assurant ainsi une gestion précise et reproductible des environnements pour réduire les erreurs manuelles et accélérer les déploiements.",

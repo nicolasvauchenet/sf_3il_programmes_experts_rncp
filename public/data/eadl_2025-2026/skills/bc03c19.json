@@ -5,7 +5,7 @@
         "title": "Optimisation des développements en suivant les pratiques de Clean Code",
         "rncpCode": "39765",
         "blocCode": "BC03",
-        "blocName": "Pilotage de l'intégration et du déploiement continu dans le Système d'Information (SI)",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
         "academicYear": "2025-2026"
     },
     "description": "Optimiser les développements et Structurer l'application en code modulaire en adoptant les pratiques de Clean Code, des revues de code régulières et des outils d'analyse tel que SonarQube ou DeepScan pour identifier et corriger les problèmes de qualité afin d'assurer la maintenabilité et Identifier et mettre en œuvre des améliorations pour optimiser les performances et l'efficacité des développements.",

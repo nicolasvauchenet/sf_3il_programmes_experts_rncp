@@ -5,7 +5,7 @@
         "title": "Conception de l'architecture des entrepôts de données décisionnelles",
         "rncpCode": "39765",
         "blocCode": "BC05",
-        "blocName": "Conception et optimisation d'architecture de données décisionnelles et automatisation des processus et flux métier",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
         "academicYear": "2025-2026"
     },
     "description": "Concevoir l’architecture d’entrepôts de données décisionnelles (Data Warehouse et Data Lake) en stockant et organisant de grands volumes de données structurées et non structurées pour développer des solutions adaptées aux exigences des utilisateurs et des décideurs.",

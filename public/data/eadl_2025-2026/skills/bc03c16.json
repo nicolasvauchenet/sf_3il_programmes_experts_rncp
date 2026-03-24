@@ -5,7 +5,7 @@
         "title": "Définition des méthodologies de déploiement et mise en œuvre des pipelines CI/CD",
         "rncpCode": "39765",
         "blocCode": "BC03",
-        "blocName": "Pilotage de l'intégration et du déploiement continu dans le Système d'Information (SI)",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
         "academicYear": "2025-2026"
     },
     "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines (CI/CD) en automatisant les processus d'intégration et de déploiement continus en utilisant des outils de conteneurisation et d'orchestration pour réduire les erreurs, accélérer les livraisons, les déploiements et assurer une qualité constante des livrables.",

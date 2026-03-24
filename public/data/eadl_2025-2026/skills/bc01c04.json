@@ -5,7 +5,7 @@
         "title": "Conception de l'architecture logicielle",
         "rncpCode": "39765",
         "blocCode": "BC01",
-        "blocName": "Conception et modélisation de l'architecture logicielle",
+        "blocName": "Concevoir et modéliser l’architecture logicielle",
         "academicYear": "2025-2026"
     },
     "description": "Concevoir l’architecture logicielle en analysant les exigences fonctionnelles et non fonctionnelles, en choisissant le modèle d'architecture et de modélisation et de prototypage adapté aux besoins, en sélectionnant les technologies associées, ainsi que les outils appropriés et en tenant compte des contraintes du système d’information, telles que la compatibilité avec les infrastructures existantes, la sécurité, et les performances requises, tout en anticipant la maintenance et les potentielles évolutions technologiques et organisationnelles, afin de garantir que la solution réponde de manière optimale aux besoins métiers identifiés et puisse évoluer sans interruption significative des services.",

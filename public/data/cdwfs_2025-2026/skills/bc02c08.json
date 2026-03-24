@@ -5,7 +5,7 @@
         "title": "Élaborer et implémenter des solutions back-end en POO et MVC",
         "rncpCode": "39608",
         "blocCode": "BC02",
-        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
         "academicYear": "2025"
     },
     "description": "Élaborer et implémenter des solutions back-end en appliquant la programmation orientée objet (POO), en utilisant des architectures MVC ainsi que les Frameworks adaptés pour structurer un code robuste et maintenable.",

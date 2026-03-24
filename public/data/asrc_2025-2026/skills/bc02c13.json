@@ -5,7 +5,7 @@
         "title": "Coordonner des conteneurs avec un logiciel d’orchestration",
         "rncpCode": "39611",
         "blocCode": "BC02",
-        "blocName": "Configuration et administration de l’infrastructure réseau et des solutions cloud.",
+        "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud",
         "academicYear": "2025-2026"
     },
     "description": "Coordonner les conteneurs avec des logiciels d'orchestration en garantissant l'activité des pipelines d'intégration et de déploiement continus pour optimiser la résilience et la performance des applications.",

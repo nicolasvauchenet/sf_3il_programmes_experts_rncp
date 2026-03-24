@@ -5,7 +5,7 @@
         "title": "Modélisation des structures de données et des flux",
         "rncpCode": "39765",
         "blocCode": "BC01",
-        "blocName": "Conception et modélisation de l'architecture logicielle",
+        "blocName": "Concevoir et modéliser l’architecture logicielle",
         "academicYear": "2025-2026"
     },
     "description": "Créer des diagrammes et modèles de données et de flux en utilisant des outils comme UML pour définir les structures et les relations de données nécessaires, optimisant ainsi la gestion et l'accessibilité des données et des flux pour les applications tout en garantissant leur évolutivité et performance.",

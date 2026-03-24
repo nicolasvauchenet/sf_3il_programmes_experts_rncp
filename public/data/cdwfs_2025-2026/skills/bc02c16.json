@@ -5,7 +5,7 @@
         "title": "Réaliser des tests sur les API",
         "rncpCode": "39608",
         "blocCode": "BC02",
-        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
         "academicYear": "2025"
     },
     "description": "Réaliser différents tests sur les API (tests unitaires, d'intégration, de charge et de performance) avec des frameworks pour garantir la fiabilité et la robustesse des API dans des conditions d'utilisation variées et à fort trafic.",

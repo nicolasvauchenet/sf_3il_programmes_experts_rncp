@@ -5,7 +5,7 @@
         "title": "Réaliser et maintenir la documentation de l’API",
         "rncpCode": "39608",
         "blocCode": "BC02",
-        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
         "academicYear": "2025"
     },
     "description": "Réaliser et maintenir la documentation de l'API en collaboration avec les développeurs, en utilisant des outils tels que Swagger pour les API ou des générateurs de documentation de code dans le but de faciliter la maintenabilité et l'évolutivité de l'API.",

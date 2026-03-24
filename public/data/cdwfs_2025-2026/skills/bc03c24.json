@@ -5,7 +5,7 @@
         "title": "Coordonner des conteneurs avec un logiciel d’orchestration",
         "rncpCode": "39608",
         "blocCode": "BC03",
-        "blocName": "Architectures Systèmes d'Information, Cloud and Devops pour l'intégration et la livraison continue des solutions logicielles.",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
         "academicYear": "2025"
     },
     "description": "Coordonner les containeurs avec des logiciels d'orchestration en garantissant l'activité des pipelines d'intégration et de déploiement continus pour optimiser la résilience et la performance des applications.",

@@ -5,7 +5,7 @@
         "title": "Élaborer et administrer des bases de données relationnelles",
         "rncpCode": "39608",
         "blocCode": "BC02",
-        "blocName": "Back End – Conception et développement d'applications et API reposant sur des infrastructure de serveurs et de bases de données",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
         "academicYear": "2025"
     },
     "description": "Élaborer et administrer des bases de données relationnelles (telles que MySQL ou PostgreSQL) et en utilisant SQL et en respectant les principes de normalisation pour assurer l'intégrité, la performance et la sécurité des données.",
