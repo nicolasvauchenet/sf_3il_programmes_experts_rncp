@@ -9,7 +9,7 @@
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 1,
-    "description": "Conception et installation d'un système d'information à partir d'un cahier des charges.",
+    "description": "Conception, installation et mise en place d'un système d'information à partir d'un cahier des charges.",
     "skills": [
         {
             "code": "C01",
@@ -66,24 +66,32 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Rédaction d’un dossier d’architecture technique",
-        "totalDuration": "3h00"
+        "delivery": "Partie 1 : Rédaction d’un dossier d’architecture ; Partie 2 : Mise en place de la solution",
+        "totalDuration": "6h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E1",
+                "code": "E1-P1",
                 "title": "Rédaction d’un dossier d’architecture",
                 "type": "Épreuve écrite",
                 "coefficient": 2,
                 "points": 120,
                 "duration": "3h00"
+            },
+            {
+                "code": "E1-P2",
+                "title": "Mise en place de la solution",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 120,
+                "duration": "3h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 60,
-            "compensationMin": 42,
-            "remedialBelow": 42,
+            "evaluationThreshold": 120,
+            "compensationMin": 84,
+            "remedialBelow": 84,
             "blockThreshold": 100
         }
     }

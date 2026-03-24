@@ -2,73 +2,73 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39611-BC03-EC07",
-        "title": "Mise en œuvre des politiques de sécurité et gestion des risques par l'Ethical Hacking",
+        "title": "Supervision et contrôle de la protection des données et de la conformité réglementaire",
         "rncpCode": "39611",
         "blocCode": "BC03",
         "blocName": "Élaborer et mettre en œuvre des stratégies de Cybersécurité pour la protection des données",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 7,
-    "description": "Analyser un SI et sa politique de sécurité pour détecter ses failles éventuelles et proposer les contre-mesures adaptées ; analyser le résultat d’un audit technique de scan.",
+    "description": "Mise en place d'un plan de sauvegarde.",
     "skills": [
         {
-            "code": "C15",
-            "description": "Développer, documenter et mettre en œuvre des politiques de sécurité informatique"
+            "code": "C20",
+            "description": "Superviser les opérations de sauvegarde et de restauration des données"
         },
         {
-            "code": "C16",
-            "description": "Conduire des audits de sécurité"
+            "code": "C21",
+            "description": "Assurer le support et le suivi des incidents IT"
         },
         {
-            "code": "C17",
-            "description": "Élaborer et mettre en œuvre des actions correctives"
+            "code": "C22",
+            "description": "Assurer la conformité aux réglementations de protection des données"
         }
     ],
     "criteria": [
         {
-            "code": "Cr15",
-            "description": "Développement de la politique de sécurité",
+            "code": "Cr20",
+            "description": "Gestion et supervision des plan de sauvegarde",
             "indicators": [
-                "Qualité de l’analyse de la PSSI fournie : Les cadres tels que le RGPD (Règlement Général sur la Protection des Données), ISO/IEC 27001 (norme internationale pour la gestion de la sécurité de l'information), et autres réglementations sectorielles spécifiques sont respectés. Les processus d'audit internes réguliers et des revues indépendantes sont documentés.",
-                "Pertinence : Les contre-mesures proposées sont directement alignées avec les vulnérabilités identifiées et assurent une réponse adéquate et ciblée pour renforcer la sécurité de l'infrastructure."
+                "Efficacité : Les solutions de sauvegarde mises en place permettent de restaurer les données dans les délais prévus par le plan de reprise d'activité",
+                "Complétude : Les plans de reprise après sinistre garantissent le respect du RPO (Recovery Point Objective), quantité maximale de données qu'il est acceptable de perdre lors d'une interruption."
             ]
         },
         {
-            "code": "Cr16",
-            "description": "Conduite d'audit de sécurité",
+            "code": "Cr21",
+            "description": "Respect des Accords de Niveaux de Services SLA",
             "indicators": [
-                "Qualité de l’analyse de l’audit technique : L'analyse de l'audit technique permet d'identifier clairement les failles de sécurité et proposer des recommandations précises pour y remédier. Au moins 90% des points de vulnérabilité ont été détectés et qualifies en termes de risques.",
-                "Pertinence : Les vulnérabilités identifiées garantissent que les risques les plus critiques sont pris en compte de manière à sécuriser le SI"
+                "Efficacité : Les scénarios définis permettent une identification rapide et efficace des problèmes, garantissant une réponse adéquate et un rétablissement rapide des services conformément aux niveaux de service définis.",
+                "Pertinence : Les outils sélectionnés permettent une gestion et un suivi efficaces des incidents, assurant une intervention rapide et conforme aux exigences opérationnelles de l'entreprise."
             ]
         },
         {
-            "code": "Cr17",
-            "description": "Élaboration d'actions correctives",
+            "code": "Cr22",
+            "description": "Gestion de la conformité",
             "indicators": [
-                "Pertinence : Les contre-mesures suggérées répondent aux vulnérabilités détectées lors des audits et assurent une amélioration de la sécurité de l'infrastructure."
+                "Adéquation des audits de conformité : Les audits réalisés permettent d'identifier les non-conformités aux réglementations de protection des données, telles que le RGPD."
             ]
         }
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Rapport d’analyse et des préconisations",
-        "totalDuration": "3h00"
+        "delivery": "Mise en place d’un plan de sauvegarde",
+        "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E7",
-                "title": "Rapport d’analyse et des préconisations",
+                "code": "E7-P1",
+                "title": "Mise en place d’un plan de sauvegarde",
                 "type": "Épreuve écrite",
-                "coefficient": 3,
-                "points": 60,
-                "duration": "3h00"
+                "coefficient": 4,
+                "points": 80,
+                "duration": "4h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 30,
-            "compensationMin": 21,
-            "remedialBelow": 21,
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
             "blockThreshold": 100
         }
     }

@@ -1,14 +1,14 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39611-BC03-EC08",
+        "code": "RNCP39611-BC03-EC06",
         "title": "Administration des systèmes de sécurité et des contrôles d’accès",
         "rncpCode": "39611",
         "blocCode": "BC03",
         "blocName": "Élaborer et mettre en œuvre des stratégies de Cybersécurité pour la protection des données",
         "academicYear": "2025-2026"
     },
-    "evaluationNumber": 8,
+    "evaluationNumber": 6,
     "description": "À partir d'une étude de cas d'une infrastructure réseau d'entreprise, le candidat proposera un rapport d’analyse et de préconisations d'amélioration de l'existant.",
     "skills": [
         {
@@ -47,7 +47,7 @@
     "exam": {
         "parts": [
             {
-                "code": "E8",
+                "code": "E6-P1",
                 "title": "Rapport d’analyse et de préconisations d'amélioration de l'existant",
                 "type": "Épreuve écrite",
                 "coefficient": 3,

@@ -12,8 +12,24 @@
     },
     "skills": [
         {
-            "code": "BC01",
-            "description": "Toutes les compétences du Bloc BC01 exceptée la Compétence 6."
+            "code": "C01",
+            "description": "Concevoir et structurer des interfaces web en utilisant le langage HTML5 en appliquant des pratiques de codage sémantique avancées pour produire des sites conformes aux besoins des personnes en situation de handicap (standards d'accessibilité du W3C) et à l'optimisation pour le référencement (SEO)."
+        },
+        {
+            "code": "C02",
+            "description": "Créer et Intégrer, grâce au CSS3, des interfaces intuitives pour les utilisateurs (UI), en tenant compte de la compréhension approfondie de l'expérience utilisateurs (UX) et des meilleures pratiques en matière de design d'interaction."
+        },
+        {
+            "code": "C03",
+            "description": "Élaborer et réaliser des interfaces web adaptatives en utilisant des techniques de Responsive Web Design, notamment avec l'aide d'un Framework dédié pour assurer une expérience utilisateur cohérente et de qualité sur tous types de terminaux."
+        },
+        {
+            "code": "C04",
+            "description": "Implémenter des interactions côté client en utilisant JavaScript et TypeScript et respectant les standards ECMAScript pour concevoir des fonctionnalités interactives (validation de formulaires, animations…) permettant d’améliorer l’engagement utilisateur et l’interactivité du site web."
+        },
+        {
+            "code": "C05",
+            "description": "Optimiser la communication asynchrone entre les utilisateurs et les serveurs en développant des requêtes AJAX pour accroître la réactivité et la performance des applications web."
         }
     ],
     "objectives": {
