@@ -20,8 +20,8 @@ RUN composer install \
     --optimize-autoloader \
     --no-interaction
 
-# Cache Symfony (pas obligatoire mais propre)
-RUN php bin/console cache:clear --env=prod \
+RUN php bin/console asset-map:compile \
+ && php bin/console cache:clear --env=prod \
  && php bin/console cache:warmup --env=prod
 
 COPY docker/Caddyfile /etc/caddy/Caddyfile
