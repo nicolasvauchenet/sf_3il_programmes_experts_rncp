@@ -1,0 +1,58 @@
+stages:
+    - test
+    - deploy
+
+variables:
+    APP_ENV: test
+    COMPOSER_ALLOW_SUPERUSER: "1"
+    GIT_STRATEGY: fetch
+
+cache:
+    paths:
+        - vendor/
+
+ci:composer:
+    stage: test
+    image: composer:2
+    script:
+        - composer install --prefer-dist --no-interaction
+        - composer validate --strict
+        - composer audit
+    rules:
+        -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
+
+ci:phpunit:
+    stage: test
+    image: php:8.4-cli
+    before_script:
+        - apt-get update && apt-get install -y git unzip curl
+        - curl -sS https://getcomposer.org/installer | php
+        - mv composer.phar /usr/local/bin/composer
+        - composer install --prefer-dist --no-interaction
+    script:
+        - php bin/phpunit
+    rules:
+        -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
+
+deploy:prod:
+    stage: deploy
+    image: debian:stable-slim
+    before_script:
+        - apt-get update && apt-get install -y openssh-client curl
+        - mkdir -p ~/.ssh
+        - chmod 700 ~/.ssh
+        - eval "$(ssh-agent -s)"
+        - ssh-add "$SSH_PRIVATE_KEY"
+        - ssh-keyscan -p "$DEPLOY_PORT" "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+    script:
+        - >
+            ssh -p "$DEPLOY_PORT" "$DEPLOY_USER@$DEPLOY_HOST"
+            "cd '$DEPLOY_PATH'
+            && git pull
+            && docker compose up -d --build
+            && docker compose ps
+            && curl -f http://127.0.0.1 || exit 1"
+    rules:
+        -   if: '$CI_COMMIT_BRANCH == "main"'
+            when: on_success
