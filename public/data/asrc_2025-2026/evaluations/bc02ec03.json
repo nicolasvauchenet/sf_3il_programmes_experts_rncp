@@ -1,15 +1,15 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39611-BC02-EC05",
+        "code": "RNCP39611-BC02-EC03",
         "title": "Configuration de l’infrastructure Réseaux",
         "rncpCode": "39611",
         "blocCode": "BC02",
         "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud",
         "academicYear": "2025-2026"
     },
-    "evaluationNumber": 5,
-    "description": "Définition des spécifications techniques et fonctionnelles aux nouveaux besoins ou amélioration avec la stratégie de surveillance et de suivi.",
+    "evaluationNumber": 3,
+    "description": "Définition des spécifications techniques et fonctionnelles, rédaction du dossier technique et mise en service de la solution avec stratégie de surveillance et de suivi.",
     "skills": [
         {
             "code": "C09",
@@ -51,13 +51,21 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Mise en service de la solution",
-        "totalDuration": "2h00"
+        "delivery": "Partie 1 : Rédaction d’un dossier technique ; Partie 2 : Mise en service de la solution",
+        "totalDuration": "6h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E5",
+                "code": "E3-P1",
+                "title": "Rédaction d’un dossier technique",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 120,
+                "duration": "4h00"
+            },
+            {
+                "code": "E3-P2",
                 "title": "Mise en service de la solution",
                 "type": "Épreuve écrite",
                 "coefficient": 2,
@@ -66,9 +74,9 @@
             }
         ],
         "validation": {
-            "evaluationThreshold": 60,
-            "compensationMin": 42,
-            "remedialBelow": 42,
+            "evaluationThreshold": 120,
+            "compensationMin": 84,
+            "remedialBelow": 84,
             "blockThreshold": 100
         }
     }

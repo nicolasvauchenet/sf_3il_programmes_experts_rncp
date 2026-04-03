@@ -14,11 +14,11 @@
 
     .toc {
         overflow-y: auto;
-        max-height: 76.5dvh;
+        max-height: 68.5dvh;
         padding: 0.5rem 0.5rem 0.5rem 0;
 
         @include respondTo(sm) {
-            max-height: 76.5dvh;
+            max-height: 68.5dvh;
         }
 
         a {

@@ -39,12 +39,12 @@
             font-family: $font-secondary;
             font-size: 0.7rem;
             font-weight: normal;
-            letter-spacing: 3.1px;
+            letter-spacing: 3.6px;
             color: $secondary;
 
             @include respondTo(md) {
                 font-size: 1.15rem;
-                letter-spacing: 4.7px;
+                letter-spacing: 4.5px;
             }
         }
     }

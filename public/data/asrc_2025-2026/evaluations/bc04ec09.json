@@ -1,15 +1,15 @@
 {
     "meta": {
         "type": "evaluation",
-        "code": "RNCP39611-BC04-EC11",
+        "code": "RNCP39611-BC04-EC09",
         "title": "Planification et suivi de projet selon les méthodologies agiles",
         "rncpCode": "39611",
         "blocCode": "BC04",
         "blocName": "Conduire la gestion de projets d’infrastructure systèmes et réseaux sécurisée",
         "academicYear": "2025-2026"
     },
-    "evaluationNumber": 11,
-    "description": "Compte rendu d'activité (livrables collectifs).",
+    "evaluationNumber": 9,
+    "description": "Production d'un compte rendu d'activité à partir de livrables collectifs, suivie d'une soutenance individuelle.",
     "skills": [
         {
             "code": "C25",
@@ -52,24 +52,32 @@
     ],
     "modalities": {
         "format": "Mise en situation professionnelle reconstituée d’une durée de 2 à 5 jours consécutifs.",
-        "delivery": "Compte rendu d'activité (livrables collectifs)",
-        "totalDuration": "2 à 5 jours"
+        "delivery": "Partie 1 : Compte rendu d'activité (livrables collectifs) ; Partie 2 : Soutenance (individuelle)",
+        "totalDuration": "2 à 5 jours + 20 mn"
     },
     "exam": {
         "parts": [
             {
-                "code": "E11",
-                "title": "Compte rendu d'activité (livrables collectifs)\nSoutenance (individuelle)",
+                "code": "E9-P1",
+                "title": "Compte rendu d'activité (livrables collectifs)",
                 "type": "Épreuve écrite",
                 "coefficient": 2,
                 "points": 100,
                 "duration": "2 à 5 jours"
+            },
+            {
+                "code": "E9-P2",
+                "title": "Soutenance (individuelle)",
+                "type": "Épreuve orale",
+                "coefficient": 3,
+                "points": 100,
+                "duration": "20 mn"
             }
         ],
         "validation": {
-            "evaluationThreshold": 50,
-            "compensationMin": 35,
-            "remedialBelow": 35,
+            "evaluationThreshold": 100,
+            "compensationMin": 70,
+            "remedialBelow": 70,
             "blockThreshold": 110
         }
     }

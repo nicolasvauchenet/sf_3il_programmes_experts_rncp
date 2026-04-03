@@ -12,8 +12,28 @@
     },
     "skills": [
         {
-            "code": "",
-            "description": "Toutes les compétences du BC02."
+            "code": "C09",
+            "description": "Configurer l'infrastructure réseau à l'aide de protocoles et d'équipements adaptés aux besoins fonctionnels, en collaboration avec l'équipe réseau, pour assurer une connectivité fluide et sécurisée du système d'information."
+        },
+        {
+            "code": "C10",
+            "description": "Déployer les solutions de télécommunications, de réseaux de données et voix, en supervisant l'installation et la configuration dans l'environnement de production, en collaboration avec les équipes techniques et les fournisseurs, pour garantir l'efficacité des communications internes et externes et assurer la continuité des services."
+        },
+        {
+            "code": "C11",
+            "description": "Superviser et assurer la maintenance du réseau en utilisant des systèmes de monitoring, en collaboration avec les équipes de sécurité informatique et d'exploitation, pour maintenir une performance réseau optimale."
+        },
+        {
+            "code": "C12",
+            "description": "Développer des environnements virtualisés en utilisant une plateforme de conteneurisation pour standardiser et simplifier le déploiement d'applications sur tous types d'infrastructure."
+        },
+        {
+            "code": "C13",
+            "description": "Coordonner les conteneurs avec des logiciels d'orchestration en garantissant l'activité des pipelines d'intégration et de déploiement continus pour optimiser la résilience et la performance des applications."
+        },
+        {
+            "code": "C14",
+            "description": "Intégrer et déployer les pratiques de sécurité dans les processus de développement et d'exploitation en collaborant avec les équipes de développement et en utilisant des outils DevOps, pour maîtriser les risques et assurer la conformité des applications sur des plateformes cloud."
         }
     ],
     "objectives": {

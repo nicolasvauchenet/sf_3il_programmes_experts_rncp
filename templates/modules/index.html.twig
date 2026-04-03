@@ -180,7 +180,7 @@
                                         <a href="{{ path('app_promotion_evaluations', {
                                             'promotion': promotion,
                                             'year': year,
-                                            'code': evaluation.code
+                                            'code': (module.blocCode ~ evaluation.code) | lower
                                         }) }}">
                                             <strong>{{ module.blocCode }}{{ evaluation.code | upper }}</strong>
                                         </a>

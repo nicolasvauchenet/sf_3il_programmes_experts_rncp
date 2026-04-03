@@ -12,8 +12,24 @@
     },
     "skills": [
         {
-            "code": "",
-            "description": "Toutes les compétences liées au bloc 4 sont mobilisées dans ce module dans leur mise en pratique."
+            "code": "C25",
+            "description": "Piloter un projet au moyen d’une méthode de gestion de projet et des outils adapté s au contexte , en analysant le besoin, en rédigeant les documents d’initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l’entreprise et garantir la qualité des livrables , le respect des délais et des coûts."
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s’adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d’assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs."
+        },
+        {
+            "code": "C27",
+            "description": "Elaborer et mettre en œuvre la conduite du changement en s’appuyant sur des référentiels tels qu’ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l’impact d’une évolution (mineure, delta ou majeure) de l’infrastructure sur l’environnement de production."
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l’équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l’écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées ."
+        },
+        {
+            "code": "C29",
+            "description": "Contribuer au recrutement des collaborateurs en participant aux rédactions de fiches de poste, en assurant une caution technique au moyen d’évaluations des compétences lors des entretiens, et en mettant l'accent sur l'inclusion notamment des personnes en situation de handicap , afin de contribuer à la construction d'une équipe diversifiée, reflétant les valeurs de l'égalité des chances et de la responsabilité sociétale (RSE)."
         }
     ],
     "objectives": {

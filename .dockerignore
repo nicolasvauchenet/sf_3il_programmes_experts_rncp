@@ -1,0 +1,8 @@
+.git
+.gitignore
+vendor
+var
+.env.*
+compose.yml
+docker-compose.yml
+compose.override.yml

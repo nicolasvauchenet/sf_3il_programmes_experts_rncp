@@ -2,73 +2,73 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39611-BC02-EC04",
-        "title": "Configuration de l’infrastructure Réseaux",
+        "title": "Conception et réalisation de l’intégration et du déploiement continu (Cloud & Devops)",
         "rncpCode": "39611",
         "blocCode": "BC02",
         "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud",
         "academicYear": "2025-2026"
     },
     "evaluationNumber": 4,
-    "description": "Définition des spécifications techniques et fonctionnelles aux nouveaux besoins ou amélioration avec la stratégie de surveillance et de suivi.",
+    "description": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu.",
     "skills": [
         {
-            "code": "C09",
-            "description": "Configurer l'infrastructure réseau"
+            "code": "C12",
+            "description": "Développer des environnements virtualisés en utilisant une plateforme conteneurisation"
         },
         {
-            "code": "C10",
-            "description": "Déployer les solutions de télécommunications, de réseaux de données et voix"
+            "code": "C13",
+            "description": "Coordonner les containeurs avec des logiciels d'orchestration"
         },
         {
-            "code": "C11",
-            "description": "Superviser et assurer la maintenance du réseau"
+            "code": "C14",
+            "description": "Intégrer et déployer les pratiques de sécurité dans les processus de développement"
         }
     ],
     "criteria": [
         {
-            "code": "Cr9",
-            "description": "Configuration et intégration de solutions réseaux",
+            "code": "Cr12",
+            "description": "Virtualisation et conteneurisation",
             "indicators": [
-                "Adéquation aux besoins : Les protocoles et les équipements assurent une communication fluide et sans interruption.",
-                "Gestion de la Sécurité : La réponse apportée sécurise l'infrastructure réseau"
+                "La conteneurisation est fonctionnelle de manière identique sous tous types d'environnement d'exécution."
             ]
         },
         {
-            "code": "Cr10",
-            "description": "Mise en service de solutions Voix/Data",
+            "code": "Cr13",
+            "description": "Orchestration et déploiement continus",
             "indicators": [
-                "Couverture des tests : Les tests (de connectivité, d'authentification, d'appel, ...) couvrent le fonctionnement des différents services installés",
-                "Clarté des tests : La documentation des tests permet à l'ensemble des collaborateurs de pouvoir les mettre en œuvre."
+                "L'outil d'orchestration garantit la gestion dynamique des ressources.",
+                "La mise à l'échelle (Scaling) des ressources orchestrées garantit la robustesse des pipelines d'intégration et de déploiement continus."
             ]
         },
         {
-            "code": "Cr11",
-            "description": "Supervision du réseau",
+            "code": "Cr14",
+            "description": "Gestion et déploiement cloud",
             "indicators": [
-                "Complétude de la Surveillance : la solution permet d'assurer un suivi en temps réel des différents services"
+                "Conformité de l'automatisation : Les processus d'automatisation mis en place pour la gestion et le déploiement des ressources cloud sont conformes aux meilleures pratiques DevOps.",
+                "Sécurité des déploiements : Les mesures de sécurité appliquées lors de l'automatisation garantissent la protection des applications et des données hébergées contre les accès non autorisés et autres vulnérabilités potentielles."
             ]
         }
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Rédaction d’un dossier technique de la solution",
+        "delivery": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu.",
         "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
-                "code": "E4",
-                "title": "Rédaction d’un dossier technique",
+                "code": "E4-P1",
+                "title": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu.",
                 "type": "Épreuve écrite",
                 "coefficient": 4,
-                "points": 120,
+                "points": 80,
                 "duration": "4h00"
             }
         ],
         "validation": {
-            "evaluationThreshold": 60,
-            "compensationMin": 42,
-            "remedialBelow": 42,
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
             "blockThreshold": 100
         }
     }

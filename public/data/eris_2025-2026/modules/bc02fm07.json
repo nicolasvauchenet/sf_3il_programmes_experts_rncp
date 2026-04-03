@@ -12,8 +12,32 @@
     },
     "skills": [
         {
-            "code": "",
-            "description": "Toutes les compétences du Bloc de compétences 02 « Concevoir et Piloter les Infrastructures Systèmes et Réseaux »."
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions , en conformité avec le schéma directeur de la DSI , en combinant des ressources locales (on -premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications."
+        },
+        {
+            "code": "C12",
+            "description": "Définir , implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*) afin de protéger les systèmes et les données sensibles contre les accès non autorisés."
+        },
+        {
+            "code": "C13",
+            "description": "Arbitrer la technologie d’hébergement des systèmes et/ou applications (serveur dédié, virtualisation, conteneurisation /orchestration ou cloud ) en évaluant et optimisant les ressources nécessaires à leur usage (telles que machine, stockage, bande passante, processeur, mémoire, consommation électrique) , pour les déployer, les mettre en production et les gérer de manière fiable, flexible et scalable."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites, en tenant compte des engagements de disponibilité, de capacité afin de garantir la qualité de service (QoS), la résilience (PCA) et la sécurité des communications."
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place , au contrôle et à l’administration de l'infrastructure, en mobilisant ses compétences techniques, en collaborant avec les équipes pluridisciplinaires et en documentant la solution pour déployer les éléments techniques de la solution."
+        },
+        {
+            "code": "C16",
+            "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications en utilisant des outils d’orchestration, de gestion de déploiement et de DevOps et en contrôlant le résultat par l’analyse des logs produits pour assurer la fiabilité et la reproductibilité des mises en production."
+        },
+        {
+            "code": "C17",
+            "description": "Organiser et piloter la gestion des incidents et du support en définissant les processus standardisés pour la création, l’attribution, le suivi des tickets et leur élévation, dans un cadre d’amélioration continue et en s’appuyant sur des outils de gestion des tickets (ITSM) , pour suivre, prioriser et résoudre les incidents, ainsi qu’assurer une résolution rapide et efficace des problèmes techniques."
         }
     ],
     "objectives": {

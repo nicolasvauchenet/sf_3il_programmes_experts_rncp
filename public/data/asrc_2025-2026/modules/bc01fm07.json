@@ -12,8 +12,36 @@
     },
     "skills": [
         {
-            "code": "",
-            "description": "Toutes les compétences de ce bloc sont mobilisées pour vérifier qu'elles ont bien été acquises par les étudiants avant les épreuves certifiantes 1, 2 et 3. Ce projet permet aussi à l'étudiant de se rendre compte de son niveau par rapport au niveau de compétences attendu dans ce bloc."
+            "code": "C01",
+            "description": "Administrer et optimiser les systèmes d'exploitation Unix, Linux et Windows en tenant compte des bonnes pratiques de la qualité de service (QoS), en collaboration avec les équipes techniques, pour assurer les exigences de performance et de fiabilité de l'entreprise."
+        },
+        {
+            "code": "C02",
+            "description": "Concevoir des topologies systèmes à l'aide d'un annuaire, en structurant efficacement les ressources informatiques et la gestion des identités et des accès aux différentes ressources, pour répondre aux besoins opérationnels et respecter les politiques d'accès et de sécurité de l'entreprise."
+        },
+        {
+            "code": "C03",
+            "description": "Concevoir et déployer des environnements virtualisés à l'aide de plateformes spécialisées On-Premise ou sur un cloud provider, en coopération avec les architectes système, pour rationaliser l'utilisation des ressources informatiques et répondre à l'évolutivité des besoins de l'entreprise."
+        },
+        {
+            "code": "C04",
+            "description": "Concevoir, gérer et administrer les systèmes de gestion de bases de données relationnelles et NoSQL, en appliquant des principes d'optimisation et en collaboration avec les développeurs et analystes de données, pour garantir la cohérence, la qualité, la sécurité et l’accessibilité permanente des informations."
+        },
+        {
+            "code": "C05",
+            "description": "Mettre en œuvre des solutions de redondance, de réplication et de clustering, en tenant compte des contraintes de sécurité et de performance, afin d'assurer la continuité de l'activité de l'entreprise."
+        },
+        {
+            "code": "C06",
+            "description": "Surveiller et optimiser les performances des systèmes informatiques en utilisant des outils de monitoring et d'analyse, en coordination avec les équipes d'exploitation, pour détecter et résoudre proactivement les problèmes techniques et améliorer la performance des systèmes."
+        },
+        {
+            "code": "C07",
+            "description": "Manager le processus de gestion des incidents informatiques en utilisant un système de ticketing pour conduire, hiérarchiser ou escalader les incidents en collaboration avec les équipes techniques et en respectant les SLA définis afin d'assurer une reprise ou continuité des activités de l'entreprise."
+        },
+        {
+            "code": "C08",
+            "description": "Automatiser les tâches d'administration en développant et en appliquant des scripts en Python, Shell et Bash pour augmenter l'efficacité opérationnelle et réduire les délais de réponse en cas de problèmes ou de besoins de maintenance."
         }
     ],
     "objectives": {

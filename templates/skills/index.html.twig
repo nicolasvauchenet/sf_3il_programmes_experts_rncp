@@ -98,7 +98,7 @@
                                             <a href="{{ path('app_promotion_modules', {
                                                 'promotion': promotion,
                                                 'year': year,
-                                                'code': module.code
+                                                'code': (skill.blocCode ~ module.code) | lower
                                             }) }}">
                                                 <strong>{{ skill.blocCode }}{{ module.code | upper }}</strong>
                                             </a>
@@ -122,7 +122,7 @@
                                             <a href="{{ path('app_promotion_evaluations', {
                                                 'promotion': promotion,
                                                 'year': year,
-                                                'code': evaluation.code
+                                                'code': (skill.blocCode ~ evaluation.code) | lower
                                             }) }}">
                                                 <strong>{{ skill.blocCode }}{{ evaluation.code | upper }}</strong>
                                             </a>
