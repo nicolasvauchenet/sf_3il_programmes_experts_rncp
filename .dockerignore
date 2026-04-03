@@ -6,4 +6,3 @@ var
 compose.yml
 docker-compose.yml
 compose.override.yml
-docker/
