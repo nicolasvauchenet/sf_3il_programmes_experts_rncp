@@ -43,6 +43,7 @@ deploy:prod:
         - mkdir -p ~/.ssh
         - chmod 700 ~/.ssh
         - eval "$(ssh-agent -s)"
+        - chmod 600 "$SSH_PRIVATE_KEY"
         - ssh-add "$SSH_PRIVATE_KEY"
         - ssh-keyscan -p "$DEPLOY_PORT" "$DEPLOY_HOST" >> ~/.ssh/known_hosts
         - chmod 644 ~/.ssh/known_hosts
