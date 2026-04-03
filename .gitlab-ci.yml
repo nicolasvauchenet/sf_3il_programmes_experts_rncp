@@ -29,10 +29,11 @@ ci:phpunit:
         - curl -sS https://getcomposer.org/installer | php
         - mv composer.phar /usr/local/bin/composer
         - composer install --prefer-dist --no-interaction
-    #script:
-        #- php bin/phpunit
+    script:
+        - php bin/phpunit
     rules:
-        -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
+        #-   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
+        -   when: never
 
 deploy:prod:
     stage: deploy
