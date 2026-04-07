@@ -39,14 +39,17 @@ deploy:prod:
     stage: deploy
     image: debian:stable-slim
     before_script:
-        - apt-get update && apt-get install -y openssh-client curl
+        - apt-get update && apt-get install -y openssh-client curl netcat-openbsd
         - mkdir -p ~/.ssh
         - chmod 700 ~/.ssh
         - eval "$(ssh-agent -s)"
         - echo "$SSH_PRIVATE_KEY_B64" | base64 -d > ~/.ssh/deploy_key
         - chmod 600 ~/.ssh/deploy_key
         - ssh-add ~/.ssh/deploy_key
-        - ssh-keyscan -p "$DEPLOY_PORT" "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+        - echo "DEPLOY_HOST=$DEPLOY_HOST"
+        - echo "DEPLOY_PORT=$DEPLOY_PORT"
+        - nc -vz "$DEPLOY_HOST" "$DEPLOY_PORT"
+        - ssh-keyscan -p "$DEPLOY_PORT" "$DEPLOY_HOST" | tee -a ~/.ssh/known_hosts
         - chmod 644 ~/.ssh/known_hosts
     script:
         - >
