@@ -30,7 +30,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr36",
             "description": "Mobiliser ses connaissances technologiques et maîtrise de l'anglais",
             "indicators": [
                 "Pertinence des informations trouvées : Les informations extraites des recherches sont directement applicables et pertinentes pour résoudre des problèmes spécifiques rencontrés lors du développement ou pour optimiser la gestion de projet.",
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr37",
             "description": "Veille technologique et gestion de l'information",
             "indicators": [
                 "Sélection et pertinence des sources : Les sources d'information choisies doivent être pertinentes et crédibles, couvrant divers domaines technologiques liés aux objectifs du projet.",
@@ -48,7 +48,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr38",
             "description": "Analyse des données collectées",
             "indicators": [
                 "Création de base de connaissances : Les données sont organisées de manière à permettre un accès facile et rapide, en utilisant des méthodes de classification et de catégorisation adaptées aux besoins de l'équipe de développement.",
@@ -58,7 +58,7 @@
             ]
         },
         {
-            "code": "Cr4",
+            "code": "Cr39",
             "description": "Diffusion des hypothèses ou scénarios",
             "indicators": [
                 "Diffusion des informations : Les résultats de l'analyse sont communiqués clairement à l'équipe de développement, en utilisant des outils collaboratifs pour encourager la discussion et le partage des connaissances.",

@@ -2,7 +2,7 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39608-BC04-EC10",
-        "title": "Rédaction d'un guide de bonnes pratiques (Gestion des revus de code et des différents tests, documentation)",
+        "title": "Rédaction d'un guide de bonnes pratiques (Gestion des revues de code et des différents tests, documentation)",
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
@@ -26,7 +26,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr33",
             "description": "Revues de code et outils d'analyse",
             "indicators": [
                 "Conformité aux standards : Le code révisé est en adéquation avec les standards de développement de l'entreprise.",
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr34",
             "description": "Tests automatisés",
             "indicators": [
                 "Couverture des tests : Les tests automatisés couvrent une large étendue des fonctionnalités de l'application, incluant les cas limites et les scénarios d'erreur.",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr35",
             "description": "Documentation technique et partage des connaissances",
             "indicators": [
                 "Exhaustivité de la documentation : La documentation couvre tous les aspects de l'application, y compris les configurations, l'utilisation et le dépannage.",

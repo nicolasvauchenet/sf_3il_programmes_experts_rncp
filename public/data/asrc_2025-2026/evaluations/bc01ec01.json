@@ -30,7 +30,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr01",
             "description": "Administration d'un système d'information",
             "indicators": [
                 "Conformité au cahier des charges : L'architecture conçue permet de répondre aux besoins exprimés dans le cahier des charges",
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr02",
             "description": "Gestion des politiques d'accès",
             "indicators": [
                 "Respect des politiques d'accès : L'implémentation des contrôles d'accès garantit les directives de sécurité établies par l'entreprise.",
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr03",
             "description": "Rationalisation des ressources",
             "indicators": [
                 "Conformité : L'architecture virtualisée conçue garantit l'adéquation avec les besoins opérationnels et évolutifs de l'entreprise.",
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "code": "Cr4",
+            "code": "Cr04",
             "description": "Administration des Bases de données",
             "indicators": [
                 "Conformité du système de base de données : Le système de base de données permet de répondre précisément aux exigences du cahier des charges",

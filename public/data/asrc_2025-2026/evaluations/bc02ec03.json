@@ -26,7 +26,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr9",
+            "code": "Cr09",
             "description": "Configuration et intégration de solutions réseaux",
             "indicators": [
                 "Adéquation aux besoins : Les protocoles et les équipements assurent une communication fluide et sans interruption.",

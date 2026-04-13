@@ -18,7 +18,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr06",
             "description": "Utilisation de Frameworks",
             "indicators": [
                 "Productivité: Le code conçu et réalisé à l'aide de frameworks modernes tels que React, Vue.js ou Angular est bien organisé et suit les principes de DRY (Don't Repeat Yourself).",

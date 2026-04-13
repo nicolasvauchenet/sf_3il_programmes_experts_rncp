@@ -30,7 +30,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr5",
+            "code": "Cr05",
             "description": "Garantie de la continuité de services",
             "indicators": [
                 "Pertinence des améliorations proposées : Les améliorations proposées permettent d'accroître l'efficacité et la résilience des systèmes. Une matrice des risques est proposée et les solutions répondent aux risques référencés.",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "code": "Cr6",
+            "code": "Cr06",
             "description": "Gestion de la performance",
             "indicators": [
                 "Pertinence du choix de l'outil de monitoring : La surveillance et l'analyse des performances du système permettent un temps de réponse correspondant aux accords de niveaux de Services (SLA) définis dans le Plan de reprise d'activité (PRA).",
@@ -46,14 +46,14 @@
             ]
         },
         {
-            "code": "Cr7",
+            "code": "Cr07",
             "description": "Gestion des incidents",
             "indicators": [
                 "Gestion des incidents : La procédure proposée permet de minimiser ainsi les interruptions de service et de garantir une reprise rapide des opérations."
             ]
         },
         {
-            "code": "Cr8",
+            "code": "Cr08",
             "description": "Automatisation et optimisation de l'administration",
             "indicators": [
                 "Conformité : Le choix de la technologie de script répond à l'étude de cas donnée et de couvrir 100% des besoins identifiés",

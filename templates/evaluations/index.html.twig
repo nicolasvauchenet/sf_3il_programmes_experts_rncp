@@ -165,7 +165,9 @@
                                         {% set skillDescription = s.description|trim %}
 
                                         <p class="mb-1">
-                                            <strong>Critère {{ criterion.code }}</strong>
+                                            <strong>
+                                                Critère d'évaluation : {{ criterion.description }}
+                                            </strong>
                                         </p>
 
                                         {% if criterion.indicators is defined and criterion.indicators is not empty %}

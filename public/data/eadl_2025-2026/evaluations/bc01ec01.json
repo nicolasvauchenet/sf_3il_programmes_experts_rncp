@@ -50,7 +50,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr01",
             "description": "Veille technologique et décisionnelle",
             "indicators": [
                 "Sélection et pertinence des sources : Les sources d'information choisies doivent être pertinentes et crédibles, couvrant divers domaines technologiques liés aux objectifs du projet.",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr02",
             "description": "Analyse des Besoins",
             "indicators": [
                 "Exhaustivité de l'analyse : Au moins 80% des besoins des utilisateurs et des parties prenantes sont identifiés par rapport à ceux mentionnés dans les résultats d'enquêtes et d'interviews. L'intégralité des sources a été exploitée.",
@@ -69,7 +69,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr03",
             "description": "Étude de Faisabilité",
             "indicators": [
                 "Adéquation des ressources : L'évaluation de l'adéquation des ressources humaines et matérielles disponibles permet de garantir que les objectifs du projet d'évolution du Système d'Information peuvent être atteints de manière réaliste et efficace.",
@@ -78,7 +78,7 @@
             ]
         },
         {
-            "code": "Cr4",
+            "code": "Cr04",
             "description": "Conception de l'architecture",
             "indicators": [
                 "L'utilisation d'un modèle d'architecture détaillé et documenté permet de garantir que les exigences fonctionnelles et non fonctionnelles sont correctement analysées et intégrées, assurant ainsi une compatibilité optimale avec les infrastructures existantes et le respect des contraintes de sécurité et de performance.",
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "code": "Cr5",
+            "code": "Cr05",
             "description": "Pertinence et justification des critères de sélection",
             "indicators": [
                 "L'élaboration d'une grille de comparaison détaillée des technologies et outils permet de garantir que leurs performances, sécurité et interopérabilité sont soigneusement évaluées, assurant ainsi une sélection qui répond de manière optimale aux besoins du projet.",
@@ -94,7 +94,7 @@
             ]
         },
         {
-            "code": "Cr6",
+            "code": "Cr06",
             "description": "Qualité des revues de conception",
             "indicators": [
                 "Pertinence de l’analyse à partir des retours et suggestions des revues de conception : La pertinence des retours et suggestions du candidat lors des revues de conception permet d'assurer que les améliorations proposées sont alignées avec les besoins fonctionnels et techniques du projet.",
@@ -102,7 +102,7 @@
             ]
         },
         {
-            "code": "Cr7",
+            "code": "Cr07",
             "description": "Qualité des modélisations",
             "indicators": [
                 "Pertinence des choix des diagrammes et modèles : La pertinence des choix des diagrammes et modèles permet de s'assurer que les outils utilisés sont adaptés aux structures et relations de données nécessaires, optimisant ainsi la gestion et l'accessibilité des données.",
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "code": "Cr8",
+            "code": "Cr08",
             "description": "Tests automatisés",
             "indicators": [
                 "Couverture des tests : La couverture des tests automatisés permet de s'assurer que les fonctionnalités de l'application, y compris les cas limites et les scénarios d'erreur, sont testées de manière exhaustive, garantissant ainsi une qualité élevée du logiciel.",
@@ -119,7 +119,7 @@
             ]
         },
         {
-            "code": "Cr9",
+            "code": "Cr09",
             "description": "Rédaction de Documents de Projet",
             "indicators": [
                 "Conformité du cahier des charges : Le cahier des charges, la note de cadrage correspondent aux exigences établies par les parties prenantes et les standards de l'entreprise.",
