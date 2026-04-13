@@ -89,7 +89,7 @@
 
                             {% for part in examParts %}
                                 <section class="app-section mx-0 my-0">
-                                    <h3 class="mb-0">{{ evaluation.evaluationCode }}.{{ loop.index }}</h3>
+                                    <h3 class="mb-0">{{ evaluation.evaluationCode }}{{ examParts | length > 1 ? '.' ~ loop.index : '' }}</h3>
 
                                     <p class="subtitle text-left">{{ part.title }}</p>
 

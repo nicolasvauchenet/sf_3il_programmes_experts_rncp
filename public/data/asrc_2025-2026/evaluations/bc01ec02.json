@@ -1,87 +1,90 @@
 {
-    "meta": {
-        "type": "evaluation",
-        "code": "RNCP39611-BC01-EC02",
-        "title": "Maintien de la haute disponibilité et automatisation des systèmes",
-        "rncpCode": "39611",
-        "blocCode": "BC01",
-        "blocName": "Administrer et optimiser les systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
-        "academicYear": "2025-2026"
+  "meta": {
+    "type": "evaluation",
+    "code": "RNCP39611-BC01-EC02",
+    "title": "Administration et optimisation des systèmes d’exploitation et de la virtualisation pour la sécurité et la performance",
+    "rncpCode": "39611",
+    "blocCode": "BC01",
+    "blocName": "Administrer et optimiser les systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
+    "academicYear": "2025-2026"
+  },
+  "evaluationNumber": 2,
+  "description": "Conception, installation et mise en place d'un système d'information à partir d'un cahier des charges.",
+  "skills": [
+    {
+      "code": "C01",
+      "description": "Administrer et optimiser les systèmes d'exploitation"
     },
-    "evaluationNumber": 2,
-    "description": "Analyser une architecture et son PCA pour proposer des améliorations et des outils de monitoring adaptés.",
-    "skills": [
-        {
-            "code": "C05",
-            "description": "Mettre en œuvre des solutions de redondance, de réplication et de clustering"
-        },
-        {
-            "code": "C06",
-            "description": "Surveiller et optimiser les performances des systèmes informatiques"
-        },
-        {
-            "code": "C07",
-            "description": "Manager le processus de gestion des incidents informatiques"
-        },
-        {
-            "code": "C08",
-            "description": "Automatiser les tâches d'administration en développant et en appliquant des scripts"
-        }
-    ],
-    "criteria": [
-        {
-            "code": "Cr05",
-            "description": "Garantie de la continuité de services",
-            "indicators": [
-                "Pertinence des améliorations proposées : Les améliorations proposées permettent d'accroître l'efficacité et la résilience des systèmes. Une matrice des risques est proposée et les solutions répondent aux risques référencés.",
-                "Qualité du PCA modifié : L'amélioration du Plan de Continuité d'Activité garantit la continuité opérationnelle des services."
-            ]
-        },
-        {
-            "code": "Cr06",
-            "description": "Gestion de la performance",
-            "indicators": [
-                "Pertinence du choix de l'outil de monitoring : La surveillance et l'analyse des performances du système permettent un temps de réponse correspondant aux accords de niveaux de Services (SLA) définis dans le Plan de reprise d'activité (PRA).",
-                "Pertinence de la sélection des données monitorées : La sélection des données à surveiller permet une évaluation précise de la performance opérationnelle."
-            ]
-        },
-        {
-            "code": "Cr07",
-            "description": "Gestion des incidents",
-            "indicators": [
-                "Gestion des incidents : La procédure proposée permet de minimiser ainsi les interruptions de service et de garantir une reprise rapide des opérations."
-            ]
-        },
-        {
-            "code": "Cr08",
-            "description": "Automatisation et optimisation de l'administration",
-            "indicators": [
-                "Conformité : Le choix de la technologie de script répond à l'étude de cas donnée et de couvrir 100% des besoins identifiés",
-                "Argumentation du choix : L'argumentation justifie comment la technologie sélectionnée optimise les processus et répond aux exigences spécifiques du système"
-            ]
-        }
-    ],
-    "modalities": {
-        "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Compte rendu d’amélioration de l’architecture",
-        "totalDuration": "4h00"
+    {
+      "code": "C02",
+      "description": "Concevoir des topologies systèmes à l'aide d'un annuaire"
     },
-    "exam": {
-        "parts": [
-            {
-                "code": "E2-P1",
-                "title": "Compte rendu d’amélioration de l’architecture",
-                "type": "Épreuve écrite",
-                "coefficient": 4,
-                "points": 80,
-                "duration": "4h00"
-            }
-        ],
-        "validation": {
-            "evaluationThreshold": 40,
-            "compensationMin": 28,
-            "remedialBelow": 28,
-            "blockThreshold": 100
-        }
+    {
+      "code": "C03",
+      "description": "Concevoir et déployer des environnements virtualisés"
+    },
+    {
+      "code": "C04",
+      "description": "Concevoir, gérer et administrer les systèmes de gestion de bases de données relationnelles et NoSQL"
     }
+  ],
+  "criteria": [
+    {
+      "code": "Cr01",
+      "description": "Administration d'un système d'information",
+      "indicators": [
+        "Conformité au cahier des charges : L'architecture conçue permet de répondre aux besoins exprimés dans le cahier des charges",
+        "Performance : L'efficacité opérationnelle du système conçu permet d'atteindre les niveaux de performance exigé par la qualité de service (QoS)",
+        "Fiabilité : La stabilité du système conçu assure une continuité de service conforme à la qualité de service (QoS) avec une minimisation des pannes ou interruptions critiques."
+      ]
+    },
+    {
+      "code": "Cr02",
+      "description": "Gestion des politiques d'accès",
+      "indicators": [
+        "Respect des politiques d'accès : L'implémentation des contrôles d'accès garantit les directives de sécurité établies par l'entreprise.",
+        "Accessibilité des ressources : Les systèmes mis en place assurent un accès continu et sécurisé aux ressources informatiques."
+      ]
+    },
+    {
+      "code": "Cr03",
+      "description": "Rationalisation des ressources",
+      "indicators": [
+        "Conformité : L'architecture virtualisée conçue garantit l'adéquation avec les besoins opérationnels et évolutifs de l'entreprise.",
+        "Efficience des systèmes virtualisés : Les systèmes virtualisés sont gérés de manière à maximiser l'efficacité des ressources."
+      ]
+    },
+    {
+      "code": "Cr04",
+      "description": "Administration des Bases de données",
+      "indicators": [
+        "Conformité du système de base de données : Le système de base de données permet de répondre précisément aux exigences du cahier des charges",
+        "Accessibilité sécurisée aux données : Les mesures mises en place garantissent un accès aux données sécurisé et exclusivement réservé aux utilisateurs autorisés.",
+        "Optimisation du système : Le système est ajusté pour améliorer l'efficacité en termes de délais de traitement des données."
+      ]
+    }
+  ],
+  "modalities": {
+    "format": "Mise en situation reconstituée sur ordinateur",
+    "delivery": "Mise en place de la solution",
+    "totalDuration": "3h00"
+  },
+  "exam": {
+    "parts": [
+      {
+        "code": "E2-P2",
+        "title": "Mise en place de la solution",
+        "type": "Épreuve écrite",
+        "coefficient": 4,
+        "points": 120,
+        "duration": "3h00"
+      }
+    ],
+    "validation": {
+      "evaluationThreshold": 120,
+      "compensationMin": 84,
+      "remedialBelow": 84,
+      "blockThreshold": 100
+    }
+  }
 }
