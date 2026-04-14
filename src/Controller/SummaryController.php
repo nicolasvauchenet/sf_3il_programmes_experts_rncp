@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Service\Chart\SummaryChartService;
 use App\Service\Context\Loader\FrameworkStructureLoader;
+use App\Service\Context\Provider\FrameworkProjectsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,10 +14,12 @@ final class SummaryController extends AbstractController
 {
     #[Route('/promotion', name: 'app_promotion_summary', methods: ['GET'])]
     public function index(
-        Request $request,
-        FrameworkStructureLoader $loader,
-        SummaryChartService $summaryChartService,
-    ): Response {
+        Request                   $request,
+        FrameworkStructureLoader  $loader,
+        SummaryChartService       $summaryChartService,
+        FrameworkProjectsProvider $projectsProvider,
+    ): Response
+    {
         $promotion = (string)$request->query->get('promotion', '');
         $year = (string)$request->query->get('year', '');
 
@@ -38,14 +41,17 @@ final class SummaryController extends AbstractController
             return $this->redirectToRoute('app_home');
         }
 
+        $projects = $projectsProvider->listProjects($promotion, $year);
+
         return $this->render('summary/index.html.twig', [
             'promotion' => $promotion,
             'year' => $year,
             'structure' => $structure,
-            'referentialVolumeChart' => $summaryChartService->createReferentialVolumeChart($structure),
+            'referentialVolumeChart' => $summaryChartService->createReferentialVolumeChart($structure, count($projects)),
             'skillsPerBlockChart' => $summaryChartService->createSkillsPerBlockChart($structure),
             'evaluationsPerBlockChart' => $summaryChartService->createEvaluationsPerBlockChart($structure),
             'modulesPerBlockChart' => $summaryChartService->createModulesPerBlockChart($structure),
+            'projectsPerBlockChart' => $summaryChartService->createProjectsPerBlockChart($projects),
             'skillsPerEvaluationChart' => $summaryChartService->createSkillsPerEvaluationChart($structure),
             'modulesPerEvaluationChart' => $summaryChartService->createModulesPerEvaluationChart($structure),
         ]);

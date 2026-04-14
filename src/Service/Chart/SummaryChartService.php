@@ -3,6 +3,7 @@
 namespace App\Service\Chart;
 
 use App\Dto\Context\FrameworkStructure;
+use App\Dto\Context\ProjectSheet;
 use Symfony\UX\Chartjs\Builder\ChartBuilderInterface;
 use Symfony\UX\Chartjs\Model\Chart;
 
@@ -17,14 +18,15 @@ final readonly class SummaryChartService
     {
     }
 
-    public function createReferentialVolumeChart(FrameworkStructure $structure): Chart
+    public function createReferentialVolumeChart(FrameworkStructure $structure, int $projectsCount = 0): Chart
     {
         return $this->createDoughnutChart(
             title: 'Volumétrie du référentiel',
-            labels: ['Blocs', 'Matières', 'Compétences', 'Évaluations'],
+            labels: ['Blocs', 'Matières', 'Projets', 'Compétences', 'Évaluations'],
             data: [
                 count($structure->blocks),
                 count($structure->modules),
+                $projectsCount,
                 count($structure->skills),
                 count($structure->evaluations),
             ],
@@ -142,6 +144,51 @@ final readonly class SummaryChartService
         );
     }
 
+    /**
+     * @param ProjectSheet[] $projects
+     */
+    public function createProjectsPerBlockChart(array $projects): Chart
+    {
+        $countsByBlock = [];
+        $firstFileCodeByBlock = [];
+
+        foreach ($projects as $project) {
+            $blockCode = $this->normalizeCode($project->blocCode());
+
+            if ($blockCode === '') {
+                $blockCode = 'SANS_BLOC';
+            }
+
+            if (!array_key_exists($blockCode, $countsByBlock)) {
+                $countsByBlock[$blockCode] = 0;
+                $firstFileCodeByBlock[$blockCode] = strtolower($project->fileCode);
+            }
+
+            ++$countsByBlock[$blockCode];
+        }
+
+        ksort($countsByBlock);
+
+        $labels = array_keys($countsByBlock);
+        $data = array_values($countsByBlock);
+        $blockCodes = array_keys($countsByBlock);
+        $fileCodes = [];
+
+        foreach ($blockCodes as $blockCode) {
+            $fileCodes[] = $firstFileCodeByBlock[$blockCode] ?? '';
+        }
+
+        return $this->createBarChart(
+            title: 'Projets par bloc',
+            labels: $labels,
+            data: $data,
+            datasetExtra: [
+                'blockCodes' => $blockCodes,
+                'fileCodes' => $fileCodes,
+            ],
+        );
+    }
+
     public function createModulesPerEvaluationChart(FrameworkStructure $structure): Chart
     {
         $evaluations = $structure->evaluations;
@@ -215,6 +262,7 @@ final readonly class SummaryChartService
             '#0f766e',
             '#e84d0d',
             '#b45309',
+            '#7c3aed',
         ];
 
         $chart->setData([

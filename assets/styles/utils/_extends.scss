@@ -49,3 +49,24 @@
         display: none !important;
     }
 }
+
+/* BACKGROUNDS */
+.bg-white {
+    background-color: $white !important;
+}
+
+.bg-alt {
+    background-color: rgba($secondary, 1) !important;
+
+    h2 {
+        color: $white !important;
+    }
+
+    .app-button {
+        background-color: $white !important;
+
+        &:hover {
+            color: $secondary !important;
+        }
+    }
+}

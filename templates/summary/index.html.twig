@@ -23,41 +23,39 @@
                 </div>
             </section>
 
-            <section class="app-section">
-                <div class="app-grid third">
-                    <div class="grid-item">
-                        <h2>Structure du référentiel</h2>
+            <div class="app-grid third my-0 mx-0">
+                <section class="app-section centered">
+                    <h2>Structure du référentiel</h2>
 
-                        <div class="summary-card" style="height: 200px;">
-                            {{ render_chart(referentialVolumeChart) }}
-                        </div>
+                    <div class="summary-card" style="height: 200px;">
+                        {{ render_chart(referentialVolumeChart) }}
                     </div>
+                </section>
 
-                    <div class="grid-item">
-                        <h2>Téléchargements</h2>
-                        <div class="app-grid mt-2">
-                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/referentiel-rncp.pdf') }}"
-                               class="app-button download"
-                               target="_blank">
-                                Référentiel RNCP
-                            </a>
-                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/matrice-de-couverture.xlsx') }}"
-                               class="app-button download"
-                               target="_blank">
-                                Matrice de couverture
-                            </a>
-                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/reglement-des-examens.pdf') }}"
-                               class="app-button download"
-                               target="_blank">
-                                Règlement des examens
-                            </a>
-                        </div>
+                <section class="app-section bg-alt centered">
+                    <h2>Téléchargements</h2>
+                    <div class="app-grid mt-2">
+                        <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/referentiel-rncp.pdf') }}"
+                           class="app-button download"
+                           target="_blank">
+                            Référentiel RNCP
+                        </a>
+                        <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/matrice-de-couverture.xlsx') }}"
+                           class="app-button download"
+                           target="_blank">
+                            Matrice de couverture
+                        </a>
+                        <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/reglement-des-examens.pdf') }}"
+                           class="app-button download"
+                           target="_blank">
+                            Règlement des examens
+                        </a>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
 
-        <div class="app-grid three">
+        <div class="app-grid two">
             <section class="app-section">
                 <h2>Répartition des matières par bloc</h2>
                 <div class="summary-card" style="height: 200px;">
@@ -65,6 +63,17 @@
                         'data-controller': 'chart-modules-by-block-link',
                         'data-chart-modules-by-block-link-promotion-value': promotion,
                         'data-chart-modules-by-block-link-year-value': year
+                    }) }}
+                </div>
+            </section>
+
+            <section class="app-section">
+                <h2>Répartition des projets par bloc</h2>
+                <div class="summary-card" style="height: 200px;">
+                    {{ render_chart(projectsPerBlockChart, {
+                        'data-controller': 'chart-projects-by-block-link',
+                        'data-chart-projects-by-block-link-promotion-value': promotion,
+                        'data-chart-projects-by-block-link-year-value': year
                     }) }}
                 </div>
             </section>

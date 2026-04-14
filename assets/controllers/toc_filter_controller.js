@@ -8,11 +8,11 @@ export default class extends Controller {
     };
 
     connect() {
-        const hasBlock = this.hasBlockValue && this.blockValue !== '';
+        this.blockFilterEnabled = this.hasBlockValue && this.blockValue !== '';
 
         let initialQuery = '';
 
-        if (hasBlock) {
+        if (this.blockFilterEnabled) {
             initialQuery = this.blockValue;
 
             this.inputTargets.forEach((input) => {
@@ -29,6 +29,10 @@ export default class extends Controller {
         const rawQuery = event.target.value ?? '';
         const query = this.normalize(rawQuery);
 
+        this.blockFilterEnabled = false;
+        this.removeBlockParamFromCurrentUrl();
+        this.removeBlockParamFromItemLinks();
+
         this.syncInputs(rawQuery, event.target);
         this.applyFilter(query);
     }
@@ -44,7 +48,7 @@ export default class extends Controller {
     applyFilter(query) {
         let visibleCount = 0;
 
-        const expectedBlock = this.hasBlockValue
+        const expectedBlock = this.blockFilterEnabled && this.hasBlockValue
             ? this.normalize(this.blockValue)
             : '';
 
@@ -65,6 +69,30 @@ export default class extends Controller {
 
         this.emptyTargets.forEach((empty) => {
             empty.toggleAttribute('hidden', visibleCount > 0);
+        });
+    }
+
+    removeBlockParamFromCurrentUrl() {
+        const url = new URL(window.location.href);
+
+        if (url.searchParams.has('block')) {
+            url.searchParams.delete('block');
+            window.history.replaceState({}, '', url);
+        }
+    }
+
+    removeBlockParamFromItemLinks() {
+        this.itemTargets.forEach((item) => {
+            const href = item.getAttribute('href');
+
+            if (!href) {
+                return;
+            }
+
+            const url = new URL(href, window.location.origin);
+            url.searchParams.delete('block');
+
+            item.setAttribute('href', `${url.pathname}${url.search}${url.hash}`);
         });
     }
 

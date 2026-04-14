@@ -3,20 +3,20 @@
 namespace App\Service\Context;
 
 use App\Dto\Context\FrameworkStructure;
-use App\Dto\Context\ModuleSheet;
+use App\Dto\Context\ProjectSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 
-final class ModuleSheetResolver
+final class ProjectSheetResolver
 {
     /**
      * @param array<string,ResolvedSkillSheet> $skillsIndex
      */
-    public function resolve(ModuleSheet $sheet, FrameworkStructure $structure, array $skillsIndex = []): ModuleSheet
+    public function resolve(ProjectSheet $sheet, FrameworkStructure $structure, array $skillsIndex = []): ProjectSheet
     {
         $skillsWithCriteria = $this->resolveSkillsWithCriteria($sheet, $skillsIndex);
         $evaluations = $this->resolveEvaluations($sheet, $structure);
 
-        return new ModuleSheet(
+        return new ProjectSheet(
             fileCode: $sheet->fileCode,
             path: $sheet->path,
             meta: $sheet->meta,
@@ -41,7 +41,7 @@ final class ModuleSheetResolver
      *     criteria:array<int,string>
      * }>
      */
-    private function resolveSkillsWithCriteria(ModuleSheet $sheet, array $skillsIndex): array
+    private function resolveSkillsWithCriteria(ProjectSheet $sheet, array $skillsIndex): array
     {
         $resolved = [];
 
@@ -74,12 +74,12 @@ final class ModuleSheetResolver
     /**
      * @return array<int,array{code:string,title:string,blockCode:string}>
      */
-    private function resolveEvaluations(ModuleSheet $sheet, FrameworkStructure $structure): array
+    private function resolveEvaluations(ProjectSheet $sheet, FrameworkStructure $structure): array
     {
         $resolved = [];
-        $moduleCode = $sheet->moduleCode();
+        $projectCode = $sheet->projectCode();
 
-        if ($moduleCode === '') {
+        if ($projectCode === '') {
             return [];
         }
 
@@ -89,7 +89,7 @@ final class ModuleSheetResolver
             }
 
             $modules = $this->extractStringList($evaluation['modules'] ?? null);
-            if (!in_array($moduleCode, $modules, true)) {
+            if (!in_array($projectCode, $modules, true)) {
                 continue;
             }
 

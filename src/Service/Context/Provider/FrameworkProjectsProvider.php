@@ -2,52 +2,52 @@
 
 namespace App\Service\Context\Provider;
 
-use App\Dto\Context\ModuleSheet;
+use App\Dto\Context\ProjectSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Service\Context\FrameworkFolderScanner;
 use App\Service\Context\Loader\FrameworkStructureLoader;
-use App\Service\Context\Loader\ModuleSheetLoader;
-use App\Service\Context\ModuleSheetResolver;
+use App\Service\Context\Loader\ProjectSheetLoader;
+use App\Service\Context\ProjectSheetResolver;
 
-final readonly class FrameworkModulesProvider
+final readonly class FrameworkProjectsProvider
 {
     public function __construct(
         private FrameworkFolderScanner   $scanner,
-        private ModuleSheetLoader        $loader,
+        private ProjectSheetLoader       $loader,
         private FrameworkSkillsProvider  $skillsProvider,
         private FrameworkStructureLoader $structureLoader,
-        private ModuleSheetResolver      $resolver,
+        private ProjectSheetResolver     $resolver,
     )
     {
     }
 
     /**
-     * @return ModuleSheet[]
+     * @return ProjectSheet[]
      */
-    public function listModules(string $promotion, string $year): array
+    public function listProjects(string $promotion, string $year): array
     {
         $refs = $this->scanner->listJsonFiles($promotion, $year, 'modules');
         $structure = $this->structureLoader->load($promotion, $year);
         $resolvedSkills = $this->skillsProvider->listSkills($promotion, $year);
         $skillsIndex = $this->indexSkills($resolvedSkills);
 
-        $modules = [];
+        $projects = [];
 
         foreach ($refs as $ref) {
             try {
-                $module = $this->loader->load($ref->fileCode, $ref->path);
-                $modules[] = $this->resolver->resolve($module, $structure, $skillsIndex);
+                $project = $this->loader->load($ref->fileCode, $ref->path);
+                $projects[] = $this->resolver->resolve($project, $structure, $skillsIndex);
             } catch (\Throwable) {
                 continue;
             }
         }
 
         usort(
-            $modules,
-            static fn(ModuleSheet $a, ModuleSheet $b): int => [$a->blocCode(), $a->fileCode] <=> [$b->blocCode(), $b->fileCode]
+            $projects,
+            static fn(ProjectSheet $a, ProjectSheet $b): int => [$a->blocCode(), $a->fileCode] <=> [$b->blocCode(), $b->fileCode]
         );
 
-        return $modules;
+        return $projects;
     }
 
     /**
