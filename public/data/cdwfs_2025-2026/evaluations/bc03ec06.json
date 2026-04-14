@@ -34,14 +34,14 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr21",
             "description": "Gestion de versions",
             "indicators": [
                 "Une politique de suivi des modifications est traçable et adaptée aux besoins du projet."
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr22",
             "description": "Collaboration et intégration continue",
             "indicators": [
                 "Le processus de fusion de code et de résolution de conflits est fluide.",
@@ -49,14 +49,14 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr23",
             "description": "Virtualisation et conteneurisation",
             "indicators": [
                 "La conteneurisation est fonctionnelle de manière identique sous tous types d'environnement d'exécution."
             ]
         },
         {
-            "code": "Cr4",
+            "code": "Cr24",
             "description": "Orchestration et déploiement continus",
             "indicators": [
                 "L'outil d'orchestration garantit la gestion dynamique des ressources.",
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "code": "Cr5",
+            "code": "Cr25",
             "description": "Gestion et déploiement cloud",
             "indicators": [
                 "Conformité de l'automatisation : Les processus d'automatisation mis en place pour la gestion et le déploiement des ressources cloud sont conformes aux meilleures pratiques DevOps.",

@@ -30,7 +30,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr29",
             "description": "Planification et Conduite de Projet",
             "indicators": [
                 "Alignement méthodologique : Le choix et l'application de la méthodologie de gestion de projet sont appropriés au contexte du projet, avec des preuves de prise en compte des spécificités du projet et des risques identifiés.",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr30",
             "description": "Coordination des Équipes de Projet",
             "indicators": [
                 "Cohérence de la planification des tâches : Les outils collaboratifs sont utilisés de manière efficace pour planifier, suivre les tâches et ajuster les ressources en fonction des écarts par rapport au plan initial.",
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr31",
             "description": "Suivi Continu des Indicateurs de Performance",
             "indicators": [
                 "Précision du suivi budgétaire : Les outils de suivi budgétaire sont correctement utilisés pour une gestion financière précise, avec des indicateurs de performance financière qui sont régulièrement mis à jour et analysés.",
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "code": "Cr4",
+            "code": "Cr32",
             "description": "Évaluations Périodiques de l'Avancement du Projet",
             "indicators": [
                 "Qualité des revues de performance : Les revues de performance sont complètes, reflétant fidèlement l'état actuel du projet et l'atteinte des objectifs à chaque étape.",

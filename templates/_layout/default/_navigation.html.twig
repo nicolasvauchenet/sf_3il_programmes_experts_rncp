@@ -12,6 +12,12 @@
         Matières
     </a>
     <a
+        href="{{ path('app_promotion_projects', { promotion: promotion, year: year }) }}"
+        class="{% if 'app_promotion_projects' == app.request.get('_route') %}active{% endif %}"
+    >
+        Projets
+    </a>
+    <a
         href="{{ path('app_promotion_skills', { promotion: promotion, year: year }) }}"
         class="{% if 'app_promotion_skills' == app.request.get('_route') %}active{% endif %}"
     >

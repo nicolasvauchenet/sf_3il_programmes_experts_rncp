@@ -204,7 +204,8 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC01"
+                "EC01",
+                "EC02"
             ]
         },
         {
@@ -216,7 +217,8 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC01"
+                "EC01",
+                "EC02"
             ]
         },
         {
@@ -228,7 +230,8 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC01"
+                "EC01",
+                "EC02"
             ]
         },
         {
@@ -240,7 +243,8 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC01"
+                "EC01",
+                "EC02"
             ]
         },
         {
@@ -252,7 +256,7 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC02"
+                "EC03"
             ]
         },
         {
@@ -265,7 +269,7 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC02"
+                "EC03"
             ]
         },
         {
@@ -277,7 +281,7 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC02"
+                "EC03"
             ]
         },
         {
@@ -289,7 +293,7 @@
                 "RNCP39611-BC01-FM07"
             ],
             "evaluations": [
-                "EC02"
+                "EC03"
             ]
         },
         {
@@ -301,7 +305,8 @@
                 "RNCP39611-BC02-FM05"
             ],
             "evaluations": [
-                "EC03"
+                "EC04",
+                "EC05"
             ]
         },
         {
@@ -313,7 +318,8 @@
                 "RNCP39611-BC02-FM05"
             ],
             "evaluations": [
-                "EC03"
+                "EC04",
+                "EC05"
             ]
         },
         {
@@ -325,7 +331,8 @@
                 "RNCP39611-BC02-FM05"
             ],
             "evaluations": [
-                "EC03"
+                "EC04",
+                "EC05"
             ]
         },
         {
@@ -339,7 +346,7 @@
                 "RNCP39611-BC02-FM05"
             ],
             "evaluations": [
-                "EC04"
+                "EC06"
             ]
         },
         {
@@ -353,7 +360,7 @@
                 "RNCP39611-BC02-FM05"
             ],
             "evaluations": [
-                "EC04"
+                "EC06"
             ]
         },
         {
@@ -367,7 +374,7 @@
                 "RNCP39611-BC02-FM05"
             ],
             "evaluations": [
-                "EC04"
+                "EC06"
             ]
         },
         {
@@ -380,7 +387,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC05"
+                "EC07"
             ]
         },
         {
@@ -394,7 +401,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC05"
+                "EC07"
             ]
         },
         {
@@ -408,7 +415,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC05"
+                "EC07"
             ]
         },
         {
@@ -421,7 +428,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC06"
+                "EC08"
             ]
         },
         {
@@ -433,7 +440,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC06"
+                "EC08"
             ]
         },
         {
@@ -445,7 +452,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "EC09"
             ]
         },
         {
@@ -457,7 +464,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "EC09"
             ]
         },
         {
@@ -469,7 +476,7 @@
                 "RNCP39611-BC03-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "EC09"
             ]
         },
         {
@@ -481,7 +488,7 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC08"
+                "EC10"
             ]
         },
         {
@@ -493,7 +500,7 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC08"
+                "EC10"
             ]
         },
         {
@@ -506,7 +513,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC09"
+                "EC11",
+                "EC12"
             ]
         },
         {
@@ -520,7 +528,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC09"
+                "EC11",
+                "EC12"
             ]
         },
         {
@@ -534,7 +543,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC09"
+                "EC11",
+                "EC12"
             ]
         },
         {
@@ -546,7 +556,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC10"
+                "EC13",
+                "EC14"
             ]
         },
         {
@@ -558,7 +569,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC10"
+                "EC13",
+                "EC14"
             ]
         },
         {
@@ -570,7 +582,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC10"
+                "EC13",
+                "EC14"
             ]
         },
         {
@@ -582,7 +595,8 @@
                 "RNCP39611-BC04-FM08"
             ],
             "evaluations": [
-                "EC10"
+                "EC13",
+                "EC14"
             ]
         }
     ],
@@ -590,7 +604,7 @@
         {
             "code": "EC01",
             "blockCode": "BC01",
-            "title": "Administration et optimisation des systèmes d’exploitation et de la virtualisation pour la sécurité et la performance",
+            "title": "Dossier d’architecture technique",
             "skills": [
                 "C01",
                 "C02",
@@ -606,7 +620,23 @@
         {
             "code": "EC02",
             "blockCode": "BC01",
-            "title": "Maintien de la haute disponibilité et automatisation des systèmes",
+            "title": "Mise en place de la solution mise en œuvre",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04"
+            ],
+            "modules": [
+                "RNCP39611-BC01-FM01",
+                "RNCP39611-BC01-FM05",
+                "RNCP39611-BC01-FM07"
+            ]
+        },
+        {
+            "code": "EC03",
+            "blockCode": "BC01",
+            "title": "Analyse d’architecture, PCA et proposition d’améliorations",
             "skills": [
                 "C05",
                 "C06",
@@ -622,9 +652,9 @@
             ]
         },
         {
-            "code": "EC03",
+            "code": "EC04",
             "blockCode": "BC02",
-            "title": "Configuration de l’infrastructure Réseaux",
+            "title": "Dossier technique de la solution",
             "skills": [
                 "C09",
                 "C10",
@@ -636,9 +666,23 @@
             ]
         },
         {
-            "code": "EC04",
+            "code": "EC05",
             "blockCode": "BC02",
-            "title": "Conception et réalisation de l’intégration et du déploiement continu (Cloud & Devops)",
+            "title": "Mise en service de la solution",
+            "skills": [
+                "C09",
+                "C10",
+                "C11"
+            ],
+            "modules": [
+                "RNCP39611-BC02-FM01",
+                "RNCP39611-BC02-FM05"
+            ]
+        },
+        {
+            "code": "EC06",
+            "blockCode": "BC02",
+            "title": "Mise en place d’un système d’automatisation d’intégration et de déploiement continu",
             "skills": [
                 "C12",
                 "C13",
@@ -652,9 +696,9 @@
             ]
         },
         {
-            "code": "EC05",
+            "code": "EC07",
             "blockCode": "BC03",
-            "title": "Mise en œuvre des politiques de sécurité et gestion des risques par l'Ethical Hacking",
+            "title": "Analyse d’un SI, audit technique et préconisations de sécurité",
             "skills": [
                 "C15",
                 "C16",
@@ -669,9 +713,9 @@
             ]
         },
         {
-            "code": "EC06",
+            "code": "EC08",
             "blockCode": "BC03",
-            "title": "Administration des systèmes de sécurité et des contrôles d’accès",
+            "title": "Rapport d’analyse et de préconisations d’amélioration de l’existant",
             "skills": [
                 "C18",
                 "C19"
@@ -684,9 +728,9 @@
             ]
         },
         {
-            "code": "EC07",
+            "code": "EC09",
             "blockCode": "BC03",
-            "title": "Supervision et contrôle de la protection des données et de la conformité réglementaire",
+            "title": "Mise en place d’un plan de sauvegarde",
             "skills": [
                 "C20",
                 "C21",
@@ -698,9 +742,9 @@
             ]
         },
         {
-            "code": "EC08",
+            "code": "EC10",
             "blockCode": "BC04",
-            "title": "Étude de faisabilité et définition des exigences techniques",
+            "title": "Rédaction d’une étude d’avant-projet",
             "skills": [
                 "C23",
                 "C24"
@@ -711,9 +755,9 @@
             ]
         },
         {
-            "code": "EC09",
+            "code": "EC11",
             "blockCode": "BC04",
-            "title": "Planification et suivi de projet selon les méthodologies agiles",
+            "title": "Compte rendu d’activité",
             "skills": [
                 "C25",
                 "C26",
@@ -728,9 +772,42 @@
             ]
         },
         {
-            "code": "EC10",
+            "code": "EC12",
             "blockCode": "BC04",
-            "title": "Recherche documentaire et Veille technologique en contexte multilingue",
+            "title": "Soutenance",
+            "skills": [
+                "C25",
+                "C26",
+                "C27"
+            ],
+            "modules": [
+                "RNCP39611-BC04-FM02",
+                "RNCP39611-BC04-FM03",
+                "RNCP39611-BC04-FM04",
+                "RNCP39611-BC04-FM05",
+                "RNCP39611-BC04-FM08"
+            ]
+        },
+        {
+            "code": "EC13",
+            "blockCode": "BC04",
+            "title": "Rédaction d’un rapport de veille multilingue",
+            "skills": [
+                "C28",
+                "C29",
+                "C30",
+                "C31"
+            ],
+            "modules": [
+                "RNCP39611-BC04-FM06",
+                "RNCP39611-BC04-FM07",
+                "RNCP39611-BC04-FM08"
+            ]
+        },
+        {
+            "code": "EC14",
+            "blockCode": "BC04",
+            "title": "Présentation orale du rapport de veille multilingue",
             "skills": [
                 "C28",
                 "C29",

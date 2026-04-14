@@ -26,7 +26,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr26",
             "description": "Analyse des Besoins",
             "indicators": [
                 "Exhaustivité de l'analyse : Au moins 80% des besoins des utilisateurs et des parties prenantes sont identifiés par rapport à ceux mentionnés dans les résultats d'enquêtes et d'interviews. L'intégralité des sources a été exploitée.",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr27",
             "description": "Étude de Faisabilité",
             "indicators": [
                 "Adéquation des ressources : L'évaluation des ressources humaines et matérielles nécessaires correspond aux besoins réels du projet.",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr28",
             "description": "Rédaction de Documents de Projet",
             "indicators": [
                 "Conformité du cahier des charges : Le cahier des charges, la note de cadrage correspondent aux exigences établies par les parties prenantes et les standards de l'entreprise.",

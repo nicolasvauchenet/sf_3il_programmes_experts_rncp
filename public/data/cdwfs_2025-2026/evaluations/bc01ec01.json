@@ -34,7 +34,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr01",
             "description": "Qualité de la Conception et Structure en HTML5",
             "indicators": [
                 "Indicateurs de validation W3C : le code HTML est conforme aux normes du W3C.",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr02",
             "description": "Création et Intégration avec CSS3",
             "indicators": [
                 "Consistance du design : Les éléments graphiques présentent un cohérence visuelle et une uniformité sur les différentes pages du site.",
@@ -51,14 +51,14 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr03",
             "description": "Responsive Web Design",
             "indicators": [
                 "Responsivité : L'interface s'adapte sur tous types d'appareils (desktop, tablette, mobile...)."
             ]
         },
         {
-            "code": "Cr4",
+            "code": "Cr04",
             "description": "Interactions avec JavaScript/TypeScript",
             "indicators": [
                 "Fonctionnalités interactives : Les fonctionnalités interactives demandées sont implémentées : les menus déroulants, les validations de formulaires ....",
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "code": "Cr5",
+            "code": "Cr05",
             "description": "Fonctionnalités AJAX",
             "indicators": [
                 "Interaction client/serveur : Des requêtes AJAX sont utilisées pour interagir avec le serveur (par exemple, sauvegarder une nouvelle tâche) sans recharger la page web.",

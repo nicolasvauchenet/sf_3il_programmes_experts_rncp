@@ -1,14 +1,14 @@
 {
   "meta": {
     "type": "evaluation",
-    "code": "RNCP39611-BC02-EC04",
+    "code": "RNCP39611-BC02-EC05",
     "title": "Configuration de l’infrastructure Réseaux",
     "rncpCode": "39611",
     "blocCode": "BC02",
     "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud",
     "academicYear": "2025-2026"
   },
-  "evaluationNumber": 4,
+  "evaluationNumber": 5,
   "description": "Définition des spécifications techniques et fonctionnelles, rédaction du dossier technique et mise en service de la solution avec stratégie de surveillance et de suivi.",
   "skills": [
     {
@@ -51,18 +51,18 @@
   ],
   "modalities": {
     "format": "Mise en situation reconstituée sur ordinateur",
-    "delivery": "Rédaction d’un dossier technique",
-    "totalDuration": "4h00"
+    "delivery": "Mise en service de la solution",
+    "totalDuration": "2h00"
   },
   "exam": {
     "parts": [
       {
-        "code": "E4-P1",
-        "title": "Rédaction d’un dossier technique",
+        "code": "E5-P2",
+        "title": "Mise en service de la solution",
         "type": "Épreuve écrite",
-        "coefficient": 4,
+        "coefficient": 2,
         "points": 120,
-        "duration": "4h00"
+        "duration": "2h00"
       }
     ],
     "validation": {

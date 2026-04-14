@@ -2,29 +2,29 @@
 
 namespace App\Service\Context\Loader;
 
-use App\Dto\Context\ModuleSheet;
+use App\Dto\Context\ProjectSheet;
 
-final class ModuleSheetLoader
+final class ProjectSheetLoader
 {
-    public function load(string $fileCode, string $path): ModuleSheet
+    public function load(string $fileCode, string $path): ProjectSheet
     {
         if (!is_file($path) || !is_readable($path)) {
-            throw new \RuntimeException('Fichier module introuvable ou illisible.');
+            throw new \RuntimeException('Fichier projet introuvable ou illisible.');
         }
 
         $raw = file_get_contents($path);
         if (!is_string($raw) || $raw === '') {
-            throw new \RuntimeException('Fichier module vide.');
+            throw new \RuntimeException('Fichier projet vide.');
         }
 
         try {
             $decoded = json_decode($raw, true, 512, JSON_THROW_ON_ERROR);
         } catch (\Throwable $e) {
-            throw new \RuntimeException('JSON module invalide.', 0, $e);
+            throw new \RuntimeException('JSON projet invalide.', 0, $e);
         }
 
         if (!is_array($decoded)) {
-            throw new \RuntimeException('JSON module inattendu (pas un objet).');
+            throw new \RuntimeException('JSON projet inattendu (pas un objet).');
         }
 
         $meta = $decoded['meta'] ?? null;
@@ -33,8 +33,8 @@ final class ModuleSheetLoader
         }
 
         $type = $meta['type'] ?? null;
-        if (!is_string($type) || strtolower(trim($type)) !== 'module') {
-            throw new \RuntimeException('meta.type invalide (attendu: "module").');
+        if (!is_string($type) || strtolower(trim($type)) !== 'project') {
+            throw new \RuntimeException('meta.type invalide (attendu: "project").');
         }
 
         foreach (['code', 'title', 'academicYear'] as $k) {
@@ -55,7 +55,7 @@ final class ModuleSheetLoader
         $skills = $this->sanitizeSkills($skills);
         $teachingMethods = $this->sanitizeStringList($teachingMethods);
 
-        return new ModuleSheet(
+        return new ProjectSheet(
             fileCode: strtolower(trim($fileCode)),
             path: $path,
             meta: $meta,

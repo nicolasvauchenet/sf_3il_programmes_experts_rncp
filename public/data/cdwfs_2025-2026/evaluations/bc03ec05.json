@@ -26,7 +26,7 @@
     ],
     "criteria": [
         {
-            "code": "Cr1",
+            "code": "Cr18",
             "description": "Évaluation des Besoins et Intégration des Solutions Cloud",
             "indicators": [
                 "Compréhension des Besoins: Les besoins actuels et futurs de l'entreprise pour la transformation numérique sont identifiés et détaillés avec précision.",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "code": "Cr2",
+            "code": "Cr19",
             "description": "Analyse Technique pour la Sélection de l'Architecture d'Application",
             "indicators": [
                 "Analyse des Structures: Les structures d'architecture d'application sélectionnées comme monolithique, microservices, serverless, ou n-tiers répondent aux besoins et contraintes spécifiques de l'application.",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "code": "Cr3",
+            "code": "Cr20",
             "description": "Administration et Rationalisation des Plateformes Cloud",
             "indicators": [
                 "Optimisation des Ressources: L'équilibre entre les coûts et les performances est démontré.",

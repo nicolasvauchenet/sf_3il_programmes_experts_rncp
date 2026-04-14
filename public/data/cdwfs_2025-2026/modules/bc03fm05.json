@@ -1,6 +1,6 @@
 {
     "meta": {
-        "type": "module",
+        "type": "project",
         "code": "RNCP39608-BC03-FM05",
         "title": "Projet CI/CD : mise en place, monitoring, évolution",
         "rncpCode": "39608",
