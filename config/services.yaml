@@ -8,6 +8,7 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     app.locale: 'fr'
+    app.locale_str: 'fr_FR'
     app.data_dir: '%kernel.project_dir%/public/data'
 
 services:
