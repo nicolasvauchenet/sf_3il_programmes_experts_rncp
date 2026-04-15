@@ -89,4 +89,13 @@
             {
                 "title": "Chapitre 6 : Gestion de la configuration",
                 "items": [
-                    "Importance de la,
+                    "Importance de la gestion de la configuration dans un environnement automatisé",
+                    "Outils de gestion de la configuration (Ansible, Puppet, Chef)",
+                    "Mise en place de playbooks ou de recettes",
+                    "Avantages de la gestion de la configuration",
+                    "Gestion des versions et des changements de configuration"
+                ]
+            }
+        ]
+    }
+}

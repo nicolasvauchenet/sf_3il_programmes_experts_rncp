@@ -1,0 +1,5 @@
+Lancer un import complet :
+php bin/console app:framework:import public/data/asrc_2025-2026 --mode=full
+
+Lancer un import partiel (modules + projets) :
+php bin/console app:framework:import public/data/asrc_2025-2026 --mode=modules_projects
