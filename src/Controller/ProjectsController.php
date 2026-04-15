@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Dto\Context\ProjectSheet;
 use App\Service\Chart\ProjectChartService;
 use App\Service\Context\Provider\FrameworkProjectsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -61,10 +62,6 @@ final class ProjectsController extends AbstractController
             }
         }
 
-        if ($selectedBlock === null) {
-            $selectedBlock = $this->normalizeBlockCode((string)($selectedProject->meta['blockCode'] ?? ''));
-        }
-
         $projectVolumeChart = $projectChartService->createProjectVolumeChart($selectedProject);
 
         return $this->render('projects/index.html.twig', [
@@ -78,6 +75,9 @@ final class ProjectsController extends AbstractController
         ]);
     }
 
+    /**
+     * @param ProjectSheet[] $projects
+     */
     private function normalizeSelectedCode(string $raw, array $projects): ?string
     {
         $raw = strtolower(trim($raw));
@@ -106,14 +106,17 @@ final class ProjectsController extends AbstractController
         return $raw;
     }
 
-    private function findFirstProjectForBlock(array $projects, ?string $blockCode): mixed
+    /**
+     * @param ProjectSheet[] $projects
+     */
+    private function findFirstProjectForBlock(array $projects, ?string $blockCode): ?ProjectSheet
     {
         if ($blockCode === null) {
             return null;
         }
 
         foreach ($projects as $project) {
-            $projectBlockCode = strtoupper(trim((string)($project->meta['blockCode'] ?? '')));
+            $projectBlockCode = strtoupper(trim($project->blocCode()));
 
             if ($projectBlockCode === $blockCode) {
                 return $project;

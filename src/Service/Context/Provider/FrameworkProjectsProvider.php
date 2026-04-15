@@ -26,7 +26,7 @@ final readonly class FrameworkProjectsProvider
      */
     public function listProjects(string $promotion, string $year): array
     {
-        $refs = $this->scanner->listJsonFiles($promotion, $year, 'modules');
+        $refs = $this->scanner->listJsonFiles($promotion, $year, 'projects');
         $structure = $this->structureLoader->load($promotion, $year);
         $resolvedSkills = $this->skillsProvider->listSkills($promotion, $year);
         $skillsIndex = $this->indexSkills($resolvedSkills);

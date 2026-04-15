@@ -52,6 +52,7 @@ final readonly class FrameworkStructureLoader
         $modules = is_array($decoded['modules'] ?? null) ? $decoded['modules'] : [];
         $skills = is_array($decoded['skills'] ?? null) ? $decoded['skills'] : [];
         $evaluations = is_array($decoded['evaluations'] ?? null) ? $decoded['evaluations'] : [];
+        $projects = is_array($decoded['projects'] ?? null) ? $decoded['projects'] : [];
 
         return new FrameworkStructure(
             meta: $meta,
@@ -59,6 +60,7 @@ final readonly class FrameworkStructureLoader
             skills: $skills,
             blocks: $blocks,
             evaluations: $evaluations,
+            projects: $projects,
             raw: $decoded,
         );
     }

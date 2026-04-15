@@ -8,172 +8,566 @@
     },
     "modules": [
         {
-            "code": "FM01",
+            "shortCode": "FM01",
+            "code": "RNCP39611-BC01-FM01",
             "fullCode": "RNCP39611-BC01-FM01",
             "title": "Administration  des Infrastructures sécurisées",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02"
+            ]
         },
         {
-            "code": "FM02",
+            "shortCode": "FM02",
+            "code": "RNCP39611-BC01-FM02",
             "fullCode": "RNCP39611-BC01-FM02",
             "title": "Gestion  de  la Haute Disponibilité",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
+            "skills": [
+                "C05"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC03"
+            ]
         },
         {
-            "code": "FM03",
+            "shortCode": "FM03",
+            "code": "RNCP39611-BC01-FM03",
             "fullCode": "RNCP39611-BC01-FM03",
             "title": "Supervision des infrastructures",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
+            "skills": [
+                "C06"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC03"
+            ]
         },
         {
-            "code": "FM04",
+            "shortCode": "FM04",
+            "code": "RNCP39611-BC01-FM04",
             "fullCode": "RNCP39611-BC01-FM04",
             "title": "Gestion des incidents et système de ticketing",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
+            "skills": [
+                "C06",
+                "C07"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC03"
+            ]
         },
         {
-            "code": "FM05",
+            "shortCode": "FM05",
+            "code": "RNCP39611-BC01-FM05",
             "fullCode": "RNCP39611-BC01-FM05",
             "title": "Administration de Bases de Données",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
+            "skills": [
+                "C04"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02"
+            ]
         },
         {
-            "code": "FM06",
+            "shortCode": "FM06",
+            "code": "RNCP39611-BC01-FM06",
             "fullCode": "RNCP39611-BC01-FM06",
             "title": "Techniques de Scripting Système",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
+            "skills": [
+                "C08"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC03"
+            ]
         },
         {
-            "code": "FM07",
-            "fullCode": "RNCP39611-BC01-FM07",
-            "title": "Projet Infrastructures",
-            "blockCode": "BC01"
-        },
-        {
-            "code": "FM01",
+            "shortCode": "FM01",
+            "code": "RNCP39611-BC02-FM01",
             "fullCode": "RNCP39611-BC02-FM01",
             "title": "Infrastructures réseaux sécurisées",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
+            "skills": [
+                "C09",
+                "C10",
+                "C11"
+            ],
+            "evaluations": [
+                "RNCP39611-BC02-EC04",
+                "RNCP39611-BC02-EC05"
+            ]
         },
         {
-            "code": "FM02",
+            "shortCode": "FM02",
+            "code": "RNCP39611-BC02-FM02",
             "fullCode": "RNCP39611-BC02-FM02",
             "title": "Architectures sécurisées (Cloud et hybrides)",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
+            "skills": [
+                "C12",
+                "C13",
+                "C14"
+            ],
+            "evaluations": [
+                "RNCP39611-BC02-EC06"
+            ]
         },
         {
-            "code": "FM03",
+            "shortCode": "FM03",
+            "code": "RNCP39611-BC02-FM03",
             "fullCode": "RNCP39611-BC02-FM03",
             "title": "Infrastructure As Code",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
+            "skills": [
+                "C12",
+                "C13",
+                "C14"
+            ],
+            "evaluations": [
+                "RNCP39611-BC02-EC06"
+            ]
         },
         {
-            "code": "FM04",
+            "shortCode": "FM04",
+            "code": "RNCP39611-BC02-FM04",
             "fullCode": "RNCP39611-BC02-FM04",
             "title": "Intégration et Déploiement Continus",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
+            "skills": [
+                "C12",
+                "C13",
+                "C14"
+            ],
+            "evaluations": [
+                "RNCP39611-BC02-EC06"
+            ]
         },
         {
-            "code": "FM05",
-            "fullCode": "RNCP39611-BC02-FM05",
-            "title": "Projet CI/CD : mise en place, monitoring, évolution +  IAC",
-            "blockCode": "BC02"
-        },
-        {
-            "code": "FM01",
+            "shortCode": "FM01",
+            "code": "RNCP39611-BC03-FM01",
             "fullCode": "RNCP39611-BC03-FM01",
             "title": "Cybermenaces et Risques",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C15",
+                "C16",
+                "C17",
+                "C18"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC07",
+                "RNCP39611-BC03-EC08"
+            ]
         },
         {
-            "code": "FM02",
+            "shortCode": "FM02",
+            "code": "RNCP39611-BC03-FM02",
             "fullCode": "RNCP39611-BC03-FM02",
             "title": "Politique de sécurité",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C15"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC07"
+            ]
         },
         {
-            "code": "FM03",
+            "shortCode": "FM03",
+            "code": "RNCP39611-BC03-FM03",
             "fullCode": "RNCP39611-BC03-FM03",
             "title": "Audit de sécurité et amélioration continue",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C16",
+                "C17"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC07"
+            ]
         },
         {
-            "code": "FM04",
+            "shortCode": "FM04",
+            "code": "RNCP39611-BC03-FM04",
             "fullCode": "RNCP39611-BC03-FM04",
             "title": "Défenses Périmétriques",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C18"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC08"
+            ]
         },
         {
-            "code": "FM05",
+            "shortCode": "FM05",
+            "code": "RNCP39611-BC03-FM05",
             "fullCode": "RNCP39611-BC03-FM05",
             "title": "Techniques de Résilience",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C16",
+                "C17"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC07"
+            ]
         },
         {
-            "code": "FM06",
+            "shortCode": "FM06",
+            "code": "RNCP39611-BC03-FM06",
             "fullCode": "RNCP39611-BC03-FM06",
             "title": "Gestion des identités et accès sécurisés",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C19"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC08"
+            ]
         },
         {
-            "code": "FM07",
+            "shortCode": "FM07",
+            "code": "RNCP39611-BC03-FM07",
             "fullCode": "RNCP39611-BC03-FM07",
             "title": "Protection des données et respect de la conformité",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C20",
+                "C21",
+                "C22"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC09"
+            ]
         },
         {
-            "code": "FM08",
-            "fullCode": "RNCP39611-BC03-FM08",
-            "title": "Projet CyberSécurité",
-            "blockCode": "BC03"
-        },
-        {
-            "code": "FM01",
+            "shortCode": "FM01",
+            "code": "RNCP39611-BC04-FM01",
             "fullCode": "RNCP39611-BC04-FM01",
             "title": "Etude d'avant projet (MOA)",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ04"
+            ],
+            "skills": [
+                "C23",
+                "C24"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC10"
+            ]
         },
         {
-            "code": "FM02",
+            "shortCode": "FM02",
+            "code": "RNCP39611-BC04-FM02",
             "fullCode": "RNCP39611-BC04-FM02",
             "title": "Gestion de projet (MOE)",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
+            ],
+            "skills": [
+                "C25",
+                "C26",
+                "C27"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
+            ]
         },
         {
-            "code": "FM03",
+            "shortCode": "FM03",
+            "code": "RNCP39611-BC04-FM03",
             "fullCode": "RNCP39611-BC04-FM03",
             "title": "Gestion de projet architecture",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
+            ],
+            "skills": [
+                "C25",
+                "C26",
+                "C27"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
+            ]
         },
         {
-            "code": "FM04",
+            "shortCode": "FM04",
+            "code": "RNCP39611-BC04-FM04",
             "fullCode": "RNCP39611-BC04-FM04",
             "title": "Gestion des coûts et du budget",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
+            ],
+            "skills": [
+                "C27"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
+            ]
         },
         {
-            "code": "FM05",
+            "shortCode": "FM05",
+            "code": "RNCP39611-BC04-FM05",
             "fullCode": "RNCP39611-BC04-FM05",
             "title": "Coordonner les équipes de projet (Communication)",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
+            ],
+            "skills": [
+                "C26"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
+            ]
         },
         {
-            "code": "FM06",
+            "shortCode": "FM06",
+            "code": "RNCP39611-BC04-FM06",
             "fullCode": "RNCP39611-BC04-FM06",
             "title": "Anglais Professionnel et Recherche documentaire",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
+            ],
+            "skills": [
+                "C28"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
+            ]
         },
         {
-            "code": "FM07",
+            "shortCode": "FM07",
+            "code": "RNCP39611-BC04-FM07",
             "fullCode": "RNCP39611-BC04-FM07",
             "title": "Veille Technologique multilingue",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
+            ],
+            "skills": [
+                "C29",
+                "C30",
+                "C31"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "shortCode": "PRJ01",
+            "code": "RNCP39611-BC01-PRJ01",
+            "title": "Projet Infrastructures",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39611-BC01-FM01",
+                "RNCP39611-BC01-FM02",
+                "RNCP39611-BC01-FM03",
+                "RNCP39611-BC01-FM04",
+                "RNCP39611-BC01-FM05",
+                "RNCP39611-BC01-FM06"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08"
+            ],
+            "evaluations": [
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02",
+                "RNCP39611-BC01-EC03"
+            ]
         },
         {
-            "code": "FM08",
-            "fullCode": "RNCP39611-BC04-FM08",
-            "title": "Projet Epreuves Certifiantes",
-            "blockCode": "BC04"
+            "shortCode": "PRJ02",
+            "code": "RNCP39611-BC02-PRJ02",
+            "title": "Projet CI/CD : mise en place, monitoring, évolution + IAC",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39611-BC02-FM01",
+                "RNCP39611-BC02-FM02",
+                "RNCP39611-BC02-FM03",
+                "RNCP39611-BC02-FM04"
+            ],
+            "skills": [
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14"
+            ],
+            "evaluations": [
+                "RNCP39611-BC02-EC04",
+                "RNCP39611-BC02-EC05",
+                "RNCP39611-BC02-EC06"
+            ]
+        },
+        {
+            "shortCode": "PRJ03",
+            "code": "RNCP39611-BC03-PRJ03",
+            "title": "Projet CyberSécurité",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39611-BC03-FM01",
+                "RNCP39611-BC03-FM02",
+                "RNCP39611-BC03-FM03",
+                "RNCP39611-BC03-FM04",
+                "RNCP39611-BC03-FM05",
+                "RNCP39611-BC03-FM06",
+                "RNCP39611-BC03-FM07"
+            ],
+            "skills": [
+                "C15",
+                "C16",
+                "C17",
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22"
+            ],
+            "evaluations": [
+                "RNCP39611-BC03-EC07",
+                "RNCP39611-BC03-EC08",
+                "RNCP39611-BC03-EC09"
+            ]
+        },
+        {
+            "shortCode": "PRJ04",
+            "code": "RNCP39611-BC04-PRJ04",
+            "title": "Projet Étude d’avant-projet",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39611-BC04-FM01"
+            ],
+            "skills": [
+                "C23",
+                "C24"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC10"
+            ]
+        },
+        {
+            "shortCode": "PRJ05",
+            "code": "RNCP39611-BC04-PRJ05",
+            "title": "Projet Pilotage de projet d’infrastructure systèmes et réseaux",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39611-BC04-FM02",
+                "RNCP39611-BC04-FM03",
+                "RNCP39611-BC04-FM04",
+                "RNCP39611-BC04-FM05"
+            ],
+            "skills": [
+                "C25",
+                "C26",
+                "C27"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
+            ]
+        },
+        {
+            "shortCode": "PRJ06",
+            "code": "RNCP39611-BC04-PRJ06",
+            "title": "Projet Veille technologique multilingue",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39611-BC04-FM06",
+                "RNCP39611-BC04-FM07"
+            ],
+            "skills": [
+                "C28",
+                "C29",
+                "C30",
+                "C31"
+            ],
+            "evaluations": [
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
+            ]
         }
     ],
     "blocks": [
@@ -200,12 +594,14 @@
             "title": "Administrer et optimiser les systèmes d'exploitation",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM01",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC01",
-                "EC02"
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02"
             ]
         },
         {
@@ -213,12 +609,14 @@
             "title": "Concevoir des topologies systèmes à l'aide d'un annuaire",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM01",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC01",
-                "EC02"
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02"
             ]
         },
         {
@@ -226,12 +624,14 @@
             "title": "Concevoir et déployer des environnements virtualisés",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM01",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC01",
-                "EC02"
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02"
             ]
         },
         {
@@ -239,12 +639,14 @@
             "title": "Concevoir, gérer et administrer les systèmes de gestion de bases de données relationnelles et NoSQL",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM05",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC01",
-                "EC02"
+                "RNCP39611-BC01-EC01",
+                "RNCP39611-BC01-EC02"
             ]
         },
         {
@@ -252,11 +654,13 @@
             "title": "Mettre en œuvre des solutions de redondance, de réplication et de clustering",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM02",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM02"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC03"
+                "RNCP39611-BC01-EC03"
             ]
         },
         {
@@ -265,11 +669,13 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39611-BC01-FM03",
-                "RNCP39611-BC01-FM04",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC03"
+                "RNCP39611-BC01-EC03"
             ]
         },
         {
@@ -277,11 +683,13 @@
             "title": "Manager le processus de gestion des incidents informatiques",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM04",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC03"
+                "RNCP39611-BC01-EC03"
             ]
         },
         {
@@ -289,11 +697,13 @@
             "title": "Automatiser les tâches d'administration en développant et en appliquant des scripts",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39611-BC01-FM06",
-                "RNCP39611-BC01-FM07"
+                "RNCP39611-BC01-FM06"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
             ],
             "evaluations": [
-                "EC03"
+                "RNCP39611-BC01-EC03"
             ]
         },
         {
@@ -301,12 +711,14 @@
             "title": "Configurer l'infrastructure réseau",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39611-BC02-FM01",
-                "RNCP39611-BC02-FM05"
+                "RNCP39611-BC02-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
             ],
             "evaluations": [
-                "EC04",
-                "EC05"
+                "RNCP39611-BC02-EC04",
+                "RNCP39611-BC02-EC05"
             ]
         },
         {
@@ -314,12 +726,14 @@
             "title": "Déployer les solutions de télécommunications, de réseaux de données et voix",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39611-BC02-FM01",
-                "RNCP39611-BC02-FM05"
+                "RNCP39611-BC02-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
             ],
             "evaluations": [
-                "EC04",
-                "EC05"
+                "RNCP39611-BC02-EC04",
+                "RNCP39611-BC02-EC05"
             ]
         },
         {
@@ -327,12 +741,14 @@
             "title": "Superviser et assurer la maintenance du réseau",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39611-BC02-FM01",
-                "RNCP39611-BC02-FM05"
+                "RNCP39611-BC02-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
             ],
             "evaluations": [
-                "EC04",
-                "EC05"
+                "RNCP39611-BC02-EC04",
+                "RNCP39611-BC02-EC05"
             ]
         },
         {
@@ -342,11 +758,13 @@
             "modules": [
                 "RNCP39611-BC02-FM02",
                 "RNCP39611-BC02-FM03",
-                "RNCP39611-BC02-FM04",
-                "RNCP39611-BC02-FM05"
+                "RNCP39611-BC02-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
             ],
             "evaluations": [
-                "EC06"
+                "RNCP39611-BC02-EC06"
             ]
         },
         {
@@ -356,11 +774,13 @@
             "modules": [
                 "RNCP39611-BC02-FM02",
                 "RNCP39611-BC02-FM03",
-                "RNCP39611-BC02-FM04",
-                "RNCP39611-BC02-FM05"
+                "RNCP39611-BC02-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
             ],
             "evaluations": [
-                "EC06"
+                "RNCP39611-BC02-EC06"
             ]
         },
         {
@@ -370,11 +790,13 @@
             "modules": [
                 "RNCP39611-BC02-FM02",
                 "RNCP39611-BC02-FM03",
-                "RNCP39611-BC02-FM04",
-                "RNCP39611-BC02-FM05"
+                "RNCP39611-BC02-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
             ],
             "evaluations": [
-                "EC06"
+                "RNCP39611-BC02-EC06"
             ]
         },
         {
@@ -383,11 +805,13 @@
             "blockCode": "BC03",
             "modules": [
                 "RNCP39611-BC03-FM01",
-                "RNCP39611-BC03-FM02",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM02"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39611-BC03-EC07"
             ]
         },
         {
@@ -397,11 +821,13 @@
             "modules": [
                 "RNCP39611-BC03-FM01",
                 "RNCP39611-BC03-FM03",
-                "RNCP39611-BC03-FM05",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39611-BC03-EC07"
             ]
         },
         {
@@ -411,11 +837,13 @@
             "modules": [
                 "RNCP39611-BC03-FM01",
                 "RNCP39611-BC03-FM03",
-                "RNCP39611-BC03-FM05",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39611-BC03-EC07"
             ]
         },
         {
@@ -424,11 +852,13 @@
             "blockCode": "BC03",
             "modules": [
                 "RNCP39611-BC03-FM01",
-                "RNCP39611-BC03-FM04",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC08"
+                "RNCP39611-BC03-EC08"
             ]
         },
         {
@@ -436,11 +866,13 @@
             "title": "Administrer les systèmes de gestion des identités et des accès (IAM)",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39611-BC03-FM06",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM06"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC08"
+                "RNCP39611-BC03-EC08"
             ]
         },
         {
@@ -448,11 +880,13 @@
             "title": "Superviser les opérations de sauvegarde et de restauration des données",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39611-BC03-FM07",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC09"
+                "RNCP39611-BC03-EC09"
             ]
         },
         {
@@ -460,11 +894,13 @@
             "title": "Assurer le support et le suivi des incidents IT",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39611-BC03-FM07",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC09"
+                "RNCP39611-BC03-EC09"
             ]
         },
         {
@@ -472,11 +908,13 @@
             "title": "Assurer la conformité aux réglementations de protection des données",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39611-BC03-FM07",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
             ],
             "evaluations": [
-                "EC09"
+                "RNCP39611-BC03-EC09"
             ]
         },
         {
@@ -484,11 +922,13 @@
             "title": "Analyser les besoins opérationnels et les traduire en exigences fonctionnelles et techniques",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39611-BC04-FM01",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ04"
             ],
             "evaluations": [
-                "EC10"
+                "RNCP39611-BC04-EC10"
             ]
         },
         {
@@ -496,11 +936,13 @@
             "title": "Rédiger des documents de spécification technique",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39611-BC04-FM01",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ04"
             ],
             "evaluations": [
-                "EC10"
+                "RNCP39611-BC04-EC10"
             ]
         },
         {
@@ -509,12 +951,14 @@
             "blockCode": "BC04",
             "modules": [
                 "RNCP39611-BC04-FM02",
-                "RNCP39611-BC04-FM03",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM03"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
             ],
             "evaluations": [
-                "EC11",
-                "EC12"
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
             ]
         },
         {
@@ -524,12 +968,14 @@
             "modules": [
                 "RNCP39611-BC04-FM02",
                 "RNCP39611-BC04-FM03",
-                "RNCP39611-BC04-FM05",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
             ],
             "evaluations": [
-                "EC11",
-                "EC12"
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
             ]
         },
         {
@@ -539,12 +985,14 @@
             "modules": [
                 "RNCP39611-BC04-FM02",
                 "RNCP39611-BC04-FM03",
-                "RNCP39611-BC04-FM04",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
             ],
             "evaluations": [
-                "EC11",
-                "EC12"
+                "RNCP39611-BC04-EC11",
+                "RNCP39611-BC04-EC12"
             ]
         },
         {
@@ -552,12 +1000,14 @@
             "title": "Analyser des contenus de diverses sources d'informations spécialisés",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39611-BC04-FM06",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM06"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
             ],
             "evaluations": [
-                "EC13",
-                "EC14"
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
             ]
         },
         {
@@ -565,12 +1015,14 @@
             "title": "Mettre en place une veille technologique",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39611-BC04-FM07",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
             ],
             "evaluations": [
-                "EC13",
-                "EC14"
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
             ]
         },
         {
@@ -578,12 +1030,14 @@
             "title": "Analyser les données brutes collectées dans la base de connaissances",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39611-BC04-FM07",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
             ],
             "evaluations": [
-                "EC13",
-                "EC14"
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
             ]
         },
         {
@@ -591,233 +1045,277 @@
             "title": "Diffuser les hypothèses ou scénarii aux collaborateurs du département IT",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39611-BC04-FM07",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
             ],
             "evaluations": [
-                "EC13",
-                "EC14"
+                "RNCP39611-BC04-EC13",
+                "RNCP39611-BC04-EC14"
             ]
         }
     ],
     "evaluations": [
         {
-            "code": "EC01",
+            "shortCode": "EC01",
+            "code": "RNCP39611-BC01-EC01",
             "blockCode": "BC01",
             "title": "Dossier d’architecture technique",
+            "modules": [
+                "RNCP39611-BC01-FM01",
+                "RNCP39611-BC01-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
             "skills": [
                 "C01",
                 "C02",
                 "C03",
                 "C04"
-            ],
-            "modules": [
-                "RNCP39611-BC01-FM01",
-                "RNCP39611-BC01-FM05",
-                "RNCP39611-BC01-FM07"
             ]
         },
         {
-            "code": "EC02",
+            "shortCode": "EC02",
+            "code": "RNCP39611-BC01-EC02",
             "blockCode": "BC01",
             "title": "Mise en place de la solution mise en œuvre",
+            "modules": [
+                "RNCP39611-BC01-FM01",
+                "RNCP39611-BC01-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
             "skills": [
                 "C01",
                 "C02",
                 "C03",
                 "C04"
-            ],
-            "modules": [
-                "RNCP39611-BC01-FM01",
-                "RNCP39611-BC01-FM05",
-                "RNCP39611-BC01-FM07"
             ]
         },
         {
-            "code": "EC03",
+            "shortCode": "EC03",
+            "code": "RNCP39611-BC01-EC03",
             "blockCode": "BC01",
             "title": "Analyse d’architecture, PCA et proposition d’améliorations",
+            "modules": [
+                "RNCP39611-BC01-FM02",
+                "RNCP39611-BC01-FM03",
+                "RNCP39611-BC01-FM04",
+                "RNCP39611-BC01-FM06"
+            ],
+            "projects": [
+                "RNCP39611-BC01-PRJ01"
+            ],
             "skills": [
                 "C05",
                 "C06",
                 "C07",
                 "C08"
-            ],
-            "modules": [
-                "RNCP39611-BC01-FM02",
-                "RNCP39611-BC01-FM03",
-                "RNCP39611-BC01-FM04",
-                "RNCP39611-BC01-FM06",
-                "RNCP39611-BC01-FM07"
             ]
         },
         {
-            "code": "EC04",
+            "shortCode": "EC04",
+            "code": "RNCP39611-BC02-EC04",
             "blockCode": "BC02",
             "title": "Dossier technique de la solution",
+            "modules": [
+                "RNCP39611-BC02-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
             "skills": [
                 "C09",
                 "C10",
                 "C11"
-            ],
-            "modules": [
-                "RNCP39611-BC02-FM01",
-                "RNCP39611-BC02-FM05"
             ]
         },
         {
-            "code": "EC05",
+            "shortCode": "EC05",
+            "code": "RNCP39611-BC02-EC05",
             "blockCode": "BC02",
             "title": "Mise en service de la solution",
+            "modules": [
+                "RNCP39611-BC02-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
             "skills": [
                 "C09",
                 "C10",
                 "C11"
-            ],
-            "modules": [
-                "RNCP39611-BC02-FM01",
-                "RNCP39611-BC02-FM05"
             ]
         },
         {
-            "code": "EC06",
+            "shortCode": "EC06",
+            "code": "RNCP39611-BC02-EC06",
             "blockCode": "BC02",
             "title": "Mise en place d’un système d’automatisation d’intégration et de déploiement continu",
+            "modules": [
+                "RNCP39611-BC02-FM02",
+                "RNCP39611-BC02-FM03",
+                "RNCP39611-BC02-FM04"
+            ],
+            "projects": [
+                "RNCP39611-BC02-PRJ02"
+            ],
             "skills": [
                 "C12",
                 "C13",
                 "C14"
-            ],
-            "modules": [
-                "RNCP39611-BC02-FM02",
-                "RNCP39611-BC02-FM03",
-                "RNCP39611-BC02-FM04",
-                "RNCP39611-BC02-FM05"
             ]
         },
         {
-            "code": "EC07",
+            "shortCode": "EC07",
+            "code": "RNCP39611-BC03-EC07",
             "blockCode": "BC03",
             "title": "Analyse d’un SI, audit technique et préconisations de sécurité",
-            "skills": [
-                "C15",
-                "C16",
-                "C17"
-            ],
             "modules": [
                 "RNCP39611-BC03-FM01",
                 "RNCP39611-BC03-FM02",
                 "RNCP39611-BC03-FM03",
-                "RNCP39611-BC03-FM05",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C15",
+                "C16",
+                "C17"
             ]
         },
         {
-            "code": "EC08",
+            "shortCode": "EC08",
+            "code": "RNCP39611-BC03-EC08",
             "blockCode": "BC03",
             "title": "Rapport d’analyse et de préconisations d’amélioration de l’existant",
-            "skills": [
-                "C18",
-                "C19"
-            ],
             "modules": [
                 "RNCP39611-BC03-FM01",
                 "RNCP39611-BC03-FM04",
-                "RNCP39611-BC03-FM06",
-                "RNCP39611-BC03-FM08"
+                "RNCP39611-BC03-FM06"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
+            "skills": [
+                "C18",
+                "C19"
             ]
         },
         {
-            "code": "EC09",
+            "shortCode": "EC09",
+            "code": "RNCP39611-BC03-EC09",
             "blockCode": "BC03",
             "title": "Mise en place d’un plan de sauvegarde",
+            "modules": [
+                "RNCP39611-BC03-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC03-PRJ03"
+            ],
             "skills": [
                 "C20",
                 "C21",
                 "C22"
-            ],
-            "modules": [
-                "RNCP39611-BC03-FM07",
-                "RNCP39611-BC03-FM08"
             ]
         },
         {
-            "code": "EC10",
+            "shortCode": "EC10",
+            "code": "RNCP39611-BC04-EC10",
             "blockCode": "BC04",
             "title": "Rédaction d’une étude d’avant-projet",
+            "modules": [
+                "RNCP39611-BC04-FM01"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ04"
+            ],
             "skills": [
                 "C23",
                 "C24"
-            ],
-            "modules": [
-                "RNCP39611-BC04-FM01",
-                "RNCP39611-BC04-FM08"
             ]
         },
         {
-            "code": "EC11",
+            "shortCode": "EC11",
+            "code": "RNCP39611-BC04-EC11",
             "blockCode": "BC04",
             "title": "Compte rendu d’activité",
-            "skills": [
-                "C25",
-                "C26",
-                "C27"
-            ],
             "modules": [
                 "RNCP39611-BC04-FM02",
                 "RNCP39611-BC04-FM03",
                 "RNCP39611-BC04-FM04",
-                "RNCP39611-BC04-FM05",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
+            ],
+            "skills": [
+                "C25",
+                "C26",
+                "C27"
             ]
         },
         {
-            "code": "EC12",
+            "shortCode": "EC12",
+            "code": "RNCP39611-BC04-EC12",
             "blockCode": "BC04",
             "title": "Soutenance",
-            "skills": [
-                "C25",
-                "C26",
-                "C27"
-            ],
             "modules": [
                 "RNCP39611-BC04-FM02",
                 "RNCP39611-BC04-FM03",
                 "RNCP39611-BC04-FM04",
-                "RNCP39611-BC04-FM05",
-                "RNCP39611-BC04-FM08"
+                "RNCP39611-BC04-FM05"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ05"
+            ],
+            "skills": [
+                "C25",
+                "C26",
+                "C27"
             ]
         },
         {
-            "code": "EC13",
+            "shortCode": "EC13",
+            "code": "RNCP39611-BC04-EC13",
             "blockCode": "BC04",
             "title": "Rédaction d’un rapport de veille multilingue",
+            "modules": [
+                "RNCP39611-BC04-FM06",
+                "RNCP39611-BC04-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
+            ],
             "skills": [
                 "C28",
                 "C29",
                 "C30",
                 "C31"
-            ],
-            "modules": [
-                "RNCP39611-BC04-FM06",
-                "RNCP39611-BC04-FM07",
-                "RNCP39611-BC04-FM08"
             ]
         },
         {
-            "code": "EC14",
+            "shortCode": "EC14",
+            "code": "RNCP39611-BC04-EC14",
             "blockCode": "BC04",
             "title": "Présentation orale du rapport de veille multilingue",
+            "modules": [
+                "RNCP39611-BC04-FM06",
+                "RNCP39611-BC04-FM07"
+            ],
+            "projects": [
+                "RNCP39611-BC04-PRJ06"
+            ],
             "skills": [
                 "C28",
                 "C29",
                 "C30",
                 "C31"
-            ],
-            "modules": [
-                "RNCP39611-BC04-FM06",
-                "RNCP39611-BC04-FM07",
-                "RNCP39611-BC04-FM08"
             ]
         }
     ]

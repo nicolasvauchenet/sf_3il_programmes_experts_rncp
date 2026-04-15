@@ -8,196 +8,764 @@
     },
     "modules": [
         {
-            "code": "FM01",
+            "code": "RNCP39781-BC01-FM01",
             "fullCode": "RNCP39781-BC01-FM01",
             "title": "Gouvernance des Infrastructures (ITIL)",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "shortCode": "FM01",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ]
         },
         {
-            "code": "FM02",
+            "code": "RNCP39781-BC01-FM02",
             "fullCode": "RNCP39781-BC01-FM02",
             "title": "Audit des infrastructure et conformité",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "shortCode": "FM02",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ]
         },
         {
-            "code": "FM03",
+            "code": "RNCP39781-BC01-FM03",
             "fullCode": "RNCP39781-BC01-FM03",
             "title": "Fourniture des services",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "shortCode": "FM03",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ]
         },
         {
-            "code": "FM04",
+            "code": "RNCP39781-BC01-FM04",
             "fullCode": "RNCP39781-BC01-FM04",
             "title": "Support de services et Plan de Reprise d’Activité",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "shortCode": "FM04",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ]
         },
         {
-            "code": "FM05",
+            "code": "RNCP39781-BC01-FM05",
             "fullCode": "RNCP39781-BC01-FM05",
             "title": "Mise en production et amélioration continue",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "shortCode": "FM05",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ]
         },
         {
-            "code": "FM06",
+            "code": "RNCP39781-BC01-FM06",
             "fullCode": "RNCP39781-BC01-FM06",
             "title": "Numérique responsable",
-            "blockCode": "BC01"
+            "blockCode": "BC01",
+            "shortCode": "FM06",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ]
         },
         {
-            "code": "FM07",
-            "fullCode": "RNCP39781-BC01-FM07",
-            "title": "Projet : Gestion des Services (Prépa EC)",
-            "blockCode": "BC01"
-        },
-        {
-            "code": "FM01",
+            "code": "RNCP39781-BC02-FM01",
             "fullCode": "RNCP39781-BC02-FM01",
             "title": "Conception d'infrastructures",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "shortCode": "FM01",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ]
         },
         {
-            "code": "FM02",
+            "code": "RNCP39781-BC02-FM02",
             "fullCode": "RNCP39781-BC02-FM02",
             "title": "Gestion des identités",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "shortCode": "FM02",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ]
         },
         {
-            "code": "FM03",
+            "code": "RNCP39781-BC02-FM03",
             "fullCode": "RNCP39781-BC02-FM03",
             "title": "IT Assets Management (ITAM)",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "shortCode": "FM03",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ]
         },
         {
-            "code": "FM04",
+            "code": "RNCP39781-BC02-FM04",
             "fullCode": "RNCP39781-BC02-FM04",
             "title": "Security Information and Event Management (SIEM)",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "shortCode": "FM04",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ]
         },
         {
-            "code": "FM05",
+            "code": "RNCP39781-BC02-FM05",
             "fullCode": "RNCP39781-BC02-FM05",
             "title": "Automatisation - Usine Logicielle",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "shortCode": "FM05",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ]
         },
         {
-            "code": "FM06",
+            "code": "RNCP39781-BC02-FM06",
             "fullCode": "RNCP39781-BC02-FM06",
             "title": "Gestion des incidents et support ITSM",
-            "blockCode": "BC02"
+            "blockCode": "BC02",
+            "shortCode": "FM06",
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ]
         },
         {
-            "code": "FM07",
-            "fullCode": "RNCP39781-BC02-FM07",
-            "title": "Projet : Management du Support",
-            "blockCode": "BC02"
-        },
-        {
-            "code": "FM08",
-            "fullCode": "RNCP39781-BC02-FM08",
-            "title": "Projet : Conception et pilotage d'infrastructure",
-            "blockCode": "BC02"
-        },
-        {
-            "code": "FM01",
+            "code": "RNCP39781-BC03-FM01",
             "fullCode": "RNCP39781-BC03-FM01",
             "title": "Veille multilingue en cybersécurité",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM01",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM02",
+            "code": "RNCP39781-BC03-FM02",
             "fullCode": "RNCP39781-BC03-FM02",
             "title": "Politique de sécurité",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM02",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM03",
+            "code": "RNCP39781-BC03-FM03",
             "fullCode": "RNCP39781-BC03-FM03",
             "title": "Infrastructure sécurisée",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM03",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM04",
+            "code": "RNCP39781-BC03-FM04",
             "fullCode": "RNCP39781-BC03-FM04",
             "title": "Audit de sécurité et conformité",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM04",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM05",
+            "code": "RNCP39781-BC03-FM05",
             "fullCode": "RNCP39781-BC03-FM05",
             "title": "Management des pratiques sécuritaires",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM05",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM06",
+            "code": "RNCP39781-BC03-FM06",
             "fullCode": "RNCP39781-BC03-FM06",
             "title": "Ethical Hacking et sécurité défensive",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM06",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM07",
+            "code": "RNCP39781-BC03-FM07",
             "fullCode": "RNCP39781-BC03-FM07",
             "title": "SOC et Analyse Forensique",
-            "blockCode": "BC03"
+            "blockCode": "BC03",
+            "shortCode": "FM07",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ]
         },
         {
-            "code": "FM08",
-            "fullCode": "RNCP39781-BC03-FM08",
-            "title": "Projet : Audit d'infrastructures sécurisées",
-            "blockCode": "BC03"
-        },
-        {
-            "code": "FM01",
+            "code": "RNCP39781-BC04-FM01",
             "fullCode": "RNCP39781-BC04-FM01",
             "title": "Etude d'avant-projet",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM01",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM02",
+            "code": "RNCP39781-BC04-FM02",
             "fullCode": "RNCP39781-BC04-FM02",
             "title": "Cahier des Charges et Appels d'Offres",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM02",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM03",
+            "code": "RNCP39781-BC04-FM03",
             "fullCode": "RNCP39781-BC04-FM03",
             "title": "Management de projet",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM03",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM04",
+            "code": "RNCP39781-BC04-FM04",
             "fullCode": "RNCP39781-BC04-FM04",
             "title": "Management des Hommes",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM04",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM05",
+            "code": "RNCP39781-BC04-FM05",
             "fullCode": "RNCP39781-BC04-FM05",
             "title": "Gestion de la recette",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM05",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM06",
+            "code": "RNCP39781-BC04-FM06",
             "fullCode": "RNCP39781-BC04-FM06",
             "title": "Gestion des coûts",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM06",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM07",
+            "code": "RNCP39781-BC04-FM07",
             "fullCode": "RNCP39781-BC04-FM07",
             "title": "Droit et Contrats de Prestation",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM07",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
         },
         {
-            "code": "FM08",
+            "code": "RNCP39781-BC04-FM08",
             "fullCode": "RNCP39781-BC04-FM08",
             "title": "Techniques de communication professionnelle",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "shortCode": "FM08",
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "code": "RNCP39781-BC01-PRJ01",
+            "title": "Projet : Gestion des Services (Prépa EC)",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09",
+                "C10"
+            ],
+            "evaluations": [
+                "RNCP39781-BC01-EC01"
+            ],
+            "shortCode": "PRJ01"
         },
         {
-            "code": "FM09",
-            "fullCode": "RNCP39781-BC04-FM09",
+            "code": "RNCP39781-BC02-PRJ02",
+            "title": "Projet : Management du Support",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM06"
+            ],
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC03"
+            ],
+            "shortCode": "PRJ02"
+        },
+        {
+            "code": "RNCP39781-BC02-PRJ03",
+            "title": "Projet : Conception et pilotage d'infrastructure",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM06"
+            ],
+            "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
+            ],
+            "evaluations": [
+                "RNCP39781-BC02-EC02"
+            ],
+            "shortCode": "PRJ03"
+        },
+        {
+            "code": "RNCP39781-BC03-PRJ04",
+            "title": "Projet : Audit d'infrastructures sécurisées",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07"
+            ],
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "evaluations": [
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "shortCode": "PRJ04"
+        },
+        {
+            "code": "RNCP39781-BC04-PRJ05",
             "title": "Projet : Management de projet",
-            "blockCode": "BC04"
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
+                "RNCP39781-BC04-FM03",
+                "RNCP39781-BC04-FM04",
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08"
+            ],
+            "skills": [
+                "C25",
+                "C26",
+                "C27",
+                "C28",
+                "C29"
+            ],
+            "evaluations": [
+                "RNCP39781-BC04-EC07"
+            ],
+            "shortCode": "PRJ05"
         }
     ],
     "blocks": [
@@ -225,10 +793,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM02",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -238,10 +813,16 @@
             "modules": [
                 "RNCP39781-BC01-FM01",
                 "RNCP39781-BC01-FM02",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -250,11 +831,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -263,12 +850,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
                 "RNCP39781-BC01-FM04",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -277,12 +869,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
                 "RNCP39781-BC01-FM05",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -291,12 +888,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
                 "RNCP39781-BC01-FM05",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -305,12 +907,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
                 "RNCP39781-BC01-FM05",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -319,13 +926,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
                 "RNCP39781-BC01-FM04",
                 "RNCP39781-BC01-FM05",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -334,13 +945,17 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
                 "RNCP39781-BC01-FM03",
                 "RNCP39781-BC01-FM04",
                 "RNCP39781-BC01-FM05",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -348,11 +963,18 @@
             "title": "Mettre en œuvre le Numérique Responsable",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39781-BC01-FM06",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM01",
+                "RNCP39781-BC01-FM02",
+                "RNCP39781-BC01-FM03",
+                "RNCP39781-BC01-FM04",
+                "RNCP39781-BC01-FM05",
+                "RNCP39781-BC01-FM06"
             ],
             "evaluations": [
-                "EC01"
+                "RNCP39781-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
@@ -363,10 +985,17 @@
                 "RNCP39781-BC02-FM01",
                 "RNCP39781-BC02-FM02",
                 "RNCP39781-BC02-FM03",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC02"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -376,10 +1005,18 @@
             "modules": [
                 "RNCP39781-BC02-FM01",
                 "RNCP39781-BC02-FM02",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC02"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -388,11 +1025,19 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
                 "RNCP39781-BC02-FM05",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC02"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -401,12 +1046,19 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
                 "RNCP39781-BC02-FM04",
                 "RNCP39781-BC02-FM05",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC02"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -415,13 +1067,19 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
                 "RNCP39781-BC02-FM03",
                 "RNCP39781-BC02-FM04",
                 "RNCP39781-BC02-FM05",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC02"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -430,12 +1088,19 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39781-BC02-FM01",
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
                 "RNCP39781-BC02-FM04",
                 "RNCP39781-BC02-FM05",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC02"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -444,11 +1109,19 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39781-BC02-FM01",
-                "RNCP39781-BC02-FM06",
-                "RNCP39781-BC02-FM07"
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM06"
             ],
             "evaluations": [
-                "EC03"
+                "RNCP39781-BC02-EC02",
+                "RNCP39781-BC02-EC03"
+            ],
+            "projects": [
+                "RNCP39781-BC02-PRJ02",
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
@@ -458,10 +1131,19 @@
             "modules": [
                 "RNCP39781-BC03-FM01",
                 "RNCP39781-BC03-FM02",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC04"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -472,11 +1154,18 @@
                 "RNCP39781-BC03-FM01",
                 "RNCP39781-BC03-FM02",
                 "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
                 "RNCP39781-BC03-FM05",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC05"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -484,14 +1173,21 @@
             "title": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI)",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39781-BC03-FM01",
                 "RNCP39781-BC03-FM02",
                 "RNCP39781-BC03-FM03",
                 "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
                 "RNCP39781-BC03-FM06",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC05"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -499,12 +1195,21 @@
             "title": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39781-BC03-FM01",
                 "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
                 "RNCP39781-BC03-FM05",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC05"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -512,14 +1217,21 @@
             "title": "Eprouver la sécurité de l’infrastructure",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
                 "RNCP39781-BC03-FM03",
                 "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
                 "RNCP39781-BC03-FM06",
-                "RNCP39781-BC03-FM07",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC06"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -527,12 +1239,21 @@
             "title": "Investiguer et analyser les incidents de sécurité",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
                 "RNCP39781-BC03-FM06",
-                "RNCP39781-BC03-FM07",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC06"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -540,11 +1261,21 @@
             "title": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC)",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39781-BC03-FM07",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07"
             ],
             "evaluations": [
-                "EC06"
+                "RNCP39781-BC03-EC04",
+                "RNCP39781-BC03-EC05",
+                "RNCP39781-BC03-EC06"
+            ],
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
@@ -559,11 +1290,13 @@
                 "RNCP39781-BC04-FM05",
                 "RNCP39781-BC04-FM06",
                 "RNCP39781-BC04-FM07",
-                "RNCP39781-BC04-FM08",
-                "RNCP39781-BC04-FM09"
+                "RNCP39781-BC04-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39781-BC04-EC07"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
             ]
         },
         {
@@ -571,15 +1304,20 @@
             "title": "Assurer le suivi et le reporting du projet",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
                 "RNCP39781-BC04-FM03",
                 "RNCP39781-BC04-FM04",
                 "RNCP39781-BC04-FM05",
                 "RNCP39781-BC04-FM06",
-                "RNCP39781-BC04-FM08",
-                "RNCP39781-BC04-FM09"
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39781-BC04-EC07"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
             ]
         },
         {
@@ -587,15 +1325,20 @@
             "title": "Elaborer et mettre en œuvre la conduite du changement",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
                 "RNCP39781-BC04-FM03",
                 "RNCP39781-BC04-FM04",
                 "RNCP39781-BC04-FM05",
                 "RNCP39781-BC04-FM06",
-                "RNCP39781-BC04-FM08",
-                "RNCP39781-BC04-FM09"
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39781-BC04-EC07"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
             ]
         },
         {
@@ -603,15 +1346,20 @@
             "title": "Développer la performance de l’équipe",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
                 "RNCP39781-BC04-FM03",
                 "RNCP39781-BC04-FM04",
                 "RNCP39781-BC04-FM05",
                 "RNCP39781-BC04-FM06",
-                "RNCP39781-BC04-FM08",
-                "RNCP39781-BC04-FM09"
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39781-BC04-EC07"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
             ]
         },
         {
@@ -619,18 +1367,26 @@
             "title": "Contribuer au recrutement des collaborateurs",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39781-BC04-FM01",
+                "RNCP39781-BC04-FM02",
+                "RNCP39781-BC04-FM03",
                 "RNCP39781-BC04-FM04",
-                "RNCP39781-BC04-FM08",
-                "RNCP39781-BC04-FM09"
+                "RNCP39781-BC04-FM05",
+                "RNCP39781-BC04-FM06",
+                "RNCP39781-BC04-FM07",
+                "RNCP39781-BC04-FM08"
             ],
             "evaluations": [
-                "EC07"
+                "RNCP39781-BC04-EC07"
+            ],
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
             ]
         }
     ],
     "evaluations": [
         {
-            "code": "EC01",
+            "code": "RNCP39781-BC01-EC01",
             "blockCode": "BC01",
             "title": "Gouvernance des Infrastructures Systèmes et Réseaux",
             "skills": [
@@ -651,12 +1407,15 @@
                 "RNCP39781-BC01-FM03",
                 "RNCP39781-BC01-FM04",
                 "RNCP39781-BC01-FM05",
-                "RNCP39781-BC01-FM06",
-                "RNCP39781-BC01-FM07"
+                "RNCP39781-BC01-FM06"
+            ],
+            "shortCode": "EC01",
+            "projects": [
+                "RNCP39781-BC01-PRJ01"
             ]
         },
         {
-            "code": "EC02",
+            "code": "RNCP39781-BC02-EC02",
             "blockCode": "BC02",
             "title": "Conception et montage d’infrastructure",
             "skills": [
@@ -665,7 +1424,8 @@
                 "C13",
                 "C14",
                 "C15",
-                "C16"
+                "C16",
+                "C17"
             ],
             "modules": [
                 "RNCP39781-BC02-FM01",
@@ -673,43 +1433,51 @@
                 "RNCP39781-BC02-FM03",
                 "RNCP39781-BC02-FM04",
                 "RNCP39781-BC02-FM05",
-                "RNCP39781-BC02-FM08"
+                "RNCP39781-BC02-FM06"
+            ],
+            "shortCode": "EC02",
+            "projects": [
+                "RNCP39781-BC02-PRJ03"
             ]
         },
         {
-            "code": "EC03",
+            "code": "RNCP39781-BC02-EC03",
             "blockCode": "BC02",
             "title": "Organisation du support",
             "skills": [
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
                 "C17"
             ],
             "modules": [
                 "RNCP39781-BC02-FM01",
-                "RNCP39781-BC02-FM06",
-                "RNCP39781-BC02-FM07"
+                "RNCP39781-BC02-FM02",
+                "RNCP39781-BC02-FM03",
+                "RNCP39781-BC02-FM04",
+                "RNCP39781-BC02-FM05",
+                "RNCP39781-BC02-FM06"
+            ],
+            "shortCode": "EC03",
+            "projects": [
+                "RNCP39781-BC02-PRJ02"
             ]
         },
         {
-            "code": "EC04",
+            "code": "RNCP39781-BC03-EC04",
             "blockCode": "BC03",
             "title": "Veille cybersécurité (en anglais)",
             "skills": [
-                "C18"
-            ],
-            "modules": [
-                "RNCP39781-BC03-FM01",
-                "RNCP39781-BC03-FM02",
-                "RNCP39781-BC03-FM08"
-            ]
-        },
-        {
-            "code": "EC05",
-            "blockCode": "BC03",
-            "title": "Politique de sécurité",
-            "skills": [
+                "C18",
                 "C19",
                 "C20",
-                "C21"
+                "C21",
+                "C22",
+                "C23",
+                "C24"
             ],
             "modules": [
                 "RNCP39781-BC03-FM01",
@@ -718,28 +1486,69 @@
                 "RNCP39781-BC03-FM04",
                 "RNCP39781-BC03-FM05",
                 "RNCP39781-BC03-FM06",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM07"
+            ],
+            "shortCode": "EC04",
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
-            "code": "EC06",
+            "code": "RNCP39781-BC03-EC05",
             "blockCode": "BC03",
-            "title": "Évaluation de la sécurité et Forensic",
+            "title": "Politique de sécurité",
             "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
                 "C22",
                 "C23",
                 "C24"
             ],
             "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
                 "RNCP39781-BC03-FM03",
                 "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
                 "RNCP39781-BC03-FM06",
-                "RNCP39781-BC03-FM07",
-                "RNCP39781-BC03-FM08"
+                "RNCP39781-BC03-FM07"
+            ],
+            "shortCode": "EC05",
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
             ]
         },
         {
-            "code": "EC07",
+            "code": "RNCP39781-BC03-EC06",
+            "blockCode": "BC03",
+            "title": "Évaluation de la sécurité et Forensic",
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24"
+            ],
+            "modules": [
+                "RNCP39781-BC03-FM01",
+                "RNCP39781-BC03-FM02",
+                "RNCP39781-BC03-FM03",
+                "RNCP39781-BC03-FM04",
+                "RNCP39781-BC03-FM05",
+                "RNCP39781-BC03-FM06",
+                "RNCP39781-BC03-FM07"
+            ],
+            "shortCode": "EC06",
+            "projects": [
+                "RNCP39781-BC03-PRJ04"
+            ]
+        },
+        {
+            "code": "RNCP39781-BC04-EC07",
             "blockCode": "BC04",
             "title": "Pilotage de projets et conduite du changement",
             "skills": [
@@ -757,8 +1566,11 @@
                 "RNCP39781-BC04-FM05",
                 "RNCP39781-BC04-FM06",
                 "RNCP39781-BC04-FM07",
-                "RNCP39781-BC04-FM08",
-                "RNCP39781-BC04-FM09"
+                "RNCP39781-BC04-FM08"
+            ],
+            "shortCode": "EC07",
+            "projects": [
+                "RNCP39781-BC04-PRJ05"
             ]
         }
     ]

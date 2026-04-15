@@ -52,12 +52,12 @@ final readonly class ProjectSheet
 
     public function blocCode(): string
     {
-        return (string)($this->meta['blocCode'] ?? '');
+        return (string)($this->meta['blocCode'] ?? $this->meta['blockCode'] ?? '');
     }
 
     public function blocName(): string
     {
-        return (string)($this->meta['blocName'] ?? '');
+        return (string)($this->meta['blocName'] ?? $this->meta['blockName'] ?? '');
     }
 
     public function durationDays(): int

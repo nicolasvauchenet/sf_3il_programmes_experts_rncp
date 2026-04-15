@@ -573,7 +573,7 @@ final readonly class SummaryChartService
 
     private function getEvaluationLabel(array $evaluation): string
     {
-        $code = $this->normalizeCode($evaluation['code'] ?? '');
+        $code = $this->normalizeCode($evaluation['shortCode'] ?? '');
         $name = trim((string)($evaluation['name'] ?? $evaluation['title'] ?? ''));
 
         if ($code !== '') {

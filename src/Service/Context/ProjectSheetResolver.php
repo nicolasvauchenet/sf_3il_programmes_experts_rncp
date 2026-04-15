@@ -76,20 +76,29 @@ final class ProjectSheetResolver
      */
     private function resolveEvaluations(ProjectSheet $sheet, FrameworkStructure $structure): array
     {
-        $resolved = [];
         $projectCode = $sheet->projectCode();
 
         if ($projectCode === '') {
             return [];
         }
 
-        foreach ($structure->evaluations as $evaluation) {
-            if (!is_array($evaluation)) {
-                continue;
-            }
+        $evaluationCodes = $this->resolveEvaluationCodesFromProjectDefinition($projectCode, $structure);
 
-            $modules = $this->extractStringList($evaluation['modules'] ?? null);
-            if (!in_array($projectCode, $modules, true)) {
+        if ($evaluationCodes === []) {
+            $evaluationCodes = $this->resolveEvaluationCodesFromLegacyModulesLink($projectCode, $structure);
+        }
+
+        if ($evaluationCodes === []) {
+            return [];
+        }
+
+        $evaluationsIndex = $this->indexEvaluationsByCode($structure);
+        $resolved = [];
+
+        foreach ($evaluationCodes as $evaluationCode) {
+            $evaluation = $evaluationsIndex[$this->normalizeCode($evaluationCode)] ?? null;
+
+            if (!is_array($evaluation)) {
                 continue;
             }
 
@@ -99,20 +108,108 @@ final class ProjectSheetResolver
             }
 
             $title = $this->extractNullableString($evaluation['title'] ?? null) ?? '';
+            $blockCode = $this->extractNullableString($evaluation['blockCode'] ?? null)
+                ?? $this->extractNullableString($evaluation['blocCode'] ?? null)
+                ?? '';
 
             $resolved[] = [
                 'code' => $code,
                 'title' => $title,
-                'blockCode' => $this->extractNullableString($evaluation['blockCode'] ?? null) ?? '',
+                'blockCode' => $blockCode,
             ];
         }
 
         return $resolved;
     }
 
+    /**
+     * @return array<int,string>
+     */
+    private function resolveEvaluationCodesFromProjectDefinition(string $projectCode, FrameworkStructure $structure): array
+    {
+        foreach ($structure->projects as $project) {
+            if (!is_array($project)) {
+                continue;
+            }
+
+            $code = $this->extractNullableString($project['code'] ?? null);
+            if ($code === null) {
+                continue;
+            }
+
+            if ($this->normalizeCode($code) !== $this->normalizeCode($projectCode)) {
+                continue;
+            }
+
+            return $this->extractStringList($project['evaluations'] ?? null);
+        }
+
+        return [];
+    }
+
+    /**
+     * Compatibilité avec une ancienne logique où les évaluations référençaient
+     * directement un code projet dans leur champ "modules".
+     *
+     * @return array<int,string>
+     */
+    private function resolveEvaluationCodesFromLegacyModulesLink(string $projectCode, FrameworkStructure $structure): array
+    {
+        $resolved = [];
+
+        foreach ($structure->evaluations as $evaluation) {
+            if (!is_array($evaluation)) {
+                continue;
+            }
+
+            $modules = $this->extractStringList($evaluation['modules'] ?? null);
+
+            if (!in_array($projectCode, $modules, true)) {
+                continue;
+            }
+
+            $code = $this->extractNullableString($evaluation['code'] ?? null);
+            if ($code === null) {
+                continue;
+            }
+
+            $resolved[] = $code;
+        }
+
+        return array_values(array_unique($resolved));
+    }
+
+    /**
+     * @return array<string,array<string,mixed>>
+     */
+    private function indexEvaluationsByCode(FrameworkStructure $structure): array
+    {
+        $index = [];
+
+        foreach ($structure->evaluations as $evaluation) {
+            if (!is_array($evaluation)) {
+                continue;
+            }
+
+            $code = $this->extractNullableString($evaluation['code'] ?? null);
+            if ($code === null) {
+                continue;
+            }
+
+            $index[$this->normalizeCode($code)] = $evaluation;
+        }
+
+        return $index;
+    }
+
     private function buildSkillKey(string $blocCode, string $skillCode): string
     {
         return strtolower(trim($blocCode) . '|' . trim($skillCode));
+    }
+
+    private function normalizeCode(string $value): string
+    {
+        return strtoupper(trim($value));
     }
 
     /**
