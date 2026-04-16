@@ -33,6 +33,7 @@ final class ModuleSheetResolver
             outline: $sheet->outline,
             exercises: $sheet->exercises,
             bibliography: $sheet->bibliography,
+            onlineResources: $sheet->onlineResources,
             teachingMethods: $sheet->teachingMethods,
             raw: $sheet->raw,
         );

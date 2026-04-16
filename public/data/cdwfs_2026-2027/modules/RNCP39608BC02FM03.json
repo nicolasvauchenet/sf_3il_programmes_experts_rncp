@@ -1,0 +1,138 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM03",
+        "title": "Base de données (SQL et NoSQL)",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C10",
+            "description": "Élaborer et administrer des bases de données relationnelles (telles que MySQL ou PostgreSQL) et en utilisant SQL et en respectant les principes de normalisation pour assurer l'intégrité, la performance et la sécurité des données"
+        },
+        {
+            "code": "C11",
+            "description": "Concevoir et gérer l'administration des bases de données NoSQL, telles que le stockage de documents, les bases de données clé-valeur, en colonne ou les graphes, en tenant compte du besoin de l'application, pour optimiser et fluidifier l'utilisation de grandes volumétries de données non structurées"
+        },
+        {
+            "code": "C12",
+            "description": "Arbitrer et décider du choix entre les bases de données relationnelles et NoSQL en tenant compte des caractéristiques de chaque catégorie de base de données pour optimiser l'application en fonction de ses besoins"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Maîtriser les requêtes SQL avancées et l'administration des bases de données relationnelles (Appliquer) Concevoir et gérer des bases de données NoSQL adaptées aux besoins de l'application (Créer) Arbitrer le choix entre une solution relationnelle et NoSQL en fonction du contexte (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et en structures de données, une compréhension basique des concepts de programmation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux bases de données relationnelles (SQL)",
+                "items": [
+                    "Modèle relationnel et langage SQL",
+                    "Création et manipulation de tables",
+                    "Requêtes SQL (SELECT, INSERT, UPDATE, DELETE)",
+                    "Indexation et optimisation des requêtes",
+                    "Transactions et intégrité des données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Introduction aux bases de données NoSQL",
+                "items": [
+                    "Principes des bases de données NoSQL",
+                    "Types de bases de données NoSQL (document, clé-valeur, colonne, graphe)",
+                    "Cas d'utilisation appropriés pour chaque type de base de données NoSQL",
+                    "Comparaison avec les bases de données relationnelles",
+                    "Avantages et inconvénients des bases de données NoSQL"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Théorème de Brewer (CAP theorem)",
+                "items": [
+                    "Explication du théorème de Brewer",
+                    "Consistency, Availability, Partition tolerance",
+                    "Implications du théorème dans le choix des bases de données",
+                    "Exemples concrets d'application du théorème"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Pertinence des types de base de données selon les développements spécifiques",
+                "items": [
+                    "Critères de choix entre bases de données relationnelles et NoSQL",
+                    "Analyse des besoins en termes de cohérence, disponibilité et tolérance aux pannes",
+                    "Exemples de scénarios d'application pour chaque type de base de données",
+                    "Recommandations pour le choix de la technologie de base de données"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas pratique et étude de cas",
+                "items": [
+                    "Mise en pratique des concepts abordés dans les chapitres précédents",
+                    "Analyse de cas concrets d'utilisation de bases de données relationnelles et NoSQL",
+                    "Choix de la technologie de base de données en fonction des besoins spécifiques",
+                    "Implémentation et comparaison de performances",
+                    "Retours d'expérience et bonnes pratiques"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Création et manipulation de tables",
+            "context": "Vous allez créer une base de données relationnelle à l'aide du langage SQL.",
+            "objective": "Vous devrez définir les tables nécessaires pour stocker des informations sur des employés, des départements et des projets au sein d'une entreprise. Ensuite, vous effectuerez des manipulations sur ces tables en insérant, mettant à jour et supprimant des données."
+        },
+        {
+            "title": "Requêtes SQL",
+            "context": "À partir de la base de données que vous avez créée dans l'exercice précédent, vous allez écrire des requêtes SQL pour répondre à des questions spécifiques telles que la liste des employés par département, le nombre de projets par employé, etc.",
+            "objective": "Vous devrez également utiliser des opérations de jointure pour combiner les données de plusieurs tables."
+        },
+        {
+            "title": "Modèle de base de données NoSQL",
+            "context": "Vous allez explorer un scénario où une base de données NoSQL de type document serait plus appropriée qu'une base de données relationnelle.",
+            "objective": "Vous devrez concevoir un modèle de données adapté à ce scénario en identifiant les entités clés et en définissant la structure des documents."
+        },
+        {
+            "title": "Comparaison de performances",
+            "context": "Vous serez amené à mettre en place un environnement de test pour comparer les performances d'une base de données relationnelle et d'une base de données NoSQL dans des cas d'utilisation spécifiques.",
+            "objective": "Vous devrez mesurer les temps d'exécution des requêtes et analyser les résultats pour évaluer les avantages et les inconvénients de chaque type de base de données."
+        },
+        {
+            "title": "Étude de cas pratique",
+            "context": "Pour cet exercice, vous devrez choisir une étude de cas réelle où une entreprise a dû faire le choix entre une base de données relationnelle et une base de données NoSQL.",
+            "objective": "En vous basant sur les critères étudiés précédemment, vous devrez justifier le choix de la technologie de base de données pour cette entreprise, en prenant en compte ses besoins spécifiques et les avantages de chaque type de base de données."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "SQL Antipatterns (2nd ed.)",
+            "author": "Karwin, B"
+        },
+        {
+            "title": "NoSQL Distilled (2nd ed.)",
+            "author": "Sadalage, P. J. & Fowler, M"
+        }
+    ],
+    "OnlineResources": [
+        "PostgreSQL Documentation (https://www.postgresql.org/docs/) [EN]",
+        "MongoDB Documentation (https://www.mongodb.com/docs/) [EN]",
+        "Redis Documentation (https://redis.io/docs/) [EN]",
+        "SQL Tutorial — w3schools (https://www.w3schools.com/sql/) [EN]",
+        "DB-Engines Ranking (https://db-engines.com/en/ranking) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

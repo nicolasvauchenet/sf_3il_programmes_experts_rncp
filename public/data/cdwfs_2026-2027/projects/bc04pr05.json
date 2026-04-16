@@ -1,0 +1,54 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC04-PR05",
+        "title": "Projet Épreuve Certifiante",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C29",
+            "description": "Planifier et conduire le projet en appliquant des méthodologies de gestion de projet (méthodologie en V, en cascade ou Agile) selon le contexte, pour une planification et exécution efficaces des projets informatiques en respectant le plan de projet établi et en tenant compte des risques identifiés"
+        },
+        {
+            "code": "C30",
+            "description": "Coordonner les équipes de projet, en utilisant des outils collaboratifs pour la planification et le suivi des tâches et en accompagnant les compétences individuelles et collectives de l'équipe afin de garantir l'alignement des ressources avec les besoins du projet et d'ajuster la planification en fonction des écarts identifiés"
+        },
+        {
+            "code": "C31",
+            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet"
+        },
+        {
+            "code": "C32",
+            "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape, pour mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Mobiliser l'ensemble des compétences acquises au cours de la formation dans un projet intégrateur (Créer) Préparer les livrables collectifs requis pour l'épreuve 8 de validation des compétences (Appliquer) Présenter et défendre ses choix techniques et méthodologiques devant un jury (Évaluer)"
+    },
+    "prerequisites": {
+        "description": ""
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [],
+    "bibliography": [
+        "Aubry, C. \"Scrum : pour une pratique vivante de l'agilité (6e éd.)\"",
+        "Martin, R. C. \"Clean Code : A Handbook of Agile Software Craftsmanship\""
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC02-PR02",
+        "title": "Projet de développement Back-end (Fil rouge)",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement."
+        },
+        {
+            "code": "C08",
+            "description": "Élaborer et implémenter des solutions Back-end."
+        },
+        {
+            "code": "C09",
+            "description": "Optimiser et sécuriser les serveurs web."
+        },
+        {
+            "code": "C10",
+            "description": "Élaborer et administrer des bases de données relationnelles."
+        },
+        {
+            "code": "C11",
+            "description": "Concevoir et gérer l’administration des bases de données NoSQL."
+        },
+        {
+            "code": "C12",
+            "description": "Arbitrer et décider du choix entre les bases de données relationnelles et NoSQL."
+        },
+        {
+            "code": "C13",
+            "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération."
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Mobiliser l'ensemble des compétences Back-end dans un projet intégrateur (Créer) Mettre en œuvre une architecture serveur robuste, sécurisée et performante (Appliquer) Évaluer la qualité technique du livrable et présenter ses choix d'architecture (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en développement logiciel et compréhension des principes de programmation. Expérience préalable avec au moins un langage de programmation orienté objet et une compréhension basique des bases de données relationnelles."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Analyse des besoins et spécifications du projet",
+                "items": [
+                    "Comprendre les besoins des utilisateurs",
+                    "Identifier les fonctionnalités clés",
+                    "Définir les spécifications techniques",
+                    "Estimer les ressources nécessaires",
+                    "Planifier les étapes du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Choix de l'architecture et des technologies",
+                "items": [
+                    "Comparer les différentes architectures Back-end",
+                    "Sélectionner les technologies adaptées aux besoins du projet",
+                    "Évaluer les avantages et inconvénients des différentes solutions",
+                    "Choisir les outils de développement et de déploiement",
+                    "Définir l'infrastructure nécessaire"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Conception de la base de données",
+                "items": [
+                    "Modéliser la structure de la base de données",
+                    "Définir les relations entre les entités",
+                    "Optimiser les requêtes SQL",
+                    "Intégrer des mécanismes de sécurité",
+                    "Prévoir la scalabilité de la base de données"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Développement de l'API",
+                "items": [
+                    "Créer les endpoints pour les différentes fonctionnalités",
+                    "Gérer les requêtes et les réponses",
+                    "Implémenter l'authentification et l'autorisation",
+                    "Optimiser les performances de l'API",
+                    "Documenter l'API pour les développeurs tiers"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Tests et optimisation",
+                "items": [
+                    "Mettre en place des tests unitaires et des tests d'intégration",
+                    "Optimiser les requêtes et les algorithmes",
+                    "Identifier et corriger les potentiels points faibles",
+                    "Mesurer les performances de l'application",
+                    "Valider la conformité aux spécifications initiales"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et spécifications du projet",
+            "context": "En utilisant un cas d'étude fictif ou réel, les apprenants devront identifier les besoins des utilisateurs, définir les fonctionnalités clés et estimer les ressources nécessaires pour mener à bien le projet.",
+            "objective": "Ils devront ensuite rédiger un document détaillé regroupant l'ensemble des spécifications techniques et des étapes de planification du projet."
+        },
+        {
+            "title": "Choix de l'architecture et des technologies",
+            "context": "Les apprenants auront pour tâche de comparer différentes architectures back-end et de sélectionner les technologies les plus adaptées aux besoins du projet.",
+            "objective": "Ils devront justifier leur choix en mettant en avant les avantages et inconvénients de chaque solution. Enfin, ils devront définir l'infrastructure nécessaire pour mettre en place ces choix."
+        },
+        {
+            "title": "Conception de la base de données",
+            "context": "À partir d'un scénario donné, les apprenants devront modéliser la structure de la base de données, définir les relations entre les entités et intégrer des mécanismes de sécurité.",
+            "objective": "Ensuite, ils devront proposer des solutions pour assurer la scalabilité de la base de données tout en optimisant les requêtes SQL."
+        },
+        {
+            "title": "Développement de l'API",
+            "context": "Les apprenants devront concevoir et mettre en place les endpoints pour les différentes fonctionnalités en utilisant un langage de programmation spécifique.",
+            "objective": "Ils devront également gérer les requêtes et réponses, implémenter l'authentification et l'autorisation, et documenter l'API pour les développeurs tiers."
+        },
+        {
+            "title": "Tests et optimisation",
+            "context": "Les apprenants auront pour mission de mettre en place une batterie de tests unitaires et d'intégration pour garantir le bon fonctionnement de l'application.",
+            "objective": "En se basant sur des métriques de performances, ils devront identifier et corriger les potentiels points faibles de l'application pour assurer sa conformité aux spécifications initiales."
+        }
+    ],
+    "bibliography": [
+        "Martin, R. C. \"Clean Architecture\"",
+        "Newman, S. \"Building Microservices (2nd ed.)\"",
+        "Fowler, M. \"Patterns of Enterprise Application Architecture\""
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

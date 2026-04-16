@@ -83,7 +83,7 @@ final readonly class ModuleImporter
             $module->setPrerequisites($this->extractNestedString($detail, ['prerequisites', 'description']));
             $module->setExercises($this->nullableArray($detail['exercises'] ?? null));
             $module->setBibliography($this->nullableArray($detail['bibliography'] ?? null));
-            $module->setOnlineResources($this->nullableArray($detail['onlineResources'] ?? null));
+            $module->setOnlineResources($this->extractOnlineResources($detail));
             $module->setTeachingMethods($this->nullableArray($detail['teachingMethods'] ?? null));
             $module->setPosition($index + 1);
 
@@ -215,6 +215,21 @@ final readonly class ModuleImporter
         $value = trim((string)$current);
 
         return $value !== '' ? $value : null;
+    }
+
+    /**
+     * @param array<string, mixed>|null $detail
+     * @return array<int, mixed>|null
+     */
+    private function extractOnlineResources(?array $detail): ?array
+    {
+        if ($detail === null) {
+            return null;
+        }
+
+        $value = $detail['onlineResources'] ?? $detail['OnlineResources'] ?? null;
+
+        return is_array($value) ? $value : null;
     }
 
     /**

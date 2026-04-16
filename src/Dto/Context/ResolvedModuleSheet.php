@@ -15,6 +15,7 @@ final readonly class ResolvedModuleSheet
      * @param array<string,mixed> $outline
      * @param array<int,mixed> $exercises
      * @param array<int,mixed> $bibliography
+     * @param array<int,string> $onlineResources
      * @param array<int,string> $teachingMethods
      * @param array<string,mixed> $raw
      */
@@ -34,6 +35,7 @@ final readonly class ResolvedModuleSheet
         public array  $outline,
         public array  $exercises,
         public array  $bibliography,
+        public array  $onlineResources,
         public array  $teachingMethods,
         public array  $raw,
     )

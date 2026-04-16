@@ -1,0 +1,95 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM06",
+        "title": "Anglais Professionnel et Recherche documentaire",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C36",
+            "description": "Mobiliser ses connaissances technologiques, sa maîtrise de l'anglais et l'utilisation des fonctionnalités avancées des moteurs de recherches, en analysant les contenus de diverses sources d'informations tel que les forums, sites spécialisés pour résoudre des problèmes rencontrés lors du développement des applications ou évaluer les solutions les plus optimales dans la gestion de projet"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Maîtriser l'anglais technique dans des contextes professionnels (Appliquer) Développer des compétences de recherche et d'analyse d'information en anglais (Analyser) Améliorer sa capacité à résoudre des problèmes techniques en utilisant des ressources anglophones (Créer)"
+    },
+    "prerequisites": {
+        "description": "Une connaissance de base de l'anglais général et une familiarité avec les concepts fondamentaux de gestion de projet sont nécessaires."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Compréhension de l'anglais technique",
+                "items": [
+                    "Terminologie spécifique à la technologie",
+                    "Expressions couramment utilisées dans le domaine de la gestion de projet",
+                    "Lecture et compréhension de documents techniques en anglais",
+                    "Utilisation des ressources en ligne pour la compréhension de l'anglais technique"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Terminologie technique",
+            "context": "À l'aide des ressources mises à votre disposition, identifiez et expliquez en français cinq termes techniques spécifiques à la gestion de projet, trouvés dans un document en anglais.",
+            "objective": "Présentez ensuite ces termes devant le groupe pour vérification et discussion."
+        },
+        {
+            "title": "Recherche avancée sur Internet",
+            "context": "Vous devez résoudre un problème technique spécifique en utilisant uniquement des sources en anglais.",
+            "objective": "Utilisez des opérateurs de recherche avancés pour filtrer les résultats et identifiez au moins trois sources pertinentes. Présentez vos résultats ainsi que l'évaluation de la fiabilité des sources devant le groupe."
+        },
+        {
+            "title": "Résolution de problèmes techniques",
+            "context": "Sélectionnez un problème technique rencontré dans votre domaine et recherchez des solutions sur des forums spécialisés en anglais.",
+            "objective": "Choisissez une solution, traduisez-la en français et justifiez votre choix en comparant différentes options. Présentez votre processus de sélection et la solution retenue devant vos pairs."
+        },
+        {
+            "title": "Communication professionnelle en anglais",
+            "context": "Rédigez un rapport technique en anglais sur un sujet de votre choix, en utilisant la terminologie professionnelle adéquate.",
+            "objective": "Préparez également une présentation orale de votre rapport pour le groupe, en mettant l'accent sur une communication claire et efficace. Recevez ensuite des retours de vos pairs sur la qualité de votre communication."
+        },
+        {
+            "title": "Intégration des compétences linguistiques et technologiques",
+            "context": "En utilisant des outils technologiques spécifiques à votre domaine, rédigez une documentation technique en anglais pour un processus ou un produit existant.",
+            "objective": "Assurez-vous d'intégrer la terminologie professionnelle et de démontrer une compréhension claire des concepts techniques. Partagez ensuite votre documentation avec le groupe pour une évaluation croisée."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Professional English in Use ICT",
+            "author": "Esteras, S. R. & Fabré, E. M"
+        },
+        {
+            "title": "Oxford English for Computing",
+            "author": "Boeckner, K. & Brown, P. C"
+        },
+        {
+            "title": "Business Vocabulary in Use Advanced (3rd ed.)",
+            "author": "Mascull, B"
+        }
+    ],
+    "OnlineResources": [
+        "Cambridge Dictionary — Business & Technology English (https://dictionary.cambridge.org) [EN]",
+        "BBC Learning English (https://www.bbc.co.uk/learningenglish) [EN]",
+        "TED Talks — Technology (https://www.ted.com/topics/technology) [EN]",
+        "MDN Web Docs — documentation technique en anglais (https://developer.mozilla.org/en-US/) [EN]",
+        "Google Scholar — recherche documentaire académique (https://scholar.google.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

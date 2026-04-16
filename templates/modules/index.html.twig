@@ -56,7 +56,6 @@
                 {% if module.objectives.description is defined and module.objectives.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>{{ module.blocCode }} : {{ module.blocName }}</h2>
-
                         <p>{{ module.objectives.description }}</p>
                     </section>
                 {% endif %}
@@ -142,10 +141,7 @@
 
                             {% if s.criteria is not empty %}
                                 <section class="app-section sub">
-                                    <p class="mb-1">
-                                        <strong>Critères d’évaluation</strong>
-                                    </p>
-
+                                    <p class="mb-1"><strong>Critères d’évaluation</strong></p>
                                     <ul>
                                         {% for criterion in s.criteria %}
                                             <li>{{ criterion }}</li>
@@ -155,25 +151,58 @@
                             {% endif %}
                         {% endfor %}
                     </section>
-                {% elseif module.skills is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Compétences mobilisées</h2>
+                {% endif %}
 
-                        {% for s in module.skills %}
-                            <section class="app-section mx-0 mt-2 mb-0">
-                                <p>
-                                    <a href="{{ path('app_promotion_skills', {
-                                        'promotion': promotion,
-                                        'year': year,
-                                        'code': s.fileCode
-                                    }) }}">
-                                        <strong>Compétence {{ s.code }}</strong>
-                                    </a>
-                                    :
-                                    {{ s.description }}
-                                </p>
-                            </section>
-                        {% endfor %}
+                {% if module.bibliography is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Bibliographie</h2>
+
+                        <ul>
+                            {% for book in module.bibliography %}
+                                <li class="text-left">
+                                    {{ book.title ?? '—' }}
+                                    {% if book.author is defined %}
+                                        - {{ book.author }}
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endif %}
+
+                {% if module.onlineResources is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Ressources en ligne</h2>
+
+                        <ul>
+                            {% for resource in module.onlineResources %}
+                                {% set parts = resource|split('(') %}
+                                {% set label = parts[0]|trim|replace({'—': '-'}) %}
+                                {% set url = parts|length > 1 ? parts[1]|split(')')[0] : null %}
+
+                                <li class="text-left">
+                                    {% if url %}
+                                        <a href="{{ url }}" target="_blank" rel="noopener noreferrer">
+                                            {{ label }}
+                                        </a>
+                                    {% else %}
+                                        {{ resource }}
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endif %}
+
+                {% if module.teachingMethods is not empty %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Méthodes pédagogiques</h2>
+
+                        <ul>
+                            {% for method in module.teachingMethods %}
+                                <li class="text-left">{{ method }}</li>
+                            {% endfor %}
+                        </ul>
                     </section>
                 {% endif %}
 

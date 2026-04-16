@@ -1,0 +1,121 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM05",
+        "title": "Stratégie de sauvegarde et de versionning",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C13",
+            "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération en tenant compte des politiques de sécurité et de continuité d'entreprise pour protéger les données contre les pertes et les sinistres"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux de la sauvegarde et de la continuité d'activité (Comprendre) Concevoir et mettre en œuvre des stratégies de sauvegarde alignées avec les politiques de sécurité (Créer) Évaluer la pertinence d'un plan de reprise d'activité face aux scénarios de sinistre (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et familiarité avec les concepts de gestion de fichiers. Expérience préalable en programmation ou développement logiciel serait un plus."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la sauvegarde et à la restauration",
+                "items": [
+                    "Importance de la sauvegarde des données",
+                    "Risques liés à l'absence de sauvegarde",
+                    "Méthodes de sauvegarde (complète, différentielle, incrémentielle)",
+                    "Les différents supports de sauvegarde",
+                    "Planification des sauvegardes"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Principes de gestion de version d'un logiciel",
+                "items": [
+                    "Comprendre le concept de gestion de version",
+                    "Avantages de la gestion de version",
+                    "Les différents systèmes de gestion de version (centralisé, décentralisé)",
+                    "Les outils de gestion de version (git, svn, mercurial)",
+                    "Utilisation des branches, des tags et des merges"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Utilisation de Git pour le versioning",
+                "items": [
+                    "Installation et configuration de Git",
+                    "Création d'un nouveau dépôt",
+                    "Ajout, suppression et modification de fichiers",
+                    "Gestion des branches avec Git",
+                    "Utilisation des commandes Git pour le versioning"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Bonnes pratiques de sauvegarde et de versioning",
+                "items": [
+                    "Automatisation des sauvegardes",
+                    "Vérification de l'intégrité des sauvegardes",
+                    "Stratégies de restauration des données",
+                    "Gestion des conflits de version",
+                    "Collaboration et partage de code avec les outils de versioning"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Importance de la sauvegarde et des risques liés à l'absence de sauvegarde",
+            "context": "Imaginez que vous travaillez pour une petite entreprise qui ne dispose pas de système de sauvegarde efficace.",
+            "objective": "Rédigez un court rapport expliquant l'importance de la sauvegarde des données et les risques encourus en cas d'absence de sauvegarde. Votre rapport devra contenir des exemples concrets pour illustrer vos propos."
+        },
+        {
+            "title": "Planification des sauvegardes",
+            "context": "Élaborez un plan de sauvegarde pour une entreprise fictive de votre choix.",
+            "objective": "Votre plan devra inclure la fréquence des sauvegardes, les types de sauvegarde à mettre en place (complète, différentielle, incrémentielle) et les supports de sauvegarde à utiliser. Justifiez vos choix en expliquant comment ce plan contribuera à protéger les données de l'entreprise."
+        },
+        {
+            "title": "Utilisation de Git pour le versioning",
+            "context": "Créez un dépôt Git contenant un ensemble de fichiers fictifs.",
+            "objective": "Réalisez des opérations d'ajout, de suppression et de modification de fichiers dans ce dépôt. En utilisant les commandes Git, créez une nouvelle branche, fusionnez-la avec la branche principale et ajoutez des tags à des points spécifiques de l'historique du dépôt."
+        },
+        {
+            "title": "Bonnes pratiques de sauvegarde et de versioning",
+            "context": "Identifiez une situation de conflit de version potentielle dans un scénario professionnel (par exemple, des développeurs travaillant sur les mêmes fichiers) et proposez une stratégie pour gérer ce conflit efficacement en utilisant les outils de versioning.",
+            "objective": "Expliquez également comment la collaboration et le partage de code peuvent être facilités grâce à l'utilisation des outils de versioning."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Modern Data Protection",
+            "author": "Preston, W. C"
+        },
+        {
+            "title": "Linux Backup and Recovery: A Comprehensive Guide",
+            "author": "Wallen, J"
+        },
+        {
+            "title": "Business Continuity and Disaster Recovery Planning for IT Professionals (3rd ed.)",
+            "author": "Snedaker, S"
+        }
+    ],
+    "OnlineResources": [
+        "ANSSI — Guide de la sauvegarde (https://www.ssi.gouv.fr) [FR]",
+        "NIST SP 800-34 — Contingency Planning Guide (https://csrc.nist.gov) [EN]",
+        "AWS Backup — Documentation (https://docs.aws.amazon.com/aws-backup/) [EN]",
+        "Veeam Documentation (https://www.veeam.com/documentation-guides-datasheets.html) [EN]",
+        "Rclone — Synchronisation cloud (https://rclone.org) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

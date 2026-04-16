@@ -169,6 +169,7 @@ final readonly class FrameworkModulesProvider
         $outline = ['chapters' => $outlineChapters];
         $exercises = is_array($module->getExercises()) ? $module->getExercises() : [];
         $bibliography = is_array($module->getBibliography()) ? $module->getBibliography() : [];
+        $onlineResources = $this->normalizeStringList($module->getOnlineResources());
         $teachingMethods = $this->normalizeStringList($module->getTeachingMethods());
 
         $raw = [
@@ -182,6 +183,7 @@ final readonly class FrameworkModulesProvider
             'outline' => $outline,
             'exercises' => $exercises,
             'bibliography' => $bibliography,
+            'onlineResources' => $onlineResources,
             'teachingMethods' => $teachingMethods,
         ];
 
@@ -198,6 +200,7 @@ final readonly class FrameworkModulesProvider
             outline: $outline,
             exercises: $exercises,
             bibliography: $bibliography,
+            onlineResources: $onlineResources,
             teachingMethods: $teachingMethods,
             raw: $raw,
         );
