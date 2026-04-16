@@ -2,26 +2,26 @@
 
 namespace App\Command;
 
-use App\Enum\ImportMode;
 use App\Service\Import\FrameworkImportService;
 use App\Service\Import\JsonDatasetLoader;
+use App\Service\Import\ImportStrategyResolver;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 #[AsCommand(
     name: 'app:framework:import',
-    description: 'Importe un référentiel JSON dans la base de données.',
+    description: 'Import intelligent d’un référentiel JSON',
 )]
 final class ImportFrameworkCommand extends Command
 {
     public function __construct(
-        private readonly JsonDatasetLoader      $datasetLoader,
+        private readonly JsonDatasetLoader      $loader,
         private readonly FrameworkImportService $importService,
+        private readonly ImportStrategyResolver $resolver,
     )
     {
         parent::__construct();
@@ -29,23 +29,7 @@ final class ImportFrameworkCommand extends Command
 
     protected function configure(): void
     {
-        $this
-            ->addArgument(
-                'directory',
-                InputArgument::REQUIRED,
-                'Chemin du dossier contenant structure.json et les fichiers JSON associés'
-            )
-            ->addOption(
-                'mode',
-                null,
-                InputOption::VALUE_REQUIRED,
-                sprintf(
-                    'Mode d’import : %s ou %s',
-                    ImportMode::FULL->value,
-                    ImportMode::MODULES_PROJECTS->value
-                ),
-                ImportMode::FULL->value
-            );
+        $this->addArgument('directory', InputArgument::REQUIRED);
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -53,90 +37,39 @@ final class ImportFrameworkCommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $directory = (string)$input->getArgument('directory');
-        $modeValue = (string)$input->getOption('mode');
 
         try {
-            $mode = ImportMode::from($modeValue);
-        } catch (\ValueError) {
-            $io->error(sprintf(
-                'Mode invalide : "%s". Valeurs autorisées : %s, %s.',
-                $modeValue,
-                ImportMode::FULL->value,
-                ImportMode::MODULES_PROJECTS->value,
-            ));
+            $dataset = $this->loader->loadFromDirectory($directory);
 
-            return Command::FAILURE;
-        }
-
-        try {
-            $io->title('Import du référentiel JSON');
-            $io->text(sprintf('Dossier source : %s', $directory));
-            $io->text(sprintf('Mode : %s', $mode->label()));
-
-            $dataset = $this->datasetLoader->loadFromDirectory($directory, $mode);
-
-            /** @var array<string, mixed> $structure */
             $structure = $dataset['structure'];
-            /** @var array<string, mixed> $meta */
-            $meta = $structure['meta'] ?? [];
 
-            $io->section('Jeu de données détecté');
-            $io->definitionList(
-                ['Dataset' => (string)($meta['datasetCode'] ?? 'n/a')],
-                ['RNCP' => (string)($meta['rncpCode'] ?? 'n/a')],
-                ['Programme' => (string)($meta['programCode'] ?? 'n/a')],
-                ['Titre' => (string)($meta['programTitle'] ?? 'n/a')],
-                ['Année universitaire' => (string)($meta['academicYear'] ?? 'n/a')],
-            );
+            $hasSkills = count($dataset['skills']) > 0;
+            $hasEvaluations = count($dataset['evaluations']) > 0;
 
-            $io->section('Fichiers chargés');
+            $strategy = $this->resolver->resolve($structure, $hasSkills, $hasEvaluations);
 
-            if ($mode === ImportMode::FULL) {
-                $io->listing([
-                    sprintf('Modules : %d', count($dataset['modules'])),
-                    sprintf('Projets : %d', count($dataset['projects'])),
-                    sprintf('Compétences : %d', count($dataset['skills'])),
-                    sprintf('Évaluations : %d', count($dataset['evaluations'])),
-                ]);
-            } else {
-                $io->listing([
-                    sprintf('Modules : %d', count($dataset['modules'])),
-                    sprintf('Projets : %d', count($dataset['projects'])),
-                    'Compétences détaillées : non chargées en mode partiel',
-                    'Évaluations détaillées : non chargées en mode partiel',
-                ]);
-            }
+            $io->section('Stratégie détectée');
+            $io->text($strategy->label());
 
-            $report = $this->importService->import($dataset, $mode);
+            $report = $this->importService->importWithStrategy($dataset, $strategy);
 
-            $io->section('Résumé de l’import');
-
-            $rows = [];
+            $io->section('Résumé');
 
             foreach ($report->all() as $section => $stats) {
-                $rows[] = [
+                $io->text(sprintf(
+                    '%s → %d créés / %d mis à jour',
                     $section,
-                    (string)$stats['created'],
-                    (string)$stats['updated'],
-                ];
-            }
-
-            if ($rows !== []) {
-                $io->table(
-                    ['Section', 'Créés', 'Mis à jour'],
-                    $rows
-                );
+                    $stats['created'],
+                    $stats['updated']
+                ));
             }
 
             $io->success('Import terminé.');
 
             return Command::SUCCESS;
-        } catch (\Throwable $e) {
-            $io->error([
-                'Échec de l’import.',
-                sprintf('Message : %s', $e->getMessage()),
-            ]);
 
+        } catch (\Throwable $e) {
+            $io->error($e->getMessage());
             return Command::FAILURE;
         }
     }

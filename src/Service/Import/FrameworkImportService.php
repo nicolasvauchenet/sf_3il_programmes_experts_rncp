@@ -4,6 +4,7 @@ namespace App\Service\Import;
 
 use App\Dto\Import\ImportReport;
 use App\Enum\ImportMode;
+use App\Enum\ImportStrategy;
 use Doctrine\ORM\EntityManagerInterface;
 
 final readonly class FrameworkImportService
@@ -68,7 +69,8 @@ final readonly class FrameworkImportService
                     report: $report,
                 );
             } else {
-                $context = $this->frameworkContextResolver->resolve($structure);
+                $context = $this->frameworkContextResolver->resolve($structure, $report);
+
                 $blocks = $this->blockIndexProvider->getByFramework($context->framework);
                 $skills = $this->skillIndexProvider->getByFramework($context->framework);
                 $evaluations = $this->evaluationIndexProvider->getByFramework($context->framework);
@@ -109,5 +111,25 @@ final readonly class FrameworkImportService
         });
 
         return $report;
+    }
+
+    /**
+     * @param array{
+     *     structure: array<string, mixed>,
+     *     modules: array<string, array<string, mixed>>,
+     *     projects: array<string, array<string, mixed>>,
+     *     skills: array<string, array<string, mixed>>,
+     *     evaluations: array<string, array<string, mixed>>
+     * } $dataset
+     */
+    public function importWithStrategy(array $dataset, ImportStrategy $strategy): ImportReport
+    {
+        return match ($strategy) {
+            ImportStrategy::CREATE_FULL,
+            ImportStrategy::UPDATE_FULL => $this->import($dataset, ImportMode::FULL),
+
+            ImportStrategy::CREATE_PROMOTION,
+            ImportStrategy::UPDATE_PROMOTION => $this->import($dataset, ImportMode::MODULES_PROJECTS),
+        };
     }
 }

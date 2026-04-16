@@ -1,0 +1,76 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39611-BC04-PR04",
+        "title": "Projet Étude d’avant-projet",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C23",
+            "description": "Analyser les besoins opérationnels et les traduire en exigences fonctionnelles et techniques détaillées, en conduisant des études de faisabilité et en évaluant les options technologiques, pour définir des solutions informatiques qui s'alignent avec les objectifs stratégiques de l'entreprise."
+        },
+        {
+            "code": "C24",
+            "description": "Rédiger des documents de spécification technique qui serviront de référence pour les décisions technologiques et les investissements, en assurant que les solutions choisies soient viables, rentables et conformes aux normes de l'industrie."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation d’analyse amont d’un projet d’infrastructure systèmes et réseaux sécurisée. Il mobilise les compétences du bloc BC04 en préparation de l’EC10, en articulant recueil des besoins, étude de faisabilité, rédaction du cahier des charges, spécifications techniques et comparaison argumentée de solutions."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet, en informatique et en compréhension des processus métier. Une première familiarité avec l’analyse des besoins et la rédaction de documents techniques est recommandée."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et cadrage du projet",
+            "context": "À partir d’un besoin métier exprimé par une organisation, les apprenants identifient les attentes des parties prenantes, les objectifs opérationnels et les contraintes à prendre en compte.",
+            "objective": "Structurer une analyse des besoins claire, exploitable et alignée avec les enjeux du projet."
+        },
+        {
+            "title": "Étude de faisabilité technique",
+            "context": "Les apprenants évaluent la compatibilité avec l’existant, les contraintes techniques, les risques, les coûts et les délais associés au projet envisagé.",
+            "objective": "Déterminer la faisabilité de la solution et objectiver les conditions de réussite du projet."
+        },
+        {
+            "title": "Rédaction du cahier des charges",
+            "context": "À partir du cadrage et de l’étude de faisabilité, les apprenants rédigent un document de référence intégrant besoins, fonctionnalités, contraintes et exigences de sécurité et de performance.",
+            "objective": "Formaliser un cahier des charges structuré, compréhensible et conforme aux attentes du projet."
+        },
+        {
+            "title": "Spécifications techniques et architecture cible",
+            "context": "Les apprenants décrivent l’architecture technique cible, les interfaces avec l’existant, les normes applicables et les choix techniques envisagés.",
+            "objective": "Produire une base technique de référence cohérente pour orienter les décisions de mise en œuvre."
+        },
+        {
+            "title": "Comparaison et justification des solutions",
+            "context": "Plusieurs options techniques sont comparées selon des critères de viabilité, de rentabilité, de sécurité, de performance et d’adéquation aux besoins.",
+            "objective": "Justifier le choix d’une solution technique pertinente et argumentée."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "L'Analyse des besoins : Guide pratique",
+            "author": "Jean-Michel Dreyfus"
+        },
+        {
+            "title": "Ingénierie des exigences : De la gestion des besoins à la spécification",
+            "author": "Albert Abran"
+        },
+        {
+            "title": "Architecting Software Intensive Systems : A Practitioners Guide",
+            "author": "Philippe Kruchten"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas"
+    ]
+}
