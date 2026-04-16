@@ -224,12 +224,22 @@ final readonly class EvaluationImporter
     private function syncSkills(Evaluation $evaluation, array $skillCodes, array $skillIndex): void
     {
         $targets = [];
+        $frameworkCode = (string)($evaluation->getFramework()?->getCode() ?? '');
+        $blockCode = (string)($evaluation->getBlock()?->getCode() ?? '');
 
         foreach ($skillCodes as $skillCode) {
-            $skillCode = trim((string)$skillCode);
+            $normalizedSkillCode = $this->codeNormalizer->normalizeSkillCode(
+                $frameworkCode,
+                $blockCode,
+                (string)$skillCode
+            );
 
-            if (isset($skillIndex[$skillCode])) {
-                $targets[] = $skillIndex[$skillCode];
+            if ($normalizedSkillCode === '') {
+                continue;
+            }
+
+            if (isset($skillIndex[$normalizedSkillCode])) {
+                $targets[] = $skillIndex[$normalizedSkillCode];
             }
         }
 

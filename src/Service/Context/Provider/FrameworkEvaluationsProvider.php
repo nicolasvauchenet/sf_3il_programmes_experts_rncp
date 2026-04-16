@@ -216,45 +216,28 @@ final readonly class FrameworkEvaluationsProvider
      */
     private function collectSkills(Evaluation $evaluation): array
     {
-        $indexed = [];
-
-        foreach ($evaluation->getModules() as $module) {
-            if (!$module instanceof Module) {
-                continue;
-            }
-
-            foreach ($module->getSkills() as $skill) {
-                if (!$skill instanceof Skill) {
-                    continue;
-                }
-
-                $indexed[strtolower((string)$skill->getCode())] = $skill;
-            }
-        }
-
-        foreach ($evaluation->getProjects() as $project) {
-            if (!$project instanceof Project) {
-                continue;
-            }
-
-            foreach ($project->getSkills() as $skill) {
-                if (!$skill instanceof Skill) {
-                    continue;
-                }
-
-                $indexed[strtolower((string)$skill->getCode())] = $skill;
-            }
-        }
+        $skills = [];
 
         foreach ($evaluation->getSkills() as $skill) {
             if (!$skill instanceof Skill) {
                 continue;
             }
 
-            $indexed[strtolower((string)$skill->getCode())] = $skill;
+            $skills[] = $skill;
         }
 
-        return array_values($indexed);
+        usort(
+            $skills,
+            static fn(Skill $a, Skill $b): int => [
+                    $a->getPosition() ?? 0,
+                    strtolower((string)$a->getCode()),
+                ] <=> [
+                    $b->getPosition() ?? 0,
+                    strtolower((string)$b->getCode()),
+                ]
+        );
+
+        return $skills;
     }
 
     private function resolvePromotion(string $promotion, string $year): Promotion
@@ -262,20 +245,14 @@ final readonly class FrameworkEvaluationsProvider
         $program = Program::tryFrom(strtolower(trim($promotion)));
 
         if (!$program instanceof Program) {
-            throw new \RuntimeException(sprintf('Programme inconnu : "%s".', $promotion));
+            throw new \RuntimeException(sprintf('Programme inconnu "%s".', $promotion));
         }
 
-        $candidates = $this->promotionRepository->findBy(['program' => $program]);
+        $promotions = $this->promotionRepository->findBy([
+            'program' => $program,
+        ]);
 
-        foreach ($candidates as $candidate) {
-            if (!$candidate instanceof Promotion) {
-                continue;
-            }
-
-            if (strtoupper(trim((string)$candidate->getLabel())) === strtoupper($program->value . ' ' . $year)) {
-                return $candidate;
-            }
-
+        foreach ($promotions as $candidate) {
             $start = $candidate->getStartAt();
             $end = $candidate->getEndAt();
 
@@ -326,22 +303,24 @@ final readonly class FrameworkEvaluationsProvider
         return array_values(array_unique($criteria));
     }
 
-    private function extractShortCode(string $value): string
+    private function extractShortCode(string $code): string
     {
-        $value = trim($value);
+        $code = trim($code);
 
-        if ($value === '') {
+        if ($code === '') {
             return '';
         }
 
-        $parts = explode('-', $value);
+        if (preg_match('/(C\d{2})$/i', $code, $matches) === 1) {
+            return strtoupper($matches[1]);
+        }
 
-        return (string)end($parts);
+        return strtoupper($code);
     }
 
     private function extractEvaluationNumber(string $code): int
     {
-        if (preg_match('/EC(\d{2})$/i', trim($code), $matches) === 1) {
+        if (preg_match('/EC(\d{2})$/i', $code, $matches) === 1) {
             return (int)$matches[1];
         }
 
