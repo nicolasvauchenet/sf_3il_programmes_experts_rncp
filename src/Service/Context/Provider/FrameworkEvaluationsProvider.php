@@ -184,7 +184,7 @@ final readonly class FrameworkEvaluationsProvider
 
         $raw = [
             'meta' => $meta,
-            'description' => (string)($evaluation->getDecription() ?? ''),
+            'description' => (string)($evaluation->getDescription() ?? ''),
             'skills' => $skills,
             'criteria' => $criteria,
             'skillsWithCriteria' => $skillsWithCriteria,
@@ -199,7 +199,7 @@ final readonly class FrameworkEvaluationsProvider
             path: '',
             meta: $meta,
             evaluationNumber: $this->extractEvaluationNumber((string)$evaluation->getCode()),
-            description: (string)($evaluation->getDecription() ?? ''),
+            description: (string)($evaluation->getDescription() ?? ''),
             skills: $skills,
             criteria: $criteria,
             skillsWithCriteria: $skillsWithCriteria,

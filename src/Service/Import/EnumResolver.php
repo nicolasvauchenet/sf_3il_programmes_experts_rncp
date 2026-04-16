@@ -18,13 +18,27 @@ final class EnumResolver
         };
     }
 
-    public function resolveEvaluationType(string $label): EvaluationType
+    public function resolveEvaluationType(string $label, ?string $title = null): EvaluationType
     {
         $normalized = mb_strtolower(trim($label));
+        $normalizedTitle = mb_strtolower(trim((string)$title));
 
         return match (true) {
             str_contains($normalized, 'oral'),
-            str_contains($normalized, 'soutenance') => EvaluationType::ORAL,
+            str_contains($normalized, 'soutenance'),
+            str_contains($normalizedTitle, 'oral'),
+            str_contains($normalizedTitle, 'soutenance'),
+            str_contains($normalizedTitle, 'présentation'),
+            str_contains($normalizedTitle, 'presentation') => EvaluationType::ORAL,
+
+            str_contains($normalizedTitle, 'mise en place'),
+            str_contains($normalizedTitle, 'mise en service'),
+            str_contains($normalizedTitle, 'installation'),
+            str_contains($normalizedTitle, 'déploiement'),
+            str_contains($normalizedTitle, 'deploiement'),
+            str_contains($normalizedTitle, 'configuration'),
+            str_contains($normalizedTitle, 'administration'),
+            str_contains($normalizedTitle, 'virtualisation') => EvaluationType::TECHNICAL,
 
             str_contains($normalized, 'écrit'),
             str_contains($normalized, 'ecrit'),
@@ -32,7 +46,15 @@ final class EnumResolver
             str_contains($normalized, 'redaction'),
             str_contains($normalized, 'rapport'),
             str_contains($normalized, 'dossier'),
-            str_contains($normalized, 'compte rendu') => EvaluationType::WRITING,
+            str_contains($normalized, 'compte rendu'),
+            str_contains($normalizedTitle, 'rédaction'),
+            str_contains($normalizedTitle, 'redaction'),
+            str_contains($normalizedTitle, 'rapport'),
+            str_contains($normalizedTitle, 'dossier'),
+            str_contains($normalizedTitle, 'compte rendu'),
+            str_contains($normalizedTitle, 'analyse'),
+            str_contains($normalizedTitle, 'préconisation'),
+            str_contains($normalizedTitle, 'preconisation') => EvaluationType::WRITING,
 
             default => EvaluationType::TECHNICAL,
         };

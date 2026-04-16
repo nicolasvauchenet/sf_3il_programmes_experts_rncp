@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Service\Chart\SummaryChartService;
 use App\Service\Context\Loader\FrameworkStructureLoader;
+use App\Service\Context\Provider\FrameworkEvaluationsProvider;
 use App\Service\Context\Provider\FrameworkProjectsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,10 +15,11 @@ final class SummaryController extends AbstractController
 {
     #[Route('/promotion', name: 'app_promotion_summary', methods: ['GET'])]
     public function index(
-        Request                   $request,
-        FrameworkStructureLoader  $loader,
-        SummaryChartService       $summaryChartService,
-        FrameworkProjectsProvider $projectsProvider,
+        Request                      $request,
+        FrameworkStructureLoader     $loader,
+        SummaryChartService          $summaryChartService,
+        FrameworkProjectsProvider    $projectsProvider,
+        FrameworkEvaluationsProvider $evaluationsProvider,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -31,6 +33,7 @@ final class SummaryController extends AbstractController
 
         try {
             $structure = $loader->load($promotion, $year);
+            $evaluationSheets = $evaluationsProvider->listEvaluations($promotion, $year);
         } catch (\Throwable $error) {
             if ($this->getParameter('kernel.debug')) {
                 $this->addFlash('warning', $error->getMessage());
@@ -52,7 +55,7 @@ final class SummaryController extends AbstractController
             'evaluationsPerBlockChart' => $summaryChartService->createEvaluationsPerBlockChart($structure),
             'modulesPerBlockChart' => $summaryChartService->createModulesPerBlockChart($structure),
             'projectsPerBlockChart' => $summaryChartService->createProjectsPerBlockChart($projects),
-            'skillsPerEvaluationChart' => $summaryChartService->createSkillsPerEvaluationChart($structure),
+            'skillsPerEvaluationChart' => $summaryChartService->createSkillsPerEvaluationChartFromSheets($evaluationSheets),
             'modulesPerEvaluationChart' => $summaryChartService->createModulesPerEvaluationChart($structure),
         ]);
     }

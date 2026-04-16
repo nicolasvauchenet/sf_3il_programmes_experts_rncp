@@ -4,6 +4,7 @@ namespace App\Service\Chart;
 
 use App\Dto\Context\FrameworkStructure;
 use App\Dto\Context\ProjectSheet;
+use App\Dto\Context\ResolvedEvaluationSheet;
 use Symfony\UX\Chartjs\Builder\ChartBuilderInterface;
 use Symfony\UX\Chartjs\Model\Chart;
 
@@ -207,12 +208,40 @@ final readonly class SummaryChartService
             }
 
             $data[] = $modulesCount;
-
             $fileCodes[] = $this->getEvaluationFileCode($evaluation);
         }
 
         return $this->createBarChart(
-            title: 'Modules par évaluation',
+            title: 'Répartition des matières par évaluation (EC)',
+            labels: $labels,
+            data: $data,
+            datasetExtra: [
+                'fileCodes' => $fileCodes,
+            ],
+        );
+    }
+
+    /**
+     * @param ResolvedEvaluationSheet[] $evaluationSheets
+     */
+    public function createSkillsPerEvaluationChartFromSheets(array $evaluationSheets): Chart
+    {
+        $labels = [];
+        $data = [];
+        $fileCodes = [];
+
+        foreach ($evaluationSheets as $sheet) {
+            if (!$sheet instanceof ResolvedEvaluationSheet) {
+                continue;
+            }
+
+            $labels[] = $this->extractShortCode($sheet->evaluationCode());
+            $data[] = count($sheet->skills);
+            $fileCodes[] = strtolower($sheet->fileCode);
+        }
+
+        return $this->createBarChart(
+            title: 'Répartition des compétences par évaluation (EC)',
             labels: $labels,
             data: $data,
             datasetExtra: [
@@ -239,7 +268,6 @@ final readonly class SummaryChartService
             }
 
             $data[] = $skillsCount;
-
             $fileCodes[] = $this->getEvaluationFileCode($evaluation);
         }
 
@@ -494,16 +522,16 @@ final readonly class SummaryChartService
             ?? $fallbackBlockCode
         );
 
-        $evaluationCode = $this->normalizeCode(
-            $evaluation['code']
-            ?? ''
+        $shortCode = $this->normalizeCode(
+            $evaluation['shortCode']
+            ?? $this->extractShortCode((string)($evaluation['code'] ?? ''))
         );
 
-        if ($blockCode !== '' && $evaluationCode !== '') {
-            return strtolower($blockCode . $evaluationCode);
+        if ($blockCode !== '' && $shortCode !== '') {
+            return strtolower($blockCode . $shortCode);
         }
 
-        $fullCode = trim((string)($evaluation['fullCode'] ?? ''));
+        $fullCode = trim((string)($evaluation['fullCode'] ?? $evaluation['code'] ?? ''));
 
         if ($fullCode !== '' && preg_match('/-(BC\d+)-(EC\d+)$/i', $fullCode, $matches) === 1) {
             return strtolower($matches[1] . $matches[2]);
@@ -573,14 +601,31 @@ final readonly class SummaryChartService
 
     private function getEvaluationLabel(array $evaluation): string
     {
-        $code = $this->normalizeCode($evaluation['shortCode'] ?? '');
-        $name = trim((string)($evaluation['name'] ?? $evaluation['title'] ?? ''));
+        $shortCode = $this->normalizeCode(
+            $evaluation['shortCode']
+            ?? $this->extractShortCode((string)($evaluation['code'] ?? ''))
+        );
 
-        if ($code !== '') {
-            return $code;
+        if ($shortCode !== '') {
+            return $shortCode;
         }
 
+        $name = trim((string)($evaluation['name'] ?? $evaluation['title'] ?? ''));
+
         return $name !== '' ? $name : 'Évaluation';
+    }
+
+    private function extractShortCode(string $value): string
+    {
+        $value = trim($value);
+
+        if ($value === '') {
+            return '';
+        }
+
+        $parts = explode('-', $value);
+
+        return strtoupper(trim((string)end($parts)));
     }
 
     private function normalizeCode(null|string|int $value): string

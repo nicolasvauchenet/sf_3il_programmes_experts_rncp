@@ -4,7 +4,6 @@ namespace App\Service\Context\Loader;
 
 use App\Dto\Context\FrameworkStructure;
 use App\Entity\Block;
-use App\Entity\Criteria;
 use App\Entity\Evaluation;
 use App\Entity\Framework;
 use App\Entity\Module;
@@ -307,13 +306,28 @@ final readonly class FrameworkStructureLoader
                 $modules[] = (string)$module->getCode();
             }
 
+            $skills = [];
+
+            foreach ($evaluation->getSkills() as $skill) {
+                if (!$skill instanceof Skill) {
+                    continue;
+                }
+
+                $skills[] = (string)$skill->getCode();
+            }
+
+            $fullCode = (string)$evaluation->getCode();
+
             return [
-                'code' => (string)$evaluation->getCode(),
+                'shortCode' => $this->extractShortCode($fullCode),
+                'code' => $fullCode,
+                'fullCode' => $fullCode,
                 'title' => (string)$evaluation->getTitle(),
                 'blockCode' => (string)($evaluation->getBlock()?->getCode() ?? ''),
                 'blockName' => (string)($evaluation->getBlock()?->getTitle() ?? ''),
                 'position' => (int)($evaluation->getPosition() ?? 0),
                 'modules' => array_values(array_unique(array_filter($modules))),
+                'skills' => array_values(array_unique(array_filter($skills))),
             ];
         }, $evaluations);
     }

@@ -79,7 +79,7 @@ final readonly class EvaluationImporter
 
             $evaluation->setBlock($blocks[$blockCode]);
             $evaluation->setTitle(trim((string)($detail['meta']['title'] ?? $row['title'] ?? $code)));
-            $evaluation->setDecription(trim((string)($detail['description'] ?? '')) ?: null);
+            $evaluation->setDescription(trim((string)($detail['description'] ?? '')) ?: null);
             $evaluation->setModalities($this->buildModalities($detail));
             $evaluation->setValidationRules($this->buildValidationRules($detail));
             $evaluation->setPosition($index + 1);
@@ -155,7 +155,10 @@ final readonly class EvaluationImporter
             $part->setCode(trim((string)($row['code'] ?? sprintf('%s-P%d', (string)$evaluation->getCode(), $index + 1))));
             $part->setTitle(trim((string)($row['title'] ?? $part->getCode())));
             $part->setDescription(null);
-            $part->setType($this->enumResolver->resolveEvaluationType((string)($row['type'] ?? '')));
+            $part->setType($this->enumResolver->resolveEvaluationType(
+                (string)($row['type'] ?? ''),
+                (string)($row['title'] ?? '')
+            ));
             $part->setDuration($this->durationToMinutes($row['duration'] ?? null));
             $part->setPoints($this->toNullableInt($row['points'] ?? null));
             $part->setCoefficient($this->toNullableInt($row['coefficient'] ?? null));

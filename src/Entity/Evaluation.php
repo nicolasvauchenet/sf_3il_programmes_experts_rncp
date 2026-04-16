@@ -28,7 +28,7 @@ class Evaluation
     private ?string $slug = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
-    private ?string $decription = null;
+    private ?string $description = null;
 
     #[ORM\Column(nullable: true)]
     private ?array $modalities = null;
@@ -120,14 +120,14 @@ class Evaluation
         return $this;
     }
 
-    public function getDecription(): ?string
+    public function getDescription(): ?string
     {
-        return $this->decription;
+        return $this->description;
     }
 
-    public function setDecription(?string $decription): static
+    public function setDescription(?string $description): static
     {
-        $this->decription = $decription;
+        $this->description = $description;
 
         return $this;
     }
