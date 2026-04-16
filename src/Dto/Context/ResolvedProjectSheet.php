@@ -2,7 +2,7 @@
 
 namespace App\Dto\Context;
 
-final readonly class ProjectSheet
+final readonly class ResolvedProjectSheet
 {
     /**
      * @param array<string,mixed> $meta
@@ -22,12 +22,15 @@ final readonly class ProjectSheet
         public string $fileCode,
         public string $path,
         public array  $meta,
+        public string $description,
+        public array  $objectives,
+        public array  $prerequisites,
+        public int    $durationDays,
+        public int    $durationHours,
         public array  $skills,
         public array  $skillsWithCriteria,
         public array  $modules,
         public array  $evaluations,
-        public array  $objectives,
-        public array  $prerequisites,
         public array  $outline,
         public array  $exercises,
         public array  $bibliography,
@@ -60,15 +63,5 @@ final readonly class ProjectSheet
     public function blocName(): string
     {
         return (string)($this->meta['blocName'] ?? '');
-    }
-
-    public function durationDays(): int
-    {
-        return (int)($this->meta['durationDays'] ?? 0);
-    }
-
-    public function durationHours(): int
-    {
-        return (int)($this->meta['durationHours'] ?? 0);
     }
 }

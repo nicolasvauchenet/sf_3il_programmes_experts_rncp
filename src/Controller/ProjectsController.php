@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Dto\Context\ProjectSheet;
+use App\Dto\Context\ResolvedProjectSheet;
 use App\Service\Chart\ProjectChartService;
 use App\Service\Context\Provider\FrameworkProjectsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -76,7 +76,7 @@ final class ProjectsController extends AbstractController
     }
 
     /**
-     * @param ProjectSheet[] $projects
+     * @param ResolvedProjectSheet[] $projects
      */
     private function normalizeSelectedCode(string $raw, array $projects): ?string
     {
@@ -107,9 +107,9 @@ final class ProjectsController extends AbstractController
     }
 
     /**
-     * @param ProjectSheet[] $projects
+     * @param ResolvedProjectSheet[] $projects
      */
-    private function findFirstProjectForBlock(array $projects, ?string $blockCode): ?ProjectSheet
+    private function findFirstProjectForBlock(array $projects, ?string $blockCode): ?ResolvedProjectSheet
     {
         if ($blockCode === null) {
             return null;

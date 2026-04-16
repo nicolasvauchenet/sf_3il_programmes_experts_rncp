@@ -4,6 +4,7 @@ namespace App\Service\Context;
 
 use App\Dto\Context\FrameworkStructure;
 use App\Dto\Context\ProjectSheet;
+use App\Dto\Context\ResolvedProjectSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 
 final class ProjectSheetResolver
@@ -11,20 +12,24 @@ final class ProjectSheetResolver
     /**
      * @param array<string,ResolvedSkillSheet> $skillsIndex
      */
-    public function resolve(ProjectSheet $sheet, FrameworkStructure $structure, array $skillsIndex = []): ProjectSheet
+    public function resolve(ProjectSheet $sheet, FrameworkStructure $structure, array $skillsIndex = []): ResolvedProjectSheet
     {
         $skillsWithCriteria = $this->resolveSkillsWithCriteria($sheet, $skillsIndex);
-        $evaluations = $this->resolveEvaluations($sheet, $structure);
+        $evaluations = $sheet->evaluations !== [] ? $sheet->evaluations : $this->resolveEvaluations($sheet, $structure);
 
-        return new ProjectSheet(
+        return new ResolvedProjectSheet(
             fileCode: $sheet->fileCode,
             path: $sheet->path,
             meta: $sheet->meta,
-            skills: $sheet->skills,
-            skillsWithCriteria: $skillsWithCriteria,
-            evaluations: $evaluations,
+            description: (string)($sheet->raw['description'] ?? ''),
             objectives: $sheet->objectives,
             prerequisites: $sheet->prerequisites,
+            durationDays: $sheet->durationDays(),
+            durationHours: $sheet->durationHours(),
+            skills: $sheet->skills,
+            skillsWithCriteria: $skillsWithCriteria,
+            modules: $sheet->modules,
+            evaluations: $evaluations,
             outline: $sheet->outline,
             exercises: $sheet->exercises,
             bibliography: $sheet->bibliography,
@@ -37,6 +42,7 @@ final class ProjectSheetResolver
      * @param array<string,ResolvedSkillSheet> $skillsIndex
      * @return array<int,array{
      *     code:string,
+     *     fileCode:string,
      *     description:string,
      *     criteria:array<int,string>
      * }>
@@ -47,6 +53,7 @@ final class ProjectSheetResolver
 
         foreach ($sheet->skills as $skill) {
             $code = (string)($skill['code'] ?? '');
+            $fileCode = (string)($skill['fileCode'] ?? '');
             $description = (string)($skill['description'] ?? '');
 
             if ($code === '' || $description === '') {
@@ -59,10 +66,19 @@ final class ProjectSheetResolver
             $criteria = [];
             if ($resolvedSkill instanceof ResolvedSkillSheet) {
                 $criteria = $resolvedSkill->criteria;
+
+                if ($fileCode === '') {
+                    $fileCode = $resolvedSkill->fileCode;
+                }
+            }
+
+            if ($fileCode === '') {
+                $fileCode = strtolower($code);
             }
 
             $resolved[] = [
                 'code' => $code,
+                'fileCode' => $fileCode,
                 'description' => $description,
                 'criteria' => $criteria,
             ];
@@ -108,12 +124,10 @@ final class ProjectSheetResolver
             }
 
             $title = $this->extractNullableString($evaluation['title'] ?? null) ?? '';
-            $blockCode = $this->extractNullableString($evaluation['blockCode'] ?? null)
-                ?? $this->extractNullableString($evaluation['blocCode'] ?? null)
-                ?? '';
+            $blockCode = $this->extractNullableString($evaluation['blockCode'] ?? $evaluation['blocCode'] ?? null) ?? '';
 
             $resolved[] = [
-                'code' => $code,
+                'code' => strtolower($code),
                 'title' => $title,
                 'blockCode' => $blockCode,
             ];
@@ -148,9 +162,6 @@ final class ProjectSheetResolver
     }
 
     /**
-     * Compatibilité avec une ancienne logique où les évaluations référençaient
-     * directement un code projet dans leur champ "modules".
-     *
      * @return array<int,string>
      */
     private function resolveEvaluationCodesFromLegacyModulesLink(string $projectCode, FrameworkStructure $structure): array

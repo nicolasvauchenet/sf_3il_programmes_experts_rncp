@@ -45,7 +45,7 @@ class Skill
      * @var Collection<int, Criteria>
      */
     #[ORM\OneToMany(targetEntity: Criteria::class, mappedBy: 'skill', orphanRemoval: true)]
-    private Collection $criterias;
+    private Collection $criteria;
 
     /**
      * @var Collection<int, Module>
@@ -67,7 +67,7 @@ class Skill
 
     public function __construct()
     {
-        $this->criterias = new ArrayCollection();
+        $this->criteria = new ArrayCollection();
         $this->modules = new ArrayCollection();
         $this->projects = new ArrayCollection();
         $this->evaluations = new ArrayCollection();
@@ -165,15 +165,15 @@ class Skill
     /**
      * @return Collection<int, Criteria>
      */
-    public function getCriterias(): Collection
+    public function getCriteria(): Collection
     {
-        return $this->criterias;
+        return $this->criteria;
     }
 
     public function addCriteria(Criteria $criteria): static
     {
-        if (!$this->criterias->contains($criteria)) {
-            $this->criterias->add($criteria);
+        if (!$this->criteria->contains($criteria)) {
+            $this->criteria->add($criteria);
             $criteria->setSkill($this);
         }
 
@@ -182,8 +182,7 @@ class Skill
 
     public function removeCriteria(Criteria $criteria): static
     {
-        if ($this->criterias->removeElement($criteria)) {
-            // set the owning side to null (unless already changed)
+        if ($this->criteria->removeElement($criteria)) {
             if ($criteria->getSkill() === $this) {
                 $criteria->setSkill(null);
             }

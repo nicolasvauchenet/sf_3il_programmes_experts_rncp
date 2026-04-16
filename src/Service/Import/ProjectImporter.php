@@ -43,6 +43,7 @@ final readonly class ProjectImporter
     ): array
     {
         $result = [];
+        $frameworkCode = (string)($promotion->getFramework()?->getCode() ?? '');
 
         foreach (($structure['projects'] ?? []) as $index => $row) {
             if (!is_array($row)) {
@@ -50,9 +51,9 @@ final readonly class ProjectImporter
             }
 
             $code = $this->codeNormalizer->normalize((string)($row['code'] ?? ''));
-            $blockCode = trim((string)($row['blockCode'] ?? $row['blocCode'] ?? ''));
+            $blockCode = $this->codeNormalizer->normalizeBlockCode((string)($row['blockCode'] ?? $row['blocCode'] ?? ''));
 
-            if ($code === '' || !isset($blocks[$blockCode])) {
+            if ($code === '' || $blockCode === '' || !isset($blocks[$blockCode])) {
                 continue;
             }
 
@@ -86,7 +87,7 @@ final readonly class ProjectImporter
             $project->setPosition($index + 1);
 
             $this->syncModules($project, (array)($row['modules'] ?? []), $modules);
-            $this->syncSkills($project, (array)($row['skills'] ?? []), $skills);
+            $this->syncSkills($project, (array)($row['skills'] ?? []), $skills, $frameworkCode, $blockCode);
             $this->syncEvaluations($project, (array)($row['evaluations'] ?? []), $evaluations);
             $this->syncChapters($project, $detail);
 
@@ -124,15 +125,25 @@ final readonly class ProjectImporter
      * @param array<int, string> $skillCodes
      * @param array<string, Skill> $skillIndex
      */
-    private function syncSkills(Project $project, array $skillCodes, array $skillIndex): void
+    private function syncSkills(
+        Project $project,
+        array   $skillCodes,
+        array   $skillIndex,
+        string  $frameworkCode,
+        string  $blockCode,
+    ): void
     {
         $targets = [];
 
         foreach ($skillCodes as $skillCode) {
-            $skillCode = trim((string)$skillCode);
+            $normalizedSkillCode = $this->codeNormalizer->normalizeSkillCode(
+                $frameworkCode,
+                $blockCode,
+                (string)$skillCode,
+            );
 
-            if (isset($skillIndex[$skillCode])) {
-                $targets[] = $skillIndex[$skillCode];
+            if ($normalizedSkillCode !== '' && isset($skillIndex[$normalizedSkillCode])) {
+                $targets[] = $skillIndex[$normalizedSkillCode];
             }
         }
 

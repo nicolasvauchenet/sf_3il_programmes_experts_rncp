@@ -4,12 +4,15 @@ namespace App\Service\Context;
 
 use App\Dto\Context\EvaluationSheet;
 use App\Dto\Context\FrameworkStructure;
+use App\Dto\Context\ResolvedEvaluationSheet;
 
 final class EvaluationSheetResolver
 {
-    public function resolve(EvaluationSheet $sheet, FrameworkStructure $structure): EvaluationSheet
+    public function resolve(EvaluationSheet $sheet, FrameworkStructure $structure): ResolvedEvaluationSheet
     {
-        return new EvaluationSheet(
+        $modules = $sheet->modules !== [] ? $sheet->modules : $this->resolveModules($sheet, $structure);
+
+        return new ResolvedEvaluationSheet(
             fileCode: $sheet->fileCode,
             path: $sheet->path,
             meta: $sheet->meta,
@@ -18,7 +21,8 @@ final class EvaluationSheetResolver
             skills: $sheet->skills,
             criteria: $sheet->criteria,
             skillsWithCriteria: $sheet->skillsWithCriteria,
-            modules: $this->resolveModules($sheet, $structure),
+            modules: $modules,
+            projects: $sheet->projects,
             modalities: $sheet->modalities,
             exam: $sheet->exam,
             raw: $sheet->raw,
@@ -26,11 +30,7 @@ final class EvaluationSheetResolver
     }
 
     /**
-     * @return array<int,array{
-     *     code:string,
-     *     title:string,
-     *     blockCode:string
-     * }>
+     * @return array<int,array{code:string,title:string,blockCode:string}>
      */
     private function resolveModules(EvaluationSheet $sheet, FrameworkStructure $structure): array
     {
@@ -72,11 +72,7 @@ final class EvaluationSheetResolver
     }
 
     /**
-     * @return array<string,array{
-     *     code:string,
-     *     title:string,
-     *     blockCode:string
-     * }>
+     * @return array<string,array{code:string,title:string,blockCode:string}>
      */
     private function buildModulesIndex(FrameworkStructure $structure): array
     {
@@ -89,14 +85,14 @@ final class EvaluationSheetResolver
 
             $fullCode = $this->extractNullableString($module['fullCode'] ?? null);
             $code = $this->extractNullableString($module['code'] ?? null);
-            $blockCode = $this->extractNullableString($module['blockCode'] ?? null);
+            $blockCode = $this->extractNullableString($module['blockCode'] ?? $module['blocCode'] ?? null);
 
             if ($fullCode === null || $code === null || $blockCode === null) {
                 continue;
             }
 
             $index[$fullCode] = [
-                'code' => strtolower(trim($blockCode) . trim($code)),
+                'code' => strtolower($fullCode),
                 'title' => $this->extractNullableString($module['title'] ?? null) ?? '',
                 'blockCode' => $blockCode,
             ];

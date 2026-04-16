@@ -3,56 +3,57 @@
 namespace App\Service\Context\Loader;
 
 use App\Dto\Context\FrameworkStructure;
-use Symfony\Component\DependencyInjection\Attribute\Autowire;
+use App\Entity\Block;
+use App\Entity\Criteria;
+use App\Entity\Evaluation;
+use App\Entity\Framework;
+use App\Entity\Module;
+use App\Entity\Project;
+use App\Entity\Promotion;
+use App\Entity\Skill;
+use App\Enum\Program;
+use App\Repository\PromotionRepository;
 
 final readonly class FrameworkStructureLoader
 {
     public function __construct(
-        #[Autowire('%app.data_dir%')]
-        private string $dataDir,
+        private PromotionRepository $promotionRepository,
     )
     {
     }
 
     public function load(string $promotion, string $year): FrameworkStructure
     {
-        $promotion = strtolower(trim($promotion));
-        $year = trim($year);
+        $promotionEntity = $this->resolvePromotion($promotion, $year);
+        $framework = $promotionEntity->getFramework();
 
-        $folder = $promotion . '_' . $year;
-        $path = rtrim($this->dataDir, DIRECTORY_SEPARATOR)
-            . DIRECTORY_SEPARATOR . $folder
-            . DIRECTORY_SEPARATOR . 'structure.json';
-
-        if (!is_file($path) || !is_readable($path)) {
-            throw new \RuntimeException(sprintf('structure.json introuvable pour "%s".', $folder));
+        if (!$framework instanceof Framework) {
+            throw new \RuntimeException('Framework introuvable pour la promotion demandée.');
         }
 
-        $raw = file_get_contents($path);
-        if (!is_string($raw) || $raw === '') {
-            throw new \RuntimeException(sprintf('structure.json illisible pour "%s".', $folder));
-        }
+        $modules = $this->buildModules($promotionEntity);
+        $projects = $this->buildProjects($promotionEntity);
+        $skills = $this->buildSkills($framework);
+        $evaluations = $this->buildEvaluations($framework);
+        $blocks = $this->buildBlocks($framework);
 
-        try {
-            $decoded = json_decode($raw, true, 512, JSON_THROW_ON_ERROR);
-        } catch (\Throwable $e) {
-            throw new \RuntimeException(sprintf('JSON invalide pour "%s".', $folder), 0, $e);
-        }
+        $meta = [
+            'datasetCode' => strtolower($promotion) . '_' . $year,
+            'rncpCode' => $framework->getCode(),
+            'programCode' => strtolower($promotionEntity->getProgram()?->value ?? $promotion),
+            'programTitle' => $promotionEntity->getProgram()?->label() ?? $framework->getTitle() ?? '',
+            'certificationName' => $framework->getTitle() ?? '',
+            'academicYear' => $year,
+        ];
 
-        if (!is_array($decoded)) {
-            throw new \RuntimeException(sprintf('JSON inattendu (pas un objet) pour "%s".', $folder));
-        }
-
-        $meta = $decoded['meta'] ?? null;
-        if (!is_array($meta)) {
-            throw new \RuntimeException(sprintf('Clé "meta" manquante pour "%s".', $folder));
-        }
-
-        $blocks = is_array($decoded['blocks'] ?? null) ? $decoded['blocks'] : [];
-        $modules = is_array($decoded['modules'] ?? null) ? $decoded['modules'] : [];
-        $skills = is_array($decoded['skills'] ?? null) ? $decoded['skills'] : [];
-        $evaluations = is_array($decoded['evaluations'] ?? null) ? $decoded['evaluations'] : [];
-        $projects = is_array($decoded['projects'] ?? null) ? $decoded['projects'] : [];
+        $raw = [
+            'meta' => $meta,
+            'modules' => $modules,
+            'projects' => $projects,
+            'skills' => $skills,
+            'evaluations' => $evaluations,
+            'blocks' => $blocks,
+        ];
 
         return new FrameworkStructure(
             meta: $meta,
@@ -61,7 +62,272 @@ final readonly class FrameworkStructureLoader
             blocks: $blocks,
             evaluations: $evaluations,
             projects: $projects,
-            raw: $decoded,
+            raw: $raw,
         );
+    }
+
+    private function resolvePromotion(string $promotion, string $year): Promotion
+    {
+        $program = Program::tryFrom(strtolower(trim($promotion)));
+
+        if (!$program instanceof Program) {
+            throw new \RuntimeException(sprintf('Programme inconnu : "%s".', $promotion));
+        }
+
+        $candidates = $this->promotionRepository->findBy([
+            'program' => $program,
+        ]);
+
+        if ($candidates === []) {
+            throw new \RuntimeException(sprintf('Aucune promotion trouvée pour le programme "%s".', $promotion));
+        }
+
+        $expectedLabel = strtoupper($program->value) . ' ' . $year;
+
+        foreach ($candidates as $candidate) {
+            if (!$candidate instanceof Promotion) {
+                continue;
+            }
+
+            $label = strtoupper(trim((string)$candidate->getLabel()));
+            if ($label === $expectedLabel) {
+                return $candidate;
+            }
+        }
+
+        foreach ($candidates as $candidate) {
+            if (!$candidate instanceof Promotion) {
+                continue;
+            }
+
+            $start = $candidate->getStartAt();
+            $end = $candidate->getEndAt();
+
+            if (
+                $start instanceof \DateTimeImmutable
+                && $end instanceof \DateTimeImmutable
+                && sprintf('%s-%s', $start->format('Y'), $end->format('Y')) === $year
+            ) {
+                return $candidate;
+            }
+        }
+
+        foreach ($candidates as $candidate) {
+            if (!$candidate instanceof Promotion) {
+                continue;
+            }
+
+            if (str_contains(strtoupper((string)$candidate->getLabel()), strtoupper($year))) {
+                return $candidate;
+            }
+        }
+
+        throw new \RuntimeException(sprintf(
+            'Impossible de résoudre la promotion "%s" pour l’année "%s".',
+            $promotion,
+            $year
+        ));
+    }
+
+    /**
+     * @return array<int,array<string,mixed>>
+     */
+    private function buildBlocks(Framework $framework): array
+    {
+        $blocks = $framework->getBlocks()->toArray();
+
+        usort(
+            $blocks,
+            static fn(Block $a, Block $b): int => ($a->getPosition() ?? 0) <=> ($b->getPosition() ?? 0)
+        );
+
+        return array_map(
+            static fn(Block $block): array => [
+                'code' => (string)$block->getCode(),
+                'title' => (string)$block->getTitle(),
+                'description' => (string)($block->getDescription() ?? ''),
+                'position' => (int)($block->getPosition() ?? 0),
+            ],
+            $blocks
+        );
+    }
+
+    /**
+     * @return array<int,array<string,mixed>>
+     */
+    private function buildModules(Promotion $promotion): array
+    {
+        $modules = $promotion->getModules()->toArray();
+
+        usort(
+            $modules,
+            static fn(Module $a, Module $b): int => [
+                    $a->getBlock()?->getPosition() ?? 0,
+                    $a->getPosition() ?? 0,
+                    (string)$a->getCode(),
+                ] <=> [
+                    $b->getBlock()?->getPosition() ?? 0,
+                    $b->getPosition() ?? 0,
+                    (string)$b->getCode(),
+                ]
+        );
+
+        return array_map(function (Module $module): array {
+            $blockCode = (string)($module->getBlock()?->getCode() ?? '');
+            $moduleCode = (string)$module->getCode();
+
+            return [
+                'code' => $this->extractShortCode($moduleCode),
+                'fullCode' => $moduleCode,
+                'title' => (string)$module->getTitle(),
+                'blockCode' => $blockCode,
+                'blockName' => (string)($module->getBlock()?->getTitle() ?? ''),
+                'position' => (int)($module->getPosition() ?? 0),
+            ];
+        }, $modules);
+    }
+
+    /**
+     * @return array<int,array<string,mixed>>
+     */
+    private function buildProjects(Promotion $promotion): array
+    {
+        $projects = $promotion->getProjects()->toArray();
+
+        usort(
+            $projects,
+            static fn(Project $a, Project $b): int => [
+                    $a->getBlock()?->getPosition() ?? 0,
+                    $a->getPosition() ?? 0,
+                    (string)$a->getCode(),
+                ] <=> [
+                    $b->getBlock()?->getPosition() ?? 0,
+                    $b->getPosition() ?? 0,
+                    (string)$b->getCode(),
+                ]
+        );
+
+        return array_map(function (Project $project): array {
+            $evaluations = [];
+
+            foreach ($project->getEvaluations() as $evaluation) {
+                if (!$evaluation instanceof Evaluation) {
+                    continue;
+                }
+
+                $evaluations[] = (string)$evaluation->getCode();
+            }
+
+            $evaluations = array_values(array_unique(array_filter($evaluations)));
+
+            return [
+                'code' => (string)$project->getCode(),
+                'title' => (string)$project->getTitle(),
+                'blockCode' => (string)($project->getBlock()?->getCode() ?? ''),
+                'blockName' => (string)($project->getBlock()?->getTitle() ?? ''),
+                'position' => (int)($project->getPosition() ?? 0),
+                'evaluations' => $evaluations,
+            ];
+        }, $projects);
+    }
+
+    /**
+     * @return array<int,array<string,mixed>>
+     */
+    private function buildSkills(Framework $framework): array
+    {
+        $skills = $framework->getSkills()->toArray();
+
+        usort(
+            $skills,
+            static fn(Skill $a, Skill $b): int => [
+                    $a->getBlock()?->getPosition() ?? 0,
+                    $a->getPosition() ?? 0,
+                    (string)$a->getCode(),
+                ] <=> [
+                    $b->getBlock()?->getPosition() ?? 0,
+                    $b->getPosition() ?? 0,
+                    (string)$b->getCode(),
+                ]
+        );
+
+        return array_map(function (Skill $skill): array {
+            $modules = [];
+            foreach ($skill->getModules() as $module) {
+                if (!$module instanceof Module) {
+                    continue;
+                }
+
+                $modules[] = (string)$module->getCode();
+            }
+
+            $evaluations = [];
+            foreach ($skill->getEvaluations() as $evaluation) {
+                if (!$evaluation instanceof Evaluation) {
+                    continue;
+                }
+
+                $evaluations[] = (string)$evaluation->getCode();
+            }
+
+            return [
+                'code' => $this->extractShortCode((string)$skill->getCode()),
+                'fullCode' => (string)$skill->getCode(),
+                'title' => (string)$skill->getTitle(),
+                'blockCode' => (string)($skill->getBlock()?->getCode() ?? ''),
+                'blockName' => (string)($skill->getBlock()?->getTitle() ?? ''),
+                'description' => (string)($skill->getDescription() ?? ''),
+                'position' => (int)($skill->getPosition() ?? 0),
+                'modules' => array_values(array_unique(array_filter($modules))),
+                'evaluations' => array_values(array_unique(array_filter($evaluations))),
+            ];
+        }, $skills);
+    }
+
+    /**
+     * @return array<int,array<string,mixed>>
+     */
+    private function buildEvaluations(Framework $framework): array
+    {
+        $evaluations = $framework->getEvaluations()->toArray();
+
+        usort(
+            $evaluations,
+            static fn(Evaluation $a, Evaluation $b): int => ($a->getPosition() ?? 0) <=> ($b->getPosition() ?? 0)
+        );
+
+        return array_map(function (Evaluation $evaluation): array {
+            $modules = [];
+
+            foreach ($evaluation->getModules() as $module) {
+                if (!$module instanceof Module) {
+                    continue;
+                }
+
+                $modules[] = (string)$module->getCode();
+            }
+
+            return [
+                'code' => (string)$evaluation->getCode(),
+                'title' => (string)$evaluation->getTitle(),
+                'blockCode' => (string)($evaluation->getBlock()?->getCode() ?? ''),
+                'blockName' => (string)($evaluation->getBlock()?->getTitle() ?? ''),
+                'position' => (int)($evaluation->getPosition() ?? 0),
+                'modules' => array_values(array_unique(array_filter($modules))),
+            ];
+        }, $evaluations);
+    }
+
+    private function extractShortCode(string $value): string
+    {
+        $value = trim($value);
+
+        if ($value === '') {
+            return '';
+        }
+
+        $parts = explode('-', $value);
+
+        return trim((string)end($parts));
     }
 }

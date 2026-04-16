@@ -128,7 +128,11 @@
                         {% for s in project.skillsWithCriteria %}
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <p>
-                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (project.blocCode ~ s.code) | lower}) }}">
+                                    <a href="{{ path('app_promotion_skills', {
+                                        'promotion': promotion,
+                                        'year': year,
+                                        'code': s.fileCode
+                                    }) }}">
                                         <strong>Compétence {{ s.code }}</strong>
                                     </a>
                                     :
@@ -158,7 +162,11 @@
                         {% for s in project.skills %}
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <p>
-                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (project.blocCode ~ s.code) | lower}) }}">
+                                    <a href="{{ path('app_promotion_skills', {
+                                        'promotion': promotion,
+                                        'year': year,
+                                        'code': s.fileCode
+                                    }) }}">
                                         <strong>Compétence {{ s.code }}</strong>
                                     </a>
                                     :
@@ -169,29 +177,55 @@
                     </section>
                 {% endif %}
 
-                {% if project.evaluations is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Evaluations associées</h2>
+                <div class="app-grid two">
+                    {% if project.modules is not empty %}
+                        <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Matières associées</h2>
 
-                        <div class="app-grid two">
-                            {% for evaluation in project.evaluations %}
-                                <section class="app-section mx-0 my-0">
-                                    <p class="mb-0">
-                                        <a href="{{ path('app_promotion_evaluations', {
-                                            'promotion': promotion,
-                                            'year': year,
-                                            'code': (project.blocCode ~ evaluation.code) | lower
-                                        }) }}">
-                                            <strong>{{ project.blocCode }}{{ evaluation.code | upper }}</strong>
-                                        </a>
-                                    </p>
+                            <div class="app-grid">
+                                {% for module in project.modules %}
+                                    <section class="app-section mx-0 my-0">
+                                        <p class="mb-0">
+                                            <a href="{{ path('app_promotion_modules', {
+                                                'promotion': promotion,
+                                                'year': year,
+                                                'code': module.code
+                                            }) }}">
+                                                <strong>{{ module.code | upper }}</strong>
+                                            </a>
+                                        </p>
 
-                                    <p class="subtitle text-left mb-0">{{ evaluation.title ?: '-' }}</p>
-                                </section>
-                            {% endfor %}
-                        </div>
-                    </section>
-                {% endif %}
+                                        <p class="subtitle text-left mb-0">{{ module.title ?: '-' }}</p>
+                                    </section>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if project.evaluations is not empty %}
+                        <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Évaluations associées</h2>
+
+                            <div class="app-grid">
+                                {% for evaluation in project.evaluations %}
+                                    <section class="app-section mx-0 my-0">
+                                        <p class="mb-0">
+                                            <a href="{{ path('app_promotion_evaluations', {
+                                                'promotion': promotion,
+                                                'year': year,
+                                                'code': evaluation.code
+                                            }) }}">
+                                                <strong>{{ evaluation.code | upper }}</strong>
+                                            </a>
+                                        </p>
+
+                                        <p class="subtitle text-left mb-0">{{ evaluation.title ?: '-' }}</p>
+                                    </section>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+                </div>
             </article>
         </div>
     </main>

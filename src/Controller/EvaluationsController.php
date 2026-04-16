@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Dto\Context\EvaluationSheet;
+use App\Dto\Context\ResolvedEvaluationSheet;
 use App\Service\Chart\EvaluationChartService;
 use App\Service\Context\Provider\FrameworkEvaluationsProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -47,7 +47,14 @@ final class EvaluationsController extends AbstractController
             $selectedEvaluation = $this->findFirstEvaluationForBlock($evaluations, $selectedBlock) ?? $evaluations[0];
             $selectedFileCode = $selectedEvaluation->fileCode;
         } else {
-            $selectedEvaluation = $this->findSelectedEvaluation($evaluations, $selectedFileCode);
+            $selectedEvaluation = null;
+
+            foreach ($evaluations as $evaluation) {
+                if ($evaluation->fileCode === $selectedFileCode) {
+                    $selectedEvaluation = $evaluation;
+                    break;
+                }
+            }
 
             if ($selectedEvaluation === null) {
                 $selectedEvaluation = $this->findFirstEvaluationForBlock($evaluations, $selectedBlock) ?? $evaluations[0];
@@ -69,7 +76,7 @@ final class EvaluationsController extends AbstractController
     }
 
     /**
-     * @param EvaluationSheet[] $evaluations
+     * @param ResolvedEvaluationSheet[] $evaluations
      */
     private function normalizeSelectedCode(string $raw, array $evaluations): ?string
     {
@@ -80,8 +87,8 @@ final class EvaluationsController extends AbstractController
         }
 
         foreach ($evaluations as $evaluation) {
-            if (strtolower($evaluation->fileCode) === $raw) {
-                return $evaluation->fileCode;
+            if (strtolower((string)$evaluation->fileCode) === $raw) {
+                return (string)$evaluation->fileCode;
             }
         }
 
@@ -100,30 +107,18 @@ final class EvaluationsController extends AbstractController
     }
 
     /**
-     * @param EvaluationSheet[] $evaluations
+     * @param ResolvedEvaluationSheet[] $evaluations
      */
-    private function findSelectedEvaluation(array $evaluations, string $selectedFileCode): ?EvaluationSheet
-    {
-        foreach ($evaluations as $evaluation) {
-            if ($evaluation->fileCode === $selectedFileCode) {
-                return $evaluation;
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * @param EvaluationSheet[] $evaluations
-     */
-    private function findFirstEvaluationForBlock(array $evaluations, ?string $blockCode): ?EvaluationSheet
+    private function findFirstEvaluationForBlock(array $evaluations, ?string $blockCode): ?ResolvedEvaluationSheet
     {
         if ($blockCode === null) {
             return null;
         }
 
         foreach ($evaluations as $evaluation) {
-            if (strtoupper(trim($evaluation->blocCode())) === $blockCode) {
+            $evaluationBlockCode = strtoupper(trim($evaluation->blocCode()));
+
+            if ($evaluationBlockCode === $blockCode) {
                 return $evaluation;
             }
         }

@@ -62,7 +62,6 @@
                         <h2>Critères d’évaluation</h2>
 
                         <div class="skill-criteria-list">
-
                             {% for criterion in skill.criteria %}
                                 {% set rawCriterion = criterion|trim %}
                                 {% set parts = rawCriterion|split(':', 2) %}
@@ -81,7 +80,6 @@
                                     </p>
                                 </section>
                             {% endfor %}
-
                         </div>
                     </section>
                 {% endif %}
@@ -98,9 +96,9 @@
                                             <a href="{{ path('app_promotion_modules', {
                                                 'promotion': promotion,
                                                 'year': year,
-                                                'code': (skill.blocCode ~ module.code) | lower
+                                                'code': module.fullCode
                                             }) }}">
-                                                <strong>{{ skill.blocCode }}{{ module.code | upper }}</strong>
+                                                <strong>{{ module.fullCode | upper }}</strong>
                                             </a>
                                         </p>
 
@@ -111,9 +109,33 @@
                         </section>
                     {% endif %}
 
-                    {% if skill.evaluations is not empty %}
+                    {% if skill.projects is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Evaluations associées</h2>
+                            <h2>Projets associés</h2>
+
+                            <div class="app-grid">
+                                {% for project in skill.projects %}
+                                    <section class="app-section mx-0 my-0">
+                                        <p class="mb-0">
+                                            <a href="{{ path('app_promotion_projects', {
+                                                'promotion': promotion,
+                                                'year': year,
+                                                'code': project.code
+                                            }) }}">
+                                                <strong>{{ project.code | upper }}</strong>
+                                            </a>
+                                        </p>
+
+                                        <p class="subtitle text-left mb-0">{{ project.title ?: '-' }}</p>
+                                    </section>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if skill.evaluations is not empty %}
+                        <section class="app-section mx-0  mb-0">
+                            <h2>Évaluations associées</h2>
 
                             <div class="app-grid">
                                 {% for evaluation in skill.evaluations %}
@@ -122,9 +144,9 @@
                                             <a href="{{ path('app_promotion_evaluations', {
                                                 'promotion': promotion,
                                                 'year': year,
-                                                'code': (skill.blocCode ~ evaluation.code) | lower
+                                                'code': evaluation.code
                                             }) }}">
-                                                <strong>{{ skill.blocCode }}{{ evaluation.code | upper }}</strong>
+                                                <strong>{{ evaluation.code | upper }}</strong>
                                             </a>
                                         </p>
 

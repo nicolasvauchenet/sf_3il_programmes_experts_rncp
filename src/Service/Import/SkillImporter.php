@@ -13,6 +13,7 @@ final readonly class SkillImporter
 {
     public function __construct(
         private EntityManagerInterface $entityManager,
+        private CodeNormalizer         $codeNormalizer,
     )
     {
     }
@@ -32,23 +33,30 @@ final readonly class SkillImporter
     ): array
     {
         $result = [];
+        $frameworkCode = (string)$framework->getCode();
 
         foreach (($structure['skills'] ?? []) as $index => $row) {
             if (!is_array($row)) {
                 continue;
             }
 
-            $code = trim((string)($row['code'] ?? ''));
-            $blockCode = trim((string)($row['blockCode'] ?? $row['blocCode'] ?? ''));
+            $shortCode = $this->codeNormalizer->normalizeShortSkillCode((string)($row['code'] ?? ''));
+            $blockCode = $this->codeNormalizer->normalizeBlockCode((string)($row['blockCode'] ?? $row['blocCode'] ?? ''));
 
-            if ($code === '' || !isset($blocks[$blockCode])) {
+            if ($shortCode === '' || $blockCode === '' || !isset($blocks[$blockCode])) {
+                continue;
+            }
+
+            $fullCode = $this->codeNormalizer->normalizeSkillCode($frameworkCode, $blockCode, $shortCode);
+
+            if ($fullCode === '') {
                 continue;
             }
 
             /** @var Skill|null $skill */
             $skill = $this->entityManager->getRepository(Skill::class)->findOneBy([
                 'framework' => $framework,
-                'code' => $code,
+                'code' => $fullCode,
             ]);
 
             $isNew = !$skill instanceof Skill;
@@ -56,23 +64,23 @@ final readonly class SkillImporter
             if ($isNew) {
                 $skill = new Skill();
                 $skill->setFramework($framework);
-                $skill->setCode($code);
+                $skill->setCode($fullCode);
                 $this->entityManager->persist($skill);
                 $report->markCreated('skills');
             } else {
                 $report->markUpdated('skills');
             }
 
-            $detailFile = $this->findSkillFile($skillFiles, $framework, $blockCode, $code);
+            $detailFile = $this->findSkillFile($skillFiles, $fullCode);
 
             $skill->setBlock($blocks[$blockCode]);
-            $skill->setTitle(trim((string)($row['title'] ?? $code)));
+            $skill->setTitle(trim((string)($row['title'] ?? $shortCode)));
             $skill->setDescription($this->extractDescription($detailFile));
             $skill->setPosition($index + 1);
 
             $this->syncCriteria($skill, $detailFile);
 
-            $result[$code] = $skill;
+            $result[$fullCode] = $skill;
         }
 
         return $result;
@@ -82,13 +90,8 @@ final readonly class SkillImporter
      * @param array<string, array<string, mixed>> $skillFiles
      * @return array<string, mixed>|null
      */
-    private function findSkillFile(array $skillFiles, Framework $framework, string $blockCode, string $skillCode): ?array
+    private function findSkillFile(array $skillFiles, string $fullCode): ?array
     {
-        $frameworkCode = (string)$framework->getCode();
-        $rncpCode = preg_replace('/^RNCP/', '', $frameworkCode) ?: '';
-
-        $fullCode = sprintf('RNCP%s-%s-%s', $rncpCode, $blockCode, $skillCode);
-
         return $skillFiles[$fullCode] ?? null;
     }
 
@@ -113,7 +116,7 @@ final readonly class SkillImporter
         }
 
         $existingByCode = [];
-        foreach ($skill->getCriterias() as $criteria) {
+        foreach ($skill->getCriteria() as $criteria) {
             $existingByCode[(string)$criteria->getCode()] = $criteria;
         }
 
@@ -149,7 +152,7 @@ final readonly class SkillImporter
             $keptCodes[] = $code;
         }
 
-        foreach ($skill->getCriterias()->toArray() as $criteria) {
+        foreach ($skill->getCriteria()->toArray() as $criteria) {
             $code = (string)$criteria->getCode();
 
             if (!in_array($code, $keptCodes, true)) {

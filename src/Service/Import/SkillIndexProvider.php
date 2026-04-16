@@ -30,7 +30,8 @@ final readonly class SkillIndexProvider
         $index = [];
 
         foreach ($skills as $skill) {
-            $code = (string)$skill->getCode();
+            $code = trim((string)$skill->getCode());
+
             if ($code !== '') {
                 $index[$code] = $skill;
             }

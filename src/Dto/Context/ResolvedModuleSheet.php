@@ -2,14 +2,14 @@
 
 namespace App\Dto\Context;
 
-final readonly class ProjectSheet
+final readonly class ResolvedModuleSheet
 {
     /**
      * @param array<string,mixed> $meta
      * @param array<int,array{code:string,fileCode:string,description:string}> $skills
      * @param array<int,array{code:string,fileCode:string,description:string,criteria:array<int,string>}> $skillsWithCriteria
-     * @param array<int,array{code:string,title:string,blockCode:string}> $modules
      * @param array<int,array{code:string,title:string,blockCode:string}> $evaluations
+     * @param array<int,array{code:string,title:string,blockCode:string}> $projects
      * @param array<string,mixed> $objectives
      * @param array<string,mixed> $prerequisites
      * @param array<string,mixed> $outline
@@ -22,12 +22,15 @@ final readonly class ProjectSheet
         public string $fileCode,
         public string $path,
         public array  $meta,
-        public array  $skills,
-        public array  $skillsWithCriteria,
-        public array  $modules,
-        public array  $evaluations,
+        public string $description,
         public array  $objectives,
         public array  $prerequisites,
+        public int    $durationDays,
+        public int    $durationHours,
+        public array  $skills,
+        public array  $skillsWithCriteria,
+        public array  $evaluations,
+        public array  $projects,
         public array  $outline,
         public array  $exercises,
         public array  $bibliography,
@@ -37,7 +40,7 @@ final readonly class ProjectSheet
     {
     }
 
-    public function projectCode(): string
+    public function moduleCode(): string
     {
         return (string)($this->meta['code'] ?? '');
     }
@@ -60,15 +63,5 @@ final readonly class ProjectSheet
     public function blocName(): string
     {
         return (string)($this->meta['blocName'] ?? '');
-    }
-
-    public function durationDays(): int
-    {
-        return (int)($this->meta['durationDays'] ?? 0);
-    }
-
-    public function durationHours(): int
-    {
-        return (int)($this->meta['durationHours'] ?? 0);
     }
 }

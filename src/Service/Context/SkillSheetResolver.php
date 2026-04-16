@@ -8,6 +8,9 @@ use App\Dto\Context\SkillSheet;
 
 final class SkillSheetResolver
 {
+    /**
+     * @param SkillSheet[] $allSheets
+     */
     public function resolve(SkillSheet $sheet, FrameworkStructure $structure, array $allSheets = []): ResolvedSkillSheet
     {
         $skillCode = $this->extractShortSkillCode((string)($sheet->meta['code'] ?? ''));
@@ -18,11 +21,16 @@ final class SkillSheetResolver
         $moduleFullCodes = $this->extractStringList($structureSkill['modules'] ?? null);
         $evaluationCodes = $this->extractStringList($structureSkill['evaluations'] ?? null);
 
+        $modules = $sheet->modules !== [] ? $sheet->modules : $this->resolveModules($structure, $moduleFullCodes);
+        $projects = $sheet->projects;
+        $evaluations = $sheet->evaluations !== [] ? $sheet->evaluations : $this->resolveEvaluations($structure, $evaluationCodes);
+
         return ResolvedSkillSheet::fromSheet(
             sheet: $sheet,
             rncpCode: $this->extractNullableString($structure->meta['rncpCode'] ?? null),
-            modules: $this->resolveModules($structure, $moduleFullCodes),
-            evaluations: $this->resolveEvaluations($structure, $evaluationCodes),
+            modules: $modules,
+            projects: $projects,
+            evaluations: $evaluations,
             relatedSkills: $this->resolveRelatedSkills($structure, $allSheets, $blockCode, $skillCode),
         );
     }
@@ -51,7 +59,7 @@ final class SkillSheetResolver
             }
 
             $candidateCode = $this->extractNullableString($skill['code'] ?? null);
-            $candidateBlockCode = $this->extractNullableString($skill['blockCode'] ?? null);
+            $candidateBlockCode = $this->extractNullableString($skill['blockCode'] ?? $skill['blocCode'] ?? null);
 
             if ($candidateCode !== $skillCode) {
                 continue;
@@ -73,26 +81,32 @@ final class SkillSheetResolver
      */
     private function resolveModules(FrameworkStructure $structure, array $moduleFullCodes): array
     {
+        $index = [];
+
+        foreach ($structure->modules as $module) {
+            if (!is_array($module)) {
+                continue;
+            }
+
+            $fullCode = $this->extractNullableString($module['fullCode'] ?? null);
+            if ($fullCode === null) {
+                continue;
+            }
+
+            $index[$fullCode] = [
+                'code' => $this->extractNullableString($module['code'] ?? null) ?? '',
+                'title' => $this->extractNullableString($module['title'] ?? null) ?? '',
+                'fullCode' => strtolower($fullCode),
+            ];
+        }
+
         $resolved = [];
 
         foreach ($moduleFullCodes as $fullCode) {
-            foreach ($structure->modules as $module) {
-                if (!is_array($module)) {
-                    continue;
-                }
+            $module = $index[$fullCode] ?? null;
 
-                $candidateFullCode = $this->extractNullableString($module['fullCode'] ?? null);
-                if ($candidateFullCode !== $fullCode) {
-                    continue;
-                }
-
-                $resolved[] = [
-                    'code' => $this->extractNullableString($module['code'] ?? null) ?? '',
-                    'title' => $this->extractNullableString($module['title'] ?? null) ?? '',
-                    'fullCode' => $candidateFullCode,
-                ];
-
-                break;
+            if (is_array($module)) {
+                $resolved[] = $module;
             }
         }
 
@@ -101,29 +115,27 @@ final class SkillSheetResolver
 
     /**
      * @param array<int,string> $evaluationCodes
-     * @return array<int,array{code:string,blockCode:string}>
+     * @return array<int,array{code:string,blockCode:string,title:string}>
      */
     private function resolveEvaluations(FrameworkStructure $structure, array $evaluationCodes): array
     {
         $resolved = [];
 
-        foreach ($evaluationCodes as $wantedCode) {
+        foreach ($evaluationCodes as $evaluationCode) {
             foreach ($structure->evaluations as $evaluation) {
                 if (!is_array($evaluation)) {
                     continue;
                 }
 
                 $code = $this->extractNullableString($evaluation['code'] ?? null);
-                if ($code !== $wantedCode) {
+                if ($code !== $evaluationCode) {
                     continue;
                 }
 
-                $title = $this->extractNullableString($evaluation['title'] ?? null) ?? '';
-
                 $resolved[] = [
-                    'code' => $code,
-                    'title' => $title,
-                    'blockCode' => $this->extractNullableString($evaluation['blockCode'] ?? null) ?? '',
+                    'code' => strtolower($code),
+                    'title' => $this->extractNullableString($evaluation['title'] ?? null) ?? '',
+                    'blockCode' => $this->extractNullableString($evaluation['blockCode'] ?? $evaluation['blocCode'] ?? null) ?? '',
                 ];
 
                 break;
@@ -139,10 +151,11 @@ final class SkillSheetResolver
      */
     private function resolveRelatedSkills(
         FrameworkStructure $structure,
-        array $allSheets,
-        string $blockCode,
-        string $currentSkillCode,
-    ): array {
+        array              $allSheets,
+        string             $blockCode,
+        string             $currentSkillCode,
+    ): array
+    {
         $fileCodeByShortCode = [];
 
         foreach ($allSheets as $sheet) {
@@ -161,7 +174,7 @@ final class SkillSheetResolver
                 continue;
             }
 
-            $candidateBlockCode = $this->extractNullableString($skill['blockCode'] ?? null);
+            $candidateBlockCode = $this->extractNullableString($skill['blockCode'] ?? $skill['blocCode'] ?? null);
             $code = $this->extractNullableString($skill['code'] ?? null);
             $title = $this->extractNullableString($skill['title'] ?? null);
 

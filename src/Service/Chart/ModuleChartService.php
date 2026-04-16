@@ -2,7 +2,7 @@
 
 namespace App\Service\Chart;
 
-use App\Dto\Context\ModuleSheet;
+use App\Dto\Context\ResolvedModuleSheet;
 use Symfony\UX\Chartjs\Builder\ChartBuilderInterface;
 use Symfony\UX\Chartjs\Model\Chart;
 
@@ -13,10 +13,11 @@ final readonly class ModuleChartService
 
     public function __construct(
         private ChartBuilderInterface $chartBuilder,
-    ) {
+    )
+    {
     }
 
-    public function createModuleVolumeChart(ModuleSheet $module): Chart
+    public function createModuleVolumeChart(ResolvedModuleSheet $module): Chart
     {
         $skillsCount = count($module->skills);
         $chaptersCount = count($module->outline['chapters'] ?? []);

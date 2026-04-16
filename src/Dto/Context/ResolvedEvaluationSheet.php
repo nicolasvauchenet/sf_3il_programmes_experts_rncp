@@ -2,7 +2,7 @@
 
 namespace App\Dto\Context;
 
-final readonly class EvaluationSheet
+final readonly class ResolvedEvaluationSheet
 {
     /**
      * @param array<string,mixed> $meta
@@ -38,10 +38,10 @@ final readonly class EvaluationSheet
         public array  $criteria,
         public array  $skillsWithCriteria,
         public array  $modules,
-        public array  $projects = [],
-        public array  $modalities = [],
-        public array  $exam = [],
-        public array  $raw = [],
+        public array  $projects,
+        public array  $modalities,
+        public array  $exam,
+        public array  $raw,
     )
     {
     }

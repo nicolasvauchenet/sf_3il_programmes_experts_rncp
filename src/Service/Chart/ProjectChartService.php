@@ -2,7 +2,7 @@
 
 namespace App\Service\Chart;
 
-use App\Dto\Context\ProjectSheet;
+use App\Dto\Context\ResolvedProjectSheet;
 use Symfony\UX\Chartjs\Builder\ChartBuilderInterface;
 use Symfony\UX\Chartjs\Model\Chart;
 
@@ -17,7 +17,7 @@ final readonly class ProjectChartService
     {
     }
 
-    public function createProjectVolumeChart(ProjectSheet $project): Chart
+    public function createProjectVolumeChart(ResolvedProjectSheet $project): Chart
     {
         $skillsCount = count($project->skills);
         $evaluationsCount = count($project->evaluations);

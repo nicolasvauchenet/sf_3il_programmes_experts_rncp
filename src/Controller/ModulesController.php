@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Dto\Context\ResolvedModuleSheet;
 use App\Service\Chart\ModuleChartService;
 use App\Service\Context\Provider\FrameworkModulesProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -61,10 +62,6 @@ final class ModulesController extends AbstractController
             }
         }
 
-        if ($selectedBlock === null) {
-            $selectedBlock = $this->normalizeBlockCode((string)($selectedModule->meta['blockCode'] ?? ''));
-        }
-
         $moduleVolumeChart = $moduleChartService->createModuleVolumeChart($selectedModule);
 
         return $this->render('modules/index.html.twig', [
@@ -78,6 +75,9 @@ final class ModulesController extends AbstractController
         ]);
     }
 
+    /**
+     * @param ResolvedModuleSheet[] $modules
+     */
     private function normalizeSelectedCode(string $raw, array $modules): ?string
     {
         $raw = strtolower(trim($raw));
@@ -106,14 +106,17 @@ final class ModulesController extends AbstractController
         return $raw;
     }
 
-    private function findFirstModuleForBlock(array $modules, ?string $blockCode): mixed
+    /**
+     * @param ResolvedModuleSheet[] $modules
+     */
+    private function findFirstModuleForBlock(array $modules, ?string $blockCode): ?ResolvedModuleSheet
     {
         if ($blockCode === null) {
             return null;
         }
 
         foreach ($modules as $module) {
-            $moduleBlockCode = strtoupper(trim((string)($module->meta['blockCode'] ?? '')));
+            $moduleBlockCode = strtoupper(trim((string)($module->meta['blocCode'] ?? $module->meta['blockCode'] ?? '')));
 
             if ($moduleBlockCode === $blockCode) {
                 return $module;

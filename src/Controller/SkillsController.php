@@ -80,8 +80,8 @@ final class SkillsController extends AbstractController
         }
 
         foreach ($skills as $skill) {
-            if (strtolower($skill->fileCode) === $raw) {
-                return $skill->fileCode;
+            if (strtolower((string)$skill->fileCode) === $raw) {
+                return (string)$skill->fileCode;
             }
         }
 
@@ -123,7 +123,7 @@ final class SkillsController extends AbstractController
         }
 
         foreach ($skills as $skill) {
-            $skillBlockCode = strtoupper(trim($this->extractBlockCodeFromFileCode($skill->fileCode)));
+            $skillBlockCode = strtoupper(trim((string)($skill->meta['blocCode'] ?? '')));
 
             if ($skillBlockCode === $blockCode) {
                 return $skill;
@@ -131,10 +131,5 @@ final class SkillsController extends AbstractController
         }
 
         return null;
-    }
-
-    private function extractBlockCodeFromFileCode(string $fileCode): string
-    {
-        return strtoupper(substr($fileCode, 0, 4));
     }
 }

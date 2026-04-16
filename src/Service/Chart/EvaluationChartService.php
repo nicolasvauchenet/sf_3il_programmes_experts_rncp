@@ -2,7 +2,7 @@
 
 namespace App\Service\Chart;
 
-use App\Dto\Context\EvaluationSheet;
+use App\Dto\Context\ResolvedEvaluationSheet;
 use Symfony\UX\Chartjs\Builder\ChartBuilderInterface;
 use Symfony\UX\Chartjs\Model\Chart;
 
@@ -13,23 +13,24 @@ final readonly class EvaluationChartService
 
     public function __construct(
         private ChartBuilderInterface $chartBuilder,
-    ) {
+    )
+    {
     }
 
-    public function createEvaluationVolumeChart(EvaluationSheet $evaluation): Chart
+    public function createEvaluationVolumeChart(ResolvedEvaluationSheet $evaluation): Chart
     {
-        $examPartsCount = count($evaluation->examParts());
         $skillsCount = count($evaluation->skills);
         $criteriaCount = count($evaluation->criteria);
+        $partsCount = count($evaluation->examParts());
 
         $chart = $this->chartBuilder->createChart(Chart::TYPE_BAR);
 
         $chart->setData([
-            'labels' => ['Épreuves', 'Compétences', 'Critères'],
+            'labels' => ['Compétences', 'Critères', 'Épreuves'],
             'datasets' => [
                 [
                     'label' => 'Volumétrie de l’évaluation',
-                    'data' => [$examPartsCount, $skillsCount, $criteriaCount],
+                    'data' => [$skillsCount, $criteriaCount, $partsCount],
                     'backgroundColor' => [
                         $this->hexToRgba(self::COLOR_BLUE, 1),
                         $this->hexToRgba(self::COLOR_ORANGE, 1),
@@ -64,7 +65,6 @@ final readonly class EvaluationChartService
                         'display' => false,
                     ],
                     'ticks' => [
-                        'autoSkip' => false,
                         'maxRotation' => 0,
                         'minRotation' => 0,
                     ],
