@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+}
+
 html {
     scroll-behavior: smooth;
 
