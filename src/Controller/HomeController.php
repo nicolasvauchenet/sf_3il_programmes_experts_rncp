@@ -26,12 +26,32 @@ final class HomeController extends AbstractController
             $contexts
         )));
 
+        $yearsByPromotion = [];
+
+        foreach ($contexts as $context) {
+            $promotionCode = $context->promotionCode;
+            $academicYear = $context->academicYear;
+
+            if (!isset($yearsByPromotion[$promotionCode])) {
+                $yearsByPromotion[$promotionCode] = [];
+            }
+
+            $yearsByPromotion[$promotionCode][] = $academicYear;
+        }
+
+        foreach ($yearsByPromotion as &$years) {
+            $years = array_values(array_unique($years));
+            rsort($years);
+        }
+        unset($years);
+
         sort($allPromotions);
         rsort($allYears);
 
         return $this->render('home/index.html.twig', [
             'allPromotions' => $allPromotions,
             'allYears' => $allYears,
+            'yearsByPromotion' => $yearsByPromotion,
             'selectedPromotion' => null,
             'selectedYear' => null,
         ]);
