@@ -97,7 +97,7 @@ final class ProjectsController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -116,7 +116,7 @@ final class ProjectsController extends AbstractController
         }
 
         foreach ($projects as $project) {
-            $projectBlockCode = strtoupper(trim($project->blocCode()));
+            $projectBlockCode = strtolower(trim($project->blocCode()));
 
             if ($projectBlockCode === $blockCode) {
                 return $project;

@@ -90,7 +90,7 @@ final class SkillsController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -123,7 +123,7 @@ final class SkillsController extends AbstractController
         }
 
         foreach ($skills as $skill) {
-            $skillBlockCode = strtoupper(trim((string)($skill->meta['blocCode'] ?? '')));
+            $skillBlockCode = strtolower(trim((string)($skill->meta['blocCode'] ?? '')));
 
             if ($skillBlockCode === $blockCode) {
                 return $skill;

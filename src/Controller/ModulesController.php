@@ -97,7 +97,7 @@ final class ModulesController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -116,7 +116,7 @@ final class ModulesController extends AbstractController
         }
 
         foreach ($modules as $module) {
-            $moduleBlockCode = strtoupper(trim((string)($module->meta['blocCode'] ?? $module->meta['blockCode'] ?? '')));
+            $moduleBlockCode = strtolower(trim((string)($module->meta['blocCode'] ?? $module->meta['blockCode'] ?? '')));
 
             if ($moduleBlockCode === $blockCode) {
                 return $module;

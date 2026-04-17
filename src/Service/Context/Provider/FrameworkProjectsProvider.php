@@ -3,6 +3,7 @@
 namespace App\Service\Context\Provider;
 
 use App\Dto\Context\ProjectSheet;
+use App\Dto\Context\ResolvedProjectSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Entity\Evaluation;
 use App\Entity\Module;
@@ -26,7 +27,7 @@ final readonly class FrameworkProjectsProvider
     }
 
     /**
-     * @return ProjectSheet[]
+     * @return ResolvedProjectSheet[]
      */
     public function listProjects(string $promotion, string $year): array
     {

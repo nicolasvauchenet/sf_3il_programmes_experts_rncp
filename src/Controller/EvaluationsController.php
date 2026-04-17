@@ -97,7 +97,7 @@ final class EvaluationsController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -116,7 +116,7 @@ final class EvaluationsController extends AbstractController
         }
 
         foreach ($evaluations as $evaluation) {
-            $evaluationBlockCode = strtoupper(trim($evaluation->blocCode()));
+            $evaluationBlockCode = strtolower(trim($evaluation->blocCode()));
 
             if ($evaluationBlockCode === $blockCode) {
                 return $evaluation;

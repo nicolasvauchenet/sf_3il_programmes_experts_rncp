@@ -3,6 +3,7 @@
 namespace App\Service\Context\Provider;
 
 use App\Dto\Context\ModuleSheet;
+use App\Dto\Context\ResolvedModuleSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Entity\Chapter;
 use App\Entity\Evaluation;
@@ -27,7 +28,7 @@ final readonly class FrameworkModulesProvider
     }
 
     /**
-     * @return ModuleSheet[]
+     * @return ResolvedModuleSheet[]
      */
     public function listModules(string $promotion, string $year): array
     {
