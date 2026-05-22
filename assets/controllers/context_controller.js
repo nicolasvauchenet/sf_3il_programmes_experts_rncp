@@ -16,7 +16,6 @@ export default class extends Controller {
         const selectedYear = this.yearTarget.value;
         const years = this.yearsByPromotionValue[promotion] ?? [];
 
-        // 👉 Désactivation si aucune promo sélectionnée
         if (!promotion) {
             this.yearTarget.innerHTML = "";
 
@@ -31,7 +30,6 @@ export default class extends Controller {
             return;
         }
 
-        // 👉 Activation sinon
         this.yearTarget.disabled = false;
 
         this.yearTarget.innerHTML = "";

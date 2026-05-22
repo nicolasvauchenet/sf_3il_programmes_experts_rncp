@@ -135,11 +135,13 @@ final readonly class FrameworkEvaluationsProvider
             $modules,
             static fn(array $a, array $b): int => [$a['blockCode'], $a['code']] <=> [$b['blockCode'], $b['code']]
         );
+        $modules = $this->uniqueReferences($modules);
 
         usort(
             $projects,
             static fn(array $a, array $b): int => [$a['blockCode'], $a['code']] <=> [$b['blockCode'], $b['code']]
         );
+        $projects = $this->uniqueReferences($projects);
 
         $parts = [];
         foreach ($evaluation->getEvaluationParts() as $part) {
@@ -301,6 +303,27 @@ final readonly class FrameworkEvaluationsProvider
         );
 
         return array_values(array_unique($criteria));
+    }
+
+    /**
+     * @param array<int,array{code:string,title:string,blockCode:string}> $references
+     * @return array<int,array{code:string,title:string,blockCode:string}>
+     */
+    private function uniqueReferences(array $references): array
+    {
+        $unique = [];
+
+        foreach ($references as $reference) {
+            $key = strtolower(trim($reference['code']));
+
+            if ($key === '' || isset($unique[$key])) {
+                continue;
+            }
+
+            $unique[$key] = $reference;
+        }
+
+        return array_values($unique);
     }
 
     private function extractShortCode(string $code): string

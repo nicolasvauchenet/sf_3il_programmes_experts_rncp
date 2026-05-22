@@ -4,8 +4,9 @@
     z-index: 100;
     @include displayFlex(space-between, center, 0.5rem);
     padding: 0.5rem 1rem;
-    color: $white;
-    background-color: $primary;
+    color: $primary;
+    background-color: $white;
+    box-shadow: 0 2px 0.25rem rgba($black, 0.5);
 
     @include respondTo(lg) {
         padding: 0.5rem 3rem;

@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
+    {{ promotionContext.promotionLabel ? promotionContext.promotionLabel | upper : 'Résumé du Référentiel' }}
     - Évaluation {{ evaluation.evaluationCode }} -
     {{ evaluation.title ?: '' }}
 {% endblock %}
@@ -37,8 +37,6 @@
                             {% if evaluation.evaluationCode %}
                                 <span class="app-badge">{{ evaluation.evaluationCode }}</span>
                             {% endif %}
-
-                            <span class="app-badge">{{ year }}</span>
 
                             {% if evaluation.totalDuration %}
                                 <span class="app-badge">{{ evaluation.totalDuration }}</span>

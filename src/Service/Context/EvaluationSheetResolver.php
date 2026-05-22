@@ -21,8 +21,8 @@ final class EvaluationSheetResolver
             skills: $sheet->skills,
             criteria: $sheet->criteria,
             skillsWithCriteria: $sheet->skillsWithCriteria,
-            modules: $modules,
-            projects: $sheet->projects,
+            modules: $this->uniqueReferences($modules),
+            projects: $this->uniqueReferences($sheet->projects),
             modalities: $sheet->modalities,
             exam: $sheet->exam,
             raw: $sheet->raw,
@@ -140,6 +140,27 @@ final class EvaluationSheetResolver
         }
 
         return array_values(array_unique($out));
+    }
+
+    /**
+     * @param array<int,array{code:string,title:string,blockCode:string}> $references
+     * @return array<int,array{code:string,title:string,blockCode:string}>
+     */
+    private function uniqueReferences(array $references): array
+    {
+        $unique = [];
+
+        foreach ($references as $reference) {
+            $key = strtolower(trim($reference['code']));
+
+            if ($key === '' || isset($unique[$key])) {
+                continue;
+            }
+
+            $unique[$key] = $reference;
+        }
+
+        return array_values($unique);
     }
 
     private function extractNullableString(mixed $value): ?string

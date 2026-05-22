@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}{% endblock %}
+{% block title %}{{ promotionContext.promotionLabel ? promotionContext.promotionLabel | upper : 'Résumé du Référentiel' }}{% endblock %}
 
 {% block body %}
     {% include '_layout/default/_header.html.twig' %}

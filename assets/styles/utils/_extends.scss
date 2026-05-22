@@ -56,17 +56,5 @@
 }
 
 .bg-alt {
-    background-color: rgba($secondary, 1) !important;
-
-    h2 {
-        color: $white !important;
-    }
-
-    .app-button {
-        background-color: $white !important;
-
-        &:hover {
-            color: $secondary !important;
-        }
-    }
+    border-color: $primary !important;
 }

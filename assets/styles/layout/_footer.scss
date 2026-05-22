@@ -3,7 +3,7 @@
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
     color: $white;
-    background-color: rgba($black, 0.85);
+    background-color: $primary;
 
     @include respondTo(sm) {
         margin-bottom: 0;
@@ -24,11 +24,11 @@
 
         a {
             text-decoration: none;
-            color: rgba($white, 0.75);
+            color: $white;
             transition: color 0.3s;
 
             &:hover {
-                color: $white;
+                color: $secondary;
             }
         }
     }
