@@ -39,9 +39,12 @@
                         </div>
 
                         <div class="ribbon">
-                            <span class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
-                            <span class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
-                            <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
+                            <span
+                                class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
+                            <span
+                                class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
+                            <span
+                                class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
                         </div>
                     </section>
 
@@ -69,6 +72,7 @@
                                     <th>Email</th>
                                     <th>Création</th>
                                     <th>Connexion</th>
+                                    <th class="admin-users-actions-heading">&nbsp;</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -83,10 +87,21 @@
                                         <td data-label="Connexion">
                                             {{ user.loggedAt ? user.loggedAt|date('d/m/Y H:i') : 'Jamais' }}
                                         </td>
+                                        <td data-label="Actions" class="admin-users-actions-cell">
+                                            <details class="admin-actions-dropdown">
+                                                <summary aria-label="Actions utilisateur">...</summary>
+
+                                                <div class="admin-actions-menu">
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#" class="text-danger"
+                                                       onclick="return confirm('Confirmez-vous la suppression de cet utilisateur ?')">Supprimer</a>
+                                                </div>
+                                            </details>
+                                        </td>
                                     </tr>
                                 {% else %}
                                     <tr>
-                                        <td colspan="5">Aucun utilisateur.</td>
+                                        <td colspan="6">Aucun utilisateur.</td>
                                     </tr>
                                 {% endfor %}
                             </tbody>

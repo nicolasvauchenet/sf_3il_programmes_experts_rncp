@@ -47,10 +47,6 @@
         }
     }
 
-    .admin-users-table-wrapper {
-        overflow-x: auto;
-    }
-
     .admin-users-table {
         width: 100%;
         font-size: 0.9rem;
@@ -67,6 +63,75 @@
             font-weight: bold;
             text-transform: uppercase;
             color: $primary;
+        }
+
+        .admin-users-actions-heading,
+        .admin-users-actions-cell {
+            text-align: right;
+        }
+
+        .admin-users-actions-cell {
+            position: relative;
+        }
+
+        .admin-actions-dropdown {
+            position: relative;
+            display: inline-block;
+
+            summary {
+                @include displayFlex(center, center);
+                width: 2rem;
+                height: 2rem;
+                font-weight: bold;
+                color: $primary;
+                border: 1px solid rgba($primary, 0.35);
+                border-radius: 0.25rem;
+                cursor: pointer;
+                list-style: none;
+                user-select: none;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &:hover {
+                    color: $secondary;
+                    border-color: rgba($secondary, 0.55);
+                }
+            }
+
+            &[open] summary {
+                color: $secondary;
+                border-color: rgba($secondary, 0.55);
+            }
+        }
+
+        .admin-actions-menu {
+            position: absolute;
+            top: calc(100% + 0.35rem);
+            right: 0;
+            z-index: 20;
+            min-width: 8rem;
+            overflow: hidden;
+            text-align: left;
+            background-color: $white;
+            border: 1px solid rgba($black, 0.16);
+            border-radius: 0.25rem;
+            box-shadow: 0 0.35rem 0.8rem rgba($black, 0.18);
+
+            a {
+                display: block;
+                padding: 0.65rem 0.75rem;
+                font-size: 0.85rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: $primary;
+
+                &:hover {
+                    color: $white !important;
+                    background-color: $secondary;
+                }
+            }
         }
 
         @include respondTo(xs) {
@@ -92,6 +157,10 @@
                     text-align: left;
                     color: $primary;
                 }
+            }
+
+            .admin-users-actions-cell {
+                align-items: center;
             }
         }
     }
