@@ -1,0 +1,76 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM07",
+        "title": "Projet : Management du Support",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Mobiliser les compétences pour gérer efficacement les demandes de support, les incidents, les problèmes et les changements (Créer) Utiliser des tableaux de bord et définir des KPIs pour piloter la performance du support (Évaluer) Concevoir et piloter un dispositif de support ITSM adapté au contexte de l'entreprise (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Avoir terminé le module \" Gestion des incidents et support ITSM\""
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Simulation de Gestion des Demandes de Support",
+            "context": "Vous travaillez dans le service de support informatique d'une entreprise. Un utilisateur final vous a envoyé un courriel pour signaler un problème avec son ordinateur portable qui se fige de manière aléatoire. Consignes : Enregistrez la demande de support dans le système de ticketing de votre entreprise. Attribuez une priorité à cette demande selon les critères établis par votre entreprise. Décrivez les étapes que vous suivriez pour résoudre ce problème. Rédigez un bref courriel à l'utilisateur final pour lui indiquer que sa demande est en cours de traitement et lui donner une estimation du temps de résolution. Imaginez que le problème a été résolu. Comment évalueriez-vous la satisfaction client dans ce cas ?",
+            "objective": ""
+        },
+        {
+            "title": "Classification des Incidents",
+            "context": "Vous êtes analyste dans le centre d'assistance d'une grande banque. Plusieurs utilisateurs ont signalé des problèmes d'accès à l'application de gestion de comptes en ligne. Consignes : Identifiez et enregistrez l'incident dans le système de gestion des incidents. Classifiez cet incident (par exemple, interruption de service, dégradation de service, etc.) et attribuez-lui une priorité. Esquissez un plan de diagnostic pour identifier la cause racine de cet incident. Proposez des étapes pour l'escalade de cet incident si vous ne parvenez pas à le résoudre rapidement. Décrivez le suivi que vous effectueriez pour vous assurer que l'incident est bien clos et que le service est rétabli pour tous les utilisateurs.",
+            "objective": ""
+        },
+        {
+            "title": "Analyse de Scénario de Gestion des Problèmes",
+            "context": "Après plusieurs incidents récurrents liés à la défaillance d'un serveur de base de données, il est devenu évident qu'un problème sous-jacent doit être abordé. Consignes : Créez un enregistrement pour ce problème dans votre système de gestion des problèmes. Effectuez une analyse pour diagnostiquer le problème sous-jacent potentiel du serveur de base de données. Élaborez un plan d'action pour résoudre le problème, y compris les ressources nécessaires et les délais. Mettez en place des mesures pour le suivi du problème jusqu'à sa clôture. Rédigez un rapport final expliquant le problème, les actions prises, et les résultats obtenus.",
+            "objective": ""
+        },
+        {
+            "title": "Planification d'un Changement",
+            "context": "L’équipe IT de votre entreprise a décidé de mettre à jour le système de messagerie électronique pour améliorer la sécurité et les fonctionnalités. Consignes : Documentez le processus de gestion des changements pour cette mise à jour. Évaluez les risques associés à ce changement et proposez des mesures d'atténuation. Planifiez les étapes de la mise en œuvre du changement, y compris la communication aux utilisateurs et la formation nécessaire. Décrivez comment vous suivriez et évalueriez l'efficacité du changement une fois mis en œuvre. Identifiez les indicateurs de performance clés que vous surveilleriez pour évaluer l'impact du changement.",
+            "objective": ""
+        },
+        {
+            "title": "Création d'un Tableau de Bord de Support IT",
+            "context": "En tant que responsable du support IT, vous devez créer un tableau de bord pour suivre et améliorer la performance du support. Consignes : Identifiez 5 indicateurs de performance clés que vous intégreriez dans le tableau de bord pour le support IT. Concevez un modèle de rapport d'activité mensuel incluant ces KPIs. Élaborez un plan d'amélioration continue basé sur les données recueillies au cours des 3 derniers mois. Développez un processus pour la revue régulière de la qualité du support, incluant les réunions d'équipe et les feedbacks des utilisateurs. Décrivez les actions que vous prendriez pour suivre les progrès des initiatives d'amélioration continue.",
+            "objective": ""
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "ITIL 4 Essentials",
+            "author": "Agutter, C"
+        },
+        {
+            "title": "A Guide to Service Desk Concepts (4e éd.)",
+            "author": "Knapp, D"
+        }
+    ],
+    "OnlineResources": [
+        "ITIL 4 Framework (https://www.axelos.com) [EN]",
+        "Help Desk Institute (https://www.thinkhdi.com) [EN]",
+        "ITSMF France (https://www.itsmf.fr) [FR]",
+        "Service Desk Institute (https://www.servicedeskinstitute.com) [EN]",
+        "Atlassian Service Management (https://www.atlassian.com/software/jira/service-management) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

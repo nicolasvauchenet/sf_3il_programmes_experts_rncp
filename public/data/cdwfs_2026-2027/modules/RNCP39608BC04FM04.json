@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM04",
+        "title": "Gestion des coûts et du budget",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C31",
+            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre et utiliser les outils de suivi budgétaire dans la gestion de projet (Comprendre) Maîtriser la gestion des coûts ainsi que l'analyse et l'optimisation des dépenses (Appliquer) Interpréter les indicateurs de performance financière pour prendre des décisions de gestion proactives (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Outils de suivi budgétaire",
+                "items": [
+                    "Les différents outils de suivi budgétaire disponibles",
+                    "Les critères de choix d'un outil de suivi budgétaire",
+                    "La mise en place d'un outil de suivi budgétaire adapté au projet",
+                    "L'importance de l'intégration des outils de suivi budgétaire dans la gestion de projet",
+                    "Les bonnes pratiques pour l'utilisation des outils de suivi budgétaire"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des coûts",
+                "items": [
+                    "La différence entre coûts directs et coûts indirects",
+                    "Les méthodes de prévision et de suivi des coûts",
+                    "L'analyse des écarts de coûts",
+                    "Les actions correctives en cas d'écarts importants",
+                    "L'optimisation des coûts sans compromettre la qualité du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Suivi continu des indicateurs de performance",
+                "items": [
+                    "Les principaux indicateurs de performance liés à la gestion financière",
+                    "La mise en place de tableaux de bord de suivi de la performance financière",
+                    "L'interprétation des indicateurs de performance financière",
+                    "L'articulation entre les indicateurs de performance financière et les décisions de gestion",
+                    "L'adaptation des actions en fonction des indicateurs de performance financière"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion proactive du projet",
+                "items": [
+                    "L'anticipation des risques financiers",
+                    "La planification des actions en cas de variations budgétaires importantes",
+                    "La communication des informations financières aux parties prenantes",
+                    "L'alignement des décisions de gestion sur les objectifs financiers du projet",
+                    "L'implication des équipes dans la gestion proactive des coûts"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Amélioration continue de la gestion financière",
+                "items": [
+                    "L'analyse des retours d'expérience pour améliorer la gestion financière",
+                    "L'adaptation des pratiques de gestion financière en fonction des enseignements tirés",
+                    "La capitalisation des bonnes pratiques en gestion financière",
+                    "L'évolution des outils et méthodes de gestion financière",
+                    "La contribution à l'amélioration continue des processus de gestion financière de l'organisation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Outils de suivi budgétaire",
+            "context": "Vous avez la charge d'un projet de construction et devez choisir un outil de suivi budgétaire adapté.",
+            "objective": "Pour cela, établissez une liste des critères que vous prendriez en compte pour choisir l'outil le plus adapté à ce projet. Ensuite, classez ces critères par ordre d'importance et justifiez votre classement."
+        },
+        {
+            "title": "Gestion des coûts",
+            "context": "Imaginez que vous suivez les coûts d'un projet informatique et que vous constatez un écart important entre le coût réel et le coût prévu pour une phase du projet.",
+            "objective": "Proposez trois actions correctives que vous pourriez mettre en place pour réduire cet écart tout en maintenant la qualité du projet. Expliquez en détail chacune de ces actions et justifiez leur pertinence."
+        },
+        {
+            "title": "Suivi continu des indicateurs de performance",
+            "context": "Créez un tableau de bord de suivi de la performance financière pour un projet de votre choix.",
+            "objective": "Sélectionnez au moins cinq indicateurs de performance financière pertinents à inclure dans ce tableau de bord et justifiez votre choix pour chacun des indicateurs. Expliquez également comment vous interprétez ces indicateurs et quelles actions vous pourriez entreprendre en fonction des variations observées."
+        },
+        {
+            "title": "Gestion proactive du projet",
+            "context": "Identifiez trois risques financiers potentiels pour un projet de développement de produit.",
+            "objective": "Pour chacun de ces risques, proposez un plan d'action préventif et un plan d'action en cas de réalisation du risque. Expliquez en détail les étapes de ces plans d'action, en mettant en avant l'importance de la communication des informations financières aux parties prenantes."
+        },
+        {
+            "title": "Amélioration continue de la gestion financière",
+            "context": "Analysez un retour d'expérience d'un projet passé où la gestion financière a été un enjeu majeur.",
+            "objective": "Identifiez deux points forts et deux points faibles de la gestion financière dans ce projet, puis proposez des pistes d'amélioration basées sur cette analyse. Expliquez en quoi ces pistes d'amélioration contribueraient à une meilleure gestion financière dans des projets futurs."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Gestion de projets (3e éd.)",
+            "author": "Giard, V"
+        },
+        {
+            "title": "De la gestion de projet au management par projet. AFNOR. Project Management Institute. (2023). Practice Standard for Project Estimating (3rd ed.)",
+            "author": "Joly, M. & Muller, J.-L"
+        }
+    ],
+    "OnlineResources": [
+        "PMI — Earned Value Management (https://www.pmi.org/learning/library) [EN]",
+        "AFNOR — Norme NF X50-115 Management de projet (https://www.afnor.org) [FR]",
+        "INSEE — Indicateurs économiques (https://www.insee.fr) [FR]",
+        "ProjectManager — Cost Management Templates (https://www.projectmanager.com) [EN]",
+        "Chief Project Officer — Cost Control Best Practices (https://www.cpo.global) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

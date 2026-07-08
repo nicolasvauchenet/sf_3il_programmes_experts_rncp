@@ -52,7 +52,8 @@ class UserFixtures extends Fixture
             ->setEmail($email)
             ->setFullName($fullName)
             ->setRoles($roles)
-            ->setIsActive(true);
+            ->setIsActive(true)
+            ->setIsAccepted(true);
         $user->setPassword($this->passwordHasher->hashPassword($user, $password));
     }
 }

@@ -223,6 +223,19 @@
             }
         }
 
+        .user-status-badge {
+            display: inline-block;
+            margin-left: 0.4rem;
+            padding: 0.2rem 0.35rem;
+            font-size: 0.68rem;
+            font-weight: bold;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $error;
+            background-color: rgba($error, 0.12);
+            border-radius: 0.2rem;
+        }
+
         .admin-users-actions-heading,
         .admin-users-actions-cell {
             text-align: right;

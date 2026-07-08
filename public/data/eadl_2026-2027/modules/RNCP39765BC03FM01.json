@@ -1,0 +1,122 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC03-FM01",
+        "title": "Développement avancé",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Structurer un projet Python en respectant les bonnes pratiques d'architecture logicielle (Appliquer) Mettre en place des pipelines de tests, de packaging et de qualité de code (Créer) Développer un socle applicatif avancé servant de support aux autres modules du bloc (Créer)"
+    },
+    "prerequisites": {
+        "description": ""
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Initialisation et structuration du projet (Jour 1)",
+                "items": [
+                    "Mise en place de l’environnement Python (venv, Poetry/pipenv).",
+                    "Organisation des packages et modules.",
+                    "Utilisation de Git pour la gestion de versions et workflow collaboratif.",
+                    "Premier module applicatif simple (gestion d’utilisateurs ou catalogue)."
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Programmation avancée en Python (Jour 2)",
+                "items": [
+                    "Concepts avancés de POO en Python (héritage multiple, mixins).",
+                    "Utilisation de décorateurs et gestion des exceptions.",
+                    "Introduction aux design patterns utiles (Factory, Observer).",
+                    "Développement modulaire pour préparer les futures intégrations."
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Tests et qualité logicielle (Jour 3)",
+                "items": [
+                    "Introduction à pytest et écriture de tests unitaires.",
+                    "Mise en place de tests d’intégration simples.",
+                    "Utilisation d’outils de qualité (flake8, pylint, black, mypy).",
+                    "Premiers rapports de couverture de code."
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Documentation et industrialisation (Jour 4)",
+                "items": [
+                    "Rédaction de docstrings et respect des conventions PEP257.",
+                    "Génération de documentation avec Sphinx/MkDocs.",
+                    "Création d’une API REST simple avec FastAPI.",
+                    "Structuration du projet pour distribution et maintenance."
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Projet intégrateur (Jour 5)",
+                "items": [
+                    "Consolidation de l’ensemble des acquis dans un mini-projet fil rouge.",
+                    "Développement d’une API REST documentée, testée et versionnée.",
+                    "Intégration d’un pipeline CI/CD simple.",
+                    "Présentation et soutenance du projet (15 min)."
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Création et structuration d’un projet Python complet.",
+            "context": "",
+            "objective": ""
+        },
+        {
+            "title": "Implémentation d’un design pattern dans un module métier.",
+            "context": "",
+            "objective": ""
+        },
+        {
+            "title": "Rédaction et exécution de tests unitaires et d’intégration avec pytest.",
+            "context": "",
+            "objective": ""
+        },
+        {
+            "title": "Analyse et correction des problèmes de qualité détectés par pylint/flake8.",
+            "context": "",
+            "objective": ""
+        },
+        {
+            "title": "Génération de documentation technique et mise en place d’un pipeline CI/CD.",
+            "context": "",
+            "objective": ""
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Fluent Python (2e éd.)",
+            "author": "Ramalho, L"
+        },
+        {
+            "title": "Effective Python (3e éd.)",
+            "author": "Slatkin, B"
+        }
+    ],
+    "OnlineResources": [
+        "Python Official Documentation (https://docs.python.org/fr/3/) [FR/EN]",
+        "Real Python (https://realpython.com) [EN]",
+        "Python Enhancement Proposals (https://peps.python.org) [EN]",
+        "Awesome Python (https://github.com/vinta/awesome-python) [EN]",
+        "Full Stack Python (https://www.fullstackpython.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

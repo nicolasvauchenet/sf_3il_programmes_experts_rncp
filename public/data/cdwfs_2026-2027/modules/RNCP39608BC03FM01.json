@@ -1,0 +1,116 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC03-FM01",
+        "title": "Linux : administration système et optimisation",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les fondamentaux de l'administration système Linux (Comprendre) Maîtriser les commandes et outils d'optimisation des performances système (Appliquer) Diagnostiquer et résoudre les problèmes de performance ou de sécurité (Analyser)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et en systèmes d'exploitation, expérience préalable avec des commandes fondamentales de terminal, compréhension basique des concepts réseau."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à Linux",
+                "items": [
+                    "Historique et principes de base",
+                    "Différences avec les systèmes d'exploitation concurrents",
+                    "Les distributions les plus courantes",
+                    "Les avantages de l'utilisation de Linux",
+                    "Les principaux acteurs de la communauté Linux"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Installation et configuration de Linux",
+                "items": [
+                    "Les différentes méthodes d'installation",
+                    "Configuration du réseau",
+                    "Gestion des utilisateurs et des groupes",
+                    "La gestion des permissions",
+                    "Les principaux outils de gestion du système"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Administration avancée de Linux",
+                "items": [
+                    "Gestion des processus",
+                    "Surveillance des performances du système",
+                    "Gestion des services et des démons",
+                    "Automatisation des tâches avec les scripts",
+                    "Gestion avancée des disques et des systèmes de fichiers"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Virtualisation et conteneurisation sous Linux",
+                "items": [
+                    "Concepts de virtualisation et de conteneurisation",
+                    "Les outils de virtualisation et de conteneurisation sous Linux",
+                    "Mise en place d'environnements virtualisés",
+                    "Gestion des conteneurs avec Docker",
+                    "Bonnes pratiques et limites de la virtualisation et de la conteneurisation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Introduction à Linux",
+            "context": "En utilisant les ressources fournies, choisissez une distribution Linux et expliquez en quelques phrases pourquoi vous l'avez choisie.",
+            "objective": "Indiquez également les avantages de l'utilisation de Linux par rapport à d'autres systèmes d'exploitation."
+        },
+        {
+            "title": "Installation et configuration de Linux",
+            "context": "Installez une distribution Linux sur une machine virtuelle ou un ordinateur dédié, puis configurez le réseau en attribuant une adresse IP statique.",
+            "objective": "Créez un utilisateur et un groupe, puis gérez les permissions pour ces utilisateurs."
+        },
+        {
+            "title": "Administration avancée de Linux",
+            "context": "Surveillez les performances de votre système en utilisant des outils comme top, htop ou vmstat.",
+            "objective": "Identifiez un processus gourmand en ressources et gérez-le en conséquence. Créez un script pour automatiser une tâche de maintenance système."
+        },
+        {
+            "title": "Virtualisation et conteneurisation sous Linux",
+            "context": "Installez Docker sur votre système et créez un conteneur pour exécuter une application.",
+            "objective": "Explorez les fonctionnalités de gestion des conteneurs Docker et identifiez les limites de la virtualisation et de la conteneurisation pour les différents cas d'utilisation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "UNIX and Linux System Administration Handbook (5th ed.)",
+            "author": "Nemeth, E. et al"
+        },
+        {
+            "title": "Understanding the Linux Kernel (4th ed.)",
+            "author": "Bovet, D. P. & Cesati, M"
+        },
+        {
+            "title": "The Design of the UNIX Operating System",
+            "author": "Bach, M. J"
+        }
+    ],
+    "OnlineResources": [
+        "Linux Kernel Documentation (https://www.kernel.org/doc/) [EN]",
+        "ArchLinux Wiki (https://wiki.archlinux.org) [EN/FR]",
+        "Red Hat Documentation (https://access.redhat.com/documentation/) [EN]",
+        "Linuxfr.org — Communauté francophone (https://linuxfr.org) [FR]",
+        "Brendan Gregg — Performance tools (https://www.brendangregg.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

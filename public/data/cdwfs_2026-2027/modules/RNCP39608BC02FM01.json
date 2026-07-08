@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM01",
+        "title": "Développement et Framework Back-end",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement en paramétrant un IDE et en utilisant le terminal afin de l'aligner de l'environnement de production cible"
+        },
+        {
+            "code": "C08",
+            "description": "Élaborer et implémenter des solutions Back-end en appliquant la programmation orientée objet (POO), en utilisant des architectures MVC ainsi que les Frameworks adaptés pour structurer un code robuste et maintenable"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Se familiariser avec les principaux frameworks Back-end et leur utilisation dans le développement web (Comprendre) Structurer ses projets, gérer les données et développer des fonctionnalités robustes et sécurisées (Créer) Tester et déployer efficacement ses applications (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance des langages de programmation orientés objet, compréhension des concepts de base des bases de données et des requêtes SQL, et une première expérience en développement web Front-end."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux Frameworks Back-end",
+                "items": [
+                    "Présentation des Frameworks Back-end",
+                    "Avantages et inconvénients des Frameworks Back-end",
+                    "Choix du framework en fonction des besoins du projet",
+                    "Comparaison entre différents Frameworks Symfony, Laravel, Django, Spring Boot …",
+                    "Installation et configuration du framework choisi"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Structure et Organisation du Projet",
+                "items": [
+                    "Architecture MVC (Modèle-Vue-Contrôleur)",
+                    "Organisation des fichiers et des dossiers",
+                    "Gestion des dépendances et des bibliothèques",
+                    "Création des modèles de données",
+                    "Gestion des routes et des URL"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion des Données",
+                "items": [
+                    "Connexion à la base de données",
+                    "Utilisation des requêtes SQL/NOSQL",
+                    "ORM (Object-Relational Mapping)",
+                    "Migration et seeding des données",
+                    "Gestion des transactions et des relations entre les données"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Développement des Fonctionnalités",
+                "items": [
+                    "Création des contrôleurs et des vues",
+                    "Gestion des formulaires et des validations",
+                    "Sécurité et gestion des sessions",
+                    "Gestion des exceptions et des erreurs",
+                    "Utilisation des services et des providers"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Tests et Déploiement",
+                "items": [
+                    "Mise en place des tests unitaires et fonctionnels",
+                    "Stratégies de déploiement (local, staging, production)",
+                    "Optimisation des performances",
+                    "Gestion des environnements de développement",
+                    "Monitoring et gestion des logs"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Choix du Framework Back-end",
+            "context": "Vous venez d'intégrer une nouvelle équipe de développement.",
+            "objective": "Votre responsable vous confie la tâche de choisir un framework Back-end pour un nouveau projet. Vous devez réaliser une présentation comparative des frameworks Symfony, Laravel, Django, et Spring Boot en mettant en avant les avantages et les inconvénients de chacun. À la fin de votre présentation, vous devrez justifier votre choix du framework pour le projet en prenant en compte les besoins spécifiques de celui-ci."
+        },
+        {
+            "title": "Structure et Organisation du Projet",
+            "context": "Vous êtes amené à mettre en place la structure d'un nouveau projet Back-end en utilisant le framework choisi.",
+            "objective": "Vous devez créer une architecture suivant le modèle MVC (Modèle-Vue- Contrôleur), organiser les fichiers et les dossiers, gérer les dépendances et les bibliothèques, et enfin définir les modèles de données. Vous présenterez votre structure de projet en justifiant vos choix d'organisation et d'architecture."
+        },
+        {
+            "title": "Gestion des Données avec le Framework",
+            "context": "Pour un projet spécifique, vous devez mettre en place la gestion des données en utilisant le framework choisi.",
+            "objective": "Vous devez réaliser la connexion à une base de données, écrire des requêtes SQL/ NOSQL, mettre en place un ORM (Object-Relational Mapping), effectuer des migrations et des seedings de données, et gérer les relations entre les données. À la fin de l'exercice, vous présenterez un schéma de la base de données avec les entités et les relations établies."
+        },
+        {
+            "title": "Développement des Fonctionnalités",
+            "context": "Vous devez développer une fonctionnalité spécifique pour le projet en utilisant le framework Back-end.",
+            "objective": "Cette fonctionnalité implique la création de contrôleurs et de vues, la gestion des formulaires et des validations, la sécurisation des sessions, ainsi que la gestion des exceptions et des erreurs. Vous présenterez le code développé ainsi que les choix effectués pour assurer la sécurité et la fiabilité de la fonctionnalité."
+        },
+        {
+            "title": "Tests et Déploiement",
+            "context": "Dans le cadre de la préparation du déploiement d'une application développée avec le framework choisi, vous devez mettre en place des tests unitaires et fonctionnels.",
+            "objective": "En parallèle, vous allez élaborer une stratégie de déploiement adaptée (local, staging, production), optimiser les performances de l'application, gérer les environnements de développement, et prévoir un système de monitoring et de gestion des logs. Vous présenterez votre stratégie de tests et de déploiement, ainsi que les solutions mises en place pour assurer la performance et la fiabilité de l'application."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Symfony 6 : Le guide du développeur",
+            "author": "Potencier, F"
+        },
+        {
+            "title": "Laravel: Up & Running (3rd ed.)",
+            "author": "Stauffer, M"
+        },
+        {
+            "title": "Python Web Development with Django (2nd ed.)",
+            "author": "Forcier, J"
+        }
+    ],
+    "OnlineResources": [
+        "Symfony documentation (https://symfony.com/doc) [FR/EN]",
+        "Laravel documentation (https://laravel.com/docs) [EN]",
+        "Django documentation (https://docs.djangoproject.com/fr/) [FR/EN]",
+        "Spring Boot Reference Guide (https://docs.spring.io/spring-boot/docs/current/reference/html/) [EN]",
+        "MDN Web Docs — Server-side (https://developer.mozilla.org/fr/docs/Learn/Server-side) [FR/EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

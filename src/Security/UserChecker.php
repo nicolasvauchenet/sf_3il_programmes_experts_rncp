@@ -15,7 +15,7 @@ final class UserChecker implements UserCheckerInterface
             return;
         }
 
-        if (!$user->isActive()) {
+        if (!$user->isActive() || !$user->isAccepted()) {
             throw new CustomUserMessageAccountStatusException("ce compte n'existe pas");
         }
     }

@@ -1,0 +1,136 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC01-FM04",
+        "title": "Framework et bibliothèque Front-end",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives Front-end",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C06",
+            "description": "Structurer et Intégrer des interfaces utilisateur riches et réactives adaptées aux besoins spécifiques du projet en sélectionnant et utilisant des bibliothèques et des framework modernes pour améliorer la productivité et la maintenabilité du code"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir les compétences nécessaires pour choisir et configurer un framework moderne pour le développement d'applications web (Appliquer) Créer, gérer et optimiser des interfaces réactives avec gestion d'état et communication API (Créer) Déployer des applications web performantes et sécurisées (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en développement web (HTML, CSS, JavaScript) et des principes de la programmation orientée objet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux Framework modernes",
+                "items": [
+                    "Présentation des avantages des framework modernes pour les interfaces réactives",
+                    "Comparaison des principaux framework (React, Vue.js, Angular)",
+                    "Choix du framework en fonction des besoins du projet",
+                    "Installation et configuration de l'environnement de développement pour le framework choisi",
+                    "Présentation des concepts de base du framework (composants, directives, data binding, etc.)"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Composants et Routage",
+                "items": [
+                    "Création et utilisation de composants dans le framework",
+                    "Gestion du routage pour la navigation au sein de l'application",
+                    "Passage de paramètres via les routes",
+                    "Utilisation des guards pour contrôler l'accès aux routes",
+                    "Création de layouts et de nested routes"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion d'état avec le framework",
+                "items": [
+                    "Compréhension du concept de state management dans le contexte des framework modernes",
+                    "Utilisation des outils de gestion d'état propres au framework (ex: Redux pour React, Vuex pour Vue.js)",
+                    "Gestion des données asynchrones avec les actions et mutations",
+                    "Mise en place de la persistance des données avec les stores",
+                    "Optimisation des performances liées à la gestion d'état"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Communication avec les APIs",
+                "items": [
+                    "Utilisation des services pour les appels aux APIs",
+                    "Gestion des requêtes HTTP avec les modules dédiés du framework",
+                    "Transformation des données reçues des APIs avant leur utilisation dans l'application",
+                    "Gestion des erreurs et des codes de statut HTTP",
+                    "Sécurisation des appels aux APIs (gestion des tokens, CORS, etc.)"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Optimisation des performances et déploiement",
+                "items": [
+                    "Techniques d'optimisation des performances des applications basées sur le framework",
+                    "Utilisation des outils de profiling et de monitoring pour identifier les points de performance critiques",
+                    "Mise en place d'une stratégie de caching pour améliorer la réactivité de l'application",
+                    "Processus de build et de déploiement d'une application basée sur le framework",
+                    "Bonnes pratiques de déploiement pour garantir la fiabilité et la sécurité de l'application"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Introduction aux Framework modernes",
+            "context": "Pour cet exercice, les apprenants devront réaliser une étude comparative des principaux framework modernes (React, Vue.js, Angular).",
+            "objective": "Ils devront identifier les avantages et les inconvénients de chaque framework, en mettant en avant des exemples concrets d'application pour illustrer leur analyse. Ensuite, ils devront justifier le choix d'un framework pour un projet spécifique, en prenant en considération les besoins et les contraintes du projet."
+        },
+        {
+            "title": "Composants et Routage",
+            "context": "Les apprenants auront pour tâche de créer une application simple utilisant des composants et le routage.",
+            "objective": "Ils devront concevoir une interface avec plusieurs composants interconnectés et gérer la navigation entre ces composants à l'aide du routage. De plus, ils devront mettre en place des paramètres de route et des guards pour contrôler l'accès à certaines pages de l'application."
+        },
+        {
+            "title": "Gestion d'état avec le framework",
+            "context": "Dans cet exercice, les apprenants devront créer une application qui met en œuvre la gestion d'état à l'aide des outils spécifiques au framework étudié (par exemple, Redux pour React ou Vuex pour Vue.js).",
+            "objective": "Ils devront comprendre la notion de state management et implémenter des actions, des mutations et des stores pour gérer les données asynchrones et assurer la persistance des données."
+        },
+        {
+            "title": "Communication avec les APIs",
+            "context": "Les apprenants devront concevoir un module de leur application qui communique avec une API externe.",
+            "objective": "Ils devront mettre en place des services pour effectuer des appels aux APIs, gérer les requêtes HTTP, traiter les données reçues et gérer les erreurs éventuelles. De plus, ils devront implémenter des mécanismes de sécurité tels que la gestion des tokens et la gestion des CORS pour assurer la sécurisation des appels aux APIs."
+        },
+        {
+            "title": "Optimisation des performances et déploiement",
+            "context": "Pour cet exercice, les apprenants devront optimiser les performances d'une application existante basée sur le framework étudié.",
+            "objective": "Ils devront utiliser des outils de profiling et de monitoring pour identifier les points de performance critiques, mettre en place une stratégie de caching et enfin, procéder au build et au déploiement de l'application en suivant les bonnes pratiques de déploiement pour garantir sa fiabilité et sa sécurité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Learning React (2nd ed.)",
+            "author": "Banks, A. & Porcello, E"
+        },
+        {
+            "title": "Vue.js: Up and Running (2nd ed.)",
+            "author": "Macrae, C"
+        },
+        {
+            "title": "The Road to React (4th ed.)",
+            "author": "Wieruch, R"
+        }
+    ],
+    "OnlineResources": [
+        "React documentation officielle (https://react.dev) [EN]",
+        "Vue.js documentation (https://vuejs.org) [FR/EN]",
+        "Angular documentation (https://angular.dev) [EN]",
+        "Redux Toolkit Guide (https://redux-toolkit.js.org) [EN]",
+        "MDN Web Docs — Web APIs (https://developer.mozilla.org/fr/docs/Web/API) [FR/EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

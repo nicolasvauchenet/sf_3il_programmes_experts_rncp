@@ -34,6 +34,7 @@ final class UsersController extends AbstractController
         'active' => 'Actif',
         'inactive' => 'Inactif',
         'disabled' => 'Désactivé',
+        'unaccepted' => 'En attente',
     ];
 
     #[Route(name: 'home')]
@@ -100,7 +101,8 @@ final class UsersController extends AbstractController
                 ->setFullName($input->fullName)
                 ->setEmail($input->email)
                 ->setRoles([$input->role])
-                ->setIsActive(!$input->disabled);
+                ->setIsActive(!$input->disabled)
+                ->setIsAccepted(true);
 
             $user->setPassword($passwordHasher->hashPassword($user, $input->password));
 
@@ -191,6 +193,23 @@ final class UsersController extends AbstractController
             $user->getFullName(),
             $user->isActive() ? 'activé' : 'désactivé',
         ));
+
+        return $this->redirectBackToUsersList($request);
+    }
+
+    #[Route('/{id}/accepter', name: 'accept', methods: ['GET'])]
+    public function accept(Request $request, User $user, EntityManagerInterface $entityManager): RedirectResponse
+    {
+        if ($user->isAccepted()) {
+            $this->addFlash('success', sprintf('Le compte de %s est déjà accepté.', $user->getFullName()));
+
+            return $this->redirectBackToUsersList($request);
+        }
+
+        $user->setIsAccepted(true);
+        $entityManager->flush();
+
+        $this->addFlash('success', sprintf('Le compte de %s a été accepté.', $user->getFullName()));
 
         return $this->redirectBackToUsersList($request);
     }
@@ -310,7 +329,7 @@ final class UsersController extends AbstractController
     /**
      * @param list<User> $users
      *
-     * @return array{total: int, teachers: int, students: int, inactive: int, disabled: int}
+     * @return array{total: int, teachers: int, students: int, inactive: int, disabled: int, unaccepted: int}
      */
     private function buildStats(array $users): array
     {
@@ -320,6 +339,7 @@ final class UsersController extends AbstractController
             'students' => 0,
             'inactive' => 0,
             'disabled' => 0,
+            'unaccepted' => 0,
         ];
 
         foreach ($users as $user) {
@@ -331,6 +351,10 @@ final class UsersController extends AbstractController
 
             if (in_array('ROLE_STUDENT', $roles, true)) {
                 ++$stats['students'];
+            }
+
+            if (!$user->isAccepted()) {
+                ++$stats['unaccepted'];
             }
 
             if (!$user->isActive()) {
@@ -349,7 +373,7 @@ final class UsersController extends AbstractController
     }
 
     /**
-     * @return array{id: int|null, role: string, fullName: string, email: string, isActive: bool, canDelete: bool, createdAt: \DateTimeImmutable|null, loggedAt: \DateTimeImmutable|null}
+     * @return array{id: int|null, role: string, fullName: string, email: string, isActive: bool, isAccepted: bool, canDelete: bool, createdAt: \DateTimeImmutable|null, loggedAt: \DateTimeImmutable|null}
      */
     private function normalizeUser(User $user): array
     {
@@ -359,6 +383,7 @@ final class UsersController extends AbstractController
             'fullName' => $user->getFullName() ?? '-',
             'email' => $user->getEmail() ?? '-',
             'isActive' => $user->isActive(),
+            'isAccepted' => $user->isAccepted(),
             'canDelete' => self::PROTECTED_ADMIN_EMAIL !== $user->getEmail(),
             'createdAt' => $user->getCreatedAt(),
             'loggedAt' => $user->getLoggedAt(),

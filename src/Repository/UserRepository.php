@@ -95,6 +95,7 @@ class UserRepository extends ServiceEntityRepository
             'active' => $user->isActive() && null !== $user->getLoggedAt(),
             'inactive' => $user->isActive() && null === $user->getLoggedAt(),
             'disabled' => !$user->isActive(),
+            'unaccepted' => !$user->isAccepted(),
             default => true,
         };
     }

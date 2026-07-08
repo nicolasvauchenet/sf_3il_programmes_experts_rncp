@@ -1,0 +1,146 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC04-FM02",
+        "title": "Infrastructure As Code",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing.",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C22",
+            "description": "Automatiser la configuration et la gestion des ressources cloud en utilisant des outils comme Terraform et Ansible, assurant ainsi une gestion précise et reproductible des environnements pour réduire les erreurs manuelles et accélérer les déploiements"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les concepts et avantages de l'automatisation dans le Cloud (Comprendre) Maîtriser l'utilisation d'outils IaC (Terraform, Ansible) pour gérer et configurer des infrastructures (Appliquer) Appliquer les bonnes pratiques et concepts dans des projets pratiques d'automatisation (Créer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et réseaux, compréhension des concepts du Cloud computing, expérience ou connaissance préalable en administration système."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'automatisation dans le Cloud avec Terraform et Ansible",
+                "items": [
+                    "Comprendre les concepts d'automatisation",
+                    "Différencier Terraform et Ansible",
+                    "Comprendre l'importance de l'automatisation dans le Cloud",
+                    "Identifier les cas d'utilisation pour Terraform et Ansible",
+                    "Comprendre les avantages de l'automatisation dans le Cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Prise en main de Terraform",
+                "items": [
+                    "Installation et configuration de Terraform",
+                    "Syntaxe et structure des fichiers de configuration Terraform",
+                    "Création et gestion des ressources avec Terraform",
+                    "Utilisation des modules Terraform pour la réutilisation du code",
+                    "Gestion de l'état avec Terraform"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Automatisation des tâches avec Ansible",
+                "items": [
+                    "Installation et configuration d'Ansible",
+                    "Compréhension des playbooks Ansible",
+                    "Gestion des inventaires et des variables",
+                    "Utilisation des modules Ansible pour automatiser les tâches",
+                    "Déploiement et configuration des applications avec Ansible"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Intégration de Terraform et Ansible",
+                "items": [
+                    "Compréhension de l'interopérabilité entre Terraform et Ansible",
+                    "Utilisation de Terraform pour le provisionning des infrastructures",
+                    "Intégration d'Ansible pour la configuration des infrastructures provisionnées",
+                    "Gestion des dépendances et de l'ordre d'exécution",
+                    "Automatisation de l'ensemble du cycle de vie des infrastructures"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Bonnes pratiques et cas d'utilisation avancés",
+                "items": [
+                    "Mise en place de bonnes pratiques d'automatisation avec Terraform et Ansible",
+                    "Gestion des erreurs et des mises à jour dans un environnement automatisé",
+                    "Cas d'utilisation avancés de Terraform et Ansible",
+                    "Sécurisation des processus d'automatisation",
+                    "Utilisation des modules externes et des plugins pour étendre les fonctionnalités"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Étude de cas et projet pratique",
+                "items": [
+                    "Analyse d'un cas d'utilisation réel pour l'automatisation avec Terraform et Ansible",
+                    "Conception et réalisation d'un projet pratique d'automatisation dans le Cloud",
+                    "Application des concepts appris pour résoudre des problèmes concrets",
+                    "Présentation des résultats et des bonnes pratiques",
+                    "Évaluation des performances et des avantages de l'automatisation dans le Cloud"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Création d'une infrastructure basique avec Terraform Énoncé :",
+            "context": "Vous êtes un ingénieur DevOps et avez reçu la tâche de déployer une infrastructure basique sur un fournisseur de cloud de votre choix (par exemple AWS, Azure, GCP).",
+            "objective": "Utilisez Terraform pour écrire et appliquer une configuration qui crée une instance de serveur virtuel (par exemple EC2 pour AWS). Votre configuration doit inclure : Un provider configuré pour le cloud choisi. Une ressource pour une instance de serveur virtuel, avec une image de serveur (AMI pour AWS) et une configuration de type d'instance spécifiée. Des outputs pour afficher l'adresse IP publique de l'instance créée. Assurez-vous de tester votre code Terraform en l'appliquant pour créer l'infrastructure, et puis en la détruisant après vérification."
+        },
+        {
+            "title": "Automatisation d'une configuration avec Ansible Énoncé :",
+            "context": "Maintenant que vous avez votre instance de serveur virtuel créée, il est temps d'automatiser sa configuration.",
+            "objective": "Votre objectif est d'utiliser Ansible pour installer un serveur web NGINX sur cette instance. Créez un playbook Ansible qui : Définit votre instance de serveur comme l'hôte cible. Installe NGINX sur l'instance. Assure que le service NGINX est démarré et activé au démarrage de l'instance Utilise une tâche pour créer un fichier index.html personnalisé dans le répertoire de NGINX. Testez votre playbook pour vous assurer que le serveur web est correctement installé et accessible via l'adresse IP publique de l'instance."
+        },
+        {
+            "title": "Intégration de Terraform et Ansible Énoncé :",
+            "context": "Afin de combiner les capacités de Terraform et Ansible, vous allez créer un workflow qui provisionne une infrastructure avec Terraform et la configure ensuite avec Ansible.",
+            "objective": "Votre tâche est de : Modifier le fichier Terraform de l'exercice 1 pour inclure un fichier d'inventaire Ansible dynamique (peut être un template de fichier). Assurer que l'adresse IP de l'instance est automatiquement mise à jour dans l'inventaire Ansible après que l'infrastructure est créée. Écrire un script ou une commande qui exécute le playbook Ansible de l'exercice 2 après la création de l'infrastructure par Terraform. Déployez et configurez votre infrastructure automatiquement en exécutant Terraform suivi par Ansible."
+        },
+        {
+            "title": "Gestion des erreurs et des mises à jour Énoncé :",
+            "context": "Simulez un scénario de gestion des erreurs et des mises à jour dans votre environnement automatisé.",
+            "objective": "Imaginez que le type d'instance de votre serveur doit être mis à jour pour supporter une charge plus importante, et que la mise à jour doit être effectuée sans interruption de service. Réalisez les étapes suivantes : Mettez à jour votre configuration Terraform pour changer le type d'instance de votre serveur virtuel. Appliquez la mise à jour avec Terraform tout en gérant les erreurs potentielles qui pourraient survenir. Documentez la procédure que vous avez suivie, y compris les mesures prises pour minimiser le temps d'arrêt et les erreurs."
+        },
+        {
+            "title": "Projet d'automatisation complet Énoncé :",
+            "context": "Pour cet exercice, vous devez concevoir et exécuter un projet d'automatisation qui utilise à la fois Terraform et Ansible.",
+            "objective": "Prenons en exemple le déploiement d'une application simple sur plusieurs serveurs avec une base de données. Votre projet doit inclure : Une configuration Terraform qui crée une architecture comprenant au moins deux serveurs applicatifs et une instance de base de données. Un playbook Ansible qui configure les serveurs avec l'application nécessaire et la base de données. L'automatisation doit inclure des tâches telles que la création d'utilisateurs, la configuration de la sécurité et l'installation des dépendances de l'application. Assurez-vous d'intégrer des bonnes pratiques, telles que l'utilisation de variables, de modules et de gestion d'erreurs. Après le déploiement, validez le fonctionnement de l'application et de la base de données, et présentez un bref rapport de vos observations et des avantages apportés par l'automatisation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Infrastructure as Code (3e éd.)",
+            "author": "Morris, K"
+        },
+        {
+            "title": "Terraform: Up and Running (3e éd.)",
+            "author": "Brikman, Y"
+        },
+        {
+            "title": "Ansible: Up and Running (3e éd.)",
+            "author": "Hochstein, L. & Moser, R"
+        }
+    ],
+    "OnlineResources": [
+        "Terraform Documentation (https://developer.hashicorp.com/terraform/docs) [EN]",
+        "Ansible Documentation (https://docs.ansible.com) [EN]",
+        "Pulumi Documentation (https://www.pulumi.com/docs/) [EN]",
+        "AWS CloudFormation (https://docs.aws.amazon.com/cloudformation/) [EN]",
+        "Microsoft Bicep (https://learn.microsoft.com/azure/azure-resource-manager/bicep/) [FR/EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

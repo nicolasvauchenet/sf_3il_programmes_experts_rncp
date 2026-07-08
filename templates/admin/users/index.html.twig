@@ -70,6 +70,7 @@
                             <span class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
                             <span class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
                             <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.unaccepted }} en attente</span>
                         </div>
                     </section>
 
@@ -123,7 +124,12 @@
                                 {% for user in users %}
                                     <tr class="{{ not user.isActive ? 'is-disabled' : '' }}">
                                         <td data-label="Rôle">{{ user.role }}</td>
-                                        <td data-label="Nom">{{ user.fullName }}</td>
+                                        <td data-label="Nom">
+                                            {{ user.fullName }}
+                                            {% if not user.isAccepted %}
+                                                <span class="user-status-badge">En attente</span>
+                                            {% endif %}
+                                        </td>
                                         <td data-label="Email">{{ user.email }}</td>
                                         <td data-label="Création">
                                             {{ user.createdAt ? user.createdAt|date('d/m/Y H:i') : '-' }}
@@ -140,6 +146,9 @@
                                                     <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}">
                                                         {{ user.isActive ? 'Désactiver' : 'Activer' }}
                                                     </a>
+                                                    {% if not user.isAccepted %}
+                                                        <a href="{{ path('app_admin_users_accept', { id: user.id }) }}">Accepter</a>
+                                                    {% endif %}
                                                     {% if user.canDelete %}
                                                         <form
                                                             method="post"

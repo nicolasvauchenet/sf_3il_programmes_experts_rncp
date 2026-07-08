@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC04-FM03",
+        "title": "Gestion de projet architecture",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Orchestrer et animer des projets informatiques en utilisant des méthodologies agiles pour planifier, exécuter et surveiller le travail de développement, et en facilitant la communication entre toutes les parties prenantes y compris en situation de handicap pour atteindre les objectifs définis"
+        },
+        {
+            "code": "C26",
+            "description": "Optimiser la gestion des projets en termes d’avancement, gestion des priorités et ajustements grâce à des outils de gestion de projet tels que JIRA ou Trello afin de maximiser l'efficacité de l'équipe, respecter les délais et garantir la qualité des livrables"
+        },
+        {
+            "code": "C27",
+            "description": "Gérer le budget de projet en utilisant des outils de gestion financière (ex. Microsoft Project, Excel, ou des logiciels spécialisés comme SAP) et des techniques de budgétisation (ex. répartition des coûts, analyse de la valeur acquise), en respectant les contraintes financières et temporelles du projet, afin d'assurer une utilisation optimale des ressources et de garantir la rentabilité et le succès du projet"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Concevoir une architecture informatique alignée sur les besoins métiers (Créer) Gérer les risques et assurer la sécurité de l'architecture (Évaluer) Modéliser, documenter et piloter l'architecture jusqu'à la phase d'exploitation (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique, compréhension des concepts de gestion de projet, expérience ou connaissance préalable des principes d'architecture informatique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Méthodologie de conception d'architecture",
+                "items": [
+                    "Comprendre les besoins métier et les contraintes techniques",
+                    "Définir les objectifs de l'architecture à mettre en place",
+                    "Analyser l'existant et identifier les éventuelles limitations",
+                    "Définir les principes d'architecture à respecter",
+                    "Mettre en place une démarche itérative pour la conception"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des risques et sécurité de l'architecture",
+                "items": [
+                    "Identifier les risques liés à l'architecture",
+                    "Mettre en place des mesures de sécurité adaptées",
+                    "Anticiper les évolutions technologiques et les risques",
+                    "Assurer la conformité aux normes et réglementations en vigueur",
+                    "Évaluer les impacts des risques sur le projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Choix technologiques et outils d'architecture",
+                "items": [
+                    "Évaluer les différentes technologies disponibles",
+                    "Sélectionner les outils d'architecture adaptés aux besoins du projet",
+                    "Intégrer les contraintes de performances et de scalabilité",
+                    "Assurer l'interopérabilité des solutions retenues",
+                    "Garantir la pérennité des choix technologiques"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Conception et modélisation de l'architecture",
+                "items": [
+                    "Définir les différents composants de l'architecture",
+                    "Modéliser l'architecture à l'aide d'outils appropriés",
+                    "Assurer la cohérence et l'intégration des différents composants",
+                    "Documenter l'architecture de manière exhaustive",
+                    "Valider la conception avec les parties prenantes du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Pilotage et suivi de la mise en œuvre de l'architecture",
+                "items": [
+                    "Établir un planning détaillé pour la mise en œuvre",
+                    "Suivre l'avancement des différentes étapes de déploiement",
+                    "Anticiper les éventuels retards et mettre en place des actions correctives",
+                    "Organiser les phases de tests et de recette",
+                    "Assurer la transition vers l'exploitation et la maintenance de l'architecture"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Méthodologie de conception d'architecture",
+            "context": "Vous allez travailler en groupe pour concevoir l'architecture d'un système de gestion de stock pour une entreprise de vente en ligne.",
+            "objective": "Pour cela, vous devrez : Identifier les besoins métier et les contraintes techniques liés à la gestion de stock. Définir les objectifs de l'architecture à mettre en place pour optimiser la gestion de stock. Analyser l'existant de l'entreprise et identifier les éventuelles limitations qui pourraient impacter l'architecture. Proposer une démarche itérative pour la conception de l'architecture en prenant en compte les retours d'expérience des utilisateurs."
+        },
+        {
+            "title": "Gestion des risques et sécurité de l'architecture",
+            "context": "Vous allez simuler un atelier de gestion des risques et sécurité pour une architecture cloud.",
+            "objective": "Chaque participant devra: Identifier les risques liés à une architecture basée sur le cloud, en se basant sur des cas concrets. Proposer des mesures de sécurité adaptées pour prévenir ou contrer ces risques. Évaluer les impacts de ces risques sur la continuité de l'activité de l'entreprise. Préparer une présentation des mesures de sécurité proposées, en mettant en avant les avantages par rapport aux risques identifiés."
+        },
+        {
+            "title": "Choix technologiques et outils d'architecture",
+            "context": "Vous aurez pour mission de réaliser une étude comparative des différentes technologies disponibles pour la mise en place d'une architecture orientée microservices.",
+            "objective": "Pour cela, vous devrez : Évaluer trois technologies adaptées à la mise en place de microservices, en prenant en compte leurs avantages et inconvénients. Sélectionner un outil d'architecture adapté aux besoins du projet en justifiant votre choix. Intégrer les contraintes de performances et de scalabilité liées à l'architecture en microservices dans votre étude. Garantir la pérennité des choix technologiques en anticipant les évolutions futures."
+        },
+        {
+            "title": "Conception et modélisation de l'architecture",
+            "context": "Dans cet exercice individuel, vous devrez concevoir l'architecture d'un système de commande en ligne pour une chaîne de restaurants.",
+            "objective": "Vous devrez : Définir les différents composants de l'architecture en prenant en compte les besoins spécifiques des restaurants. Modéliser l'architecture à l'aide d'un outil approprié de votre choix. Assurer la cohérence et l'intégration des différents composants dans votre modélisation. Documenter de manière exhaustive l'architecture conçue, en précisant les interactions entre les composants."
+        },
+        {
+            "title": "Pilotage et suivi de la mise en œuvre de l'architecture",
+            "context": "En équipe, vous serez amenés à simuler le pilotage et le suivi de la mise en œuvre d'une architecture de système de paiement en ligne pour une start-up.",
+            "objective": "Chaque membre de l'équipe devra : Établir un planning détaillé pour la mise en œuvre de l'architecture, en tenant compte des contraintes de temps et de ressources. Suivre l'avancement des différentes étapes de déploiement en identifiant les éventuels retards et en proposant des actions correctives. Organiser les phases de tests et de recette pour valider le bon fonctionnement de l'architecture de paiement. Assurer une transition fluide vers l'exploitation et la maintenance de l'architecture, en intégrant les retours et les ajustements nécessaires à cette transition."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Patterns of Enterprise Application Architecture",
+            "author": "Fowler, M"
+        },
+        {
+            "title": "Fundamentals of Software Architecture (2e éd.)",
+            "author": "Richards, M. & Ford, N"
+        }
+    ],
+    "OnlineResources": [
+        "TOGAF Standard (https://www.opengroup.org/togaf) [EN]",
+        "Microsoft Azure Architecture Center (https://learn.microsoft.com/azure/architecture/) [FR/EN]",
+        "AWS Architecture Center (https://aws.amazon.com/architecture/) [EN]",
+        "CIGREF — Architecture d'entreprise (https://www.cigref.fr) [FR]",
+        "IEEE Software Architecture (https://www.computer.org/csdl/magazine/so) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

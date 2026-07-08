@@ -1,0 +1,146 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC04-FM03",
+        "title": "Optimisation des performances Cloud",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing.",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C24",
+            "description": "Analyser et optimiser la performance des systèmes cloud en employant des outils de monitoring pour identifier les goulets d'étranglement et optimiser les configurations, garantissant des performances optimales et une expérience utilisateur améliorée"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux de l'optimisation des performances dans le Cloud (Comprendre) Identifier et utiliser des outils de monitoring pour améliorer les performances (Appliquer) Appliquer des stratégies pour optimiser les performances des applications et des services Cloud (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base des concepts Cloud et des systèmes d'information, familiarité avec les outils de monitoring, et compréhension des principes de base de gestion des performances."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'optimisation des performances Cloud",
+                "items": [
+                    "Comprendre les enjeux de l'optimisation des performances dans un environnement Cloud",
+                    "Identifier les principaux indicateurs de performance à surveiller",
+                    "Comprendre l'impact des performances sur les coûts et la satisfaction des utilisateurs",
+                    "Connaître les outils de monitoring et d'analyse des performances Cloud",
+                    "Définir les objectifs d'optimisation des performances"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Outils de monitoring des performances Cloud",
+                "items": [
+                    "Présentation des outils de monitoring les plus utilisés dans les environnements Cloud",
+                    "Configuration et déploiement des outils de monitoring",
+                    "Collecte et analyse des données de performances",
+                    "Utilisation des tableaux de bord pour visualiser les performances",
+                    "Mise en place d'alertes et de notifications en cas de dégradation des performances"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Optimisation des performances des applications Cloud",
+                "items": [
+                    "Comprendre les bonnes pratiques pour optimiser les performances des applications dans le Cloud",
+                    "Utilisation des services de mise en cache et de distribution de contenu",
+                    "Optimisation des requêtes et des bases de données",
+                    "Utilisation de CDN pour améliorer la vitesse de chargement des contenus",
+                    "Mise en place de load balancing pour répartir la charge et améliorer la disponibilité"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Analyse et amélioration des performances des services Cloud",
+                "items": [
+                    "Analyse des performances des services Cloud (stockage, calcul, réseau, etc.)",
+                    "Identification des goulots d'étranglement et des points de défaillance",
+                    "Mise en place de solutions pour améliorer les performances des services Cloud",
+                    "Utilisation des services managés pour optimiser les performances",
+                    "Mesure de l'impact des améliorations sur les performances et les coûts"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas pratiques et études de cas",
+                "items": [
+                    "Analyse de cas concrets d'optimisation des performances dans le Cloud",
+                    "Étude de cas sur la résolution de problèmes de performance",
+                    "Mise en place de solutions d'optimisation des performances sur des cas réels",
+                    "Retour d'expérience sur l'impact des solutions d'optimisation",
+                    "Discussion sur les bonnes pratiques et les leçons apprises"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Examen et évaluation des acquis",
+                "items": [
+                    "Révision des concepts clés liés à l'optimisation des performances Cloud",
+                    "Examen pour évaluer la compréhension des participants",
+                    "Correction et discussion des réponses",
+                    "Évaluation des compétences acquises lors du module",
+                    "Feedback et recommandations pour la suite de la formation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de performance avec monitoring",
+            "context": "Vous travaillez en tant qu'administrateur Cloud pour une entreprise qui utilise des services Cloud étendus.",
+            "objective": "On vous demande de mettre en place une solution de monitoring pour surveiller les performances des ressources Cloud. Votre objectif est de détecter les éventuelles dégradations et de réagir rapidement pour maintenir un niveau de service optimal. Choisissez un outil de monitoring Cloud adapté à l'environnement de l'entreprise. Décrivez le processus de configuration et de déploiement de cet outil dans l'environnement Cloud. Créez un tableau de bord personnalisé qui affiche les principaux indicateurs de performance (CPU, mémoire, bande passante réseau, temps de réponse). Configurez des alertes pour être notifié en cas de dépassement de seuils critiques que vous aurez définis. Rédigez un rapport succinct expliquant comment vous avez utilisé l'outil de monitoring pour identifier et résoudre un problème de performance fictif."
+        },
+        {
+            "title": "Optimisation des requêtes de base de données",
+            "context": "Vous êtes responsable de l'optimisation des applications Cloud d'une société de commerce électronique.",
+            "objective": "Après avoir identifié que les requêtes de base de données sont un goulot d'étranglement, vous devez les optimiser pour améliorer la performance de l'application. Analysez une requête de base de données particulièrement lente et identifiez les causes possibles de la latence. Proposez des modifications à apporter à cette requête pour améliorer son exécution. Cela peut inclure des modifications d'indexation, de jointures ou d'autres éléments de la requête. Mettez en place un plan de test pour comparer les performances de la requête avant et après optimisation. Exécutez les tests et recueillez les données de performance. Préparez un rapport expliquant les modifications apportées, les résultats des tests et les bénéfices en termes de performance."
+        },
+        {
+            "title": "Mise en œuvre de CDN pour améliorer les performances",
+            "context": "Vous êtes consultant Cloud pour une entreprise de médias qui souhaite améliorer la vitesse de chargement de son contenu à l'échelle mondiale.",
+            "objective": "Vous décidez de mettre en œuvre un réseau de distribution de contenu (CDN). Choisissez un CDN adapté aux besoins de l'entreprise et justifiez votre choix. Intégrez le CDN dans l'architecture existante de l'entreprise. Configurez le CDN pour servir les contenus statiques (par exemple, images, vidéos, fichiers CSS/JS). Réalisez des tests de performance depuis différentes régions géographiques pour évaluer l'amélioration de la vitesse de chargement. Rédigez une documentation pour l'équipe de développement expliquant comment tirer le meilleur parti du CDN pour les nouveaux contenus."
+        },
+        {
+            "title": "Load Balancing Simulation",
+            "context": "L'entreprise pour laquelle vous travaillez connaît des pics de trafic imprévisibles et souhaite éviter les temps d'arrêt.",
+            "objective": "Vous avez été chargé de concevoir et de simuler un environnement avec load balancing pour mieux répartir la charge sur plusieurs serveurs. Décrivez l'architecture que vous recommandez pour le load balancing, y compris les types de serveurs et leur configuration. Mettez en place une simulation de trafic pour tester l'efficacité de votre solution de load balancing. Recueillez les données de performance et vérifiez que la charge est équitablement répartie entre les serveurs. Ajustez la configuration en fonction des résultats des tests pour optimiser la répartition de la charge. Fournissez un rapport détaillé sur la simulation, les résultats obtenus et les recommandations pour la mise en production."
+        },
+        {
+            "title": "Résolution de cas pratique",
+            "context": "Vous êtes membre d'une équipe d'ingénieurs Cloud confrontée à un cas pratique : un service Cloud de stockage de fichiers connaît des performances dégradées, surtout aux heures de pointe.",
+            "objective": "L'entreprise souhaite que vous identifiiez la source du problème et que vous proposiez des solutions pour améliorer les performances. Analysez les données de monitoring pour identifier les périodes de dégradation et les ressources concernées. Identifiez les goulots d'étranglement et proposez des actions pour résoudre ces problèmes (par exemple, augmentation de la capacité, optimisation de la configuration, etc.). Élaborez un plan d'action détaillé pour mettre en œuvre ces améliorations. Simulez les effets de vos améliorations dans un environnement de test. Rédigez un rapport d'analyse de situation, comprenant votre diagnostic, les solutions proposées, les résultats des simulations et un plan de mise en œuvre."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Systems Performance: Enterprise and the Cloud (2e éd.)",
+            "author": "Gregg, B"
+        },
+        {
+            "title": "Distributed Systems Observability",
+            "author": "Sridharan, C"
+        },
+        {
+            "title": "Site Reliability Engineering (2e éd.)",
+            "author": "Beyer, B. et al"
+        }
+    ],
+    "OnlineResources": [
+        "AWS Well-Architected — Performance Pillar (https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/) [EN]",
+        "Google Cloud — Performance (https://cloud.google.com/architecture/framework/performance-optimization) [EN]",
+        "Microsoft Azure — Performance best practices (https://learn.microsoft.com/azure/architecture/framework/scalability/) [FR/EN]",
+        "Prometheus Documentation (https://prometheus.io/docs/) [EN]",
+        "Datadog — Performance monitoring (https://docs.datadoghq.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

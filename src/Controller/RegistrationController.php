@@ -44,14 +44,15 @@ final class RegistrationController extends AbstractController
                 ->setFullName($input->fullName)
                 ->setEmail($input->getEmail())
                 ->setRoles([$input->role])
-                ->setIsActive(true);
+                ->setIsActive(true)
+                ->setIsAccepted(false);
 
             $user->setPassword($passwordHasher->hashPassword($user, $input->password));
 
             $entityManager->persist($user);
             $entityManager->flush();
 
-            $this->addFlash('success', 'Votre compte a été créé. Vous pouvez maintenant vous connecter.');
+            $this->addFlash('success', 'Votre compte a été créé. Il devra être accepté avant votre première connexion.');
 
             return $this->redirectToRoute('app_login');
         }

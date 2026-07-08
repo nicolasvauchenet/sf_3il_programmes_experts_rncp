@@ -1,0 +1,136 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM01",
+        "title": "Architectures de données décisionnelles",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C27",
+            "description": "Concevoir l’architecture d’entrepôts de données décisionnelles (Data Warehouse et Data Lake) en stockant et organisant de grands volumes de données structurées et non structurées pour développer des solutions adaptés aux exigences des utilisateurs et des décideurs"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les concepts fondamentaux des architectures de données (Comprendre) Identifier et analyser les différents types de modèles de données et systèmes de stockage (Analyser) Développer des compétences en intégration et gestion des données dans un contexte évolutif (Créer)"
+    },
+    "prerequisites": {
+        "description": "Les pré-requis incluent une compréhension de base des systèmes d'information et des bases de données."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux architectures de données",
+                "items": [
+                    "Compréhension des concepts de base des architectures de données",
+                    "Importance des architectures de données dans le contexte actuel",
+                    "Types d'architectures de données (centrées sur les données, événementielles, orientées service, etc.)",
+                    "Les principaux enjeux liés aux architectures de données",
+                    "Les tendances actuelles en matière d'architectures de données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Modèles de données",
+                "items": [
+                    "Les différents types de modèles de données (relationnel, hiérarchique, en réseau, objets, etc.)",
+                    "Conception et représentation des modèles de données",
+                    "Normalisation des données",
+                    "Modélisation de données pour les systèmes décisionnels",
+                    "Bonnes pratiques en matière de modèles de données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Systèmes de stockage de données",
+                "items": [
+                    "Les principaux types de systèmes de stockage de données (bases de données relationnelles, NoSQL, etc.)",
+                    "Caractéristiques et avantages de chaque type de système de stockage",
+                    "Critères de sélection d'un système de stockage de données",
+                    "Intégration des systèmes de stockage dans une architecture de données",
+                    "Gestion des données non structurées et semi-structurées"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Intégration et gestion des données",
+                "items": [
+                    "Méthodes et outils d'intégration de données (ETL, ELT, CDC, data virtualization, etc.)",
+                    "Gestion des flux de données",
+                    "Qualité des données et gouvernance des données",
+                    "Stratégies de gestion des données en entreprise",
+                    "Sécurité des données et conformité réglementaire"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Évolution des architectures de données",
+                "items": [
+                    "Les défis liés à l'évolution des architectures de données",
+                    "Scalabilité et performance des architectures de données",
+                    "Adaptation aux nouvelles technologies et aux besoins métier",
+                    "Impact de l'IA et du Big Data sur les architectures de données",
+                    "Stratégies pour une évolution efficace des architectures de données"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Compréhension des architectures de données",
+            "context": "En vous basant sur les concepts abordés dans le chapitre 1, identifiez trois exemples concrets d'architectures de données utilisés dans des entreprises différentes.",
+            "objective": "Pour chaque exemple, décrivez les types d'architectures de données utilisés et discutez de l'importance de ces architectures pour l'entreprise en question."
+        },
+        {
+            "title": "Conception de modèles de données",
+            "context": "Imaginons que vous travaillez pour une entreprise qui souhaite mettre en place un système décisionnel pour analyser ses données commerciales.",
+            "objective": "En vous basant sur les connaissances acquises dans le chapitre 2, concevez un modèle de données adapté à ce contexte. Identifiez les entités, les relations et les attributs importants à prendre en compte pour ce système décisionnel."
+        },
+        {
+            "title": "Choix d'un système de stockage de données",
+            "context": "Vous avez la charge de choisir un système de stockage de données pour une entreprise qui gère un volume important de données client.",
+            "objective": "En vous basant sur les informations du chapitre 3, évaluez les avantages et les inconvénients des bases de données relationnelles et des bases de données NoSQL pour ce cas d'utilisation. Faites une recommandation en justifiant votre choix."
+        },
+        {
+            "title": "Gestion de la qualité des données",
+            "context": "En utilisant les concepts abordés dans le chapitre 4, élaborez un plan de gestion de la qualité des données pour une entreprise qui collecte des données provenant de différentes sources.",
+            "objective": "Identifiez les étapes clés du processus de gestion de la qualité des données et proposez des mesures pour assurer la fiabilité et la cohérence des données."
+        },
+        {
+            "title": "Adaptation des architectures de données aux nouvelles technologies",
+            "context": "Analysez l'impact de l'IA et du Big Data sur les architectures de données en vous basant sur les informations du chapitre 5.",
+            "objective": "Identifiez deux cas d'usage où l'IA et le Big Data ont influencé l'évolution des architectures de données dans des entreprises. Discutez des changements nécessaires au niveau des stratégies et des technologies pour adopter ces évolutions."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Designing Data-Intensive Applications",
+            "author": "Kleppmann, M"
+        },
+        {
+            "title": "The Data Warehouse Toolkit (3e éd.)",
+            "author": "Kimball, R. & Ross, M"
+        },
+        {
+            "title": "Building the Data Warehouse (4e éd.)",
+            "author": "Inmon, W. H"
+        }
+    ],
+    "OnlineResources": [
+        "Snowflake Documentation (https://docs.snowflake.com) [EN]",
+        "Databricks Documentation (https://docs.databricks.com) [EN]",
+        "Google BigQuery Documentation (https://cloud.google.com/bigquery/docs) [FR/EN]",
+        "dbt Labs — Analytics Engineering (https://docs.getdbt.com) [EN]",
+        "Data Engineering Podcast (https://www.dataengineeringpodcast.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}
