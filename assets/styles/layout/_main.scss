@@ -115,6 +115,19 @@
         }
     }
 
+    .admin-page-size-form {
+        @include displayFlex(null, center, 0.5rem);
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: $primary;
+
+        .form-control {
+            width: auto;
+            min-width: 8rem;
+            font-size: 0.85rem;
+        }
+    }
+
     .admin-users-table {
         width: 100%;
         font-size: 0.9rem;
@@ -131,6 +144,24 @@
             font-weight: bold;
             text-transform: uppercase;
             color: $primary;
+        }
+
+        .admin-sort-link {
+            @include displayFlex(null, center, 0.35rem);
+            color: $primary;
+            text-decoration: none;
+
+            span {
+                min-width: 1rem;
+                font-family: $font-primary;
+                text-align: center;
+                transform: translateY(-2px);
+            }
+
+            &:hover,
+            &.is-active {
+                color: $secondary;
+            }
         }
 
         tr.is-disabled {
@@ -197,18 +228,29 @@
             border-radius: 0.25rem;
             box-shadow: 0 0.35rem 0.8rem rgba($black, 0.18);
 
-            a {
+            a,
+            button {
                 display: block;
+                width: 100%;
                 padding: 0.65rem 0.75rem;
+                font-family: $font-primary;
                 font-size: 0.85rem;
                 font-weight: bold;
+                text-align: left;
                 text-decoration: none;
                 color: $primary;
+                background: none;
+                border: 0;
+                cursor: pointer;
 
                 &:hover {
                     color: $white !important;
                     background-color: $secondary;
                 }
+            }
+
+            form {
+                margin: 0;
             }
         }
 
@@ -240,6 +282,54 @@
             .admin-users-actions-cell {
                 align-items: center;
             }
+        }
+    }
+
+    .admin-pagination-footer {
+        @include displayFlex(space-between, center, 1rem);
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        @include respondTo(xs) {
+            justify-content: center;
+        }
+    }
+
+    .admin-pagination {
+        @include displayFlex(flex-end, center, 0.35rem);
+        flex-wrap: wrap;
+
+        a,
+        span {
+            @include displayFlex(center, center);
+            min-width: 2rem;
+            min-height: 2rem;
+            padding: 0 0.55rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: $primary;
+            border: 1px solid rgba($primary, 0.25);
+            border-radius: 0.25rem;
+        }
+
+        a:hover,
+        a.is-active {
+            color: $white;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+
+        a.is-disabled {
+            color: rgba($black, 0.35);
+            background-color: rgba($black, 0.05);
+            border-color: rgba($black, 0.12);
+            pointer-events: none;
+        }
+
+        .admin-pagination-ellipsis {
+            color: rgba($black, 0.55);
+            border-color: transparent;
         }
     }
 

@@ -3,8 +3,10 @@
 namespace App\Controller\Admin;
 
 use App\Dto\Admin\CreateUserInput;
+use App\Dto\Admin\EditUserInput;
 use App\Entity\User;
 use App\Form\Admin\CreateUserType;
+use App\Form\Admin\EditUserType;
 use App\Repository\UserRepository;
 use App\Service\Chart\AdminUserChartService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -19,6 +21,8 @@ use Symfony\Component\Routing\Attribute\Route;
 #[Route('/administration/utilisateurs', name: 'app_admin_users_')]
 final class UsersController extends AbstractController
 {
+    private const PROTECTED_ADMIN_EMAIL = 'vauche@3il.fr';
+
     private const ROLE_FILTERS = [
         'admin' => 'Administrateur',
         'teacher' => 'Enseignant',
@@ -41,16 +45,34 @@ final class UsersController extends AbstractController
     {
         $allUsers = $userRepository->findBy([], ['fullName' => 'ASC', 'email' => 'ASC']);
         $filters = $this->resolveFilters($request);
-        $users = $this->filterUsers($allUsers, $filters);
+        $listState = $this->resolveListState($request);
+        $page = $userRepository->findForAdminList(
+            filters: $filters,
+            sort: $listState['sort'],
+            direction: $listState['direction'],
+            perPage: $listState['perPage'],
+            page: $listState['page'],
+        );
 
         return $this->render('admin/users/index.html.twig', [
-            'users' => array_map($this->normalizeUser(...), $users),
+            'users' => array_map($this->normalizeUser(...), $page['items']),
             'stats' => $this->buildStats($allUsers),
-            'filteredUsersCount' => count($users),
+            'filteredUsersCount' => $page['total'],
             'usersDistributionChart' => $adminUserChartService->createUsersDistributionChart($allUsers),
             'filters' => $filters,
             'roleChoices' => self::ROLE_FILTERS,
             'statusChoices' => self::STATUS_FILTERS,
+            'sort' => [
+                'column' => $listState['sort'],
+                'direction' => $listState['direction'],
+            ],
+            'pagination' => [
+                'page' => $page['page'],
+                'pages' => $page['pages'],
+                'perPage' => $page['perPage'],
+                'pageSizes' => UserRepository::ADMIN_PAGE_SIZES,
+                'pageNumbers' => $this->buildPageNumbers($page['page'], $page['pages']),
+            ],
         ]);
     }
 
@@ -95,6 +117,61 @@ final class UsersController extends AbstractController
         ]);
     }
 
+    #[Route('/{id}/modifier', name: 'edit', methods: ['GET', 'POST'])]
+    public function edit(
+        Request $request,
+        User $user,
+        UserRepository $userRepository,
+        EntityManagerInterface $entityManager,
+        UserPasswordHasherInterface $passwordHasher,
+    ): Response {
+        $input = new EditUserInput();
+        $input->fullName = $user->getFullName() ?? '';
+        $input->email = $user->getEmail() ?? '';
+        $input->role = $this->resolveEditableRole($user->getRoles());
+        $input->disabled = !$user->isActive();
+
+        $form = $this->createForm(EditUserType::class, $input);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted()) {
+            $existingUser = $userRepository->findOneBy(['email' => strtolower($input->email)]);
+
+            if ($existingUser instanceof User && $existingUser->getId() !== $user->getId()) {
+                $form->get('email')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
+            }
+
+            $currentUser = $this->getUser();
+
+            if ($currentUser instanceof User && $currentUser->getId() === $user->getId() && $input->disabled) {
+                $form->get('disabled')->addError(new FormError('Vous ne pouvez pas désactiver votre propre compte.'));
+            }
+        }
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $user
+                ->setFullName($input->fullName)
+                ->setEmail($input->email)
+                ->setRoles([$input->role])
+                ->setIsActive(!$input->disabled);
+
+            if (null !== $input->password && '' !== $input->password) {
+                $user->setPassword($passwordHasher->hashPassword($user, $input->password));
+            }
+
+            $entityManager->flush();
+
+            $this->addFlash('success', sprintf('Le compte de %s a été modifié.', $user->getFullName()));
+
+            return $this->redirectToRoute('app_admin_users_home');
+        }
+
+        return $this->render('admin/users/edit.html.twig', [
+            'form' => $form,
+            'user' => $user,
+        ]);
+    }
+
     #[Route('/{id}/activation', name: 'toggle_active', methods: ['GET'])]
     public function toggleActive(Request $request, User $user, EntityManagerInterface $entityManager): RedirectResponse
     {
@@ -114,6 +191,38 @@ final class UsersController extends AbstractController
             $user->getFullName(),
             $user->isActive() ? 'activé' : 'désactivé',
         ));
+
+        return $this->redirectBackToUsersList($request);
+    }
+
+    #[Route('/{id}/supprimer', name: 'delete', methods: ['POST'])]
+    public function delete(Request $request, User $user, EntityManagerInterface $entityManager): RedirectResponse
+    {
+        if (!$this->isCsrfTokenValid('delete_user_'.$user->getId(), (string) $request->request->get('_token'))) {
+            $this->addFlash('error', 'La suppression a échoué, merci de réessayer.');
+
+            return $this->redirectBackToUsersList($request);
+        }
+
+        if (self::PROTECTED_ADMIN_EMAIL === $user->getEmail()) {
+            $this->addFlash('error', 'Le compte administrateur Nicolas Vauché ne peut pas être supprimé.');
+
+            return $this->redirectBackToUsersList($request);
+        }
+
+        $currentUser = $this->getUser();
+
+        if ($currentUser instanceof User && $currentUser->getId() === $user->getId()) {
+            $this->addFlash('error', 'Vous ne pouvez pas supprimer votre propre compte.');
+
+            return $this->redirectBackToUsersList($request);
+        }
+
+        $fullName = $user->getFullName();
+        $entityManager->remove($user);
+        $entityManager->flush();
+
+        $this->addFlash('success', sprintf('Le compte de %s a été supprimé.', $fullName));
 
         return $this->redirectBackToUsersList($request);
     }
@@ -146,42 +255,56 @@ final class UsersController extends AbstractController
     }
 
     /**
-     * @param list<User> $users
-     * @param array{role: string, status: string} $filters
-     *
-     * @return list<User>
+     * @return array{sort: string, direction: string, perPage: int|'all', page: int}
      */
-    private function filterUsers(array $users, array $filters): array
+    private function resolveListState(Request $request): array
     {
-        return array_values(array_filter($users, function (User $user) use ($filters): bool {
-            return $this->matchesRoleFilter($user, $filters['role'])
-                && $this->matchesStatusFilter($user, $filters['status']);
-        }));
+        $sort = $request->query->get('sort', 'fullName');
+        $direction = $request->query->get('direction', 'asc');
+        $perPage = $request->query->get('perPage', '10');
+        $page = $request->query->get('page', '1');
+
+        $sort = is_string($sort) && in_array($sort, UserRepository::ADMIN_SORTS, true) ? $sort : 'fullName';
+        $direction = 'desc' === $direction ? 'desc' : 'asc';
+        $perPage = is_string($perPage) && in_array($perPage, UserRepository::ADMIN_PAGE_SIZES, true) ? $perPage : '10';
+        $page = is_string($page) && ctype_digit($page) ? (int) $page : 1;
+
+        return [
+            'sort' => $sort,
+            'direction' => $direction,
+            'perPage' => 'all' === $perPage ? 'all' : (int) $perPage,
+            'page' => max(1, $page),
+        ];
     }
 
-    private function matchesRoleFilter(User $user, string $roleFilter): bool
+    /**
+     * @return list<int|string>
+     */
+    private function buildPageNumbers(int $currentPage, int $totalPages): array
     {
-        $roles = $user->getRoles();
+        if ($totalPages <= 7) {
+            return range(1, $totalPages);
+        }
 
-        return match ($roleFilter) {
-            'admin' => in_array('ROLE_ADMIN', $roles, true),
-            'teacher' => in_array('ROLE_TEACHER', $roles, true),
-            'student' => in_array('ROLE_STUDENT', $roles, true),
-            'user' => !in_array('ROLE_ADMIN', $roles, true)
-                && !in_array('ROLE_TEACHER', $roles, true)
-                && !in_array('ROLE_STUDENT', $roles, true),
-            default => true,
-        };
-    }
+        $pages = [1];
+        $start = max(2, $currentPage - 1);
+        $end = min($totalPages - 1, $currentPage + 1);
 
-    private function matchesStatusFilter(User $user, string $statusFilter): bool
-    {
-        return match ($statusFilter) {
-            'active' => $user->isActive() && null !== $user->getLoggedAt(),
-            'inactive' => $user->isActive() && null === $user->getLoggedAt(),
-            'disabled' => !$user->isActive(),
-            default => true,
-        };
+        if ($start > 2) {
+            $pages[] = '...';
+        }
+
+        for ($page = $start; $page <= $end; ++$page) {
+            $pages[] = $page;
+        }
+
+        if ($end < $totalPages - 1) {
+            $pages[] = '...';
+        }
+
+        $pages[] = $totalPages;
+
+        return $pages;
     }
 
     /**
@@ -226,7 +349,7 @@ final class UsersController extends AbstractController
     }
 
     /**
-     * @return array{id: int|null, role: string, fullName: string, email: string, isActive: bool, createdAt: \DateTimeImmutable|null, loggedAt: \DateTimeImmutable|null}
+     * @return array{id: int|null, role: string, fullName: string, email: string, isActive: bool, canDelete: bool, createdAt: \DateTimeImmutable|null, loggedAt: \DateTimeImmutable|null}
      */
     private function normalizeUser(User $user): array
     {
@@ -236,6 +359,7 @@ final class UsersController extends AbstractController
             'fullName' => $user->getFullName() ?? '-',
             'email' => $user->getEmail() ?? '-',
             'isActive' => $user->isActive(),
+            'canDelete' => self::PROTECTED_ADMIN_EMAIL !== $user->getEmail(),
             'createdAt' => $user->getCreatedAt(),
             'loggedAt' => $user->getLoggedAt(),
         ];
@@ -251,6 +375,19 @@ final class UsersController extends AbstractController
             in_array('ROLE_TEACHER', $roles, true) => 'Enseignant',
             in_array('ROLE_STUDENT', $roles, true) => 'Apprenant',
             default => 'Utilisateur',
+        };
+    }
+
+    /**
+     * @param list<string> $roles
+     */
+    private function resolveEditableRole(array $roles): string
+    {
+        return match (true) {
+            in_array('ROLE_ADMIN', $roles, true) => 'ROLE_ADMIN',
+            in_array('ROLE_TEACHER', $roles, true) => 'ROLE_TEACHER',
+            in_array('ROLE_STUDENT', $roles, true) => 'ROLE_STUDENT',
+            default => 'ROLE_USER',
         };
     }
 }
