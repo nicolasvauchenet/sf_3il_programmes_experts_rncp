@@ -27,6 +27,7 @@
             color: $white;
             transition: color 0.3s;
 
+            &.active,
             &:hover {
                 color: $secondary;
             }

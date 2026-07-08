@@ -45,6 +45,17 @@
         cursor: not-allowed;
     }
 
+    &.success {
+        color: $success;
+        background-color: rgba($success, 0.25);
+        border-color: $success;
+
+        &:hover {
+            color: $white;
+            background-color: $success;
+        }
+    }
+
     small {
         display: block;
         margin-bottom: 0.25rem;

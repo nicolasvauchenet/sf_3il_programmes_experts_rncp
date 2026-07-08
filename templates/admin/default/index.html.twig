@@ -9,11 +9,20 @@
     <main class="app-main center">
         <section class="app-section boxed">
             <h1>Administration</h1>
-            <p class="subtitle">Sélectionnez le paramètre à modifier.</p>
+            <p class="subtitle">Choisissez ce que vous souhaitez administrer.</p>
 
             <hr/>
 
+            <div class="app-grid three">
+                <div class="app-section">
+                    <h2>Utilisateurs</h2>
 
+                    <div class="app-grid two">
+                        <a href="{{ path('app_admin_users_home') }}" class="app-button">Gérer</a>
+                        <a href="{{ path('app_admin_users_new') }}" class="app-button success">Créer</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
