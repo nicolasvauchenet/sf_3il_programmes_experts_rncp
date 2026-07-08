@@ -143,13 +143,13 @@
 
                                                 <div class="admin-actions-menu">
                                                     <a href="{{ path('app_admin_users_edit', { id: user.id }) }}">Modifier</a>
-                                                    <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}">
-                                                        {{ user.isActive ? 'Désactiver' : 'Activer' }}
-                                                    </a>
                                                     {% if not user.isAccepted %}
                                                         <a href="{{ path('app_admin_users_accept', { id: user.id }) }}">Accepter</a>
                                                     {% endif %}
                                                     {% if user.canDelete %}
+                                                        <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}">
+                                                            {{ user.isActive ? 'Désactiver' : 'Activer' }}
+                                                        </a>
                                                         <form
                                                             method="post"
                                                             action="{{ path('app_admin_users_delete', { id: user.id }) }}"
