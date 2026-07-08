@@ -2,13 +2,18 @@
 
 namespace App\Controller\Admin;
 
+use App\Dto\Admin\CreateUserInput;
 use App\Entity\User;
+use App\Form\Admin\CreateUserType;
 use App\Repository\UserRepository;
+use App\Service\Chart\AdminUserChartService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\FormError;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[Route('/administration/utilisateurs', name: 'app_admin_users_')]
@@ -28,7 +33,11 @@ final class UsersController extends AbstractController
     ];
 
     #[Route(name: 'home')]
-    public function index(Request $request, UserRepository $userRepository): Response
+    public function index(
+        Request $request,
+        UserRepository $userRepository,
+        AdminUserChartService $adminUserChartService,
+    ): Response
     {
         $allUsers = $userRepository->findBy([], ['fullName' => 'ASC', 'email' => 'ASC']);
         $filters = $this->resolveFilters($request);
@@ -38,9 +47,51 @@ final class UsersController extends AbstractController
             'users' => array_map($this->normalizeUser(...), $users),
             'stats' => $this->buildStats($allUsers),
             'filteredUsersCount' => count($users),
+            'usersDistributionChart' => $adminUserChartService->createUsersDistributionChart($allUsers),
             'filters' => $filters,
             'roleChoices' => self::ROLE_FILTERS,
             'statusChoices' => self::STATUS_FILTERS,
+        ]);
+    }
+
+    #[Route('/nouveau', name: 'new', methods: ['GET', 'POST'])]
+    public function new(
+        Request $request,
+        UserRepository $userRepository,
+        EntityManagerInterface $entityManager,
+        UserPasswordHasherInterface $passwordHasher,
+    ): Response {
+        $input = new CreateUserInput();
+        $form = $this->createForm(CreateUserType::class, $input);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted()) {
+            $existingUser = $userRepository->findOneBy(['email' => strtolower($input->email)]);
+
+            if ($existingUser instanceof User) {
+                $form->get('email')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
+            }
+        }
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $user = (new User())
+                ->setFullName($input->fullName)
+                ->setEmail($input->email)
+                ->setRoles([$input->role])
+                ->setIsActive(!$input->disabled);
+
+            $user->setPassword($passwordHasher->hashPassword($user, $input->password));
+
+            $entityManager->persist($user);
+            $entityManager->flush();
+
+            $this->addFlash('success', sprintf('Le compte de %s a été créé.', $user->getFullName()));
+
+            return $this->redirectToRoute('app_admin_users_home');
+        }
+
+        return $this->render('admin/users/new.html.twig', [
+            'form' => $form,
         ]);
     }
 
@@ -161,9 +212,12 @@ final class UsersController extends AbstractController
 
             if (!$user->isActive()) {
                 ++$stats['disabled'];
+                ++$stats['inactive'];
+
+                continue;
             }
 
-            if ($user->isActive() && null === $user->getLoggedAt()) {
+            if (null === $user->getLoggedAt()) {
                 ++$stats['inactive'];
             }
         }

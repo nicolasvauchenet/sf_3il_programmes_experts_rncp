@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvel utilisateur{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Nouvel utilisateur</h1>
+            <p class="subtitle">Créer un compte et définir son niveau d'accès.</p>
+
+            <hr/>
+
+            {{ form_start(form, { attr: { class: 'app-form admin-user-form' } }) }}
+                {{ form_errors(form) }}
+
+                <div class="form-group">
+                    {{ form_label(form.fullName) }}
+                    <div>
+                        {{ form_widget(form.fullName) }}
+                        {{ form_errors(form.fullName) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.email) }}
+                    <div>
+                        {{ form_widget(form.email) }}
+                        {{ form_errors(form.email) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.password) }}
+                    <div>
+                        {{ form_widget(form.password) }}
+                        {{ form_errors(form.password) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(form.role) }}
+                    <div>
+                        {{ form_widget(form.role) }}
+                        {{ form_errors(form.role) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="form-label">&nbsp;</span>
+                    <div>
+                        <label class="admin-checkbox-wrapper">
+                            {{ form_widget(form.disabled) }}
+                            <span>Désactivé</span>
+                        </label>
+                        {{ form_errors(form.disabled) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <a href="{{ path('app_admin_users_home') }}" class="app-button outline">&laquo; Retour</a>
+                    <button type="submit" class="app-button form-submit">Créer</button>
+                </div>
+            {{ form_end(form) }}
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

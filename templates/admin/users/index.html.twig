@@ -65,14 +65,15 @@
                             <span class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
                             <span class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
                             <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
-                            <span class="app-badge">{{ stats.disabled }} désactivé{{ stats.disabled > 1 ? 's' : '' }}</span>
+                            {#<span class="app-badge">{{ stats.disabled }} désactivé{{ stats.disabled > 1 ? 's' : '' }}</span>#}
                         </div>
                     </section>
 
                     <section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div style="height: 120px;">
+                        <div class="summary-card" style="height: 200px;">
+                            {{ render_chart(usersDistributionChart) }}
 
                         </div>
                     </section>
@@ -81,7 +82,7 @@
                 <section class="app-section mx-0 mt-2 mb-0">
                     <div class="admin-section-header">
                         <h2>{{ filteredUsersCount }} utilisateur{{ filteredUsersCount > 1 ? 's' : '' }}</h2>
-                        <a href="#" class="app-button admin-new-button">Nouveau</a>
+                        <a href="{{ path('app_admin_users_new') }}" class="app-button admin-new-button">Nouveau</a>
                     </div>
 
                     <div class="admin-users-table-wrapper">
@@ -98,7 +99,7 @@
                             </thead>
                             <tbody>
                                 {% for user in users %}
-                                    <tr>
+                                    <tr class="{{ not user.isActive ? 'is-disabled' : '' }}">
                                         <td data-label="Rôle">{{ user.role }}</td>
                                         <td data-label="Nom">{{ user.fullName }}</td>
                                         <td data-label="Email">{{ user.email }}</td>
