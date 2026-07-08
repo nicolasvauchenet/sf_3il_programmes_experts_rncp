@@ -4,8 +4,14 @@
     </p>
 
     <div class="footerlinks">
-        <a href="{{ path('app_legal_mentions') }}">Mentions Légales</a>
-        <a href="{{ path('app_legal_privacy') }}">Confidentialité et Cookies</a>
+        <a href="{{ path('app_legal_mentions') }}">Mentions légales</a>
+        <a href="{{ path('app_legal_privacy') }}">Confidentialité</a>
         <a href="{{ path('app_legal_gtu') }}">CGU</a>
+        {% if app.user %}
+            {% if is_granted('ROLE_ADMIN') %}
+                <a href="#">Admin</a>
+            {% endif %}
+            <a href="{{ path('app_logout') }}" onclick="return confirm('Vous partez ?')">Déconnexion</a>
+        {% endif %}
     </div>
 </footer>

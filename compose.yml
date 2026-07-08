@@ -1,10 +1,28 @@
 services:
+    postgres:
+        image: postgres:16-alpine
+        container_name: refrncp_postgres
+        restart: unless-stopped
+        env_file:
+            - .env.docker.prod
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+            start_period: 10s
+
     app:
         build:
             context: .
             dockerfile: docker/Dockerfile
         container_name: refrncp_app
         restart: unless-stopped
+        depends_on:
+            postgres:
+                condition: service_healthy
         env_file:
             - .env.docker.prod
         ports:
@@ -13,3 +31,6 @@ services:
             - "443:443/udp"
         volumes:
             - ./certs:/certs:ro
+
+volumes:
+    postgres_data:

@@ -17,7 +17,7 @@
 
         img {
             display: block;
-            width: 40dvw;
+            width: 46dvw;
 
             @include respondTo(sm) {
                 width: 20dvw;

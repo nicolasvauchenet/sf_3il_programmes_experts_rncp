@@ -20,7 +20,7 @@
     }
 
     .footerlinks {
-        @include displayFlex(center, center, 0.5rem);
+        @include displayFlex(center, center, 0.75rem);
 
         a {
             text-decoration: none;
