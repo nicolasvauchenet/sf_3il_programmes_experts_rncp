@@ -4,28 +4,139 @@ namespace App\Controller\Admin;
 
 use App\Entity\User;
 use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[Route('/administration/utilisateurs', name: 'app_admin_users_')]
 final class UsersController extends AbstractController
 {
+    private const ROLE_FILTERS = [
+        'admin' => 'Administrateur',
+        'teacher' => 'Enseignant',
+        'student' => 'Apprenant',
+        'user' => 'Utilisateur',
+    ];
+
+    private const STATUS_FILTERS = [
+        'active' => 'Actif',
+        'inactive' => 'Inactif',
+        'disabled' => 'Désactivé',
+    ];
+
     #[Route(name: 'home')]
-    public function index(UserRepository $userRepository): Response
+    public function index(Request $request, UserRepository $userRepository): Response
     {
-        $users = $userRepository->findBy([], ['fullName' => 'ASC', 'email' => 'ASC']);
+        $allUsers = $userRepository->findBy([], ['fullName' => 'ASC', 'email' => 'ASC']);
+        $filters = $this->resolveFilters($request);
+        $users = $this->filterUsers($allUsers, $filters);
 
         return $this->render('admin/users/index.html.twig', [
             'users' => array_map($this->normalizeUser(...), $users),
-            'stats' => $this->buildStats($users),
+            'stats' => $this->buildStats($allUsers),
+            'filteredUsersCount' => count($users),
+            'filters' => $filters,
+            'roleChoices' => self::ROLE_FILTERS,
+            'statusChoices' => self::STATUS_FILTERS,
         ]);
+    }
+
+    #[Route('/{id}/activation', name: 'toggle_active', methods: ['GET'])]
+    public function toggleActive(Request $request, User $user, EntityManagerInterface $entityManager): RedirectResponse
+    {
+        $currentUser = $this->getUser();
+
+        if ($currentUser instanceof User && $currentUser->getId() === $user->getId()) {
+            $this->addFlash('error', 'Vous ne pouvez pas désactiver votre propre compte.');
+
+            return $this->redirectBackToUsersList($request);
+        }
+
+        $user->setIsActive(!$user->isActive());
+        $entityManager->flush();
+
+        $this->addFlash('success', sprintf(
+            'Le compte de %s a été %s.',
+            $user->getFullName(),
+            $user->isActive() ? 'activé' : 'désactivé',
+        ));
+
+        return $this->redirectBackToUsersList($request);
+    }
+
+    private function redirectBackToUsersList(Request $request): RedirectResponse
+    {
+        $referer = $request->headers->get('referer');
+
+        if (is_string($referer) && str_contains($referer, $this->generateUrl('app_admin_users_home'))) {
+            return $this->redirect($referer);
+        }
+
+        return $this->redirectToRoute('app_admin_users_home');
+    }
+
+    /**
+     * @return array{role: string, status: string}
+     */
+    private function resolveFilters(Request $request): array
+    {
+        $role = $request->query->get('role', '');
+        $status = $request->query->get('status', '');
+        $role = is_string($role) ? $role : '';
+        $status = is_string($status) ? $status : '';
+
+        return [
+            'role' => array_key_exists($role, self::ROLE_FILTERS) ? $role : '',
+            'status' => array_key_exists($status, self::STATUS_FILTERS) ? $status : '',
+        ];
+    }
+
+    /**
+     * @param list<User> $users
+     * @param array{role: string, status: string} $filters
+     *
+     * @return list<User>
+     */
+    private function filterUsers(array $users, array $filters): array
+    {
+        return array_values(array_filter($users, function (User $user) use ($filters): bool {
+            return $this->matchesRoleFilter($user, $filters['role'])
+                && $this->matchesStatusFilter($user, $filters['status']);
+        }));
+    }
+
+    private function matchesRoleFilter(User $user, string $roleFilter): bool
+    {
+        $roles = $user->getRoles();
+
+        return match ($roleFilter) {
+            'admin' => in_array('ROLE_ADMIN', $roles, true),
+            'teacher' => in_array('ROLE_TEACHER', $roles, true),
+            'student' => in_array('ROLE_STUDENT', $roles, true),
+            'user' => !in_array('ROLE_ADMIN', $roles, true)
+                && !in_array('ROLE_TEACHER', $roles, true)
+                && !in_array('ROLE_STUDENT', $roles, true),
+            default => true,
+        };
+    }
+
+    private function matchesStatusFilter(User $user, string $statusFilter): bool
+    {
+        return match ($statusFilter) {
+            'active' => $user->isActive() && null !== $user->getLoggedAt(),
+            'inactive' => $user->isActive() && null === $user->getLoggedAt(),
+            'disabled' => !$user->isActive(),
+            default => true,
+        };
     }
 
     /**
      * @param list<User> $users
      *
-     * @return array{total: int, teachers: int, students: int, inactive: int}
+     * @return array{total: int, teachers: int, students: int, inactive: int, disabled: int}
      */
     private function buildStats(array $users): array
     {
@@ -34,6 +145,7 @@ final class UsersController extends AbstractController
             'teachers' => 0,
             'students' => 0,
             'inactive' => 0,
+            'disabled' => 0,
         ];
 
         foreach ($users as $user) {
@@ -47,7 +159,11 @@ final class UsersController extends AbstractController
                 ++$stats['students'];
             }
 
-            if (null === $user->getLoggedAt()) {
+            if (!$user->isActive()) {
+                ++$stats['disabled'];
+            }
+
+            if ($user->isActive() && null === $user->getLoggedAt()) {
                 ++$stats['inactive'];
             }
         }
@@ -56,14 +172,16 @@ final class UsersController extends AbstractController
     }
 
     /**
-     * @return array{role: string, fullName: string, email: string, createdAt: \DateTimeImmutable|null, loggedAt: \DateTimeImmutable|null}
+     * @return array{id: int|null, role: string, fullName: string, email: string, isActive: bool, createdAt: \DateTimeImmutable|null, loggedAt: \DateTimeImmutable|null}
      */
     private function normalizeUser(User $user): array
     {
         return [
+            'id' => $user->getId(),
             'role' => $this->resolveRoleLabel($user->getRoles()),
             'fullName' => $user->getFullName() ?? '-',
             'email' => $user->getEmail() ?? '-',
+            'isActive' => $user->isActive(),
             'createdAt' => $user->getCreatedAt(),
             'loggedAt' => $user->getLoggedAt(),
         ];

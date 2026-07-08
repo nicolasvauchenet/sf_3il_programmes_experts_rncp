@@ -47,6 +47,48 @@
         }
     }
 
+    .admin-users-filters {
+        @include displayFlex(null, stretch, 0.85rem, column);
+        margin-top: 1rem;
+
+        .admin-filter-field {
+            @include displayFlex(null, stretch, 0.35rem, column);
+
+            label {
+                font-size: 0.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $primary;
+            }
+
+            .form-control {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        }
+
+        .admin-filter-actions {
+            @include displayFlex(null, center, 1rem, column);
+            margin-top: 0.25rem;
+        }
+
+        .app-button {
+            display: block;
+            font-size: 0.75rem;
+            text-decoration: none;
+        }
+
+        .admin-reset-link {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: $primary;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
     .admin-users-table {
         width: 100%;
         font-size: 0.9rem;

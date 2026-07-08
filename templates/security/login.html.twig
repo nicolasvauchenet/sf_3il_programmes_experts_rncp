@@ -15,7 +15,11 @@
 
             {% if error %}
                 <div class="app-alert error">
-                    Identifiants invalides.
+                    {% if error.messageKey == "ce compte n'existe pas" %}
+                        ce compte n'existe pas
+                    {% else %}
+                        Identifiants invalides.
+                    {% endif %}
                 </div>
             {% endif %}
 

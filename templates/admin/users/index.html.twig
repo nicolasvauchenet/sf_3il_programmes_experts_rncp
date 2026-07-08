@@ -16,15 +16,38 @@
                         {{ stats.total }} utilisateur{{ stats.total > 1 ? 's' : '' }}
                     </p>
 
-                    <div class="app-toc-filter">
-                        <input
-                            id="desktop-toc-filter"
-                            type="search"
-                            class="app-toc-filter-input"
-                            placeholder="Filtrer"
-                            autocomplete="off"
-                        >
-                    </div>
+                    <form method="get" action="{{ path('app_admin_users_home') }}" class="admin-users-filters">
+                        <div class="admin-filter-field">
+                            <label for="filter-role">Rôle</label>
+                            <select id="filter-role" name="role" class="form-control">
+                                <option value="">Tous</option>
+                                {% for value, label in roleChoices %}
+                                    <option value="{{ value }}" {% if filters.role == value %}selected{% endif %}>
+                                        {{ label }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="admin-filter-field">
+                            <label for="filter-status">Activité</label>
+                            <select id="filter-status" name="status" class="form-control">
+                                <option value="">Tous</option>
+                                {% for value, label in statusChoices %}
+                                    <option value="{{ value }}" {% if filters.status == value %}selected{% endif %}>
+                                        {{ label }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="admin-filter-actions">
+                            <button type="submit" class="app-button">Appliquer</button>
+                            <a href="{{ path('app_admin_users_home') }}" class="admin-reset-link">
+                                Réinitialiser
+                            </a>
+                        </div>
+                    </form>
                 </aside>
             </div>
 
@@ -39,12 +62,10 @@
                         </div>
 
                         <div class="ribbon">
-                            <span
-                                class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
-                            <span
-                                class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
-                            <span
-                                class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.disabled }} désactivé{{ stats.disabled > 1 ? 's' : '' }}</span>
                         </div>
                     </section>
 
@@ -59,7 +80,7 @@
 
                 <section class="app-section mx-0 mt-2 mb-0">
                     <div class="admin-section-header">
-                        <h2>{{ stats.total }} utilisateur{{ stats.total > 1 ? 's' : '' }}</h2>
+                        <h2>{{ filteredUsersCount }} utilisateur{{ filteredUsersCount > 1 ? 's' : '' }}</h2>
                         <a href="#" class="app-button admin-new-button">Nouveau</a>
                     </div>
 
@@ -93,8 +114,10 @@
 
                                                 <div class="admin-actions-menu">
                                                     <a href="#">Modifier</a>
-                                                    <a href="#" class="text-danger"
-                                                       onclick="return confirm('Confirmez-vous la suppression de cet utilisateur ?')">Supprimer</a>
+                                                    <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}">
+                                                        {{ user.isActive ? 'Désactiver' : 'Activer' }}
+                                                    </a>
+                                                    <a href="#" class="text-danger" onclick="return confirm('Confirmez-vous la suppression de cet utilisateur ?')">Supprimer</a>
                                                 </div>
                                             </details>
                                         </td>
