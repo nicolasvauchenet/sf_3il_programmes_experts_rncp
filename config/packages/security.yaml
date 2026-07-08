@@ -38,6 +38,7 @@ security:
     # Note: Only the *first* matching rule is applied
     access_control:
         - { path: ^/connexion$, roles: PUBLIC_ACCESS }
+        - { path: ^/inscription$, roles: PUBLIC_ACCESS }
         - { path: ^/mentions-legales$, roles: PUBLIC_ACCESS }
         - { path: ^/confidentialite-et-cookies$, roles: PUBLIC_ACCESS }
         - { path: ^/cgu$, roles: PUBLIC_ACCESS }
