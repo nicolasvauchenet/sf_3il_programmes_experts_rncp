@@ -28,5 +28,73 @@
         }
     }
 
+    .admin-section-header {
+        @include displayFlex(space-between, center, 0.75rem);
+        margin-bottom: 1rem;
+
+        .admin-new-button {
+            width: auto;
+            min-width: 7rem;
+            font-size: 0.75rem;
+            color: $success;
+            background-color: rgba($success, 0.25);
+            border-color: $success;
+
+            &:hover {
+                color: $white;
+                background-color: $success;
+            }
+        }
+    }
+
+    .admin-users-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .admin-users-table {
+        width: 100%;
+        font-size: 0.9rem;
+
+        th,
+        td {
+            padding: 0.75rem 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid rgba($black, 0.12);
+        }
+
+        th {
+            font-family: $font-secondary;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $primary;
+        }
+
+        @include respondTo(xs) {
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid rgba($black, 0.12);
+            }
+
+            td {
+                @include displayFlex(space-between, flex-start, 1rem);
+                padding: 0.35rem 0;
+                border-bottom: none;
+                text-align: right;
+
+                &::before {
+                    content: attr(data-label);
+                    font-weight: bold;
+                    text-align: left;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
     @import "./section";
 }

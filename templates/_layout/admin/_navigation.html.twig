@@ -1,0 +1,20 @@
+<nav class="app-navigation">
+    <a
+        href="{{ path('app_admin_home') }}"
+        class="{% if 'app_admin_home' == app.request.get('_route') %}active{% endif %}"
+    >
+        Accueil
+    </a>
+    <a
+        href="{{ path('app_admin_users_home') }}"
+        class="{% if 'app_admin_users' in app.request.get('_route') %}active{% endif %}"
+    >
+        Utilisateurs
+    </a>
+    <a
+        href="#"
+        class="{% if 'app_admin_stats' in app.request.get('_route') %}active{% endif %}"
+    >
+        Rapports
+    </a>
+</nav>

@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des utilisateurs{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main">
+        <div class="app-grid third layout">
+            <div class="app-toc-wrapper">
+                <aside class="app-section app-toc app-toc-desktop">
+                    <h2>Filtrer</h2>
+
+                    <p class="subtitle">
+                        {{ stats.total }} utilisateur{{ stats.total > 1 ? 's' : '' }}
+                    </p>
+
+                    <div class="app-toc-filter">
+                        <input
+                            id="desktop-toc-filter"
+                            type="search"
+                            class="app-toc-filter-input"
+                            placeholder="Filtrer"
+                            autocomplete="off"
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <article>
+                <div class="app-grid third">
+                    <section class="app-section centered">
+                        <h3 class="text-center alt">Administration</h3>
+
+                        <div class="info">
+                            <h4 class="text-center">Gestion des utilisateurs</h4>
+                            <h1>Liste des utilisateurs</h1>
+                        </div>
+
+                        <div class="ribbon">
+                            <span class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
+                            <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>
+                        </div>
+                    </section>
+
+                    <section class="app-section centered">
+                        <h2>Métriques</h2>
+
+                        <div style="height: 120px;">
+
+                        </div>
+                    </section>
+                </div>
+
+                <section class="app-section mx-0 mt-2 mb-0">
+                    <div class="admin-section-header">
+                        <h2>{{ stats.total }} utilisateur{{ stats.total > 1 ? 's' : '' }}</h2>
+                        <a href="#" class="app-button admin-new-button">Nouveau</a>
+                    </div>
+
+                    <div class="admin-users-table-wrapper">
+                        <table class="admin-users-table">
+                            <thead>
+                                <tr>
+                                    <th>Rôle</th>
+                                    <th>Nom</th>
+                                    <th>Email</th>
+                                    <th>Création</th>
+                                    <th>Connexion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user in users %}
+                                    <tr>
+                                        <td data-label="Rôle">{{ user.role }}</td>
+                                        <td data-label="Nom">{{ user.fullName }}</td>
+                                        <td data-label="Email">{{ user.email }}</td>
+                                        <td data-label="Création">
+                                            {{ user.createdAt ? user.createdAt|date('d/m/Y H:i') : '-' }}
+                                        </td>
+                                        <td data-label="Connexion">
+                                            {{ user.loggedAt ? user.loggedAt|date('d/m/Y H:i') : 'Jamais' }}
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="5">Aucun utilisateur.</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Administration</h1>
+            <p class="subtitle">Sélectionnez le paramètre à modifier.</p>
+
+            <hr/>
+
+
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -33,6 +34,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column]
     private ?string $password = null;
+
+    #[Gedmo\Timestampable(on: 'create')]
+    #[ORM\Column]
+    private ?\DateTimeImmutable $createdAt = null;
+
+    #[Gedmo\Timestampable(on: 'update')]
+    #[ORM\Column]
+    private ?\DateTimeImmutable $updatedAt = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $loggedAt = null;
 
     public function getId(): ?int
     {
@@ -97,6 +109,28 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setPassword(string $password): static
     {
         $this->password = $password;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeImmutable
+    {
+        return $this->updatedAt;
+    }
+
+    public function getLoggedAt(): ?\DateTimeImmutable
+    {
+        return $this->loggedAt;
+    }
+
+    public function setLoggedAt(?\DateTimeImmutable $loggedAt): static
+    {
+        $this->loggedAt = $loggedAt;
 
         return $this;
     }
