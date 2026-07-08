@@ -1,6 +1,6 @@
 {
     "meta": {
-        "datasetCode": "cdwfs_2025-2026",
+        "datasetCode": "cdwfs_2026-2027",
         "rncpCode": "39608",
         "programCode": "CDWFS",
         "programTitle": "Concepteur Développeur Web Full Stack",
@@ -13,12 +13,16 @@
             "title": "Développement d'interfaces Front-end",
             "blockCode": "BC01",
             "shortCode": "FM01",
-            "skills": [
-                "C01",
-                "C03"
-            ],
             "projects": [
                 "RNCP39608-BC01-PRJ01"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -31,12 +35,16 @@
             "title": "Ergonomie UX/UI et Accessibilité",
             "blockCode": "BC01",
             "shortCode": "FM02",
-            "skills": [
-                "C02",
-                "C03"
-            ],
             "projects": [
                 "RNCP39608-BC01-PRJ01"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -49,12 +57,16 @@
             "title": "Application web dynamiques et interactives",
             "blockCode": "BC01",
             "shortCode": "FM03",
-            "skills": [
-                "C04",
-                "C05"
-            ],
             "projects": [
                 "RNCP39608-BC01-PRJ01"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -67,11 +79,16 @@
             "title": "Framework et bibliothèque Front-end",
             "blockCode": "BC01",
             "shortCode": "FM04",
-            "skills": [
-                "C06"
-            ],
             "projects": [
                 "RNCP39608-BC01-PRJ01"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -81,15 +98,24 @@
         {
             "code": "RNCP39608-BC02-FM01",
             "fullCode": "RNCP39608-BC02-FM01",
-            "title": "Développement et Framework Back-end",
+            "title": "Développement et Frameworks Back-end",
             "blockCode": "BC02",
             "shortCode": "FM01",
-            "skills": [
-                "C07",
-                "C08"
-            ],
             "projects": [
                 "RNCP39608-BC02-PRJ02"
+            ],
+            "skills": [
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -102,11 +128,21 @@
             "title": "Analyse et modélisation (UML)",
             "blockCode": "BC02",
             "shortCode": "FM02",
-            "skills": [
-                "C08"
-            ],
             "projects": [
                 "RNCP39608-BC02-PRJ02"
+            ],
+            "skills": [
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -117,15 +153,23 @@
             "code": "RNCP39608-BC02-FM03",
             "fullCode": "RNCP39608-BC02-FM03",
             "title": "Base de données (SQL et NoSQL)",
-            "blockCode": "BC01",
+            "blockCode": "BC02",
             "shortCode": "FM03",
-            "skills": [
-                "C10",
-                "C11",
-                "C12"
-            ],
             "projects": [
                 "RNCP39608-BC02-PRJ02"
+            ],
+            "skills": [
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -138,12 +182,21 @@
             "title": "Administration Hébergement Web",
             "blockCode": "BC02",
             "shortCode": "FM04",
-            "skills": [
-                "C07",
-                "C09"
-            ],
             "projects": [
                 "RNCP39608-BC02-PRJ02"
+            ],
+            "skills": [
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -153,14 +206,24 @@
         {
             "code": "RNCP39608-BC02-FM05",
             "fullCode": "RNCP39608-BC02-FM05",
-            "title": "Stratégie de sauvegarde et de versionning",
+            "title": "Stratégie de sauvegarde et versionning",
             "blockCode": "BC02",
             "shortCode": "FM05",
-            "skills": [
-                "C13"
-            ],
             "projects": [
                 "RNCP39608-BC02-PRJ02"
+            ],
+            "skills": [
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15",
+                "C16",
+                "C17"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -170,17 +233,24 @@
         {
             "code": "RNCP39608-BC02-FM06",
             "fullCode": "RNCP39608-BC02-FM06",
-            "title": "Conception et développement d'API REST",
+            "title": "Conception et Développement d'API REST",
             "blockCode": "BC02",
             "shortCode": "FM06",
+            "projects": [
+                "RNCP39608-BC02-PRJ02"
+            ],
             "skills": [
+                "C07",
+                "C08",
+                "C09",
+                "C10",
+                "C11",
+                "C12",
+                "C13",
                 "C14",
                 "C15",
                 "C16",
                 "C17"
-            ],
-            "projects": [
-                "RNCP39608-BC02-PRJ02"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -193,9 +263,18 @@
             "title": "Linux : administration système et optimisation",
             "blockCode": "BC03",
             "shortCode": "FM01",
-            "skills": [],
             "projects": [
                 "RNCP39608-BC03-PRJ03"
+            ],
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24",
+                "C25"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -205,16 +284,21 @@
         {
             "code": "RNCP39608-BC03-FM02",
             "fullCode": "RNCP39608-BC03-FM02",
-            "title": "Architectures sécurisées (On-premise, Cloud et hybrides)",
+            "title": "Architectures sécurisées (Cloud et hybrides)",
             "blockCode": "BC03",
             "shortCode": "FM02",
+            "projects": [
+                "RNCP39608-BC03-PRJ03"
+            ],
             "skills": [
                 "C18",
                 "C19",
-                "C20"
-            ],
-            "projects": [
-                "RNCP39608-BC03-PRJ03"
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24",
+                "C25"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -227,12 +311,18 @@
             "title": "Versioning et gestion de versions décentralisé",
             "blockCode": "BC03",
             "shortCode": "FM03",
-            "skills": [
-                "C21",
-                "C22"
-            ],
             "projects": [
                 "RNCP39608-BC03-PRJ03"
+            ],
+            "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
+                "C23",
+                "C24",
+                "C25"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -245,13 +335,18 @@
             "title": "Intégration et Déploiement Continus",
             "blockCode": "BC03",
             "shortCode": "FM04",
+            "projects": [
+                "RNCP39608-BC03-PRJ03"
+            ],
             "skills": [
+                "C18",
+                "C19",
+                "C20",
+                "C21",
+                "C22",
                 "C23",
                 "C24",
                 "C25"
-            ],
-            "projects": [
-                "RNCP39608-BC03-PRJ03"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -261,16 +356,16 @@
         {
             "code": "RNCP39608-BC04-FM01",
             "fullCode": "RNCP39608-BC04-FM01",
-            "title": "Étude d'avant-projet (MOA)",
+            "title": "Etude d'avant projet (MOA)",
             "blockCode": "BC04",
             "shortCode": "FM01",
+            "projects": [
+                "RNCP39608-BC04-PRJ04"
+            ],
             "skills": [
                 "C26",
                 "C27",
                 "C28"
-            ],
-            "projects": [
-                "RNCP39608-BC04-PRJ04"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC07"
@@ -282,14 +377,14 @@
             "title": "Gestion de projet (MOE)",
             "blockCode": "BC04",
             "shortCode": "FM02",
+            "projects": [
+                "RNCP39608-BC04-PRJ05"
+            ],
             "skills": [
                 "C29",
                 "C30",
                 "C31",
                 "C32"
-            ],
-            "projects": [
-                "RNCP39608-BC04-PRJ05"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC08",
@@ -299,17 +394,17 @@
         {
             "code": "RNCP39608-BC04-FM03",
             "fullCode": "RNCP39608-BC04-FM03",
-            "title": "Méthodologies Agile",
+            "title": "Méthodologie Agile",
             "blockCode": "BC04",
             "shortCode": "FM03",
+            "projects": [
+                "RNCP39608-BC04-PRJ05"
+            ],
             "skills": [
                 "C29",
                 "C30",
                 "C31",
                 "C32"
-            ],
-            "projects": [
-                "RNCP39608-BC04-PRJ05"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC08",
@@ -322,11 +417,14 @@
             "title": "Gestion des coûts et du budget",
             "blockCode": "BC04",
             "shortCode": "FM04",
-            "skills": [
-                "C31"
-            ],
             "projects": [
                 "RNCP39608-BC04-PRJ05"
+            ],
+            "skills": [
+                "C29",
+                "C30",
+                "C31",
+                "C32"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC08",
@@ -339,14 +437,14 @@
             "title": "Coordonner les équipes de projet (Communication)",
             "blockCode": "BC04",
             "shortCode": "FM05",
+            "projects": [
+                "RNCP39608-BC04-PRJ05"
+            ],
             "skills": [
                 "C29",
                 "C30",
                 "C31",
                 "C32"
-            ],
-            "projects": [
-                "RNCP39608-BC04-PRJ05"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC08",
@@ -359,11 +457,14 @@
             "title": "Anglais Professionnel et Recherche documentaire",
             "blockCode": "BC04",
             "shortCode": "FM06",
-            "skills": [
-                "C36"
-            ],
             "projects": [
                 "RNCP39608-BC04-PRJ07"
+            ],
+            "skills": [
+                "C36",
+                "C37",
+                "C38",
+                "C39"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC11",
@@ -376,13 +477,14 @@
             "title": "Veille Technologique multilingue",
             "blockCode": "BC04",
             "shortCode": "FM07",
+            "projects": [
+                "RNCP39608-BC04-PRJ07"
+            ],
             "skills": [
+                "C36",
                 "C37",
                 "C38",
                 "C39"
-            ],
-            "projects": [
-                "RNCP39608-BC04-PRJ07"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC11",
@@ -395,13 +497,13 @@
             "title": "Qualité logicielle et amélioration continue",
             "blockCode": "BC04",
             "shortCode": "FM08",
+            "projects": [
+                "RNCP39608-BC04-PRJ06"
+            ],
             "skills": [
                 "C33",
                 "C34",
                 "C35"
-            ],
-            "projects": [
-                "RNCP39608-BC04-PRJ06"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC10"
@@ -411,7 +513,7 @@
     "projects": [
         {
             "code": "RNCP39608-BC01-PRJ01",
-            "title": "Projet de dévelopement Front-end (Fil rouge)",
+            "title": "Novaria Signal Citizen",
             "blockCode": "BC01",
             "modules": [
                 "RNCP39608-BC01-FM01",
@@ -435,7 +537,7 @@
         },
         {
             "code": "RNCP39608-BC02-PRJ02",
-            "title": "Projet de dévelopement Back-end (Fil rouge)",
+            "title": "Novaria Signal API",
             "blockCode": "BC02",
             "modules": [
                 "RNCP39608-BC02-FM01",
@@ -466,7 +568,7 @@
         },
         {
             "code": "RNCP39608-BC03-PRJ03",
-            "title": "Projet CI/CD : mise en place, monitoring, évolution",
+            "title": "Novaria Signal Platform",
             "blockCode": "BC03",
             "modules": [
                 "RNCP39608-BC03-FM01",
@@ -492,7 +594,7 @@
         },
         {
             "code": "RNCP39608-BC04-PRJ04",
-            "title": "Projet Étude d’avant-projet",
+            "title": "Novaria Signal Program - Cadrage et faisabilité",
             "blockCode": "BC04",
             "modules": [
                 "RNCP39608-BC04-FM01"
@@ -509,7 +611,7 @@
         },
         {
             "code": "RNCP39608-BC04-PRJ05",
-            "title": "Projet Pilotage de projet numérique",
+            "title": "Novaria Signal Program - Pilotage opérationnel",
             "blockCode": "BC04",
             "modules": [
                 "RNCP39608-BC04-FM02",
@@ -531,7 +633,7 @@
         },
         {
             "code": "RNCP39608-BC04-PRJ06",
-            "title": "Projet Qualité logicielle et amélioration continue",
+            "title": "Novaria Signal Program - Qualité, tests et documentation",
             "blockCode": "BC04",
             "modules": [
                 "RNCP39608-BC04-FM08"
@@ -548,7 +650,7 @@
         },
         {
             "code": "RNCP39608-BC04-PRJ07",
-            "title": "Projet Veille technologique multilingue",
+            "title": "Novaria Signal Program - Veille stratégique et réglementaire",
             "blockCode": "BC04",
             "modules": [
                 "RNCP39608-BC04-FM06",
@@ -591,7 +693,10 @@
             "title": "Concevoir et structurer des interfaces web",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39608-BC01-FM01"
+                "RNCP39608-BC01-FM01",
+                "RNCP39608-BC01-FM02",
+                "RNCP39608-BC01-FM03",
+                "RNCP39608-BC01-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -606,7 +711,10 @@
             "title": "Créer et Intégrer, grâce au CSS3, des interfaces intuitives pour les utilisateurs (UI)",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39608-BC01-FM02"
+                "RNCP39608-BC01-FM01",
+                "RNCP39608-BC01-FM02",
+                "RNCP39608-BC01-FM03",
+                "RNCP39608-BC01-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -622,7 +730,9 @@
             "blockCode": "BC01",
             "modules": [
                 "RNCP39608-BC01-FM01",
-                "RNCP39608-BC01-FM02"
+                "RNCP39608-BC01-FM02",
+                "RNCP39608-BC01-FM03",
+                "RNCP39608-BC01-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -637,7 +747,10 @@
             "title": "Implémenter des interactions côté client",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39608-BC01-FM03"
+                "RNCP39608-BC01-FM01",
+                "RNCP39608-BC01-FM02",
+                "RNCP39608-BC01-FM03",
+                "RNCP39608-BC01-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -652,7 +765,10 @@
             "title": "Optimiser la communication asynchrone entre les utilisateurs et les serveurs",
             "blockCode": "BC01",
             "modules": [
-                "RNCP39608-BC01-FM03"
+                "RNCP39608-BC01-FM01",
+                "RNCP39608-BC01-FM02",
+                "RNCP39608-BC01-FM03",
+                "RNCP39608-BC01-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC01-EC01",
@@ -667,6 +783,9 @@
             "title": "Structurer et Intégrer des interfaces utilisateur riches et réactives",
             "blockCode": "BC01",
             "modules": [
+                "RNCP39608-BC01-FM01",
+                "RNCP39608-BC01-FM02",
+                "RNCP39608-BC01-FM03",
                 "RNCP39608-BC01-FM04"
             ],
             "evaluations": [
@@ -683,7 +802,11 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39608-BC02-FM01",
-                "RNCP39608-BC02-FM04"
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -699,7 +822,11 @@
             "blockCode": "BC02",
             "modules": [
                 "RNCP39608-BC02-FM01",
-                "RNCP39608-BC02-FM02"
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -714,7 +841,12 @@
             "title": "Optimiser et sécuriser les serveurs web",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39608-BC02-FM04"
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -729,7 +861,12 @@
             "title": "Élaborer et administrer des bases de données relationnelles",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39608-BC02-FM03"
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -744,7 +881,12 @@
             "title": "Concevoir et gérer l'administration des bases de données NoSQL",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39608-BC02-FM03"
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -759,7 +901,12 @@
             "title": "Arbitrer et décider du choix entre les bases de données relationnelles",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39608-BC02-FM03"
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -774,7 +921,12 @@
             "title": "Mettre en œuvre des stratégies de sauvegarde et de récupération",
             "blockCode": "BC02",
             "modules": [
-                "RNCP39608-BC02-FM05"
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
+                "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
                 "RNCP39608-BC02-EC03",
@@ -789,6 +941,11 @@
             "title": "Concevoir des API (Application Programming Interface)",
             "blockCode": "BC02",
             "modules": [
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
                 "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
@@ -804,6 +961,11 @@
             "title": "Sécuriser les API",
             "blockCode": "BC02",
             "modules": [
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
                 "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
@@ -819,6 +981,11 @@
             "title": "Réaliser différents tests sur les API",
             "blockCode": "BC02",
             "modules": [
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
                 "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
@@ -834,6 +1001,11 @@
             "title": "Réaliser et maintenir la documentation de l'API",
             "blockCode": "BC02",
             "modules": [
+                "RNCP39608-BC02-FM01",
+                "RNCP39608-BC02-FM02",
+                "RNCP39608-BC02-FM03",
+                "RNCP39608-BC02-FM04",
+                "RNCP39608-BC02-FM05",
                 "RNCP39608-BC02-FM06"
             ],
             "evaluations": [
@@ -849,7 +1021,10 @@
             "title": "Évaluer les besoins et intégrer les solutions cloud",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39608-BC03-FM02"
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
+                "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -864,7 +1039,10 @@
             "title": "Analyser les besoins techniques.",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39608-BC03-FM02"
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
+                "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -879,7 +1057,10 @@
             "title": "Administrer et rationaliser les plateformes cloud.",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39608-BC03-FM02"
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
+                "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -894,7 +1075,10 @@
             "title": "Assurer la gestion et le suivi des révisions de code source",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39608-BC03-FM03"
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
+                "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -909,7 +1093,10 @@
             "title": "Définir et appliquer des procédures de fusion de code et de résolution de conflits",
             "blockCode": "BC03",
             "modules": [
-                "RNCP39608-BC03-FM03"
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
+                "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
                 "RNCP39608-BC03-EC05",
@@ -924,6 +1111,9 @@
             "title": "Développer des environnements virtualisés.",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
                 "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
@@ -939,6 +1129,9 @@
             "title": "Coordonner les containeurs avec des logiciels d'orchestration.",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
                 "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
@@ -954,6 +1147,9 @@
             "title": "Automatiser la gestion et le déploiement des ressources cloud.",
             "blockCode": "BC03",
             "modules": [
+                "RNCP39608-BC03-FM01",
+                "RNCP39608-BC03-FM02",
+                "RNCP39608-BC03-FM03",
                 "RNCP39608-BC03-FM04"
             ],
             "evaluations": [
@@ -1013,6 +1209,7 @@
             "modules": [
                 "RNCP39608-BC04-FM02",
                 "RNCP39608-BC04-FM03",
+                "RNCP39608-BC04-FM04",
                 "RNCP39608-BC04-FM05"
             ],
             "evaluations": [
@@ -1030,6 +1227,7 @@
             "modules": [
                 "RNCP39608-BC04-FM02",
                 "RNCP39608-BC04-FM03",
+                "RNCP39608-BC04-FM04",
                 "RNCP39608-BC04-FM05"
             ],
             "evaluations": [
@@ -1065,6 +1263,7 @@
             "modules": [
                 "RNCP39608-BC04-FM02",
                 "RNCP39608-BC04-FM03",
+                "RNCP39608-BC04-FM04",
                 "RNCP39608-BC04-FM05"
             ],
             "evaluations": [
@@ -1122,7 +1321,8 @@
             "title": "Mobiliser ses connaissances technologiques, sa maîtrise de l'anglais les contenus de diverses sources d'informations",
             "blockCode": "BC04",
             "modules": [
-                "RNCP39608-BC04-FM06"
+                "RNCP39608-BC04-FM06",
+                "RNCP39608-BC04-FM07"
             ],
             "evaluations": [
                 "RNCP39608-BC04-EC11",
@@ -1137,6 +1337,7 @@
             "title": "Mettre en place une veille technologique.",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39608-BC04-FM06",
                 "RNCP39608-BC04-FM07"
             ],
             "evaluations": [
@@ -1152,6 +1353,7 @@
             "title": "Analyser les données brutes collectées.",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39608-BC04-FM06",
                 "RNCP39608-BC04-FM07"
             ],
             "evaluations": [
@@ -1167,6 +1369,7 @@
             "title": "Diffuser les hypothèses ou scénarii à l'équipe de développement.",
             "blockCode": "BC04",
             "modules": [
+                "RNCP39608-BC04-FM06",
                 "RNCP39608-BC04-FM07"
             ],
             "evaluations": [

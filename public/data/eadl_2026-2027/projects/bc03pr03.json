@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39765-BC03-PR03",
+        "title": "Novaria Core - UrbanHub Delivery Platform",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Système d'Information (SI)",
+        "durationDays": 20,
+        "durationHours": 140,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines CI/CD..."
+        },
+        {
+            "code": "C17",
+            "description": "Intégrer les tests automatisés dans les pipelines..."
+        },
+        {
+            "code": "C18",
+            "description": "Intégrer des pratiques de sécurité DevSecOps..."
+        },
+        {
+            "code": "C19",
+            "description": "Optimiser les développements et structurer le code..."
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en place et maintenir la documentation technique..."
+        }
+    ],
+    "description": "UrbanHub Delivery Platform met en place la plateforme commune de delivery de l'écosystème Novaria Core. Le projet définit les standards DevOps et DevSecOps, les pipelines CI/CD, les contrôles qualité, les tests automatisés et la documentation technique nécessaires pour industrialiser les livraisons UrbanHub.",
+    "objectives": {
+        "description": "Les apprenants conçoivent et mettent en place la plateforme commune d'intégration et de déploiement continu de l'écosystème UrbanHub. Le projet mobilise les compétences du bloc BC03 autour de la stratégie DevOps, des pipelines CI/CD, de l'intégration des tests automatisés, des pratiques DevSecOps, de l'industrialisation des déploiements, des standards de qualité logicielle, des outils de contrôle qualité et de la documentation technique."
+    },
+    "prerequisites": {
+        "description": "Maîtrise des bases du développement logiciel, de Git, des tests automatisés, des environnements de build, de la conteneurisation et des principes DevOps."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Définition des standards de delivery UrbanHub",
+            "context": "Les applications UrbanHub doivent respecter les mêmes règles de qualité, de sécurité et de livraison.",
+            "objective": "Définir les standards de branches, versioning, revue de code, qualité logicielle, documentation et livraison applicative."
+        },
+        {
+            "title": "Mise en place des pipelines CI/CD",
+            "context": "Les équipes doivent automatiser les builds, tests, analyses et déploiements pour les projets de l'écosystème.",
+            "objective": "Construire un pipeline CI/CD réutilisable intégrant build, tests, contrôles qualité et publication des livrables."
+        },
+        {
+            "title": "Intégration DevSecOps",
+            "context": "La sécurité doit être intégrée dans la chaîne de delivery et non traitée en fin de projet.",
+            "objective": "Ajouter des contrôles de vulnérabilités, d'analyse statique, de dépendances et de conformité dans le pipeline."
+        },
+        {
+            "title": "Qualité logicielle et référentiel commun",
+            "context": "Novaria Core doit fournir un cadre commun pour améliorer la maintenabilité des solutions UrbanHub.",
+            "objective": "Mettre en place des outils de contrôle qualité, des métriques, un référentiel de bonnes pratiques et des seuils d'acceptation."
+        },
+        {
+            "title": "Documentation d'exploitation de la plateforme",
+            "context": "La plateforme de delivery doit pouvoir être utilisée par les autres équipes de l'écosystème.",
+            "objective": "Produire une documentation technique claire couvrant l'installation, l'utilisation, l'exploitation, les incidents et les évolutions possibles."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Continuous Delivery",
+            "author": "Jez Humble et David Farley"
+        },
+        {
+            "title": "The DevOps Handbook",
+            "author": "Gene Kim, Jez Humble, Patrick Debois et John Willis"
+        },
+        {
+            "title": "Clean Code",
+            "author": "Robert C. Martin"
+        },
+        {
+            "title": "Secure by Design",
+            "author": "Dan Bergh Johnsson, Daniel Deogun et Daniel Sawano"
+        }
+    ],
+    "teachingMethods": [
+        "Travaux pratiques",
+        "Projet fil rouge",
+        "Travaux de groupe",
+        "Mise en situation professionnelle"
+    ]
+}

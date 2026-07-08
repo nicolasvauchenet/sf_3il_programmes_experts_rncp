@@ -1,0 +1,131 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM08",
+        "title": "Techniques de Communication professionnelle",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d’une méthode de gestion de projet et des outils adapté s au contexte , en analysant le besoin, en rédigeant les documents d’initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l’entreprise et garantir la qualité des livrables , le respect des délais et des coûts."
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s’adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d’assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs."
+        },
+        {
+            "code": "C27",
+            "description": "Elaborer et mettre en œuvre la conduite du changement en s’appuyant sur des référentiels tels qu’ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l’impact d’une évolution (mineure, delta ou majeure) de l’infrastructure sur l’environnement de production."
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l’équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l’écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées ."
+        },
+        {
+            "code": "C29",
+            "description": "Contribuer au recrutement des collaborateurs en participant aux rédactions de fiches de poste, en assurant une caution technique au moyen d’évaluations des compétences lors des entretiens, et en mettant l'accent sur l'inclusion notamment des personnes en situation de handicap , afin de contribuer à la construction d'une équipe diversifiée, reflétant les valeurs de l'égalité des chances et de la responsabilité sociétale (RSE)."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes fondamentaux de la communication, identifier les obstacles à la communication et maîtriser les techniques de communication interpersonnelle et collective afin d'améliorer l'efficacité professionnelle et la conduite du changement."
+    },
+    "prerequisites": {
+        "description": "Aucun prérequis obligatoire. Un intérêt pour les relations interpersonnelles et la dynamique de groupe peut être utile."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Les fondamentaux de la communication",
+                "items": [
+                    "Types de communication : verbale, non verbale et écrite",
+                    "Principes de la communication efficace",
+                    "Obstacles à la communication et moyens de les surmonter",
+                    "Écoute active",
+                    "Feedback et reformulation"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Communication interpersonnelle",
+                "items": [
+                    "Styles de communication",
+                    "Gestion des conflits par la communication",
+                    "Communication assertive",
+                    "Empathie dans la communication",
+                    "Techniques de communication non violente"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Communication en groupe et en équipe",
+                "items": [
+                    "Caractéristiques de la communication en groupe",
+                    "Dynamiques de groupe",
+                    "Rôles et responsabilités dans la communication d'équipe",
+                    "Résolution des problèmes de communication",
+                    "Outils pour réunions et présentations"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Communication dans un contexte de changement",
+                "items": [
+                    "Communication dans la conduite du changement",
+                    "Stratégies de communication pour accompagner le changement",
+                    "Gestion des résistances",
+                    "Communication en situation de crise",
+                    "Transparence et authenticité"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Communication dans un contexte professionnel",
+                "items": [
+                    "Communication dans le management",
+                    "Communication interne et externe",
+                    "Outils de communication professionnelle : e-mails, rapports, présentations",
+                    "Communication interculturelle",
+                    "Communication digitale en entreprise"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse d'une situation de communication",
+            "context": "Réunion d'équipe où un message est mal compris.",
+            "objective": "Analyser la situation et proposer une stratégie d'amélioration basée sur l'écoute active, le feedback et la reformulation."
+        },
+        {
+            "title": "Communication assertive",
+            "context": "Désaccord entre collègues sur la direction d'un projet.",
+            "objective": "Rédiger un dialogue utilisant la communication assertive et les principes de communication non violente."
+        },
+        {
+            "title": "Organisation d'une réunion d'équipe",
+            "context": "Problème de communication interne dans une équipe.",
+            "objective": "Construire un plan de réunion avec rôles, outils et techniques de communication pour résoudre le problème."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Éloge de l'optimisme : La force des petits riens",
+            "author": "Philippe Gabilliet"
+        },
+        {
+            "title": "Les Mots sont des fenêtres (ou bien ce sont des murs)",
+            "author": "Marshall B. Rosenberg"
+        },
+        {
+            "title": "Comment trouver le leader en vous",
+            "author": "Dale Carnegie"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

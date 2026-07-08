@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC02-C17",
+        "title": "Réaliser et maintenir la documentation de l’API",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "academicYear": "2025"
+    },
+    "description": "Réaliser et maintenir la documentation de l'API en collaboration avec les développeurs, en utilisant des outils tels que Swagger pour les API ou des générateurs de documentation de code dans le but de faciliter la maintenabilité et l'évolutivité de l'API.",
+    "criteria": [
+        "Clarté et complétude de la documentation : la documentation est complète, facile à comprendre, et fournit toutes les informations nécessaires pour utiliser l'API sans assistance supplémentaire.",
+        "Conformité avec les normes internes : la documentation suit les normes internes de programmation et de documentation afin d'assurer la cohérence et la maintenabilité de l'API."
+    ]
+}

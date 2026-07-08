@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC05-C28",
+        "title": "Étude et mise en œuvre des processus ETL",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
+        "academicYear": "2025-2026"
+    },
+    "description": "Mettre en œuvre des processus ETL (Extract, Transform, Load) par l'extraction de données de différentes sources, et en les transformant selon les besoins métier pour les charger dans des systèmes de stockage centralisés.",
+    "criteria": [
+        "Les processus ETL sont correctement implémentés : Les données sont extraites, transformées et chargées efficacement depuis différentes sources.",
+        "Les données transformées répondent aux besoins métier : Les transformations appliquées permettent d'adapter les données aux exigences des métiers."
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC04-C28",
+        "title": "Développer la performance de l’équipe en identifiant les besoins en compétences",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les Projets et la Conduite du Changement",
+        "academicYear": "2025-2026"
+    },
+    "description": "Développer la performance de l’équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l’écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées .",
+    "criteria": [
+        "Le plan de formation est motivé par la démonstration de l’inadéquation entre des capacités actuelles de l’équipe et les besoins en compétences des projets actuels et futurs.",
+        "Les actions de remédiation du dans le plan de formation identifient des temps, des moyens et des objectifs mesurables permettant d’attester de leur efficacité."
+    ]
+}

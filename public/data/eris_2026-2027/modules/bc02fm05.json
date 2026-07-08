@@ -1,0 +1,101 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM05",
+        "title": "Automatisation - Usine Logicielle",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C13",
+            "description": "Arbitrer la technologie d’hébergement des systèmes et/ou applications (serveur dédié, virtualisation, conteneurisation/orchestration ou cloud) en évaluant et optimisant les ressources nécessaires afin de déployer les systèmes de manière fiable, flexible et scalable."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites en tenant compte des engagements de disponibilité, de capacité et de sécurité afin de garantir la qualité de service et la résilience."
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place, au contrôle et à l’administration de l'infrastructure en mobilisant ses compétences techniques et en collaborant avec les équipes pluridisciplinaires."
+        },
+        {
+            "code": "C16",
+            "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications à l'aide d'outils DevOps et d'orchestration afin d'assurer la fiabilité et la reproductibilité des mises en production."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les concepts clés de l’automatisation et du DevOps, mettre en place des pratiques d’intégration continue et de déploiement continu (CI/CD), et maîtriser les outils d’orchestration de conteneurs et de gestion de configuration afin d’industrialiser les processus de déploiement et d’exploitation des infrastructures."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en informatique et développement logiciel, familiarité avec les systèmes d'exploitation et compréhension générale des environnements de développement et de production."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'automatisation et aux outils DevOps",
+                "items": [
+                    "Concepts clés de l'automatisation",
+                    "Principes fondamentaux du DevOps",
+                    "Avantages de l'automatisation dans les infrastructures",
+                    "Enjeux de l'adoption du DevOps",
+                    "Présentation des principaux outils DevOps"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Intégration continue et déploiement continu",
+                "items": [
+                    "Définition de l'intégration continue (CI)",
+                    "Définition du déploiement continu (CD)",
+                    "Automatisation des tests",
+                    "Outils de CI/CD",
+                    "Mise en place d’un pipeline CI/CD"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Infrastructure as Code",
+                "items": [
+                    "Concept d’Infrastructure as Code (IaC)",
+                    "Outils et langages pour l’IaC",
+                    "Exemple d’infrastructure codée",
+                    "Avantages de l’IaC",
+                    "Bonnes pratiques et défis de l’IaC"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Orchestration de conteneurs et gestion de clusters",
+                "items": [
+                    "Concept d'orchestration de conteneurs",
+                    "Outils d'orchestration (Kubernetes, Docker Swarm)",
+                    "Configuration d'un cluster",
+                    "Scalabilité et haute disponibilité",
+                    "Sécurité dans les environnements conteneurisés"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Monitoring et logging",
+                "items": [
+                    "Besoins en monitoring dans un environnement automatisé",
+                    "Outils de monitoring et de logging",
+                    "Configuration de la surveillance des infrastructures",
+                    "Bonnes pratiques de monitoring",
+                    "Alertes et tableaux de bord"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Gestion de la configuration",
+                "items": [
+                    "Importance de la gestion de la configuration dans un environnement automatisé",
+                    "Outils de gestion de la configuration (Ansible, Puppet, Chef)",
+                    "Mise en place de playbooks ou de recettes",
+                    "Avantages de la gestion de la configuration",
+                    "Gestion des versions et des changements de configuration"
+                ]
+            }
+        ]
+    }
+}

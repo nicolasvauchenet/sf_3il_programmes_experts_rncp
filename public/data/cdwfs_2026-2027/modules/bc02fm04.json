@@ -1,0 +1,128 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM04",
+        "title": "Administration Hébergement Web",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement en paramétrant un IDE et en utilisant le terminal afin de l'aligner de l'environnement de production cible"
+        },
+        {
+            "code": "C09",
+            "description": "Optimiser et sécuriser les serveurs web, en ajustant les paramètres serveur et en employant des commandes avancées via le terminal pour améliorer les performances et la sécurité (SSH, MFA) des applications web en fonction de son OS (Linux, Windows)"
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs pédagogiques de ce module sont de comprendre les principes de base de l'administration d'hébergement web, de maîtriser la gestion et la sécurité des serveurs, et d'assurer la haute disponibilité et scalabilité des services. Les apprenants sauront également installer, configurer et maintenir des services et applications web sur un serveur tout en optimisant leur performance. Enfin, ils comprendront les rôles et responsabilités en tant qu'administrateur d'hébergement web."
+    },
+    "prerequisites": {
+        "description": "Des connaissances de base en réseaux informatiques et en administration de systèmes d'exploitation, ainsi qu'une compréhension générale du fonctionnement du web."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'administration d'hébergement web",
+                "items": [
+                    "Comprendre les principes de base de l'administration d'hébergement web",
+                    "Connaître les différents types d'hébergement web et leurs caractéristiques",
+                    "Identifier les enjeux de la sécurité dans l'administration d'hébergement web",
+                    "Comprendre les rôles et responsabilités de l'administrateur d'hébergement web",
+                    "Connaître les outils et technologies utilisés dans l'administration d'hébergement web"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des serveurs",
+                "items": [
+                    "Comprendre les concepts de base de la gestion des serveurs",
+                    "Savoir installer et configurer un serveur web",
+                    "Maîtriser la gestion des utilisateurs et des permissions sur un serveur",
+                    "Connaître les bonnes pratiques de gestion des serveurs",
+                    "Savoir monitorer et optimiser les performances des serveurs"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Sécurité et sauvegarde",
+                "items": [
+                    "Comprendre les enjeux de la sécurité dans l'hébergement web",
+                    "Maîtriser la mise en place de certificats SSL et la gestion des clés",
+                    "Connaître les meilleures pratiques en matière de sauvegarde des données",
+                    "Savoir mettre en place des politiques de sécurité efficaces",
+                    "Connaître les outils et techniques de détection et de prévention des attaques"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des services et des applications",
+                "items": [
+                    "Comprendre la gestion des services et des applications web",
+                    "Savoir installer, configurer et maintenir des applications et services sur un serveur",
+                    "Maîtriser la gestion des bases de données",
+                    "Connaître les bonnes pratiques en matière de déploiement d'applications web",
+                    "Savoir monitorer et optimiser les performances des applications et services"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Haute disponibilité et scalabilité",
+                "items": [
+                    "Comprendre les concepts de haute disponibilité et de scalabilité",
+                    "Connaître les techniques de load balancing et de répartition de charge",
+                    "Savoir mettre en place des architectures redondantes",
+                    "Maîtriser les outils et technologies permettant d'assurer la haute disponibilité",
+                    "Connaître les bonnes pratiques en matière de gestion de la scalabilité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comprendre les principes de base de l'administration d'hébergement web",
+            "context": "Réaliser une recherche sur les principes fondamentaux de l'administration d'hébergement web.",
+            "objective": "Rédiger un résumé permettant d'assimiler les principes fondamentaux."
+        },
+        {
+            "title": "Installer et configurer un serveur web",
+            "context": "Installer un serveur web (Apache, Nginx, etc.) sur un environnement local ou distant.",
+            "objective": "Configurer le serveur pour héberger une page HTML de test."
+        },
+        {
+            "title": "Mise en place de certificats SSL et gestion des clés",
+            "context": "Installer un certificat SSL sur un serveur web.",
+            "objective": "Générer et gérer les clés associées et vérifier le bon fonctionnement de la connexion sécurisée."
+        },
+        {
+            "title": "Installation, configuration et maintenance d'une application web",
+            "context": "Installer et configurer une application web (WordPress, Joomla, etc.) sur un serveur.",
+            "objective": "Assurer la maintenance et appliquer les bonnes pratiques d'installation et de configuration."
+        },
+        {
+            "title": "Mise en place d'une architecture redondante",
+            "context": "Concevoir une architecture redondante pour un service ou une application web.",
+            "objective": "Mettre en œuvre les concepts de haute disponibilité et de redondance."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Le Guide Complet du SysAdmin: Systèmes et Réseaux Linux",
+            "author": "Audoux, François"
+        },
+        {
+            "title": "Linux Administration : Tome 1, les bases",
+            "author": "Duboc, Laurent"
+        },
+        {
+            "title": "Sécurité et performances Apache",
+            "author": "Piot, Gilles"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC02-C15",
+        "title": "Contribuer à la mise en place",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Contribuer à la mise en place , au contrôle et à l’administration de l'infrastructure, en mobilisant ses compétences techniques, en collaborant avec les équipes pluridisciplinaires et en documentant la solution pour déployer les éléments techniques de la solution.",
+    "criteria": [
+        "Les éléments techniques mis en place respectent la topologie.",
+        "La documentation produite permet à une tierce personne de prendre connaissance des détails de l’implémentation et/ou de la reproduire à l’identique.",
+        "Les contrôles sont effectués avec rigueur et permettent de garantir l’adéquation de l’équipement mis en place avec les exigences de fonctionnement et de performance."
+    ]
+}

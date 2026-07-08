@@ -50,6 +50,13 @@
                            target="_blank">
                             Règlement des examens
                         </a>
+                        {% if promotion in ['cdwfs', 'eadl'] and year == '2026-2027' %}
+                            <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/projet-urban-hub.pdf') }}"
+                               class="app-button download"
+                               target="_blank">
+                                Projet Urban Hub
+                            </a>
+                        {% endif %}
                     </div>
                 </section>
             </div>

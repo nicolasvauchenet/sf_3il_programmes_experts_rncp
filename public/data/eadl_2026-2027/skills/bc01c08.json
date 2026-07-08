@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC01-C08",
+        "title": "Intégration des pratiques Test Driven Development (TDD)",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l’architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel.",
+    "criteria": [
+        "Couverture des tests : La couverture des tests automatisés permet de s'assurer que les fonctionnalités de l'application, y compris les cas limites et les scénarios d'erreur, sont testées de manière exhaustive, garantissant ainsi une qualité élevée du logiciel.",
+        "Conformité aux meilleures pratiques et documentation des tests : La conformité des scripts de test et des suites de tests aux meilleures pratiques de test logiciel, ainsi que la documentation complète des procédures et résultats de test, fournissent une base claire pour les futures références et améliorations, assurant une maintenance efficace du logiciel.",
+        "Documentation des tests : La documentation complète des procédures et résultats de test fournit une base claire pour les futures références et améliorations, facilitant ainsi la maintenance et l'évolution du logiciel."
+    ]
+}

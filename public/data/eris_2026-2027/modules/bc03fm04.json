@@ -1,0 +1,130 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM04",
+        "title": "Audit de sécurité et conformité",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue."
+        },
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l’infrastructure sous la responsabilité du RSSI au moyen de tests de pénétration, de simulations d’attaques et d’outils d’analyse de sécurité afin d’évaluer la robustesse des systèmes et la réactivité des équipes."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes et les méthodologies de l'audit de sécurité, maîtriser le processus et les outils nécessaires pour conduire un audit de sécurité, et savoir évaluer la conformité des systèmes d'information aux normes et réglementations en vigueur."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en sécurité informatique et en gestion des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondamentaux de l'audit de sécurité",
+                "items": [
+                    "Principes de base de l'audit de sécurité",
+                    "Objectifs et enjeux de l'audit",
+                    "Normes et référentiels d'audit de sécurité",
+                    "Méthodologies d'audit",
+                    "Différences entre audit interne et audit externe"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Processus d'audit et outils",
+                "items": [
+                    "Étapes du processus d'audit de sécurité",
+                    "Utilisation des outils d'audit",
+                    "Gestion des risques dans l'audit",
+                    "Élaboration d'un plan d'audit",
+                    "Évaluation des résultats d'audit"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Audit de conformité",
+                "items": [
+                    "Exigences réglementaires et normatives",
+                    "Méthodologie d'audit de conformité",
+                    "Évaluation de la conformité des SI",
+                    "Identification des écarts",
+                    "Bonnes pratiques pour assurer la conformité"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des recommandations et plans d'actions",
+                "items": [
+                    "Priorisation des recommandations",
+                    "Élaboration d'un plan d'actions",
+                    "Suivi de la mise en œuvre",
+                    "Rôles et responsabilités",
+                    "Outils de reporting et de suivi"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Audit des technologies spécifiques",
+                "items": [
+                    "Audit de sécurité des réseaux",
+                    "Audit des infrastructures cloud",
+                    "Audit des applications web et mobiles",
+                    "Audit des bases de données",
+                    "Audit des systèmes embarqués et objets connectés"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Élaboration d'un plan d'audit interne",
+            "context": "Préparer un audit interne pour évaluer la sécurité des systèmes d'information d'une entreprise.",
+            "objective": "Définir les objectifs, les domaines à examiner, les méthodologies et intégrer la gestion des risques dans la planification."
+        },
+        {
+            "title": "Analyse de conformité",
+            "context": "Vérifier la conformité d'un système d'information face à un nouveau règlement sur la protection des données.",
+            "objective": "Identifier les écarts de conformité et proposer des mesures correctives."
+        },
+        {
+            "title": "Utilisation des outils d'audit",
+            "context": "Utilisation d'outils comme un scanner de vulnérabilités, un outil d'analyse de logs ou un gestionnaire de configuration.",
+            "objective": "Collecter et analyser les données nécessaires à l'audit de sécurité."
+        },
+        {
+            "title": "Planification des actions correctives",
+            "context": "Suite à l'identification de vulnérabilités critiques dans une infrastructure.",
+            "objective": "Élaborer un plan d'action hiérarchisé avec responsabilités, échéances et indicateurs de suivi."
+        },
+        {
+            "title": "Audit de sécurité d'une application web",
+            "context": "Audit de sécurité d'une application récemment développée.",
+            "objective": "Analyser l'authentification, la gestion des sessions, la validation des entrées et la sécurité des communications."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "ITIL pour un management optimal des services informatiques",
+            "author": "Gérard Blokdijk"
+        },
+        {
+            "title": "ISO 27001 Lead Auditor : Guide de préparation à la certification",
+            "author": "L. Dubois"
+        },
+        {
+            "title": "Méthodologie d'audit des systèmes d'information de sécurité",
+            "author": "J. Lalande"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)",
+        "Vidéos",
+        "Conférence professionnelle"
+    ]
+}

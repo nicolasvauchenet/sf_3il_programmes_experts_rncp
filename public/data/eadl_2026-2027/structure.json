@@ -1,0 +1,1428 @@
+{
+    "meta": {
+        "datasetCode": "eadl_2026-2027",
+        "rncpCode": "39765",
+        "programCode": "EADL",
+        "programTitle": "Expert en Architecture et Développement Logiciel",
+        "academicYear": "2026-2027"
+    },
+    "modules": [
+        {
+            "code": "RNCP39765-BC01-FM01",
+            "fullCode": "RNCP39765-BC01-FM01",
+            "title": "Conception d'architectures logicielles",
+            "blockCode": "BC01",
+            "shortCode": "FM01",
+            "skills": [
+                "C04",
+                "C05"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC01-FM02",
+            "fullCode": "RNCP39765-BC01-FM02",
+            "title": "Principes et modélisation UML",
+            "blockCode": "BC01",
+            "shortCode": "FM02",
+            "skills": [
+                "C04"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC01-FM03",
+            "fullCode": "RNCP39765-BC01-FM03",
+            "title": "Architecture Hexagonale",
+            "blockCode": "BC01",
+            "shortCode": "FM03",
+            "skills": [
+                "C04",
+                "C05"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC01-FM04",
+            "fullCode": "RNCP39765-BC01-FM04",
+            "title": "Etude d'avant-projet",
+            "blockCode": "BC01",
+            "shortCode": "FM04",
+            "skills": [
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC01-FM05",
+            "fullCode": "RNCP39765-BC01-FM05",
+            "title": "Veille technologique et innovation",
+            "blockCode": "BC01",
+            "shortCode": "FM05",
+            "skills": [
+                "C01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC01-FM06",
+            "fullCode": "RNCP39765-BC01-FM06",
+            "title": "Test Driven Development",
+            "blockCode": "BC01",
+            "shortCode": "FM06",
+            "skills": [
+                "C08"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM01",
+            "fullCode": "RNCP39765-BC02-FM01",
+            "title": "Management de projet numérique en agilité",
+            "blockCode": "BC02",
+            "shortCode": "FM01",
+            "skills": [
+                "C10",
+                "C11",
+                "C12",
+                "C14"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM02",
+            "fullCode": "RNCP39765-BC02-FM02",
+            "title": "Leadership Technique (Analyse et résolution de problématiques en anglais)",
+            "blockCode": "BC02",
+            "shortCode": "FM02",
+            "skills": [
+                "C13",
+                "C15"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM03",
+            "fullCode": "RNCP39765-BC02-FM03",
+            "title": "Management des hommes",
+            "blockCode": "BC02",
+            "shortCode": "FM03",
+            "skills": [
+                "C11"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM04",
+            "fullCode": "RNCP39765-BC02-FM04",
+            "title": "Gestion et maîtrise des budgets",
+            "blockCode": "BC02",
+            "shortCode": "FM04",
+            "skills": [
+                "C10",
+                "C12"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM05",
+            "fullCode": "RNCP39765-BC02-FM05",
+            "title": "Contrat de prestation",
+            "blockCode": "BC02",
+            "shortCode": "FM05",
+            "skills": [
+                "C10",
+                "C12"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM06",
+            "fullCode": "RNCP39765-BC02-FM06",
+            "title": "Règlementation des données et conformité",
+            "blockCode": "BC02",
+            "shortCode": "FM06",
+            "skills": [
+                "C10",
+                "C12"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-FM07",
+            "fullCode": "RNCP39765-BC02-FM07",
+            "title": "Responsabilité des entreprises et numérique responsable",
+            "blockCode": "BC02",
+            "shortCode": "FM07",
+            "skills": [
+                "C10",
+                "C12",
+                "C14"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-FM01",
+            "fullCode": "RNCP39765-BC03-FM01",
+            "title": "Dévelopement avancé",
+            "blockCode": "BC03",
+            "shortCode": "FM01",
+            "skills": [
+                "C16",
+                "C17",
+                "C18",
+                "C19",
+                "C20"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-FM02",
+            "fullCode": "RNCP39765-BC03-FM02",
+            "title": "eXtreme programming",
+            "blockCode": "BC03",
+            "shortCode": "FM02",
+            "skills": [
+                "C16",
+                "C17",
+                "C18",
+                "C19",
+                "C20"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-FM03",
+            "fullCode": "RNCP39765-BC03-FM03",
+            "title": "Usine Logiciel",
+            "blockCode": "BC03",
+            "shortCode": "FM03",
+            "skills": [
+                "C16",
+                "C17",
+                "C18"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-FM04",
+            "fullCode": "RNCP39765-BC03-FM04",
+            "title": "DevSecOps et outils d'analyse de vulnérabilités",
+            "blockCode": "BC03",
+            "shortCode": "FM04",
+            "skills": [
+                "C18"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-FM05",
+            "fullCode": "RNCP39765-BC03-FM05",
+            "title": "Documentation Technique",
+            "blockCode": "BC03",
+            "shortCode": "FM05",
+            "skills": [
+                "C20"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-FM06",
+            "fullCode": "RNCP39765-BC03-FM06",
+            "title": "Analyse de qualité et pratiques de Clean Code",
+            "blockCode": "BC03",
+            "shortCode": "FM06",
+            "skills": [
+                "C19"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-FM01",
+            "fullCode": "RNCP39765-BC04-FM01",
+            "title": "Administration des infrastructures Cloud",
+            "blockCode": "BC04",
+            "shortCode": "FM01",
+            "skills": [
+                "C21",
+                "C22",
+                "C23"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-FM02",
+            "fullCode": "RNCP39765-BC04-FM02",
+            "title": "Infrastructure As Code",
+            "blockCode": "BC04",
+            "shortCode": "FM02",
+            "skills": [
+                "C22"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-FM03",
+            "fullCode": "RNCP39765-BC04-FM03",
+            "title": "Optimisation des performances Cloud",
+            "blockCode": "BC04",
+            "shortCode": "FM03",
+            "skills": [
+                "C24"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-FM04",
+            "fullCode": "RNCP39765-BC04-FM04",
+            "title": "Stratégies de sécurité Cloud",
+            "blockCode": "BC04",
+            "shortCode": "FM04",
+            "skills": [
+                "C25"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-FM05",
+            "fullCode": "RNCP39765-BC04-FM05",
+            "title": "Technologies de Blockchain",
+            "blockCode": "BC04",
+            "shortCode": "FM05",
+            "skills": [
+                "C26"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-FM06",
+            "fullCode": "RNCP39765-BC04-FM06",
+            "title": "FinOps : Optimisation financière du Cloud",
+            "blockCode": "BC04",
+            "shortCode": "FM06",
+            "skills": [
+                "C21"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM01",
+            "fullCode": "RNCP39765-BC05-FM01",
+            "title": "Architectures de données décisionnelles",
+            "blockCode": "BC05",
+            "shortCode": "FM01",
+            "skills": [
+                "C27"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM02",
+            "fullCode": "RNCP39765-BC05-FM02",
+            "title": "Processus ETL et intégration de données",
+            "blockCode": "BC05",
+            "shortCode": "FM02",
+            "skills": [
+                "C28"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM03",
+            "fullCode": "RNCP39765-BC05-FM03",
+            "title": "Big Data et Traitement Massif (Hadoop, Spark)",
+            "blockCode": "BC05",
+            "shortCode": "FM03",
+            "skills": [
+                "C29"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM04",
+            "fullCode": "RNCP39765-BC05-FM04",
+            "title": "Traitement de Flux en Temps Réel (Kafka, Flink)",
+            "blockCode": "BC05",
+            "shortCode": "FM04",
+            "skills": [],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ],
+            "evaluations": []
+        },
+        {
+            "code": "RNCP39765-BC05-FM05",
+            "fullCode": "RNCP39765-BC05-FM05",
+            "title": "Processus décisionnels et modèles de données",
+            "blockCode": "BC05",
+            "shortCode": "FM05",
+            "skills": [
+                "C30"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM06",
+            "fullCode": "RNCP39765-BC05-FM06",
+            "title": "Technologies RPA et automatisation des tâches",
+            "blockCode": "BC05",
+            "shortCode": "FM06",
+            "skills": [
+                "C31"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM07",
+            "fullCode": "RNCP39765-BC05-FM07",
+            "title": "Machine Learning et Modélisation des Données",
+            "blockCode": "BC05",
+            "shortCode": "FM07",
+            "skills": [
+                "C32",
+                "C33",
+                "C35"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM08",
+            "fullCode": "RNCP39765-BC05-FM08",
+            "title": "Gestion et déploiement des pipelines MLops",
+            "blockCode": "BC05",
+            "shortCode": "FM08",
+            "skills": [
+                "C32",
+                "C33",
+                "C35"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-FM09",
+            "fullCode": "RNCP39765-BC05-FM09",
+            "title": "Documentation et spécifications techniques",
+            "blockCode": "BC05",
+            "shortCode": "FM09",
+            "skills": [
+                "C34"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "code": "RNCP39765-BC01-PRJ01",
+            "title": "Novaria Core - UrbanHub Architecture",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM01",
+                "RNCP39765-BC01-FM02",
+                "RNCP39765-BC01-FM03",
+                "RNCP39765-BC01-FM04",
+                "RNCP39765-BC01-FM05",
+                "RNCP39765-BC01-FM06"
+            ],
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "shortCode": "PRJ01"
+        },
+        {
+            "code": "RNCP39765-BC02-PRJ02",
+            "title": "Novaria Core - UrbanHub Governance",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM01",
+                "RNCP39765-BC02-FM02",
+                "RNCP39765-BC02-FM03",
+                "RNCP39765-BC02-FM04",
+                "RNCP39765-BC02-FM05",
+                "RNCP39765-BC02-FM06",
+                "RNCP39765-BC02-FM07"
+            ],
+            "skills": [
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "shortCode": "PRJ02"
+        },
+        {
+            "code": "RNCP39765-BC03-PRJ03",
+            "title": "Novaria Core - UrbanHub Delivery Platform",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM03",
+                "RNCP39765-BC03-FM04",
+                "RNCP39765-BC03-FM05",
+                "RNCP39765-BC03-FM06"
+            ],
+            "skills": [
+                "C16",
+                "C17",
+                "C18",
+                "C19",
+                "C20"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ],
+            "shortCode": "PRJ03"
+        },
+        {
+            "code": "RNCP39765-BC04-PRJ04",
+            "title": "Novaria Core - UrbanHub Cloud Foundation",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM01",
+                "RNCP39765-BC04-FM02",
+                "RNCP39765-BC04-FM03",
+                "RNCP39765-BC04-FM04",
+                "RNCP39765-BC04-FM05",
+                "RNCP39765-BC04-FM06"
+            ],
+            "skills": [
+                "C21",
+                "C22",
+                "C23",
+                "C24",
+                "C25",
+                "C26"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "shortCode": "PRJ04"
+        },
+        {
+            "code": "RNCP39765-BC05-PRJ05",
+            "title": "Projet Data décisionnelle et automatisation métier",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM01",
+                "RNCP39765-BC05-FM02",
+                "RNCP39765-BC05-FM03",
+                "RNCP39765-BC05-FM04",
+                "RNCP39765-BC05-FM05",
+                "RNCP39765-BC05-FM06"
+            ],
+            "skills": [
+                "C27",
+                "C28",
+                "C29",
+                "C30",
+                "C31"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ],
+            "shortCode": "PRJ05"
+        },
+        {
+            "code": "RNCP39765-BC05-PRJ06",
+            "title": "Projet IA, MLOps et optimisation des processus",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM07",
+                "RNCP39765-BC05-FM08",
+                "RNCP39765-BC05-FM09"
+            ],
+            "skills": [
+                "C32",
+                "C33",
+                "C34",
+                "C35"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ],
+            "shortCode": "PRJ06"
+        }
+    ],
+    "blocks": [
+        {
+            "code": "BC01",
+            "title": "Concevoir et modéliser l’architecture logicielle"
+        },
+        {
+            "code": "BC02",
+            "title": "Manager les projets numériques"
+        },
+        {
+            "code": "BC03",
+            "title": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)"
+        },
+        {
+            "code": "BC04",
+            "title": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing"
+        },
+        {
+            "code": "BC05",
+            "title": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA"
+        }
+    ],
+    "skills": [
+        {
+            "code": "C01",
+            "title": "Mettre en place une veille technologique, normative, et législative",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C02",
+            "title": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C03",
+            "title": "Étudier et évaluer la faisabilité du projet",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C04",
+            "title": "Concevoir l’architecture logicielle",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM01",
+                "RNCP39765-BC01-FM02",
+                "RNCP39765-BC01-FM03",
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C05",
+            "title": "Sélectionner les technologies et outils les plus adaptés pour le développement",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM01",
+                "RNCP39765-BC01-FM03",
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C06",
+            "title": "Présenter et valider l'architecture logicielle et les aspects techniques et fonctionnels",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C07",
+            "title": "Créer des diagrammes et modèles de données et de flux",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C08",
+            "title": "Intégrer les pratiques de Test Driven Dévelopement (TDD)",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM04",
+                "RNCP39765-BC01-FM06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C09",
+            "title": "Collaborer activement à la rédaction du cahier des charges fonctionnels",
+            "blockCode": "BC01",
+            "modules": [
+                "RNCP39765-BC01-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC01-EC01"
+            ],
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "C10",
+            "title": "Planifier et conduire le projet numérique",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM01",
+                "RNCP39765-BC02-FM04",
+                "RNCP39765-BC02-FM05",
+                "RNCP39765-BC02-FM06",
+                "RNCP39765-BC02-FM07"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "C11",
+            "title": "Coordonner les équipes de projet",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM01",
+                "RNCP39765-BC02-FM03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "C12",
+            "title": "Effectuer le suivi continu des indicateurs de performance",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM01",
+                "RNCP39765-BC02-FM04",
+                "RNCP39765-BC02-FM05",
+                "RNCP39765-BC02-FM06",
+                "RNCP39765-BC02-FM07"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "C13",
+            "title": "Analyser des contenus de diverses sources d'informations spécialisées",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "C14",
+            "title": "Réaliser des évaluations périodiques de l'avancement de projet",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM01",
+                "RNCP39765-BC02-FM07"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "C15",
+            "title": "Organiser des ateliers pratiques, des revues de code collaboratives, et des séances de retour d'expérience (RETEX)",
+            "blockCode": "BC02",
+            "modules": [
+                "RNCP39765-BC02-FM02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC02-EC02"
+            ],
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "C16",
+            "title": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines (CI/CD)",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ]
+        },
+        {
+            "code": "C17",
+            "title": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ]
+        },
+        {
+            "code": "C18",
+            "title": "Intégrer des pratiques de sécurité DevSecOps",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM03",
+                "RNCP39765-BC03-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ]
+        },
+        {
+            "code": "C19",
+            "title": "Optimiser les développements et Structurer l'application en code modulaire en adoptant les pratiques de Clean Code",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ]
+        },
+        {
+            "code": "C20",
+            "title": "Mettre en place, rédiger et maintenir les documentations techniques complètes des applications",
+            "blockCode": "BC03",
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC03-EC03"
+            ],
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ]
+        },
+        {
+            "code": "C21",
+            "title": "Intégrer divers services cloud dans des applications en utilisant les API et les plateformes Cloud Provider",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM01",
+                "RNCP39765-BC04-FM06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "C22",
+            "title": "Automatiser la configuration et la gestion des ressources cloud",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM01",
+                "RNCP39765-BC04-FM02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "C23",
+            "title": "Administrer et optimiser les infrastructures cloud",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "C24",
+            "title": "Analyser et optimiser la performance des systèmes cloud",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "C25",
+            "title": "Implémenter des stratégies de sécurité robustes",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM04"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "C26",
+            "title": "Intégrer et mettre en œuvre des technologies blockchain",
+            "blockCode": "BC04",
+            "modules": [
+                "RNCP39765-BC04-FM05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC04-EC04"
+            ],
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "C27",
+            "title": "Concevoir l’architecture d’entrepôts de données décisionnelles",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM01"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ]
+        },
+        {
+            "code": "C28",
+            "title": "Mettre en œuvre de processus ETL",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM02"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ]
+        },
+        {
+            "code": "C29",
+            "title": "Transformer les données de masse brutes en informations exploitables",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM03"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ]
+        },
+        {
+            "code": "C30",
+            "title": "Développer des solutions de Business Intelligence (BI)",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM05"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ]
+        },
+        {
+            "code": "C31",
+            "title": "Automatiser les tâches répétitives en utilisant des technologies RPA",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM06"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC05"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ]
+        },
+        {
+            "code": "C32",
+            "title": "Optimiser les processus de décision",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM07",
+                "RNCP39765-BC05-FM08"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ]
+        },
+        {
+            "code": "C33",
+            "title": "Assurer la surveillance et la maintenance des systèmes automatisés",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM07",
+                "RNCP39765-BC05-FM08"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ]
+        },
+        {
+            "code": "C34",
+            "title": "Rédiger la documentation de support et les spécifications des éléments de services ou modèles développés",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM09"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ]
+        },
+        {
+            "code": "C35",
+            "title": "Mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation",
+            "blockCode": "BC05",
+            "modules": [
+                "RNCP39765-BC05-FM07",
+                "RNCP39765-BC05-FM08"
+            ],
+            "evaluations": [
+                "RNCP39765-BC05-EC06"
+            ],
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ]
+        }
+    ],
+    "evaluations": [
+        {
+            "code": "RNCP39765-BC01-EC01",
+            "blockCode": "BC01",
+            "title": "Conception et modélisation de l’architecture logicielle",
+            "skills": [
+                "C01",
+                "C02",
+                "C03",
+                "C04",
+                "C05",
+                "C06",
+                "C07",
+                "C08",
+                "C09"
+            ],
+            "modules": [
+                "RNCP39765-BC01-FM01",
+                "RNCP39765-BC01-FM02",
+                "RNCP39765-BC01-FM03",
+                "RNCP39765-BC01-FM04",
+                "RNCP39765-BC01-FM05",
+                "RNCP39765-BC01-FM06"
+            ],
+            "shortCode": "EC01",
+            "projects": [
+                "RNCP39765-BC01-PRJ01"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC02-EC02",
+            "blockCode": "BC02",
+            "title": "Management des projets numériques",
+            "skills": [
+                "C10",
+                "C11",
+                "C12",
+                "C13",
+                "C14",
+                "C15"
+            ],
+            "modules": [
+                "RNCP39765-BC02-FM01",
+                "RNCP39765-BC02-FM02",
+                "RNCP39765-BC02-FM03",
+                "RNCP39765-BC02-FM04",
+                "RNCP39765-BC02-FM05",
+                "RNCP39765-BC02-FM06",
+                "RNCP39765-BC02-FM07"
+            ],
+            "shortCode": "EC02",
+            "projects": [
+                "RNCP39765-BC02-PRJ02"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC03-EC03",
+            "blockCode": "BC03",
+            "title": "Pilotage de l'intégration et du déploiement continu dans le Systèmes d'Information (SI)",
+            "skills": [
+                "C16",
+                "C17",
+                "C18",
+                "C19",
+                "C20"
+            ],
+            "modules": [
+                "RNCP39765-BC03-FM01",
+                "RNCP39765-BC03-FM02",
+                "RNCP39765-BC03-FM03",
+                "RNCP39765-BC03-FM04",
+                "RNCP39765-BC03-FM05",
+                "RNCP39765-BC03-FM06"
+            ],
+            "shortCode": "EC03",
+            "projects": [
+                "RNCP39765-BC03-PRJ03"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC04-EC04",
+            "blockCode": "BC04",
+            "title": "Optimisation du Système d'Information (SI) par l'apport du Cloud Computing",
+            "skills": [
+                "C21",
+                "C22",
+                "C23",
+                "C24",
+                "C25",
+                "C26"
+            ],
+            "modules": [
+                "RNCP39765-BC04-FM01",
+                "RNCP39765-BC04-FM02",
+                "RNCP39765-BC04-FM03",
+                "RNCP39765-BC04-FM04",
+                "RNCP39765-BC04-FM05",
+                "RNCP39765-BC04-FM06"
+            ],
+            "shortCode": "EC04",
+            "projects": [
+                "RNCP39765-BC04-PRJ04"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-EC05",
+            "blockCode": "BC05",
+            "title": "Conception et optimisation d'architectures de données décisionnelles",
+            "skills": [
+                "C27",
+                "C28",
+                "C29",
+                "C30",
+                "C31"
+            ],
+            "modules": [
+                "RNCP39765-BC05-FM01",
+                "RNCP39765-BC05-FM02",
+                "RNCP39765-BC05-FM03",
+                "RNCP39765-BC05-FM05",
+                "RNCP39765-BC05-FM06"
+            ],
+            "shortCode": "EC05",
+            "projects": [
+                "RNCP39765-BC05-PRJ05"
+            ]
+        },
+        {
+            "code": "RNCP39765-BC05-EC06",
+            "blockCode": "BC05",
+            "title": "Optimisation des architectures et automatisation des processus et flux métier par l’apport de l’IA",
+            "skills": [
+                "C32",
+                "C33",
+                "C34",
+                "C35"
+            ],
+            "modules": [
+                "RNCP39765-BC05-FM07",
+                "RNCP39765-BC05-FM08",
+                "RNCP39765-BC05-FM09"
+            ],
+            "shortCode": "EC06",
+            "projects": [
+                "RNCP39765-BC05-PRJ06"
+            ]
+        }
+    ]
+}

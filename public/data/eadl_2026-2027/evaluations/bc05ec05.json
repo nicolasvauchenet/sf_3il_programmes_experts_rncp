@@ -1,0 +1,107 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39765-BC05-EC05",
+        "title": "Conception et optimisation d'architectures de données décisionnelles",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 5,
+    "description": "Conception et mise en place d’une interface d’analyse des données et réalisation d’une interface programmée d’automatisation.",
+    "skills": [
+        {
+            "code": "C27",
+            "description": "Concevoir l’architecture d’entrepôts de données décisionnelles (Data Warehouse et Data Lake) en stockant et organisant de grands volumes de données structurées et non structurées pour développer des solutions adaptées aux exigences des utilisateurs et des décideurs."
+        },
+        {
+            "code": "C28",
+            "description": "Mettre en œuvre des processus ETL (Extract, Transform, Load) par l'extraction de données de différentes sources, et en les transformant selon les besoins métier pour les charger dans des systèmes de stockage centralisés."
+        },
+        {
+            "code": "C29",
+            "description": "Transformer les données de masse brutes en informations exploitables à l'aide des technologies Big Data (Hadoop, Spark, etc.) pour aider les entreprises à prendre des décisions éclairées, à optimiser leurs opérations, à mieux comprendre leurs clients et à se protéger contre les menaces."
+        },
+        {
+            "code": "C30",
+            "description": "Développer des solutions de Business Intelligence (BI) en créant des tableaux de bord et des rapports interactifs à l'aide d'outils comme Power BI, Tableau, ou QlikView pour fournir des insights pertinents et adaptés aux besoins spécifiques des utilisateurs et des décideurs pour piloter les performances des activités (DAS) de l'entreprise."
+        },
+        {
+            "code": "C31",
+            "description": "Automatiser les tâches répétitives en utilisant des technologies RPA (Automatisation des Processus Robotiques) tels que UiPath, Blue Prism, Automation Anywhere, pour maximiser l'efficacité opérationnelle, à améliorer la précision et la rapidité des décisions, et à libérer des ressources pour des activités stratégiques, tout en garantissant la conformité et la traçabilité des opérations."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr27",
+            "description": "Qualité de l'architecture",
+            "indicators": [
+                "L'architecture conçue répond aux besoins des utilisateurs et des décideurs : La conception de l'architecture d'entrepôts de données permet de stocker et organiser efficacement de grands volumes de données, assurant ainsi leur accessibilité et leur utilité pour les utilisateurs et les décideurs.",
+                "La solution développée est évolutive et performante : La solution mise en œuvre permet d'optimiser la gestion des données structurées et non structurées, garantissant une évolutivité et une performance adéquates pour répondre aux exigences actuelles et futures."
+            ]
+        },
+        {
+            "code": "Cr28",
+            "description": "Qualité des processus ETL",
+            "indicators": [
+                "Les processus ETL sont correctement implémentés : La mise en œuvre des processus ETL permet d'extraire, transformer et charger efficacement les données de différentes sources dans des systèmes de stockage centralisés.",
+                "Les données transformées répondent aux besoins métier : Les transformations appliquées aux données permettent de les adapter aux besoins spécifiques des métiers, garantissant leur utilité et leur intégration dans les systèmes centralisés."
+            ]
+        },
+        {
+            "code": "Cr29",
+            "description": "Qualité des informations",
+            "indicators": [
+                "Les données brutes sont efficacement transformées : La transformation des données de masse brutes en informations exploitables permet d'extraire des insights pertinents à l'aide des technologies Big Data."
+            ]
+        },
+        {
+            "code": "Cr30",
+            "description": "Qualité des Insights",
+            "indicators": [
+                "Les tableaux de bord et rapports interactifs sont pertinents : La création de tableaux de bord et de rapports interactifs permet de fournir des insights pertinents et adaptés aux besoins spécifiques des utilisateurs et des décideurs.",
+                "Les solutions BI améliorent le pilotage des performances : Les solutions de Business Intelligence développées permettent de piloter efficacement les performances des activités de l'entreprise, en offrant une visibilité claire et en temps réel des indicateurs clés."
+            ]
+        },
+        {
+            "code": "Cr31",
+            "description": "Efficacité des RPA",
+            "indicators": [
+                "Les tâches répétitives sont efficacement automatisées : L'automatisation des tâches répétitives à l'aide de technologies RPA permet de maximiser l'efficacité opérationnelle et d'améliorer la précision et la rapidité des décisions.",
+                "Les solutions RPA garantissent la conformité et la traçabilité : Les solutions d'automatisation mises en œuvre permettent de libérer des ressources pour des activités stratégiques tout en garantissant la conformité et la traçabilité des opérations."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation professionnelle reconstituée sur ordinateur",
+        "delivery": "Partie 1 : Conception et mise en place d’une interface d’analyse des données ; Partie 2 : Réalisation d’une interface programmée d’automatisation",
+        "totalDuration": "6h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E5-P1",
+                "title": "Conception et mise en place d’une interface d’analyse des données",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "3h00"
+            },
+            {
+                "code": "E5-P2",
+                "title": "Réalisation d’une interface programmée d’automatisation",
+                "type": "Épreuve écrite",
+                "coefficient": 2,
+                "points": 40,
+                "duration": "3h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 60,
+            "compensationMin": 42,
+            "remedialBelow": 42,
+            "blockThreshold": 120
+        }
+    }
+}

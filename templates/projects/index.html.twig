@@ -53,6 +53,14 @@
                     </section>
                 </div>
 
+                {% if project.description %}
+                    <section class="app-section mx-0 mt-2 mb-0">
+                        <h2>Description</h2>
+
+                        <p>{{ project.description }}</p>
+                    </section>
+                {% endif %}
+
                 {% if project.objectives.description is defined and project.objectives.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>{{ project.blocCode }} : {{ project.blocName }}</h2>

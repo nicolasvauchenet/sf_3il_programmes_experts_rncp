@@ -1,0 +1,124 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC01-FM05",
+        "title": "Veille technologique et innovation",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l'architecture logicielle",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Mettre en place une veille technologique, normative, et législative en analysant des contenus de diverses sources d'informations multilingues afin d’identifier les nouvelles tendances, technologies et meilleures pratiques dans le domaine du développement et de l'architecture logicielle, afin de proposer des solutions innovantes et d'anticiper les évolutions du marché."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module sont d'acquérir une compréhension approfondie de la veille technologique dans le domaine de l'architecture logicielle, d'apprendre à utiliser des méthodes et outils pour collecter et analyser efficacement les informations pertinentes, et de savoir intégrer l'innovation dans des projets d'architecture logicielle en tenant compte des tendances, des impacts réglementaires, et de la concurrence."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en architecture logicielle, une familiarité avec les concepts d'innovation technologique, et des compétences fondamentales en recherche d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la veille technologique et innovation",
+                "items": [
+                    "Importance de la veille technologique dans le domaine de l'architecture logicielle",
+                    "Méthodes et outils de veille technologique",
+                    "Processus de veille technologique et innovation",
+                    "Bonnes pratiques en matière de veille technologique",
+                    "Exemples de succès grâce à une veille technologique efficace"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Veille technologique dans le domaine de l'architecture logicielle",
+                "items": [
+                    "Tendances actuelles en architecture logicielle",
+                    "Impact des nouvelles technologies sur l'architecture logicielle",
+                    "Analyse des innovations technologiques pertinentes pour l'architecture logicielle",
+                    "Stratégies pour intégrer les nouvelles technologies dans l'architecture logicielle",
+                    "Cas d'étude de projets d'architecture logicielle basés sur une veille technologique efficace"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Méthodes de collecte et d'analyse de l'information",
+                "items": [
+                    "Sources d'information pour la veille technologique",
+                    "Méthodes de collecte de données pertinentes pour l'architecture logicielle",
+                    "Techniques d'analyse de l'information recueillie",
+                    "Outils d'analyse de données pour la veille technologique",
+                    "Gestion et organisation des informations collectées"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion de l'innovation dans l'architecture logicielle",
+                "items": [
+                    "Processus d'innovation dans l'architecture logicielle",
+                    "Créativité et génération d'idées innovantes",
+                    "Évaluation et sélection des idées innovantes",
+                    "Intégration des innovations dans l'architecture logicielle",
+                    "Mesure de l'impact des innovations sur l'architecture logicielle"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Veille concurrentielle et réglementaire",
+                "items": [
+                    "Importance de la veille concurrentielle dans l'architecture logicielle",
+                    "Analyse des pratiques concurrentielles en matière d'architecture logicielle",
+                    "Veille réglementaire et normative impactant l'architecture logicielle",
+                    "Gestion des risques liés à la non-conformité réglementaire",
+                    "Stratégies de positionnement grâce à une veille concurrentielle efficace"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Mise en place d'un processus de veille technologique",
+            "context": "Dans cet exercice, les apprenants devront élaborer un plan détaillé pour la mise en place d'un processus de veille technologique au sein d'une entreprise d'architecture logicielle. Ils devront identifier les étapes clés, les acteurs impliqués, les outils à utiliser, ainsi que les indicateurs de performance à mettre en place pour évaluer l'efficacité du processus.",
+            "objective": "Dans cet exercice, les apprenants devront élaborer un plan détaillé pour la mise en place d'un processus de veille technologique au sein d'une entreprise d'architecture logicielle. Ils devront identifier les étapes clés, les acteurs impliqués, les outils à utiliser, ainsi que les indicateurs de performance à mettre en place pour évaluer l'efficacité du processus."
+        },
+        {
+            "title": "Analyse des tendances actuelles en architecture logicielle",
+            "context": "Les apprenants devront sélectionner deux tendances majeures en matière d'architecture logicielle et réaliser une analyse approfondie de leur impact sur le développement des logiciels. Ils devront identifier les avantages et les inconvénients de chaque tendance, et proposer des recommandations pour intégrer ces tendances de manière efficace dans un projet d'architecture logicielle.",
+            "objective": "Les apprenants devront sélectionner deux tendances majeures en matière d'architecture logicielle et réaliser une analyse approfondie de leur impact sur le développement des logiciels. Ils devront identifier les avantages et les inconvénients de chaque tendance, et proposer des recommandations pour intégrer ces tendances de manière efficace dans un projet d'architecture logicielle."
+        },
+        {
+            "title": "Utilisation d'outils d'analyse de données pour la veille technologique",
+            "context": "Pour cet exercice, les apprenants seront amenés à utiliser un outil d'analyse de données spécifique pour collecter et analyser des informations pertinentes pour la veille technologique. Ils devront choisir un outil adapté à un contexte d'architecture logicielle, collecter des données en lien avec une technologie spécifique, et présenter les résultats de leur analyse.",
+            "objective": "Pour cet exercice, les apprenants seront amenés à utiliser un outil d'analyse de données spécifique pour collecter et analyser des informations pertinentes pour la veille technologique. Ils devront choisir un outil adapté à un contexte d'architecture logicielle, collecter des données en lien avec une technologie spécifique, et présenter les résultats de leur analyse."
+        },
+        {
+            "title": "Génération d'idées innovantes pour l'architecture logicielle",
+            "context": "Les apprenants seront mis au défi de mener une séance de créativité pour générer des idées innovantes dans le domaine de l'architecture logicielle. Ils devront utiliser des techniques de créativité spécifiques pour proposer des idées originales, les évaluer en fonction de leur pertinence et de leur faisabilité, puis sélectionner les idées les plus prometteuses pour les intégrer dans un projet d'architecture logicielle.",
+            "objective": "Les apprenants seront mis au défi de mener une séance de créativité pour générer des idées innovantes dans le domaine de l'architecture logicielle. Ils devront utiliser des techniques de créativité spécifiques pour proposer des idées originales, les évaluer en fonction de leur pertinence et de leur faisabilité, puis sélectionner les idées les plus prometteuses pour les intégrer dans un projet d'architecture logicielle."
+        },
+        {
+            "title": "Veille concurrentielle et réglementaire",
+            "context": "Pour cet exercice, les apprenants devront réaliser une analyse de la stratégie concurrentielle d'une entreprise dans le domaine de l'architecture logicielle. Ils devront identifier les forces et les faiblesses de cette stratégie, ainsi que les opportunités et les menaces liées à l'environnement concurrentiel. De plus, ils devront également réaliser une veille réglementaire pour identifier les normes et réglementations impactant l'architecture logicielle, et évaluer les risques associés à la non-conformité.",
+            "objective": "Pour cet exercice, les apprenants devront réaliser une analyse de la stratégie concurrentielle d'une entreprise dans le domaine de l'architecture logicielle. Ils devront identifier les forces et les faiblesses de cette stratégie, ainsi que les opportunités et les menaces liées à l'environnement concurrentiel. De plus, ils devront également réaliser une veille réglementaire pour identifier les normes et réglementations impactant l'architecture logicielle, et évaluer les risques associés à la non-conformité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "La veille technologique - Stratégies pour innover",
+            "author": "Stéphane Prévost"
+        },
+        {
+            "title": "Architecture logicielle : Principes et techniques pour des logiciels adaptables",
+            "author": "Philippe Kruchten"
+        },
+        {
+            "title": "L'innovation systématique : Méthodes et pratiques",
+            "author": "Richard Maxwell"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC01-C06",
+        "title": "Surveiller et optimiser les performances via des outils de monitoring",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
+        "academicYear": "2025-2026"
+    },
+    "description": "Surveiller et optimiser les performances des systèmes informatiques en utilisant des outils de monitoring et d'analyse, en coordination avec les équipes d'exploitation, pour détecter et résoudre proactivement les problèmes techniques et améliorer la performance des systèmes.",
+    "criteria": [
+        "Pertinence du choix de l'outil de monitoring : la surveillance et l'analyse permettent un temps de réponse conforme aux SLA définis dans le PRA.",
+        "Pertinence de la sélection des données monitorées : la sélection des données à surveiller permet une évaluation précise de la performance opérationnelle."
+    ]
+}

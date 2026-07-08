@@ -1,0 +1,128 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC03-FM02",
+        "title": "Architectures sécurisées (On-premise, Cloud et hybrides)",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Évaluer les besoins et intégrer les solutions cloud, en tenant compte des exigences de flexibilité et d'évolutivité, pour améliorer et moderniser les architectures des systèmes d'information."
+        },
+        {
+            "code": "C19",
+            "description": "Analyser les besoins techniques en s'appuyant sur des connaissances avancées des structures telles que monolithiques, microservices, serverless ou n-tiers pour sélectionner l'architecture d'application la plus appropriée aux exigences spécifiques du projet."
+        },
+        {
+            "code": "C20",
+            "description": "Administrer et rationaliser les plateformes cloud en collaborant avec des experts et, en optimisant la mobilisation des ressources et des données hébergées pour assurer l'équilibre entre la performance élevée et la gestion budgétaire efficace des services cloud."
+        }
+    ],
+    "objectives": {
+        "description": "Ce module vise à fournir une compréhension approfondie des enjeux de sécurité spécifiques aux architectures Cloud et hybrides. Il permet d'acquérir les compétences nécessaires pour identifier et gérer les risques liés à ces environnements. Les apprenants pourront mettre en place des stratégies de protection adaptées aux données et aux applications hébergées en Cloud."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en réseaux informatiques et en sécurité informatique. Compréhension générale des concepts de Cloud Computing. Expérience pratique ou théorique en administration système ou gestion de données."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux architectures sécurisées",
+                "items": [
+                    "Compréhension des enjeux de sécurité dans les architectures Cloud et hybrides",
+                    "Vue d'ensemble des principaux standards de sécurité applicables",
+                    "Identification des menaces et des risques spécifiques aux architectures Cloud et hybrides",
+                    "Mise en place d'une stratégie de sécurité adaptée"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Sécurité des données dans les architectures Cloud et hybrides",
+                "items": [
+                    "Chiffrement des données et gestion des clés",
+                    "Contrôle d'accès et gestion des identités",
+                    "Sécurité des bases de données dans un environnement Cloud",
+                    "Conformité aux réglementations en matière de protection des données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Sécurité des applications dans les architectures Cloud et hybrides",
+                "items": [
+                    "Gestion des vulnérabilités et des correctifs",
+                    "Sécurité des API et des microservices",
+                    "Protection contre les attaques de type DDoS",
+                    "Bonnes pratiques de développement sécurisé"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sécurité du réseau dans les architectures Cloud et hybrides",
+                "items": [
+                    "Segmentation du réseau et isolation des ressources",
+                    "Surveillance du trafic réseau et détection des intrusions",
+                    "Sécurité des connexions inter-sites et inter-cloud",
+                    "Gestion des pare-feux et des politiques de sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des incidents et des crises de sécurité",
+                "items": [
+                    "Plan de réponse aux incidents de sécurité",
+                    "Gestion des vulnérabilités et des patchs",
+                    "Communication en cas d'incident majeur",
+                    "Retour d'expérience et amélioration continue de la sécurité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comprendre les enjeux de sécurité dans les architectures Cloud et hybrides",
+            "context": "Choisir une architecture Cloud ou hybride courante et identifier les principaux enjeux de sécurité associés.",
+            "objective": "Analyser les impacts sur la sécurité globale et proposer des mesures préventives adaptées."
+        },
+        {
+            "title": "S'initier au chiffrement des données dans un environnement Cloud",
+            "context": "Réaliser un cas pratique de chiffrement de données dans un environnement Cloud.",
+            "objective": "Mettre en place un processus de chiffrement et documenter les étapes et choix effectués."
+        },
+        {
+            "title": "Analyser la sécurité des API et des microservices",
+            "context": "Sélectionner une application utilisant des API et microservices.",
+            "objective": "Identifier les vulnérabilités et proposer des solutions de renforcement de la sécurité."
+        },
+        {
+            "title": "Mettre en place une politique de sécurité réseau",
+            "context": "Concevoir une politique de sécurité réseau pour une architecture hybride.",
+            "objective": "Définir règles de segmentation, surveillance, gestion des pare-feux et expliquer leur impact sur la sécurité."
+        },
+        {
+            "title": "Planifier la gestion des incidents de sécurité",
+            "context": "Élaborer un plan de réponse aux incidents pour une entreprise en environnement Cloud ou hybride.",
+            "objective": "Définir étapes clés, responsabilités et recommandations de communication en cas d'incident majeur."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Sécurité informatique : Principes et méthode",
+            "author": "David Theriault et René Charette"
+        },
+        {
+            "title": "La sécurité des systèmes d'information : Théorie et pratique",
+            "author": "Didier Caron"
+        },
+        {
+            "title": "Cloud Computing : Concepts, technologie et architecture",
+            "author": "Thomas Erl"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.),",
+        "Vidéos"
+    ]
+}

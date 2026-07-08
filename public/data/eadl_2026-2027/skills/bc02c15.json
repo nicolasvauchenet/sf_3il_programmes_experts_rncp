@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC02-C15",
+        "title": "Montée en compétences des équipes de développement et maintien de la performance collective",
+        "rncpCode": "39765",
+        "blocCode": "BC02",
+        "blocName": "Manager les projets numériques",
+        "academicYear": "2025-2026"
+    },
+    "description": "Organiser des ateliers pratiques, des revues de code collaboratives, et des séances de retour d'expérience (RETEX) en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence et maintien de la performance collective de l'équipe de développement.",
+    "criteria": [
+        "Le feedback recueilli lors des séances de retour d'expérience (RETEX) permet de vérifier l’efficacité des sessions collaboratives, ainsi que l'amélioration de la compréhension et de l'application des nouvelles connaissances par les membres de l'équipe.",
+        "L’évolution des indicateurs de qualité du code (ex. réduction des erreurs, meilleure structure du code, réduction des duplications) permet de vérifier l’impact sur les pratiques de développement au sein de l’équipe."
+    ]
+}

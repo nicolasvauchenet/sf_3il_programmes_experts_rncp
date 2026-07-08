@@ -1,0 +1,126 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-BC02-EC03",
+        "title": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 3,
+    "description": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL.",
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement en paramétrant un IDE et en utilisant le terminal afin de l'aligner de l'environnement de production cible."
+        },
+        {
+            "code": "C08",
+            "description": "Élaborer et implémenter des solutions back-end en appliquant la programmation orientée objet (POO), en utilisant des architectures MVC ainsi que les Frameworks adaptés pour structurer un code robuste et maintenable."
+        },
+        {
+            "code": "C09",
+            "description": "Optimiser et sécuriser les serveurs web, en ajustant les paramètres serveur et en employant des commandes avancées via le terminal pour améliorer les performances et la sécurité (SSH, MFA) des applications web en fonction de son OS (Linux, Windows)."
+        },
+        {
+            "code": "C10",
+            "description": "Élaborer et administrer des bases de données relationnelles (telles que MySQL ou PostgreSQL) et en utilisant SQL et en respectant les principes de normalisation pour assurer l'intégrité, la performance et la sécurité des données."
+        },
+        {
+            "code": "C11",
+            "description": "Concevoir et gérer l'administration des bases de données NoSQL, telles que le stockage de documents, les bases de données clé -valeur, en colonne ou les graphes, en tenant compte du besoin de l'application, pour optimiser et fluidifier"
+        },
+        {
+            "code": "C12",
+            "description": "Arbitrer et décider du choix entre les bases de données relationnelles et NoSQL en tenant compte des caractéristiques de chaque catégorie de base de données pour optimiser l'application en fonction de ses besoins."
+        },
+        {
+            "code": "C13",
+            "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération en tenant compte des politiques de sécurité et de continuité d'entreprise pour protéger les données contre les pertes et les sinistres"
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr07",
+            "description": "Configuration de l'environnement",
+            "indicators": [
+                "Exactitude de l'installation : Tous les composants nécessaires sont correctement installés et configurés dans l'IDE y compris le débogage, l'autocomplétion ...",
+                "Utilisation du terminal : Les commandes utilisées pour gérer l'environnement de développement et l'installation de dépendances sont adaptées à l'environnement de production du projet.",
+                "Personnalisation : L'IDE est personnalisée pour répondre aux besoins spécifiques du langage et du projet (plugins, thèmes, raccourcis clavier ...)."
+            ]
+        },
+        {
+            "code": "Cr08",
+            "description": "Conception et implémentation de solution Back-end",
+            "indicators": [
+                "Qualité de la conception POO: Les règles d'encapsulation, d'héritage et de polymorphisme, ... dans le code sont respectés.",
+                "Utilisation de l'architecture MVC: La répartition des modèles, vues et contrôleurs est définie.",
+                "Clarté du code : La clarté et la structure du code permettent une maintenance facile et une compréhension rapide par d’autres développeurs. (Indentation et Espacement, Commentaires, Nommage compréhensible des Variables et Fonctions...)"
+            ]
+        },
+        {
+            "code": "Cr09",
+            "description": "Configuration des serveurs Web",
+            "indicators": [
+                "Gestion des ressources : Les paramètres du serveur sont ajustés et permettent l’optimisation de l’utilisation des ressources (mémoire, processeur, stockage)",
+                "Mise en place de la sécurité : Les certificats SSL et configuration SSH sont fonctionnels."
+            ]
+        },
+        {
+            "code": "Cr10",
+            "description": "Conception et administrations des BD relationnelles",
+            "indicators": [
+                "Conformité du schéma : Le schéma de base de données proposé est en adéquation avec les besoins fonctionnels de l'entreprise",
+                "Application de la normalisation : Les principes de normalisation évitent la redondance et assure l’intégrité des données.",
+                "Performance et sécurité : Les tests de performance et l'accès aux données respectent la montée en charge et la sécurité des informations stockées."
+            ]
+        },
+        {
+            "code": "Cr11",
+            "description": "Conception et administrations des BD NoSQL",
+            "indicators": [
+                "Adéquation de l'architecture NoSQL : La solution NoSQL proposée pour le traitement et la gestion des grandes quantités de données non structurées est pertinente.",
+                "Optimisation : Les solutions NoSQL mise en place accélèrent la rapidité de traitement des requêtes et de facilitent la mise à l'échelle (Réplication et Partitionnement)."
+            ]
+        },
+        {
+            "code": "Cr12",
+            "description": "Arbitrage des solutions alternatives",
+            "indicators": [
+                "Prise de décision : L’arbitrage prend en considération des critères de performance, de coûts et d’évolutivité. Des hypothèses pour chaque critère sont détaillés. Les caractéristiques des bases de données sont prises en compte dans l'arbitrage."
+            ]
+        },
+        {
+            "code": "Cr13",
+            "description": "Stratégies de sauvegarde et de récupération",
+            "indicators": [
+                "Rigueur du plan de sauvegarde : Le plan de sauvegarde et de récupération proposé est fiable et complet.",
+                "Alignement avec les politiques de sécurité : Le plan de sauvegarde est aligné avec les politiques de sécurité et de continuité de l'entreprise."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée sur ordinateur",
+        "delivery": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E3",
+                "title": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL",
+                "type": "Épreuve écrite",
+                "coefficient": 5,
+                "points": 100,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 50,
+            "compensationMin": 35,
+            "remedialBelow": 35,
+            "blockThreshold": 100
+        }
+    }
+}

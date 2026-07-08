@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC01-C03",
+        "title": "Réaliser des interfaces web adaptatives en Responsive Web Design",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives front-end",
+        "academicYear": "2025"
+    },
+    "description": "Élaborer et réaliser des interfaces web adaptatives en utilisant des techniques de Responsive Web Design, notamment avec l'aide d'un Framework dédié pour assurer une expérience utilisateur cohérente et de qualité sur tous types de terminaux.",
+    "criteria": [
+        "Responsivité : l'interface s'adapte sur tous types d'appareils (desktop, tablette, mobile…)."
+    ]
+}

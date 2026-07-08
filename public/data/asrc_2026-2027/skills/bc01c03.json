@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC01-C03",
+        "title": "Concevoir et déployer des environnements virtualisés",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d’exploitation et la virtualisation pour la sécurité et la performance",
+        "academicYear": "2025-2026"
+    },
+    "description": "Concevoir et déployer des environnements virtualisés à l'aide de plateformes spécialisées On-Premise ou sur un cloud provider, en coopération avec les architectes système, pour rationaliser l'utilisation des ressources informatiques et répondre à l'évolutivité des besoins de l'entreprise.",
+    "criteria": [
+        "Conformité : l'architecture virtualisée garantit l'adéquation avec les besoins opérationnels et évolutifs de l'entreprise.",
+        "Efficience : les systèmes virtualisés sont gérés de manière à maximiser l'efficacité des ressources."
+    ]
+}

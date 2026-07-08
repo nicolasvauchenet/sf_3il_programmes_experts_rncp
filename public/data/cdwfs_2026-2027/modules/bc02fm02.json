@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM02",
+        "title": "Analyse et modélisation (UML)",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C08",
+            "description": "Élaborer et implémenter des solutions Back-end en appliquant la programmation orientée objet (POO), en utilisant des architectures MVC ainsi que les Frameworks adaptés pour structurer un code robuste et maintenable."
+        }
+    ],
+    "objectives": {
+        "description": "Apprendre à utiliser UML pour modéliser les différents aspects d'un système logiciel. Comprendre et réaliser plusieurs types de diagrammes UML comme les cas d'utilisation, les classes, les séquences, et les états-transition. Intégrer l'utilisation d'UML dans le processus de développement pour capturer les exigences et concevoir des solutions logicielles robustes."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en programmation et en développement logiciel. Compréhension des concepts de génie logiciel et des processus de développement. Familiarité avec la modélisation et l'abstraction en informatique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à UML",
+                "items": [
+                    "Les principes de base de l'UML",
+                    "Les différents types de diagrammes UML",
+                    "L'importance de l'UML dans le processus de développement logiciel",
+                    "Les outils de modélisation UML disponibles sur le marché",
+                    "Exemples d'utilisation de l'UML dans des projets réels"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Diagramme de cas d'utilisation",
+                "items": [
+                    "Comprendre le concept de cas d'utilisation",
+                    "Identifier les acteurs et les scénarios",
+                    "Réaliser des diagrammes de cas d'utilisation",
+                    "Utilisation de cas d'utilisation pour la capture des exigences",
+                    "Exemples pratiques de diagrammes de cas d'utilisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Diagramme de classes",
+                "items": [
+                    "Comprendre la structure d'un diagramme de classes",
+                    "Notion d'attributs, de méthodes et de relations entre les classes",
+                    "Utilisation de l'héritage et de la composition",
+                    "Exemples de modélisation de classes",
+                    "Utilisation des diagrammes de classes pour la conception logicielle"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Diagramme de séquence",
+                "items": [
+                    "Comprendre le scénario d'exécution d'un système",
+                    "Notion de messages échangés entre les objets",
+                    "Utilisation des diagrammes de séquence pour modéliser le comportement dynamique",
+                    "Exemples de modélisation de séquences d'interaction",
+                    "Intégration des diagrammes de séquence dans le processus de développement"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Diagramme d'états-transition",
+                "items": [
+                    "Comprendre le concept d'états et de transitions",
+                    "Modélisation du comportement d'un objet en fonction de son état",
+                    "Utilisation des diagrammes d'états-transition pour la modélisation des comportements complexes",
+                    "Exemples de modélisation de diagrammes d'états-transition",
+                    "Intégration des diagrammes d'états-transition dans la conception logicielle"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de cas réels d'utilisation d'UML",
+            "context": "Sélectionner un projet logiciel réel et identifier les différentes utilisations d'UML dans ce projet.",
+            "objective": "Lister les diagrammes UML utilisés, expliquer leur rôle dans la modélisation et la conception, puis présenter et discuter les résultats."
+        },
+        {
+            "title": "Modélisation d'un cas d'utilisation",
+            "context": "Identifier un processus métier simple (réservation, gestion de compte, etc.).",
+            "objective": "Réaliser un diagramme de cas d'utilisation détaillé en identifiant acteurs, scénarios principaux et alternatifs, puis le présenter."
+        },
+        {
+            "title": "Modélisation de classes pour un système donné",
+            "context": "Sélectionner un système logiciel simple (gestion de bibliothèque, réservation en ligne, etc.).",
+            "objective": "Réaliser un diagramme de classes avec attributs, méthodes et relations, et justifier les choix de conception."
+        },
+        {
+            "title": "Modélisation d'un scénario d'exécution",
+            "context": "Élaborer un scénario d'exécution pour un système au choix.",
+            "objective": "Réaliser un diagramme de séquence décrivant les interactions et messages échangés, puis expliquer le scénario modélisé."
+        },
+        {
+            "title": "Modélisation des comportements complexes",
+            "context": "Choisir un système comportant un comportement complexe (DAB, feux de circulation, etc.).",
+            "objective": "Réaliser un diagramme d'états-transition, identifier états et transitions, justifier les choix et présenter le modèle."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "UML 2 - Modéliser une application web",
+            "author": "Pascal Roques"
+        },
+        {
+            "title": "UML Distilled: A Brief Guide to the Standard Object Modeling Language",
+            "author": "Martin Fowler"
+        },
+        {
+            "title": "UML 2 : Un langage unifié de modélisation objet",
+            "author": "Jean-Michel Bruel"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Autre",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

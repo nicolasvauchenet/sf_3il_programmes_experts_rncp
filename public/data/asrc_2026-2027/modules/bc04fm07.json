@@ -1,0 +1,126 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC04-FM07",
+        "title": "Veille Technologique multilingue",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C29",
+            "description": "Mettre en place une veille technologique en relation avec le périmètre d'un projet ou l'activité de l'entreprise en sélectionnant des sources d'information multilingues, en s'assurant de la véracité de leurs contenus et en utilisant des outils de collecte avancés pour un stockage et une organisation efficace des données récoltées dans une base de connaissance."
+        },
+        {
+            "code": "C30",
+            "description": "Analyser les données brutes collectées dans la base de connaissances technologiques en comparant les différents résultats afin d'établir différentes hypothèses ou scénarii d'évolution, d'optimisation et de sécurisation des infrastructures."
+        },
+        {
+            "code": "C31",
+            "description": "Diffuser les hypothèses ou scénarii aux collaborateurs du département IT (Information Technology) en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence de l'équipe et le soutien du processus décisionnel et l'innovation au sein du projet."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module sont d'apprendre à utiliser efficacement les méthodes et outils de veille technologique pour collecter et analyser des informations, comprendre l'importance de la veille technologique multilingue dans un contexte globalisé, et intégrer la veille technologique dans la stratégie globale de l'entreprise pour améliorer l'innovation et la compétitivité."
+    },
+    "prerequisites": {
+        "description": "Une compréhension basique des stratégies d'entreprise et des concepts de gestion de l'information, ainsi qu'une familiarité avec les outils numériques est nécessaire pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Méthodes et outils de veille technologique",
+                "items": [
+                    "Les différentes méthodes de veille technologique",
+                    "Outils de veille technologique disponibles sur le marché",
+                    "Bonnes pratiques pour la mise en place d'une veille technologique efficace",
+                    "Analyse des besoins spécifiques en veille technologique"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Collecte et analyse de l'information",
+                "items": [
+                    "Sélection des sources d'information pertinentes",
+                    "Techniques de collecte de l'information",
+                    "Méthodes d'analyse de l'information recueillie",
+                    "Utilisation d'outils d'analyse de données pour la veille technologique"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Veille technologique multilingue",
+                "items": [
+                    "Importance de la veille technologique multilingue dans un environnement mondialisé",
+                    "Outils et ressources pour la veille technologique dans différentes langues",
+                    "Stratégies pour la traduction et l'interprétation de l'information technologique"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Évaluation et diffusion de l'information",
+                "items": [
+                    "Critères d'évaluation de la fiabilité et de la pertinence de l'information technologique",
+                    "Méthodes de diffusion de l'information au sein de l'organisation",
+                    "Utilisation d'outils de partage et de diffusion de l'information",
+                    "Bonnes pratiques pour assurer la sécurité de l'information diffusée"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Intégration de la veille technologique dans la stratégie d'entreprise",
+                "items": [
+                    "Alignement de la veille technologique avec les objectifs stratégiques de l'entreprise",
+                    "Intégration de l'information issue de la veille technologique dans les processus décisionnels",
+                    "Utilisation de la veille technologique pour l'innovation et la compétitivité de l'entreprise",
+                    "Mesure de l'impact de la veille technologique sur la performance de l'entreprise"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins en veille technologique",
+            "context": "Entreprise spécialisée dans la conception de logiciels de sécurité informatique.",
+            "objective": "Réaliser une analyse détaillée des besoins en veille technologique et proposer des solutions adaptées."
+        },
+        {
+            "title": "Collecte et analyse de l'information",
+            "context": "Entreprise de fabrication de véhicules électriques.",
+            "objective": "Identifier sources pertinentes, mettre en place une stratégie de collecte et analyser les tendances clés."
+        },
+        {
+            "title": "Veille technologique multilingue",
+            "context": "Entreprise internationale dans le secteur de la santé.",
+            "objective": "Proposer outils, ressources et stratégie de traduction/interprétation adaptés à un marché mondialisé."
+        },
+        {
+            "title": "Évaluation de la fiabilité de l'information technologique",
+            "context": "Entreprise de télécommunications.",
+            "objective": "Définir critères d'évaluation de la fiabilité et méthodes de diffusion adaptées."
+        },
+        {
+            "title": "Intégration de la veille technologique dans la stratégie d'entreprise",
+            "context": "Entreprise de haute technologie.",
+            "objective": "Proposer un plan d'intégration stratégique et des indicateurs de mesure d'impact."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Veille et intelligence économique : Méthodes et outils de l'information stratégique",
+            "author": "Michel, C., & Bousquet, P."
+        },
+        {
+            "title": "Veille technologique et innovation",
+            "author": "Noizet, G."
+        },
+        {
+            "title": "Techniques de veille stratégique et concurrentielle",
+            "author": "Prieur, D."
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

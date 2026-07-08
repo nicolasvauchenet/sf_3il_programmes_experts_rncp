@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM02",
+        "title": "Politique de sécurité",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Conduire une veille active en matière de cybersécurité en analysant régulièrement les bulletins de sécurité et les publications des organismes de référence francophones et anglophones afin d’anticiper les menaces et vulnérabilités émergentes."
+        },
+        {
+            "code": "C19",
+            "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) en s’appuyant sur les standards et une analyse des risques pour protéger les données et les systèmes de l’entreprise."
+        },
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le RSSI en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue."
+        },
+        {
+            "code": "C21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de sécurité informatique en conformité avec les recommandations de l’ANSSI au moyen d’ateliers, de documentation et de simulations afin de réduire les comportements à risques."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes fondamentaux de la sécurité des systèmes d'information, analyser les risques et les vulnérabilités, et maîtriser l’élaboration et la mise en œuvre d’une politique de sécurité des systèmes d'information efficace."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et réseaux, familiarité avec les concepts de cybersécurité et compréhension des fondamentaux de gestion des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondements de la sécurité des systèmes d'information",
+                "items": [
+                    "Principes de base de la sécurité des systèmes d'information",
+                    "Enjeux de la sécurité des systèmes d'information",
+                    "Acteurs et menaces en cybersécurité",
+                    "Normes et bonnes pratiques",
+                    "Évolution des attaques et des défenses"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Analyse des risques et gestion des vulnérabilités",
+                "items": [
+                    "Méthodologies d'analyse des risques",
+                    "Identification des actifs, menaces et vulnérabilités",
+                    "Évaluation et classification des risques",
+                    "Stratégies de traitement des risques",
+                    "Gestion des vulnérabilités et des correctifs"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Élaboration d'une politique de sécurité des SI",
+                "items": [
+                    "Objectifs d'une PSSI",
+                    "Éléments constitutifs d'une politique de sécurité",
+                    "Rédaction d'une charte de sécurité",
+                    "Procédures et standards",
+                    "Communication et sensibilisation"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gouvernance de la sécurité des SI",
+                "items": [
+                    "Référentiels de gouvernance",
+                    "Rôles et responsabilités",
+                    "Organisation de la gouvernance sécurité",
+                    "Conformité réglementaire et normative",
+                    "Impact de la gouvernance sur la PSSI"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Mise en œuvre et suivi de la politique de sécurité",
+                "items": [
+                    "Planification de la mise en œuvre",
+                    "Outils de suivi de la conformité",
+                    "Audit et évaluation de la politique de sécurité",
+                    "Amélioration continue",
+                    "Gestion des incidents et crises"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Classification des risques",
+            "context": "Analyse des risques pour une entreprise fictive manipulant des données sensibles.",
+            "objective": "Identifier les actifs critiques, évaluer les menaces et proposer des stratégies de traitement des risques."
+        },
+        {
+            "title": "Rédaction d'une charte de sécurité",
+            "context": "Création d'une charte de sécurité destinée aux employés.",
+            "objective": "Définir les bonnes pratiques de sécurité et les responsabilités des utilisateurs."
+        },
+        {
+            "title": "Plan de gestion des vulnérabilités",
+            "context": "Traitement de vulnérabilités identifiées dans une infrastructure informatique.",
+            "objective": "Proposer des mesures correctives et un plan de suivi des vulnérabilités."
+        },
+        {
+            "title": "Simulation d'audit de conformité",
+            "context": "Audit interne de la politique de sécurité d'une entreprise.",
+            "objective": "Évaluer la conformité des pratiques et formuler des recommandations."
+        },
+        {
+            "title": "Gestion d'un incident de sécurité",
+            "context": "Tentative d'intrusion détectée sur le réseau d'une entreprise.",
+            "objective": "Documenter les actions de réponse à incident et proposer des améliorations de la politique de sécurité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Les fondamentaux de la sécurité des systèmes d'information",
+            "author": "Eric Filiol"
+        },
+        {
+            "title": "Analyse de risque - Principes et méthodes",
+            "author": "Karine Bencheikh"
+        },
+        {
+            "title": "Sécurité des systèmes d'information - Guide pratique pour les professionnels",
+            "author": "Clement Dupuis et Debra S. Isaac"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Étude de texte / d'ouvrage",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC03-C18",
+        "title": "Implémenter et maintenir des outils de sécurité (pare-feu, IDS/IPS)",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de Cybersécurité pour la protection des données",
+        "academicYear": "2025-2026"
+    },
+    "description": "Implémenter les outils et systèmes de sécurité tels que les pare-feu et les IDS/IPS, en s'assurant de leur configuration optimale et de leur mise à jour, en collaboration avec l'équipe réseau et les spécialistes sécurité, pour prévenir les intrusions et protéger les réseaux de l'entreprise.",
+    "criteria": [
+        "Qualité des choix des outils : les outils sélectionnés répondent aux besoins de l'environnement spécifique de l'entreprise.",
+        "Qualité des règles de filtrage : les règles alertent et bloquent les activités suspectes sans impacter négativement l'activité.",
+        "Pertinence de la configuration : la configuration optimise la capacité à identifier et répondre rapidement aux tentatives d'intrusion."
+    ]
+}

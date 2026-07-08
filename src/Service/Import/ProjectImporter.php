@@ -63,6 +63,17 @@ final readonly class ProjectImporter
                 'code' => $code,
             ]);
 
+            $detail = $projectFiles[$code] ?? null;
+
+            if ($detail === null) {
+                if ($project instanceof Project) {
+                    $this->removeProject($project);
+                    $report->markDeleted('projects');
+                }
+
+                continue;
+            }
+
             $isNew = !$project instanceof Project;
 
             if ($isNew) {
@@ -75,11 +86,9 @@ final readonly class ProjectImporter
                 $report->markUpdated('projects');
             }
 
-            $detail = $projectFiles[$code] ?? null;
-
             $project->setBlock($blocks[$blockCode]);
             $project->setTitle(trim((string)($row['title'] ?? $detail['meta']['title'] ?? $code)));
-            $project->setDescription(null);
+            $project->setDescription($this->extractNestedString($detail, ['description']));
             $project->setDurationDays($this->toNullableInt($detail['meta']['durationDays'] ?? null));
             $project->setDurationHours($this->toNullableInt($detail['meta']['durationHours'] ?? null));
             $project->setObjectives($this->extractNestedString($detail, ['objectives', 'description']));
@@ -95,6 +104,28 @@ final readonly class ProjectImporter
         }
 
         return $result;
+    }
+
+    private function removeProject(Project $project): void
+    {
+        foreach ($project->getChapters()->toArray() as $chapter) {
+            $project->removeChapter($chapter);
+            $this->entityManager->remove($chapter);
+        }
+
+        foreach ($project->getModules()->toArray() as $module) {
+            $project->removeModule($module);
+        }
+
+        foreach ($project->getSkills()->toArray() as $skill) {
+            $project->removeSkill($skill);
+        }
+
+        foreach ($project->getEvaluations()->toArray() as $evaluation) {
+            $project->removeEvaluation($evaluation);
+        }
+
+        $this->entityManager->remove($project);
     }
 
     /**

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC03-C17",
+        "title": "Automatisation des processus d'intégration et de déploiement continus",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "academicYear": "2025-2026"
+    },
+    "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution.",
+    "criteria": [
+        "Tous les tests sont correctement intégrés : L'intégration correcte de tous les tests fonctionnels et non-fonctionnels dans les pipelines CI/CD permet de garantir que chaque nouvelle version du logiciel est soumise à une vérification exhaustive et rigoureuse.",
+        "Les tests sont fonctionnels : La fonctionnalité des tests assure que les scénarios de test couvrent toutes les exigences du logiciel, confirmant ainsi que le logiciel répond aux demandes d'évolution et fonctionne comme prévu."
+    ]
+}

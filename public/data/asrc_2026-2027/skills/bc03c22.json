@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC03-C22",
+        "title": "Assurer la conformité aux réglementations de protection des données (RGPD)",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de Cybersécurité pour la protection des données",
+        "academicYear": "2025-2026"
+    },
+    "description": "Assurer la conformité aux réglementations de protection des données, telles que le RGPD, en menant des évaluations et des audits de conformité, en collaboration avec des experts juridiques et réglementaires, et en mettant en place des actions correctives, pour éviter les sanctions et renforcer la confiance des parties prenantes dans la gouvernance des données.",
+    "criteria": [
+        "Adéquation des audits de conformité : les audits réalisés permettent d'identifier les non-conformités aux réglementations de protection des données, telles que le RGPD."
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC02-C17",
+        "title": "Organiser et piloter la gestion des incidents et du support en définissant les processus standardisés pour la création",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Organiser et piloter la gestion des incidents et du support en définissant les processus standardisés pour la création, l’attribution, le suivi des tickets et leur élévation, dans un cadre d’amélioration continue et en s’appuyant sur des outils de gestion des tickets (ITSM) , pour suivre, prioriser et résoudre les incidents, ainsi qu’assurer une résolution rapide et efficace des problèmes techniques.",
+    "criteria": [
+        "La gestion des incidents et du support est organisée autour d’une solution de gestion de tickets permettant leur priorisation, attribution, suivi et éventuelle élévation.",
+        "L’organisation choisie permet de respecter les délais de prise en charge fixés dans les SLA.",
+        "La solution retenue, la structuration du support en niveaux, et les processus mis en œuvre permettent une gestion efficace des incidents et la capitalisation des réponses mises au point.",
+        "L’organisation du support facilite la détection des incidents récurrents et la mise en place de mesures préventives."
+    ]
+}

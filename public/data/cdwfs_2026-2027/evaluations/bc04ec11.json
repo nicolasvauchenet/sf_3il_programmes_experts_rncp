@@ -1,0 +1,92 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-BC04-EC11",
+        "title": "Rédaction d'un rapport de veille multilingue",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 11,
+    "description": "Rédaction d'un rapport de veille multilingue.",
+    "skills": [
+        {
+            "code": "C36",
+            "description": "Mobiliser ses connaissances technologiques, sa maîtrise de l'anglais et l'utilisation des fonctionnalités avancées des moteurs de recherches, en analysant les contenus de diverses sources d'informations tel que les forums, sites spécialisés pour résoudre d es problèmes rencontrés lors du développement des applications ou évaluer les solutions les plus optimales dans la gestion de projet."
+        },
+        {
+            "code": "C37",
+            "description": "Mettre en place une veille technologique en relation avec le périmètre d'un projet ou l'activité de l'entreprise en sélectionnant des sources d'information multilingues, en s'assurant de la véracité de leurs contenus et en utilisant des outils de collecte avancés pour un stockage et une organisation efficace des don nées récoltées dans une base de connaissance."
+        },
+        {
+            "code": "C38",
+            "description": "Analyser les données brutes collectées dans la base de connaissance en comparant les différents résultats afin d'établir différentes hypothèses ou scénarii."
+        },
+        {
+            "code": "C39",
+            "description": "Diffuser les hypothèses ou scénarii à l'équipe de développement en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence de l'équipe de développement et le soutien du processus décisionnel et l'innovation au sein du projet."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr36",
+            "description": "Mobiliser ses connaissances technologiques et maîtrise de l'anglais",
+            "indicators": [
+                "Pertinence des informations trouvées : Les informations extraites des recherches sont directement applicables et pertinentes pour résoudre des problèmes spécifiques rencontrés lors du développement ou pour optimiser la gestion de projet.",
+                "Maitrise de l'anglais technique :Un élargissement du périmètre de veille et recherche est mis en place à partir de sources d'informations multilingues, telles que des forums ou des sites anglophones spécialisés.",
+                "Analyse et synthèse des données : Aptitude à analyser les informations recueillies, à en faire la synthèse et à en tirer des conclusions logiques et applicables au contexte du projet."
+            ]
+        },
+        {
+            "code": "Cr37",
+            "description": "Veille technologique et gestion de l'information",
+            "indicators": [
+                "Sélection et pertinence des sources : Les sources d'information choisies doivent être pertinentes et crédibles, couvrant divers domaines technologiques liés aux objectifs du projet.",
+                "Vérification et exactitude des informations : Les informations collectées sont vérifiées pour leur exactitude et leur actualité, en utilisant des critères d'évaluation clairs pour établir la fiabilité de chaque source.",
+                "Utilisation d'outils de collecte : Des outils de collecte et d'analyse de données sont employés efficacement pour organiser et stocker les informations dans une base de connaissance structurée et consultable."
+            ]
+        },
+        {
+            "code": "Cr38",
+            "description": "Analyse des données collectées",
+            "indicators": [
+                "Création de base de connaissances : Les données sont organisées de manière à permettre un accès facile et rapide, en utilisant des méthodes de classification et de catégorisation adaptées aux besoins de l'équipe de développement.",
+                "Génération d'hypothèses : Les données analysées permettent de formuler des hypothèses ou scénarii cohérents et pertinents, qui seront utilisés pour diriger des prises de décision ou de nouvelles lignes de recherche.",
+                "Comparaison et contraste : Les informations issues de différentes sources permettent d'identifier des tendances, des divergences ou des corrélations significatives.",
+                "Synthèse des informations : Les informations sont résumées et présentées de manière à éclairer les décisions ou les futures directions du projet."
+            ]
+        },
+        {
+            "code": "Cr39",
+            "description": "Diffusion des hypothèses ou scénarios",
+            "indicators": [
+                "Diffusion des informations : Les résultats de l'analyse sont communiqués clairement à l'équipe de développement, en utilisant des outils collaboratifs pour encourager la discussion et le partage des connaissances.",
+                "Support à la prise de décision : Les résultats de l'analyse des données sont présentés de manière à faciliter la compréhension et à soutenir le processus décisionnel au sein de l'équipe de développement."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
+        "delivery": "Rédaction d'un rapport de veille multilingue",
+        "totalDuration": "2h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E11",
+                "title": "Rédaction d'un rapport de veille multilingue",
+                "type": "Épreuve écrite",
+                "coefficient": 1,
+                "points": 60,
+                "duration": "2h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 30,
+            "compensationMin": 21,
+            "remedialBelow": 21,
+            "blockThreshold": 140
+        }
+    }
+}

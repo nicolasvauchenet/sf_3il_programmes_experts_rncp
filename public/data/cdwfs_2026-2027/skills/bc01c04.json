@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC01-C04",
+        "title": "Implémenter des interactions côté client en JavaScript/TypeScript",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives front-end",
+        "academicYear": "2025"
+    },
+    "description": "Implémenter des interactions côté client en utilisant JavaScript et TypeScript et respectant les standards ECMAScript pour concevoir des fonctionnalités interactives (validation de formulaires, animations…) permettant d’améliorer l’engagement utilisateur et l’interactivité du site web.",
+    "criteria": [
+        "Fonctionnalités interactives : les fonctionnalités demandées sont implémentées (menus déroulants, validations de formulaires…).",
+        "Compatibilité cross-browser : les scripts fonctionnent de manière identique sur les principaux navigateurs web.",
+        "Conformité ECMAScript : le code JavaScript/TypeScript est à jour avec les dernières spécifications ECMAScript."
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM04",
+        "title": "Traitement de Flux en Temps Réel (Kafka, Flink)",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C29",
+            "description": "Transformer les données de masse brutes en informations exploitables à l'aide des technologies Big Data (Hadoop, Spark, etc.) pour aider les entreprises à prendre des décisions éclairées, à optimiser leurs opérations, à mieux comprendre leurs clients et à se protéger contre les menaces."
+        }
+    ],
+    "objectives": {
+        "description": "Les apprenants comprendront les bases du traitement des données en temps réel et les avantages et défis qui y sont associés. Ils apprendront à utiliser des outils comme Kafka et Flink pour implémenter des solutions de traitement des données en temps réel. Ils seront capables d'optimiser et de surveiller les performances des systèmes de traitement en temps réel."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en traitement de données et systèmes distribués, familiarité avec les concepts de programmation et structures de données."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux données en temps réel",
+                "items": [
+                    "Notions de données en temps réel vs données batch",
+                    "Exemples d'applications des données en temps réel",
+                    "Caractéristiques des systèmes de traitement des données en temps réel",
+                    "Avantages et inconvénients du traitement des données en temps réel",
+                    "Principaux défis du traitement des données en temps réel"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Présentation de Kafka",
+                "items": [
+                    "Architecture de Kafka",
+                    "Concepts clés : producteurs, consommateurs, topics, partitions",
+                    "Gestion des données et tolérance aux pannes",
+                    "Cas d'utilisation de Kafka",
+                    "Mise en place d'un cluster Kafka"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Utilisation de Flink pour le traitement des données en temps réel",
+                "items": [
+                    "Comparaison avec d'autres frameworks de traitement des données en temps réel",
+                    "Modèle de programmation de Flink",
+                    "Gestion de l'état et tolérance aux pannes",
+                    "Intégration avec Kafka pour la lecture des données",
+                    "Mise en place d'un job Flink"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Optimisation des performances dans le traitement des données en temps réel",
+                "items": [
+                    "Techniques d'optimisation des requêtes",
+                    "Gestion de la latence et du débit",
+                    "Parallélisme et répartition des tâches",
+                    "Surveiller et diagnostiquer les performances",
+                    "Bonnes pratiques pour améliorer les performances"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas d'utilisation et études de cas",
+                "items": [
+                    "Analyse de cas d'utilisation réels",
+                    "Retours d'expérience sur des implémentations concrètes",
+                    "Défis rencontrés et solutions apportées",
+                    "Perspectives d'évolution des architectures de traitement des données en temps réel",
+                    "Conseils pour la mise en œuvre réussie de projets de traitement des données en temps réel"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Notions de données en temps réel vs données batch",
+            "context": "Identifier et différencier les applications nécessitant un traitement en temps réel de celles traitées en batch, et présenter un tableau comparatif des avantages et inconvénients.",
+            "objective": "Comparer les approches batch et temps réel."
+        },
+        {
+            "title": "Mise en place d'un cluster Kafka",
+            "context": "Élaborer un plan détaillé pour déployer un cluster Kafka en précisant ressources, étapes et bonnes pratiques.",
+            "objective": "Concevoir une infrastructure Kafka adaptée au traitement en temps réel."
+        },
+        {
+            "title": "Mise en place d'un job Flink",
+            "context": "Développer un job Flink lisant un topic Kafka, transformant les données et écrivant dans un autre topic, en documentant les choix techniques.",
+            "objective": "Mettre en œuvre un pipeline de traitement en temps réel avec Kafka et Flink."
+        },
+        {
+            "title": "Techniques d'optimisation des requêtes",
+            "context": "Identifier les goulots d'étranglement d'un système de traitement en temps réel et proposer des optimisations mesurées.",
+            "objective": "Optimiser les performances d'un système de streaming."
+        },
+        {
+            "title": "Analyse de cas d'utilisation réels",
+            "context": "Analyser un cas réel de traitement en temps réel, identifier défis et solutions, et proposer des améliorations.",
+            "objective": "Évaluer et améliorer une architecture de streaming existante."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Kafka : The Definitive Guide",
+            "author": "Neha Narkhede, Gwen Shapira, et Todd Palino"
+        },
+        {
+            "title": "Stream Processing with Apache Flink",
+            "author": "Fabian Hueske et Vasiliki Kalavri"
+        },
+        {
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}

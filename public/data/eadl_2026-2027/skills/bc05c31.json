@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC05-C31",
+        "title": "Automatisation des tâches répétitives à l'aide de technologies RPA",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
+        "academicYear": "2025-2026"
+    },
+    "description": "Automatiser les tâches répétitives en utilisant des technologies RPA telles que UiPath, Blue Prism ou Automation Anywhere afin d'améliorer l'efficacité opérationnelle et libérer les ressources humaines pour des activités à plus forte valeur ajoutée.",
+    "criteria": [
+        "Les tâches répétitives sont efficacement automatisées : Les processus automatisés améliorent l'efficacité opérationnelle.",
+        "Les solutions RPA garantissent la conformité et la traçabilité : Les automatisations respectent les règles métiers et assurent un suivi fiable."
+    ]
+}

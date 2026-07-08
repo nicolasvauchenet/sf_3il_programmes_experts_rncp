@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC02-C09",
+        "title": "Configurer l’infrastructure réseau avec des protocoles et équipements adaptés",
+        "rncpCode": "39611",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud",
+        "academicYear": "2025-2026"
+    },
+    "description": "Configurer l'infrastructure réseau à l'aide de protocoles et d'équipements adaptés aux besoins fonctionnels, en collaboration avec l'équipe réseau, pour assurer une connectivité fluide et sécurisée du système d'information.",
+    "criteria": [
+        "Adéquation aux besoins : protocoles et équipements assurent une communication fluide et sans interruption.",
+        "Gestion de la sécurité : la réponse apportée sécurise l'infrastructure réseau."
+    ]
+}

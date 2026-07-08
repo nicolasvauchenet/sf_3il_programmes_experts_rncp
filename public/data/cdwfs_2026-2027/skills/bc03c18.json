@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC03-C18",
+        "title": "Évaluer les besoins et intégrer des solutions cloud",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "academicYear": "2025"
+    },
+    "description": "Évaluer les besoins et intégrer les solutions cloud, en tenant compte des exigences de flexibilité et d'évolutivité, pour améliorer et moderniser les architectures des systèmes d'information.",
+    "criteria": [
+        "Compréhension des besoins : les besoins actuels et futurs pour la transformation numérique sont identifiés et détaillés avec précision.",
+        "Adéquation des solutions : les solutions cloud proposées sont en adéquation avec les exigences de flexibilité et d'évolutivité.",
+        "Justification des choix : l'argumentation du choix des solutions cloud est cohérente et alignée avec les objectifs stratégiques du commanditaire."
+    ]
+}

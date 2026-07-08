@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM07",
+        "title": "Machine Learning et Modélisation des Données",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C32",
+            "description": "Optimiser les processus de décision en analysant et améliorant les opérations métiers à l'aide de méthodes de machine learning, en intégrant des modèles prédictifs qui facilitent l'automatisation et l'amélioration continue des processus par les pratiques de MLOps, tout en tenant compte des contraintes de qualité des données, de puissance de calcul et des objectifs de performance afin d'augmenter l'efficacité opérationnelle et la compétitivité de l'entreprise."
+        },
+        {
+            "code": "C33",
+            "description": "Assurer la surveillance et la maintenance des systèmes automatisés en utilisant des outils de monitoring et en effectuant des mises à jour régulières pour garantir leur performance et leur fiabilité."
+        },
+        {
+            "code": "C35",
+            "description": "Mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation en utilisant des indicateurs clés de performance (KPI) ainsi que des outils d'analyse de données, des sondages de satisfaction des employés et des clients, et des audits de processus, tout en tenant compte des contraintes budgétaires, des délais de mise en œuvre et des exigences de conformité, afin d'identifier les améliorations et les ajustements nécessaires pour maximiser l'efficacité opérationnelle et la satisfaction des parties prenantes."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module de cours sont de comprendre les concepts de base du Machine Learning et les différences entre apprentissage supervisé et non supervisé, de connaître les étapes du processus de Machine Learning et les bonnes pratiques pour le déploiement et le monitoring des modèles, et de maîtriser le cycle de vie des modèles via les pratiques MLOps pour une gestion efficace des projets de Machine Learning."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en statistiques et en programmation, familiarité avec les principes fondamentaux de l'intelligence artificielle, et expérience préalable en manipulation de données."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction au Machine Learning",
+                "items": [
+                    "Compréhension des concepts de base du Machine Learning",
+                    "Différences entre l'apprentissage supervisé et non supervisé",
+                    "Les types de modèles de Machine Learning (régression, classification, clustering, etc.)",
+                    "Les étapes du processus de Machine Learning (collecte des données, prétraitement, modélisation, évaluation, déploiement)",
+                    "Exemples d'applications du Machine Learning dans le domaine professionnel"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Déploiement des modèles de Machine Learning",
+                "items": [
+                    "Compréhension des enjeux liés au déploiement des modèles de Machine Learning",
+                    "Les différentes options de déploiement (cloud, on-premise, edge computing)",
+                    "Mise en place d'une infrastructure adaptée au déploiement de modèles ML (serveurs, conteneurs, orchestration)",
+                    "Gestion des mises à jour et du versioning des modèles déployés",
+                    "Bonnes pratiques en matière de sécurité et de monitoring des modèles déployés"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion du cycle de vie des modèles (MLOps)",
+                "items": [
+                    "Introduction aux pratiques MLOps",
+                    "Intégration continue et déploiement continu (CI/CD) appliqués au Machine Learning",
+                    "Gestion des versions, des expérimentations et des métriques liées aux modèles",
+                    "Collaboration entre les équipes Data Science, Data Engineering et Opérations pour le MLOps",
+                    "Automatisation des tâches liées au cycle de vie des modèles (préparation des données, entraînement, évaluation, déploiement)"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Monitoring et maintenance des modèles de Machine Learning",
+                "items": [
+                    "Importance du monitoring dans le contexte des modèles de Machine Learning déployés",
+                    "Métriques à surveiller pour évaluer la performance des modèles en production",
+                    "Détection et gestion des dérives de performance des modèles",
+                    "Stratégies de retrait et de remplacement des modèles obsolètes",
+                    "Techniques de ré-entraînement et de mise à jour des modèles en production"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas d'étude et bonnes pratiques",
+                "items": [
+                    "Analyse de cas concrets de déploiement et de gestion de modèles de Machine Learning en production",
+                    "Retours d'expérience sur les bonnes pratiques à adopter et les pièges à éviter",
+                    "Discussion sur les défis spécifiques liés à l'optimisation des processus MLOps",
+                    "Étude de cas sur l'impact de l'automatisation et de l'optimisation des processus MLOps sur la performance globale des projets",
+                    "Recommandations pour une mise en œuvre efficace des processus MLOps et l'optimisation des modèles en production"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Compréhension des concepts de base du Machine Learning",
+            "context": "Définir le Machine Learning, différencier apprentissage supervisé et non supervisé, et identifier des types de modèles et leurs cas d'utilisation.",
+            "objective": "Maîtriser les concepts fondamentaux du Machine Learning."
+        },
+        {
+            "title": "Mise en pratique des étapes du processus de Machine Learning",
+            "context": "Décrire les étapes complètes d'un projet ML appliqué à un cas d'usage professionnel et expliquer l'importance de chaque étape.",
+            "objective": "Structurer un projet de Machine Learning de bout en bout."
+        },
+        {
+            "title": "Gestion des mises à jour et du versioning des modèles déployés",
+            "context": "Élaborer une stratégie de gestion des versions et des mises à jour pour des modèles en production.",
+            "objective": "Mettre en place une gouvernance robuste des modèles ML."
+        },
+        {
+            "title": "Intégration continue et déploiement continu (CI/CD) appliqués au Machine Learning",
+            "context": "Concevoir un pipeline CI/CD adapté au Machine Learning en identifiant étapes, outils et bonnes pratiques.",
+            "objective": "Appliquer les principes CI/CD au cycle de vie ML."
+        },
+        {
+            "title": "Étude de cas sur l'optimisation des processus MLOps",
+            "context": "Analyser un cas réel de gestion de modèles ML en production et proposer des recommandations d'amélioration.",
+            "objective": "Optimiser les pratiques MLOps et la performance des modèles."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Apprentissage statistique avec R",
+            "author": "Gareth James et al."
+        },
+        {
+            "title": "Machine Learning - Une approche probabiliste",
+            "author": "Kevin P. Murphy"
+        },
+        {
+            "title": "MLOps Engineering at Scale",
+            "author": "Carl Osipov"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}

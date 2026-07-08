@@ -5,7 +5,7 @@ namespace App\Dto\Import;
 final class ImportReport
 {
     /**
-     * @var array<string, array{created:int, updated:int}>
+     * @var array<string, array{created:int, updated:int, deleted:int}>
      */
     private array $stats = [];
 
@@ -21,8 +21,14 @@ final class ImportReport
         $this->stats[$section]['updated']++;
     }
 
+    public function markDeleted(string $section): void
+    {
+        $this->initSection($section);
+        $this->stats[$section]['deleted']++;
+    }
+
     /**
-     * @return array<string, array{created:int, updated:int}>
+     * @return array<string, array{created:int, updated:int, deleted:int}>
      */
     public function all(): array
     {
@@ -35,6 +41,7 @@ final class ImportReport
             $this->stats[$section] = [
                 'created' => 0,
                 'updated' => 0,
+                'deleted' => 0,
             ];
         }
     }

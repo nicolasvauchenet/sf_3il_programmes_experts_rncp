@@ -1,0 +1,123 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM02",
+        "title": "Audit des infrastructures et conformité",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire."
+        }
+    ],
+    "objectives": {
+        "description": "Acquérir une compréhension approfondie de l'audit des infrastructures et de la conformité aux normes. Savoir utiliser les outils et techniques d'audit pour identifier et analyser les risques. Proposer des recommandations efficaces pour améliorer la sécurité et la conformité des infrastructures réseau et systèmes."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en infrastructures réseau et systèmes informatiques, compréhension des principes de sécurité informatique, familiarité avec les normes de conformité et les bonnes pratiques en audit."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'audit des infrastructures et conformité",
+                "items": [
+                    "Comprendre les enjeux de l'audit des infrastructures et de la conformité",
+                    "Identifier les normes et standards en vigueur dans le domaine",
+                    "Connaître les étapes clés d'un audit des infrastructures"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodologie d'audit des infrastructures",
+                "items": [
+                    "Définir les objectifs de l'audit",
+                    "Collecter les informations nécessaires à l'audit",
+                    "Évaluer la conformité aux normes et standards",
+                    "Analyser les risques liés aux infrastructures",
+                    "Proposer des recommandations d'amélioration"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et techniques d'audit",
+                "items": [
+                    "Utiliser des outils d'analyse de configurations",
+                    "Mettre en place des outils de surveillance des infrastructures",
+                    "Maîtriser les techniques d'analyse de vulnérabilités",
+                    "Utiliser des outils de conformité et de reporting",
+                    "Interpréter les résultats des outils d'audit"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Audit des infrastructures réseau",
+                "items": [
+                    "Identifier les composants clés d'une infrastructure réseau",
+                    "Vérifier la conformité des configurations réseau",
+                    "Analyser les flux de données et de trafic réseau",
+                    "Évaluer la sécurité des équipements réseau",
+                    "Proposer des actions correctives pour optimiser les performances réseau"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Audit des infrastructures systèmes",
+                "items": [
+                    "Évaluer la conformité des configurations systèmes",
+                    "Analyser les journaux d'événements et les alertes système",
+                    "Vérifier l'application des politiques de sécurité",
+                    "Auditer les accès et les droits des utilisateurs",
+                    "Proposer des recommandations pour renforcer la sécurité des systèmes"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Étude de Cas - Planification d'un Audit d'Infrastructure",
+            "context": "Planifier un audit pour une entreprise de taille moyenne.",
+            "objective": "Définir les objectifs de l'audit, identifier les étapes principales et déterminer les informations nécessaires pour le mener."
+        },
+        {
+            "title": "Collecte et Analyse de Données",
+            "context": "Évaluer la conformité d'équipements réseau et de configurations système par rapport à une norme de sécurité.",
+            "objective": "Utiliser un outil d'analyse de configuration et produire un rapport de conformité identifiant les non-conformités critiques."
+        },
+        {
+            "title": "Simulation d'Analyse de Vulnérabilités",
+            "context": "Analyse de vulnérabilités sur une infrastructure réseau hypothétique.",
+            "objective": "Identifier trois vulnérabilités, expliquer leur détection et proposer des mesures correctives."
+        },
+        {
+            "title": "Évaluation de la Sécurité des Équipements Réseau",
+            "context": "Audit de sécurité d'un équipement réseau (routeur ou commutateur).",
+            "objective": "Vérifier la conformité, analyser les flux réseau et formuler des recommandations de sécurité."
+        },
+        {
+            "title": "Audit des Accès et Droits Utilisateurs",
+            "context": "Audit des comptes et droits utilisateurs dans un système d'information.",
+            "objective": "Identifier anomalies et déviations par rapport aux politiques de sécurité et proposer des recommandations."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Gestion de la sécurité des réseaux : méthodes, outils et bonnes pratiques",
+            "author": "Éric Parent"
+        },
+        {
+            "title": "Audit et contrôle internes : De l'analyse des risques à l'évaluation des dispositifs",
+            "author": "Philippe Euler"
+        },
+        {
+            "title": "Sécurité informatique : Ethical Hacking pour les débutants",
+            "author": "Guillaume Fenrir"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)",
+        "Travaux de groupe"
+    ]
+}

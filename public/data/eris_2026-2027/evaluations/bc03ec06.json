@@ -1,0 +1,78 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-BC03-EC06",
+        "title": "Évaluation de la sécurité et Forensic",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 6,
+    "description": "Évaluation de la sécurité et Forensic.",
+    "skills": [
+        {
+            "code": "C22",
+            "description": "Eprouver la sécurité de l’infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d’attaques, d’outils d’analyse de sécurité afin d’évaluer la robustesse des systèmes et la réactivité des équipes."
+        },
+        {
+            "code": "C23",
+            "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l’ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes, et en collectant les preuves numériques afin de préparer des rapports en vue des audits de sécurité et conserver des preuves légales."
+        },
+        {
+            "code": "C24",
+            "description": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC), en gérant les incidents de sécurité au moyen de solutions SIEM, en analysant les données de sécurité, en détectant les anomalies, en orchestrant des réponses rapides et efficaces, en pilotant le déploiement des correctifs, s’il y a lieu de façon automatisée, et en assurant une surveillance continue afin de maintenir la sécurité et la résilience de l’infrastructure."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr22",
+            "description": "Eprouver la sécurité de l’infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d’attaques, d’outils d’analyse de sécurité afin d’évaluer la robustesse des systèmes et la réactivité des équipes.",
+            "indicators": [
+                "Les tests permettent à la fois d’évaluer la robustesse des systèmes et la réactivité des équipes.",
+                "Les observations faites suite aux tests sont priorisées et permettent d’améliorer l’application de la PSSI ou des dispositifs de sécurité."
+            ]
+        },
+        {
+            "code": "Cr23",
+            "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l’ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes, et en collectant les preuves numériques afin de préparer des rapports en vue des audits de sécurité et conserver des preuves légales.",
+            "indicators": [
+                "Les investigations se font dans le respect du cadre légal, et suivent une démarche conforme avec les réglementations de l’ANSSI et veillent à ne pas détruire de preuves.",
+                "L’analyse méthodique des systèmes compromis permet de retracer les actions malveillantes et de collecter des preuves. Les preuves sont consignées dans un rapport d’analyse."
+            ]
+        },
+        {
+            "code": "Cr24",
+            "description": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC), en gérant les incidents de sécurité au moyen de solutions SIEM, en analysant les données de sécurité, en détectant les anomalies, en orchestrant des réponses rapides et efficaces, en pilotant le déploiement des correctifs, s’il y a lieu de façon automatisée, et en assurant une surveillance continue afin de maintenir la sécurité et la résilience de l’infrastructure.",
+            "indicators": [
+                "La détection d’incidents de sécurité par l’analyse des données de sécurité et recherche d’anomalies est effective.",
+                "Les alertes et contre-mesures déclenchées suite à la détection d’un incident de sécurité permettent la sécurisation du SI.",
+                "La diffusion de correctifs de sécurité de façon automatisée ou non est opérationnelle.",
+                "L’analyse post-incident permet de retracer sa chronologie et d’apporter les corrections nécessaires au niveau de la PSSI."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée, écrit sur ordinateur",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E7",
+                "title": "Épreuve écrite",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
+            "blockThreshold": 110
+        }
+    }
+}
