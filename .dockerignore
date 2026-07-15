@@ -2,6 +2,7 @@
 .gitignore
 vendor
 var
+data
 .env.*
 compose.yml
 docker-compose.yml

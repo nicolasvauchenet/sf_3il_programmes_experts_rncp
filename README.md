@@ -5,21 +5,20 @@ Application Symfony de consultation et d'import des referentiels de formation RN
 ## Prerequis
 
 - PHP et Composer installes
-- PostgreSQL disponible en local
 - Les variables `.env` configurees, notamment `DATABASE_URL`
 
 Par defaut, le projet pointe vers :
 
 ```dotenv
-DATABASE_URL="postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&charset=utf8"
+DATABASE_URL="sqlite:///%kernel.project_dir%/data/sf_3il_programmes_experts_rncp.db"
 ```
 
 ## Initialiser la base de donnees
 
-Creer la base si elle n'existe pas :
+Avec SQLite, la base est un fichier. Creer le dossier de stockage si besoin :
 
 ```powershell
-php bin/console doctrine:database:create
+New-Item -ItemType Directory -Force data
 ```
 
 Appliquer les migrations :
