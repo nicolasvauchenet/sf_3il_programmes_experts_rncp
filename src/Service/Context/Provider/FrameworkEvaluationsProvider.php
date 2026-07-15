@@ -143,18 +143,23 @@ final readonly class FrameworkEvaluationsProvider
         );
         $projects = $this->uniqueReferences($projects);
 
+        $modalities = is_array($evaluation->getModalities()) ? $evaluation->getModalities() : [];
+        $validationRules = is_array($evaluation->getValidationRules()) ? $evaluation->getValidationRules() : [];
+
         $parts = [];
         foreach ($evaluation->getEvaluationParts() as $part) {
             if (!$part instanceof EvaluationPart) {
                 continue;
             }
 
+            $duration = $part->getDuration();
+
             $parts[] = [
                 'code' => (string)$part->getCode(),
                 'title' => (string)$part->getTitle(),
                 'type' => $part->getType()?->label() ?? '',
                 'description' => (string)($part->getDescription() ?? ''),
-                'duration' => (int)($part->getDuration() ?? 0),
+                'duration' => $duration ?? $this->resolveDurationFallback($part, $modalities, count($evaluation->getEvaluationParts())),
                 'points' => (int)($part->getPoints() ?? 0),
                 'coefficient' => (int)($part->getCoefficient() ?? 0),
                 'position' => (int)($part->getPosition() ?? 0),
@@ -165,9 +170,6 @@ final readonly class FrameworkEvaluationsProvider
             $parts,
             static fn(array $a, array $b): int => ($a['position'] ?? 0) <=> ($b['position'] ?? 0)
         );
-
-        $modalities = is_array($evaluation->getModalities()) ? $evaluation->getModalities() : [];
-        $validationRules = is_array($evaluation->getValidationRules()) ? $evaluation->getValidationRules() : [];
 
         $meta = [
             'type' => 'evaluation',
@@ -348,5 +350,31 @@ final readonly class FrameworkEvaluationsProvider
         }
 
         return 0;
+    }
+
+    /**
+     * @param array<string,mixed> $modalities
+     */
+    private function resolveDurationFallback(EvaluationPart $part, array $modalities, int $partsCount): int|string|null
+    {
+        $durationLabel = trim((string)($part->getDurationLabel() ?? ''));
+
+        if ($durationLabel !== '') {
+            return $durationLabel;
+        }
+
+        if ($partsCount > 1) {
+            return null;
+        }
+
+        $duration = $modalities['totalDuration'] ?? null;
+
+        if ($duration === null) {
+            return null;
+        }
+
+        $duration = trim((string)$duration);
+
+        return $duration !== '' ? $duration : null;
     }
 }

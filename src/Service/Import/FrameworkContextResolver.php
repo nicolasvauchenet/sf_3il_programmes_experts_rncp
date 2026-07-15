@@ -46,6 +46,8 @@ final readonly class FrameworkContextResolver
         /** @var Framework|null $framework */
         $framework = $this->entityManager->getRepository(Framework::class)->findOneBy([
             'code' => $frameworkCode,
+            'startAt' => $startAt,
+            'endAt' => $endAt,
         ]);
 
         if (!$framework instanceof Framework) {

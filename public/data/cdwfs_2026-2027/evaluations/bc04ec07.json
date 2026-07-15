@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 7,
-    "description": "Rédaction d'une étude d'avant-projet.",
+    "description": "Mise en situation d'analyse visant à produire une étude d'avant-projet à partir des besoins utilisateurs et parties prenantes. L'évaluation permet de valider l'identification des objectifs, l'étude de faisabilité, l'évaluation des ressources et la formalisation des éléments de cadrage du projet.",
     "skills": [
         {
             "code": "C26",
@@ -55,7 +55,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Rédaction d'une étude d'avant-projet",
+        "delivery": "Production d'une étude d'avant-projet argumentée",
+        "deliverables": [
+            "Étude d'avant-projet structurée",
+            "Analyse des besoins utilisateurs et parties prenantes",
+            "Évaluation de la faisabilité technique, humaine et matérielle",
+            "Éléments de cahier des charges fonctionnel ou note de cadrage"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
@@ -63,7 +69,7 @@
             {
                 "code": "E7",
                 "title": "Rédaction d'une étude d'avant-projet",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 3,
                 "points": 60,
                 "duration": "4h00"

@@ -38,6 +38,8 @@ final readonly class FrameworkContextImporter
         /** @var Framework|null $framework */
         $framework = $this->entityManager->getRepository(Framework::class)->findOneBy([
             'code' => $frameworkCode,
+            'startAt' => $startAt,
+            'endAt' => $endAt,
         ]);
 
         $isNewFramework = !$framework instanceof Framework;

@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC03",
         "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 6,
-    "description": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu avec gestion du Versionning.",
+    "description": "Mise en situation technique individuelle visant à mettre en place un système d'automatisation d'intégration et de déploiement continu, avec gestion du versioning, packaging, déploiement, surveillance et prise en compte des environnements de production.",
     "skills": [
         {
             "code": "C21",
@@ -74,7 +74,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu avec gestion du Versionning",
+        "delivery": "Mise en place d'une chaîne CI/CD automatisée avec gestion du versioning",
+        "deliverables": [
+            "Dépôt versionné et stratégie de branches ou de versioning",
+            "Configuration de la chaîne d'intégration et de déploiement continu",
+            "Scripts ou fichiers de packaging, déploiement et configuration d'environnement",
+            "Éléments de surveillance, journalisation ou documentation d'exploitation"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
@@ -82,7 +88,7 @@
             {
                 "code": "E6",
                 "title": "Mise en place d'un système d'automatisation d'intégration et de déploiement continu avec gestion du Versionning",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 3,
                 "points": 60,
                 "duration": "4h00"

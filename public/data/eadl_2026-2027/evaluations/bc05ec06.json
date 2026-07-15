@@ -6,10 +6,10 @@
         "rncpCode": "39765",
         "blocCode": "BC05",
         "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 6,
-    "description": "Mise en place d’une automatisation et rédaction de la documentation.",
+    "description": "Mise en situation écrite et/ou sur ordinateur portant sur l’automatisation par l’IA : le candidat met en place une solution ou un processus automatisé, prévoit sa surveillance et sa maintenance, documente les éléments livrés et mesure leur impact sur les processus métier.",
     "skills": [
         {
             "code": "C32",
@@ -63,8 +63,14 @@
         }
     ],
     "modalities": {
-        "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Partie 1 : Mise en place d’une automatisation ; Partie 2 : Rédaction documentation",
+        "format": "Mise en situation reconstituée écrite et/ou sur ordinateur",
+        "delivery": "Partie 1 : mise en place d'une automatisation ; Partie 2 : documentation",
+        "deliverables": [
+            "Automatisation ou modèle prédictif intégré au processus visé",
+            "Éléments de surveillance, maintenance ou pratiques MLOps associés",
+            "Documentation de support et spécifications des éléments développés",
+            "Indicateurs ou analyse d’impact sur les processus métier et la performance"
+        ],
         "totalDuration": "6h00"
     },
     "exam": {
@@ -72,7 +78,7 @@
             {
                 "code": "E6-P1",
                 "title": "Mise en place d’une automatisation",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "3h00"
@@ -80,7 +86,7 @@
             {
                 "code": "E6-P2",
                 "title": "Rédaction Documentation",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 2,
                 "points": 40,
                 "duration": "3h00"

@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 12,
-    "description": "Présentation orale de son rapport de veille multilingue.",
+    "description": "Présentation orale individuelle visant à défendre le rapport de veille multilingue, à synthétiser les informations collectées et à argumenter les hypothèses ou scénarios proposés pour soutenir la décision, l'innovation et la montée en compétence de l'équipe.",
     "skills": [
         {
             "code": "C36",
@@ -68,7 +68,13 @@
     ],
     "modalities": {
         "format": "Présentation orale",
-        "delivery": "Présentation orale de son rapport de veille multilingue",
+        "delivery": "Présentation orale argumentée du rapport de veille multilingue",
+        "deliverables": [
+            "Support de présentation orale",
+            "Synthèse des sources et informations clés issues du rapport de veille",
+            "Présentation des hypothèses ou scénarios proposés",
+            "Réponses argumentées aux questions du jury"
+        ],
         "totalDuration": "20 mn"
     },
     "exam": {
@@ -76,9 +82,9 @@
             {
                 "code": "E12",
                 "title": "Présentation orale de son rapport de veille multilingue",
-                "type": "Épreuve orale",
+                "type": "Oral",
                 "coefficient": 2,
-                "points": 0,
+                "points": 60,
                 "duration": "20 mn"
             }
         ],

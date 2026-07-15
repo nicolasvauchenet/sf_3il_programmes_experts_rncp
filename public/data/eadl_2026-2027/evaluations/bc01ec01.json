@@ -6,10 +6,10 @@
         "rncpCode": "39765",
         "blocCode": "BC01",
         "blocName": "Concevoir et modéliser l’architecture logicielle",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 1,
-    "description": "Conception d’architecture, présentation orale, modélisation des données flux et conception des tests.",
+    "description": "Mise en situation individuelle visant à concevoir et justifier une architecture logicielle, à présenter les choix techniques et fonctionnels retenus, puis à produire les modélisations de données, de flux et de tests nécessaires au cadrage de la solution.",
     "skills": [
         {
             "code": "C01",
@@ -129,8 +129,14 @@
         }
     ],
     "modalities": {
-        "format": "Mise en situation reconstituée à l’écrit et présentation orale",
-        "delivery": "Partie 1 : Conception d’architecture et justification ; Partie 2 : Oral de présentation ; Partie 3 : Modélisation des données flux et conception des tests",
+        "format": "Mise en situation reconstituée à l’écrit et présentation orale individuelle",
+        "delivery": "Partie 1 : conception d’architecture et justification ; Partie 2 : oral de présentation ; Partie 3 : modélisation des données, des flux et conception des tests",
+        "deliverables": [
+            "Dossier de conception d’architecture et justification des choix techniques",
+            "Support de présentation de l’architecture et des arbitrages réalisés",
+            "Diagrammes et modèles de données et de flux adaptés au besoin",
+            "Stratégie de tests et éléments de conception associés aux tests automatisés"
+        ],
         "totalDuration": "5h20"
     },
     "exam": {
@@ -138,7 +144,7 @@
             {
                 "code": "E1-P1",
                 "title": "Conception d’architecture et justification",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 3,
                 "points": 60,
                 "duration": "3h00"
@@ -146,7 +152,7 @@
             {
                 "code": "E1-P2",
                 "title": "Oral de présentation",
-                "type": "Épreuve orale",
+                "type": "Oral",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "20 mn"
@@ -154,7 +160,7 @@
             {
                 "code": "E1-P3",
                 "title": "Modélisation des données flux et conception des tests",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 3,
                 "points": 60,
                 "duration": "2h00"

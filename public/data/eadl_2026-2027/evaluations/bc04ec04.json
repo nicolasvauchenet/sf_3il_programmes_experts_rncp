@@ -6,10 +6,10 @@
         "rncpCode": "39765",
         "blocCode": "BC04",
         "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 4,
-    "description": "Implémentation d’une application utilisant les services cloud et sécurisation de l’application.",
+    "description": "Mise en situation écrite et/ou sur ordinateur évaluant l’intégration de services cloud, l’automatisation de ressources, l’administration et l’optimisation d’infrastructures, ainsi que la sécurisation des environnements et des transactions associées.",
     "skills": [
         {
             "code": "C21",
@@ -87,8 +87,14 @@
         }
     ],
     "modalities": {
-        "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Partie 1 : Implémentation d’une application utilisant les services cloud ; Partie 2 : Sécurisation de l’application",
+        "format": "Mise en situation reconstituée écrite et/ou sur ordinateur",
+        "delivery": "Partie 1 : implémentation d'une application utilisant les services cloud ; Partie 2 : sécurisation de l'application",
+        "deliverables": [
+            "Application ou composant applicatif intégrant des services cloud",
+            "Configuration d’automatisation des ressources cloud ou scripts d’administration",
+            "Éléments de monitoring, d’optimisation de performance ou d’analyse FinOps",
+            "Mesures de sécurisation, gestion des accès, audit ou intégration blockchain selon le sujet"
+        ],
         "totalDuration": "7h00"
     },
     "exam": {
@@ -96,7 +102,7 @@
             {
                 "code": "E4-P1",
                 "title": "Implémentation d’une application utilisant les services Cloud",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "3h30"
@@ -104,7 +110,7 @@
             {
                 "code": "E4-P2",
                 "title": "Sécurisation de l’application",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "3h30"

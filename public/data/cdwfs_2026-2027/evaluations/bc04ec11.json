@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 11,
-    "description": "Rédaction d'un rapport de veille multilingue.",
+    "description": "Mise en situation de recherche documentaire visant à produire un rapport de veille multilingue. L'évaluation permet de valider la sélection de sources fiables, la collecte organisée d'informations, l'analyse des données et la formulation d'hypothèses ou scénarios exploitables.",
     "skills": [
         {
             "code": "C36",
@@ -68,7 +68,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Rédaction d'un rapport de veille multilingue",
+        "delivery": "Production d'un rapport de veille technologique multilingue",
+        "deliverables": [
+            "Rapport de veille multilingue structuré",
+            "Sélection de sources francophones et anglophones pertinentes et vérifiées",
+            "Base ou corpus d'informations collectées et organisées",
+            "Analyse, synthèse, hypothèses ou scénarios issus de la veille"
+        ],
         "totalDuration": "2h00"
     },
     "exam": {
@@ -76,7 +82,7 @@
             {
                 "code": "E11",
                 "title": "Rédaction d'un rapport de veille multilingue",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 1,
                 "points": 60,
                 "duration": "2h00"

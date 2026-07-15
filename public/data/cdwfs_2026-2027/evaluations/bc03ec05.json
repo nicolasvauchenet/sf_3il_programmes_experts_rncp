@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC03",
         "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 5,
-    "description": "Rédaction d'un rapport d'audit avec description et justification de la solution technique.",
+    "description": "Mise en situation d'analyse visant à produire un rapport d'audit décrivant les besoins, comparant les architectures possibles et justifiant une solution technique adaptée aux exigences d'intégration, de cloud, d'évolutivité et de maîtrise budgétaire.",
     "skills": [
         {
             "code": "C18",
@@ -54,7 +54,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée écrit et/ou sur ordinateur",
-        "delivery": "Rédaction d'un rapport d'audit avec description et justification de la solution technique",
+        "delivery": "Production d'un rapport d'audit argumenté avec description et justification de la solution technique",
+        "deliverables": [
+            "Rapport d'audit structuré",
+            "Analyse des besoins actuels et futurs du système d'information",
+            "Comparaison argumentée des architectures et solutions cloud envisageables",
+            "Justification de la solution technique retenue et recommandations d'optimisation"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
@@ -62,7 +68,7 @@
             {
                 "code": "E5",
                 "title": "Rédaction d'un rapport d'audit avec description et justification de la solution technique",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 5,
                 "points": 100,
                 "duration": "4h00"

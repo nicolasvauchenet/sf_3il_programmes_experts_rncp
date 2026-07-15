@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC01",
         "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives front-end",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 2,
-    "description": "Conception d'interfaces Front-end adaptatives et interactives élaborées à partir d'un Framework.",
+    "description": "Mise en situation technique individuelle visant à concevoir et réaliser une interface front-end riche, réactive et maintenable à l'aide d'un framework ou d'une bibliothèque moderne. L'évaluation permet de valider la structuration de composants, la modularité du code, la productivité et la qualité de l'expérience utilisateur.",
     "skills": [
         {
             "code": "C06",
@@ -29,7 +29,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Conception d'interfaces Front-end adaptatives et interactives élaborées à partir d'un Framework",
+        "delivery": "Réalisation d'une interface front-end adaptative et interactive à partir d'un framework",
+        "deliverables": [
+            "Code source de l'application front-end réalisée avec un framework ou une bibliothèque moderne",
+            "Composants d'interface structurés, réutilisables et maintenables",
+            "Interface responsive fonctionnelle répondant au besoin utilisateur",
+            "Instructions d'installation et de lancement du projet"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
@@ -37,7 +43,7 @@
             {
                 "code": "E2",
                 "title": "Conception d'interfaces Front-end adaptatives et interactives élaborées à partir d'un Framework",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 5,
                 "points": 100,
                 "duration": "4h00"

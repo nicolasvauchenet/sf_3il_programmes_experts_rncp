@@ -171,6 +171,7 @@ final class UsersController extends AbstractController
         return $this->render('admin/users/edit.html.twig', [
             'form' => $form,
             'user' => $user,
+            'canDelete' => self::PROTECTED_ADMIN_EMAIL !== $user->getEmail(),
         ]);
     }
 

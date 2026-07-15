@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 8,
-    "description": "Compte rendu d'activité (livrables collectifs).",
+    "description": "Mise en situation professionnelle collective visant à rendre compte de la conduite d'un projet sur plusieurs jours. L'évaluation porte sur la planification, la coordination de l'équipe, le suivi des indicateurs de performance et les ajustements réalisés pendant l'avancement du projet.",
     "skills": [
         {
             "code": "C29",
@@ -65,7 +65,13 @@
     ],
     "modalities": {
         "format": "Mise en situation professionnelle reconstituée d'une durée de 2 à 5 jours consécutifs",
-        "delivery": "Compte rendu d'activité (livrables collectifs)",
+        "delivery": "Production collective d'un compte rendu d'activité et des livrables projet associés",
+        "deliverables": [
+            "Compte rendu d'activité collectif",
+            "Planification du projet, jalons et répartition des tâches",
+            "Éléments de suivi collaboratif, budgétaire ou de performance",
+            "Rapports d'étape et preuves d'ajustement ou d'amélioration continue"
+        ],
         "totalDuration": "2 à 5 jours"
     },
     "exam": {
@@ -73,7 +79,7 @@
             {
                 "code": "E8",
                 "title": "Compte rendu d'activité (livrables collectifs)",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 2,
                 "points": 100,
                 "duration": "2 à 5 jours"

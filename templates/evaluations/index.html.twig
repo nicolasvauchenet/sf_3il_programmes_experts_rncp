@@ -61,7 +61,8 @@
                     </section>
                 {% endif %}
 
-                {% if evaluation.format or evaluation.delivery or evaluation.totalDuration %}
+                {% set deliverables = evaluation.modalities.deliverables ?? [] %}
+                {% if evaluation.format or evaluation.delivery or evaluation.totalDuration or deliverables is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Modalités</h2>
 
@@ -73,6 +74,18 @@
                             <strong>Déroulé :</strong>
                             {{ evaluation.delivery ?: '-' }}
                         </p>
+
+                        {% if deliverables is not empty %}
+                            <p class="mb-1">
+                                <strong>Livrables :</strong>
+                            </p>
+
+                            <ul>
+                                {% for deliverable in deliverables %}
+                                    <li>{{ deliverable }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                     </section>
                 {% endif %}
 
@@ -105,7 +118,17 @@
                                     </p>
                                     <p>
                                         <strong>Durée :</strong>
-                                        {{ part.duration ?? '-' }}
+                                        {% set rawDuration = part.duration ?? null %}
+                                        {% if rawDuration is same as(null) or rawDuration is same as('') %}
+                                            -
+                                        {% elseif rawDuration matches '/^\\d+$/' %}
+                                            {% set durationMinutes = rawDuration + 0 %}
+                                            {% set hours = (durationMinutes / 60) | round(0, 'floor') %}
+                                            {% set minutes = durationMinutes % 60 %}
+                                            {{ minutes > 0 ? '%dh%02d' | format(hours, minutes) : '%dh00' | format(hours) }}
+                                        {% else %}
+                                            {{ rawDuration }}
+                                        {% endif %}
                                     </p>
                                 </section>
                             {% endfor %}

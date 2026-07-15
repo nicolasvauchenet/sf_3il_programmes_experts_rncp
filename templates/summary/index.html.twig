@@ -40,15 +40,15 @@
                            target="_blank">
                             Référentiel RNCP
                         </a>
-                        <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/matrice-de-couverture.xlsx') }}"
-                           class="app-button download"
-                           target="_blank">
-                            Matrice de couverture
-                        </a>
                         <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/reglement-des-examens.pdf') }}"
                            class="app-button download"
                            target="_blank">
                             Règlement des examens
+                        </a>
+                        <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/matrice-de-couverture.xlsx') }}"
+                           class="app-button download"
+                           target="_blank">
+                            Matrice de couverture
                         </a>
                         {% if promotion in ['cdwfs', 'eadl'] and year == '2026-2027' %}
                             <a href="{{ asset('source/' ~ promotion ~ '_' ~ year ~ '/projet-urban-hub.pdf') }}"

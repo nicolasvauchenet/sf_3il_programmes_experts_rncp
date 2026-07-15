@@ -100,6 +100,7 @@ final readonly class FrameworkImportService
             if ($mode === ImportMode::FULL) {
                 $this->evaluationImporter->syncRelations(
                     structure: $structure,
+                    evaluationFiles: $dataset['evaluations'],
                     evaluations: $evaluations,
                     modules: $modules,
                     projects: $projects,

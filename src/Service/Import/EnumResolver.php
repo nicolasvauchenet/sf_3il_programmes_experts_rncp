@@ -24,6 +24,11 @@ final class EnumResolver
         $normalizedTitle = mb_strtolower(trim((string)$title));
 
         return match (true) {
+            str_contains($normalized, 'technique') => EvaluationType::TECHNICAL,
+
+            str_contains($normalized, 'rÃ©daction'),
+            str_contains($normalized, 'redaction') => EvaluationType::WRITING,
+
             str_contains($normalized, 'oral'),
             str_contains($normalized, 'soutenance'),
             str_contains($normalizedTitle, 'oral'),

@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 9,
-    "description": "Soutenance.",
+    "description": "Soutenance individuelle visant à présenter et défendre la contribution du candidat à la conduite du projet collectif. L'évaluation permet de valider la compréhension de la planification, de la coordination, du suivi des indicateurs et des ajustements réalisés pendant le projet.",
     "skills": [
         {
             "code": "C29",
@@ -65,7 +65,13 @@
     ],
     "modalities": {
         "format": "Soutenance",
-        "delivery": "Soutenance (individuelle)",
+        "delivery": "Présentation orale individuelle de la contribution au projet",
+        "deliverables": [
+            "Support de soutenance",
+            "Synthèse de la contribution individuelle au projet",
+            "Présentation des choix de planification, coordination et suivi",
+            "Réponses argumentées aux questions du jury"
+        ],
         "totalDuration": "20 mn"
     },
     "exam": {
@@ -73,9 +79,9 @@
             {
                 "code": "E9",
                 "title": "Soutenance",
-                "type": "Épreuve orale",
+                "type": "Oral",
                 "coefficient": 3,
-                "points": 0,
+                "points": 100,
                 "duration": "20 mn"
             }
         ],

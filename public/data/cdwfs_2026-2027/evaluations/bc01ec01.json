@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC01",
         "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives front-end",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 1,
-    "description": "Conception d'interfaces Front-end adaptatives et interactives sans Framework.",
+    "description": "Mise en situation technique individuelle visant à concevoir et réaliser, sans framework, une interface web front-end responsive et interactive. L'évaluation permet de valider la structuration HTML5, l'intégration CSS3, l'adaptation multi-supports, les interactions JavaScript/TypeScript et l'utilisation de requêtes AJAX.",
     "skills": [
         {
             "code": "C01",
@@ -77,7 +77,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Conception d'interfaces Front-end adaptatives et interactives sans Framework",
+        "delivery": "Réalisation d'une interface front-end adaptative et interactive sans framework",
+        "deliverables": [
+            "Code source HTML5, CSS3 et JavaScript/TypeScript",
+            "Interface responsive fonctionnelle sur desktop, tablette et mobile",
+            "Fonctionnalités interactives côté client",
+            "Requêtes AJAX fonctionnelles lorsque le sujet le demande"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
@@ -85,7 +91,7 @@
             {
                 "code": "E1",
                 "title": "Conception d'interfaces Front-end adaptatives et interactives sans Framework",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "4h00"

@@ -2,14 +2,14 @@
     "meta": {
         "type": "evaluation",
         "code": "RNCP39608-BC02-EC03",
-        "title": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL",
+        "title": "Conception et développement Back-end d'une application avec analyse et conception de bases de données SQL et NoSQL",
         "rncpCode": "39608",
         "blocCode": "BC02",
         "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 3,
-    "description": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL.",
+    "description": "Mise en situation technique individuelle visant à concevoir et développer une application back-end en configurant l'environnement de développement, en structurant le code, en concevant des solutions de persistance relationnelle et NoSQL, puis en justifiant leur usage au regard des besoins de l'application.",
     "skills": [
         {
             "code": "C07",
@@ -102,15 +102,21 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL",
+        "delivery": "Réalisation d'une application back-end avec conception et administration de bases de données SQL et NoSQL",
+        "deliverables": [
+            "Code source de l'application back-end",
+            "Configuration de l'environnement de développement et des dépendances",
+            "Modèles de données SQL et NoSQL avec justification des choix techniques",
+            "Éléments de configuration serveur, sécurité, sauvegarde et récupération adaptés au contexte"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
         "parts": [
             {
                 "code": "E3",
-                "title": "Conception et développement Back-end d'une application avec analyse et conception de Base données soit SQL, soit NoSQL",
-                "type": "Épreuve écrite",
+                "title": "Conception et développement Back-end d'une application avec analyse et conception de bases de données SQL et NoSQL",
+                "type": "Technique",
                 "coefficient": 5,
                 "points": 100,
                 "duration": "4h00"

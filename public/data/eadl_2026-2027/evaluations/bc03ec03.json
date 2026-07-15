@@ -6,10 +6,10 @@
         "rncpCode": "39765",
         "blocCode": "BC03",
         "blocName": "Piloter l'intégration et le déploiement continu dans le Système d'Information (SI)",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 3,
-    "description": "Mise en place de pipelines CI/CD et rédaction de la documentation.",
+    "description": "Mise en situation individuelle consacrée au pilotage de l’intégration et du déploiement continu : le candidat met en place des pipelines CI/CD, intègre les tests et les pratiques DevSecOps, puis rédige une documentation technique permettant la maintenance et le partage des connaissances.",
     "skills": [
         {
             "code": "C16",
@@ -78,7 +78,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée individuelle",
-        "delivery": "Partie 1 : Mise en place de pipelines CI/CD ; Partie 2 : Rédaction de la documentation",
+        "delivery": "Partie 1 : pratique sur ordinateur avec mise en place de pipelines CI/CD ; Partie 2 écrite : rédaction de la documentation technique",
+        "deliverables": [
+            "Pipeline CI/CD opérationnel et éléments de configuration associés",
+            "Tests fonctionnels et non fonctionnels automatisés intégrés au pipeline",
+            "Éléments de sécurité DevSecOps ou résultats d’analyse de vulnérabilités",
+            "Documentation technique d’installation, d’exploitation ou de maintenance"
+        ],
         "totalDuration": "6h00"
     },
     "exam": {
@@ -86,7 +92,7 @@
             {
                 "code": "E3-P1",
                 "title": "Mise en place de pipelines CI/CD",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "3h00"
@@ -94,7 +100,7 @@
             {
                 "code": "E3-P2",
                 "title": "Rédaction de la documentation",
-                "type": "Épreuve écrite",
+                "type": "Rédaction",
                 "coefficient": 4,
                 "points": 80,
                 "duration": "3h00"

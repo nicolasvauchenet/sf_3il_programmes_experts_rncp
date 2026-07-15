@@ -6,10 +6,10 @@
         "rncpCode": "39608",
         "blocCode": "BC02",
         "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
-        "academicYear": "2025-2026"
+        "academicYear": "2026-2027"
     },
     "evaluationNumber": 4,
-    "description": "Conception et développement Back-end d'une API sécurisée et documentée.",
+    "description": "Mise en situation technique individuelle visant à concevoir, développer, sécuriser, tester et documenter une API back-end. L'évaluation permet de valider l'architecture de l'API, les mécanismes d'authentification et d'autorisation, la robustesse des tests et la qualité de la documentation technique.",
     "skills": [
         {
             "code": "C14",
@@ -64,7 +64,13 @@
     ],
     "modalities": {
         "format": "Mise en situation reconstituée sur ordinateur",
-        "delivery": "Conception et développement Back-end d'une API sécurisée et documentée",
+        "delivery": "Réalisation d'une API back-end sécurisée, testée et documentée",
+        "deliverables": [
+            "Code source de l'API back-end",
+            "Mécanismes de sécurisation des accès et des échanges",
+            "Tests unitaires, fonctionnels, d'intégration ou de performance adaptés à l'API",
+            "Documentation d'API exploitable par des développeurs, par exemple Swagger ou OpenAPI"
+        ],
         "totalDuration": "4h00"
     },
     "exam": {
@@ -72,7 +78,7 @@
             {
                 "code": "E4",
                 "title": "Conception et développement Back-end d'une API sécurisée et documentée",
-                "type": "Épreuve écrite",
+                "type": "Technique",
                 "coefficient": 5,
                 "points": 100,
                 "duration": "4h00"
