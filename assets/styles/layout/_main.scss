@@ -134,31 +134,31 @@
         color: $black;
     }
 
-    .register-form {
-        .email-suffix-field {
-            @include displayFlex(null, stretch, 0);
+    .email-suffix-field {
+        @include displayFlex(null, stretch, 0);
 
-            .form-control {
-                min-width: 0;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
-            }
-
-            span {
-                @include displayFlex(center, center);
-                padding: 0 0.75rem;
-                font-size: 0.9rem;
-                font-weight: bold;
-                color: $primary;
-                white-space: nowrap;
-                background-color: rgba($primary, 0.08);
-                border: 1px solid rgba($black, 0.55);
-                border-left: 0;
-                border-top-right-radius: 0.35rem;
-                border-bottom-right-radius: 0.35rem;
-            }
+        .form-control {
+            min-width: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
         }
 
+        span {
+            @include displayFlex(center, center);
+            padding: 0 0.75rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: $primary;
+            white-space: nowrap;
+            background-color: rgba($primary, 0.08);
+            border: 1px solid rgba($black, 0.55);
+            border-left: 0;
+            border-top-right-radius: 0.35rem;
+            border-bottom-right-radius: 0.35rem;
+        }
+    }
+
+    .register-form {
         .form-group.compact {
             margin-top: -0.35rem;
         }
