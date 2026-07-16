@@ -2,7 +2,7 @@
     "meta": {
         "type": "project",
         "code": "RNCP39608-BC01-PR01",
-        "title": "Projet de développement Front-end (Fil rouge)",
+        "title": "Novaria Signal Citizen",
         "rncpCode": "39608",
         "blocCode": "BC01",
         "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives Front-end",
@@ -32,104 +32,53 @@
             "description": "Optimiser la communication asynchrone entre les utilisateurs et les serveurs."
         }
     ],
+    "description": "Novaria Signal Citizen est l'application citoyenne de la plateforme Novaria Signal. Elle permet aux habitants de déclarer un incident urbain, d'ajouter les informations utiles, de suivre l'avancement du traitement et d'accéder à une interface claire, responsive et accessible.",
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Apprendre à gérer un projet d'intégration web en comprenant les attentes du client et en planifiant les différentes étapes (Appliquer) Maîtriser les outils de maquettage et prototypage, ainsi que les bonnes pratiques d'intégration HTML/CSS et JavaScript (Créer) Optimiser les projets pour différents types de dispositifs en assurant performance et maintenance efficace (Évaluer)"
+        "description": "Dans le cadre du fil rouge UrbanHub, les apprenants conçoivent le front-end de Novaria Signal Citizen, l'application citoyenne permettant de signaler, géolocaliser, suivre et filtrer des incidents urbains dans la ville intelligente de Novaria. Le projet mobilise les compétences du bloc BC01 autour de la conception d'interfaces HTML5 accessibles, de l'expérience utilisateur, du responsive design, des interactions JavaScript ou TypeScript, des échanges asynchrones et de l'utilisation d'un framework front-end moderne."
     },
     "prerequisites": {
-        "description": "Connaissances de base en HTML, CSS et JavaScript. Expérience antérieure dans la création de sites web est un plus. Compréhension générale des principes de design web."
+        "description": "Maîtrise des bases HTML, CSS et JavaScript, compréhension des principes d'ergonomie web, de responsive design et d'accessibilité. Une première pratique d'un framework ou d'une bibliothèque front-end constitue un plus."
     },
     "outline": {
-        "chapters": [
-            {
-                "title": "Chapitre 1 : Méthodologie de projet d'intégration web",
-                "items": [
-                    "Comprendre les attentes du client en termes d'intégration web",
-                    "Analyser les contraintes techniques et ergonomiques du projet",
-                    "Définir les objectifs et les livrables du projet d'intégration web",
-                    "Planifier les différentes étapes du projet d'intégration web",
-                    "Mettre en place une méthodologie de travail efficace"
-                ]
-            },
-            {
-                "title": "Chapitre 2 : Maquettage et prototypage",
-                "items": [
-                    "Comprendre les principes du maquettage et du prototypage web",
-                    "Utiliser des outils de maquettage et de prototypage (ex: Adobe XD, Sketch, Figma)",
-                    "Créer des wireframes pour la structure de la page web",
-                    "Réaliser des prototypes interactifs pour valider l'expérience utilisateur",
-                    "Intégrer les retours utilisateurs dans le processus de maquettage et prototypage"
-                ]
-            },
-            {
-                "title": "Chapitre 3 : Intégration HTML/CSS",
-                "items": [
-                    "Comprendre les bonnes pratiques d'intégration et les dernières normes HTML/CSS",
-                    "Créer une architecture HTML/CSS modulaire et réutilisable",
-                    "Optimiser le code pour assurer la performance et l'accessibilité",
-                    "Tester la compatibilité multi-navigateurs et multi-devices"
-                ]
-            },
-            {
-                "title": "Chapitre 4 : Interaction JavaScript",
-                "items": [
-                    "Intégrer des interactions dynamiques avec JavaScript",
-                    "Utiliser des bibliothèques et framework JavaScript (ex: jQuery, Vue.js, React)",
-                    "Gérer les événements utilisateur de manière efficace",
-                    "Optimiser les performances des interactions JavaScript",
-                    "Assurer la compatibilité avec les principaux navigateurs"
-                ]
-            },
-            {
-                "title": "Chapitre 5 : Adaptation responsive",
-                "items": [
-                    "Comprendre les principes du responsive web design",
-                    "Utiliser les media queries pour l'adaptation aux différents écrans",
-                    "Tester et déboguer l'adaptation responsive sur différents devices",
-                    "Optimiser la performance et l'ergonomie sur mobile",
-                    "Mettre en place des tests d'adaptation responsive"
-                ]
-            }
-        ]
+        "chapters": []
     },
     "exercises": [
         {
-            "title": "Étude de cas et planification de projet",
-            "context": "Imaginez que vous êtes un intégrateur web freelance et que vous venez de recevoir un cahier des charges d'un nouveau client, une petite bibliothèque municipale qui souhaite refondre son site web.",
-            "objective": "Votre tâche est de : Rédiger un résumé des attentes du client en matière d'intégration web, en veillant à identifier clairement les objectifs du site (par exemple, améliorer l'expérience utilisateur, augmenter la visibilité des événements, etc.). Dresser une liste des contraintes techniques et ergonomiques du projet (comme l'accessibilité pour les utilisateurs malvoyants). Établir une liste de livrables (par exemple, maquettes, prototypes, code source) et définir les dates clés pour chaque étape du projet. Proposer une méthodologie de travail pour ce projet, en justifiant vos choix."
+            "title": "Cadrage UX de l'application citoyenne",
+            "context": "La ville de Novaria souhaite proposer aux habitants une application simple pour déclarer des incidents de voirie, d'éclairage, de déchets, de mobilier urbain ou de circulation.",
+            "objective": "Identifier les parcours utilisateurs, prioriser les écrans clés et formaliser les besoins fonctionnels de Novaria Signal Citizen."
         },
         {
-            "title": "Création de wireframes et prototypes",
-            "context": "Vous travaillez sur le projet de la bibliothèque municipale mentionné dans l'exercice 1.",
-            "objective": "Votre mission est de : Utiliser un outil de maquettage et de prototypage de votre choix (par exemple, Adobe XD, Sketch, Figma) pour créer des wireframes de la page d'accueil, de la page de recherche de livres, et de la page de contact. Développer un prototype interactif pour au moins l'une de ces pages, qui devrait inclure des interactions de base comme les survols de boutons et les transitions entre les pages. Recueillir des retours sur votre prototype auprès de trois utilisateurs potentiels et intégrer leurs commentaires dans une version améliorée du prototype."
+            "title": "Maquettage responsive et accessible",
+            "context": "Les apprenants conçoivent les wireframes et prototypes des écrans de signalement, de suivi personnel et de consultation cartographique.",
+            "objective": "Produire des interfaces cohérentes, accessibles et adaptées aux usages mobile et desktop."
         },
         {
-            "title": "Intégration HTML/CSS d'une page web",
-            "context": "À partir des wireframes et prototypes que vous avez créés pour la bibliothèque municipale, vous allez maintenant réaliser l'intégration HTML/CSS de la page d’accueil : Construire la structure HTML de la page en utilisant les dernières normes HTML5.",
-            "objective": "Appliquer des styles CSS pour reproduire fidèlement le design défini dans le prototype Veiller à ce que le code soit modulaire et réutilisable, en utilisant des méthodes telles que le BEM (Block, Element, Modifier) ou les composants CSS. Optimiser la performance (temps de chargement) de la page et son accessibilité. Tester la compatibilité de la page dans au moins trois navigateurs web différents et sur un appareil mobile."
+            "title": "Intégration de l'interface Front-End",
+            "context": "À partir des maquettes validées, l'équipe réalise l'intégration HTML5/CSS3 de l'application citoyenne.",
+            "objective": "Structurer les pages, appliquer une architecture CSS maintenable et garantir la compatibilité multi-supports."
         },
         {
-            "title": "Ajout d'interactivité avec JavaScript",
-            "context": "Sur la page d'accueil que vous avez intégrée pour la bibliothèque municipale, ajoutez des éléments interactifs : Écrire un script JavaScript pour une galerie d'images qui permet aux visiteurs de parcourir les couvertures des livres mis en avant.",
-            "objective": "Utiliser une bibliothèque JavaScript (comme jQuery) pour animer le menu de navigation (par exemple, dérouler les sous-menus au survol). Assurer une gestion efficace des événements, comme le clic sur les boutons d'appel à l'action. Optimiser les performances de vos scripts et tester leur compatibilité sur différents navigateurs."
+            "title": "Interactions et gestion des signalements",
+            "context": "L'application doit permettre la création d'un signalement avec catégorie, description, photo, géolocalisation et suivi d'état.",
+            "objective": "Implémenter les interactions côté client, la validation des formulaires, les filtres, les notifications et les échanges asynchrones."
         },
         {
-            "title": "Test et optimisation responsive",
-            "context": "Enfin, assurez-vous que la page d'accueil de la bibliothèque municipale est pleinement responsive : Utiliser les media queries pour ajuster la mise en page et le design en fonction de la taille de l'écran (mobile, tablette, desktop).",
-            "objective": "Tester la page sur différents appareils (au moins un smartphone, une tablette, et un ordinateur de bureau) pour identifier et corriger les problèmes d'affichage. Optimiser les éléments de la page pour assurer une navigation fluide sur les appareils mobiles (par exemple, en réduisant la taille des images, en ajustant la taille des boutons). Mettre en œuvre un outil de test automatisé pour tester l'adaptation responsive de la page et documenter les résultats. Proposer des améliorations basées sur les résultats des tests pour améliorer l'expérience utilisateur sur les appareils mobiles."
+            "title": "Tests d'usage et finalisation du prototype",
+            "context": "Le prototype est testé sur différents appareils et scénarios citoyens.",
+            "objective": "Corriger les défauts d'affichage, améliorer l'accessibilité, optimiser l'expérience mobile et documenter le prototype livré."
         }
     ],
     "bibliography": [
-        "Frain, B. \"Responsive Web Design with HTML5 and CSS (5th ed.)\"",
-        "Robbins, J. N. \"Learning Web Design (6th ed.)\"",
-        "Marcotte, E. \"Responsive Web Design (3rd ed.)\""
+        "MDN Web Docs. HTML, CSS, JavaScript et accessibilité web.",
+        "W3C. Web Content Accessibility Guidelines (WCAG).",
+        "Krug, Steve. Don't Make Me Think, Revisited.",
+        "Frain, Ben. Responsive Web Design with HTML5 and CSS."
     ],
     "teachingMethods": [
-        "Cours magistraux interactifs avec démonstrations sur des cas réels",
-        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
-        "Classe inversée : ressources documentaires à consulter avant les séances",
-        "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
-        "Revue par les pairs",
-        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+        "Étude de cas",
+        "Atelier de maquettage",
+        "Travaux de groupe",
+        "Mise en situation professionnelle"
     ]
 }

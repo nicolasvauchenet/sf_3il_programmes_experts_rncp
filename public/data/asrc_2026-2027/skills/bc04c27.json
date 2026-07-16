@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC04-C27",
+        "title": "Gérer le budget de projet avec des outils et techniques de budgétisation",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d’infrastructure systèmes et réseaux sécurisée",
+        "academicYear": "2025-2026"
+    },
+    "description": "Gérer le budget de projet en utilisant des outils de gestion financière et des techniques de budgétisation, en respectant les contraintes financières et temporelles, afin d'assurer une utilisation optimale des ressources et garantir la rentabilité et le succès du projet.",
+    "criteria": [
+        "Précision du suivi budgétaire : les outils de suivi budgétaire sont correctement utilisés, avec des indicateurs financiers régulièrement mis à jour et analysés.",
+        "Réactivité aux écarts : les écarts budgétaires et de performance sont identifiés rapidement et des mesures correctives sont mises en place."
+    ]
+}

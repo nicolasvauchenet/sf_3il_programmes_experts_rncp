@@ -90,7 +90,7 @@ final readonly class EvaluationImporter
         }
 
         if ($modules !== [] || $projects !== [] || $skills !== []) {
-            $this->syncRelations($structure, $result, $modules, $projects, $skills);
+            $this->syncRelations($structure, $evaluationFiles, $result, $modules, $projects, $skills);
         }
 
         return $result;
@@ -98,6 +98,7 @@ final readonly class EvaluationImporter
 
     /**
      * @param array<string, mixed> $structure
+     * @param array<string, array<string, mixed>> $evaluationFiles
      * @param array<string, Evaluation> $evaluations
      * @param array<string, Module> $modules
      * @param array<string, Project> $projects
@@ -105,6 +106,7 @@ final readonly class EvaluationImporter
      */
     public function syncRelations(
         array $structure,
+        array $evaluationFiles,
         array $evaluations,
         array $modules,
         array $projects,
@@ -123,11 +125,40 @@ final readonly class EvaluationImporter
             }
 
             $evaluation = $evaluations[$code];
+            $detail = $evaluationFiles[$code] ?? null;
+            $skillCodes = $this->extractDetailSkillCodes($detail);
 
             $this->syncModules($evaluation, (array)($row['modules'] ?? []), $modules);
             $this->syncProjects($evaluation, (array)($row['projects'] ?? []), $projects);
-            $this->syncSkills($evaluation, (array)($row['skills'] ?? []), $skills);
+            $this->syncSkills($evaluation, $skillCodes !== [] ? $skillCodes : (array)($row['skills'] ?? []), $skills);
         }
+    }
+
+    /**
+     * @param array<string, mixed>|null $detail
+     * @return array<int, string>
+     */
+    private function extractDetailSkillCodes(?array $detail): array
+    {
+        if ($detail === null || !isset($detail['skills']) || !is_array($detail['skills'])) {
+            return [];
+        }
+
+        $codes = [];
+
+        foreach ($detail['skills'] as $skill) {
+            if (!is_array($skill)) {
+                continue;
+            }
+
+            $code = trim((string)($skill['code'] ?? ''));
+
+            if ($code !== '') {
+                $codes[] = $code;
+            }
+        }
+
+        return array_values(array_unique($codes));
     }
 
     /**
@@ -159,7 +190,9 @@ final readonly class EvaluationImporter
                 (string)($row['type'] ?? ''),
                 (string)($row['title'] ?? '')
             ));
-            $part->setDuration($this->durationToMinutes($row['duration'] ?? null));
+            $duration = $this->durationToMinutes($row['duration'] ?? null);
+            $part->setDuration($duration);
+            $part->setDurationLabel($duration === null ? $this->durationToLabel($row['duration'] ?? null) : null);
             $part->setPoints($this->toNullableInt($row['points'] ?? null));
             $part->setCoefficient($this->toNullableInt($row['coefficient'] ?? null));
             $part->setPosition($index + 1);
@@ -261,11 +294,23 @@ final readonly class EvaluationImporter
             return null;
         }
 
-        return [
+        $modalities = [
             'format' => $detail['modalities']['format'] ?? null,
             'delivery' => $detail['modalities']['delivery'] ?? null,
             'totalDuration' => $detail['modalities']['totalDuration'] ?? null,
         ];
+
+        if (isset($detail['modalities']['deliverables']) && is_array($detail['modalities']['deliverables'])) {
+            $modalities['deliverables'] = array_values(array_filter(
+                array_map(
+                    static fn(mixed $deliverable): string => trim((string)$deliverable),
+                    $detail['modalities']['deliverables']
+                ),
+                static fn(string $deliverable): bool => $deliverable !== ''
+            ));
+        }
+
+        return $modalities;
     }
 
     /**
@@ -308,6 +353,17 @@ final readonly class EvaluationImporter
         }
 
         return is_numeric($value) ? (int)$value : null;
+    }
+
+    private function durationToLabel(mixed $value): ?string
+    {
+        if ($value === null) {
+            return null;
+        }
+
+        $value = trim((string)$value);
+
+        return $value !== '' ? $value : null;
     }
 
     /**

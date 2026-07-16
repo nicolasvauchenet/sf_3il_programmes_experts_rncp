@@ -22,12 +22,13 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         text-decoration: none;
-        color: $primary;
+        color: $white;
         transition: color 0.3s;
 
         @include respondTo(sm) {
             padding: 0.5rem;
             font-size: 1rem;
+            color: $primary;
         }
 
         &:hover {

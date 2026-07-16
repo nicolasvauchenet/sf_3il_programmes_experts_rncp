@@ -1,0 +1,84 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC04-PR06",
+        "title": "Novaria Signal Program - Qualité, tests et documentation",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C33",
+            "description": "Effectuer des revues de code en utilisant des outils d'analyse en respectant les principes de développement et les standards de l'entreprise, pour assurer une qualité et une maintenabilité élevées du code."
+        },
+        {
+            "code": "C34",
+            "description": "Concevoir et mettre en œuvre des tests automatisés en employant les meilleures pratiques et outils de test et en tenant compte des contraintes techniques et des exigences de performance pour valider la fiabilité et l'efficacité des applications."
+        },
+        {
+            "code": "C35",
+            "description": "Mettre en place, éditer et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes."
+        }
+    ],
+    "description": "Ce volet Novaria Signal Program définit la démarche qualité de la solution. Il encadre les revues de code, les tests automatisés, la documentation technique et les bonnes pratiques de maintenance pour sécuriser les livrables et faciliter leur évolution dans la durée.",
+    "objectives": {
+        "description": "Les apprenants définissent la démarche qualité du programme Novaria Signal en formalisant les revues de code, la stratégie de tests, les règles de documentation technique et les bonnes pratiques de maintenance. Le projet mobilise les compétences C33 à C35 autour de la qualité logicielle, des tests automatisés, de la documentation et de l'amélioration continue."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en développement logiciel, tests, documentation technique, gestion de projet et usage d'outils collaboratifs."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Diagnostic qualité du programme",
+            "context": "Les équipes Citizen, API et Platform doivent partager des standards communs de qualité, de tests et de documentation.",
+            "objective": "Identifier les exigences qualité et les risques de maintenabilité du programme Novaria Signal."
+        },
+        {
+            "title": "Organisation des revues de code",
+            "context": "Les développements doivent être relus et validés avant intégration.",
+            "objective": "Définir les critères de revue, les rôles, les outils d'analyse et les règles de validation."
+        },
+        {
+            "title": "Stratégie de tests",
+            "context": "La plateforme doit couvrir les usages citoyens, les API, les droits, les traitements municipaux et les déploiements.",
+            "objective": "Concevoir une stratégie de tests fonctionnels, techniques, automatisés et de non-régression."
+        },
+        {
+            "title": "Documentation technique et partage de connaissances",
+            "context": "Les équipes doivent pouvoir maintenir et faire évoluer Novaria Signal dans la durée.",
+            "objective": "Structurer la documentation d'installation, d'exploitation, d'API, de contribution et de maintenance."
+        },
+        {
+            "title": "Guide de bonnes pratiques",
+            "context": "La ville souhaite capitaliser sur un référentiel qualité réutilisable.",
+            "objective": "Produire un guide opérationnel couvrant revues de code, tests, documentation et amélioration continue."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "The Pragmatic Programmer: Your Journey To Mastery",
+            "author": "Andrew Hunt et David Thomas"
+        },
+        {
+            "title": "Effective Methods for Software Testing",
+            "author": "William E. Perry"
+        },
+        {
+            "title": "Clean Code",
+            "author": "Robert C. Martin"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Atelier qualité",
+        "Travaux de groupe",
+        "Mise en situation professionnelle"
+    ]
+}

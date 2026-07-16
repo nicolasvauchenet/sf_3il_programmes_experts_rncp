@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC03-C23",
+        "title": "Investiguer et analyser les incidents de sécurité",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "academicYear": "2025-2026"
+    },
+    "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l’ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes, et en collectant les preuves numériques afin de préparer des rapports en vue des audits de sécurité et conserver des preuves légales.",
+    "criteria": [
+        "Les investigations se font dans le respect du cadre légal, et suivent une démarche conforme avec les réglementations de l’ANSSI et veillent à ne pas détruire de preuves.",
+        "L’analyse méthodique des systèmes compromis permet de retracer les actions malveillantes et de collecter des preuves. Les preuves sont consignées dans un rapport d’analyse."
+    ]
+}

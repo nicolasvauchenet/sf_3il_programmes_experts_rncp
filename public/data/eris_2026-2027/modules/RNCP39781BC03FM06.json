@@ -1,0 +1,121 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM06",
+        "title": "Ethical Hacking et sécurité défensive",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Manager la cybersécurité de l'entreprise : politique, audit, défense, SOC et forensique",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes éthiques du piratage et leur importance dans la cybersécurité (Comprendre) Connaître la méthodologie des tests de pénétration (Analyser) Mener des simulations d'attaques de manière sécurisée et éthique (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Une compréhension de base des concepts de cybersécurité et des connaissances en réseaux et systèmes informatiques sont recommandées pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'éthique du piratage",
+                "items": [
+                    "Comprendre les principes de l'éthique du piratage et son importance dans le contexte de la cybersécurité",
+                    "Identifier les différences entre le piratage éthique et le piratage malveillant (White, Grey, Black Hat)",
+                    "Connaître les lois et réglementations liées à l'éthique du piratage"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodologie des tests de pénétration",
+                "items": [
+                    "Comprendre les différentes phases d'un test de pénétration",
+                    "Connaître les outils et techniques utilisés lors des tests de pénétration",
+                    "Apprendre à évaluer les vulnérabilités et les risques dans un système d'information"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Simulations d'attaques",
+                "items": [
+                    "Comprendre les techniques de simulation d'attaques et leurs objectifs",
+                    "Apprendre à mener des simulations d'attaques pour évaluer la résilience d'un système",
+                    "Identifier les bonnes pratiques pour mener des simulations d'attaques de manière sécurisée et éthique"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Analyse des résultats et rapports",
+                "items": [
+                    "Savoir interpréter les résultats des tests de pénétration et des simulations d'attaques",
+                    "Apprendre à rédiger des rapports détaillés sur les vulnérabilités identifiées et les mesures correctives recommandées",
+                    "Comprendre l'importance de la communication des résultats aux parties prenantes concernées"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cadre légal et éthique",
+                "items": [
+                    "Connaître les lois et réglementations relatives aux tests de pénétration et aux simulations d'attaques",
+                    "Comprendre les enjeux éthiques liés à la réalisation de ces activités",
+                    "Apprendre à respecter la confidentialité et l'intégrité des données lors des tests de pénétration et des simulations d'attaques."
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Rédaction d'une charte éthique du piratage",
+            "context": "Vous travaillez en tant que consultant en cybersécurité pour une entreprise qui souhaite mettre en place une équipe de pirates éthiques.",
+            "objective": "Rédigez une charte d'éthique pour les membres de cette équipe en vous appuyant sur les principes de l'éthique du piratage que vous avez appris. Votre charte devra inclure : Les objectifs et les limites du piratage éthique au sein de l'entreprise. Les différences entre les activités autorisées et celles qui sont considérées comme malveillantes. Les références aux lois et réglementations pertinentes qui régissent cette pratique. Les engagements que chaque membre de l'équipe doit prendre pour respecter les principes éthiques."
+        },
+        {
+            "title": "Planification d'un test de pénétration",
+            "context": "Imaginez que vous êtes chargé de planifier un test de pénétration pour une nouvelle application web développée par votre entreprise.",
+            "objective": "Créez un plan détaillé qui couvre les différentes phases du test de pénétration, de la reconnaissance à la rédaction du rapport. Votre plan doit inclure : Les outils et techniques que vous prévoyez d'utiliser pour chaque phase. Une évaluation des risques associés à chaque étape. Les étapes pour documenter et évaluer les vulnérabilités découvertes."
+        },
+        {
+            "title": "Simulation d'attaque",
+            "context": "Vous avez été chargé de réaliser une simulation d'attaque contre le réseau interne de votre entreprise pour évaluer sa résilience.",
+            "objective": "Utilisez un environnement de test isolé pour simuler une attaque par déni de service distribué (DDoS). Votre exercice devra : Décrire la technique d'attaque choisie et expliquer pourquoi elle est représentative d'une menace réelle pour l'entreprise. Mettre en œuvre la simulation sans affecter les opérations réelles et en respectant les bonnes pratiques éthiques. Documenter l'efficacité de l'attaque et les réponses du système."
+        },
+        {
+            "title": "Analyse et rapport de vulnérabilité",
+            "context": "Après avoir mené un test de pénétration sur l'infrastructure réseau de votre entreprise, vous avez identifié plusieurs vulnérabilités.",
+            "objective": "Rédigez un rapport qui analyse les résultats du test. Votre rapport doit : Décrire chaque vulnérabilité identifiée et son niveau de risque. Proposer des mesures correctives pour chacune des vulnérabilités. Expliquer la manière de communiquer ces résultats aux parties prenantes de l'entreprise de façon claire et non technique."
+        },
+        {
+            "title": "Étude de cas sur le cadre légal et éthique",
+            "context": "Étudiez un cas réel ou fictif où un test de pénétration ou une simulation d'attaque a conduit à des implications légales ou éthiques.",
+            "objective": "Analysez le cas en soulignant : Les actions qui ont mené à des conséquences légales ou éthiques. Les lois et réglementations qui ont été appliquées ou violées. Comment la situation aurait pu être gérée différemment pour respecter la confidentialité et l'intégrité des données et éviter les implications négatives. Présentez vos résultats sous forme d'une étude de cas détaillée."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "The Hacker Playbook 3",
+            "author": "Kim, P"
+        },
+        {
+            "title": "Penetration Testing: A Hands-On Introduction to Hacking (2e éd.)",
+            "author": "Weidman, G"
+        },
+        {
+            "title": "CISSP All-in-One Exam Guide (9e éd.)",
+            "author": "Harris, S. & Maymí, F"
+        }
+    ],
+    "OnlineResources": [
+        "OWASP Testing Guide (https://owasp.org/www-project-web-security-testing-guide/) [EN]",
+        "HackTheBox (https://www.hackthebox.com) [EN]",
+        "PortSwigger Web Security Academy (https://portswigger.net/web-security) [EN]",
+        "ANSSI — Tests d'intrusion (https://cyber.gouv.fr) [FR]",
+        "Offensive Security (https://www.offensive-security.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

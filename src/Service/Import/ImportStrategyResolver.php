@@ -31,9 +31,12 @@ final readonly class ImportStrategyResolver
 
         $frameworkCode = 'RNCP' . $rncpCode;
         $promotionLabel = strtoupper($programCode) . ' ' . $academicYear;
+        [$startAt, $endAt] = $this->parseAcademicYear($academicYear);
 
         $framework = $this->entityManager->getRepository(Framework::class)->findOneBy([
             'code' => $frameworkCode,
+            'startAt' => $startAt,
+            'endAt' => $endAt,
         ]);
 
         $promotion = $this->entityManager->getRepository(Promotion::class)->findOneBy([
@@ -62,5 +65,20 @@ final readonly class ImportStrategyResolver
         }
 
         return ImportStrategy::UPDATE_PROMOTION;
+    }
+
+    /**
+     * @return array{0: \DateTimeImmutable, 1: \DateTimeImmutable}
+     */
+    private function parseAcademicYear(string $academicYear): array
+    {
+        if (!preg_match('/^(?<start>\d{4})-(?<end>\d{4})$/', $academicYear, $matches)) {
+            throw new \InvalidArgumentException(sprintf('Année universitaire invalide : "%s".', $academicYear));
+        }
+
+        return [
+            new \DateTimeImmutable(sprintf('%d-09-01 00:00:00', (int)$matches['start'])),
+            new \DateTimeImmutable(sprintf('%d-08-31 23:59:59', (int)$matches['end'])),
+        ];
     }
 }

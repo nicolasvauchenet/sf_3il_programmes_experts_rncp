@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC03-C18",
+        "title": "Intégration des pratiques DevSecOps",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "academicYear": "2025-2026"
+    },
+    "description": "Intégrer des pratiques de sécurité DevSecOps tout au long du cycle de développement logiciel par la mise en œuvre d'outils d'analyse et de sécurité tel que OWASP zap, Burp Suite pour identifier et corriger les vulnérabilités, assurer la conformité aux normes de sécurité et protéger les applications contre les menaces courantes.",
+    "criteria": [
+        "Les pratiques de sécurité sont correctement appliquées : Les configurations permettent d'assurer une protection efficace contre les menaces courantes en intégrant des pratiques de sécurité tout au long du cycle de développement.",
+        "Le périmètre des vulnérabilités est suffisamment couvert : La couverture adéquate des vulnérabilités garantit que les analyses de sécurité identifient et corrigent les failles potentielles, assurant ainsi la conformité aux normes de sécurité et la protection des applications."
+    ]
+}

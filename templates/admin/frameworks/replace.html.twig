@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Remplacer un dossier JSON{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Dossier déjà existant</h1>
+            <p class="subtitle">Le dossier {{ pendingUpload.datasetName }} existe déjà dans public/data.</p>
+
+            <hr/>
+
+            <div class="admin-conflict-summary">
+                <p>
+                    L'archive contient {{ pendingUpload.jsonFileCount }} fichier{{ pendingUpload.jsonFileCount > 1 ? 's' : '' }} JSON.
+                    Vous pouvez annuler l'import ou remplacer le dossier existant.
+                </p>
+            </div>
+
+            <div class="app-grid two">
+                <form method="post" action="{{ path('app_admin_frameworks_cancel', { token: pendingUpload.token }) }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token('cancel_framework_archive_' ~ pendingUpload.token) }}">
+                    <button type="submit" class="app-button outline">Annuler</button>
+                </form>
+
+                <form
+                    method="post"
+                    action="{{ path('app_admin_frameworks_replace', { token: pendingUpload.token }) }}"
+                    onsubmit="return confirm('Le dossier existant sera supprimé avant extraction. Confirmez-vous le remplacement ?')"
+                >
+                    <input type="hidden" name="_token" value="{{ csrf_token('replace_framework_archive_' ~ pendingUpload.token) }}">
+                    <button type="submit" class="app-button danger">Remplacer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

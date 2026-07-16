@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C28",
+        "title": "Contribuer à la rédaction du cahier des charges et/ou de la note de cadrage",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "academicYear": "2025"
+    },
+    "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités du projet.",
+    "criteria": [
+        "Conformité des documents : le cahier des charges / la note de cadrage correspond aux exigences des parties prenantes et aux standards de l'entreprise.",
+        "Clarté et précision : les documents sont rédigés de manière précise et compréhensible par les différentes parties prenantes.",
+        "Solutions techniques et performances : les solutions techniques et leurs performances attendues sont correctement évaluées et décrites."
+    ]
+}

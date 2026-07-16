@@ -3,8 +3,8 @@
 namespace App\Command;
 
 use App\Service\Import\FrameworkImportService;
-use App\Service\Import\JsonDatasetLoader;
 use App\Service\Import\ImportStrategyResolver;
+use App\Service\Import\JsonDatasetLoader;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -14,16 +14,15 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 #[AsCommand(
     name: 'app:framework:import',
-    description: 'Import intelligent d’un référentiel JSON',
+    description: 'Import intelligent d\'un referentiel JSON',
 )]
 final class ImportFrameworkCommand extends Command
 {
     public function __construct(
-        private readonly JsonDatasetLoader      $loader,
+        private readonly JsonDatasetLoader $loader,
         private readonly FrameworkImportService $importService,
         private readonly ImportStrategyResolver $resolver,
-    )
-    {
+    ) {
         parent::__construct();
     }
 
@@ -36,7 +35,7 @@ final class ImportFrameworkCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $directory = (string)$input->getArgument('directory');
+        $directory = (string) $input->getArgument('directory');
 
         try {
             $dataset = $this->loader->loadFromDirectory($directory);
@@ -48,28 +47,29 @@ final class ImportFrameworkCommand extends Command
 
             $strategy = $this->resolver->resolve($structure, $hasSkills, $hasEvaluations);
 
-            $io->section('Stratégie détectée');
+            $io->section('Strategie detectee');
             $io->text($strategy->label());
 
             $report = $this->importService->importWithStrategy($dataset, $strategy);
 
-            $io->section('Résumé');
+            $io->section('Resume');
 
             foreach ($report->all() as $section => $stats) {
                 $io->text(sprintf(
-                    '%s → %d créés / %d mis à jour',
+                    '%s -> %d crees / %d mis a jour / %d supprimes',
                     $section,
                     $stats['created'],
-                    $stats['updated']
+                    $stats['updated'],
+                    $stats['deleted'],
                 ));
             }
 
-            $io->success('Import terminé.');
+            $io->success('Import termine.');
 
             return Command::SUCCESS;
-
         } catch (\Throwable $e) {
             $io->error($e->getMessage());
+
             return Command::FAILURE;
         }
     }

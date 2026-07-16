@@ -224,6 +224,35 @@ final readonly class SummaryChartService
     /**
      * @param ResolvedEvaluationSheet[] $evaluationSheets
      */
+    public function createModulesPerEvaluationChartFromSheets(array $evaluationSheets): Chart
+    {
+        $labels = [];
+        $data = [];
+        $fileCodes = [];
+
+        foreach ($evaluationSheets as $sheet) {
+            if (!$sheet instanceof ResolvedEvaluationSheet) {
+                continue;
+            }
+
+            $labels[] = $this->extractShortCode($sheet->evaluationCode());
+            $data[] = count($sheet->modules);
+            $fileCodes[] = strtolower($sheet->fileCode);
+        }
+
+        return $this->createBarChart(
+            title: 'RÃ©partition des matiÃ¨res par Ã©valuation (EC)',
+            labels: $labels,
+            data: $data,
+            datasetExtra: [
+                'fileCodes' => $fileCodes,
+            ],
+        );
+    }
+
+    /**
+     * @param ResolvedEvaluationSheet[] $evaluationSheets
+     */
     public function createSkillsPerEvaluationChartFromSheets(array $evaluationSheets): Chart
     {
         $labels = [];

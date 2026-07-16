@@ -1,0 +1,92 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39611-BC04-PR06",
+        "title": "Projet Veille technologique multilingue",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
+        "durationDays": 7,
+        "durationHours": 49,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C28",
+            "description": "Analyser des contenus de diverses sources d'informations spécialisés, en mobilisant ses connaissances technologiques et sa maîtrise de l'anglais, pour résoudre des incidents ou répondre à des besoins précis et ponctuels en soutien du Système d'Information (SI)."
+        },
+        {
+            "code": "C29",
+            "description": "Mettre en place une veille technologique en relation avec le périmètre d'un projet ou l'activité de l'entreprise en sélectionnant des sources d'information multilingues, en s'assurant de la véracité de leurs contenus et en utilisant des outils de collecte avancés pour un stockage et une organisation efficace des données récoltées dans une base de connaissance."
+        },
+        {
+            "code": "C30",
+            "description": "Analyser les données brutes collectées dans la base de connaissances technologiques en comparant les différents résultats afin d'établir différentes hypothèses ou scénarii d'évolution, d'optimisation et de sécurisation des infrastructures."
+        },
+        {
+            "code": "C31",
+            "description": "Diffuser les hypothèses ou scénarii aux collaborateurs du département IT (Information Technology) en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence de l'équipe et le soutien du processus décisionnel et l'innovation au sein du projet."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de recherche, de collecte, d’analyse et de diffusion d’informations technologiques en contexte multilingue. Il mobilise les compétences du bloc BC04 en préparation des EC13 et EC14, en articulant anglais technique, recherche documentaire, structuration d’une base de connaissance, analyse de tendances et communication des scénarios d’évolution à destination d’un public IT."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en anglais général, en environnement informatique et en recherche d'information sur le web. Une première familiarité avec les enjeux techniques des systèmes d'information est recommandée."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Définition du périmètre de veille",
+            "context": "À partir d’un sujet lié aux infrastructures, aux systèmes ou à la cybersécurité, les apprenants définissent les objectifs de veille, les axes de recherche et les besoins d’information des parties prenantes.",
+            "objective": "Cadrer une veille technologique exploitable et alignée avec un besoin métier ou projet."
+        },
+        {
+            "title": "Recherche documentaire multilingue",
+            "context": "Les apprenants identifient des sources francophones et anglophones pertinentes, mobilisent des techniques de recherche avancée et évaluent la fiabilité des contenus trouvés.",
+            "objective": "Collecter des informations exploitables à partir de sources crédibles et variées."
+        },
+        {
+            "title": "Structuration de la base de connaissances",
+            "context": "Les informations recueillies sont organisées dans une base de connaissance structurée selon des critères de classement, de traçabilité et de réutilisation.",
+            "objective": "Faciliter l’accès, la comparaison et l’exploitation des données de veille."
+        },
+        {
+            "title": "Analyse et formulation d’hypothèses",
+            "context": "Les apprenants comparent les informations collectées, identifient tendances, divergences et signaux faibles, puis élaborent des hypothèses ou scénarios d’évolution.",
+            "objective": "Transformer des données brutes en analyses utiles à la décision."
+        },
+        {
+            "title": "Rédaction du rapport de veille",
+            "context": "Les résultats de la veille sont synthétisés dans un rapport structuré, intégrant sources, analyses, scénarios et recommandations.",
+            "objective": "Produire un livrable écrit clair, argumenté et exploitable dans une logique EC13."
+        },
+        {
+            "title": "Présentation et diffusion des conclusions",
+            "context": "Les apprenants présentent oralement leurs conclusions à un public cible de type département IT, en s’appuyant sur des supports adaptés.",
+            "objective": "Communiquer efficacement les résultats de la veille et soutenir la prise de décision dans une logique EC14."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Veille et intelligence économique : Méthodes et outils de l'information stratégique",
+            "author": "Michel, C., & Bousquet, P."
+        },
+        {
+            "title": "Veille technologique et innovation",
+            "author": "Noizet, G."
+        },
+        {
+            "title": "La communication technique : Écrire au travail en anglais",
+            "author": "Cross, G."
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Recherche documentaire",
+        "Utilisation de supports (ppt, etc.)",
+        "Mise en situation professionnelle"
+    ]
+}

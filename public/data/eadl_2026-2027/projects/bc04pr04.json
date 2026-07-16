@@ -1,0 +1,100 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39765-BC04-PR04",
+        "title": "Novaria Core - UrbanHub Cloud Foundation",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing",
+        "durationDays": 15,
+        "durationHours": 105,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C21",
+            "description": "Intégrer des services cloud et optimiser leur usage..."
+        },
+        {
+            "code": "C22",
+            "description": "Automatiser les infrastructures avec Terraform et Ansible..."
+        },
+        {
+            "code": "C23",
+            "description": "Administrer et optimiser les infrastructures cloud..."
+        },
+        {
+            "code": "C24",
+            "description": "Analyser et optimiser les performances..."
+        },
+        {
+            "code": "C25",
+            "description": "Mettre en œuvre des stratégies de sécurité cloud..."
+        },
+        {
+            "code": "C26",
+            "description": "Intégrer des technologies blockchain..."
+        }
+    ],
+    "description": "UrbanHub Cloud Foundation conçoit le socle cloud mutualisé de Novaria Core. Le projet couvre l'architecture cloud cible, l'automatisation Infrastructure as Code, l'administration des environnements, l'observabilité, la sécurité, la haute disponibilité, les sauvegardes et l'optimisation des coûts.",
+    "objectives": {
+        "description": "Les apprenants conçoivent le socle cloud mutualisé permettant aux applications UrbanHub d'évoluer, de monter en charge et de garantir la disponibilité des services numériques de Novaria. Le projet mobilise les compétences du bloc BC04 autour de l'architecture cloud cible, de la sélection des services cloud, de l'automatisation d'infrastructure, de l'administration cloud, de l'observabilité, de la sécurité, de la haute disponibilité, des sauvegardes, de la reprise d'activité et de l'optimisation des coûts."
+    },
+    "prerequisites": {
+        "description": "Connaissances en systèmes d'information, réseaux, sécurité, cloud computing, conteneurisation et automatisation d'infrastructure. Une première pratique de Terraform, Ansible ou d'un cloud provider est recommandée."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Architecture cloud cible UrbanHub",
+            "context": "Les services UrbanHub doivent pouvoir être hébergés sur un socle cloud commun, sécurisé et évolutif.",
+            "objective": "Définir une architecture cloud cible couvrant réseau, calcul, stockage, services managés, environnements et principes de scalabilité."
+        },
+        {
+            "title": "Infrastructure as Code",
+            "context": "Les déploiements d'infrastructure doivent être reproductibles, documentés et contrôlables.",
+            "objective": "Automatiser la création des ressources avec Terraform, Ansible ou des outils équivalents."
+        },
+        {
+            "title": "Administration, sécurité et identités",
+            "context": "Le socle cloud doit protéger les accès, les données et les environnements de Novaria Core.",
+            "objective": "Définir les politiques IAM, les règles de sécurité, le chiffrement, les accès administrateurs et les procédures d'audit."
+        },
+        {
+            "title": "Observabilité, performance et disponibilité",
+            "context": "La ville doit superviser les services, anticiper les incidents et maintenir la qualité de service.",
+            "objective": "Mettre en place monitoring, logs, métriques, alerting, haute disponibilité et optimisation des performances."
+        },
+        {
+            "title": "FinOps, sauvegardes et reprise d'activité",
+            "context": "Le socle cloud doit rester soutenable économiquement et robuste face aux incidents.",
+            "objective": "Définir une stratégie FinOps, des sauvegardes, des procédures de restauration et un plan de reprise ou de continuité d'activité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Terraform Up & Running",
+            "author": "Yevgeniy Brikman"
+        },
+        {
+            "title": "Cloud Native DevOps with Kubernetes",
+            "author": "John Arundel et Justin Domingus"
+        },
+        {
+            "title": "Site Reliability Engineering",
+            "author": "Betsy Beyer, Chris Jones, Jennifer Petoff et Niall Richard Murphy"
+        },
+        {
+            "title": "Cloud FinOps",
+            "author": "J. R. Storment et Mike Fuller"
+        }
+    ],
+    "teachingMethods": [
+        "Travaux pratiques",
+        "Projet fil rouge",
+        "Atelier cloud",
+        "Mise en situation professionnelle"
+    ]
+}

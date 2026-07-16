@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Administration</h1>
+            <p class="subtitle">Choisissez ce que vous souhaitez administrer</p>
+
+            <hr/>
+
+            <div class="app-grid two">
+                <div class="app-section">
+                    <h2>Utilisateurs</h2>
+
+                    <div class="app-grid two">
+                        <a href="{{ path('app_admin_users_home') }}" class="app-button">Gérer</a>
+                        <a href="{{ path('app_admin_users_new') }}" class="app-button success">Nouveau</a>
+                    </div>
+                </div>
+
+                <div class="app-section">
+                    <h2>Référentiels</h2>
+
+                    <div class="app-grid two">
+                        <a href="{{ path('app_admin_frameworks_home') }}" class="app-button">Gérer</a>
+                        <a href="{{ path('app_admin_frameworks_home') }}" class="app-button success">Nouveau</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

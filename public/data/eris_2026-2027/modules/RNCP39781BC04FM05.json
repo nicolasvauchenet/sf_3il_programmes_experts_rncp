@@ -1,0 +1,131 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM05",
+        "title": "Gestion de la recette",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Maîtriser la méthodologie et les étapes clés de la gestion de la recette (Appliquer) Planifier efficacement la recette et réaliser des tests appropriés (Créer) Gérer la validation et le suivi post-recette (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Méthodologie de la gestion de la recette",
+                "items": [
+                    "Comprendre les objectifs de la gestion de la recette",
+                    "Identifier les acteurs impliqués dans la gestion de la recette",
+                    "Définir les étapes clés de la gestion de la recette",
+                    "Comprendre les outils et méthodes utilisés dans la gestion de la recette",
+                    "Connaître les bonnes pratiques en matière de gestion de la recette"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Planification de la recette",
+                "items": [
+                    "Définir les étapes de la planification de la recette",
+                    "Identifier les critères de validation à chaque étape",
+                    "Mettre en place un planning de recette réaliste",
+                    "Anticiper les ressources nécessaires à la recette",
+                    "Prévoir les tests à réaliser à chaque étape de la recette"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Réalisation des tests",
+                "items": [
+                    "Comprendre les différents types de tests à réaliser",
+                    "Organiser la réalisation des tests en fonction des intervenants",
+                    "Assurer la traçabilité des tests effectués",
+                    "Analyser les résultats des tests",
+                    "Gérer les anomalies détectées lors des tests"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Validation de la recette",
+                "items": [
+                    "Préparer la validation de la recette avec les parties prenantes",
+                    "Mettre en place une procédure de validation claire",
+                    "Valider la recette en accord avec les critères définis",
+                    "Rédiger le bilan de la recette",
+                    "Organiser la communication autour de la validation de la recette"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Suivi post-recette",
+                "items": [
+                    "Assurer le suivi des anomalies remontées après la recette",
+                    "Mettre en place des actions correctives si nécessaire",
+                    "Capitaliser sur les retours d'expérience de la recette",
+                    "Communiquer sur les enseignements tirés de la recette",
+                    "Préparer la recette suivante en s'appuyant sur les retours d'expérience"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Simulation de Planification de Recette",
+            "context": "Vous êtes responsable de la planification d'une recette pour un nouveau logiciel de gestion de stock.",
+            "objective": "Créez un plan détaillé qui inclut : Les grandes étapes de la recette, de la préparation à la validation finale. Les critères de validation pour chaque étape. Un planning réaliste avec des échéances pour chaque étape, en prenant en compte la disponibilité des ressources (humaines et matérielles). Une liste des tests à réaliser à chaque étape, en justifiant leur pertinence par rapport aux objectifs de la recette. Une anticipation des ressources nécessaires pour la réalisation des tests (par exemple, personnel, équipements, données de test)."
+        },
+        {
+            "title": "Conception de Tests",
+            "context": "En tant que gestionnaire de la recette, concevez un protocole de test pour évaluer les fonctionnalités clés du logiciel de gestion de stock mentionné dans l'exercice 1.",
+            "objective": "Votre protocole doit inclure : Une description des différents types de tests à effectuer (unitaires, d'intégration, de charge, etc.). L'organisation et la séquence des tests en fonction des ressources disponibles. La méthode pour assurer la traçabilité des tests (documentation à utiliser, logiciel de suivi, etc.). Une analyse type des résultats attendus pour l'un des tests. Une stratégie pour la gestion des anomalies potentielles, incluant leur enregistrement et le processus de suivi."
+        },
+        {
+            "title": "Procédure de Validation",
+            "context": "Imaginez que vous soyez en phase de validation de la recette pour le logiciel de gestion de stock.",
+            "objective": "Rédigez une procédure de validation comprenant : La préparation de la session de validation avec les parties prenantes (quels documents préparer, quelles informations communiquer). Une checklist des critères de validation basée sur les objectifs de la recette. Le déroulement de la session de validation (qui fait quoi, quelles étapes suivre). La structure du bilan de recette à rédiger une fois la validation terminée. Le plan de communication à adopter pour informer toutes les parties prenantes du résultat de la validation."
+        },
+        {
+            "title": "Gestion des Anomalies Post-Recette",
+            "context": "Après la recette, plusieurs anomalies ont été remontées par les utilisateurs finaux.",
+            "objective": "Pour chacune des anomalies suivantes, proposez une action corrective et un plan de suivi : Une fonctionnalité de recherche d'articles ne retourne pas les résultats attendus. Le logiciel se ferme inopinément lors de la création d'un nouveau bon de commande. Les rapports de stock générés comportent des erreurs dans les totaux. L'interface utilisateur est lente lors de l'accès simultané par plusieurs utilisateurs. Des utilisateurs rapportent des difficultés à comprendre le fonctionnement de la section de gestion des retours produits."
+        },
+        {
+            "title": "Retour d'Expérience et Amélioration Continue",
+            "context": "Suite à la première recette du logiciel de gestion de stock, rédigez un retour d'expérience qui servira à améliorer la prochaine recette.",
+            "objective": "Votre document doit inclure : Les points forts et les points faibles identifiés durant la recette. Les leçons apprises en matière d'organisation, de planification et de réalisation des tests. Les suggestions pour améliorer les étapes de la recette, les critères de validation et les processus de suivi des anomalies. Des recommandations pour renforcer la communication et la collaboration entre les équipes impliquées dans la recette. Un plan d'action pour intégrer ces améliorations dans la préparation de la prochaine recette, en identifiant des mesures concrètes à prendre et des responsabilités claires."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Les tests dans les projets systèmes d'information (4e éd.)",
+            "author": "Homès, B"
+        },
+        {
+            "title": "Agile Testing : A Practical Guide for Testers and Agile Teams",
+            "author": "Crispin, L. & Gregory, J"
+        },
+        {
+            "title": "Managing the Testing Process (4e éd.)",
+            "author": "Black, R"
+        }
+    ],
+    "OnlineResources": [
+        "ISTQB Glossary (https://glossary.istqb.org) [EN/FR]",
+        "CFTL — Comité Français des Tests Logiciels (https://www.cftl.fr) [FR]",
+        "ISTQB Foundation Level Syllabus (https://www.istqb.org) [EN]",
+        "Guru99 — Software Testing (https://www.guru99.com/software-testing.html) [EN]",
+        "developpez.com — Tests logiciels (https://qualite.developpez.com) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

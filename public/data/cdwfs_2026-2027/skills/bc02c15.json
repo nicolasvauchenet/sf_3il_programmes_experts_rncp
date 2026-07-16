@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC02-C15",
+        "title": "Sécuriser les API via l’authentification et l’autorisation",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "academicYear": "2025"
+    },
+    "description": "Sécuriser les API, en mettant en œuvre des protocoles d'authentification et d'autorisation en utilisant des outils et des pratiques de sécurité standardisés pour protéger les données et les interactions contre les accès non autorisés et les vulnérabilités.",
+    "criteria": [
+        "Robustesse de la sécurité : les méthodes d'authentification et d'autorisation (OAuth ou JWT) mises en place suivent les bonnes pratiques de sécurité et empêchent efficacement les accès non autorisés.",
+        "Utilisation des outils standardisés : les outils et pratiques de sécurité sont en accord avec les standards de l'industrie et appliqués de manière cohérente."
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC01-C06",
+        "title": "Vérification et validation de l'architecture à travers des revues de conception",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l’architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "description": "Présenter et valider l'architecture logicielle et les aspects techniques et fonctionnels, en organisant des revues de conception avec les parties prenantes et en intégrant les retours, afin d'assurer une compréhension et une acceptation complète.",
+    "criteria": [
+        "Pertinence de l’analyse à partir des retours et suggestions des revues de conception : La pertinence des retours et suggestions du candidat lors des revues de conception permet d'assurer que les améliorations proposées sont alignées avec les besoins fonctionnels et techniques du projet.",
+        "Intégration efficace des retours et suggestions dans l'architecture : L'intégration efficace des retours et suggestions dans l'architecture garantit que les modifications apportées renforcent la robustesse et la faisabilité de la solution logicielle."
+    ]
+}

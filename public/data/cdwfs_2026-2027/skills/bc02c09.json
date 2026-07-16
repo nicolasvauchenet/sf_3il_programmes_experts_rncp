@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC02-C09",
+        "title": "Optimiser et sécuriser les serveurs web via le terminal",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "academicYear": "2025"
+    },
+    "description": "Optimiser et sécuriser les serveurs web, en ajustant les paramètres serveur et en employant des commandes avancées via le terminal pour améliorer les performances et la sécurité (SSH, MFA) des applications web en fonction de son OS (Linux, Windows).",
+    "criteria": [
+        "Gestion des ressources : les paramètres du serveur sont ajustés et permettent l’optimisation de l’utilisation des ressources (mémoire, processeur, stockage).",
+        "Mise en place de la sécurité : les certificats SSL et la configuration SSH sont fonctionnels."
+    ]
+}

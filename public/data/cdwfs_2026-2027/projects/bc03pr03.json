@@ -2,10 +2,10 @@
     "meta": {
         "type": "project",
         "code": "RNCP39608-BC03-PR03",
-        "title": "Projet CI/CD : mise en place, monitoring, évolution",
+        "title": "Novaria Signal Platform",
         "rncpCode": "39608",
         "blocCode": "BC03",
-        "blocName": "",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
         "durationDays": 5,
         "durationHours": 35,
         "academicYear": "2026-2027"
@@ -30,96 +30,67 @@
         {
             "code": "C22",
             "description": "Définir et appliquer des procédures de fusion de code et de résolution de conflits."
+        },
+        {
+            "code": "C23",
+            "description": "Développer des environnements virtualisés."
+        },
+        {
+            "code": "C24",
+            "description": "Coordonner les conteneurs avec des logiciels d’orchestration."
+        },
+        {
+            "code": "C25",
+            "description": "Automatiser la gestion et le déploiement des ressources cloud."
         }
     ],
+    "description": "Novaria Signal Platform porte l'infrastructure technique de la solution. Le projet vise à rendre Novaria Signal déployable, observable, sécurisée et scalable grâce à une architecture cloud cohérente, des conteneurs, une chaîne CI/CD, du monitoring et des procédures de sauvegarde.",
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Mobiliser l'ensemble des compétences DevOps dans un projet intégrateur (Créer) Construire une chaîne CI/CD complète avec monitoring et sécurité (Appliquer) Évaluer la pertinence des choix d'outils et d'architecture (Évaluer)"
+        "description": "Les apprenants conçoivent et industrialisent la plateforme technique Novaria Signal afin d'assurer un déploiement fiable, sécurisé et scalable à l'échelle de la ville de Novaria. Le projet mobilise les compétences du bloc BC03 autour de l'étude d'architectures, de la conteneurisation, de la CI/CD, du cloud, du monitoring, des sauvegardes automatisées, de la sécurité des environnements et du plan de reprise d'activité."
     },
     "prerequisites": {
-        "description": "Connaissances de base en développement logiciel et gestion de projets informatiques, ainsi qu'une familiarité avec les processus de gestion de version et les environnements de développement intégrés (IDE)."
+        "description": "Connaissances de base en administration système, Git, conteneurisation, intégration continue, déploiement applicatif et principes d'architecture cloud."
     },
     "outline": {
-        "chapters": [
-            {
-                "title": "Chapitre 1 : Concepts de l'intégration continue et du déploiement continu",
-                "items": [
-                    "Comprendre les principes de l'intégration continue",
-                    "Connaître les avantages du déploiement continu",
-                    "Identifier les outils et les pratiques associés à l'intégration continue et au déploiement continu",
-                    "Comprendre le rôle de l'automatisation dans l'intégration continue et le déploiement continu",
-                    "Analyser les bonnes pratiques pour la mise en place de l'intégration continue et du déploiement continu"
-                ]
-            },
-            {
-                "title": "Chapitre 2 : Outils et technologies pour l'intégration continue et le déploiement continu",
-                "items": [
-                    "Étudier les différents outils disponibles pour l'intégration continue",
-                    "Comprendre le fonctionnement des outils de déploiement continu",
-                    "Analyser les technologies utilisées dans le cadre de l'intégration continue et du déploiement continu",
-                    "Comparer les solutions du marché pour l'intégration continue et le déploiement continu",
-                    "Évaluer les critères de choix des outils et technologies pour l'intégration continue et le déploiement continu"
-                ]
-            },
-            {
-                "title": "Chapitre 3 : Mise en place de l'intégration continue et du déploiement continu",
-                "items": [
-                    "Élaborer une stratégie d'implémentation de l'intégration continue et du déploiement continu",
-                    "Mettre en place un environnement propice à l'intégration continue et au déploiement continu",
-                    "Configurer les outils nécessaires à l'intégration continue et au déploiement continu",
-                    "Mettre en œuvre les bonnes pratiques pour garantir le succès de l'intégration continue et du déploiement continu",
-                    "Gérer les problèmes et les défis liés à la mise en place de l'intégration continue et du déploiement continu"
-                ]
-            },
-            {
-                "title": "Chapitre 4 : Monitoring et amélioration continue",
-                "items": [
-                    "Comprendre l'importance du monitoring dans le cadre de l'intégration continue et du déploiement continu",
-                    "Mettre en place des mécanismes de surveillance pour l'intégration continue et le déploiement continu",
-                    "Analyser les métriques et les KPIs associés à l'intégration continue et au déploiement continu",
-                    "Mettre en œuvre des actions d'amélioration continue basées sur les retours du monitoring",
-                    "Anticiper l'évolution des besoins et des technologies liés à l'intégration continue et au déploiement continu"
-                ]
-            }
-        ]
+        "chapters": []
     },
     "exercises": [
         {
-            "title": "Analyse des outils pour l'intégration continue et le déploiement continu",
-            "context": "Objectif : Évaluer les différentes solutions d'outils pour l'intégration continue et le déploiement continu.",
-            "objective": "Description : Les apprenants devront réaliser une étude comparative des outils disponibles sur le marché pour l'intégration continue et le déploiement continu. Ils devront identifier les critères de sélection pertinents et proposer les solutions les plus adaptées à un scénario d'entreprise fictif donné."
+            "title": "Étude d'architecture cible",
+            "context": "La municipalité prévoit un déploiement à grande échelle de Novaria Signal et souhaite comparer plusieurs architectures applicatives.",
+            "objective": "Comparer les approches monolithe, modulaire et microservices, puis justifier une architecture cible adaptée."
         },
         {
-            "title": "Configuration d'un environnement d'intégration continue",
-            "context": "Objectif : Mettre en pratique la configuration des outils nécessaires à l'intégration continue.",
-            "objective": "Description : Les apprenants devront mettre en place un environnement d'intégration continue en utilisant des outils spécifiques. Ils devront configurer ces outils en suivant les bonnes pratiques étudiées en cours et en veillant à assurer leur bon fonctionnement."
+            "title": "Conteneurisation des composants applicatifs",
+            "context": "Les applications Front-End, API et services techniques doivent être préparés pour un déploiement reproductible.",
+            "objective": "Produire les configurations Docker nécessaires et documenter les environnements de développement, test et production."
         },
         {
-            "title": "Planification de la mise en place de l'intégration continue et du déploiement continu Objectif : Élaborer une stratégie d'implémentation de l'intégration continue et du déploiement continu.",
-            "context": "Les apprenants seront amenés à concevoir un plan détaillé pour la mise en place de l'intégration continue et du déploiement continu au sein d'une entreprise.",
-            "objective": "Ils devront prendre en compte les différents aspects abordés en cours et proposer des solutions adaptées à des contraintes spécifiques."
+            "title": "Pipeline CI/CD et déploiement automatisé",
+            "context": "L'équipe met en place une chaîne d'intégration et de déploiement continu avec gestion des environnements.",
+            "objective": "Automatiser les tests, builds, contrôles qualité et déploiements à l'aide d'un pipeline documenté."
         },
         {
-            "title": "Gestion des problèmes liés à l'intégration continue et au déploiement continu",
-            "context": "Objectif : Identifier et gérer les problèmes et défis liés à la mise en place de l'intégration continue et du déploiement continu.",
-            "objective": "Description : Les apprenants devront analyser des scénarios de problèmes courants rencontrés lors de la mise en place de l'intégration continue et du déploiement continu. Ils devront proposer des solutions et des plans d'action pour résoudre ces problèmes, en s'appuyant sur les bonnes pratiques étudiées en cours."
+            "title": "Supervision, logs et alerting",
+            "context": "La plateforme doit permettre aux équipes techniques de suivre la disponibilité et la performance du service.",
+            "objective": "Définir les indicateurs, collecter les logs, configurer le monitoring et prévoir les alertes opérationnelles."
         },
         {
-            "title": "Suivi et amélioration continue",
-            "context": "Objectif : Mettre en œuvre des actions d'amélioration continue basées sur le suivi et le monitoring.",
-            "objective": "Description : Les apprenants devront mettre en place des mécanismes de surveillance pour l'intégration continue et le déploiement continu, puis analyser les métriques et les KPIs associés. En se basant sur ces indicateurs, ils devront proposer des actions d'amélioration continue pour optimiser le processus d'intégration continue et de déploiement continu."
+            "title": "Sécurité, sauvegardes et reprise d'activité",
+            "context": "Novaria Signal doit rester exploitable en cas d'incident technique ou de perte de données.",
+            "objective": "Formaliser les mesures de sécurité, les sauvegardes automatisées et le plan de reprise ou de continuité d'activité."
         }
     ],
     "bibliography": [
-        "Kim, G. et al. \"The DevOps Handbook (2nd ed.)\"",
-        "Davis, J. & Daniels, R. \"Effective DevOps\""
+        "Humble, Jez; Farley, David. Continuous Delivery.",
+        "Burns, Brendan; Beda, Joe; Hightower, Kelsey. Kubernetes: Up and Running.",
+        "Kim, Gene; Humble, Jez; Debois, Patrick; Willis, John. The DevOps Handbook.",
+        "OWASP. Application Security Verification Standard."
     ],
     "teachingMethods": [
-        "Cours magistraux interactifs avec démonstrations sur des cas réels",
-        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
-        "Classe inversée : ressources documentaires à consulter avant les séances",
-        "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
-        "Revue par les pairs",
-        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+        "Étude de cas",
+        "Travaux de groupe",
+        "Atelier DevOps",
+        "Mise en situation professionnelle"
     ]
 }

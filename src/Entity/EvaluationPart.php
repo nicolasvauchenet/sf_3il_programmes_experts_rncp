@@ -35,6 +35,9 @@ class EvaluationPart
     #[ORM\Column(nullable: true)]
     private ?int $duration = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $durationLabel = null;
+
     #[ORM\Column(nullable: true)]
     private ?int $points = null;
 
@@ -121,6 +124,18 @@ class EvaluationPart
     public function setDuration(?int $duration): static
     {
         $this->duration = $duration;
+
+        return $this;
+    }
+
+    public function getDurationLabel(): ?string
+    {
+        return $this->durationLabel;
+    }
+
+    public function setDurationLabel(?string $durationLabel): static
+    {
+        $this->durationLabel = $durationLabel;
 
         return $this;
     }

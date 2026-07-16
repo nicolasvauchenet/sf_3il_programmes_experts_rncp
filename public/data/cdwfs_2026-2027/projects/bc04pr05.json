@@ -2,53 +2,87 @@
     "meta": {
         "type": "project",
         "code": "RNCP39608-BC04-PR05",
-        "title": "Projet Épreuve Certifiante",
+        "title": "Novaria Signal Program - Pilotage opérationnel",
         "rncpCode": "39608",
         "blocCode": "BC04",
         "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
-        "durationDays": 3,
-        "durationHours": 21,
+        "durationDays": 10,
+        "durationHours": 70,
         "academicYear": "2026-2027"
     },
     "skills": [
         {
             "code": "C29",
-            "description": "Planifier et conduire le projet en appliquant des méthodologies de gestion de projet (méthodologie en V, en cascade ou Agile) selon le contexte, pour une planification et exécution efficaces des projets informatiques en respectant le plan de projet établi et en tenant compte des risques identifiés"
+            "description": "Planifier et conduire le projet en appliquant des méthodologies de gestion de projet adaptées au contexte."
         },
         {
             "code": "C30",
-            "description": "Coordonner les équipes de projet, en utilisant des outils collaboratifs pour la planification et le suivi des tâches et en accompagnant les compétences individuelles et collectives de l'équipe afin de garantir l'alignement des ressources avec les besoins du projet et d'ajuster la planification en fonction des écarts identifiés"
+            "description": "Coordonner les équipes de projet en utilisant des outils collaboratifs et en assurant l’alignement des ressources avec les besoins."
         },
         {
             "code": "C31",
-            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet"
+            "description": "Effectuer un suivi continu des indicateurs de performance et de gestion financière du projet."
         },
         {
             "code": "C32",
-            "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape, pour mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre"
+            "description": "Réaliser des évaluations périodiques de l’avancement du projet et produire des rapports d’étape."
         }
     ],
+    "description": "Ce volet Novaria Signal Program organise le pilotage opérationnel du projet. Il structure la gouvernance, le backlog, la planification, le budget, les indicateurs et les rituels de coordination afin de synchroniser les équipes Citizen, API, Platform et Program autour d'une même trajectoire.",
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Mobiliser l'ensemble des compétences acquises au cours de la formation dans un projet intégrateur (Créer) Préparer les livrables collectifs requis pour l'épreuve 8 de validation des compétences (Appliquer) Présenter et défendre ses choix techniques et méthodologiques devant un jury (Évaluer)"
+        "description": "Les apprenants organisent et pilotent le programme Novaria Signal en construisant la planification, le backlog, le budget, les indicateurs de suivi, les rituels de coordination et les supports de reporting. Le projet mobilise les compétences C29 à C32 autour de la conduite de projet, de la coordination des équipes, du suivi de performance, de la gestion financière et de la restitution des résultats."
     },
     "prerequisites": {
-        "description": ""
+        "description": "Bases en gestion de projet, méthodes agiles ou hybrides, planification, estimation, suivi budgétaire et communication d'équipe."
     },
     "outline": {
         "chapters": []
     },
-    "exercises": [],
+    "exercises": [
+        {
+            "title": "Organisation du programme Novaria Signal",
+            "context": "Les volets Citizen, API, Platform et Program doivent avancer de manière coordonnée dans un même écosystème.",
+            "objective": "Définir la gouvernance, les rôles, les responsabilités et les modalités de collaboration."
+        },
+        {
+            "title": "Backlog et planification",
+            "context": "Les fonctionnalités de la plateforme doivent être priorisées et découpées en jalons réalistes.",
+            "objective": "Construire un backlog, une roadmap, un planning et des critères de priorisation."
+        },
+        {
+            "title": "Budget, ressources et indicateurs",
+            "context": "La ville souhaite suivre l'effort, les coûts, les délais et les bénéfices attendus du projet.",
+            "objective": "Estimer les ressources, définir les indicateurs de pilotage et mettre en place un tableau de bord."
+        },
+        {
+            "title": "Gestion des risques et qualité projet",
+            "context": "Le programme expose des risques techniques, réglementaires, organisationnels et d'adoption par les usagers.",
+            "objective": "Identifier les risques, évaluer leur criticité et proposer des plans d'action."
+        },
+        {
+            "title": "Reporting et soutenance de pilotage",
+            "context": "Les parties prenantes attendent une restitution claire de l'avancement, des arbitrages et des résultats.",
+            "objective": "Produire un compte rendu d'activité et préparer une soutenance synthétique et argumentée."
+        }
+    ],
     "bibliography": [
-        "Aubry, C. \"Scrum : pour une pratique vivante de l'agilité (6e éd.)\"",
-        "Martin, R. C. \"Clean Code : A Handbook of Agile Software Craftsmanship\""
+        {
+            "title": "Guide du PMBOK",
+            "author": "Project Management Institute"
+        },
+        {
+            "title": "Scrum Guide",
+            "author": "Ken Schwaber et Jeff Sutherland"
+        },
+        {
+            "title": "La gestion de projet pour les nuls",
+            "author": "Stanley E. Portny"
+        }
     ],
     "teachingMethods": [
-        "Cours magistraux interactifs avec démonstrations sur des cas réels",
-        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
-        "Classe inversée : ressources documentaires à consulter avant les séances",
-        "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
-        "Revue par les pairs",
-        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+        "Travaux de groupe",
+        "Étude de cas",
+        "Simulation de projet",
+        "Mise en situation professionnelle"
     ]
 }

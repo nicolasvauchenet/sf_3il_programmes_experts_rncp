@@ -1,0 +1,20 @@
+<nav class="app-navigation">
+    <a
+        href="{{ path('app_admin_home') }}"
+        class="{% if 'app_admin_home' == app.request.get('_route') %}active{% endif %}"
+    >
+        Accueil
+    </a>
+    <a
+        href="{{ path('app_admin_users_home') }}"
+        class="{% if 'app_admin_users' in app.request.get('_route') %}active{% endif %}"
+    >
+        Utilisateurs
+    </a>
+    <a
+        href="{{ path('app_admin_frameworks_home') }}"
+        class="{% if 'app_admin_frameworks' in app.request.get('_route') %}active{% endif %}"
+    >
+        Référentiels
+    </a>
+</nav>

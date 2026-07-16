@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC01-C03",
+        "title": "Etablir des accords de niveau x de service (SLA) en collaboration avec les clients internes et/ou externes",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouverner les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Etablir des accords de niveau x de service (SLA) en collaboration avec les clients internes et/ou externes , en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise.",
+    "criteria": [
+        "Les accords de niveau de service proposés permettent à l’entreprise d’atteindre ses objectifs et niveaux d’exigence fixés.",
+        "Les indicateurs clés de performance choisis permettent de mesurer le respect des SLA.",
+        "Les valeurs cibles associées sont en accord avec les niveaux d’exigence 4 DSI : Direction du Système d’Information 5 ANSSI : Agence Nationale de la Sécurité des Systèmes d’Information"
+    ]
+}

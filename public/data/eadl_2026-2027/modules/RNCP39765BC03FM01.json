@@ -1,0 +1,122 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC03-FM01",
+        "title": "Développement avancé",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Structurer un projet Python en respectant les bonnes pratiques d'architecture logicielle (Appliquer) Mettre en place des pipelines de tests, de packaging et de qualité de code (Créer) Développer un socle applicatif avancé servant de support aux autres modules du bloc (Créer)"
+    },
+    "prerequisites": {
+        "description": ""
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Initialisation et structuration du projet (Jour 1)",
+                "items": [
+                    "Mise en place de l’environnement Python (venv, Poetry/pipenv).",
+                    "Organisation des packages et modules.",
+                    "Utilisation de Git pour la gestion de versions et workflow collaboratif.",
+                    "Premier module applicatif simple (gestion d’utilisateurs ou catalogue)."
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Programmation avancée en Python (Jour 2)",
+                "items": [
+                    "Concepts avancés de POO en Python (héritage multiple, mixins).",
+                    "Utilisation de décorateurs et gestion des exceptions.",
+                    "Introduction aux design patterns utiles (Factory, Observer).",
+                    "Développement modulaire pour préparer les futures intégrations."
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Tests et qualité logicielle (Jour 3)",
+                "items": [
+                    "Introduction à pytest et écriture de tests unitaires.",
+                    "Mise en place de tests d’intégration simples.",
+                    "Utilisation d’outils de qualité (flake8, pylint, black, mypy).",
+                    "Premiers rapports de couverture de code."
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Documentation et industrialisation (Jour 4)",
+                "items": [
+                    "Rédaction de docstrings et respect des conventions PEP257.",
+                    "Génération de documentation avec Sphinx/MkDocs.",
+                    "Création d’une API REST simple avec FastAPI.",
+                    "Structuration du projet pour distribution et maintenance."
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Projet intégrateur (Jour 5)",
+                "items": [
+                    "Consolidation de l’ensemble des acquis dans un mini-projet fil rouge.",
+                    "Développement d’une API REST documentée, testée et versionnée.",
+                    "Intégration d’un pipeline CI/CD simple.",
+                    "Présentation et soutenance du projet (15 min)."
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Création et structuration d’un projet Python complet",
+            "context": "À partir d'un cahier des charges simplifié, créez un nouveau projet Python destiné à servir de base à une future application métier. Mettez en place l'environnement de développement, l'organisation des packages, le dépôt Git ainsi que les premiers modules de l'application.",
+            "objective": "Produire un projet Python correctement structuré, versionné avec Git, respectant les bonnes pratiques d'organisation du code et prêt à accueillir les développements des modules suivants."
+        },
+        {
+            "title": "Implémentation d’un design pattern dans un module métier",
+            "context": "À partir d'un besoin fonctionnel fourni (gestion d'utilisateurs, catalogue ou commandes), identifiez un problème de conception pouvant être résolu par un design pattern adapté, puis implémentez cette solution dans votre projet.",
+            "objective": "Mettre en œuvre un design pattern pertinent (Factory, Observer ou équivalent), justifier son choix et produire un code modulaire, maintenable et facilement extensible."
+        },
+        {
+            "title": "Validation de l'application par les tests automatisés",
+            "context": "Développez une suite de tests permettant de vérifier le bon fonctionnement des principales fonctionnalités de votre application à l'aide de pytest.",
+            "objective": "Écrire des tests unitaires et d'intégration couvrant les fonctionnalités essentielles, mesurer la couverture de code et garantir la non-régression lors des évolutions de l'application."
+        },
+        {
+            "title": "Amélioration de la qualité du code",
+            "context": "Analysez votre projet avec plusieurs outils d'analyse statique afin d'identifier les problèmes de qualité, de style ou de typage, puis apportez les corrections nécessaires.",
+            "objective": "Produire un code conforme aux bonnes pratiques Python en utilisant flake8, pylint, black et mypy, jusqu'à obtenir un niveau de qualité satisfaisant sans régression fonctionnelle."
+        },
+        {
+            "title": "Industrialisation d'une API Python",
+            "context": "À partir du projet réalisé pendant le module, générez une documentation technique, créez une API REST avec FastAPI puis automatisez les contrôles qualité et les tests dans un pipeline CI/CD.",
+            "objective": "Livrer une application documentée, testée et industrialisée disposant d'une documentation exploitable, d'une API REST fonctionnelle et d'un pipeline d'intégration continue automatisant les contrôles de qualité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Fluent Python (2e éd.)",
+            "author": "Ramalho, L"
+        },
+        {
+            "title": "Effective Python (3e éd.)",
+            "author": "Slatkin, B"
+        }
+    ],
+    "OnlineResources": [
+        "Python Official Documentation (https://docs.python.org/fr/3/) [FR/EN]",
+        "Real Python (https://realpython.com) [EN]",
+        "Python Enhancement Proposals (https://peps.python.org) [EN]",
+        "Awesome Python (https://github.com/vinta/awesome-python) [EN]",
+        "Full Stack Python (https://www.fullstackpython.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

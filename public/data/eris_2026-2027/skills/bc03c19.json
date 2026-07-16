@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC03-C19",
+        "title": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "academicYear": "2025-2026"
+    },
+    "description": "Participer à l’élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise , en s’appuyant sur les standards, en s’appuyant sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) pour protéger les données et les systèmes de l'entreprise.",
+    "criteria": [
+        "L’analyse des risques de sécurité est actualisée, à la fois au niveau des menaces, mais aussi pour intégrer les évolutions de l’infrastructure. Elle permet de prioriser les évolutions à apporter à la PSSI.",
+        "Les dispositions prises pour faire évoluer la PSSI prennent en compte les risques, les recommandations de l’ANSSI et les moyens mobilisables pour la mise en œuvre.",
+        "Les dispositions prises sont conformes avec les standards et réglementations en vigueur (ISO 2700x, RGPD)."
+    ]
+}

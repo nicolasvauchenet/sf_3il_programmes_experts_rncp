@@ -1,0 +1,134 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM01",
+        "title": "Cybermenaces et Risques",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C15",
+            "description": "Développer, documenter et mettre en œuvre des politiques de sécurité informatique, en évaluant les risques et en établissant des stratégies de mitigation en collaboration avec les équipes de gouvernance et de conformité, et en se servant d'outils d'analyse de risques et en réalisant des procédures pour renforcer la posture de sécurité de l'entreprise et protéger les actifs informationnels"
+        },
+        {
+            "code": "C16",
+            "description": "Conduire des audits de sécurité réguliers pour évaluer l'efficacité des mesures de sécurité en place, en utilisant des méthodologies d'audit standardisées et en collaboration avec les équipes internes et les auditeurs externes, afin de détecter les faiblesses et de recommander des améliorations"
+        },
+        {
+            "code": "C17",
+            "description": "Élaborer et mettre en œuvre des actions correctives en analysant les résultats des audits de sécurité et en identifiant les vulnérabilités et les non-conformités, en coopération avec les équipes de sécurité et de conformité, afin d'améliorer continuellement les mesures de sécurité de l'organisation et de garantir la conformité réglementaire"
+        },
+        {
+            "code": "C18",
+            "description": "Implémenter les outils et systèmes de sécurité tels que les pares-feux, les IDS/IPS, en s'assurant de leur configuration optimale et de leur mise à jour, en travaillant de concert avec l'équipe réseau et les spécialistes de la sécurité, pour prévenir les intrusions et protéger les réseaux de l'entreprise"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Se familiariser avec les différentes cybermenaces rencontrées et comprendre leurs impacts potentiels (Comprendre) Appliquer des techniques de protection efficaces pour prévenir ces menaces (Appliquer) Adopter les bonnes pratiques en matière de cybersécurité pour minimiser les risques d'attaques (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Les apprenants doivent avoir une connaissance de base des technologies de l'information et de la communication, notamment les notions de réseau, logiciels et systèmes d'exploitation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Les différentes cybermenaces",
+                "items": [
+                    "Les attaques par phishing",
+                    "Les logiciels malveillants (malwares)",
+                    "Le ransomware",
+                    "Les attaques par force brute",
+                    "Les attaques par déni de service (DDoS)"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Les impacts potentiels des cybermenaces",
+                "items": [
+                    "Perte de données sensibles",
+                    "Interruption des activités",
+                    "Atteinte à la réputation de l'entreprise",
+                    "Coûts financiers liés à la remise en état",
+                    "Sanctions légales et réglementaires"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Techniques de protection efficaces",
+                "items": [
+                    "Mise en place de pare-feu",
+                    "Utilisation de logiciels de détection d'intrusion",
+                    "Chiffrement des données",
+                    "Sensibilisation des employés",
+                    "Mise à jour régulière des systèmes et des logiciels"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Bonnes pratiques en matière de cybersécurité",
+                "items": [
+                    "Gestion des mots de passe",
+                    "Mise en place de politiques de sécurité",
+                    "Surveillance des vulnérabilités",
+                    "Sauvegarde régulière des données",
+                    "Sensibilisation continue à la sécurité informatique"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Identification des cybermenaces",
+            "context": "À l'aide des connaissances acquises dans le chapitre 1, identifiez trois exemples concrets de cybermenaces auxquelles une entreprise peut être confrontée.",
+            "objective": "Pour chaque exemple, expliquez en quoi il représente une menace pour la sécurité informatique et quelles sont les conséquences potentielles pour l'entreprise."
+        },
+        {
+            "title": "Analyse des conséquences des cybermenaces",
+            "context": "Sélectionnez l'une des conséquences évoquées dans le chapitre 2 et décrivez en détail comment elle pourrait impacter le fonctionnement et la réputation d'une entreprise.",
+            "objective": "Ensuite, proposez une stratégie pour atténuer ou prévenir cette conséquence."
+        },
+        {
+            "title": "Élaboration d'un plan de protection",
+            "context": "Imaginez que vous êtes responsable de la sécurité informatique dans une entreprise.",
+            "objective": "Élaborez un plan de protection contre les cybermenaces en vous basant sur les techniques présentées dans le chapitre 3. Décrivez les mesures que vous mettriez en place et justifiez chacune d'entre elles."
+        },
+        {
+            "title": "Application des bonnes pratiques",
+            "context": "Choisissez une des bonnes pratiques énoncées dans le chapitre 4 et décrivez comment vous l'appliqueriez dans votre environnement professionnel.",
+            "objective": "Précisez les étapes concrètes à mettre en place pour mettre en œuvre cette pratique et expliquez l'impact attendu sur la sécurité informatique de l'entreprise."
+        },
+        {
+            "title": "Simulation d'une cyberattaque",
+            "context": "Imaginez une situation où votre entreprise est la cible d'une cyberattaque.",
+            "objective": "Décrivez quelles mesures vous prendriez pour gérer la situation, en vous appuyant sur les connaissances acquises dans les chapitres précédents. Présentez un plan d'action détaillé pour faire face à cette situation d'urgence et limiter les dommages potentiels."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Cybersécurité : analyser les risques, mettre en œuvre les solutions (7e éd.). Dunod. Filiol, É. (2023). Cybersécurité et cyberdéfense : enjeux et moyens",
+            "author": "Ghernaouti, S"
+        },
+        {
+            "title": "Fundamentals of Information Systems Security (4e éd.)",
+            "author": "Kim, D. & Solomon, M"
+        }
+    ],
+    "OnlineResources": [
+        "MITRE ATT&CK Framework (https://attack.mitre.org) [EN]",
+        "ANSSI — Panorama des menaces (https://cyber.gouv.fr) [FR]",
+        "ENISA Threat Landscape (https://www.enisa.europa.eu/topics/threat-risk-management) [EN]",
+        "CERT-FR — Bulletins d'alerte (https://www.cert.ssi.gouv.fr) [FR]",
+        "OWASP Top 10 (https://owasp.org/www-project-top-ten/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

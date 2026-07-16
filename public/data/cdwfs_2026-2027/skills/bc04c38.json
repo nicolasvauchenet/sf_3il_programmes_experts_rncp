@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C38",
+        "title": "Analyser les données collectées dans une base de connaissances",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "academicYear": "2025"
+    },
+    "description": "Analyser les données collectées dans une base de connaissance en comparant différentes sources d'information afin de produire des hypothèses, des scénarios ou des recommandations exploitables pour le projet.",
+    "criteria": [
+        "Organisation des données : les informations sont structurées dans une base de connaissances claire et accessible.",
+        "Comparaison des sources : les différentes sources sont analysées pour identifier tendances, divergences ou corrélations.",
+        "Formulation d'hypothèses : l'analyse permet de produire des hypothèses ou scénarios cohérents."
+    ]
+}

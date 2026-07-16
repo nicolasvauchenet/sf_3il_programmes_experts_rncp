@@ -1,0 +1,148 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC02-FM04",
+        "title": "Intégration et Déploiement Continus",
+        "rncpCode": "39611",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l'infrastructure réseau et les solutions cloud",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C12",
+            "description": "Développer des environnements virtualisés en utilisant une plateforme de conteneurisation pour standardiser et simplifier le déploiement d'applications sur tous types d'infrastructure"
+        },
+        {
+            "code": "C13",
+            "description": "Coordonner les containers avec des logiciels d'orchestration en garantissant l'activité des pipelines d'intégration et de déploiement continus pour optimiser la résilience et la performance des applications"
+        },
+        {
+            "code": "C14",
+            "description": "Intégrer et déployer les pratiques de sécurité dans les processus de développement et d'exploitation en collaborant avec les équipes de développement et en utilisant des outils DevOps, pour maîtriser les risques et assurer la conformité des applications sur des plateformes cloud"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les concepts clés de l'intégration continue et du déploiement continu (Comprendre) Identifier leurs avantages dans le développement et l'exploitation (Analyser) Maîtriser les outils, technologies et bonnes pratiques associés pour les mettre en œuvre efficacement (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base du cycle de vie logiciel (Software Development Life Cycle), en gestion de versions, familiarité avec les concepts de déploiement d'applications, et expérience pratique avec des environnements de développement, test et production."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'intégration et déploiement continus",
+                "items": [
+                    "Comprendre les concepts clés de l'intégration continue et du déploiement continu",
+                    "Identifier les avantages de l'intégration et déploiement continus dans le développement logiciel",
+                    "Connaître les outils et technologies utilisés dans le processus d'intégration et déploiement continus",
+                    "Comprendre les bonnes pratiques pour mettre en place l'intégration et déploiement continus",
+                    "Définir les objectifs à atteindre à travers l'intégration et déploiement continus"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : La mise en place d'un environnement d'intégration continue",
+                "items": [
+                    "Les éléments clés à prendre en compte pour mettre en place un environnement d'intégration continue",
+                    "Présentation des principaux outils d'intégration continue",
+                    "Comprendre le fonctionnement de chaque outil et ses cas d'utilisation",
+                    "Configurer un environnement d'intégration continue avec l'un de ces outils",
+                    "Comprendre les bonnes pratiques et les stratégies pour l'utilisation efficace des outils d'intégration continue",
+                    "Gérer les pipelines d'intégration continue et les workflows associés"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Processus de déploiement continu",
+                "items": [
+                    "Comprendre les principes du déploiement continu et son importance dans le cycle de développement logiciel",
+                    "Identifier les étapes clés du processus de déploiement continu",
+                    "Mettre en place un processus de déploiement continu pour une application donnée",
+                    "Gérer les environnements de déploiement pour assurer la cohérence et la fiabilité des déploiements",
+                    "Mettre en place des tests automatisés dans le processus de déploiement continu"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des versions, configurations et environnements",
+                "items": [
+                    "Rappeler l’importance de la gestion de versions (tags, branches, releases).",
+                    "Distinguer configurations par environnement (dev, test, prod) et bonnes pratiques (config externalisée).",
+                    "Introduire les notions de reproductibilité et de rollback (revenir à une version stable).",
+                    "Présenter rapidement l’idée d’Infrastructure as Code (au moins au niveau conceptuel)."
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurité, suivi et amélioration continue",
+                "items": [
+                    "Sensibiliser aux risques de sécurité dans une chaîne CI/CD (secrets, dépendances, droits).",
+                    "Découvrir les scans de sécurité intégrés au pipeline (analyse de dépendances / code).",
+                    "Suivre quelques indicateurs simples : taux de réussite, durée des builds, fréquence de déploiement.",
+                    "Mettre en place une logique d’amélioration continue : identifier les goulots d’étranglement, simplifier/optimiser les pipelines."
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Les principes de l'intégration continue",
+            "context": "Objectif : Comprendre l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement.",
+            "objective": "Imaginez que vous avez la charge d'une équipe de développement et que vous devez présenter les principes de l'intégration continue à vos collègues. Rédigez une présentation qui met en avant l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement. Votre présentation devra inclure des exemples concrets et des cas d'utilisation."
+        },
+        {
+            "title": "Les fondamentaux du déploiement continu",
+            "context": "Objectif : Comprendre les avantages du déploiement continu dans le cycle de développement logiciel et les bonnes pratiques pour assurer un déploiement continu fiable et sécurisé.",
+            "objective": "Élaborez un plan de déploiement continu pour un projet de développement logiciel de votre choix. Identifiez les étapes clés, les outils et technologies à utiliser, ainsi que les bonnes pratiques à adopter pour assurer un déploiement continu fiable et sécurisé. Présentez votre plan avec des justifications pour chaque élément choisi."
+        },
+        {
+            "title": "Configuration d'un pipeline d'intégration continue",
+            "context": "Vous êtes chargé de mettre en place un pipeline d'intégration continue pour un projet de développement web.",
+            "objective": "Utilisez l'outil Jenkins pour configurer les étapes du pipeline, y compris la récupération du code source depuis un référentiel (par exemple GitHub), l'exécution des tests unitaires et la génération d'artefacts de déploiement."
+        },
+        {
+            "title": "Déploiement continu d'une application",
+            "context": "Vous devez mettre en place un processus de déploiement continu pour une application web.",
+            "objective": "Choisissez l'outil de déploiement que vous avez étudié (par exemple Travis CI) et configurez le déploiement automatique à chaque validation de code sur la branche principale du référentiel."
+        },
+        {
+            "title": "La gestion des configurations et des environnements",
+            "context": "Objectif : Comprendre les concepts de gestion des configurations et des environnements, ainsi que l'automatisation de la gestion des environnements de développement, de test et de production.",
+            "objective": "Implémentez un système de gestion de configurations pour un projet de développement logiciel. Choisissez un outil de gestion de configurations et décrivez comment vous allez l'intégrer dans le processus de développement. Identifiez également les moyens d'automatiser la gestion des environnements de développement, de test et de production, en mettant en avant les avantages de cette automatisation."
+        },
+        {
+            "title": "L'optimisation des processus d'intégration et de déploiement continus",
+            "context": "Objectif : Apprendre à analyser les métriques et les KPI pour évaluer la performance des processus et à identifier les goulots d'étranglement et les points d'optimisation.",
+            "objective": "Analysez les métriques de performance d'un processus d'intégration continue et de déploiement continu. Identifiez les éventuels goulots d'étranglement et les points d'optimisation. Proposez des solutions concrètes pour améliorer la performance de ces processus en vous basant sur les données recueillies. Présentez vos analyses et propositions dans un rapport détaillé."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Continuous Delivery: Reliable Software Releases (2e éd.)",
+            "author": "Humble, J. & Farley, D"
+        },
+        {
+            "title": "The DevOps Handbook (2e éd.)",
+            "author": "Kim, G. et al"
+        },
+        {
+            "title": "Effective DevOps",
+            "author": "Davis, J. & Daniels, R"
+        }
+    ],
+    "OnlineResources": [
+        "GitLab CI/CD Documentation (https://docs.gitlab.com/ee/ci/) [EN]",
+        "GitHub Actions Documentation (https://docs.github.com/fr/actions) [FR/EN]",
+        "Jenkins Documentation (https://www.jenkins.io/doc/) [EN]",
+        "CircleCI Documentation (https://circleci.com/docs/) [EN]",
+        "DORA — DevOps Research and Assessment (https://dora.dev) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

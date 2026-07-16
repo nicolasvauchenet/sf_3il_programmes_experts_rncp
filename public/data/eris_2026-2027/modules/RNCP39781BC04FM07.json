@@ -1,0 +1,131 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM07",
+        "title": "Droit et Contrats de Prestation",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux et les conditions de validité des contrats de prestation (Comprendre) Analyser les responsabilités des parties et les recours disponibles en cas de litige (Analyser) Appliquer les connaissances juridiques sur des cas pratiques de contrats de prestation et de sous-traitance (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en droit des affaires ou des obligations. Capacité à analyser des textes juridiques. Compréhension du fonctionnement contractuel général dans le cadre des affaires."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondamentaux du droit des contrats de prestation",
+                "items": [
+                    "Les principes généraux du droit des contrats",
+                    "Les différents types de contrats de prestation",
+                    "Les conditions de validité d'un contrat de prestation",
+                    "Les obligations des parties",
+                    "Les modalités de résiliation d'un contrat de prestation"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Responsabilités et litiges",
+                "items": [
+                    "La responsabilité contractuelle et extracontractuelle",
+                    "Les cas de force majeure",
+                    "Les litiges et leur résolution",
+                    "Les recours en cas de non-respect du contrat",
+                    "Les clauses de limitation de responsabilité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Aspects juridiques liés à la prestation de services",
+                "items": [
+                    "La propriété intellectuelle et la protection des données",
+                    "La confidentialité et le secret professionnel",
+                    "L'aspect juridique des prestations internationales",
+                    "Les particularités des contrats de prestation dans certains secteurs d'activité",
+                    "Les clauses contractuelles spécifiques à la prestation de services"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Contrats de sous-traitance et relations contractuelles",
+                "items": [
+                    "Les enjeux des contrats de sous-traitance",
+                    "Les relations entre le donneur d'ordre et le sous-traitant",
+                    "Les clauses essentielles à inclure dans un contrat de sous-traitance",
+                    "Les risques liés à la sous-traitance",
+                    "La gestion des litiges entre le donneur d'ordre et le sous-traitant"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Étude de cas et mise en pratique",
+                "items": [
+                    "Analyse de contrats de prestation réels",
+                    "Résolution de cas pratiques liés aux contrats de prestation",
+                    "Simulation de négociation contractuelle",
+                    "Étude des conséquences juridiques des choix contractuels",
+                    "Retour d'expérience sur des litiges et leur résolution"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Rédaction d'un contrat de prestation",
+            "context": "Vous êtes le gérant d'une entreprise spécialisée dans les services informatiques.",
+            "objective": "Un nouveau client souhaite engager votre entreprise pour la mise en place d'un système de gestion des ressources humaines. Rédigez un contrat de prestation qui couvre les éléments suivants : Identification des parties contractantes Description détaillée de la prestation de services Les obligations de chaque partie Les conditions de validité du contrat Les modalités de paiement La durée du contrat avec les éventuelles conditions de renouvellement Les clauses de résiliation anticipée Assurez-vous que le contrat respecte les principes généraux du droit des contrats et qu'il est équilibré pour les deux parties."
+        },
+        {
+            "title": "Gestion d'un litige contractuel",
+            "context": "Imaginez que vous êtes un avocat spécialisé dans le droit des contrats.",
+            "objective": "Un client vient vous voir avec un problème : il a engagé une entreprise de construction pour agrandir son restaurant, mais les travaux ont été interrompus en raison d'une découverte archéologique sur le site. Le client souhaite savoir quelles sont ses options juridiques, sachant qu'il y a une clause de force majeure dans le contrat, et que le constructeur refuse de reprendre les travaux ou de rembourser les acomptes versés. Analysez la situation et proposez une stratégie pour résoudre le litige en tenant compte de la responsabilité contractuelle et des recours possibles."
+        },
+        {
+            "title": "Évaluation des risques dans un contrat de sous-traitance",
+            "context": "Vous êtes consultant en gestion des risques pour une entreprise qui envisage de sous-traiter une partie de sa production à un fournisseur étranger.",
+            "objective": "Votre mission est d'évaluer les risques juridiques associés à cette sous-traitance et de conseiller l'entreprise sur les clauses essentielles à inclure dans le contrat pour se protéger. Identifiez les principaux risques et rédigez un rapport qui présente les clauses recommandées pour limiter la responsabilité de votre entreprise et garantir la qualité de la prestation."
+        },
+        {
+            "title": "Clause de confidentialité",
+            "context": "Vous travaillez pour une entreprise de conseil en gestion qui est sur le point de signer un contrat de prestation avec un grand groupe industriel.",
+            "objective": "Le contrat requiert le partage d'informations sensibles et confidentielles. Rédigez une clause de confidentialité robuste qui pourrait être intégrée au contrat. Cette clause devrait inclure les définitions des informations confidentielles, les obligations des parties, les exceptions à la confidentialité, la durée de l'obligation de confidentialité et les conséquences en cas de violation de cette clause."
+        },
+        {
+            "title": "Simulation de négociation contractuelle",
+            "context": "Divisez-vous en deux groupes représentant respectivement un prestataire de services marketing et une entreprise cliente dans le secteur de la mode.",
+            "objective": "Effectuez une simulation de négociation contractuelle où le prestataire cherche à obtenir un contrat à long terme tandis que l'entreprise souhaite une flexibilité maximale pour adapter ou résilier le contrat selon les fluctuations du marché. Les points à négocier incluent la durée du contrat, les modalités de paiement, les clauses de performance et de résiliation, ainsi que les dispositions relatives à la propriété intellectuelle. Chaque groupe doit élaborer une stratégie de négociation, identifier ses objectifs principaux et ses concessions possibles. Après la simulation, débriefez pour analyser les accords atteints et les stratégies utilisées."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Contrats informatiques et électroniques (12e éd.)",
+            "author": "Mas, F"
+        },
+        {
+            "title": "Informatique et libertés (4e éd.)",
+            "author": "Bensoussan, A"
+        },
+        {
+            "title": "Lamy Droit du numérique",
+            "author": "Costes, L"
+        }
+    ],
+    "OnlineResources": [
+        "Légifrance (https://www.legifrance.gouv.fr) [FR]",
+        "Syntec Numérique / Numeum (https://numeum.fr) [FR]",
+        "CNIL — Contrats (https://www.cnil.fr) [FR]",
+        "EUR-Lex (https://eur-lex.europa.eu) [FR/EN]",
+        "OECD — Digital economy contracts (https://www.oecd.org/digital) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -28,5 +28,484 @@
         }
     }
 
+    .admin-section-header {
+        @include displayFlex(space-between, center, 0.75rem);
+        margin-bottom: 1rem;
+
+        .admin-new-button {
+            width: auto;
+            min-width: 7rem;
+            font-size: 0.75rem;
+            color: $success;
+            background-color: rgba($success, 0.25);
+            border-color: $success;
+
+            &:hover {
+                color: $white;
+                background-color: $success;
+            }
+        }
+    }
+
+    .admin-users-filters {
+        @include displayFlex(null, stretch, 0.85rem, column);
+        margin-top: 1rem;
+
+        .admin-filter-field {
+            @include displayFlex(null, stretch, 0.35rem, column);
+
+            label {
+                font-size: 0.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $primary;
+            }
+
+            .form-control {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        }
+
+        .admin-filter-actions {
+            @include displayFlex(null, center, 1rem, column);
+            margin-top: 0.25rem;
+        }
+
+        .app-button {
+            display: block;
+            font-size: 0.75rem;
+            text-decoration: none;
+        }
+
+        .admin-reset-link {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: $primary;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    .admin-user-form {
+        .admin-reset-link {
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+            color: $primary;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    .admin-upload-form {
+        @include displayFlex(null, stretch, 0.75rem, column);
+        margin-top: 1rem;
+
+        @include respondTo(sm) {
+            @include displayGrid(1fr auto, 0.75rem);
+            align-items: end;
+        }
+
+        .admin-upload-field {
+            @include displayFlex(null, stretch, 0.35rem, column);
+
+            label {
+                font-size: 0.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $primary;
+            }
+        }
+
+        .app-button {
+            width: auto;
+            min-width: 9rem;
+        }
+    }
+
+    .admin-conflict-summary {
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: $black;
+    }
+
+    .register-form {
+        .email-suffix-field {
+            @include displayFlex(null, stretch, 0);
+
+            .form-control {
+                min-width: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            span {
+                @include displayFlex(center, center);
+                padding: 0 0.75rem;
+                font-size: 0.9rem;
+                font-weight: bold;
+                color: $primary;
+                white-space: nowrap;
+                background-color: rgba($primary, 0.08);
+                border: 1px solid rgba($black, 0.55);
+                border-left: 0;
+                border-top-right-radius: 0.35rem;
+                border-bottom-right-radius: 0.35rem;
+            }
+        }
+
+        .form-group.compact {
+            margin-top: -0.35rem;
+        }
+    }
+
+    .form-link,
+    .form-link-button {
+        display: inline-block;
+        width: fit-content;
+        padding: 0;
+        font-family: $font-primary;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $primary;
+        text-decoration: underline;
+        background: none;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .password-field {
+        position: relative;
+
+        .form-control {
+            padding-right: 2.75rem;
+
+            &::-ms-clear,
+            &::-ms-reveal {
+                display: none;
+            }
+        }
+    }
+
+    .password-toggle {
+        @include displayFlex(center, center);
+        position: absolute;
+        top: 50%;
+        right: 0.35rem;
+        width: 2rem;
+        height: 2rem;
+        color: rgba($primary, 0.78);
+        background: transparent;
+        border: 0;
+        border-radius: 0.35rem;
+        cursor: pointer;
+        transform: translateY(-50%);
+
+        svg {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .password-toggle-eye-off {
+            display: none;
+        }
+
+        &:hover,
+        &:focus-visible,
+        &.is-visible {
+            color: $secondary;
+            background-color: rgba($secondary, 0.08);
+        }
+
+        &:focus-visible {
+            outline: 2px solid rgba($secondary, 0.55);
+            outline-offset: 1px;
+        }
+
+        &.is-visible {
+            .password-toggle-eye {
+                display: none;
+            }
+
+            .password-toggle-eye-off {
+                display: block;
+            }
+        }
+    }
+
+    .admin-page-size-form {
+        @include displayFlex(null, center, 0.5rem);
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: $primary;
+
+        .form-control {
+            width: auto;
+            min-width: 8rem;
+            font-size: 0.85rem;
+        }
+    }
+
+    .admin-users-table {
+        width: 100%;
+        font-size: 0.9rem;
+
+        th,
+        td {
+            padding: 0.75rem 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid rgba($black, 0.12);
+        }
+
+        th {
+            font-family: $font-secondary;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $primary;
+        }
+
+        .admin-sort-link {
+            @include displayFlex(null, center, 0.35rem);
+            color: $primary;
+            text-decoration: none;
+
+            span {
+                min-width: 1rem;
+                font-family: $font-primary;
+                text-align: center;
+                transform: translateY(-2px);
+            }
+
+            &:hover,
+            &.is-active {
+                color: $secondary;
+            }
+        }
+
+        tr.is-disabled {
+            color: rgba($black, 0.62);
+
+            a,
+            summary,
+            td::before {
+                color: rgba($black, 0.62);
+            }
+        }
+
+        .user-status-badge {
+            display: inline-block;
+            margin-left: 0.4rem;
+            padding: 0.2rem 0.35rem;
+            font-size: 0.68rem;
+            font-weight: bold;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $error;
+            background-color: rgba($error, 0.12);
+            border-radius: 0.2rem;
+        }
+
+        .admin-status {
+            display: inline-block;
+            padding: 0.2rem 0.35rem;
+            font-size: 0.68rem;
+            font-weight: bold;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $primary;
+            background-color: rgba($primary, 0.12);
+            border-radius: 0.2rem;
+
+            &.active {
+                color: $success;
+                background-color: rgba($success, 0.14);
+            }
+
+            &.pending {
+                color: $black;
+                background-color: rgba($black, 0.08);
+            }
+        }
+
+        td small {
+            display: block;
+            margin-top: 0.25rem;
+            color: rgba($black, 0.65);
+        }
+
+        .admin-users-actions-heading,
+        .admin-users-actions-cell {
+            text-align: right;
+        }
+
+        .admin-users-actions-cell {
+            position: relative;
+        }
+
+        .admin-actions-dropdown {
+            position: relative;
+            display: inline-block;
+
+            summary {
+                @include displayFlex(center, center);
+                width: 2rem;
+                height: 2rem;
+                font-weight: bold;
+                color: $primary;
+                border: 1px solid rgba($primary, 0.35);
+                border-radius: 0.25rem;
+                cursor: pointer;
+                list-style: none;
+                user-select: none;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &:hover {
+                    color: $secondary;
+                    border-color: rgba($secondary, 0.55);
+                }
+            }
+
+            &[open] summary {
+                color: $secondary;
+                border-color: rgba($secondary, 0.55);
+            }
+        }
+
+        .admin-actions-menu {
+            position: absolute;
+            top: calc(100% + 0.35rem);
+            right: 0;
+            z-index: 20;
+            min-width: 8rem;
+            overflow: hidden;
+            text-align: left;
+            background-color: $white;
+            border: 1px solid rgba($black, 0.16);
+            border-radius: 0.25rem;
+            box-shadow: 0 0.35rem 0.8rem rgba($black, 0.18);
+
+            a,
+            button {
+                display: block;
+                width: 100%;
+                padding: 0.65rem 0.75rem;
+                font-family: $font-primary;
+                font-size: 0.85rem;
+                font-weight: bold;
+                text-align: left;
+                text-decoration: none;
+                color: $primary;
+                background: none;
+                border: 0;
+                cursor: pointer;
+                white-space: nowrap;
+
+                &:hover {
+                    color: $white !important;
+                    background-color: $secondary;
+                }
+            }
+
+            form {
+                margin: 0;
+            }
+        }
+
+        @include respondTo(xs) {
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid rgba($black, 0.12);
+            }
+
+            td {
+                @include displayFlex(space-between, flex-start, 1rem);
+                padding: 0.35rem 0;
+                border-bottom: none;
+                text-align: right;
+
+                &::before {
+                    content: attr(data-label);
+                    font-weight: bold;
+                    text-align: left;
+                    color: $primary;
+                }
+            }
+
+            .admin-users-actions-cell {
+                align-items: center;
+            }
+        }
+    }
+
+    .admin-pagination-footer {
+        @include displayFlex(space-between, center, 1rem);
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        @include respondTo(xs) {
+            justify-content: center;
+        }
+    }
+
+    .admin-pagination {
+        @include displayFlex(flex-end, center, 0.35rem);
+        flex-wrap: wrap;
+
+        a,
+        span {
+            @include displayFlex(center, center);
+            min-width: 2rem;
+            min-height: 2rem;
+            padding: 0 0.55rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: $primary;
+            border: 1px solid rgba($primary, 0.25);
+            border-radius: 0.25rem;
+        }
+
+        a:hover,
+        a.is-active {
+            color: $white;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+
+        a.is-disabled {
+            color: rgba($black, 0.35);
+            background-color: rgba($black, 0.05);
+            border-color: rgba($black, 0.12);
+            pointer-events: none;
+        }
+
+        .admin-pagination-ellipsis {
+            color: rgba($black, 0.55);
+            border-color: transparent;
+        }
+    }
+
     @import "./section";
 }

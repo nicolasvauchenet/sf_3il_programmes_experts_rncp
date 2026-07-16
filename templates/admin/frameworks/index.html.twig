@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des JSON des promotions{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main">
+        <section class="app-section">
+            <div class="admin-section-header">
+                <div>
+                    <h1>JSON des promotions</h1>
+                    <p class="subtitle">Gérez les dossiers sources utilisés par la commande d'import</p>
+                </div>
+            </div>
+
+            <form
+                method="post"
+                action="{{ path('app_admin_frameworks_upload') }}"
+                enctype="multipart/form-data"
+                class="admin-upload-form"
+            >
+                <input type="hidden" name="_token" value="{{ csrf_token('upload_framework_archive') }}">
+
+                <div class="admin-upload-field">
+                    <label for="framework-archive">Archive ZIP</label>
+                    <input id="framework-archive" type="file" name="archive" accept=".zip,application/zip" class="form-control" required>
+                </div>
+
+                <button type="submit" class="app-button success">Ajouter</button>
+            </form>
+        </section>
+
+        <section class="app-section mt-2 mb-2">
+            <div class="admin-section-header">
+                <h2>{{ datasets|length }} dossier{{ datasets|length > 1 ? 's' : '' }}</h2>
+            </div>
+
+            <div class="admin-users-table-wrapper">
+                <table class="admin-users-table">
+                    <thead>
+                        <tr>
+                            <th>Dossier</th>
+                            <th class="text-center">Fichiers</th>
+                            <th>Taille</th>
+                            <th>Modification</th>
+                            <th class="text-center">Référentiel</th>
+                            <th class="admin-users-actions-heading">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for dataset in datasets %}
+                            <tr>
+                                <td data-label="Dossier">
+                                    <strong>{{ dataset.name }}</strong>
+                                </td>
+                                <td data-label="Fichiers" class="text-center">{{ dataset.fileCount }}</td>
+                                <td data-label="Taille">{{ dataset.size|number_format(0, ',', ' ') }} octets</td>
+                                <td data-label="Modification">
+                                    {{ dataset.updatedAt ? dataset.updatedAt|date('d/m/Y H:i') : '-' }}
+                                </td>
+                                <td data-label="Référentiel" class="text-center">
+                                    {% if dataset.database.exists %}
+                                        <span class="admin-status active">Importé</span>
+                                    {% else %}
+                                        <span class="admin-status pending">Absent</span>
+                                    {% endif %}
+                                </td>
+                                <td data-label="Actions" class="admin-users-actions-cell">
+                                    <details class="admin-actions-dropdown">
+                                        <summary aria-label="Actions referentiel">...</summary>
+
+                                        <div class="admin-actions-menu">
+                                            <form
+                                                method="post"
+                                                action="{{ path('app_admin_frameworks_database_import', { datasetName: dataset.name }) }}"
+                                            >
+                                                <input type="hidden" name="_token" value="{{ csrf_token('import_framework_database_' ~ dataset.name) }}">
+                                                <button type="submit">Importer le Référentiel</button>
+                                            </form>
+
+                                            {% if dataset.database.exists %}
+                                                <form
+                                                    method="post"
+                                                    action="{{ path('app_admin_frameworks_database_delete', { datasetName: dataset.name }) }}"
+                                                    onsubmit="return confirm('Confirmez-vous la suppression du referentiel {{ dataset.name|e('js') }} en BDD ?')"
+                                                >
+                                                    <input type="hidden" name="_token" value="{{ csrf_token('delete_framework_database_' ~ dataset.name) }}">
+                                                    <button type="submit" class="text-danger">Supprimer le Référentiel</button>
+                                                </form>
+                                            {% endif %}
+
+                                            <form
+                                                method="post"
+                                                action="{{ path('app_admin_frameworks_delete', { datasetName: dataset.name }) }}"
+                                                onsubmit="return confirm('Confirmez-vous la suppression du dossier {{ dataset.name|e('js') }} ?')"
+                                            >
+                                                <input type="hidden" name="_token" value="{{ csrf_token('delete_framework_dataset_' ~ dataset.name) }}">
+                                                <button type="submit" class="text-danger">Supprimer le dossier source</button>
+                                            </form>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="6">Aucun dossier JSON de promotion.</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

@@ -4,6 +4,8 @@ RUN apt update && apt install -y \
     git \
     unzip \
     acl \
+    libsqlite3-dev \
+    && docker-php-ext-install pdo_sqlite \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
@@ -11,6 +13,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /app
 
 COPY . /app
+
+RUN mkdir -p /app/data /app/var/cache /app/var/log
 
 ENV APP_ENV=prod
 ENV COMPOSER_ALLOW_SUPERUSER=1

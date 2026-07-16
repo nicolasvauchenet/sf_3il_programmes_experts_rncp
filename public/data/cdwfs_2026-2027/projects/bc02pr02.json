@@ -2,7 +2,7 @@
     "meta": {
         "type": "project",
         "code": "RNCP39608-BC02-PR02",
-        "title": "Projet de développement Back-end (Fil rouge)",
+        "title": "Novaria Signal API",
         "rncpCode": "39608",
         "blocCode": "BC02",
         "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
@@ -33,112 +33,76 @@
         },
         {
             "code": "C12",
-            "description": "Arbitrer et décider du choix entre les bases de données relationnelles et NoSQL."
+            "description": "Arbitrer et décider du choix entre les bases de données."
         },
         {
             "code": "C13",
             "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir des API."
+        },
+        {
+            "code": "C15",
+            "description": "Sécuriser les API."
+        },
+        {
+            "code": "C16",
+            "description": "Réaliser des tests sur les API."
+        },
+        {
+            "code": "C17",
+            "description": "Maintenir la documentation de l’API."
         }
     ],
+    "description": "Novaria Signal API constitue le socle back-end de la plateforme. Elle centralise les signalements, les utilisateurs, les rôles, les catégories, les commentaires, les pièces jointes et les traitements afin de connecter l'application citoyenne, les services municipaux et les outils d'administration.",
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Mobiliser l'ensemble des compétences Back-end dans un projet intégrateur (Créer) Mettre en œuvre une architecture serveur robuste, sécurisée et performante (Appliquer) Évaluer la qualité technique du livrable et présenter ses choix d'architecture (Évaluer)"
+        "description": "Les apprenants conçoivent et développent l'API centrale de Novaria Signal afin de connecter les citoyens, les agents municipaux et les services de la ville. Le projet mobilise les compétences du bloc BC02 autour de l'architecture back-end, des API REST documentées, de l'authentification, de la gestion des droits, des bases SQL et NoSQL, des sauvegardes, des tests et de la documentation exploitable par les autres équipes."
     },
     "prerequisites": {
-        "description": "Connaissances de base en développement logiciel et compréhension des principes de programmation. Expérience préalable avec au moins un langage de programmation orienté objet et une compréhension basique des bases de données relationnelles."
+        "description": "Bases solides en développement back-end, programmation orientée objet, conception d'API, modélisation de données et utilisation d'un système de gestion de bases de données relationnelles."
     },
     "outline": {
-        "chapters": [
-            {
-                "title": "Chapitre 1 : Analyse des besoins et spécifications du projet",
-                "items": [
-                    "Comprendre les besoins des utilisateurs",
-                    "Identifier les fonctionnalités clés",
-                    "Définir les spécifications techniques",
-                    "Estimer les ressources nécessaires",
-                    "Planifier les étapes du projet"
-                ]
-            },
-            {
-                "title": "Chapitre 2 : Choix de l'architecture et des technologies",
-                "items": [
-                    "Comparer les différentes architectures Back-end",
-                    "Sélectionner les technologies adaptées aux besoins du projet",
-                    "Évaluer les avantages et inconvénients des différentes solutions",
-                    "Choisir les outils de développement et de déploiement",
-                    "Définir l'infrastructure nécessaire"
-                ]
-            },
-            {
-                "title": "Chapitre 3 : Conception de la base de données",
-                "items": [
-                    "Modéliser la structure de la base de données",
-                    "Définir les relations entre les entités",
-                    "Optimiser les requêtes SQL",
-                    "Intégrer des mécanismes de sécurité",
-                    "Prévoir la scalabilité de la base de données"
-                ]
-            },
-            {
-                "title": "Chapitre 4 : Développement de l'API",
-                "items": [
-                    "Créer les endpoints pour les différentes fonctionnalités",
-                    "Gérer les requêtes et les réponses",
-                    "Implémenter l'authentification et l'autorisation",
-                    "Optimiser les performances de l'API",
-                    "Documenter l'API pour les développeurs tiers"
-                ]
-            },
-            {
-                "title": "Chapitre 5 : Tests et optimisation",
-                "items": [
-                    "Mettre en place des tests unitaires et des tests d'intégration",
-                    "Optimiser les requêtes et les algorithmes",
-                    "Identifier et corriger les potentiels points faibles",
-                    "Mesurer les performances de l'application",
-                    "Valider la conformité aux spécifications initiales"
-                ]
-            }
-        ]
+        "chapters": []
     },
     "exercises": [
         {
-            "title": "Analyse des besoins et spécifications du projet",
-            "context": "En utilisant un cas d'étude fictif ou réel, les apprenants devront identifier les besoins des utilisateurs, définir les fonctionnalités clés et estimer les ressources nécessaires pour mener à bien le projet.",
-            "objective": "Ils devront ensuite rédiger un document détaillé regroupant l'ensemble des spécifications techniques et des étapes de planification du projet."
+            "title": "Analyse du domaine métier Novaria Signal",
+            "context": "L'API doit centraliser les utilisateurs, rôles, signalements, catégories d'incidents, commentaires, pièces jointes, notifications et historiques de traitement.",
+            "objective": "Formaliser le modèle fonctionnel, les règles métier et les contraintes d'interconnexion entre citoyens, agents et services municipaux."
         },
         {
-            "title": "Choix de l'architecture et des technologies",
-            "context": "Les apprenants auront pour tâche de comparer différentes architectures back-end et de sélectionner les technologies les plus adaptées aux besoins du projet.",
-            "objective": "Ils devront justifier leur choix en mettant en avant les avantages et inconvénients de chaque solution. Enfin, ils devront définir l'infrastructure nécessaire pour mettre en place ces choix."
+            "title": "Conception de l'architecture Back-End",
+            "context": "L'équipe choisit une architecture maintenable pour exposer les services applicatifs de la plateforme.",
+            "objective": "Définir les composants, les responsabilités, les flux applicatifs, les choix techniques et les conventions d'API."
         },
         {
-            "title": "Conception de la base de données",
-            "context": "À partir d'un scénario donné, les apprenants devront modéliser la structure de la base de données, définir les relations entre les entités et intégrer des mécanismes de sécurité.",
-            "objective": "Ensuite, ils devront proposer des solutions pour assurer la scalabilité de la base de données tout en optimisant les requêtes SQL."
+            "title": "Modélisation SQL et NoSQL",
+            "context": "Novaria Signal combine des données structurées de gestion et des données événementielles liées au suivi des incidents.",
+            "objective": "Concevoir les schémas relationnels, identifier les usages NoSQL pertinents et justifier les choix de stockage."
         },
         {
-            "title": "Développement de l'API",
-            "context": "Les apprenants devront concevoir et mettre en place les endpoints pour les différentes fonctionnalités en utilisant un langage de programmation spécifique.",
-            "objective": "Ils devront également gérer les requêtes et réponses, implémenter l'authentification et l'autorisation, et documenter l'API pour les développeurs tiers."
+            "title": "Développement de l'API sécurisée",
+            "context": "Les endpoints doivent permettre la création, le suivi, le commentaire et le traitement des signalements.",
+            "objective": "Implémenter une API REST documentée, sécurisée par authentification, rôles et contrôles d'accès."
         },
         {
-            "title": "Tests et optimisation",
-            "context": "Les apprenants auront pour mission de mettre en place une batterie de tests unitaires et d'intégration pour garantir le bon fonctionnement de l'application.",
-            "objective": "En se basant sur des métriques de performances, ils devront identifier et corriger les potentiels points faibles de l'application pour assurer sa conformité aux spécifications initiales."
+            "title": "Tests, sauvegardes et documentation",
+            "context": "L'API doit être exploitable par les équipes Front-End, DevOps et services municipaux.",
+            "objective": "Mettre en place les tests, la stratégie de sauvegarde/restauration, la documentation Swagger ou équivalente et les jeux de données de validation."
         }
     ],
     "bibliography": [
-        "Martin, R. C. \"Clean Architecture\"",
-        "Newman, S. \"Building Microservices (2nd ed.)\"",
-        "Fowler, M. \"Patterns of Enterprise Application Architecture\""
+        "Richardson, Leonard; Amundsen, Mike. RESTful Web APIs.",
+        "Fowler, Martin. Patterns of Enterprise Application Architecture.",
+        "OWASP. API Security Top 10.",
+        "PostgreSQL Documentation et MongoDB Manual."
     ],
     "teachingMethods": [
-        "Cours magistraux interactifs avec démonstrations sur des cas réels",
-        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
-        "Classe inversée : ressources documentaires à consulter avant les séances",
-        "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
-        "Revue par les pairs",
-        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+        "Étude de cas",
+        "Travaux de groupe",
+        "Atelier API",
+        "Mise en situation professionnelle"
     ]
 }

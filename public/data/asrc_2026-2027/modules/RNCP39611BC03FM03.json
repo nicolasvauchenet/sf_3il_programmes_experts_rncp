@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM03",
+        "title": "Audit de sécurité́ et amélioration continue",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Conduire des audits de sécurité réguliers pour évaluer l'efficacité des mesures de sécurité en place, en utilisant des méthodologies d'audit standardisées et en collaboration avec les équipes internes et les auditeurs externes, afin de détecter les faiblesses et de recommander des améliorations"
+        },
+        {
+            "code": "C17",
+            "description": "Élaborer et mettre en œuvre des actions correctives en analysant les résultats des audits de sécurité et en identifiant les vulnérabilités et les non-conformités, en coopération avec les équipes de sécurité et de conformité, afin d'améliorer continuellement les mesures de sécurité de l'organisation et de garantir la conformité réglementaire"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et objectifs de l'audit de sécurité (Comprendre) Maîtriser les méthodologies et normes associées à l'audit de sécurité (Appliquer) Analyser les risques et communiquer efficacement les résultats d'un audit (Analyser)"
+    },
+    "prerequisites": {
+        "description": "Connaissance des fondamentaux de la cybersécurité, familiarité avec les systèmes d'information, et compréhension de base des concepts de risque et de vulnérabilités informatiques."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'audit de sécurité",
+                "items": [
+                    "Les principes de base de l'audit de sécurité",
+                    "Les objectifs de l'audit de sécurité",
+                    "Les différentes approches méthodologiques de l'audit de sécurité",
+                    "Les normes et bonnes pratiques en matière d'audit de sécurité",
+                    "Les outils et techniques d'audit de sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Identification des actifs et des vulnérabilités",
+                "items": [
+                    "Méthodes d'identification des actifs informatiques",
+                    "Les types de vulnérabilités courantes",
+                    "Les outils d'identification des vulnérabilités",
+                    "La cartographie des actifs et des vulnérabilités",
+                    "L'évaluation de l'impact des vulnérabilités sur la sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Méthodes d'analyse de risques",
+                "items": [
+                    "Les principes de l'analyse de risques",
+                    "Les méthodes quantitatives et qualitatives d'analyse de risques",
+                    "L'évaluation des risques liés à la cybersécurité",
+                    "L'identification des scénarios d'attaques potentielles",
+                    "La hiérarchisation des risques identifiés"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Techniques d'audit des systèmes d'information",
+                "items": [
+                    "Les différentes phases d'un audit des systèmes d'information",
+                    "L'identification des contrôles de sécurité mis en place",
+                    "L'évaluation de l'efficacité des contrôles de sécurité",
+                    "L'analyse des journaux d'activité et des traces d'audit",
+                    "La vérification de la conformité aux normes et réglementations en vigueur"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Rapport d'audit et plan d'action",
+                "items": [
+                    "La rédaction d'un rapport d'audit de sécurité",
+                    "La communication des résultats de l'audit aux parties prenantes",
+                    "L'identification des mesures correctives et préventives à mettre en place",
+                    "L'élaboration d'un plan d'action pour donner suite à l'audit",
+                    "Le suivi des recommandations et des actions correctives pour donner suite à l'audit"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des objectifs de l'audit de sécurité",
+            "context": "Les apprenants devront lire un cas d'entreprise fictif et identifier les objectifs spécifiques d'un audit de sécurité qui pourraient s'appliquer à ce cas.",
+            "objective": "Ensuite, ils devront expliquer comment ces objectifs pourraient orienter l'approche méthodologique de l'audit."
+        },
+        {
+            "title": "Identification des vulnérabilités courantes",
+            "context": "Les apprenants recevront une liste de scénarios de vulnérabilités courantes et devront associer chaque scénario à une méthode d'identification appropriée.",
+            "objective": "Ils devront également expliquer en quoi la cartographie des actifs et des vulnérabilités est importante pour prioriser les actions de sécurité."
+        },
+        {
+            "title": "Analyse de risques liés à la cybersécurité",
+            "context": "Les apprenants seront confrontés à un environnement technologique spécifique et devront identifier les scénarios d'attaques potentielles ainsi que les risques associés.",
+            "objective": "Ensuite, ils devront évaluer ces risques en utilisant à la fois des méthodes quantitatives et qualitatives, et proposer des mesures de mitigation."
+        },
+        {
+            "title": "Analyse des contrôles de sécurité",
+            "context": "Les apprenants auront accès à des rapports d'audit fictifs contenant des informations sur les contrôles de sécurité mis en place.",
+            "objective": "Leur tâche consistera à évaluer l'efficacité de ces contrôles en se basant sur les journaux d'activité et les traces d'audit."
+        },
+        {
+            "title": "Rédaction d'un rapport d'audit de sécurité",
+            "context": "Les apprenants seront amenés à rédiger un rapport d'audit de sécurité synthétisant les résultats d'un audit fictif.",
+            "objective": "Ils devront aussi inclure un plan d'action comprenant des mesures correctives et préventives, ainsi qu'un suivi des recommandations."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "IT Auditing: Using Controls to Protect Information Assets (4e éd.)",
+            "author": "Davis, C. et al"
+        },
+        {
+            "title": "Auditor's Guide to IT Auditing (2e éd.)",
+            "author": "Cascarino, R"
+        },
+        {
+            "title": "The Hacker Playbook 3",
+            "author": "Kim, P"
+        }
+    ],
+    "OnlineResources": [
+        "ISACA — Audit Resources (https://www.isaca.org) [EN]",
+        "ANSSI — Référentiel PASSI (https://cyber.gouv.fr/prestataires-audit-de-la-securite-des-systemes-d-information-passi-qualifies) [FR]",
+        "OWASP Testing Guide (https://owasp.org/www-project-web-security-testing-guide/) [EN]",
+        "NIST SP 800-115 Technical Guide to Information Security Testing (https://csrc.nist.gov) [EN]",
+        "CLUSIF — Méthodes d'audit (https://clusif.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

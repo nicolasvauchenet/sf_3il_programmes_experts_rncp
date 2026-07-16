@@ -1,0 +1,126 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC03-FM02",
+        "title": "eXtreme Programming",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et la méthodologie de l'eXtreme Programming pour optimiser le développement logiciel (Comprendre) Identifier les rôles et responsabilités au sein d'une équipe XP pour assurer une collaboration efficace (Analyser) Mettre en œuvre les pratiques de tests et de qualité pour améliorer la fiabilité et la maintenabilité du code (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base des méthodologies agiles, expérience en développement logiciel, familiarité avec les concepts de gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'eXtreme Programming",
+                "items": [
+                    "Principes et valeurs de l'eXtreme Programming",
+                    "Méthodologie itérative et incrémentale",
+                    "Place de l'eXtreme Programming dans le processus de développement logiciel",
+                    "Rôles et responsabilités des membres de l'équipe XP",
+                    "Avantages et inconvénients de l'eXtreme Programming"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Planification et gestion de projet XP",
+                "items": [
+                    "User Stories et backlog de développement",
+                    "Planification des itérations",
+                    "Estimation de la charge de travail",
+                    "Gestion des risques dans un projet XP",
+                    "Suivi et Reporting de l'avancement du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Tests et qualité dans l'eXtreme Programming",
+                "items": [
+                    "Tests unitaires, d'intégration et fonctionnels",
+                    "TDD (Test Driven Development)",
+                    "Intégration continue et déploiement continu",
+                    "Assurance qualité dans l'eXtreme Programming",
+                    "Mesure de la qualité du code"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Conception et développement dans l'eXtreme Programming",
+                "items": [
+                    "Conception émergente et refactoring",
+                    "Pair Programming et code review",
+                    "Pratiques de développement collaboratif",
+                    "Utilisation des patterns de conception",
+                    "Bonnes pratiques de développement dans un environnement XP"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Communication et collaboration dans l'équipe XP",
+                "items": [
+                    "Communication efficace au sein de l'équipe XP",
+                    "Gestion des conflits et prises de décision",
+                    "Auto-organisation de l'équipe",
+                    "Feedback continu et amélioration continue",
+                    "Partage des connaissances et compétences au sein de l'équipe XP"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Application des principes et valeurs de l'eXtreme Programming",
+            "context": "En utilisant un projet concret ou fictif, identifiez et expliquez comment chaque principe et valeur de l'eXtreme Programming peut être mis en œuvre dans le contexte de ce projet.",
+            "objective": "Présentez vos conclusions sous forme de rapport ou de présentation."
+        },
+        {
+            "title": "Planification des itérations et gestion des risques",
+            "context": "À l'aide d'un scénario de projet, créez un plan d'itération pour une phase de développement spécifique.",
+            "objective": "Identifiez les risques liés à cette itération et proposez des stratégies pour les atténuer. Présentez votre plan d'itération et votre analyse des risques."
+        },
+        {
+            "title": "Élaboration de tests et mesure de la qualité du code",
+            "context": "Sélectionnez un cas d'utilisation ou une fonctionnalité d'un projet existant ou fictif et élaborez une suite de tests unitaires, d'intégration et fonctionnels pour cette fonctionnalité.",
+            "objective": "En outre, proposez des métriques pour mesurer la qualité du code applicable à cette fonctionnalité."
+        },
+        {
+            "title": "Conception émergente et développement collaboratif",
+            "context": "Imaginez une situation de développement où une conception initiale doit être modifiée en raison de nouvelles exigences ou de découvertes pendant le développement.",
+            "objective": "Utilisez le concept de refactoring pour ajuster la conception initiale et décrivez comment le Pair Programming peut être bénéfique dans ce scénario."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Extreme Programming Explained: Embrace Change (2e éd.)",
+            "author": "Beck, K. & Andres, C"
+        },
+        {
+            "title": "The Art of Agile Development (2e éd.)",
+            "author": "Shore, J. & Warden, S"
+        },
+        {
+            "title": "Agile Testing : A Practical Guide for Testers and Agile Teams",
+            "author": "Crispin, L. & Gregory, J"
+        }
+    ],
+    "OnlineResources": [
+        "Extreme Programming — Don Wells (http://www.extremeprogramming.org) [EN]",
+        "Agile Alliance — XP Resources (https://www.agilealliance.org/glossary/xp/) [EN]",
+        "Martin Fowler — Extreme Programming (https://martinfowler.com/bliki/ExtremeProgramming.html) [EN]",
+        "Craftsmanship Manifesto (https://manifesto.softwarecraftsmanship.org) [EN]",
+        "developpez.com — Méthodes Agiles (https://agile.developpez.com) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

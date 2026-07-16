@@ -56,7 +56,7 @@ final class SummaryController extends AbstractController
             'modulesPerBlockChart' => $summaryChartService->createModulesPerBlockChart($structure),
             'projectsPerBlockChart' => $summaryChartService->createProjectsPerBlockChart($projects),
             'skillsPerEvaluationChart' => $summaryChartService->createSkillsPerEvaluationChartFromSheets($evaluationSheets),
-            'modulesPerEvaluationChart' => $summaryChartService->createModulesPerEvaluationChart($structure),
+            'modulesPerEvaluationChart' => $summaryChartService->createModulesPerEvaluationChartFromSheets($evaluationSheets),
         ]);
     }
 }
