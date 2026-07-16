@@ -69,8 +69,9 @@ final class RegisterUserType extends AbstractType
                 'required' => true,
                 'label' => 'Rôle',
                 'choices' => [
-                    'Enseignant' => 'ROLE_TEACHER',
                     'Apprenant' => 'ROLE_STUDENT',
+                    'Enseignant' => 'ROLE_TEACHER',
+                    'Interne' => 'ROLE_USER',
                 ],
                 'attr' => [
                     'class' => 'form-control',
