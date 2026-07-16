@@ -56,6 +56,45 @@ final readonly class PromotionJsonDatabaseManager
         return $this->findPromotion($reference) instanceof Promotion;
     }
 
+    /**
+     * @param list<string> $sourceDatasetNames
+     * @return list<array{id: int, datasetName: string, label: string, program: string, academicYear: string, frameworkCode: string|null, sourceExists: bool}>
+     */
+    public function listImportedReferences(array $sourceDatasetNames = []): array
+    {
+        $sourceLookup = array_fill_keys($sourceDatasetNames, true);
+        $promotions = $this->entityManager->getRepository(Promotion::class)->createQueryBuilder('p')
+            ->leftJoin('p.framework', 'f')
+            ->addSelect('f')
+            ->orderBy('p.startAt', 'DESC')
+            ->addOrderBy('p.label', 'ASC')
+            ->getQuery()
+            ->getResult();
+
+        $references = [];
+
+        foreach ($promotions as $promotion) {
+            if (!$promotion instanceof Promotion || $promotion->getId() === null || $promotion->getProgram() === null) {
+                continue;
+            }
+
+            $academicYear = $this->formatAcademicYear($promotion);
+            $datasetName = sprintf('%s_%s', $promotion->getProgram()->value, $academicYear);
+
+            $references[] = [
+                'id' => $promotion->getId(),
+                'datasetName' => $datasetName,
+                'label' => (string) $promotion->getLabel(),
+                'program' => mb_strtoupper($promotion->getProgram()->value),
+                'academicYear' => $academicYear,
+                'frameworkCode' => $promotion->getFramework()?->getCode(),
+                'sourceExists' => isset($sourceLookup[$datasetName]),
+            ];
+        }
+
+        return $references;
+    }
+
     public function import(string $datasetName): ImportReport
     {
         $dataset = $this->loadDataset($datasetName);
@@ -91,6 +130,34 @@ final readonly class PromotionJsonDatabaseManager
 
             $this->entityManager->clear();
         });
+    }
+
+    public function deletePromotion(int $promotionId): string
+    {
+        $promotion = $this->entityManager->getRepository(Promotion::class)->find($promotionId);
+
+        if (!$promotion instanceof Promotion) {
+            throw new \RuntimeException('Aucun referentiel correspondant n existe en base.');
+        }
+
+        $label = (string) $promotion->getLabel();
+
+        $this->entityManager->wrapInTransaction(function () use ($promotion): void {
+            if ($promotion->getId() === null) {
+                return;
+            }
+
+            $frameworkId = $promotion->getFramework()?->getId();
+            $this->deletePromotionsByIds([$promotion->getId()]);
+
+            if ($frameworkId !== null && $this->countPromotionsForFramework($frameworkId) === 0) {
+                $this->deleteFrameworkById($frameworkId);
+            }
+
+            $this->entityManager->clear();
+        });
+
+        return $label;
     }
 
     /**
@@ -205,6 +272,15 @@ final readonly class PromotionJsonDatabaseManager
         $this->deleteByIds('skill', 'id', $skillIds);
         $this->deleteByIds('block', 'id', $blockIds);
         $connection->delete('framework', ['id' => $frameworkId]);
+    }
+
+    private function formatAcademicYear(Promotion $promotion): string
+    {
+        return sprintf(
+            '%s-%s',
+            $promotion->getStartAt()?->format('Y') ?? '0000',
+            $promotion->getEndAt()?->format('Y') ?? '0000',
+        );
     }
 
     private function countPromotionsForFramework(int $frameworkId): int
