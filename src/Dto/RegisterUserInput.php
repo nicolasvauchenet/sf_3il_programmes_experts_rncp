@@ -23,7 +23,7 @@ final class RegisterUserInput
     public string $password = '';
 
     #[Assert\NotBlank]
-    #[Assert\Choice(['ROLE_TEACHER', 'ROLE_STUDENT'])]
+    #[Assert\Choice(['ROLE_TEACHER', 'ROLE_STUDENT', 'ROLE_USER'])]
     public string $role = 'ROLE_STUDENT';
 
     public function getEmail(): string
