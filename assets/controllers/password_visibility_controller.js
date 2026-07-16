@@ -1,27 +1,22 @@
 import {Controller} from '@hotwired/stimulus';
 
 export default class extends Controller {
-    static targets = ['input', 'button'];
+    static targets = ['input'];
 
-    connect() {
-        this.visible = false;
-        this.refresh();
-    }
+    toggle(event) {
+        const button = event.currentTarget;
+        const field = button.closest('.password-field');
+        const input = field?.querySelector('input');
 
-    toggle() {
-        this.visible = !this.visible;
-        this.refresh();
-    }
-
-    refresh() {
-        const type = this.visible ? 'text' : 'password';
-
-        this.inputTargets.forEach((input) => {
-            input.type = type;
-        });
-
-        if (this.hasButtonTarget) {
-            this.buttonTarget.textContent = this.visible ? 'Masquer les mots de passe' : 'Afficher les mots de passe';
+        if (!input) {
+            return;
         }
+
+        const isVisible = input.type === 'text';
+        input.type = isVisible ? 'password' : 'text';
+
+        button.classList.toggle('is-visible', !isVisible);
+        button.setAttribute('aria-label', isVisible ? 'Afficher le mot de passe' : 'Masquer le mot de passe');
+        button.setAttribute('title', isVisible ? 'Afficher le mot de passe' : 'Masquer le mot de passe');
     }
 }

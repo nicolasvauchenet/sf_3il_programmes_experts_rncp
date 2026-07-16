@@ -48,12 +48,31 @@ final class HomeController extends AbstractController
         sort($allPromotions);
         rsort($allYears);
 
+        $isStudent = $this->isGranted('ROLE_STUDENT');
+
+        if ($isStudent) {
+            $allYears = [];
+
+            foreach ($yearsByPromotion as $promotionCode => $years) {
+                $latestYear = $years[0] ?? null;
+                $yearsByPromotion[$promotionCode] = $latestYear === null ? [] : [$latestYear];
+
+                if ($latestYear !== null) {
+                    $allYears[] = $latestYear;
+                }
+            }
+
+            $allYears = array_values(array_unique($allYears));
+            rsort($allYears);
+        }
+
         return $this->render('home/index.html.twig', [
             'allPromotions' => $allPromotions,
             'allYears' => $allYears,
             'yearsByPromotion' => $yearsByPromotion,
             'selectedPromotion' => null,
-            'selectedYear' => null,
+            'selectedYear' => $isStudent ? ($allYears[0] ?? null) : null,
+            'isStudent' => $isStudent,
         ]);
     }
 }

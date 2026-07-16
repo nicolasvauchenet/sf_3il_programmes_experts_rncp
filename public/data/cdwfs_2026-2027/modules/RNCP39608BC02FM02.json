@@ -17,7 +17,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les concepts fondamentaux de l'analyse et de la modélisation des données (Comprendre) Concevoir des modèles de données relationnels respectant les principes de normalisation (Créer) Évaluer la pertinence d'un modèle de données par rapport aux besoins fonctionnels de l'application (Évaluer)"
+        "description": "Apprendre à utiliser UML pour modéliser les différents aspects d'un système logiciel. Comprendre et réaliser plusieurs types de diagrammes UML comme les cas d'utilisation, les classes, les séquences et les états-transition. Intégrer l'utilisation d'UML dans le processus de développement pour capturer les exigences et concevoir des solutions logicielles robustes."
     },
     "prerequisites": {
         "description": "Connaissances de base en programmation et en développement logiciel. Compréhension des concepts de génie logiciel et des processus de développement. Familiarité avec la modélisation et l'abstraction en informatique."
@@ -73,64 +73,117 @@
                     "Exemples de modélisation de diagrammes d'états-transition",
                     "Intégration des diagrammes d'états-transition dans la conception logicielle"
                 ]
+            },
+            {
+                "title": "Chapitre 6 : Diagramme de composants",
+                "items": [
+                    "Comprendre le rôle des composants dans l'architecture d'une application",
+                    "Représentation des composants, des interfaces et des dépendances",
+                    "Utilisation des diagrammes de composants pour représenter l'architecture logique d'un système logiciel",
+                    "Exemples de modélisation d'applications multi-couches (interface utilisateur, services, accès aux données)",
+                    "Intégration des diagrammes de composants dans le processus de développement"
+                ]
+            },
+            {
+                "title": "Chapitre 7 : Diagramme de déploiement",
+                "items": [
+                    "Comprendre le rôle du diagramme de déploiement",
+                    "Représentation simplifiée de l'architecture physique d'une application",
+                    "Exemples de déploiement d'une application web"
+                ]
             }
         ]
     },
     "exercises": [
         {
-            "title": "Exercice 1",
+            "title": "Analyse de cas réels d'utilisation d'UML",
             "context": "Sélectionnez un projet logiciel réel et identifiez les différentes utilisations d'UML dans ce projet.",
             "objective": "Réalisez une liste des différents diagrammes UML utilisés, en expliquant brièvement comment ces diagrammes ont été employés pour la modélisation et la conception du logiciel. Présentez vos résultats en classe et discutez-en avec vos camarades."
         },
         {
-            "title": "Exercice 2",
-            "context": "Identifiez un processus métier simple, tel que la réservation d'un billet de train, la gestion d'un compte client, ou toute autre activité courante.",
+            "title": "Modélisation d'un cas d'utilisation",
+            "context": "Identifiez un processus métier simple, tel que la réservation d'un billet de train, la gestion d'un compte client ou toute autre activité courante.",
             "objective": "Réalisez un diagramme de cas d'utilisation détaillé pour ce processus, en identifiant les acteurs impliqués, les scénarios principaux et alternatifs. Présentez votre diagramme et expliquez-le à vos camarades."
         },
         {
-            "title": "Exercice 3",
+            "title": "Modélisation de classes pour un système donné",
             "context": "Sélectionnez un système logiciel simple, tel qu'un système de gestion de bibliothèque ou un système de réservation en ligne, et réalisez un diagramme de classes pour ce système.",
             "objective": "Identifiez les différentes classes, leurs attributs, leurs méthodes et les relations entre les classes. Présentez votre diagramme en mettant en avant les choix de conception que vous avez faits."
         },
         {
-            "title": "Exercice 4",
+            "title": "Modélisation d'un scénario d'exécution",
             "context": "Élaborez un scénario d'exécution pour un système de votre choix, en mettant en lumière les interactions entre les objets du système.",
             "objective": "Réalisez un diagramme de séquence décrivant le déroulement de ce scénario, en identifiant les messages échangés entre les objets. Présentez votre diagramme en expliquant en détail le scénario modélisé."
         },
         {
-            "title": "Exercice 5",
-            "context": "Choisissez un système comportant un comportement complexe, tel qu'un distributeur automatique de billets ou un système de contrôle de feux de circulation, et réalisez un diagramme d'états- transition pour modéliser le comportement de l'un de ses composants.",
+            "title": "Modélisation des comportements complexes",
+            "context": "Choisissez un système comportant un comportement complexe, tel qu'un distributeur automatique de billets ou un système de contrôle de feux de circulation, et réalisez un diagramme d'états-transition pour modéliser le comportement de l'un de ses composants.",
             "objective": "Identifiez les différents états possibles et les transitions entre ces états, en justifiant vos choix de modélisation. Présentez votre diagramme et discutez-en avec vos camarades."
+        },
+        {
+            "title": "Modélisation de l'architecture d'une application",
+            "context": "Choisissez une application que vous connaissez, par exemple une application de gestion de bibliothèque, un site e-commerce ou une plateforme de réservation, et identifiez les principaux composants qui la constituent.",
+            "objective": "Réalisez un diagramme de composants représentant ces différents composants, leurs interfaces et leurs dépendances. Présentez votre diagramme en expliquant les choix d'architecture réalisés."
+        },
+        {
+            "title": "Découverte du diagramme de déploiement",
+            "context": "À partir de l'architecture technique simplifiée d'une application web, par exemple un navigateur, un serveur web, une application Symfony et une base de données.",
+            "objective": "Réalisez un diagramme de déploiement représentant les principaux nœuds de l'infrastructure ainsi que leurs connexions. Présentez votre diagramme en expliquant le rôle de chaque élément."
         }
     ],
     "bibliography": [
         {
-            "title": "Bases de données : objet et relationnel (3e éd.)",
-            "author": "Gardarin, G"
+            "title": "UML 2.5 par la pratique : études de cas et exercices corrigés",
+            "author": "Pascal Roques",
+            "edition": "8e édition",
+            "publisher": "Eyrolles",
+            "year": 2018,
+            "isbn": "978-2-212-67565-8",
+            "language": "FR"
         },
         {
-            "title": "Modélisation des bases de données : UML et les modèles entité-association (4e éd.)",
-            "author": "Soutou, C"
+            "title": "UML Distilled: A Brief Guide to the Standard Object Modeling Language",
+            "author": "Martin Fowler",
+            "edition": "3rd edition",
+            "publisher": "Addison-Wesley Professional",
+            "year": 2003,
+            "isbn": "978-0-321-19368-1",
+            "language": "EN"
         },
         {
-            "title": "Database Design for Mere Mortals (4th ed.)",
-            "author": "Hernandez, M. J"
+            "title": "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development",
+            "author": "Craig Larman",
+            "edition": "3rd edition",
+            "publisher": "Pearson",
+            "year": 2004,
+            "isbn": "978-0-13-148906-6",
+            "language": "EN"
+        },
+        {
+            "title": "OMG Unified Modeling Language (OMG UML), Version 2.5.1",
+            "author": "Object Management Group",
+            "publisher": "Object Management Group",
+            "year": 2017,
+            "language": "EN"
         }
     ],
     "OnlineResources": [
-        "PostgreSQL Documentation (https://www.postgresql.org/docs/) [EN]",
-        "Modélisation Merise — developpez.com (https://merise.developpez.com) [FR]",
-        "UML Specification — OMG (https://www.omg.org/spec/UML) [EN]",
-        "DB-Engines Ranking (https://db-engines.com/en/ranking) [EN]",
-        "MySQL Documentation — Database Design (https://dev.mysql.com/doc/) [EN]"
+        "Object Management Group — Unified Modeling Language, spécification officielle UML 2.5.1 (https://www.omg.org/spec/UML/2.5.1/) [EN]",
+        "Object Management Group — Portail officiel UML : spécifications, ressources et outils (https://www.omg.org/uml/) [EN]",
+        "PlantUML — Documentation et guide de référence officiel pour la création de diagrammes UML sous forme textuelle (https://plantuml.com/) [EN]",
+        "PlantUML — Guide de démarrage rapide (https://plantuml.com/starting) [EN]",
+        "diagrams.net — Guide et modèles pour réaliser des diagrammes UML avec draw.io (https://drawio-app.com/uml-diagrams/) [EN]",
+        "Visual Paradigm — Guide pratique UML et présentation des différents types de diagrammes (https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-practical-guide/) [EN]"
     ],
     "teachingMethods": [
-        "Cours magistraux interactifs avec démonstrations sur des cas réels",
-        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
-        "Classe inversée : ressources documentaires à consulter avant les séances",
-        "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
-        "Revue par les pairs",
-        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+        "Apports théoriques courts et progressifs, illustrés par des exemples issus d'applications web et d'architectures Back-end",
+        "Démonstrations guidées de lecture, de correction et de construction de diagrammes UML",
+        "Ateliers pratiques consacrés aux diagrammes de cas d'utilisation, de classes, de séquence, d'états-transition, de composants et de déploiement",
+        "Étude de cas fil rouge permettant de faire évoluer progressivement la modélisation d'une même application",
+        "Travaux individuels puis mise en commun en binômes ou en petits groupes afin de confronter les choix de modélisation",
+        "Revues croisées de diagrammes à partir de critères explicites : lisibilité, cohérence, respect de la notation UML et adéquation avec le besoin",
+        "Utilisation complémentaire d'un outil graphique et d'un outil de diagramme sous forme textuelle, par exemple diagrams.net et PlantUML",
+        "Évaluation formative régulière à travers des exercices courts, des corrections collectives et l'amélioration itérative des modèles produits",
+        "Mise en relation des modèles UML avec le code source, l'architecture MVC et les composants techniques d'une application Back-end"
     ]
 }

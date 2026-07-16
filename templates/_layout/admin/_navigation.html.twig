@@ -12,9 +12,9 @@
         Utilisateurs
     </a>
     <a
-        href="#"
-        class="{% if 'app_admin_stats' in app.request.get('_route') %}active{% endif %}"
+        href="{{ path('app_admin_frameworks_home') }}"
+        class="{% if 'app_admin_frameworks' in app.request.get('_route') %}active{% endif %}"
     >
-        Rapports
+        Référentiels
     </a>
 </nav>

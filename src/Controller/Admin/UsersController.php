@@ -101,7 +101,7 @@ final class UsersController extends AbstractController
                 ->setFullName($input->fullName)
                 ->setEmail($input->email)
                 ->setRoles([$input->role])
-                ->setIsActive(!$input->disabled)
+                ->setIsActive(true)
                 ->setIsAccepted(true);
 
             $user->setPassword($passwordHasher->hashPassword($user, $input->password));
@@ -131,7 +131,6 @@ final class UsersController extends AbstractController
         $input->fullName = $user->getFullName() ?? '';
         $input->email = $user->getEmail() ?? '';
         $input->role = $this->resolveEditableRole($user->getRoles());
-        $input->disabled = !$user->isActive();
 
         $form = $this->createForm(EditUserType::class, $input);
         $form->handleRequest($request);
@@ -142,20 +141,13 @@ final class UsersController extends AbstractController
             if ($existingUser instanceof User && $existingUser->getId() !== $user->getId()) {
                 $form->get('email')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
             }
-
-            $currentUser = $this->getUser();
-
-            if ($currentUser instanceof User && $currentUser->getId() === $user->getId() && $input->disabled) {
-                $form->get('disabled')->addError(new FormError('Vous ne pouvez pas désactiver votre propre compte.'));
-            }
         }
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user
                 ->setFullName($input->fullName)
                 ->setEmail($input->email)
-                ->setRoles([$input->role])
-                ->setIsActive(!$input->disabled);
+                ->setRoles([$input->role]);
 
             if (null !== $input->password && '' !== $input->password) {
                 $user->setPassword($passwordHasher->hashPassword($user, $input->password));

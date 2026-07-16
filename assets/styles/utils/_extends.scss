@@ -60,6 +60,14 @@
 }
 
 /* TEXT COLORS */
+.text-success {
+    color: $success !important;
+}
+
+.text-warning {
+    color: $warning !important;
+}
+
 .text-danger {
     color: $error !important;
 }

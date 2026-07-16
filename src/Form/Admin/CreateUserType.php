@@ -4,7 +4,6 @@ namespace App\Form\Admin;
 
 use App\Dto\Admin\CreateUserInput;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
@@ -42,6 +41,7 @@ final class CreateUserType extends AbstractType
                 'attr' => [
                     'class' => 'form-control',
                     'autocomplete' => 'new-password',
+                    'data-password-visibility-target' => 'input',
                 ],
                 'label_attr' => [
                     'class' => 'form-label',
@@ -57,16 +57,6 @@ final class CreateUserType extends AbstractType
                 ],
                 'attr' => [
                     'class' => 'form-control',
-                ],
-                'label_attr' => [
-                    'class' => 'form-label',
-                ],
-            ])
-            ->add('disabled', CheckboxType::class, [
-                'label' => null,
-                'required' => false,
-                'attr' => [
-                    'class' => 'admin-checkbox',
                 ],
                 'label_attr' => [
                     'class' => 'form-label',

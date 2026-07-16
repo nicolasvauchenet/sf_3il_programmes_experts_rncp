@@ -56,6 +56,17 @@
         }
     }
 
+    &.danger {
+        color: $error;
+        background-color: rgba($error, 0.18);
+        border-color: $error;
+
+        &:hover {
+            color: $white;
+            background-color: $error;
+        }
+    }
+
     small {
         display: block;
         margin-bottom: 0.25rem;

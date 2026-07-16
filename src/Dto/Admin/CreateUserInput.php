@@ -22,6 +22,4 @@ final class CreateUserInput
     #[Assert\NotBlank]
     #[Assert\Choice(['ROLE_ADMIN', 'ROLE_TEACHER', 'ROLE_STUDENT', 'ROLE_USER'])]
     public string $role = 'ROLE_USER';
-
-    public bool $disabled = false;
 }

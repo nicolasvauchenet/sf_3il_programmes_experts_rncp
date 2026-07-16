@@ -38,7 +38,10 @@
                 <div class="form-group">
                     {{ form_label(form.password.first) }}
                     <div>
-                        {{ form_widget(form.password.first) }}
+                        <div class="password-field">
+                            {{ form_widget(form.password.first) }}
+                            {% include '_components/_password_toggle.html.twig' %}
+                        </div>
                         {{ form_errors(form.password) }}
                         {{ form_errors(form.password.first) }}
                     </div>
@@ -47,21 +50,12 @@
                 <div class="form-group">
                     {{ form_label(form.password.second) }}
                     <div>
-                        {{ form_widget(form.password.second) }}
+                        <div class="password-field">
+                            {{ form_widget(form.password.second) }}
+                            {% include '_components/_password_toggle.html.twig' %}
+                        </div>
                         {{ form_errors(form.password.second) }}
                     </div>
-                </div>
-
-                <div class="form-group compact">
-                    <span class="form-label">&nbsp;</span>
-                    <button
-                        type="button"
-                        class="form-link-button"
-                        data-action="password-visibility#toggle"
-                        data-password-visibility-target="button"
-                    >
-                        Afficher les mots de passe
-                    </button>
                 </div>
 
                 <div class="form-group">

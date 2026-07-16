@@ -13,7 +13,7 @@
 
             <hr/>
 
-            {{ form_start(form, { attr: { class: 'app-form admin-user-form' } }) }}
+            {{ form_start(form, { attr: { class: 'app-form admin-user-form', 'data-controller': 'password-visibility' } }) }}
                 {{ form_errors(form) }}
 
                 <div class="form-group">
@@ -35,7 +35,10 @@
                 <div class="form-group">
                     {{ form_label(form.password) }}
                     <div>
-                        {{ form_widget(form.password) }}
+                        <div class="password-field">
+                            {{ form_widget(form.password) }}
+                            {% include '_components/_password_toggle.html.twig' %}
+                        </div>
                         {{ form_errors(form.password) }}
                     </div>
                 </div>
@@ -45,17 +48,6 @@
                     <div>
                         {{ form_widget(form.role) }}
                         {{ form_errors(form.role) }}
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <span class="form-label">&nbsp;</span>
-                    <div>
-                        <label class="admin-checkbox-wrapper">
-                            {{ form_widget(form.disabled) }}
-                            <span>Désactivé</span>
-                        </label>
-                        {{ form_errors(form.disabled) }}
                     </div>
                 </div>
 

@@ -35,7 +35,7 @@ final class RegistrationController extends AbstractController
             $existingUser = $userRepository->findOneBy(['email' => $input->getEmail()]);
 
             if ($existingUser instanceof User) {
-                $form->get('emailPrefix')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
+                $form->get('emailPrefix')->addError(new FormError('Un compte existe déjà avec cette adresse email'));
             }
         }
 
@@ -52,7 +52,7 @@ final class RegistrationController extends AbstractController
             $entityManager->persist($user);
             $entityManager->flush();
 
-            $this->addFlash('success', 'Votre compte a été créé. Il devra être accepté avant votre première connexion.');
+            $this->addFlash('success', 'Votre compte a été créé. Il devra être accepté avant votre première connexion');
 
             return $this->redirectToRoute('app_login');
         }

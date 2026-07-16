@@ -4,6 +4,7 @@ export default class extends Controller {
     static targets = ["promotion", "year", "submit"];
     static values = {
         yearsByPromotion: Object,
+        autoSelectLatestYear: Boolean,
     };
 
     connect() {
@@ -11,7 +12,7 @@ export default class extends Controller {
         this.check();
     }
 
-    filterYears() {
+    filterYears(selectLatestYear = false) {
         const promotion = this.promotionTarget.value;
         const selectedYear = this.yearTarget.value;
         const years = this.yearsByPromotionValue[promotion] ?? [];
@@ -51,13 +52,15 @@ export default class extends Controller {
             this.yearTarget.appendChild(option);
         });
 
-        if (!years.includes(selectedYear)) {
-            this.yearTarget.value = "";
+        if (!selectLatestYear && years.includes(selectedYear)) {
+            return;
         }
+
+        this.yearTarget.value = (this.autoSelectLatestYearValue || selectLatestYear) && years.length > 0 ? years[0] : "";
     }
 
     onPromotionChange() {
-        this.filterYears();
+        this.filterYears(true);
         this.check();
     }
 

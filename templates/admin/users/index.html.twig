@@ -67,9 +67,11 @@
                         </div>
 
                         <div class="ribbon">
-                            <span class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
-                            <span class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
-                            {#<span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span>#}
+                            <span
+                                class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
+                            <span
+                                class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
+                            {# <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span> #}
                             <span class="app-badge">{{ stats.unaccepted }} en attente</span>
                         </div>
                     </section>
@@ -144,18 +146,24 @@
                                                 <div class="admin-actions-menu">
                                                     <a href="{{ path('app_admin_users_edit', { id: user.id }) }}">Modifier</a>
                                                     {% if not user.isAccepted %}
-                                                        <a href="{{ path('app_admin_users_accept', { id: user.id }) }}">Accepter</a>
+                                                        <a href="{{ path('app_admin_users_accept', { id: user.id }) }}"
+                                                           class="text-success">Accepter</a>
                                                     {% endif %}
-                                                    {% if user.canDelete %}
-                                                        <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}">
+                                                    {% if user.canDelete and user.isAccepted %}
+                                                        <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}"
+                                                           class="{% if user.isActive %}text-warning{% else %}text-success{% endif %}"
+                                                           onclick="return confirm('Confirmez-vous {% if user.isActive %}la désactivation{% else %}la réactivation{% endif %} de cet utilisateur ?')">
                                                             {{ user.isActive ? 'Désactiver' : 'Activer' }}
                                                         </a>
+                                                    {% endif %}
+                                                    {% if user.canDelete %}
                                                         <form
                                                             method="post"
                                                             action="{{ path('app_admin_users_delete', { id: user.id }) }}"
                                                             onsubmit="return confirm('Confirmez-vous la suppression de cet utilisateur ?')"
                                                         >
-                                                            <input type="hidden" name="_token" value="{{ csrf_token('delete_user_' ~ user.id) }}">
+                                                            <input type="hidden" name="_token"
+                                                                   value="{{ csrf_token('delete_user_' ~ user.id) }}">
                                                             <button type="submit" class="text-danger">Supprimer</button>
                                                         </form>
                                                     {% endif %}
@@ -186,9 +194,11 @@
                             <input type="hidden" name="page" value="1">
 
                             <label for="users-per-page">Afficher</label>
-                            <select id="users-per-page" name="perPage" class="form-control" data-action="change->auto-submit#submit">
+                            <select id="users-per-page" name="perPage" class="form-control"
+                                    data-action="change->auto-submit#submit">
                                 {% for pageSize in pagination.pageSizes %}
-                                    <option value="{{ pageSize }}" {% if pagination.perPage == pageSize %}selected{% endif %}>
+                                    <option value="{{ pageSize }}"
+                                            {% if pagination.perPage == pageSize %}selected{% endif %}>
                                         {{ pageSize == 'all' ? 'Tout' : pageSize }}
                                     </option>
                                 {% endfor %}

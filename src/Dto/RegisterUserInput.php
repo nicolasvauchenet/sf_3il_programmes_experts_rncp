@@ -14,7 +14,7 @@ final class RegisterUserInput
     #[Assert\Length(max: 170)]
     #[Assert\Regex(
         pattern: '/^[a-zA-Z0-9._%+\-]+$/',
-        message: 'Utilisez uniquement la partie avant @3il.fr.'
+        message: 'Utilisez uniquement la partie avant @3il.fr'
     )]
     public string $emailPrefix = '';
 

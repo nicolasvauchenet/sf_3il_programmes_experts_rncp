@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Remplacer un referentiel en BDD{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Referentiel deja présent en BDD</h1>
+            <p class="subtitle">Le dossier {{ datasetName }} correspond à un référentiel deja importé</p>
+
+            <hr/>
+
+            <div class="admin-conflict-summary">
+                <p>
+                    {% if database.label %}
+                        Référentiel détecté : {{ database.label }}.
+                    {% else %}
+                        Un référentiel existant correspond au code {{ database.frameworkCode }} et au millésime {{ database.academicYear }}.
+                    {% endif %}
+                    Vous pouvez annuler ou confirmer l'import pour remplacer les données existantes.
+                </p>
+            </div>
+
+            <div class="app-grid two">
+                <a href="{{ path('app_admin_frameworks_home') }}" class="app-button outline">Annuler</a>
+
+                <form
+                    method="post"
+                    action="{{ path('app_admin_frameworks_database_replace', { datasetName: datasetName }) }}"
+                    onsubmit="return confirm('Confirmez-vous le remplacement du referentiel {{ datasetName|e('js') }} en BDD ?')"
+                >
+                    <input type="hidden" name="_token" value="{{ csrf_token('replace_framework_database_' ~ datasetName) }}">
+                    <button type="submit" class="app-button danger">Remplacer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

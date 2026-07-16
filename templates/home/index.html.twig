@@ -15,6 +15,7 @@
 
             <form data-controller="context"
                   data-context-years-by-promotion-value="{{ yearsByPromotion|json_encode|e('html_attr') }}"
+                  data-context-auto-select-latest-year-value="{{ isStudent ? 'true' : 'false' }}"
                   class="app-form"
                   action="{{ path('app_promotion_summary') }}"
             >
@@ -40,7 +41,7 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" {% if isStudent %}hidden{% endif %}>
                     <label for="year" class="form-label">
                         Année académique
                     </label>

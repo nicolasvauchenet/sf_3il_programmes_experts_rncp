@@ -23,7 +23,7 @@
                 </div>
             {% endif %}
 
-            <form method="post" action="{{ path('app_login') }}" class="app-form" data-turbo="false">
+            <form method="post" action="{{ path('app_login') }}" class="app-form" data-controller="password-visibility" data-turbo="false">
                 <div class="form-group">
                     <label for="inputEmail" class="form-label required">
                         Email
@@ -44,14 +44,18 @@
                     <label for="inputPassword" class="form-label required">
                         Mot de passe
                     </label>
-                    <input
-                        type="password"
-                        name="_password"
-                        id="inputPassword"
-                        class="form-control"
-                        autocomplete="current-password"
-                        required
-                    >
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            name="_password"
+                            id="inputPassword"
+                            class="form-control"
+                            autocomplete="current-password"
+                            data-password-visibility-target="input"
+                            required
+                        >
+                        {% include '_components/_password_toggle.html.twig' %}
+                    </div>
                 </div>
 
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">

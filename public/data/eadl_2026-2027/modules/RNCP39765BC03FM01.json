@@ -68,29 +68,29 @@
     },
     "exercises": [
         {
-            "title": "Création et structuration d’un projet Python complet.",
-            "context": "",
-            "objective": ""
+            "title": "Création et structuration d’un projet Python complet",
+            "context": "À partir d'un cahier des charges simplifié, créez un nouveau projet Python destiné à servir de base à une future application métier. Mettez en place l'environnement de développement, l'organisation des packages, le dépôt Git ainsi que les premiers modules de l'application.",
+            "objective": "Produire un projet Python correctement structuré, versionné avec Git, respectant les bonnes pratiques d'organisation du code et prêt à accueillir les développements des modules suivants."
         },
         {
-            "title": "Implémentation d’un design pattern dans un module métier.",
-            "context": "",
-            "objective": ""
+            "title": "Implémentation d’un design pattern dans un module métier",
+            "context": "À partir d'un besoin fonctionnel fourni (gestion d'utilisateurs, catalogue ou commandes), identifiez un problème de conception pouvant être résolu par un design pattern adapté, puis implémentez cette solution dans votre projet.",
+            "objective": "Mettre en œuvre un design pattern pertinent (Factory, Observer ou équivalent), justifier son choix et produire un code modulaire, maintenable et facilement extensible."
         },
         {
-            "title": "Rédaction et exécution de tests unitaires et d’intégration avec pytest.",
-            "context": "",
-            "objective": ""
+            "title": "Validation de l'application par les tests automatisés",
+            "context": "Développez une suite de tests permettant de vérifier le bon fonctionnement des principales fonctionnalités de votre application à l'aide de pytest.",
+            "objective": "Écrire des tests unitaires et d'intégration couvrant les fonctionnalités essentielles, mesurer la couverture de code et garantir la non-régression lors des évolutions de l'application."
         },
         {
-            "title": "Analyse et correction des problèmes de qualité détectés par pylint/flake8.",
-            "context": "",
-            "objective": ""
+            "title": "Amélioration de la qualité du code",
+            "context": "Analysez votre projet avec plusieurs outils d'analyse statique afin d'identifier les problèmes de qualité, de style ou de typage, puis apportez les corrections nécessaires.",
+            "objective": "Produire un code conforme aux bonnes pratiques Python en utilisant flake8, pylint, black et mypy, jusqu'à obtenir un niveau de qualité satisfaisant sans régression fonctionnelle."
         },
         {
-            "title": "Génération de documentation technique et mise en place d’un pipeline CI/CD.",
-            "context": "",
-            "objective": ""
+            "title": "Industrialisation d'une API Python",
+            "context": "À partir du projet réalisé pendant le module, générez une documentation technique, créez une API REST avec FastAPI puis automatisez les contrôles qualité et les tests dans un pipeline CI/CD.",
+            "objective": "Livrer une application documentée, testée et industrialisée disposant d'une documentation exploitable, d'une API REST fonctionnelle et d'un pipeline d'intégration continue automatisant les contrôles de qualité."
         }
     ],
     "bibliography": [
