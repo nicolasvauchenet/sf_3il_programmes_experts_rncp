@@ -18,10 +18,48 @@ final class FrameworksController extends AbstractController
     public function index(PromotionJsonArchiveManager $archiveManager, PromotionJsonDatabaseManager $databaseManager): Response
     {
         $datasets = $archiveManager->listDatasets();
+        $sourceDatasetNames = [];
 
         foreach ($datasets as $index => $dataset) {
+            $sourceDatasetNames[] = $dataset['name'];
             $datasets[$index]['database'] = $databaseManager->getDatabaseState($dataset['name']);
+            $datasets[$index]['sourceExists'] = true;
+            $datasets[$index]['promotionId'] = null;
         }
+
+        $databaseReferences = $databaseManager->listImportedReferences($sourceDatasetNames);
+        foreach ($databaseReferences as $reference) {
+            $sourceIndex = array_search($reference['datasetName'], $sourceDatasetNames, true);
+
+            if ($sourceIndex !== false) {
+                $datasets[$sourceIndex]['database'] = [
+                    'exists' => true,
+                    'label' => $reference['label'],
+                    'frameworkCode' => $reference['frameworkCode'],
+                    'academicYear' => $reference['academicYear'],
+                ];
+                $datasets[$sourceIndex]['promotionId'] = $reference['id'];
+
+                continue;
+            }
+
+            $datasets[] = [
+                'name' => $reference['datasetName'],
+                'fileCount' => null,
+                'size' => null,
+                'updatedAt' => null,
+                'sourceExists' => false,
+                'promotionId' => $reference['id'],
+                'database' => [
+                    'exists' => true,
+                    'label' => $reference['label'],
+                    'frameworkCode' => $reference['frameworkCode'],
+                    'academicYear' => $reference['academicYear'],
+                ],
+            ];
+        }
+
+        usort($datasets, static fn (array $left, array $right): int => strcmp((string) $left['name'], (string) $right['name']));
 
         return $this->render('admin/frameworks/index.html.twig', [
             'datasets' => $datasets,
@@ -215,6 +253,25 @@ final class FrameworksController extends AbstractController
         try {
             $databaseManager->delete($datasetName);
             $this->addFlash('success', sprintf('Le référentiel "%s" a été supprimé de la BDD', $datasetName));
+        } catch (\Throwable $e) {
+            $this->addFlash('error', $e->getMessage());
+        }
+
+        return $this->redirectToRoute('app_admin_frameworks_home');
+    }
+
+    #[Route('/bdd/{promotionId}/supprimer', name: 'database_delete_promotion', methods: ['POST'])]
+    public function deletePromotionFromDatabase(int $promotionId, Request $request, PromotionJsonDatabaseManager $databaseManager): RedirectResponse
+    {
+        if (!$this->isCsrfTokenValid('delete_framework_database_promotion_' . $promotionId, (string) $request->request->get('_token'))) {
+            $this->addFlash('error', 'Suppression impossible, merci de reessayer');
+
+            return $this->redirectToRoute('app_admin_frameworks_home');
+        }
+
+        try {
+            $label = $databaseManager->deletePromotion($promotionId);
+            $this->addFlash('success', sprintf('Le referentiel "%s" a ete supprime de la BDD', $label));
         } catch (\Throwable $e) {
             $this->addFlash('error', $e->getMessage());
         }
