@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Dto\Admin;
+namespace App\Dto;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-final class CreateUserInput
+final class ProfileInput
 {
     #[Assert\NotBlank]
     #[Assert\Length(max: 255)]
@@ -18,16 +18,16 @@ final class CreateUserInput
     )]
     public string $emailPrefix = '';
 
-    #[Assert\NotBlank]
-    #[Assert\Length(min: 4, max: 4096)]
-    public string $password = '';
-
-    #[Assert\NotBlank]
-    #[Assert\Choice(['ROLE_ADMIN', 'ROLE_TEACHER', 'ROLE_STUDENT', 'ROLE_USER'])]
-    public string $role = 'ROLE_USER';
+    #[Assert\Length(min: 8, max: 4096)]
+    public ?string $password = null;
 
     public function getEmail(): string
     {
         return strtolower($this->emailPrefix) . '@3il.fr';
+    }
+
+    public function setEmail(string $email): void
+    {
+        $this->emailPrefix = preg_replace('/@3il\.fr$/i', '', strtolower($email)) ?? '';
     }
 }

@@ -6,7 +6,7 @@
     <div class="footerlinks">
         <a href="{{ path('app_legal_mentions') }}"
            class="{% if 'app_legal_mentions' == app.request.get('_route') %}active{% endif %}">
-            Mentions légales
+            Mentions
         </a>
         <a href="{{ path('app_legal_privacy') }}"
            class="{% if 'app_legal_privacy' == app.request.get('_route') %}active{% endif %}">
@@ -23,6 +23,8 @@
                     Admin
                 </a>
             {% endif %}
+            <a href="{{ path('app_profile') }}"
+               class="{% if 'app_profile' == app.request.get('_route') %}active{% endif %}">Profil</a>
             <a href="{{ path('app_logout') }}" onclick="return confirm('Vous partez ?')">Déconnexion</a>
         {% endif %}
     </div>

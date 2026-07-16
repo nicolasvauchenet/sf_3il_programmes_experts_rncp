@@ -25,10 +25,13 @@
             </div>
 
             <div class="form-group">
-                {{ form_label(form.email) }}
+                {{ form_label(form.emailPrefix) }}
                 <div>
-                    {{ form_widget(form.email) }}
-                    {{ form_errors(form.email) }}
+                    <div class="email-suffix-field">
+                        {{ form_widget(form.emailPrefix) }}
+                        <span>@3il.fr</span>
+                    </div>
+                    {{ form_errors(form.emailPrefix) }}
                 </div>
             </div>
 

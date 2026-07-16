@@ -1,19 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Nouvel utilisateur{% endblock %}
+{% block title %}Mon profil{% endblock %}
 
 {% block body %}
-    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
     <main class="app-main center">
         <section class="app-section boxed">
-            <h1>Nouvel utilisateur</h1>
-            <p class="subtitle">Créer un compte et définir son niveau d'accès.</p>
+            <h1>Mon profil</h1>
+            <p class="subtitle">Modifier vos informations de connexion.</p>
 
             <hr/>
 
-            {{ form_start(form, { attr: { class: 'app-form admin-user-form', 'data-controller': 'password-visibility' } }) }}
+            {{ form_start(form, { attr: { class: 'app-form profile-form', 'data-controller': 'password-visibility' } }) }}
                 {{ form_errors(form) }}
 
                 <div class="form-group">
@@ -36,27 +36,31 @@
                 </div>
 
                 <div class="form-group">
-                    {{ form_label(form.password) }}
+                    {{ form_label(form.password.first) }}
                     <div>
                         <div class="password-field">
-                            {{ form_widget(form.password) }}
+                            {{ form_widget(form.password.first) }}
                             {% include '_components/_password_toggle.html.twig' %}
                         </div>
                         {{ form_errors(form.password) }}
+                        {{ form_errors(form.password.first) }}
                     </div>
                 </div>
 
                 <div class="form-group">
-                    {{ form_label(form.role) }}
+                    {{ form_label(form.password.second) }}
                     <div>
-                        {{ form_widget(form.role) }}
-                        {{ form_errors(form.role) }}
+                        <div class="password-field">
+                            {{ form_widget(form.password.second) }}
+                            {% include '_components/_password_toggle.html.twig' %}
+                        </div>
+                        {{ form_errors(form.password.second) }}
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <a href="{{ path('app_admin_users_home') }}" class="app-button outline">&laquo; Retour</a>
-                    <button type="submit" class="app-button form-submit">Créer</button>
+                    <a href="{{ path('app_home') }}" class="app-button outline">&laquo; Retour</a>
+                    <button type="submit" class="app-button form-submit">Modifier</button>
                 </div>
             {{ form_end(form) }}
         </section>

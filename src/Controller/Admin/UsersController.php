@@ -89,17 +89,17 @@ final class UsersController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted()) {
-            $existingUser = $userRepository->findOneBy(['email' => strtolower($input->email)]);
+            $existingUser = $userRepository->findOneBy(['email' => $input->getEmail()]);
 
             if ($existingUser instanceof User) {
-                $form->get('email')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
+                $form->get('emailPrefix')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
             }
         }
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user = (new User())
                 ->setFullName($input->fullName)
-                ->setEmail($input->email)
+                ->setEmail($input->getEmail())
                 ->setRoles([$input->role])
                 ->setIsActive(true)
                 ->setIsAccepted(true);
@@ -129,24 +129,24 @@ final class UsersController extends AbstractController
     ): Response {
         $input = new EditUserInput();
         $input->fullName = $user->getFullName() ?? '';
-        $input->email = $user->getEmail() ?? '';
+        $input->setEmail($user->getEmail() ?? '');
         $input->role = $this->resolveEditableRole($user->getRoles());
 
         $form = $this->createForm(EditUserType::class, $input);
         $form->handleRequest($request);
 
         if ($form->isSubmitted()) {
-            $existingUser = $userRepository->findOneBy(['email' => strtolower($input->email)]);
+            $existingUser = $userRepository->findOneBy(['email' => $input->getEmail()]);
 
             if ($existingUser instanceof User && $existingUser->getId() !== $user->getId()) {
-                $form->get('email')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
+                $form->get('emailPrefix')->addError(new FormError('Un compte existe déjà avec cette adresse email.'));
             }
         }
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user
                 ->setFullName($input->fullName)
-                ->setEmail($input->email)
+                ->setEmail($input->getEmail())
                 ->setRoles([$input->role]);
 
             if (null !== $input->password && '' !== $input->password) {

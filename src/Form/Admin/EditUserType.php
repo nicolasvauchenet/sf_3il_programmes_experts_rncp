@@ -5,7 +5,6 @@ namespace App\Form\Admin;
 use App\Dto\Admin\EditUserInput;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -26,11 +25,11 @@ final class EditUserType extends AbstractType
                     'class' => 'form-label',
                 ],
             ])
-            ->add('email', EmailType::class, [
+            ->add('emailPrefix', TextType::class, [
                 'label' => 'Adresse e-mail',
                 'attr' => [
                     'class' => 'form-control',
-                    'autocomplete' => 'email',
+                    'autocomplete' => 'username',
                 ],
                 'label_attr' => [
                     'class' => 'form-label',
