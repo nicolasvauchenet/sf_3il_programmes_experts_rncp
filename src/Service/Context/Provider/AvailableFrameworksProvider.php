@@ -64,4 +64,22 @@ final readonly class AvailableFrameworksProvider
 
         return $contexts;
     }
+
+    public function findLatestAcademicYearForPromotion(string $promotionCode): ?string
+    {
+        $latestYear = null;
+        $normalizedPromotionCode = strtolower($promotionCode);
+
+        foreach ($this->listAvailable() as $context) {
+            if (strtolower($context->promotionCode) !== $normalizedPromotionCode) {
+                continue;
+            }
+
+            if ($latestYear === null || $context->academicYear > $latestYear) {
+                $latestYear = $context->academicYear;
+            }
+        }
+
+        return $latestYear;
+    }
 }
