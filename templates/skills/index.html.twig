@@ -7,29 +7,33 @@
 {% endblock %}
 
 {% block body %}
-    {% include '_layout/default/_header.html.twig' %}
-    {% include '_layout/default/_alert.html.twig' %}
+    {% if not pdfMode|default(false) %}
+        {% include '_layout/default/_header.html.twig' %}
+        {% include '_layout/default/_alert.html.twig' %}
+    {% endif %}
 
     <main class="app-main">
-        <div class="app-grid third layout">
-            {% include '_layout/default/_toc.html.twig' with {
+        <div class="{{ pdfMode|default(false) ? '' : 'app-grid third layout' }}">
+            {% if not pdfMode|default(false) %}{% include '_layout/default/_toc.html.twig' with {
                 'title': 'Compétence',
                 'path': 'app_promotion_skills',
                 'promotion': promotion,
                 'year': year,
                 'content': skills,
                 'selectedCode': selectedCode
-            } %}
+            } %}{% endif %}
 
-            <article>
+            <article class="printable-content">
                 <div class="app-grid third">
-                    <section class="app-section centered">
+                    {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
                             <h4 class="text-center">Fiche Compétence {{ skill.fullSkillCode }}</h4>
                             <h1>{{ skill.title ?: 'Compétence' }}</h1>
                         </div>
+
+                        {% if not pdfMode|default(false) %}{% include '_layout/default/_print_button.html.twig' %}{% endif %}
 
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
@@ -38,15 +42,24 @@
                                 <span class="app-badge">{{ skill.academicYear }}</span>
                             {% endif %}
                         </div>
-                    </section>
+                    </section>{% endif %}
 
-                    <section class="app-section centered">
+                    {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h2>Métriques</h2>
 
                         <div style="height: 200px">
                             {{ render_chart(skillMetricsChart) }}
                         </div>
-                    </section>
+                    </section>{% else %}
+                        <section class="app-section centered">
+                            <h2>Métriques</h2>
+                            <table class="pdf-metrics"><tr>
+                                <td><strong>{{ skill.modules|length }}</strong><span>Matières</span></td>
+                                <td><strong>{{ skill.evaluations|length }}</strong><span>Évaluations</span></td>
+                                <td><strong>{{ skill.criteria|length }}</strong><span>Critères</span></td>
+                            </tr></table>
+                        </section>
+                    {% endif %}
                 </div>
 
                 {% if skill.description is not empty %}
@@ -161,5 +174,5 @@
         </div>
     </main>
 
-    {% include '_layout/default/_footer.html.twig' %}
+    {% if not pdfMode|default(false) %}{% include '_layout/default/_footer.html.twig' %}{% endif %}
 {% endblock %}

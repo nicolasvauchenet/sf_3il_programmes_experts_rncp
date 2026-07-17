@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Dto\Context\ResolvedEvaluationSheet;
 use App\Service\Chart\EvaluationChartService;
 use App\Service\Context\Provider\FrameworkEvaluationsProvider;
+use App\Service\Pdf\PdfGenerator;
+use App\Twig\PromotionContext;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,6 +19,8 @@ final class EvaluationsController extends AbstractController
         Request                      $request,
         FrameworkEvaluationsProvider $evaluationsProvider,
         EvaluationChartService       $evaluationChartService,
+        PdfGenerator                  $pdfGenerator,
+        PromotionContext              $promotionContext,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -64,7 +68,7 @@ final class EvaluationsController extends AbstractController
 
         $evaluationVolumeChart = $evaluationChartService->createEvaluationVolumeChart($selectedEvaluation);
 
-        return $this->render('evaluations/index.html.twig', [
+        $viewData = [
             'promotion' => $promotion,
             'year' => $year,
             'evaluations' => $evaluations,
@@ -72,7 +76,23 @@ final class EvaluationsController extends AbstractController
             'selectedBlock' => $selectedBlock,
             'evaluation' => $selectedEvaluation,
             'evaluationVolumeChart' => $evaluationVolumeChart,
-        ]);
+        ];
+
+        if ($request->query->get('download') === 'pdf') {
+            $viewData['pdfMode'] = true;
+
+            return $pdfGenerator->download(
+                $this->renderView('evaluations/index.html.twig', $viewData),
+                sprintf('evaluation-%s.pdf', $selectedEvaluation->evaluationCode()),
+                [
+                    'promotionTitle' => $promotionContext->getPromotionTitle() ?? strtoupper($promotion),
+                    'sheetLabel' => sprintf('Fiche Évaluation %s', $selectedEvaluation->evaluationCode()),
+                    'sheetTitle' => $selectedEvaluation->title() ?: 'Évaluation',
+                ],
+            );
+        }
+
+        return $this->render('evaluations/index.html.twig', $viewData);
     }
 
     /**
