@@ -25,15 +25,14 @@
 
             <article class="printable-content">
                 <div class="app-grid third">
-                    {% if not pdfMode|default(false) %}<section class="app-section centered">
+                    {% if not pdfMode|default(false) %}
+                        <section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
                             <h4 class="text-center">Fiche Projet {{ project.projectCode }}</h4>
                             <h1>{{ project.title ?: 'Projet' }}</h1>
                         </div>
-
-                        {% if not pdfMode|default(false) %}{% include '_layout/default/_print_button.html.twig' %}{% endif %}
 
                         <div class="ribbon mt-2">
                             <span class="app-badge">{{ promotion | upper }}</span>
@@ -45,23 +44,30 @@
                             {% endif %}
 
                             <span class="app-badge">{{ year }}</span>
-                        </div>
-                    </section>{% endif %}
 
-                    {% if not pdfMode|default(false) %}<section class="app-section centered">
+                            {% if not pdfMode|default(false) %}
+                                {% include '_layout/default/_print_button.html.twig' %}
+                            {% endif %}
+                        </div>
+                        </section>{% endif %}
+
+                    {% if not pdfMode|default(false) %}
+                        <section class="app-section centered">
                         <h2>Métriques</h2>
 
                         <div style="height: 200px">
                             {{ render_chart(projectVolumeChart) }}
                         </div>
-                    </section>{% else %}
+                        </section>{% else %}
                         <section class="app-section centered">
                             <h2>Métriques</h2>
-                            <table class="pdf-metrics"><tr>
-                                <td><strong>{{ project.skills|length }}</strong><span>Compétences</span></td>
-                                <td><strong>{{ project.evaluations|length }}</strong><span>Évaluations</span></td>
-                                <td><strong>{{ project.exercises|length }}</strong><span>Exercices</span></td>
-                            </tr></table>
+                            <table class="pdf-metrics">
+                                <tr>
+                                    <td><strong>{{ project.skills|length }}</strong><span>Compétences</span></td>
+                                    <td><strong>{{ project.evaluations|length }}</strong><span>Évaluations</span></td>
+                                    <td><strong>{{ project.exercises|length }}</strong><span>Exercices</span></td>
+                                </tr>
+                            </table>
                         </section>
                     {% endif %}
                 </div>

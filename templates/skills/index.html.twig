@@ -33,13 +33,15 @@
                             <h1>{{ skill.title ?: 'Compétence' }}</h1>
                         </div>
 
-                        {% if not pdfMode|default(false) %}{% include '_layout/default/_print_button.html.twig' %}{% endif %}
-
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
                             <span class="app-badge">{{ skill.fullSkillCode }}</span>
                             {% if skill.academicYear %}
                                 <span class="app-badge">{{ skill.academicYear }}</span>
+                            {% endif %}
+
+                            {% if not pdfMode|default(false) %}
+                                {% include '_layout/default/_print_button.html.twig' %}
                             {% endif %}
                         </div>
                     </section>{% endif %}
