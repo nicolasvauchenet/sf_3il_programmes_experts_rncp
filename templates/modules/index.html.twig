@@ -35,10 +35,6 @@
                             <h1>{{ module.title ?: 'Matière' }}</h1>
                         </div>
 
-                        {% if not pdfMode|default(false) %}
-                            {% include '_layout/default/_print_button.html.twig' %}
-                        {% endif %}
-
                         <div class="ribbon mt-2">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
@@ -49,6 +45,10 @@
                             {% endif %}
 
                             <span class="app-badge">{{ year }}</span>
+
+                            {% if not pdfMode|default(false) %}
+                                {% include '_layout/default/_print_button.html.twig' %}
+                            {% endif %}
                         </div>
                     </section>{% endif %}
 

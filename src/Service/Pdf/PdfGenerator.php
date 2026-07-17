@@ -75,12 +75,30 @@ final class PdfGenerator
             $drawRightAlignedText($header['promotionTitle'], 14, 8);
             $drawRightAlignedText($header['sheetLabel'], 31, 7.5);
             $drawRightAlignedText($header['sheetTitle'], 48, 11);
+            $ruleColor = [0.55, 0.65, 0.69];
+            $canvas->line(
+                $headerSideMargin,
+                82,
+                $pageWidth - $headerSideMargin,
+                82,
+                $ruleColor,
+                0.6,
+            );
 
             $label = sprintf('Page %d/%d', $pageNumber, $pageCount);
             $fontSize = 8;
             $rightMargin = 31;
             $bottomMargin = 23;
             $textWidth = $fontMetrics->getTextWidth($label, $font, $fontSize);
+
+            $canvas->line(
+                $headerSideMargin,
+                $canvas->get_height() - 34,
+                $pageWidth - $headerSideMargin,
+                $canvas->get_height() - 34,
+                $ruleColor,
+                0.6,
+            );
 
             $canvas->text(
                 $canvas->get_width() - $rightMargin - $textWidth,
