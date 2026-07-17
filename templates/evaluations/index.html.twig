@@ -33,8 +33,6 @@
                             <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
                         </div>
 
-                        {% if not pdfMode|default(false) %}{% include '_layout/default/_print_button.html.twig' %}{% endif %}
-
                         <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
@@ -44,6 +42,10 @@
 
                             {% if evaluation.totalDuration %}
                                 <span class="app-badge">{{ evaluation.totalDuration }}</span>
+                            {% endif %}
+
+                            {% if not pdfMode|default(false) %}
+                                {% include '_layout/default/_print_button.html.twig' %}
                             {% endif %}
                         </div>
                     </section>{% endif %}
