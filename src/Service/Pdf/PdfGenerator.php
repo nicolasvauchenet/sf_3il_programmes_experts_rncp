@@ -46,7 +46,7 @@ final class PdfGenerator
             $primaryColor = [0.16, 0.36, 0.44];
             $headerSideMargin = 43;
 
-            $canvas->filled_rectangle(0, 0, $pageWidth, 86, [1, 1, 1]);
+            $canvas->filled_rectangle(0, 0, $pageWidth, 88, [1, 1, 1]);
             $canvas->image($logoPath, $headerSideMargin, 23, 230, 22.2);
 
             $drawRightAlignedText = static function (
@@ -73,14 +73,60 @@ final class PdfGenerator
             };
 
             $drawRightAlignedText($header['promotionTitle'], 14, 8);
-            $drawRightAlignedText($header['sheetLabel'], 31, 7.5);
-            $drawRightAlignedText($header['sheetTitle'], 48, 11);
+            $drawRightAlignedText($header['sheetLabel'], 28.5, 7.5);
+
+            $titleFontSize = 11.0;
+            $titleMaxWidth = 270.0;
+            $titleLines = [];
+
+            do {
+                $titleLines = [];
+                $currentLine = '';
+
+                foreach (preg_split('/\s+/', trim($header['sheetTitle'])) ?: [] as $word) {
+                    $candidate = $currentLine === '' ? $word : $currentLine . ' ' . $word;
+
+                    if (
+                        $currentLine !== ''
+                        && $fontMetrics->getTextWidth($candidate, $boldFont, $titleFontSize) > $titleMaxWidth
+                    ) {
+                        $titleLines[] = $currentLine;
+                        $currentLine = $word;
+                    } else {
+                        $currentLine = $candidate;
+                    }
+                }
+
+                if ($currentLine !== '') {
+                    $titleLines[] = $currentLine;
+                }
+
+                if (count($titleLines) > 3) {
+                    $titleFontSize -= 0.5;
+                }
+            } while (count($titleLines) > 3 && $titleFontSize >= 8);
+
+            $titleLineHeight = $titleFontSize + 2.5;
+            $titleStartY = match (count($titleLines)) {
+                1 => 48.0,
+                2 => 44.5,
+                default => 41.5,
+            };
+
+            foreach ($titleLines as $index => $titleLine) {
+                $drawRightAlignedText(
+                    $titleLine,
+                    $titleStartY + ($index * $titleLineHeight),
+                    $titleFontSize,
+                );
+            }
+
             $ruleColor = [0.55, 0.65, 0.69];
             $canvas->line(
                 $headerSideMargin,
-                82,
+                86,
                 $pageWidth - $headerSideMargin,
-                82,
+                86,
                 $ruleColor,
                 0.6,
             );
