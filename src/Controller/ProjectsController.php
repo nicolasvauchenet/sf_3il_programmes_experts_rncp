@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Dto\Context\ResolvedProjectSheet;
 use App\Service\Chart\ProjectChartService;
 use App\Service\Context\Provider\FrameworkProjectsProvider;
+use App\Service\Pdf\PdfGenerator;
+use App\Twig\PromotionContext;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,6 +19,8 @@ final class ProjectsController extends AbstractController
         Request                   $request,
         FrameworkProjectsProvider $projectsProvider,
         ProjectChartService       $projectChartService,
+        PdfGenerator              $pdfGenerator,
+        PromotionContext          $promotionContext,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -64,7 +68,7 @@ final class ProjectsController extends AbstractController
 
         $projectVolumeChart = $projectChartService->createProjectVolumeChart($selectedProject);
 
-        return $this->render('projects/index.html.twig', [
+        $viewData = [
             'promotion' => $promotion,
             'year' => $year,
             'projects' => $projects,
@@ -72,7 +76,23 @@ final class ProjectsController extends AbstractController
             'selectedBlock' => $selectedBlock,
             'project' => $selectedProject,
             'projectVolumeChart' => $projectVolumeChart,
-        ]);
+        ];
+
+        if ($request->query->get('download') === 'pdf') {
+            $viewData['pdfMode'] = true;
+
+            return $pdfGenerator->download(
+                $this->renderView('projects/index.html.twig', $viewData),
+                sprintf('projet-%s.pdf', $selectedProject->projectCode()),
+                [
+                    'promotionTitle' => $promotionContext->getPromotionTitle() ?? strtoupper($promotion),
+                    'sheetLabel' => sprintf('Fiche Projet %s', $selectedProject->projectCode()),
+                    'sheetTitle' => $selectedProject->title() ?: 'Projet',
+                ],
+            );
+        }
+
+        return $this->render('projects/index.html.twig', $viewData);
     }
 
     /**
