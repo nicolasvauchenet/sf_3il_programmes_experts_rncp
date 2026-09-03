@@ -7,6 +7,12 @@ Application Symfony de consultation et d'import des referentiels de formation RN
 - PHP et Composer installes
 - Les variables `.env` configurees, notamment `DATABASE_URL`
 
+Pour une mise en production manuelle avec Docker Compose, voir :
+
+```text
+documentation/mep-manuelle.md
+```
+
 Par defaut, le projet pointe vers :
 
 ```dotenv
