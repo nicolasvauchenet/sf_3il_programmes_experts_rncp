@@ -21,7 +21,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes d'administration et de configuration des serveurs web (Comprendre) Optimiser et sécuriser les serveurs web en appliquant les bonnes pratiques (Appliquer) Évaluer les performances et la sécurité d'une infrastructure d'hébergement (Évaluer)"
+        "description": "Les objectifs pédagogiques de ce module sont de comprendre les principes de base de l'administration d'hébergement web, de maîtriser la gestion et la sécurité des serveurs, et d'assurer la haute disponibilité et scalabilité des services. Les apprenants sauront également installer, configurer et maintenir des services et applications web sur un serveur tout en optimisant leur performance. Enfin, ils comprendront les rôles et responsabilités en tant qu'administrateur d'hébergement web."
     },
     "prerequisites": {
         "description": "Des connaissances de base en réseaux informatiques et en administration de systèmes d'exploitation, ainsi qu'une compréhension générale du fonctionnement du web."
@@ -83,57 +83,58 @@
     "exercises": [
         {
             "title": "Comprendre les principes de base de l'administration d'hébergement web",
-            "context": "Tâche : Réaliser une recherche sur les principes de base de l'administration d'hébergement web et rédiger un court résumé des résultats.",
-            "objective": "Objectif : Permettre aux apprenants de comprendre et d'assimiler les principes fondamentaux de l'administration d'hébergement web."
+            "objectif": "Comprendre et assimiler les principes fondamentaux de l'administration d'hébergement web.",
+            "instructions": "Réalisez une recherche sur les principes de base de l'administration d'hébergement web et rédigez un court résumé des résultats.",
+            "livrable": "Un court résumé présentant les résultats de la recherche sur les principes de base de l'administration d'hébergement web."
         },
         {
             "title": "Installer et configurer un serveur web",
-            "context": "Tâche : Installer un serveur web de leur choix (Apache, Nginx, etc.) sur un environnement local ou distant, puis le configurer pour héberger une page HTML de test.",
-            "objective": "Objectif : Permettre aux apprenants de mettre en pratique leurs connaissances acquises en matière d'installation et de configuration de serveurs web."
+            "objectif": "Mettre en pratique l'installation et la configuration d'un serveur web.",
+            "instructions": "Installez un serveur web de votre choix (Apache, Nginx, etc.) sur un environnement local ou distant, puis configurez-le pour héberger une page HTML de test.",
+            "livrable": "Un serveur web installé et configuré hébergeant la page HTML de test."
         },
         {
             "title": "Mise en place de certificats SSL et gestion des clés",
-            "context": "Tâche : Installer un certificat SSL sur un serveur web, générer et gérer les clés associées, puis vérifier le bon fonctionnement de la connexion sécurisée.",
-            "objective": "Objectif : Permettre aux apprenants de maîtriser la mise en place de certificats SSL et la gestion des clés pour assurer la sécurité des connexions."
+            "objectif": "Maîtriser la mise en place de certificats SSL et la gestion des clés pour sécuriser les connexions.",
+            "instructions": "Installez un certificat SSL sur un serveur web, générez et gérez les clés associées, puis vérifiez le bon fonctionnement de la connexion sécurisée.",
+            "livrable": "Un serveur web disposant d'un certificat SSL opérationnel et d'une connexion sécurisée vérifiée."
         },
         {
             "title": "Installation, configuration et maintenance d'une application web",
-            "context": "Tâche : Choisir une application web (par exemple, WordPress, Joomla, etc.), l'installer, la configurer et assurer sa maintenance sur un serveur.",
-            "objective": "Objectif : Permettre aux apprenants de mettre en pratique leurs compétences en matière d'installation, configuration et maintenance d'applications web sur un serveur."
+            "objectif": "Mettre en pratique l'installation, la configuration et la maintenance d'une application web sur un serveur.",
+            "instructions": "Choisissez une application web (par exemple WordPress, Joomla, etc.), installez-la, configurez-la et assurez sa maintenance sur un serveur.",
+            "livrable": "Une application web installée, configurée et maintenue sur un serveur."
         },
         {
             "title": "Mise en place d'une architecture redondante",
-            "context": "Tâche : Concevoir et mettre en place une architecture redondante pour un service ou une application web spécifique, en utilisant les techniques apprises dans le cours.",
-            "objective": "Objectif : Permettre aux apprenants de comprendre et de mettre en œuvre les concepts de haute disponibilité et de redondance dans le contexte de l'administration d'hébergement web."
+            "objectif": "Comprendre et mettre en oeuvre les concepts de haute disponibilité et de redondance en hébergement web.",
+            "instructions": "Concevez et mettez en place une architecture redondante pour un service ou une application web spécifique, en utilisant les techniques apprises dans le cours.",
+            "livrable": "Une architecture redondante conçue et mise en place pour le service ou l'application web retenu."
         }
     ],
     "bibliography": [
         {
-            "title": "Linux Apache Web Server Administration (3rd ed.)",
-            "author": "Aulds, C"
-        },
-        {
-            "title": "Mastering NGINX (3rd ed.)",
+            "title": "Mastering NGINX (2e éd.). Packt",
             "author": "Aivaliotis, D"
         },
         {
-            "title": "Linux Server Security : Hack and Defend",
-            "author": "Bergmann, M"
+            "title": "Linux Server Security : Hack and Defend. Wiley",
+            "author": "Binnie, C"
         }
     ],
     "OnlineResources": [
         "Apache HTTP Server Documentation (https://httpd.apache.org/docs/) [EN]",
         "NGINX Documentation (https://nginx.org/en/docs/) [EN]",
-        "Mozilla Server Side TLS Configuration (https://wiki.mozilla.org/Security/Server_Side_TLS) [EN]",
-        "ANSSI — Recommandations sécurité serveurs web (https://www.ssi.gouv.fr) [FR]",
-        "Let's Encrypt — Certificats SSL gratuits (https://letsencrypt.org) [EN/FR]"
+        "TLSRef - configurations TLS de référence Configuration (https://docs.tlsref.org/) [EN]",
+        "ANSSI - Recommandations sécurité serveurs web (https://cyber.gouv.fr/) [FR]",
+        "Let's Encrypt - Certificats SSL gratuits (https://letsencrypt.org) [EN/FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

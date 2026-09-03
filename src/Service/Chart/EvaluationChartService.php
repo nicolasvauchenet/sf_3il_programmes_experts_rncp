@@ -20,17 +20,17 @@ final readonly class EvaluationChartService
     public function createEvaluationVolumeChart(ResolvedEvaluationSheet $evaluation): Chart
     {
         $skillsCount = count($evaluation->skills);
-        $criteriaCount = count($evaluation->criteria);
-        $partsCount = count($evaluation->examParts());
+        $modulesCount = count($evaluation->modules);
+        $projectsCount = count($evaluation->projects);
 
         $chart = $this->chartBuilder->createChart(Chart::TYPE_BAR);
 
         $chart->setData([
-            'labels' => ['Compétences', 'Critères', 'Épreuves'],
+            'labels' => ['Compétences', 'Matières', 'Projets'],
             'datasets' => [
                 [
                     'label' => 'Volumétrie de l’évaluation',
-                    'data' => [$skillsCount, $criteriaCount, $partsCount],
+                    'data' => [$skillsCount, $modulesCount, $projectsCount],
                     'backgroundColor' => [
                         $this->hexToRgba(self::COLOR_BLUE, 1),
                         $this->hexToRgba(self::COLOR_ORANGE, 1),

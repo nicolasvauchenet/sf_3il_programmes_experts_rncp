@@ -81,55 +81,66 @@
                     "Gestion des correctifs et des mises à jour de sécurité",
                     "Surveillance et détection des menaces liées à l'infrastructure en tant que code"
                 ]
+            },
+            {
+                "title": "Chapitre 6 : Conteneurisation et orchestration",
+                "items": [
+                    "Principes de la conteneurisation et cas d'usage (Docker)",
+                    "Construire et gérer des images et des conteneurs",
+                    "Orchestrer des conteneurs à l'échelle avec Kubernetes",
+                    "Intégrer la conteneurisation dans les pipelines d'intégration et de déploiement continus",
+                    "Assurer la sécurité et la supervision des environnements conteneurisés"
+                ]
             }
         ]
     },
     "exercises": [
         {
             "title": "Définition et objectifs de l'Infrastructure As Code",
-            "context": "Vous êtes chargé de présenter à vos collègues les définitions et objectifs de l'Infrastructure As Code.",
-            "objective": "Pour ce faire, créez un document de présentation mettant en avant les principales caractéristiques de l'Infrastructure As Code, ainsi que ses objectifs. Vous pouvez inclure des exemples concrets pour illustrer vos propos."
+            "objectif": "Comprendre et présenter les caractéristiques et objectifs de l'Infrastructure As Code.",
+            "instructions": "Créez un document de présentation mettant en avant les principales caractéristiques de l'Infrastructure As Code ainsi que ses objectifs. Illustrez vos propos par des exemples concrets.",
+            "livrable": "Un document de présentation exposant les caractéristiques et objectifs de l'Infrastructure As Code, illustré d'exemples concrets."
         },
         {
             "title": "Utilisation des outils de gestion de configuration",
-            "context": "Choisissez l'un des outils de gestion de configuration (Ansible, Puppet, Chef) et créez un script de déploiement d'une infrastructure simplifiée.",
-            "objective": "Votre script devra automatiser le déploiement de différentes ressources (ex : serveur web, base de données) sur une plateforme de votre choix."
+            "objectif": "Savoir automatiser le déploiement d'une infrastructure avec un outil de gestion de configuration.",
+            "instructions": "Choisissez l'un des outils de gestion de configuration (Ansible, Puppet, Chef). Créez un script de déploiement d'une infrastructure simplifiée automatisant le déploiement de différentes ressources (par exemple serveur web, base de données) sur une plateforme de votre choix.",
+            "livrable": "Un script de déploiement fonctionnel automatisant la mise en place des ressources d'une infrastructure simplifiée sur la plateforme choisie."
         },
         {
             "title": "Provisionnement des ressources sur une plateforme cloud",
-            "context": "Sélectionnez une plateforme cloud (AWS, Azure, Google Cloud) et utilisez l'outil de provisionnement de votre choix (Terraform, CloudFormation, ARM Templates) pour déployer une infrastructure composée de machines virtuelles, de stockage et de réseaux.",
-            "objective": "Assurez-vous de gérer les environnements de développement, de test et de production."
+            "objectif": "Savoir provisionner une infrastructure cloud en gérant les différents environnements.",
+            "instructions": "Sélectionnez une plateforme cloud (AWS, Azure, Google Cloud). Utilisez l'outil de provisionnement de votre choix (Terraform, CloudFormation, ARM Templates) pour déployer une infrastructure composée de machines virtuelles, de stockage et de réseaux. Gérez les environnements de développement, de test et de production.",
+            "livrable": "Une infrastructure cloud provisionnée (machines virtuelles, stockage, réseaux) avec gestion des environnements de développement, de test et de production."
         },
         {
             "title": "Modélisation et gestion des dépendances entre les ressources",
-            "context": "Imaginez un scénario où plusieurs ressources (ex : serveur d'application, base de données, équilibrage de charge) doivent être déployées et interconnectées.",
-            "objective": "Modélisez cette infrastructure en utilisant des outils de gestion de configuration et assurez-vous de gérer correctement les dépendances entre les différentes ressources."
+            "objectif": "Savoir modéliser une infrastructure et gérer les dépendances entre ses ressources.",
+            "instructions": "Imaginez un scénario où plusieurs ressources (par exemple serveur d'application, base de données, équilibrage de charge) doivent être déployées et interconnectées. Modélisez cette infrastructure à l'aide d'outils de gestion de configuration et gérez correctement les dépendances entre les différentes ressources.",
+            "livrable": "Une infrastructure modélisée avec ses ressources interconnectées et une gestion correcte des dépendances entre elles."
         },
         {
             "title": "Sécurité de l'infrastructure en tant que code",
-            "context": "Identifiez les bonnes pratiques de sécurité liées à l'Infrastructure As Code et concevez un plan de sécurisation pour une infrastructure en tant que code.",
-            "objective": "Vous devrez aborder la gestion des secrets, le contrôle de la conformité, la gestion des mises à jour de sécurité, ainsi que la surveillance et la détection des menaces potentielles."
+            "objectif": "Savoir concevoir un plan de sécurisation d'une infrastructure en tant que code.",
+            "instructions": "Identifiez les bonnes pratiques de sécurité liées à l'Infrastructure As Code. Concevez un plan de sécurisation abordant la gestion des secrets, le contrôle de la conformité, la gestion des mises à jour de sécurité, ainsi que la surveillance et la détection des menaces potentielles.",
+            "livrable": "Un plan de sécurisation de l'infrastructure en tant que code couvrant la gestion des secrets, la conformité, les mises à jour de sécurité et la surveillance des menaces."
         }
     ],
     "bibliography": [
         {
-            "title": "Infrastructure as Code (3e éd.)",
+            "title": "Infrastructure as Code : Designing and Delivering Dynamic Systems for the Cloud Age (3e éd.). O'Reilly",
             "author": "Morris, K"
         },
         {
-            "title": "Terraform: Up and Running (3e éd.)",
+            "title": "Terraform: Up and Running (3e éd.). O'Reilly",
             "author": "Brikman, Y"
-        },
-        {
-            "title": "Ansible: Up and Running (3e éd.)",
-            "author": "Hochstein, L. & Moser, R"
         }
     ],
     "OnlineResources": [
         "Terraform Documentation (https://developer.hashicorp.com/terraform/docs) [EN]",
         "Ansible Documentation (https://docs.ansible.com) [EN]",
         "Pulumi Documentation (https://www.pulumi.com/docs/) [EN]",
-        "AWS CloudFormation Documentation (https://docs.aws.amazon.com/cloudformation/) [EN]",
+        "AWS CloudFormation Documentation (https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) [EN]",
         "Microsoft Bicep Documentation (https://learn.microsoft.com/azure/azure-resource-manager/bicep/) [FR/EN]"
     ],
     "teachingMethods": [
@@ -137,7 +148,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

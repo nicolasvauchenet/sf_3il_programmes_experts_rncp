@@ -10,7 +10,24 @@
         "durationHours": 21,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s'adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d'assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs"
+        },
+        {
+            "code": "C27",
+            "description": "Élaborer et mettre en œuvre la conduite du changement en s'appuyant sur des référentiels tels qu'ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l'impact d'une évolution (mineure, delta ou majeure) de l'infrastructure sur l'environnement de production"
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l'équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l'écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les différents types de coûts et leur impact sur la gestion de projet (Comprendre) Calculer et analyser les coûts pour optimiser la rentabilité (Appliquer) Intégrer une gestion efficace des coûts dans la prise de décision et la gestion de projet (Évaluer)"
     },
@@ -74,28 +91,33 @@
     "exercises": [
         {
             "title": "Calcul du coût unitaire",
-            "context": "Imaginez que vous êtes le responsable financier d'une entreprise de fabrication de meubles.",
-            "objective": "Votre tâche est de calculer le coût unitaire de production pour une nouvelle chaise que votre entreprise souhaite lancer. Prenez en compte les matériaux nécessaires (bois, vis, peinture), le temps de travail, les coûts fixes de l'usine, et les coûts indirects. Fournissez un rapport détaillé comprenant le calcul du coût unitaire et expliquez comment ce coût influencera le prix de vente de la chaise."
+            "objectif": "Être capable de calculer le coût unitaire de production d'un produit et d'en déduire l'impact sur le prix de vente.",
+            "instructions": "Dans le rôle du responsable financier d'un éditeur de logiciels, calculez le coût unitaire de production d'une nouvelle application mobile que l'entreprise souhaite commercialiser sous forme d'abonnement mensuel. Prenez en compte les ressources techniques nécessaires (licences d'outils, hébergement cloud, API tierces), le temps de travail des équipes de développement et de test, les coûts fixes de la structure (locaux, encadrement, matériel) et les coûts indirects (support, administration). Rapportez l'ensemble de ces coûts au nombre d'utilisateurs abonnés visés afin d'obtenir un coût unitaire par utilisateur. Fournissez un rapport détaillé comprenant le calcul du coût unitaire et expliquez comment ce coût influencera le prix de l'abonnement de l'application.",
+            "livrable": "Un rapport détaillé présentant le calcul du coût unitaire par utilisateur de l'application mobile (ressources techniques, temps de travail, coûts fixes et indirects) et expliquant son influence sur le prix de l'abonnement."
         },
         {
             "title": "Analyse de la méthode ABC",
-            "context": "En tant que consultant en gestion des coûts, votre mission est d'analyser l'efficacité de la méthode ABC pour une entreprise de services informatiques.",
-            "objective": "Identifiez les principales activités, attribuez les coûts indirects aux activités et aux services offerts, puis évaluez si la méthode ABC a fourni une meilleure compréhension des coûts par rapport à une méthode de coûts complets traditionnelle. Présentez vos conclusions dans une présentation PowerPoint à la direction de l'entreprise."
+            "objectif": "Être capable d'appliquer la méthode ABC et d'en évaluer l'apport par rapport à la méthode des coûts complets.",
+            "instructions": "En tant que consultant en gestion des coûts, analysez l'efficacité de la méthode ABC pour une entreprise de services informatiques. Identifiez les principales activités, attribuez les coûts indirects aux activités et aux services offerts, puis évaluez si la méthode ABC apporte une meilleure compréhension des coûts que la méthode des coûts complets traditionnelle. Présentez vos conclusions dans un support de présentation à destination de la direction de l'entreprise.",
+            "livrable": "Un support de présentation à destination de la direction exposant l'identification des activités, l'attribution des coûts indirects et l'évaluation de l'apport de la méthode ABC par rapport à la méthode des coûts complets."
         },
         {
             "title": "Calcul du seuil de rentabilité",
-            "context": "Vous êtes le directeur d'une start-up qui produit des accessoires de vélo.",
-            "objective": "Calculez le seuil de rentabilité de votre produit phare en fonction des coûts fixes et variables que vous avez identifiés. Déterminez ensuite le volume de ventes nécessaire pour atteindre la rentabilité et proposez des stratégies pour augmenter les ventes ou réduire les coûts afin d'atteindre le seuil de rentabilité plus rapidement. Préparez un rapport incluant des graphiques illustrant le seuil de rentabilité."
+            "objectif": "Être capable de calculer le seuil de rentabilité d'un produit et de proposer des stratégies pour l'atteindre.",
+            "instructions": "Directeur d'une start-up qui édite un service SaaS de gestion en ligne, calculez le seuil de rentabilité de votre offre phare à partir des coûts fixes (salaires des équipes, hébergement, licences, structure) et des coûts variables (coût d'hébergement et de support par abonné supplémentaire) que vous avez identifiés. Déterminez ensuite le volume de ventes nécessaire, c'est-à-dire le nombre d'abonnements à vendre, pour atteindre la rentabilité, et proposez des stratégies pour augmenter les ventes ou réduire les coûts afin d'atteindre le seuil de rentabilité plus rapidement. Préparez un rapport incluant des graphiques illustrant le seuil de rentabilité.",
+            "livrable": "Un rapport présentant le calcul du seuil de rentabilité de l'offre SaaS, le volume d'abonnements nécessaire à la rentabilité, des stratégies d'augmentation des ventes ou de réduction des coûts, et des graphiques illustrant le seuil de rentabilité."
         },
         {
             "title": "Identification des leviers d'optimisation des coûts",
-            "context": "Votre entreprise est confrontée à des pressions concurrentielles et doit réduire ses coûts de production.",
-            "objective": "En tant que membre de l'équipe d'optimisation des coûts, identifiez trois leviers principaux pour réduire les coûts dans la chaîne de production. Proposez un plan d'action pour chaque levier, y compris des changements de processus, des investissements en équipements plus efficaces ou des renégociations avec les fournisseurs. Rédigez un rapport expliquant comment ces changements pourraient être mis en œuvre et les économies escomptées."
+            "objectif": "Être capable d'identifier des leviers d'optimisation des coûts et d'en planifier la mise en oeuvre.",
+            "instructions": "Votre entreprise, confrontée à des pressions concurrentielles, doit réduire ses coûts de production. En tant que membre de l'équipe d'optimisation des coûts, identifiez trois leviers principaux de réduction des coûts dans la chaîne de production. Proposez un plan d'action pour chaque levier (changements de processus, investissements en équipements plus efficaces ou renégociations avec les fournisseurs). Rédigez un rapport expliquant comment ces changements pourraient être mis en oeuvre et les économies escomptées.",
+            "livrable": "Un rapport présentant trois leviers d'optimisation des coûts, un plan d'action pour chacun et l'estimation des économies escomptées."
         },
         {
             "title": "Gestion des coûts d'un projet",
-            "context": "Vous êtes le chef de projet pour le développement d'une nouvelle application mobile.",
-            "objective": "Utilisez un logiciel de gestion de projet pour créer un budget prévisionnel, incluant tous les coûts associés au projet (ressources humaines, technologies, licences, etc.). Ensuite, simulez une augmentation de 10% des coûts des technologies et analysez l'impact sur le budget global et le plan de projet. Préparez un plan de communication pour informer les parties prenantes de la nécessité de réajuster le budget ou le calendrier du projet en conséquence."
+            "objectif": "Être capable d'élaborer un budget prévisionnel de projet et d'analyser l'impact d'une variation de coûts.",
+            "instructions": "Chef de projet pour le développement d'une nouvelle application mobile, utilisez un logiciel de gestion de projet pour créer un budget prévisionnel incluant l'ensemble des coûts associés au projet (ressources humaines, technologies, licences, etc.). Simulez ensuite une augmentation de 10 % des coûts des technologies et analysez son impact sur le budget global et sur le plan de projet. Préparez enfin un plan de communication pour informer les parties prenantes de la nécessité de réajuster le budget ou le calendrier du projet en conséquence.",
+            "livrable": "Un budget prévisionnel de projet, l'analyse de l'impact d'une augmentation de 10 % des coûts des technologies sur le budget global et le plan de projet, et un plan de communication à destination des parties prenantes."
         }
     ],
     "bibliography": [
@@ -109,10 +131,10 @@
         }
     ],
     "OnlineResources": [
-        "PMI — Earned Value Management (https://www.pmi.org/learning/library) [EN]",
-        "AFNOR — Norme NF X50-115 (https://www.afnor.org) [FR]",
+        "PMI - Earned Value Management (https://www.pmi.org/learning/library) [EN]",
+        "AFNOR - Norme NF X50-115 (https://www.afnor.org) [FR]",
         "INSEE (https://www.insee.fr) [FR]",
-        "CIGREF — Gestion des budgets IT (https://www.cigref.fr) [FR]",
+        "CIGREF - Gestion des budgets IT (https://www.cigref.fr) [FR]",
         "FinOps Foundation (https://www.finops.org) [EN]"
     ],
     "teachingMethods": [

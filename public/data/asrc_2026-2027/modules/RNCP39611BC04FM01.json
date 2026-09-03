@@ -2,7 +2,7 @@
     "meta": {
         "type": "module",
         "code": "RNCP39611-BC04-FM01",
-        "title": "Étude d'avant-projet (MOA)",
+        "title": "Etude d'avant projet (MOA)",
         "rncpCode": "39611",
         "blocCode": "BC04",
         "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
@@ -21,7 +21,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre et analyser les besoins métier et fonctionnels (Analyser) Rédiger un cahier des charges détaillé et concevoir l'architecture technique nécessaire (Créer) Évaluer les solutions techniques et justifier les choix en fonction des contraintes et besoins identifiés (Évaluer) Estimer la faisabilité technique et formaliser des spécifications précises pour un projet donné (Appliquer)"
+        "description": "Les objectifs du module sont de permettre aux apprenants de comprendre et analyser les besoins métier et fonctionnels, de rédiger un cahier des charges détaillé et de concevoir l'architecture technique nécessaire. Ils apprendront également à évaluer les solutions techniques et à justifier leurs choix en fonction des contraintes et besoins identifiés. Enfin, le module vise à développer la capacité à estimer la faisabilité technique et à formaliser des spécifications précises pour un projet donné."
     },
     "prerequisites": {
         "description": "Connaissances de base en gestion de projet et en informatique, une compréhension des processus métier, et une première expérience en analyse des besoins ou en rédaction de documents techniques sont recommandées."
@@ -78,57 +78,62 @@
     "exercises": [
         {
             "title": "Compréhension des besoins",
-            "context": "Vous travaillez pour une entreprise qui souhaite améliorer son système de gestion des ressources humaines. Tâche : Identifiez les besoins métier et fonctionnels liés à la gestion des ressources humaines. Formalisez ces besoins en utilisant des méthodes d'analyse adéquates. Livrable attendu : Un rapport détaillé présentant les besoins identifiés et formalisés, avec une explication sur les méthodes d'analyse utilisées.",
-            "objective": ""
+            "objectif": "Savoir identifier et formaliser les besoins métier et fonctionnels d'un projet à l'aide de méthodes d'analyse adaptées.",
+            "instructions": "Pour une entreprise souhaitant améliorer son système de gestion des ressources humaines, identifiez les besoins métier et fonctionnels associés. Formalisez ces besoins en mobilisant des méthodes d'analyse adéquates.",
+            "livrable": "Un rapport détaillé présentant les besoins identifiés et formalisés, accompagné d'une explication des méthodes d'analyse utilisées."
         },
         {
             "title": "Évaluation de la faisabilité technique",
-            "context": "Vous avez identifié les besoins en gestion des ressources humaines de l'entreprise, et vous devez maintenant évaluer la faisabilité technique pour mettre en place un nouveau système. Tâche : Analysez la compatibilité avec le système informatique existant, identifiez les contraintes techniques, estimez les coûts et délais, et identifiez les risques techniques potentiels. Livrable attendu : Un rapport détaillé présentant votre analyse de la faisabilité technique, avec des recommandations pour surmonter les éventuelles contraintes et risques identifiés.",
-            "objective": ""
+            "objectif": "Être capable d'évaluer la faisabilité technique de la mise en place d'un nouveau système.",
+            "instructions": "À partir des besoins RH identifiés, analysez la compatibilité avec le système informatique existant, identifiez les contraintes techniques, estimez les coûts et délais, et identifiez les risques techniques potentiels.",
+            "livrable": "Un rapport détaillé présentant l'analyse de faisabilité technique, avec des recommandations pour surmonter les contraintes et risques identifiés."
         },
         {
             "title": "Rédaction d'un cahier des charges détaillé",
-            "context": "Sur la base des besoins identifiés et de l'analyse de la faisabilité technique, vous devez rédiger un cahier des charges détaillé pour le nouveau système de gestion des ressources humaines. Tâche : Définissez les fonctionnalités attendues, spécifiez les contraintes techniques, et intégrez les exigences de sécurité et de performance dans le cahier des charges. Livrable attendu : Un cahier des charges complet et précis, décrivant de manière exhaustive les besoins et spécifications pour le nouveau système.",
-            "objective": ""
+            "objectif": "Savoir rédiger un cahier des charges détaillé couvrant besoins, contraintes techniques et exigences de sécurité et de performance.",
+            "instructions": "Sur la base des besoins identifiés et de l'analyse de faisabilité technique, définissez les fonctionnalités attendues, spécifiez les contraintes techniques et intégrez les exigences de sécurité et de performance.",
+            "livrable": "Un cahier des charges complet et précis décrivant de manière exhaustive les besoins et spécifications du nouveau système."
         },
         {
             "title": "Conception de l'architecture technique",
-            "context": "Vous avez la charge de concevoir l'architecture technique du nouveau système de gestion des ressources humaines, en tenant compte des contraintes et besoins identifiés. Tâche : Décrivez l'architecture technique du système, spécifiez les interfaces avec les autres systèmes existants, et précisez les normes et standards à respecter. Livrable attendu : Un schéma détaillé de l'architecture technique, accompagné d'une explication claire des choix techniques et des normes retenues.",
-            "objective": ""
+            "objectif": "Être capable de concevoir l'architecture technique d'un système en respectant contraintes, besoins et standards.",
+            "instructions": "Décrivez l'architecture technique du nouveau système de gestion des ressources humaines, spécifiez les interfaces avec les autres systèmes existants et précisez les normes et standards à respecter.",
+            "livrable": "Un schéma détaillé de l'architecture technique, accompagné d'une explication claire des choix techniques et des normes retenues."
         },
         {
             "title": "Comparaison et justification de solutions techniques",
-            "context": "Vous devez évaluer différentes solutions techniques pour la mise en place du nouveau système de gestion des ressources humaines, et justifier votre choix final. Tâche : Comparez les solutions techniques possibles, évaluez leurs avantages et inconvénients, et choisissez la solution la plus adaptée aux besoins de l'entreprise. Justifiez votre choix technique retenu. Livrable attendu : Un rapport comparatif détaillé présentant les différentes solutions techniques analysées, avec une justification claire du choix final retenu.",
-            "objective": ""
+            "objectif": "Savoir comparer plusieurs solutions techniques et justifier le choix le plus adapté aux besoins de l'entreprise.",
+            "instructions": "Comparez les solutions techniques possibles pour le nouveau système, évaluez leurs avantages et inconvénients, choisissez la solution la plus adaptée aux besoins de l'entreprise et justifiez ce choix.",
+            "livrable": "Un rapport comparatif détaillé présentant les différentes solutions analysées, avec une justification claire du choix final retenu."
         }
     ],
     "bibliography": [
         {
-            "title": "Management d'un projet système d'information (10e éd.)",
+            "title": "Management d'un projet système d'information : principes, techniques, mise en œuvre et outils (8e éd.). Dunod",
             "author": "Morley, C"
         },
         {
-            "title": "Scrum, Kanban et l'agilité — Pour les chefs de projet et MOA",
-            "author": "Aubry, C"
+            "title": "Expression des besoins pour le SI : guide d'élaboration du cahier des charges (5e éd.). Eyrolles",
+            "author": "Constantinidis, Y"
         },
         {
-            "title": "Le génie logiciel : pratique des projets informatiques (4e éd.)",
+            "title": "Le génie logiciel (5e éd.). PUF, coll. « Que sais-je ? » n° 2956",
             "author": "Printz, J"
         }
     ],
     "OnlineResources": [
-        "BABOK Guide v3 — Business Analysis Body of Knowledge (https://www.iiba.org/babok-guide/) [EN]",
-        "PMBOK Guide — Project Management Institute (https://www.pmi.org) [EN]",
-        "CIGREF — Cahiers des charges et expression de besoin (https://www.cigref.fr) [FR]",
-        "DINUM — Guide pratique projets numériques (https://www.numerique.gouv.fr) [FR]",
-        "Modern Analyst — Business Analysis Resources (https://www.modernanalyst.com) [EN]"
+        "BABOK Guide v3 - Business Analysis Body of Knowledge (https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/) [EN]",
+        "PMBOK Guide - Project Management Institute (https://www.pmi.org) [EN]",
+        "CIGREF - Cahiers des charges et expression de besoin (https://www.cigref.fr) [FR]",
+        "Méthode Agile - guide pratique DINUM (https://www.numerique.gouv.fr) [FR]",
+        "Modern Analyst - Business Analysis Resources (https://www.modernanalyst.com) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

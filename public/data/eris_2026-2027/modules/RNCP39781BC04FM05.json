@@ -10,7 +10,24 @@
         "durationHours": 14,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s'adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d'assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs"
+        },
+        {
+            "code": "C27",
+            "description": "Élaborer et mettre en œuvre la conduite du changement en s'appuyant sur des référentiels tels qu'ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l'impact d'une évolution (mineure, delta ou majeure) de l'infrastructure sur l'environnement de production"
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l'équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l'écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Maîtriser la méthodologie et les étapes clés de la gestion de la recette (Appliquer) Planifier efficacement la recette et réaliser des tests appropriés (Créer) Gérer la validation et le suivi post-recette (Évaluer)"
     },
@@ -74,28 +91,33 @@
     "exercises": [
         {
             "title": "Simulation de Planification de Recette",
-            "context": "Vous êtes responsable de la planification d'une recette pour un nouveau logiciel de gestion de stock.",
-            "objective": "Créez un plan détaillé qui inclut : Les grandes étapes de la recette, de la préparation à la validation finale. Les critères de validation pour chaque étape. Un planning réaliste avec des échéances pour chaque étape, en prenant en compte la disponibilité des ressources (humaines et matérielles). Une liste des tests à réaliser à chaque étape, en justifiant leur pertinence par rapport aux objectifs de la recette. Une anticipation des ressources nécessaires pour la réalisation des tests (par exemple, personnel, équipements, données de test)."
+            "objectif": "Être capable de planifier une recette logicielle en définissant étapes, critères de validation, planning et tests.",
+            "instructions": "Responsable de la planification de la recette d'un nouveau logiciel de gestion de stock, créez un plan détaillé incluant : les grandes étapes de la recette, de la préparation à la validation finale ; les critères de validation pour chaque étape ; un planning réaliste avec des échéances pour chaque étape, tenant compte de la disponibilité des ressources humaines et matérielles ; une liste des tests à réaliser à chaque étape, en justifiant leur pertinence par rapport aux objectifs de la recette ; et une anticipation des ressources nécessaires à la réalisation des tests (personnel, équipements, données de test).",
+            "livrable": "Un plan de recette détaillé présentant les grandes étapes, les critères de validation par étape, un planning avec échéances, la liste justifiée des tests et l'anticipation des ressources nécessaires."
         },
         {
             "title": "Conception de Tests",
-            "context": "En tant que gestionnaire de la recette, concevez un protocole de test pour évaluer les fonctionnalités clés du logiciel de gestion de stock mentionné dans l'exercice 1.",
-            "objective": "Votre protocole doit inclure : Une description des différents types de tests à effectuer (unitaires, d'intégration, de charge, etc.). L'organisation et la séquence des tests en fonction des ressources disponibles. La méthode pour assurer la traçabilité des tests (documentation à utiliser, logiciel de suivi, etc.). Une analyse type des résultats attendus pour l'un des tests. Une stratégie pour la gestion des anomalies potentielles, incluant leur enregistrement et le processus de suivi."
+            "objectif": "Être capable de concevoir un protocole de test structuré et traçable pour évaluer les fonctionnalités d'un logiciel.",
+            "instructions": "En tant que gestionnaire de la recette, concevez un protocole de test destiné à évaluer les fonctionnalités clés du logiciel de gestion de stock de l'exercice 1. Votre protocole doit inclure : une description des différents types de tests à effectuer (unitaires, d'intégration, de charge, etc.), en incluant l'automatisation des tests et leur intégration dans une chaîne d'intégration et de déploiement continus (CI/CD) ; l'organisation et la séquence des tests en fonction des ressources disponibles ; la méthode pour assurer la traçabilité des tests (documentation à utiliser, logiciel de suivi, etc.) ; une analyse type des résultats attendus pour l'un des tests ; et une stratégie de gestion des anomalies potentielles, incluant leur enregistrement et leur processus de suivi.",
+            "livrable": "Un protocole de test décrivant les types de tests (y compris tests automatisés et intégration dans une chaîne CI/CD), leur organisation et séquence, la méthode de traçabilité, l'analyse type des résultats attendus pour un test et la stratégie de gestion des anomalies."
         },
         {
             "title": "Procédure de Validation",
-            "context": "Imaginez que vous soyez en phase de validation de la recette pour le logiciel de gestion de stock.",
-            "objective": "Rédigez une procédure de validation comprenant : La préparation de la session de validation avec les parties prenantes (quels documents préparer, quelles informations communiquer). Une checklist des critères de validation basée sur les objectifs de la recette. Le déroulement de la session de validation (qui fait quoi, quelles étapes suivre). La structure du bilan de recette à rédiger une fois la validation terminée. Le plan de communication à adopter pour informer toutes les parties prenantes du résultat de la validation."
+            "objectif": "Être capable de rédiger une procédure de validation de recette associant les parties prenantes.",
+            "instructions": "En phase de validation de la recette du logiciel de gestion de stock, rédigez une procédure de validation comprenant : la préparation de la session de validation avec les parties prenantes (documents à préparer, informations à communiquer) ; une checklist des critères de validation fondée sur les objectifs de la recette ; le déroulement de la session de validation (qui fait quoi, quelles étapes suivre) ; la structure du bilan de recette à rédiger une fois la validation terminée ; et le plan de communication à adopter pour informer toutes les parties prenantes du résultat de la validation.",
+            "livrable": "Une procédure de validation comprenant la préparation de la session avec les parties prenantes, la checklist des critères de validation, le déroulement de la session, la structure du bilan de recette et le plan de communication des résultats."
         },
         {
             "title": "Gestion des Anomalies Post-Recette",
-            "context": "Après la recette, plusieurs anomalies ont été remontées par les utilisateurs finaux.",
-            "objective": "Pour chacune des anomalies suivantes, proposez une action corrective et un plan de suivi : Une fonctionnalité de recherche d'articles ne retourne pas les résultats attendus. Le logiciel se ferme inopinément lors de la création d'un nouveau bon de commande. Les rapports de stock générés comportent des erreurs dans les totaux. L'interface utilisateur est lente lors de l'accès simultané par plusieurs utilisateurs. Des utilisateurs rapportent des difficultés à comprendre le fonctionnement de la section de gestion des retours produits."
+            "objectif": "Être capable de traiter des anomalies post-recette par des actions correctives et un plan de suivi.",
+            "instructions": "Après la recette, plusieurs anomalies ont été remontées par les utilisateurs finaux. Pour chacune des anomalies suivantes, proposez une action corrective et un plan de suivi : une fonctionnalité de recherche d'articles qui ne retourne pas les résultats attendus ; le logiciel qui se ferme inopinément lors de la création d'un nouveau bon de commande ; des rapports de stock générés comportant des erreurs dans les totaux ; une interface utilisateur lente lors de l'accès simultané par plusieurs utilisateurs ; et des utilisateurs rapportant des difficultés à comprendre le fonctionnement de la section de gestion des retours produits.",
+            "livrable": "Un tableau de traitement des anomalies proposant, pour chacune des cinq anomalies remontées, une action corrective et un plan de suivi."
         },
         {
             "title": "Retour d'Expérience et Amélioration Continue",
-            "context": "Suite à la première recette du logiciel de gestion de stock, rédigez un retour d'expérience qui servira à améliorer la prochaine recette.",
-            "objective": "Votre document doit inclure : Les points forts et les points faibles identifiés durant la recette. Les leçons apprises en matière d'organisation, de planification et de réalisation des tests. Les suggestions pour améliorer les étapes de la recette, les critères de validation et les processus de suivi des anomalies. Des recommandations pour renforcer la communication et la collaboration entre les équipes impliquées dans la recette. Un plan d'action pour intégrer ces améliorations dans la préparation de la prochaine recette, en identifiant des mesures concrètes à prendre et des responsabilités claires."
+            "objectif": "Être capable de formaliser un retour d'expérience de recette et un plan d'amélioration continue.",
+            "instructions": "À la suite de la première recette du logiciel de gestion de stock, rédigez un retour d'expérience destiné à améliorer la prochaine recette. Votre document doit inclure : les points forts et les points faibles identifiés durant la recette ; les leçons apprises en matière d'organisation, de planification et de réalisation des tests ; des suggestions pour améliorer les étapes de la recette, les critères de validation et les processus de suivi des anomalies ; des recommandations pour renforcer la communication et la collaboration entre les équipes impliquées ; et un plan d'action pour intégrer ces améliorations dans la préparation de la prochaine recette, en identifiant des mesures concrètes et des responsabilités claires.",
+            "livrable": "Un retour d'expérience présentant les points forts et faibles, les leçons apprises, des suggestions d'amélioration, des recommandations sur la communication et un plan d'action assorti de mesures concrètes et de responsabilités pour la prochaine recette."
         }
     ],
     "bibliography": [
@@ -114,10 +136,10 @@
     ],
     "OnlineResources": [
         "ISTQB Glossary (https://glossary.istqb.org) [EN/FR]",
-        "CFTL — Comité Français des Tests Logiciels (https://www.cftl.fr) [FR]",
+        "CFTL - Comité Français des Tests Logiciels (https://www.cftl.fr) [FR]",
         "ISTQB Foundation Level Syllabus (https://www.istqb.org) [EN]",
-        "Guru99 — Software Testing (https://www.guru99.com/software-testing.html) [EN]",
-        "developpez.com — Tests logiciels (https://qualite.developpez.com) [FR]"
+        "Guru99 - Software Testing (https://www.guru99.com/software-testing.html) [EN]",
+        "developpez.com - Tests logiciels (https://qualite.developpez.com) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

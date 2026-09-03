@@ -25,7 +25,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux de sécurité des architectures cloud et hybrides (Comprendre) Concevoir des architectures sécurisées intégrant les bonnes pratiques DevSecOps (Créer) Évaluer les risques et arbitrer les choix d'infrastructure en fonction du budget et des performances (Évaluer)"
+        "description": "Ce module vise à fournir une compréhension approfondie des enjeux de sécurité spécifiques aux architectures Cloud et hybrides. Il permet d'acquérir les compétences nécessaires pour identifier et gérer les risques liés à ces environnements. Les apprenants pourront mettre en place des stratégies de protection adaptées aux données et aux applications hébergées en Cloud. Ils savent également analyser les besoins techniques et sélectionner l'architecture applicative la plus adaptée (monolithique, n-tiers, microservices ou serverless) au regard des exigences du projet."
     },
     "prerequisites": {
         "description": "Connaissances de base en réseaux informatiques et en sécurité informatique. Compréhension générale des concepts de Cloud Computing. Expérience pratique ou théorique en administration système ou gestion de données."
@@ -42,7 +42,17 @@
                 ]
             },
             {
-                "title": "Chapitre 2 : Sécurité des données dans les architectures Cloud et hybrides",
+                "title": "Chapitre 2 : Choix de l'architecture applicative",
+                "items": [
+                    "Panorama des styles d'architecture : monolithique, n-tiers, microservices, serverless",
+                    "Critères de sélection : évolutivité, résilience, coût et complexité opérationnelle",
+                    "Adéquation de l'architecture aux besoins et contraintes du projet",
+                    "Impacts du choix d'architecture sur la sécurité et l'exploitation",
+                    "Étude comparative et justification du choix d'architecture retenu"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Sécurité des données dans les architectures Cloud et hybrides",
                 "items": [
                     "Chiffrement des données et gestion des clés",
                     "Contrôle d'accès et gestion des identités",
@@ -51,7 +61,7 @@
                 ]
             },
             {
-                "title": "Chapitre 3 : Sécurité des applications dans les architectures Cloud et hybrides",
+                "title": "Chapitre 4 : Sécurité des applications dans les architectures Cloud et hybrides",
                 "items": [
                     "Gestion des vulnérabilités et des correctifs",
                     "Sécurité des API et des microservices",
@@ -60,7 +70,7 @@
                 ]
             },
             {
-                "title": "Chapitre 4 : Sécurité du réseau dans les architectures Cloud et hybrides",
+                "title": "Chapitre 5 : Sécurité du réseau dans les architectures Cloud et hybrides",
                 "items": [
                     "Segmentation du réseau et isolation des ressources",
                     "Surveillance du trafic réseau et détection des intrusions",
@@ -69,7 +79,7 @@
                 ]
             },
             {
-                "title": "Chapitre 5 : Gestion des incidents et des crises de sécurité",
+                "title": "Chapitre 6 : Gestion des incidents et des crises de sécurité",
                 "items": [
                     "Plan de réponse aux incidents de sécurité",
                     "Gestion des vulnérabilités et des patchs",
@@ -82,49 +92,62 @@
     "exercises": [
         {
             "title": "Comprendre les enjeux de sécurité dans les architectures Cloud et hybrides",
-            "context": "Dans cet exercice, les apprenants seront invités à choisir une architecture Cloud ou hybride courante et à identifier les principaux enjeux de sécurité qui lui sont associés.",
-            "objective": "Ils devront expliquer en détail comment ces enjeux pourraient impacter la sécurité globale du système et proposer des mesures préventives adaptées."
+            "objectif": "Identifier les enjeux de sécurité propres à une architecture Cloud ou hybride et proposer des mesures préventives adaptées.",
+            "instructions": "Choisissez une architecture Cloud ou hybride courante. Identifiez les principaux enjeux de sécurité qui lui sont associés. Expliquez en détail comment ces enjeux pourraient impacter la sécurité globale du système. Proposez des mesures préventives adaptées.",
+            "livrable": "Une analyse écrite présentant l'architecture retenue, ses enjeux de sécurité, leurs impacts sur la sécurité globale et les mesures préventives proposées."
         },
         {
             "title": "S'initier au chiffrement des données dans un environnement Cloud",
-            "context": "Les apprenants devront réaliser un cas pratique de chiffrement de données dans un environnement Cloud.",
-            "objective": "Ils choisiront des données sensibles à protéger et mettront en place un processus de chiffrement en utilisant les outils appropriés. Ils devront également rédiger un document détaillant les différentes étapes de ce processus et expliquant les choix effectués."
+            "objectif": "Mettre en oeuvre un processus de chiffrement de données sensibles dans un environnement Cloud.",
+            "instructions": "Choisissez des données sensibles à protéger dans un environnement Cloud. Mettez en place un processus de chiffrement en utilisant les outils appropriés. Rédigez un document détaillant les différentes étapes du processus et expliquant les choix effectués.",
+            "livrable": "Un cas pratique de chiffrement réalisé, accompagné d'un document détaillant les étapes du processus et justifiant les choix effectués."
         },
         {
             "title": "Analyser la sécurité des API et des microservices",
-            "context": "Pour cet exercice, les apprenants devront sélectionner une application utilisant des API et des microservices, et réaliser une analyse de sécurité approfondie.",
-            "objective": "Ils devront identifier les éventuelles vulnérabilités et proposer des solutions pour renforcer la sécurité de ces éléments essentiels."
+            "objectif": "Réaliser une analyse de sécurité approfondie des API et des microservices d'une application.",
+            "instructions": "Sélectionnez une application utilisant des API et des microservices. Réalisez une analyse de sécurité approfondie. Identifiez les éventuelles vulnérabilités. Proposez des solutions pour renforcer la sécurité de ces éléments.",
+            "livrable": "Un rapport d'analyse de sécurité listant les vulnérabilités identifiées sur les API et microservices et les solutions de renforcement proposées."
         },
         {
             "title": "Mettre en place une politique de sécurité réseau",
-            "context": "Les apprenants auront pour mission de concevoir une politique de sécurité réseau pour une architecture hybride spécifique.",
-            "objective": "Ils devront définir des règles de segmentation, de surveillance du trafic, de gestion des pare-feux, et expliquer comment ces mesures contribueront à renforcer la sécurité du réseau."
+            "objectif": "Concevoir une politique de sécurité réseau pour une architecture hybride.",
+            "instructions": "Concevez une politique de sécurité réseau pour une architecture hybride spécifique. Définissez des règles de segmentation, de surveillance du trafic et de gestion des pare-feux. Expliquez comment ces mesures contribueront à renforcer la sécurité du réseau.",
+            "livrable": "Une politique de sécurité réseau documentée précisant les règles de segmentation, de surveillance du trafic et de gestion des pare-feux, avec leur contribution à la sécurité du réseau."
         },
         {
             "title": "Planifier la gestion des incidents de sécurité",
-            "context": "Dans cet exercice, les apprenants devront élaborer un plan de réponse aux incidents de sécurité pour une entreprise opérant dans un environnement Cloud ou hybride.",
-            "objective": "Ils devront définir les étapes clés du processus, les responsabilités des différents acteurs, et inclure des recommandations pour une communication efficace en cas d'incident majeur."
+            "objectif": "Élaborer un plan de réponse aux incidents de sécurité pour un environnement Cloud ou hybride.",
+            "instructions": "Élaborez un plan de réponse aux incidents de sécurité pour une entreprise opérant dans un environnement Cloud ou hybride. Définissez les étapes clés du processus et les responsabilités des différents acteurs. Incluez des recommandations pour une communication efficace en cas d'incident majeur.",
+            "livrable": "Un plan de réponse aux incidents précisant les étapes clés, les responsabilités des acteurs et les recommandations de communication en cas d'incident majeur."
         }
     ],
     "bibliography": [
         {
-            "title": "The DevOps Handbook (2nd ed.)",
-            "author": "Kim, G. et al"
+            "title": "Buglioni, E. (2013). Security Patterns in Practice : Designing Secure Architectures Using Software Patterns. Wiley. ISBN",
+            "author": "Fernandez"
+        },
+        {
+            "title": "Kim, G., Humble, J., Debois, P., Willis, J. & Forsgren, N. (2021). The DevOps Handbook (2e éd.). IT Revolution Press. ISBN",
+            "author": ""
+        },
+        {
+            "title": "Wesley. ISBN",
+            "author": "Bass, L., Weber, I. & Zhu, L. (2015). DevOps: A Software Architect's Perspective. Addison"
         }
     ],
     "OnlineResources": [
         "AWS Well-Architected Framework (https://aws.amazon.com/architecture/well-architected/) [EN]",
         "Microsoft Azure Architecture Center (https://learn.microsoft.com/azure/architecture/) [EN/FR]",
-        "Google Cloud Architecture Framework (https://cloud.google.com/architecture/framework) [EN]",
-        "OWASP Cloud Security Project (https://owasp.org/www-project-cloud-security/) [EN]",
-        "ANSSI — Sécurité Cloud (https://www.ssi.gouv.fr) [FR]"
+        "Google Cloud Architecture Framework (https://docs.cloud.google.com/architecture/framework) [EN]",
+        "OWASP Cloud Security Project (https://owasp.org/www-project-cloud-native-application-security-top-10/) [EN]",
+        "ANSSI - Sécurité Cloud (https://cyber.gouv.fr/) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

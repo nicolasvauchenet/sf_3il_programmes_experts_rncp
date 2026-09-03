@@ -17,7 +17,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir les compétences nécessaires pour choisir et configurer un framework moderne pour le développement d'applications web (Appliquer) Créer, gérer et optimiser des interfaces réactives avec gestion d'état et communication API (Créer) Déployer des applications web performantes et sécurisées (Évaluer)"
+        "description": "Acquérir les compétences nécessaires pour choisir et configurer un framework moderne pour le développement d'applications web. Apprendre à créer, gérer et optimiser des interfaces réactives avec gestion d'état et communication API. Développer la capacité à déployer des applications web performantes et sécurisées."
     },
     "prerequisites": {
         "description": "Connaissance de base en développement web (HTML, CSS, JavaScript) et des principes de la programmation orientée objet."
@@ -79,41 +79,46 @@
     "exercises": [
         {
             "title": "Introduction aux Framework modernes",
-            "context": "Pour cet exercice, les apprenants devront réaliser une étude comparative des principaux framework modernes (React, Vue.js, Angular).",
-            "objective": "Ils devront identifier les avantages et les inconvénients de chaque framework, en mettant en avant des exemples concrets d'application pour illustrer leur analyse. Ensuite, ils devront justifier le choix d'un framework pour un projet spécifique, en prenant en considération les besoins et les contraintes du projet."
+            "objectif": "Comparer les principaux framework modernes et justifier le choix d'un framework adapté à un projet spécifique.",
+            "instructions": "Réalisez une étude comparative des principaux framework modernes (React, Vue.js, Angular). Identifiez les avantages et les inconvénients de chaque framework en illustrant votre analyse par des exemples concrets d'application. Justifiez ensuite le choix d'un framework pour un projet spécifique en tenant compte des besoins et des contraintes du projet.",
+            "livrable": "Une étude comparative des framework modernes présentant leurs avantages et inconvénients illustrés d'exemples concrets, ainsi qu'une justification argumentée du choix d'un framework pour un projet spécifique."
         },
         {
             "title": "Composants et Routage",
-            "context": "Les apprenants auront pour tâche de créer une application simple utilisant des composants et le routage.",
-            "objective": "Ils devront concevoir une interface avec plusieurs composants interconnectés et gérer la navigation entre ces composants à l'aide du routage. De plus, ils devront mettre en place des paramètres de route et des guards pour contrôler l'accès à certaines pages de l'application."
+            "objectif": "Créer une application utilisant des composants et le routage en gérant la navigation et le contrôle d'accès aux pages.",
+            "instructions": "Créez une application simple utilisant des composants et le routage. Concevez une interface avec plusieurs composants interconnectés et gérez la navigation entre ces composants à l'aide du routage. Mettez en place des paramètres de route et des guards pour contrôler l'accès à certaines pages de l'application.",
+            "livrable": "Une application fonctionnelle composée de plusieurs composants interconnectés, avec une navigation gérée par le routage et des paramètres de route et guards contrôlant l'accès aux pages."
         },
         {
             "title": "Gestion d'état avec le framework",
-            "context": "Dans cet exercice, les apprenants devront créer une application qui met en œuvre la gestion d'état à l'aide des outils spécifiques au framework étudié (par exemple, Redux pour React ou Vuex pour Vue.js).",
-            "objective": "Ils devront comprendre la notion de state management et implémenter des actions, des mutations et des stores pour gérer les données asynchrones et assurer la persistance des données."
+            "objectif": "Mettre en œuvre la gestion d'état d'une application à l'aide des outils spécifiques au framework étudié.",
+            "instructions": "Créez une application mettant en œuvre la gestion d'état à l'aide des outils spécifiques au framework étudié (par exemple Redux pour React ou Vuex pour Vue.js). Appropriez-vous la notion de state management et implémentez des actions, des mutations et des stores pour gérer les données asynchrones et assurer la persistance des données.",
+            "livrable": "Une application implémentant la gestion d'état avec les outils du framework, comprenant des actions, des mutations et des stores gérant les données asynchrones et assurant la persistance des données."
         },
         {
             "title": "Communication avec les APIs",
-            "context": "Les apprenants devront concevoir un module de leur application qui communique avec une API externe.",
-            "objective": "Ils devront mettre en place des services pour effectuer des appels aux APIs, gérer les requêtes HTTP, traiter les données reçues et gérer les erreurs éventuelles. De plus, ils devront implémenter des mécanismes de sécurité tels que la gestion des tokens et la gestion des CORS pour assurer la sécurisation des appels aux APIs."
+            "objectif": "Concevoir un module d'application communiquant avec une API externe tout en assurant la sécurisation des appels.",
+            "instructions": "Concevez un module de votre application communiquant avec une API externe. Mettez en place des services pour effectuer les appels aux APIs, gérez les requêtes HTTP, traitez les données reçues et gérez les erreurs éventuelles. Implémentez des mécanismes de sécurité tels que la gestion des tokens et la gestion des CORS pour sécuriser les appels aux APIs.",
+            "livrable": "Un module d'application communiquant avec une API externe, incluant les services d'appel, la gestion des requêtes HTTP, le traitement des données, la gestion des erreurs et les mécanismes de sécurité (tokens, CORS)."
         },
         {
             "title": "Optimisation des performances et déploiement",
-            "context": "Pour cet exercice, les apprenants devront optimiser les performances d'une application existante basée sur le framework étudié.",
-            "objective": "Ils devront utiliser des outils de profiling et de monitoring pour identifier les points de performance critiques, mettre en place une stratégie de caching et enfin, procéder au build et au déploiement de l'application en suivant les bonnes pratiques de déploiement pour garantir sa fiabilité et sa sécurité."
+            "objectif": "Optimiser les performances d'une application existante et procéder à son build et à son déploiement selon les bonnes pratiques.",
+            "instructions": "Optimisez les performances d'une application existante basée sur le framework étudié. Utilisez des outils de profiling et de monitoring pour identifier les points de performance critiques, mettez en place une stratégie de caching, puis procédez au build et au déploiement de l'application en suivant les bonnes pratiques de déploiement pour garantir sa fiabilité et sa sécurité.",
+            "livrable": "Une application optimisée et déployée, comprenant l'identification des points de performance critiques via profiling et monitoring, une stratégie de caching et un build et déploiement conformes aux bonnes pratiques garantissant fiabilité et sécurité."
         }
     ],
     "bibliography": [
         {
-            "title": "Learning React (2nd ed.)",
+            "title": "Learning React : Modern Patterns for Developing React Apps (2e éd.). O'Reilly",
             "author": "Banks, A. & Porcello, E"
         },
         {
-            "title": "Vue.js: Up and Running (2nd ed.)",
+            "title": "Vue.js: Up and Running. O'Reilly",
             "author": "Macrae, C"
         },
         {
-            "title": "The Road to React (4th ed.)",
+            "title": "The Road to React (édition 2023). Independently published",
             "author": "Wieruch, R"
         }
     ],
@@ -122,14 +127,14 @@
         "Vue.js documentation (https://vuejs.org) [FR/EN]",
         "Angular documentation (https://angular.dev) [EN]",
         "Redux Toolkit Guide (https://redux-toolkit.js.org) [EN]",
-        "MDN Web Docs — Web APIs (https://developer.mozilla.org/fr/docs/Web/API) [FR/EN]"
+        "MDN Web Docs - Web APIs (https://developer.mozilla.org/fr/docs/Web/API) [FR/EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

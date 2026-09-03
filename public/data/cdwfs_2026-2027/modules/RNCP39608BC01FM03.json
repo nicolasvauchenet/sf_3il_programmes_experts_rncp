@@ -21,7 +21,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les concepts fondamentaux des interactions utilisateur et leur importance dans la conception ergonomique (Comprendre) Acquérir les bases de la programmation en JavaScript et TypeScript pour développer des interfaces utilisateur dynamiques et réactives (Appliquer) Maîtriser l'utilisation d'AJAX pour améliorer la performance et l'efficacité des applications web (Créer)"
+        "description": "Comprendre les concepts fondamentaux des interactions utilisateur et leur importance dans la conception ergonomique. Acquérir les bases de la programmation en JavaScript et TypeScript pour développer des interfaces utilisateur dynamiques et réactives. Maîtriser l'utilisation d'AJAX pour améliorer la performance et l'efficacité des applications web."
     },
     "prerequisites": {
         "description": "Connaissances de base en programmation web, notamment en HTML et CSS."
@@ -83,57 +83,62 @@
     "exercises": [
         {
             "title": "Analyse des interactions utilisateur",
-            "context": "Dans cet exercice, les apprenants devront sélectionner un site web ou une application avec des interactions utilisateur et les analyser.",
-            "objective": "Ils devront identifier les différents types d'interactions utilisateur présents, évaluer l'ergonomie et l'expérience utilisateur, et proposer des améliorations pour optimiser ces interactions."
+            "objectif": "Analyser les interactions utilisateur d'un site ou d'une application afin d'évaluer l'ergonomie et l'expérience utilisateur et de proposer des optimisations.",
+            "instructions": "Sélectionnez un site web ou une application comportant des interactions utilisateur. Identifiez les différents types d'interactions présents. Évaluez l'ergonomie et l'expérience utilisateur. Proposez des améliorations pour optimiser ces interactions.",
+            "livrable": "Une analyse des interactions utilisateur identifiant les types d'interactions et l'évaluation ergonomique, accompagnée de propositions d'amélioration pour optimiser ces interactions."
         },
         {
             "title": "Manipulation du DOM avec JavaScript",
-            "context": "Les apprenants seront amenés à créer une page web simple et à utiliser JavaScript pour manipuler le DOM.",
-            "objective": "Ils devront ajouter et supprimer des éléments, modifier des attributs et des styles, et gérer les événements utilisateur (clic, survol, etc.)."
+            "objectif": "Manipuler le DOM d'une page web avec JavaScript en gérant les éléments, les attributs, les styles et les événements utilisateur.",
+            "instructions": "Créez une page web simple. Utilisez JavaScript pour manipuler le DOM : ajoutez et supprimez des éléments, modifiez des attributs et des styles, et gérez les événements utilisateur (clic, survol, etc.).",
+            "livrable": "Une page web fonctionnelle dont le DOM est manipulé en JavaScript, illustrant l'ajout et la suppression d'éléments, la modification d'attributs et de styles et la gestion des événements utilisateur."
         },
         {
             "title": "Conversion de code JavaScript en TypeScript",
-            "context": "Dans cet exercice, les apprenants devront prendre un petit projet JavaScript et le convertir en TypeScript.",
-            "objective": "Ils devront mettre en pratique la syntaxe de base de TypeScript, annoter les types de données, créer des interfaces et des classes, et adapter le code existant pour qu'il fonctionne avec TypeScript."
+            "objectif": "Convertir un projet JavaScript en TypeScript en appliquant la syntaxe de base et le typage des données.",
+            "instructions": "Prenez un petit projet JavaScript et convertissez-le en TypeScript. Mettez en pratique la syntaxe de base de TypeScript, annotez les types de données, créez des interfaces et des classes, et adaptez le code existant pour qu'il fonctionne avec TypeScript.",
+            "livrable": "Le projet converti en TypeScript, avec les types de données annotés, les interfaces et classes créées et le code existant adapté pour fonctionner avec TypeScript."
         },
         {
             "title": "Création d'un composant interactif en TypeScript",
-            "context": "Les apprenants auront pour tâche de créer un composant interactif, tel qu'une fenêtre modale, un carrousel d'images ou un formulaire dynamique, en utilisant TypeScript.",
-            "objective": "Ils devront gérer les événements liés à ce composant, maintenir son état et optimiser son interaction avec l'utilisateur."
+            "objectif": "Créer un composant interactif en TypeScript en gérant ses événements, son état et son interaction avec l'utilisateur.",
+            "instructions": "Créez un composant interactif tel qu'une fenêtre modale, un carrousel d'images ou un formulaire dynamique en utilisant TypeScript. Gérez les événements liés à ce composant, maintenez son état et optimisez son interaction avec l'utilisateur.",
+            "livrable": "Un composant interactif développé en TypeScript, avec la gestion de ses événements, le maintien de son état et une interaction utilisateur optimisée."
         },
         {
             "title": "Utilisation d'AJAX pour charger des données",
-            "context": "Dans cet exercice, les apprenants devront améliorer une application web existante en utilisant AJAX pour charger des données de manière asynchrone.",
-            "objective": "Ils devront gérer les requêtes AJAX, afficher les données chargées sur la page, gérer les erreurs éventuelles et optimiser les performances de l'application grâce à cette approche."
+            "objectif": "Améliorer une application web en utilisant AJAX pour charger des données de manière asynchrone.",
+            "instructions": "À partir d'une application web existante, utilisez AJAX pour charger des données de manière asynchrone. Gérez les requêtes AJAX, affichez les données chargées sur la page, gérez les erreurs éventuelles et optimisez les performances de l'application grâce à cette approche.",
+            "livrable": "Une application web améliorée intégrant le chargement asynchrone de données via AJAX, avec la gestion des requêtes, l'affichage des données, la gestion des erreurs et l'optimisation des performances."
         }
     ],
     "bibliography": [
         {
-            "title": "JavaScript: The Definitive Guide (8th ed.)",
+            "title": "JavaScript: The Definitive Guide (7e éd.). O'Reilly",
             "author": "Flanagan, D"
         },
         {
-            "title": "Programming TypeScript (2nd ed.)",
+            "title": "Programming TypeScript : Making Your JavaScript Applications Scale. O'Reilly",
             "author": "Cherny, B"
         },
         {
-            "title": "You Don't Know JS Yet: Get Started (2nd ed.)",
+            "title": "You Don't Know JS Yet: Get Started (2e éd.). Independently published",
             "author": "Simpson, K"
         }
     ],
     "OnlineResources": [
-        "MDN Web Docs — JavaScript (https://developer.mozilla.org/fr/docs/Web/JavaScript) [FR/EN]",
+        "MDN Web Docs - JavaScript (https://developer.mozilla.org/fr/docs/Web/JavaScript) [FR/EN]",
         "TypeScript Handbook (https://www.typescriptlang.org/docs/handbook/) [EN]",
         "JavaScript.info (https://javascript.info) [EN/FR]",
         "ECMAScript Language Specification (https://tc39.es/ecma262/) [EN]",
-        "web.dev — JavaScript performance (https://web.dev/learn/performance/) [EN]"
+        "web.dev - JavaScript performance (https://web.dev/learn/performance/) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

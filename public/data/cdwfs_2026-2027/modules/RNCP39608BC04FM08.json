@@ -25,7 +25,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre et appliquer les principes de l'assurance qualité dans le développement logiciel (Appliquer) Évaluer et mettre en œuvre des tests automatisés pour améliorer la qualité des applications (Évaluer) Intégrer des pratiques de revue de code et de documentation technique pour assurer la maintenance et l'évolution des systèmes (Créer)"
+        "description": "Comprendre et appliquer les principes de l'assurance qualité dans le développement logiciel. Évaluer et mettre en œuvre des tests automatisés pour améliorer la qualité des applications. Intégrer des pratiques de revue de code et documentation technique pour assurer la maintenance et l'évolution des systèmes."
     },
     "prerequisites": {
         "description": "Connaissance de base du développement logiciel et des processus de gestion de projet. Familiarité avec les concepts de tests logiciels et de gestion de la qualité. Expérience préalable en programmation et utilisation d'outils de développement."
@@ -77,57 +77,62 @@
     "exercises": [
         {
             "title": "Évaluation de la conformité aux normes",
-            "context": "Objectif : Identifier les normes applicables et évaluer la conformité d'un processus de développement logiciel à ces normes.",
-            "objective": "Description : Sélectionnez un processus de développement logiciel dans votre environnement professionnel ou imaginez-en un. Identifiez les normes et référentiels qui s'appliquent à ce processus, puis évaluez sa conformité à ces normes. Rédigez un rapport détaillé sur votre évaluation, en mettant en avant les éventuels écarts et les actions correctives à entreprendre."
+            "objectif": "Identifier les normes applicables et évaluer la conformité d'un processus de développement logiciel à ces normes.",
+            "instructions": "Sélectionnez un processus de développement logiciel dans votre environnement professionnel ou imaginez-en un. Identifiez les normes et référentiels qui s'y appliquent, puis évaluez sa conformité à ces normes.",
+            "livrable": "Un rapport détaillé d'évaluation de la conformité mettant en avant les éventuels écarts et les actions correctives à entreprendre."
         },
         {
             "title": "Mise en place d'un scénario de test automatisé",
-            "context": "Objectif : Créer un scénario de test automatisé pour une fonctionnalité spécifique d'une application.",
-            "objective": "Description : Sélectionnez une fonctionnalité d'une application existante ou créez un exemple. Concevez et mettez en place un scénario de test automatisé pour cette fonctionnalité, en utilisant un outil de test automatisé de votre choix. Passez en revue votre scénario avec un collègue et recueillez ses retours pour l'améliorer si nécessaire."
+            "objectif": "Créer un scénario de test automatisé pour une fonctionnalité spécifique d'une application.",
+            "instructions": "Sélectionnez une fonctionnalité d'une application existante ou créez un exemple. Concevez et mettez en place un scénario de test automatisé pour cette fonctionnalité à l'aide d'un outil de test automatisé de votre choix. Passez en revue votre scénario avec un collègue et recueillez ses retours pour l'améliorer.",
+            "livrable": "Un scénario de test automatisé opérationnel pour la fonctionnalité choisie, revu avec un collègue et amélioré à partir de ses retours."
         },
         {
             "title": "Revue de code et détection d'erreurs",
-            "context": "Objectif : Effectuer une revue de code et détecter des erreurs potentielles dans un script donné.",
-            "objective": "Description : Un script de code source vous sera fourni. Effectuez une revue de code approfondie en mettant en évidence les erreurs, les failles de sécurité et les écarts par rapport aux normes de programmation. Proposez des corrections et des améliorations pour chaque problème identifié, en justifiant vos recommandations."
+            "objectif": "Effectuer une revue de code et détecter les erreurs potentielles dans un script donné.",
+            "instructions": "À partir d'un script de code source fourni, effectuez une revue de code approfondie en mettant en évidence les erreurs, les failles de sécurité et les écarts par rapport aux normes de programmation. Proposez des corrections et des améliorations pour chaque problème identifié en justifiant vos recommandations.",
+            "livrable": "Un compte rendu de revue de code recensant erreurs, failles de sécurité et écarts aux normes, avec des corrections et améliorations justifiées pour chaque problème."
         },
         {
             "title": "Création d'une documentation technique",
-            "context": "Objectif : Créer une documentation technique complète pour un projet de développement logiciel.",
-            "objective": "Description : Choisissez un projet de développement logiciel auquel vous avez participé ou créez un exemple hypothétique. Élaborez une documentation technique exhaustive qui capture les spécificités du développement, les choix techniques effectués et les procédures de maintenance et d'évolution du système. Cette documentation devra être prête à être transmise à une équipe de maintenance ou de développement."
+            "objectif": "Créer une documentation technique complète pour un projet de développement logiciel.",
+            "instructions": "Choisissez un projet de développement logiciel auquel vous avez participé ou créez un exemple hypothétique. Élaborez une documentation technique exhaustive capturant les spécificités du développement, les choix techniques effectués et les procédures de maintenance et d'évolution du système.",
+            "livrable": "Une documentation technique exhaustive prête à être transmise à une équipe de maintenance ou de développement, couvrant spécificités, choix techniques et procédures de maintenance et d'évolution."
         },
         {
             "title": "Plan d'amélioration continue de la qualité",
-            "context": "Objectif : Élaborer un plan d'amélioration continue de la qualité pour un projet de développement logiciel.",
-            "objective": "Description : Identifiez un projet de développement logiciel existant ou fictif pour lequel vous souhaitez mettre en place un plan d'amélioration continue de la qualité. Proposez un plan détaillé comprenant des actions spécifiques visant à soutenir l'excellence technique, la sécurité et la gestion de la qualité tout au long du cycle de vie du projet. Argumentez vos choix et justifiez l'importance de chaque action proposée."
+            "objectif": "Élaborer un plan d'amélioration continue de la qualité pour un projet de développement logiciel.",
+            "instructions": "Identifiez un projet de développement logiciel existant ou fictif pour lequel mettre en place un plan d'amélioration continue de la qualité. Proposez un plan détaillé comprenant des actions spécifiques soutenant l'excellence technique, la sécurité et la gestion de la qualité tout au long du cycle de vie du projet. Argumentez et justifiez chaque action.",
+            "livrable": "Un plan d'amélioration continue de la qualité détaillé, présentant des actions argumentées couvrant excellence technique, sécurité et gestion de la qualité sur tout le cycle de vie du projet."
         }
     ],
     "bibliography": [
         {
-            "title": "Agile Testing : A Practical Guide for Testers and Agile Teams",
+            "title": "Agile Testing : A Practical Guide for Testers and Agile Teams. Addison-Wesley",
             "author": "Crispin, L. & Gregory, J"
         },
         {
-            "title": "Clean Code : A Handbook of Agile Software Craftsmanship",
+            "title": "Clean Code : A Handbook of Agile Software Craftsmanship (2e éd.). Addison-Wesley",
             "author": "Martin, R. C"
         },
         {
-            "title": "Unit Testing Principles, Practices, and Patterns",
+            "title": "Unit Testing Principles, Practices, and Patterns. Manning",
             "author": "Khorikov, V"
         }
     ],
     "OnlineResources": [
-        "ISO/IEC 25010 — Qualité logicielle (https://www.iso.org/standard/35733.html) [EN]",
-        "OWASP — Code Review Guide (https://owasp.org/www-project-code-review-guide/) [EN]",
-        "SonarSource — Documentation Clean Code (https://docs.sonarsource.com) [EN]",
-        "Google Engineering Practices — Code Review (https://google.github.io/eng-practices/) [EN]",
-        "Developpez.com — Qualité logicielle et tests (https://qualite.developpez.com) [FR]"
+        "ISO/IEC 25010 - Qualité logicielle (https://www.iso.org/standard/78176.html) [EN]",
+        "OWASP - Code Review Guide (https://owasp.org/www-project-code-review-guide/) [EN]",
+        "SonarSource - Documentation Clean Code (https://docs.sonarsource.com) [EN]",
+        "Google Engineering Practices - Code Review (https://google.github.io/eng-practices/) [EN]",
+        "Developpez.com - Qualité logicielle et tests (https://www.developpez.com/) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

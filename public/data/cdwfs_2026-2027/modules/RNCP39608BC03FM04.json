@@ -25,7 +25,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et bénéfices de l'intégration et du déploiement continus (Comprendre) Mettre en place des pipelines CI/CD robustes avec conteneurisation (Créer) Automatiser le déploiement de ressources cloud en appliquant les principes DevOps (Appliquer)"
+        "description": "Ce module vise à comprendre les concepts clés de l'intégration continue et du déploiement continu, à identifier leurs avantages dans le développement logiciel, et à maîtriser les outils, technologies, et bonnes pratiques associés pour les mettre en œuvre efficacement."
     },
     "prerequisites": {
         "description": "Connaissance de base du cycle de vie logiciel (Software Development Life Cycle), en gestion de versions, familiarité avec les concepts de déploiement d'applications, et expérience pratique avec des environnements de développement, test et production."
@@ -86,53 +86,51 @@
     "exercises": [
         {
             "title": "Les principes de l'intégration continue",
-            "context": "Objectif : Comprendre l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement.",
-            "objective": "Imaginez que vous avez la charge d'une équipe de développement et que vous devez présenter les principes de l'intégration continue à vos collègues. Rédigez une présentation qui met en avant l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement. Votre présentation devra inclure des exemples concrets et des cas d'utilisation."
+            "objectif": "Comprendre l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe de développement.",
+            "instructions": "En vous plaçant à la tête d'une équipe de développement, rédigez une présentation destinée à vos collègues. Mettez en avant l'importance de l'intégration continue dans le développement logiciel et ses bénéfices pour l'équipe. Incluez des exemples concrets et des cas d'utilisation.",
+            "livrable": "Une présentation exposant l'importance et les bénéfices de l'intégration continue, illustrée par des exemples concrets et des cas d'utilisation."
         },
         {
             "title": "Les fondamentaux du déploiement continu",
-            "context": "Objectif : Comprendre les avantages du déploiement continu dans le cycle de développement logiciel et les bonnes pratiques pour assurer un déploiement continu fiable et sécurisé.",
-            "objective": "Élaborez un plan de déploiement continu pour un projet de développement logiciel de votre choix. Identifiez les étapes clés, les outils et technologies à utiliser, ainsi que les bonnes pratiques à adopter pour assurer un déploiement continu fiable et sécurisé. Présentez votre plan avec des justifications pour chaque élément choisi."
+            "objectif": "Comprendre les avantages du déploiement continu et les bonnes pratiques pour un déploiement fiable et sécurisé.",
+            "instructions": "Élaborez un plan de déploiement continu pour un projet de développement logiciel de votre choix. Identifiez les étapes clés, les outils et technologies à utiliser, ainsi que les bonnes pratiques à adopter pour un déploiement fiable et sécurisé. Justifiez chaque élément choisi.",
+            "livrable": "Un plan de déploiement continu détaillant les étapes clés, les outils et technologies et les bonnes pratiques, avec une justification de chaque choix."
         },
         {
             "title": "Configuration d'un pipeline d'intégration continue",
-            "context": "Vous êtes chargé de mettre en place un pipeline d'intégration continue pour un projet de développement web.",
-            "objective": "Utilisez l'outil Jenkins pour configurer les étapes du pipeline, y compris la récupération du code source depuis un référentiel (par exemple GitHub), l'exécution des tests unitaires et la génération d'artefacts de déploiement."
+            "objectif": "Configurer un pipeline d'intégration continue pour un projet de développement web avec Jenkins.",
+            "instructions": "Mettez en place un pipeline d'intégration continue pour un projet de développement web. Utilisez l'outil Jenkins pour configurer les étapes du pipeline : récupération du code source depuis un référentiel (par exemple GitHub), exécution des tests unitaires et génération d'artefacts de déploiement.",
+            "livrable": "Un pipeline Jenkins fonctionnel réalisant la récupération du code source, l'exécution des tests unitaires et la génération des artefacts de déploiement."
         },
         {
             "title": "Déploiement continu d'une application",
-            "context": "Vous devez mettre en place un processus de déploiement continu pour une application web.",
-            "objective": "Choisissez l'outil de déploiement que vous avez étudié (par exemple Travis CI) et configurez le déploiement automatique à chaque validation de code sur la branche principale du référentiel."
+            "objectif": "Mettre en place un processus de déploiement continu automatique pour une application web.",
+            "instructions": "Mettez en place un processus de déploiement continu pour une application web. Choisissez l'outil de déploiement étudié (par exemple GitHub Actions). Configurez le déploiement automatique à chaque validation de code sur la branche principale du référentiel.",
+            "livrable": "Un processus de déploiement continu opérationnel déclenchant un déploiement automatique à chaque validation de code sur la branche principale."
         },
         {
             "title": "La gestion des configurations et des environnements",
-            "context": "Objectif : Comprendre les concepts de gestion des configurations et des environnements, ainsi que l'automatisation de la gestion des environnements de développement, de test et de production.",
-            "objective": "Implémentez un système de gestion de configurations pour un projet de développement logiciel. Choisissez un outil de gestion de configurations et décrivez comment vous allez l'intégrer dans le processus de développement. Identifiez également les moyens d'automatiser la gestion des environnements de développement, de test et de production, en mettant en avant les avantages de cette automatisation."
+            "objectif": "Comprendre la gestion des configurations et des environnements et automatiser les environnements de développement, de test et de production.",
+            "instructions": "Implémentez un système de gestion de configurations pour un projet de développement logiciel. Choisissez un outil de gestion de configurations et décrivez son intégration dans le processus de développement. Identifiez les moyens d'automatiser la gestion des environnements de développement, de test et de production, en mettant en avant les avantages de cette automatisation.",
+            "livrable": "Un système de gestion de configurations implémenté, accompagné de la description de son intégration et des moyens d'automatisation des environnements de développement, de test et de production avec leurs avantages."
         },
         {
             "title": "L'optimisation des processus d'intégration et de déploiement continus",
-            "context": "Objectif : Apprendre à analyser les métriques et les KPI pour évaluer la performance des processus et à identifier les goulots d'étranglement et les points d'optimisation.",
-            "objective": "Analysez les métriques de performance d'un processus d'intégration continue et de déploiement continu. Identifiez les éventuels goulots d'étranglement et les points d'optimisation. Proposez des solutions concrètes pour améliorer la performance de ces processus en vous basant sur les données recueillies. Présentez vos analyses et propositions dans un rapport détaillé."
+            "objectif": "Analyser les métriques et les KPI pour évaluer la performance des processus et identifier les goulots d'étranglement et les points d'optimisation.",
+            "instructions": "Analysez les métriques de performance d'un processus d'intégration continue et de déploiement continu. Identifiez les éventuels goulots d'étranglement et les points d'optimisation. Proposez des solutions concrètes pour améliorer la performance de ces processus en vous basant sur les données recueillies.",
+            "livrable": "Un rapport détaillé présentant l'analyse des métriques, les goulots d'étranglement et points d'optimisation identifiés, et les solutions concrètes d'amélioration proposées."
         }
     ],
     "bibliography": [
         {
-            "title": "Continuous Delivery: Reliable Software Releases (2nd ed.)",
+            "title": "Continuous Delivery : Reliable Software Releases through Build, Test, and Deployment Automation. Addison-Wesley",
             "author": "Humble, J. & Farley, D"
-        },
-        {
-            "title": "Kubernetes: Up and Running (3rd ed.)",
-            "author": "Burns, B. & Beda, J"
-        },
-        {
-            "title": "Using Docker (2nd ed.)",
-            "author": "Mouat, A"
         }
     ],
     "OnlineResources": [
         "Docker Documentation (https://docs.docker.com) [EN]",
         "Kubernetes Documentation (https://kubernetes.io/fr/docs/) [FR/EN]",
-        "GitLab CI/CD Documentation (https://docs.gitlab.com/ee/ci/) [EN]",
+        "GitLab CI/CD Documentation (https://docs.gitlab.com/ci/) [EN]",
         "GitHub Actions Documentation (https://docs.github.com/fr/actions) [FR/EN]",
         "Jenkins Documentation (https://www.jenkins.io/doc/) [EN]"
     ],
@@ -141,7 +139,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

@@ -13,7 +13,7 @@
     "skills": [
         {
             "code": "C28",
-            "description": "Mettre en œuvre des processus ETL (Extract, Transform, Load) par l'extraction de données de différentes sources, et en les transformant selon les besoins métier pour les charger dans des systèmes de stockage centralisés"
+            "description": "Mise en œuvre de processus ETL (Extract, Transform, Load) par l'extraction de données de différentes sources, et en les transformant selon les besoins métier pour les charger dans des systèmes de stockage centralisés"
         }
     ],
     "objectives": {
@@ -75,28 +75,33 @@
     "exercises": [
         {
             "title": "Concept des processus ETL",
-            "context": "Vous avez été chargé de présenter à vos collègues les concepts de base des processus ETL.",
-            "objective": "Concevez une présentation succincte illustrant les enjeux liés à l'intégration de données et le rôle des processus ETL dans l'architecture de données décisionnelles. Vous pouvez utiliser des exemples concrets pour illustrer vos propos."
+            "objectif": "Savoir expliquer les concepts de base des processus ETL et leur rôle dans une architecture décisionnelle.",
+            "instructions": "Vous êtes chargé de présenter à vos collègues les concepts de base des processus ETL. Concevez une présentation succincte illustrant les enjeux liés à l'intégration de données et le rôle des processus ETL dans l'architecture de données décisionnelles, en vous appuyant sur des exemples concrets.",
+            "livrable": "Une présentation succincte exposant les concepts des processus ETL, les enjeux de l'intégration de données et leur rôle dans l'architecture décisionnelle, illustrée d'exemples concrets."
         },
         {
             "title": "Extraction des données",
-            "context": "Imaginez que vous avez à extraire des données à partir de différentes sources pour alimenter un entrepôt de données.",
-            "objective": "Choisissez une source de données (par exemple, un fichier CSV, une base de données relationnelle, ou une API) et mettez en place un processus d'extraction des données en identifiant les différentes étapes à suivre et en expliquant les méthodes que vous utiliseriez."
+            "objectif": "Être capable de mettre en place un processus d'extraction de données depuis une source donnée.",
+            "instructions": "Vous devez extraire des données à partir de différentes sources pour alimenter un entrepôt de données. Choisissez une source de données (par exemple un fichier CSV, une base de données relationnelle ou une API) et mettez en place un processus d'extraction en identifiant les différentes étapes à suivre et en expliquant les méthodes que vous utiliseriez.",
+            "livrable": "La description d'un processus d'extraction pour la source choisie, précisant les étapes suivies et les méthodes employées."
         },
         {
             "title": "Transformation des données",
-            "context": "Vous avez reçu un jeu de données contenant des erreurs, des doublons et des valeurs manquantes.",
-            "objective": "Mettez en place un processus de nettoyage et d'enrichissement des données en utilisant les techniques de transformation que vous avez apprises. Présentez les résultats obtenus après la transformation."
+            "objectif": "Savoir nettoyer et enrichir un jeu de données à l'aide des techniques de transformation.",
+            "instructions": "Vous avez reçu un jeu de données contenant des erreurs, des doublons et des valeurs manquantes. Mettez en place un processus de nettoyage et d'enrichissement des données en utilisant les techniques de transformation que vous avez apprises, puis présentez les résultats obtenus après la transformation.",
+            "livrable": "Le processus de transformation appliqué et les résultats obtenus après nettoyage et enrichissement du jeu de données."
         },
         {
             "title": "Chargement des données",
-            "context": "Supposons que vous devez charger des données transformées dans une base de données.",
-            "objective": "Choisissez une méthode de chargement (par lot, en continu, par incrément) et expliquez comment vous mettriez en œuvre cette méthode en tenant compte des bonnes pratiques et des contraintes de performance."
+            "objectif": "Être capable de choisir et de mettre en œuvre une méthode de chargement de données adaptée.",
+            "instructions": "Vous devez charger des données transformées dans une base de données. Choisissez une méthode de chargement (par lot, en continu ou par incrément) et expliquez comment vous la mettriez en œuvre en tenant compte des bonnes pratiques et des contraintes de performance.",
+            "livrable": "La description de la méthode de chargement retenue et de sa mise en œuvre, intégrant les bonnes pratiques et la prise en compte des contraintes de performance."
         },
         {
             "title": "Optimisation des processus ETL",
-            "context": "Analysez un processus ETL existant en identifiant ses points critiques et en proposant des pistes d'optimisation pour améliorer ses performances.",
-            "objective": "Présentez vos recommandations en mettant en avant les bonnes pratiques d'optimisation des processus ETL."
+            "objectif": "Savoir analyser et optimiser les performances d'un processus ETL existant.",
+            "instructions": "Analysez un processus ETL existant en identifiant ses points critiques et en proposant des pistes d'optimisation pour améliorer ses performances, en mettant en avant les bonnes pratiques d'optimisation des processus ETL.",
+            "livrable": "Une analyse du processus ETL identifiant ses points critiques, accompagnée de recommandations d'optimisation fondées sur les bonnes pratiques."
         }
     ],
     "bibliography": [

@@ -1,0 +1,112 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM01",
+        "title": "Administration des Infrastructures sécurisées",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Administrer et optimiser les systèmes d'exploitation Unix, Linux et Windows en tenant compte des bonnes pratiques de la qualité de service (QoS), en collaboration avec les équipes techniques, pour assurer les exigences de performance et de fiabilité de l'entreprise"
+        },
+        {
+            "code": "C02",
+            "description": "Concevoir des topologies systèmes à l'aide d'un annuaire, en structurant efficacement les ressources informatiques et la gestion des identités et des accès aux différentes ressources, pour répondre aux besoins opérationnels, et respecter les politiques d'accès et sécurité de l'entreprise"
+        },
+        {
+            "code": "C03",
+            "description": "Concevoir et déployer des environnements virtualisés à l'aide de plateformes spécialisées On-Premise ou sur un cloud provider, en coopération avec les architectes système, pour rationaliser l'utilisation des ressources informatiques et répondre à l'évolutivité des besoins de l'entreprise"
+        }
+    ],
+    "objectives": {
+        "description": "Apprendre à installer, configurer, et gérer des serveurs et des environnements virtualisés pour répondre aux besoins d'une entreprise. Acquérir des compétences en administration des bases de données tout en garantissant leur sécurité et performance. Maîtriser la gestion des configurations et des services informatiques en adhérant aux normes de sécurité et de qualité."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et réseaux. Familiarité avec les principes de virtualisation et de sécurité informatique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Installation et configuration des serveurs",
+                "items": [
+                    "Comprendre les besoins de l'entreprise pour une installation adaptée",
+                    "Maîtriser les différentes étapes de configuration des serveurs",
+                    "Optimiser les performances des serveurs pour répondre aux besoins stratégiques",
+                    "Assurer la sécurité des serveurs lors de l'installation et la configuration",
+                    "Mettre en place des stratégies de sauvegarde et de récupération des données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des configurations et des services informatiques",
+                "items": [
+                    "Connaître les principes de qualité de service (QoS) et les méthodes ITIL",
+                    "Implémenter des services d'annuaire tels qu'Active Directory et utiliser LDAP pour une gestion efficace des identités et des accès",
+                    "Appliquer des stratégies via Group Policy Objects (GPO) en adéquation avec les besoins de sécurité et d'efficacité du système d'information",
+                    "Participer activement à la gestion des configurations et des services informatiques en collaboration avec la Direction des Systèmes d'Information (DSI)",
+                    "Assurer la conformité aux normes de sécurité et de qualité de services"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Conception, configuration et gestion des environnements virtualisés",
+                "items": [
+                    "Comprendre les enjeux de la virtualisation pour l'optimisation des ressources",
+                    "Concevoir des environnements virtualisés adaptés aux besoins de l'entreprise",
+                    "Configurer et gérer des environements virtualisés sur des plateformes telles que VMware vSphere ou Microsoft Hyper-V",
+                    "Évaluer et sélectionner les solutions d'hébergement les plus appropriées",
+                    "Assurer la flexibilité des services informatiques tout en optimisant l'utilisation des ressources"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Choix de la solution de virtualisation",
+            "context": "Vous êtes nouvellement en poste dans une entreprise en croissance. Votre mission est de choisir la solution de virtualisation la plus adaptée aux besoins de l'entreprise.",
+            "objective": "Pour cela, vous devrez analyser les besoins actuels et futurs de l'entreprise, comparer les fonctionnalités des différentes solutions (VMware vSphere, Microsoft Hyper-V, etc.) et justifier votre choix."
+        },
+        {
+            "title": "Optimisation des requêtes SQL",
+            "context": "Vous avez la charge de l'administration d'une base de données relationnelle. Vous devez identifier les requêtes SQL les plus gourmandes en ressources et proposer des optimisations pour améliorer leurs performances.",
+            "objective": "Pour cela, vous devrez analyser les plans d'exécution des requêtes, proposer des index appropriés et éventuellement réécrire des requêtes pour améliorer leur efficacité."
+        },
+        {
+            "title": "Mise en place de stratégies de sauvegarde",
+            "context": "Vous devez élaborer une stratégie de sauvegarde et de récupération des données pour les serveurs de l'entreprise.",
+            "objective": "En vous basant sur les besoins spécifiques de chaque service et les contraintes de temps et d'espace, vous devrez définir des politiques de sauvegarde complètes, différentielles ou incrémentielles, en garantissant la sécurité et l'intégrité des données."
+        },
+        {
+            "title": "Sécurisation des serveurs",
+            "context": "À la suite d’une analyse des menaces potentielles, vous êtes chargé d'implémenter des mesures de sécurité pour protéger les serveurs de l'entreprise.",
+            "objective": "Vous devrez mettre en place des pare-feu, des politiques de sécurité d'accès, des mises à jour régulières, ainsi que des outils de détection et de prévention des intrusions."
+        },
+        {
+            "title": "Gestion des configurations via GPO",
+            "context": "En tant qu'administrateur système, vous devez mettre en place des stratégies via Group Policy Objects (GPO) pour garantir la sécurité et l'efficacité du système d'information.",
+            "objective": "Vous devrez définir des GPOs pour gérer les mises à jour, les politiques de mot de passe, les restrictions d'accès aux ressources, etc. Tout en veillant à la conformité aux normes de sécurité et de qualité de services."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Administration des Systèmes GNU/Linux",
+            "author": "Olivier Heurtel"
+        },
+        {
+            "title": "Bases de données : Concepts, utilisation et organisation interne",
+            "author": "Thomas Pettinato"
+        },
+        {
+            "title": "Gestion des configurations informatiques : Méthodes et outil",
+            "author": "Michel Martin"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

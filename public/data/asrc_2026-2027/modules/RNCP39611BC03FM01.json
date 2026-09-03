@@ -75,51 +75,66 @@
                     "Sauvegarde régulière des données",
                     "Sensibilisation continue à la sécurité informatique"
                 ]
+            },
+            {
+                "title": "Chapitre 5 : Audit de sécurité et actions correctives",
+                "items": [
+                    "Principes et objectifs d'un audit de sécurité",
+                    "Évaluer l'efficacité des mesures de sécurité en place",
+                    "Analyser les résultats d'un audit pour identifier les écarts",
+                    "Élaborer et mettre en œuvre des actions correctives",
+                    "Suivre les actions correctives dans une logique d'amélioration continue"
+                ]
             }
         ]
     },
     "exercises": [
         {
             "title": "Identification des cybermenaces",
-            "context": "À l'aide des connaissances acquises dans le chapitre 1, identifiez trois exemples concrets de cybermenaces auxquelles une entreprise peut être confrontée.",
-            "objective": "Pour chaque exemple, expliquez en quoi il représente une menace pour la sécurité informatique et quelles sont les conséquences potentielles pour l'entreprise."
+            "objectif": "Savoir reconnaitre des cybermenaces concretes et evaluer leur impact sur la securite informatique d'une entreprise.",
+            "instructions": "Identifiez trois exemples concrets de cybermenaces auxquelles une entreprise peut etre confrontee. Pour chaque exemple, expliquez en quoi il represente une menace pour la securite informatique et precisez les consequences potentielles pour l'entreprise.",
+            "livrable": "Une presentation de trois cybermenaces, chacune accompagnee de son analyse de dangerosite et de ses consequences potentielles pour l'entreprise."
         },
         {
-            "title": "Analyse des conséquences des cybermenaces",
-            "context": "Sélectionnez l'une des conséquences évoquées dans le chapitre 2 et décrivez en détail comment elle pourrait impacter le fonctionnement et la réputation d'une entreprise.",
-            "objective": "Ensuite, proposez une stratégie pour atténuer ou prévenir cette conséquence."
+            "title": "Analyse des consequences des cybermenaces",
+            "objectif": "Analyser en profondeur une consequence d'une cybermenace et concevoir une strategie d'attenuation.",
+            "instructions": "Selectionnez l'une des consequences des cybermenaces et decrivez en detail comment elle pourrait impacter le fonctionnement et la reputation d'une entreprise. Proposez ensuite une strategie pour attenuer ou prevenir cette consequence.",
+            "livrable": "Une analyse detaillee d'une consequence choisie, accompagnee d'une strategie argumentee d'attenuation ou de prevention."
         },
         {
-            "title": "Élaboration d'un plan de protection",
-            "context": "Imaginez que vous êtes responsable de la sécurité informatique dans une entreprise.",
-            "objective": "Élaborez un plan de protection contre les cybermenaces en vous basant sur les techniques présentées dans le chapitre 3. Décrivez les mesures que vous mettriez en place et justifiez chacune d'entre elles."
+            "title": "Elaboration d'un plan de protection",
+            "objectif": "Concevoir un plan de protection contre les cybermenaces en mobilisant les techniques de securite etudiees.",
+            "instructions": "En vous placant en responsable de la securite informatique d'une entreprise, elaborez un plan de protection contre les cybermenaces. Decrivez les mesures que vous mettriez en place et justifiez chacune d'entre elles.",
+            "livrable": "Un plan de protection detaille listant les mesures retenues, chacune assortie de sa justification."
         },
         {
             "title": "Application des bonnes pratiques",
-            "context": "Choisissez une des bonnes pratiques énoncées dans le chapitre 4 et décrivez comment vous l'appliqueriez dans votre environnement professionnel.",
-            "objective": "Précisez les étapes concrètes à mettre en place pour mettre en œuvre cette pratique et expliquez l'impact attendu sur la sécurité informatique de l'entreprise."
+            "objectif": "Mettre en oeuvre une bonne pratique de securite dans un contexte professionnel et en mesurer l'impact.",
+            "instructions": "Choisissez une bonne pratique de securite et decrivez comment vous l'appliqueriez dans votre environnement professionnel. Precisez les etapes concretes de mise en oeuvre et expliquez l'impact attendu sur la securite informatique de l'entreprise.",
+            "livrable": "Une description operationnelle de la bonne pratique choisie, avec les etapes concretes de mise en oeuvre et l'impact attendu sur la securite."
         },
         {
             "title": "Simulation d'une cyberattaque",
-            "context": "Imaginez une situation où votre entreprise est la cible d'une cyberattaque.",
-            "objective": "Décrivez quelles mesures vous prendriez pour gérer la situation, en vous appuyant sur les connaissances acquises dans les chapitres précédents. Présentez un plan d'action détaillé pour faire face à cette situation d'urgence et limiter les dommages potentiels."
+            "objectif": "Gerer une situation de cyberattaque en appliquant les connaissances acquises pour limiter les dommages.",
+            "instructions": "Imaginez une situation ou votre entreprise est la cible d'une cyberattaque. Decrivez les mesures que vous prendriez pour gerer la situation et presentez un plan d'action detaille pour faire face a cette urgence et limiter les dommages potentiels.",
+            "livrable": "Un plan d'action detaille de gestion de crise, exposant les mesures d'urgence et les moyens de limiter les dommages."
         }
     ],
     "bibliography": [
         {
-            "title": "Cybersécurité : analyser les risques, mettre en œuvre les solutions (7e éd.). Dunod. Filiol, É. (2023). Cybersécurité et cyberdéfense : enjeux et moyens",
+            "title": "Cybersécurité : analyser les risques, mettre en œuvre les solutions (7e éd.). Dunod",
             "author": "Ghernaouti, S"
         },
         {
-            "title": "Fundamentals of Information Systems Security (4e éd.)",
+            "title": "Fundamentals of Information Systems Security (4e éd.). Jones & Bartlett Learning",
             "author": "Kim, D. & Solomon, M"
         }
     ],
     "OnlineResources": [
         "MITRE ATT&CK Framework (https://attack.mitre.org) [EN]",
-        "ANSSI — Panorama des menaces (https://cyber.gouv.fr) [FR]",
+        "ANSSI - Panorama des menaces (https://cyber.gouv.fr) [FR]",
         "ENISA Threat Landscape (https://www.enisa.europa.eu/topics/threat-risk-management) [EN]",
-        "CERT-FR — Bulletins d'alerte (https://www.cert.ssi.gouv.fr) [FR]",
+        "CERT-FR - Bulletins d'alerte (https://www.cert.ssi.gouv.fr) [FR]",
         "OWASP Top 10 (https://owasp.org/www-project-top-ten/) [EN]"
     ],
     "teachingMethods": [
@@ -127,7 +142,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

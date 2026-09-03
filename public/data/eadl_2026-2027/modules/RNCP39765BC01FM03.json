@@ -55,7 +55,7 @@
                     "Comparer les microservices avec les architectures monolithiques",
                     "Identifier les principaux défis liés à l'adoption des microservices",
                     "Analyser les stratégies de déploiement et de gestion des microservices",
-                    "Evaluer les avantages et inconvénients des microservices dans un contexte d'architecture hexagonale"
+                    "Évaluer les avantages et inconvénients des microservices dans un contexte d'architecture hexagonale"
                 ]
             },
             {
@@ -64,47 +64,52 @@
                     "Expliquer comment intégrer les design patterns dans l'architecture hexagonale",
                     "Analyser l'impact de l'intégration des microservices sur l'architecture hexagonale",
                     "Identifier les bonnes pratiques pour concevoir une architecture hexagonale basée sur des microservices",
-                    "Evaluer les implications en termes de déploiement et de gestion des applications basées sur cette architecture",
+                    "Évaluer les implications en termes de déploiement et de gestion des applications basées sur cette architecture",
                     "Mettre en place des solutions pour assurer la cohérence et la fiabilité du système"
                 ]
             },
             {
                 "title": "Chapitre 5 : Cas d'étude et mise en pratique",
                 "items": [
-                    "Etudier des cas d'usage concrets de l'architecture hexagonale avec design patterns et microservices",
+                    "Étudier des cas d'usage concrets de l'architecture hexagonale avec design patterns et microservices",
                     "Mettre en pratique la conception d'une architecture hexagonale avec des design patterns avancés",
                     "Développer des microservices en respectant les principes de l'architecture hexagonale",
                     "Analyser les retours d'expérience et les leçons apprises lors de la mise en pratique",
-                    "Evaluer les bénéfices et les contraintes de l'application de ces concepts dans des projets réels"
+                    "Évaluer les bénéfices et les contraintes de l'application de ces concepts dans des projets réels"
                 ]
             }
         ]
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "En utilisant des exemples concrets, identifiez et analysez au moins trois avantages de l'architecture hexagonale dans la conception logicielle.",
-            "objective": "Présentez vos résultats sous forme de rapport en mettant en avant les points forts de cette architecture."
+            "title": "Avantages de l'architecture hexagonale",
+            "objectif": "Savoir identifier et analyser les avantages de l'architecture hexagonale dans la conception logicielle.",
+            "instructions": "En utilisant des exemples concrets, identifiez et analysez au moins trois avantages de l'architecture hexagonale dans la conception logicielle.",
+            "livrable": "Un rapport présentant les résultats de l'analyse et mettant en avant les points forts de cette architecture."
         },
         {
-            "title": "Exercice 2",
-            "context": "Concevez un petit système en utilisant au moins deux design patterns adaptés à l'architecture hexagonale.",
-            "objective": "Expliquez en détail comment ces design patterns améliorent la maintenabilité et/ou la scalabilité du système."
+            "title": "Intégration de design patterns dans l'architecture hexagonale",
+            "objectif": "Être capable d'intégrer des design patterns adaptés à l'architecture hexagonale.",
+            "instructions": "Concevez un petit système en utilisant au moins deux design patterns adaptés à l'architecture hexagonale.",
+            "livrable": "La conception du système accompagnée d'une explication détaillée de la manière dont ces design patterns améliorent la maintenabilité et/ou la scalabilité du système."
         },
         {
-            "title": "Exercice 3",
-            "context": "Comparez les architectures monolithique et basée sur des microservices en mettant en avant les avantages et les inconvénients de chaque approche.",
-            "objective": "Proposez également des stratégies de déploiement et de gestion pour ces deux types d'architecture."
+            "title": "Comparaison entre architecture monolithique et microservices",
+            "objectif": "Savoir comparer une architecture monolithique et une architecture basée sur des microservices.",
+            "instructions": "Comparez les architectures monolithique et basée sur des microservices en mettant en avant les avantages et les inconvénients de chaque approche.",
+            "livrable": "Le comparatif des deux approches ainsi que les stratégies de déploiement et de gestion proposées pour chacune."
         },
         {
-            "title": "Exercice 4",
-            "context": "Développez un ou plusieurs microservices en respectant les principes de l'architecture hexagonale.",
-            "objective": "Identifiez les défis spécifiques rencontrés lors de cette conception et proposez des solutions pour les surmonter."
+            "title": "Développement de microservices en architecture hexagonale",
+            "objectif": "Être capable de développer des microservices respectant les principes de l'architecture hexagonale.",
+            "instructions": "Développez un ou plusieurs microservices en respectant les principes de l'architecture hexagonale et identifiez les défis spécifiques rencontrés lors de cette conception.",
+            "livrable": "Le ou les microservices développés, accompagnés des défis identifiés et des solutions proposées pour les surmonter."
         },
         {
-            "title": "Exercice 5",
-            "context": "Réalisez une étude de cas basée sur une expérience réelle ou simulée de mise en pratique des concepts étudiés.",
-            "objective": "Analysez les bénéfices ainsi que les éventuelles contraintes rencontrées lors de l'application de l'architecture hexagonale avec design patterns et microservices. Présentez vos conclusions et recommandations pour de futurs projets."
+            "title": "Étude de cas de l'architecture hexagonale",
+            "objectif": "Savoir évaluer les bénéfices et les contraintes de l'architecture hexagonale à travers une étude de cas.",
+            "instructions": "Réalisez une étude de cas basée sur une expérience réelle ou simulée de mise en pratique des concepts étudiés, et analysez les bénéfices ainsi que les éventuelles contraintes rencontrées lors de l'application de l'architecture hexagonale avec design patterns et microservices.",
+            "livrable": "L'étude de cas présentant les conclusions et les recommandations pour de futurs projets."
         }
     ],
     "bibliography": [
@@ -122,11 +127,11 @@
         }
     ],
     "OnlineResources": [
-        "Alistair Cockburn — Hexagonal Architecture (https://alistair.cockburn.us/hexagonal-architecture/) [EN]",
-        "Martin Fowler — Microservices (https://martinfowler.com/microservices/) [EN]",
+        "Alistair Cockburn - Hexagonal Architecture (https://alistair.cockburn.us/hexagonal-architecture/) [EN]",
+        "Martin Fowler - Microservices (https://martinfowler.com/microservices/) [EN]",
         "Domain-Driven Design Community (https://dddcommunity.org) [EN]",
-        "Microsoft Azure — Microservices architecture (https://learn.microsoft.com/azure/architecture/microservices/) [FR/EN]",
-        "DDD France — Communauté francophone (https://dddfr.github.io) [FR]"
+        "Microsoft Azure - Microservices architecture (https://learn.microsoft.com/azure/architecture/microservices/) [FR/EN]",
+        "DDD France - Communauté francophone (https://dddfr.github.io) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

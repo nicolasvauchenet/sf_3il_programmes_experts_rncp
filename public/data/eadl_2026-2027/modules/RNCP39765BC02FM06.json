@@ -82,29 +82,34 @@
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "Objectif : Évaluer les risques liés au non-respect de la réglementation des données et de la conformité.",
-            "objective": "Description de l'exercice : Les apprenants devront identifier les différents risques auxquels une entreprise pourrait être confrontée en cas de non-conformité à la réglementation des données. Ils devront ensuite hiérarchiser ces risques et proposer des actions préventives pour les atténuer."
+            "title": "Évaluation des risques de non-conformité",
+            "objectif": "Être capable d'évaluer les risques liés au non-respect de la réglementation des données et de la conformité.",
+            "instructions": "Identifiez les différents risques auxquels une entreprise pourrait être confrontée en cas de non-conformité à la réglementation des données, notamment le RGPD (Règlement général sur la protection des données), puis hiérarchisez ces risques et proposez des actions préventives pour les atténuer.",
+            "livrable": "Une cartographie des risques de non-conformité, hiérarchisés, accompagnée d'actions préventives d'atténuation."
         },
         {
-            "title": "Exercice 2",
-            "context": "Objectif : Concevoir une politique interne de protection des données personnelles en accord avec la réglementation en vigueur.",
-            "objective": "Description de l'exercice : Les apprenants seront amenés à rédiger une politique de protection des données personnelles pour une entreprise fictive, en tenant compte des principes fondamentaux de la protection des données, des obligations légales et des droits des individus. Ils devront également proposer des mesures de sécurité appropriées."
+            "title": "Conception d'une politique de protection des données",
+            "objectif": "Être capable de concevoir une politique interne de protection des données personnelles conforme au RGPD (Règlement général sur la protection des données).",
+            "instructions": "Rédigez une politique de protection des données personnelles pour une entreprise fictive, en tenant compte des principes fondamentaux de la protection des données, des obligations légales issues du RGPD et des droits des individus, et proposez des mesures de sécurité appropriées.",
+            "livrable": "Une politique interne de protection des données personnelles conforme au RGPD, intégrant les obligations légales, les droits des individus et des mesures de sécurité appropriées."
         },
         {
-            "title": "Exercice 3",
-            "context": "Objectif : Analyser des situations concrètes de gestion des données sensibles et proposer des solutions adéquates.",
-            "objective": "Description de l'exercice : Les apprenants auront à étudier des cas pratiques mettant en jeu des données sensibles. Ils devront identifier les risques, proposer des mesures de protection et des bonnes pratiques pour limiter les risques liés à ces données sensibles."
+            "title": "Analyse de situations de gestion de données sensibles",
+            "objectif": "Être capable d'analyser des situations de gestion de données sensibles et de proposer des solutions adéquates.",
+            "instructions": "Étudiez des cas pratiques mettant en jeu des données sensibles : identifiez les risques et proposez des mesures de protection et des bonnes pratiques pour limiter les risques liés à ces données.",
+            "livrable": "Pour chaque cas, une analyse des risques et un ensemble de mesures de protection et de bonnes pratiques adaptées aux données sensibles."
         },
         {
-            "title": "Exercice 4",
-            "context": "Objectif : Mettre en œuvre les étapes nécessaires à la mise en place d'un processus de conformité aux normes et standards en matière de données.",
-            "objective": "Description de l'exercice : Les apprenants auront pour mission de décrire les étapes concrètes pour instaurer un processus de conformité au sein d'une entreprise. Ils devront identifier les exigences et critères à respecter, ainsi que les outils et méthodes à utiliser."
+            "title": "Mise en place d'un processus de conformité",
+            "objectif": "Être capable de mettre en œuvre les étapes nécessaires à un processus de conformité aux normes et standards en matière de données.",
+            "instructions": "Décrivez les étapes concrètes pour instaurer un processus de conformité au sein d'une entreprise : identifiez les exigences et critères à respecter ainsi que les outils et méthodes à utiliser.",
+            "livrable": "Un processus de conformité documenté, présentant les étapes, les exigences et critères à respecter et les outils et méthodes à mobiliser."
         },
         {
-            "title": "Exercice 5",
-            "context": "Objectif : Mettre en pratique les techniques d'audit de conformité et de surveillance des processus.",
-            "objective": "Description de l'exercice : Les apprenants seront divisés en groupes pour simuler un audit de conformité dans le cadre de la réglementation des données. Chaque groupe devra établir un plan d'audit, mener des entretiens, collecter des preuves et rédiger un rapport d'audit avec des recommandations d'actions correctives."
+            "title": "Simulation d'un audit de conformité",
+            "objectif": "Être capable de mettre en pratique les techniques d'audit de conformité et de surveillance des processus.",
+            "instructions": "En groupe, simulez un audit de conformité dans le cadre de la réglementation des données (RGPD) : établissez un plan d'audit, menez des entretiens, collectez des preuves et rédigez un rapport d'audit assorti de recommandations d'actions correctives.",
+            "livrable": "Un rapport d'audit de conformité comprenant le plan d'audit, les preuves collectées et des recommandations d'actions correctives."
         }
     ],
     "bibliography": [
@@ -122,10 +127,10 @@
         }
     ],
     "OnlineResources": [
-        "CNIL — Guide RGPD (https://www.cnil.fr/fr/reglement-europeen-protection-donnees) [FR]",
-        "EDPB — European Data Protection Board (https://edpb.europa.eu) [EN/FR]",
-        "EUR-Lex — RGPD (https://eur-lex.europa.eu) [FR/EN]",
-        "ANSSI — Guides d'hygiène informatique (https://cyber.gouv.fr) [FR]",
+        "CNIL - Guide RGPD (https://www.cnil.fr/fr/reglement-europeen-protection-donnees) [FR]",
+        "EDPB - European Data Protection Board (https://edpb.europa.eu) [EN/FR]",
+        "EUR-Lex - RGPD (https://eur-lex.europa.eu) [FR/EN]",
+        "ANSSI - Guides d'hygiène informatique (https://cyber.gouv.fr) [FR]",
         "NIST Privacy Framework (https://www.nist.gov/privacy-framework) [EN]"
     ],
     "teachingMethods": [

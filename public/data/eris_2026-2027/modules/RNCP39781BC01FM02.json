@@ -5,7 +5,7 @@
         "title": "Audit des infrastructures et conformité",
         "rncpCode": "39781",
         "blocCode": "BC01",
-        "blocName": "Gouverner les infrastructures et garantir la gestion des services selon les bonnes pratiques ITIL et les enjeux RSE",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
         "durationDays": 3,
         "durationHours": 21,
         "academicYear": "2026-2027"
@@ -77,28 +77,33 @@
     "exercises": [
         {
             "title": "Étude de Cas - Planification d'un Audit d'Infrastructure",
-            "context": "Vous êtes un auditeur en charge de planifier un audit pour une entreprise de taille moyenne.",
-            "objective": "Votre mission est de définir les objectifs de l'audit, identifier les différentes étapes à suivre et déterminer quelles informations seront nécessaires pour mener à bien cet audit. Définissez trois objectifs clairs pour cet audit. Listez les étapes principales que vous suivrez pour réaliser cet audit. Énumérez les types d'informations et les données que vous devrez collecter pour chaque étape."
+            "objectif": "Savoir planifier un audit d'infrastructure en définissant ses objectifs, ses étapes et les informations à collecter.",
+            "instructions": "En tant qu'auditeur chargé de planifier un audit pour une entreprise de taille moyenne, définissez les objectifs de l'audit, identifiez les différentes étapes à suivre et déterminez quelles informations seront nécessaires pour mener à bien cet audit.",
+            "livrable": "Trois objectifs clairs pour l'audit, la liste des étapes principales à suivre et l'énumération des types d'informations et de données à collecter pour chaque étape."
         },
         {
             "title": "Collecte et Analyse de Données",
-            "context": "Vous avez reçu une liste d'équipements réseau et de configurations système d'une entreprise cliente.",
-            "objective": "Votre tâche est d'évaluer la conformité de ces configurations par rapport à des normes de sécurité spécifiques. Sélectionnez une norme de sécurité pertinente pour ce type d'audit. Utilisez un outil d'analyse de configurations pour évaluer la conformité des équipements et configurations fournis. Rédigez un rapport bref présentant vos conclusions sur la conformité et identifiant les non-conformités les plus critiques."
+            "objectif": "Être capable d'évaluer la conformité de configurations réseau et système par rapport à des normes de sécurité.",
+            "instructions": "À partir d'une liste d'équipements réseau et de configurations système d'une entreprise cliente, sélectionnez une norme de sécurité pertinente puis utilisez un outil d'analyse de configurations pour évaluer la conformité des équipements et configurations fournis.",
+            "livrable": "Un rapport bref présentant les conclusions sur la conformité et identifiant les non-conformités les plus critiques."
         },
         {
             "title": "Simulation d'Analyse de Vulnérabilités",
-            "context": "À l'aide d'une liste de vulnérabilités connues, simulez une analyse de vulnérabilités sur une infrastructure réseau hypothétique.",
-            "objective": "Vous devez utiliser des techniques d'analyse de vulnérabilités pour identifier les failles potentielles. Choisissez trois vulnérabilités courantes spécifiques à l'infrastructure réseau. Expliquez comment vous utiliseriez des outils d'analyse de vulnérabilités pour détecter ces failles dans le réseau. Proposez des mesures correctives pour chacune des vulnérabilités identifiées."
+            "objectif": "Savoir conduire une analyse de vulnérabilités pour identifier les failles d'une infrastructure réseau.",
+            "instructions": "À l'aide d'une liste de vulnérabilités connues, simulez une analyse de vulnérabilités sur une infrastructure réseau hypothétique : choisissez trois vulnérabilités courantes spécifiques à l'infrastructure réseau et expliquez comment vous utiliseriez des outils d'analyse de vulnérabilités pour détecter ces failles.",
+            "livrable": "Trois vulnérabilités courantes identifiées, la description de la méthode et des outils de détection, et des mesures correctives proposées pour chacune des vulnérabilités."
         },
         {
             "title": "Évaluation de la Sécurité des Équipements Réseau",
-            "context": "Vous êtes chargé d'auditer la sécurité des équipements réseau d'une entreprise.",
-            "objective": "Votre objectif est de vérifier la conformité des configurations, analyser les flux de données et de trafic, et évaluer la sécurité générale de l'équipement. Choisissez un équipement réseau (par exemple, un routeur ou un commutateur). Décrivez le processus que vous suivriez pour vérifier la conformité de cet équipement à des standards de sécurité spécifiques. Analysez les flux de données et de trafic et identifiez les éventuels problèmes ou risques de sécurité. Formulez des recommandations pour améliorer la sécurité de l'équipement audité."
+            "objectif": "Être capable d'auditer la sécurité d'un équipement réseau et de proposer des améliorations.",
+            "instructions": "Chargé d'auditer la sécurité des équipements réseau d'une entreprise, choisissez un équipement réseau (par exemple un routeur ou un commutateur), décrivez le processus pour vérifier sa conformité à des standards de sécurité spécifiques, puis analysez les flux de données et de trafic afin d'identifier les éventuels problèmes ou risques de sécurité.",
+            "livrable": "La description du processus de vérification de conformité, l'analyse des flux de données et de trafic avec identification des risques, et des recommandations pour améliorer la sécurité de l'équipement audité."
         },
         {
             "title": "Audit des Accès et Droits Utilisateurs",
-            "context": "Dans le cadre d'un audit des infrastructures systèmes, vous êtes chargé d'examiner les accès et les droits des utilisateurs sur les systèmes informatiques d'une entreprise.",
-            "objective": "Votre rôle est de vous assurer que les politiques de sécurité sont correctement appliquées et que les droits des utilisateurs sont conformes aux meilleures pratiques. Créez un scénario détaillé incluant différents types d'utilisateurs (administrateurs, employés réguliers, prestataires externes, etc.). Auditez les comptes utilisateurs pour vérifier l'application correcte des politiques de sécurité et des droits d'accès. Identifiez et documentez toute anomalie ou déviation par rapport aux politiques de sécurité établies. Rédigez des recommandations pour rectifier les problèmes d'accès et renforcer la sécurité des systèmes en fonction de votre audit."
+            "objectif": "Savoir auditer les accès et droits des utilisateurs pour vérifier l'application des politiques de sécurité.",
+            "instructions": "Dans le cadre d'un audit des infrastructures systèmes, créez un scénario détaillé incluant différents types d'utilisateurs (administrateurs, employés réguliers, prestataires externes, etc.), auditez les comptes utilisateurs pour vérifier l'application correcte des politiques de sécurité et des droits d'accès, et identifiez toute anomalie ou déviation par rapport aux politiques établies.",
+            "livrable": "Un scénario documenté d'utilisateurs, le relevé des anomalies ou déviations constatées, et des recommandations pour rectifier les problèmes d'accès et renforcer la sécurité des systèmes."
         }
     ],
     "bibliography": [
@@ -116,11 +121,11 @@
         }
     ],
     "OnlineResources": [
-        "ISACA — Audit Resources (https://www.isaca.org) [EN]",
-        "ANSSI — Référentiel PASSI (https://cyber.gouv.fr) [FR]",
-        "AFNOR — Normes ISO 27001 / 27002 (https://www.afnor.org) [FR]",
+        "ISACA - Audit Resources (https://www.isaca.org) [EN]",
+        "ANSSI - Référentiel PASSI (https://cyber.gouv.fr) [FR]",
+        "AFNOR - Normes ISO 27001 / 27002 (https://www.afnor.org) [FR]",
         "NIST SP 800-53 (https://csrc.nist.gov/publications/sp800) [EN]",
-        "CLUSIF — Méthodes d'audit (https://clusif.fr) [FR]"
+        "CLUSIF - Méthodes d'audit (https://clusif.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

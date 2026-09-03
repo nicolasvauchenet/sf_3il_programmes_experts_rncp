@@ -21,7 +21,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre et appliquer les principes fondamentaux de l'expérience utilisateur (UX) à l'aide d'outils et de méthodes reconnus (personas, user journey, heuristiques) (Appliquer) Concevoir des interfaces respectant les normes d'accessibilité et de cohérence visuelle, en intégrant les standards W3C et ARIA (Créer) Maîtriser l'utilisation d'outils de prototypage modernes pour communiquer et valider ses conceptions avec les parties prenantes (Appliquer)"
+        "description": "Les apprenants seront capables de comprendre et d'appliquer les principes fondamentaux de l'expérience utilisateur (UX), en utilisant des outils et des méthodes reconnus comme les personas, le \"user journey\", les heuristiques de Nielsen et les maquettes interactives. Ils renforceront leur capacité à concevoir des interfaces respectant les normes d'accessibilité et de cohérence visuelle, tout en intégrant les standards W3C et ARIA. Enfin, ils maîtriseront l'utilisation d'outils de prototypage modernes pour communiquer et valider leurs conceptions avec les parties prenantes."
     },
     "prerequisites": {
         "description": "Connaissance de base en design graphique et en développement web. Compréhension élémentaire des concepts d'ergonomie et d'expérience utilisateur. Familiarité avec l'utilisation de logiciels de conception graphique."
@@ -59,9 +59,9 @@
                 ]
             },
             {
-                "title": "Chapitre 4 : Création de maquettes avec des outils tels que Figma ou Adobe XD",
+                "title": "Chapitre 4 : Création de maquettes avec des outils tels que Figma",
                 "items": [
-                    "Présentation des outils de conception Figma et Adobe XD",
+                    "Présentation des outils de conception Figma",
                     "Fonctionnalités principales pour la création de maquettes",
                     "Bonnes pratiques pour la création de maquettes interactives",
                     "Utilisation des maquettes pour valider les concepts d'interfaces",
@@ -88,57 +88,58 @@
     "exercises": [
         {
             "title": "Création de personas",
-            "context": "Objectif : Les apprenants devront créer des personas représentatifs pour un produit ou un service spécifique, en se basant sur les caractéristiques démographiques et comportementales des utilisateurs ciblés.",
-            "objective": "Instructions : Choisissez un produit ou un service pour lequel vous souhaitez créer des personas. Identifiez les caractéristiques démographiques (âge, genre, profession, localisation, etc.) des utilisateurs potentiels. Analysez le comportement des utilisateurs en déterminant leurs besoins, motivations et objectifs. Créez au moins deux personas en utilisant les informations collectées. Critères d'évaluation : Pertinence des caractéristiques démographiques et comportementales choisies Cohérence et représentativité des personas créés"
+            "objectif": "Créer des personas représentatifs pour un produit ou un service en se basant sur les caractéristiques démographiques et comportementales des utilisateurs ciblés.",
+            "instructions": "Choisissez un produit ou un service pour lequel créer des personas. Identifiez les caractéristiques démographiques (âge, genre, profession, localisation, etc.) des utilisateurs potentiels. Analysez le comportement des utilisateurs en déterminant leurs besoins, motivations et objectifs. Créez au moins deux personas à partir des informations collectées.",
+            "livrable": "Au moins deux personas construits à partir des données collectées, évalués sur la pertinence des caractéristiques démographiques et comportementales choisies ainsi que sur la cohérence et la représentativité des personas créés."
         },
         {
             "title": "Analyse du user journey",
-            "context": "Objectif : Les apprenants devront élaborer un user journey pour un cas d'utilisation spécifique, en identifiant les différentes étapes et points de contact entre l'utilisateur et le produit ou service.",
-            "objective": "Instructions : Sélectionnez un cas d'utilisation spécifique lié à un produit ou un service. Identifiez les étapes que l'utilisateur parcourt, depuis sa découverte du produit jusqu'à son utilisation. Pour chaque étape, identifiez les points de contact entre l'utilisateur et le produit/service (site web, application mobile, e-mail, etc.). Créez un user journey visuel pour illustrer toutes les étapes et points de contact identifiés. Critères d'évaluation : Clarté et exhaustivité des étapes et points de contact identifiés Pertinence de la représentation visuelle du user journey"
+            "objectif": "Élaborer un user journey pour un cas d'utilisation spécifique en identifiant les étapes et points de contact entre l'utilisateur et le produit ou service.",
+            "instructions": "Sélectionnez un cas d'utilisation spécifique lié à un produit ou un service. Identifiez les étapes parcourues par l'utilisateur, depuis la découverte du produit jusqu'à son utilisation. Pour chaque étape, identifiez les points de contact entre l'utilisateur et le produit/service (site web, application mobile, e-mail, etc.). Créez un user journey visuel illustrant toutes les étapes et points de contact identifiés.",
+            "livrable": "Un user journey visuel illustrant les étapes et points de contact, évalué sur la clarté et l'exhaustivité des étapes et points de contact identifiés ainsi que sur la pertinence de la représentation visuelle."
         },
         {
             "title": "Analyse des heuristiques de Nielsen",
-            "context": "Objectif : Les apprenants devront analyser une interface existante à l'aide des heuristiques de Nielsen afin d'identifier les points forts et les points faibles en termes d'expérience utilisateur.",
-            "objective": "Instructions : Choisissez une interface (site web, application, logiciel) pour l'analyser. Appliquez les 10 heuristiques de Nielsen à l'interface choisie, en identifiant les aspects qui respectent ou ne respectent pas chaque heuristique. Identifiez les points forts de l'interface en termes d'expérience utilisateur, ainsi que les aspects à améliorer. Proposez des recommandations pour améliorer l'interface en se basant sur l'analyse des heuristiques. Critères d'évaluation : Pertinence des observations faites par rapport aux heuristiques de Nielsen Cohérence des recommandations proposées pour améliorer l'interface"
+            "objectif": "Analyser une interface existante à l'aide des heuristiques de Nielsen afin d'en identifier les points forts et les points faibles en termes d'expérience utilisateur.",
+            "instructions": "Choisissez une interface (site web, application, logiciel) à analyser. Appliquez les 10 heuristiques de Nielsen en identifiant les aspects qui respectent ou ne respectent pas chaque heuristique. Identifiez les points forts de l'interface en termes d'expérience utilisateur ainsi que les aspects à améliorer. Proposez des recommandations d'amélioration basées sur cette analyse.",
+            "livrable": "Une analyse de l'interface fondée sur les heuristiques de Nielsen accompagnée de recommandations d'amélioration, évaluée sur la pertinence des observations faites par rapport aux heuristiques et sur la cohérence des recommandations proposées."
         },
         {
             "title": "Création de maquettes interactives",
-            "context": "Objectif : Les apprenants devront utiliser un outil tel que Figma ou Adobe XD pour créer une maquette interactive d'une interface utilisateur, en intégrant les concepts et les bonnes pratiques abordés dans le cours.",
-            "objective": "Instructions : Choisissez un cas d'utilisation spécifique pour lequel vous souhaitez créer une maquette interactive. Utilisez l'outil de conception (Figma, Adobe XD) pour élaborer une maquette interactive de l'interface utilisateur correspondante. Intégrez les concepts de cohérence visuelle, d'usabilité et d'accessibilité discutés dans le cours dans la création de la maquette. Partagez la maquette avec vos pairs pour recueillir des retours et des suggestions d'amélioration. Critères d'évaluation : Utilisation adéquate des fonctionnalités de l'outil de conception pour créer une maquette interactive Intégration réussie des concepts abordés dans le cours dans la maquette créée"
+            "objectif": "Utiliser un outil tel que Figma pour créer une maquette interactive d'une interface utilisateur en intégrant les concepts et bonnes pratiques abordés dans le cours.",
+            "instructions": "Choisissez un cas d'utilisation spécifique pour lequel créer une maquette interactive. Utilisez l'outil de conception (Figma) pour élaborer la maquette interactive de l'interface correspondante. Intégrez les concepts de cohérence visuelle, d'usabilité et d'accessibilité discutés dans le cours. Partagez la maquette avec vos pairs pour recueillir des retours et des suggestions d'amélioration.",
+            "livrable": "Une maquette interactive réalisée avec l'outil de conception, évaluée sur l'utilisation adéquate des fonctionnalités de l'outil pour créer une maquette interactive et sur l'intégration réussie des concepts abordés dans le cours."
         },
         {
             "title": "Vérification de la conformité aux standards W3C et ARIA",
-            "context": "Objectif : Les apprenants devront vérifier la conformité d'une interface aux normes W3C et ARIA, en identifiant les éventuelles améliorations à apporter pour garantir l'accessibilité.",
-            "objective": "Instructions : Sélectionnez une interface web ou une application pour laquelle vous souhaitez vérifier la conformité aux normes W3C et ARIA. Utilisez les outils pertinents pour vérifier la conformité de l'interface aux normes W3C et ARIA. Identifiez les éventuelles non-conformités ou zones d'amélioration en termes d'accessibilité. Proposez des solutions ou des modifications pour corriger les éventuelles non-conformités identifiées. Critères d'évaluation : Pertinence des évaluations de conformité aux normes W3C et ARIA Pertinence et faisabilité des solutions proposées pour améliorer l'accessibilité de l'interface"
+            "objectif": "Vérifier la conformité d'une interface aux normes W3C et ARIA et identifier les améliorations à apporter pour garantir l'accessibilité.",
+            "instructions": "Sélectionnez une interface web ou une application pour laquelle vérifier la conformité aux normes W3C et ARIA. Utilisez les outils pertinents pour contrôler cette conformité. Identifiez les éventuelles non-conformités ou zones d'amélioration en termes d'accessibilité. Proposez des solutions ou des modifications pour corriger les non-conformités identifiées.",
+            "livrable": "Un rapport de conformité aux normes W3C et ARIA assorti de solutions d'amélioration, évalué sur la pertinence des évaluations de conformité et sur la pertinence et la faisabilité des solutions proposées pour améliorer l'accessibilité."
         }
     ],
     "bibliography": [
         {
-            "title": "Don't Make Me Think Revisited (3rd ed.)",
+            "title": "Don't Make Me Think, Revisited : A Common Sense Approach to Web Usability (3e éd.). New Riders",
             "author": "Krug, S"
         },
         {
-            "title": "Designing Interfaces (3rd ed.)",
-            "author": "Tidwell, J. & Brewer, A"
-        },
-        {
-            "title": "Ergonomie web : pour des sites web efficaces (4e éd.)",
+            "title": "Ergonomie web et UX Design : pour une conception centrée utilisateur (4e éd.). Eyrolles",
             "author": "Boucher, A"
         }
     ],
     "OnlineResources": [
         "W3C Web Content Accessibility Guidelines (WCAG) 2.2 (https://www.w3.org/WAI/standards-guidelines/wcag/) [EN]",
-        "Référentiel Général d'Amélioration de l'Accessibilité (RGAA 4) — DINUM (https://accessibilite.numerique.gouv.fr) [FR]",
-        "Nielsen Norman Group — UX research (https://www.nngroup.com) [EN]",
+        "Référentiel Général d'Amélioration de l'Accessibilité (RGAA 4) - DINUM (https://accessibilite.numerique.gouv.fr) [FR]",
+        "Nielsen Norman Group - UX research (https://www.nngroup.com) [EN]",
         "Material Design Guidelines (https://m3.material.io) [EN]",
-        "MDN Web Docs — Accessibilité (https://developer.mozilla.org/fr/docs/Web/Accessibility) [FR/EN]"
+        "MDN Web Docs - Accessibilité (https://developer.mozilla.org/fr/docs/Web/Accessibility) [FR/EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

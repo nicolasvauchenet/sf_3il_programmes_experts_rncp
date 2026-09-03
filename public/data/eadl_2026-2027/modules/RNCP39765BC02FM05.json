@@ -83,28 +83,33 @@
     "exercises": [
         {
             "title": "Analyse de contrat de prestation",
-            "context": "Objectif : Apprendre à identifier les principaux éléments d'un contrat de prestation.",
-            "objective": "Description : Les apprenants devront analyser un contrat de prestation fourni par l'enseignant afin d'identifier tous les éléments essentiels qui y sont inclus, tels que les parties impliquées, les obligations, les clauses de protection des données, etc."
+            "objectif": "Être capable d'identifier les principaux éléments d'un contrat de prestation.",
+            "instructions": "Analysez un contrat de prestation fourni par l'enseignant afin d'identifier tous les éléments essentiels qu'il contient : parties impliquées, obligations, clauses de protection des données, etc.",
+            "livrable": "Un relevé des éléments essentiels identifiés dans le contrat de prestation analysé (parties, obligations, clauses de protection des données, etc.)."
         },
         {
             "title": "Simulation de négociation",
-            "context": "Objectif : Mettre en pratique les étapes clés de la négociation d'un contrat de prestation.",
-            "objective": "Description : Les apprenants seront répartis en binômes pour simuler une négociation de contrat de prestation. Chaque binôme représentera une entreprise et un prestataire. Ils devront discuter des termes du contrat, incluant ceux liés à la protection des données, et trouver un accord satisfaisant pour les deux parties."
+            "objectif": "Être capable de mettre en pratique les étapes clés de la négociation d'un contrat de prestation.",
+            "instructions": "En binôme, simulez une négociation de contrat de prestation : l'un représente une entreprise, l'autre un prestataire. Discutez des termes du contrat, y compris ceux liés à la protection des données, et trouvez un accord satisfaisant pour les deux parties.",
+            "livrable": "Un accord contractuel négocié, satisfaisant pour les deux parties et intégrant les termes relatifs à la protection des données."
         },
         {
             "title": "Rédaction de clauses spécifiques",
-            "context": "Objectif : Savoir rédiger des clauses spécifiques liées à la protection des données dans un contrat de prestation.",
-            "objective": "Description : Les apprenants seront amenés à rédiger des clauses spécifiques relatives à la protection des données qui devront être incluses dans un contrat de prestation. Ils devront se baser sur les connaissances acquises sur la règlementation des données et les bonnes pratiques en la matière."
+            "objectif": "Être capable de rédiger des clauses spécifiques de protection des données dans un contrat de prestation.",
+            "instructions": "Rédigez des clauses spécifiques relatives à la protection des données destinées à être incluses dans un contrat de prestation, en vous appuyant sur la réglementation des données et les bonnes pratiques en la matière.",
+            "livrable": "Un jeu de clauses de protection des données rédigées, conformes à la réglementation et aux bonnes pratiques, prêtes à être intégrées à un contrat de prestation."
         },
         {
             "title": "Gestion de litiges",
-            "context": "Objectif : Comprendre les démarches à suivre en cas de litige lié à un contrat de prestation.",
-            "objective": "Description : Les apprenants se verront présenter des cas de litiges liés à des contrats de prestation. Ils devront proposer des démarches à suivre pour résoudre ces litiges, en tenant compte des modes de résolution des litiges et des conséquences sur la relation contractuelle."
+            "objectif": "Être capable d'identifier les démarches à suivre en cas de litige lié à un contrat de prestation.",
+            "instructions": "À partir de cas de litiges liés à des contrats de prestation, proposez les démarches à suivre pour les résoudre, en tenant compte des modes de résolution des litiges et de leurs conséquences sur la relation contractuelle.",
+            "livrable": "Une proposition de démarches de résolution pour chaque cas de litige, tenant compte des modes de résolution et de leurs conséquences sur la relation contractuelle."
         },
         {
             "title": "Simulation de violation de sécurité des données",
-            "context": "Objectif : Appréhender les implications juridiques d'une violation de la sécurité des données dans le cadre d'un contrat de prestation.",
-            "objective": "Description : Les apprenants seront confrontés à une simulation de cas de violation de la sécurité des données dans le cadre d'un contrat de prestation. Ils devront identifier les mesures de cybersécurité qui auraient pu être mises en place pour éviter cette violation, ainsi que les conséquences juridiques qui en découlent."
+            "objectif": "Être capable d'appréhender les implications juridiques d'une violation de la sécurité des données dans un contrat de prestation.",
+            "instructions": "Face à une simulation de violation de la sécurité des données dans le cadre d'un contrat de prestation, identifiez les mesures de cybersécurité qui auraient pu prévenir cette violation, ainsi que les conséquences juridiques qui en découlent.",
+            "livrable": "Une analyse identifiant les mesures de cybersécurité préventives et les conséquences juridiques de la violation de la sécurité des données."
         }
     ],
     "bibliography": [
@@ -122,11 +127,11 @@
         }
     ],
     "OnlineResources": [
-        "Syntec Numérique — Contrats informatiques (https://numeum.fr) [FR]",
-        "Légifrance — Textes de loi (https://www.legifrance.gouv.fr) [FR]",
-        "CNIL — Contrats et protection des données (https://www.cnil.fr) [FR]",
-        "AFUL — Contrats logiciels libres (https://aful.org) [FR]",
-        "OECD — Digital economy contracts (https://www.oecd.org/digital) [EN]"
+        "Syntec Numérique - Contrats informatiques (https://numeum.fr) [FR]",
+        "Légifrance - Textes de loi (https://www.legifrance.gouv.fr) [FR]",
+        "CNIL - Contrats et protection des données (https://www.cnil.fr) [FR]",
+        "AFUL - Contrats logiciels libres (https://aful.org) [FR]",
+        "OECD - Digital economy contracts (https://www.oecd.org/digital) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

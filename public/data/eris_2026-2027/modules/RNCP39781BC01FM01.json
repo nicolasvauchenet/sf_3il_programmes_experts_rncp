@@ -10,9 +10,46 @@
         "durationHours": 28,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s'appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique, et en contribuant à la structuration de la gestion des services IT, pour garantir que la gestion et l'infrastructure répondent aux exigences de performance, de sécurité et de conformité"
+        },
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire"
+        },
+        {
+            "code": "C03",
+            "description": "Établir des accords de niveaux de service (SLA) en collaboration avec les clients internes et/ou externes, en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise"
+        },
+        {
+            "code": "C04",
+            "description": "Élaborer, documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et/ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services"
+        },
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives"
+        },
+        {
+            "code": "C06",
+            "description": "Évaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité"
+        },
+        {
+            "code": "C07",
+            "description": "Élaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel"
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre"
+        },
+        {
+            "code": "C09",
+            "description": "Établir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux"
+        }
+    ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de la gouvernance des infrastructures (Comprendre) Identifier et appliquer les bonnes pratiques ITIL (Appliquer) Maîtriser les processus clés de gestion des incidents, des changements et des problèmes (Évaluer)"
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de la gouvernance des infrastructures (Comprendre) Identifier et appliquer les bonnes pratiques ITIL 4 (Appliquer) Maîtriser les processus clés de gestion des incidents, des changements et des problèmes (Appliquer)"
     },
     "prerequisites": {
         "description": "Connaissances de base en informatique et systèmes d'information, compréhension des concepts de gestion d'entreprise et de stratégie, familiarité avec les principes de base de la gestion des projets IT."
@@ -25,18 +62,18 @@
                     "Comprendre les principes de base de la gouvernance des infrastructures",
                     "Identifier les enjeux liés à la gouvernance des infrastructures",
                     "Connaître les bonnes pratiques en matière de gouvernance des infrastructures",
-                    "Comprendre le rôle de l'ITIL dans la gouvernance des infrastructures",
+                    "Comprendre le rôle de l'ITIL 4 dans la gouvernance des infrastructures",
                     "Analyser les bénéfices de la mise en place d'une gouvernance des infrastructures"
                 ]
             },
             {
-                "title": "Chapitre 2 : Les processus ITIL",
+                "title": "Chapitre 2 : Les pratiques ITIL 4",
                 "items": [
-                    "Appréhender les différents processus ITIL",
-                    "Comprendre le rôle et l'importance de chaque processus dans la gouvernance des infrastructures",
-                    "Identifier les interactions entre les processus ITIL",
-                    "Analyser les bonnes pratiques associées à chaque processus",
-                    "Mettre en place une cartographie des processus ITIL au sein de l'organisation"
+                    "Appréhender les différentes pratiques ITIL 4",
+                    "Comprendre le rôle et l'importance de chaque pratique dans la gouvernance des infrastructures",
+                    "Identifier les interactions entre les pratiques ITIL 4",
+                    "Analyser les bonnes pratiques associées à chaque pratique",
+                    "Mettre en place une cartographie des pratiques ITIL 4 au sein de l'organisation"
                 ]
             },
             {
@@ -71,7 +108,38 @@
             }
         ]
     },
-    "exercises": [],
+    "exercises": [
+        {
+            "title": "Analyse des enjeux de la gouvernance des infrastructures",
+            "objectif": "Comprendre les enjeux liés à la gouvernance des infrastructures.",
+            "instructions": "En groupes de travail, listez 5 enjeux majeurs liés à la gouvernance des infrastructures. Chaque groupe présente ensuite ses résultats et explique en quoi ces enjeux sont importants pour la gestion des infrastructures.",
+            "livrable": "Une liste argumentée de 5 enjeux majeurs par groupe, accompagnée d'une présentation orale expliquant l'importance de chaque enjeu pour la gestion des infrastructures."
+        },
+        {
+            "title": "Cartographie des pratiques ITIL 4",
+            "objectif": "Être capable de mettre en place une cartographie des pratiques ITIL 4 au sein de l'organisation.",
+            "instructions": "À partir d'un cas pratique décrivant une organisation fictive, cartographiez les pratiques ITIL 4 pertinentes pour cette organisation en identifiant les interactions entre ces pratiques. Présentez ensuite votre cartographie et expliquez vos choix.",
+            "livrable": "Une cartographie des pratiques ITIL 4 de l'organisation fictive faisant apparaître les interactions entre pratiques, accompagnée d'une présentation justifiant les choix retenus."
+        },
+        {
+            "title": "Résolution d'incidents et de problèmes",
+            "objectif": "Maîtriser les outils et les techniques de résolution des incidents et des problèmes.",
+            "instructions": "À partir de scénarios simulés d'incidents et de problèmes techniques, travaillez en binômes pour résoudre ces scénarios en utilisant les techniques et outils vus en cours. Chaque binôme présente sa démarche de résolution et explique les outils utilisés.",
+            "livrable": "Une démarche de résolution présentée par binôme pour les scénarios traités, avec explication des outils et techniques mobilisés."
+        },
+        {
+            "title": "Planification et suivi des changements",
+            "objectif": "Maîtriser les outils et les techniques de planification et de suivi des changements.",
+            "instructions": "À partir d'un cas de changement majeur à mettre en œuvre au sein d'une organisation, développez un plan de changement détaillé incluant les étapes clés, les outils de suivi ainsi que les procédures de rollback. Présentez ensuite votre plan et justifiez-le.",
+            "livrable": "Un plan de changement détaillé comprenant les étapes clés, les outils de suivi et les procédures de rollback, présenté et justifié."
+        },
+        {
+            "title": "Définition des accords de niveaux de services (SLA)",
+            "objectif": "Être capable d'élaborer des accords de niveaux de services pertinents et adaptés à l'organisation.",
+            "instructions": "À partir du contexte d'une organisation ayant des besoins spécifiques en termes de niveaux de services, rédigez un accord de niveau de service (SLA) adapté à ce contexte en détaillant les indicateurs de performance et les engagements de service. Présentez ensuite votre SLA et argumentez vos choix.",
+            "livrable": "Un accord de niveau de service (SLA) adapté au contexte, détaillant les indicateurs de performance et les engagements de service, présenté avec une argumentation des choix."
+        }
+    ],
     "bibliography": [
         {
             "title": "ITIL 4 Essentials: Your Essential Guide for the ITIL 4 Foundation Exam. IT Governance Publishing. ISACA. (2023). COBIT 2019 Framework: Governance and Management Objectives",
@@ -81,9 +149,9 @@
     "OnlineResources": [
         "ITIL 4 Framework (https://www.axelos.com/certifications/itil-service-management) [EN]",
         "COBIT Framework (https://www.isaca.org/resources/cobit) [EN]",
-        "CIGREF — Gouvernance IT (https://www.cigref.fr) [FR]",
+        "CIGREF - Gouvernance IT (https://www.cigref.fr) [FR]",
         "ITSMF France (https://www.itsmf.fr) [FR]",
-        "DINUM — Pilotage des SI de l'État (https://www.numerique.gouv.fr) [FR]"
+        "DINUM - Pilotage des SI de l'État (https://www.numerique.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

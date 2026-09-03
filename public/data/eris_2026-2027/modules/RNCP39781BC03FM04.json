@@ -10,7 +10,16 @@
         "durationHours": 28,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue"
+        },
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l'infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d'attaques et d'outils d'analyse de sécurité afin d'évaluer la robustesse des systèmes et la réactivité des équipes"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux et méthodologies de l'audit de sécurité (Comprendre) Maîtriser le processus et les outils nécessaires pour conduire un audit de sécurité (Appliquer) Réaliser et évaluer un audit de conformité aux normes et régulations en vigueur (Évaluer)"
     },
@@ -74,28 +83,33 @@
     "exercises": [
         {
             "title": "Élaboration d'un plan d'audit interne",
-            "context": "Vous êtes l'auditeur interne de votre entreprise et devez préparer un plan d'audit pour évaluer la sécurité des systèmes d'information.",
-            "objective": "Décrivez les étapes que vous suivriez pour élaborer ce plan, en précisant les objectifs de l'audit, les domaines clés à examiner, les méthodologies que vous utiliserez, et comment vous intégreriez la gestion des risques dans votre planification."
+            "objectif": "Savoir élaborer un plan d'audit interne de la sécurité des systèmes d'information.",
+            "instructions": "Vous êtes l'auditeur interne de votre entreprise et devez préparer un plan d'audit pour évaluer la sécurité des systèmes d'information. Décrivez les étapes à suivre pour élaborer ce plan, en précisant les objectifs de l'audit, les domaines clés à examiner, les méthodologies que vous utiliserez et la manière d'intégrer la gestion des risques dans votre planification.",
+            "livrable": "Un plan d'audit interne documenté précisant les objectifs de l'audit, les domaines clés à examiner, les méthodologies retenues et l'intégration de la gestion des risques."
         },
         {
             "title": "Analyse de conformité",
-            "context": "Un nouveau règlement sur la protection des données a été mis en place et vous devez vérifier la conformité de votre entreprise.",
-            "objective": "Choisissez un système d'information clé et rédigez un rapport d'audit qui identifie les potentiels écarts par rapport aux exigences réglementaires, propose des mesures correctives et évalue l'impact de ces écarts sur l'entreprise."
+            "objectif": "Être capable d'évaluer la conformité d'un système d'information à une réglementation.",
+            "instructions": "Un nouveau règlement sur la protection des données a été mis en place et vous devez vérifier la conformité de votre entreprise. Choisissez un système d'information clé et identifiez les écarts potentiels par rapport aux exigences réglementaires.",
+            "livrable": "Un rapport d'audit identifiant les écarts par rapport aux exigences réglementaires, proposant des mesures correctives et évaluant l'impact de ces écarts sur l'entreprise."
         },
         {
             "title": "Utilisation des outils d'audit",
-            "context": "Sélectionnez trois outils d'audit de sécurité différents (par exemple, un scanner de vulnérabilités, un outil d'analyse de logs, et un outil de gestion des configurations).",
-            "objective": "Pour chaque outil, décrivez un scénario d'utilisation spécifique dans le contexte d'un audit de sécurité. Expliquez comment vous utiliserez ces outils pour collecter des données et évaluer les résultats de l'audit."
+            "objectif": "Savoir sélectionner et utiliser des outils d'audit de sécurité selon le contexte.",
+            "instructions": "Sélectionnez trois outils d'audit de sécurité différents (par exemple un scanner de vulnérabilités, un outil d'analyse de logs et un outil de gestion des configurations). Pour chaque outil, décrivez un scénario d'utilisation spécifique dans le contexte d'un audit de sécurité et expliquez comment vous l'utiliserez pour collecter des données et évaluer les résultats de l'audit.",
+            "livrable": "Un document présentant, pour chacun des trois outils, le scénario d'utilisation, la méthode de collecte des données et l'évaluation des résultats de l'audit."
         },
         {
             "title": "Planification des actions correctives",
-            "context": "Après avoir réalisé un audit de sécurité, vous avez identifié plusieurs vulnérabilités critiques dans l'infrastructure IT de votre entreprise.",
-            "objective": "Créez un plan d'action détaillé qui hiérarchise les recommandations, attribue des responsabilités, définit des échéances, et élabore des indicateurs de suivi pour assurer l'implémentation des actions correctives."
+            "objectif": "Être capable de planifier et suivre des actions correctives à la suite d'un audit.",
+            "instructions": "À la suite d'un audit de sécurité, vous avez identifié plusieurs vulnérabilités critiques dans l'infrastructure IT de votre entreprise. Hiérarchisez les recommandations, attribuez des responsabilités, définissez des échéances et élaborez des indicateurs de suivi pour assurer l'implémentation des actions correctives.",
+            "livrable": "Un plan d'action détaillé hiérarchisant les recommandations, attribuant les responsabilités, fixant les échéances et définissant les indicateurs de suivi pour assurer l'implémentation des actions correctives."
         },
         {
             "title": "Audit de sécurité d'une application web",
-            "context": "Vous êtes chargé de réaliser un audit de sécurité pour une application web récemment développée par votre entreprise.",
-            "objective": "Développez un protocole d'audit qui couvre les aspects tels que l'authentification des utilisateurs, la gestion des sessions, la validation des entrées, et la sécurité des communications. Réalisez des tests de pénétration et rédigez un rapport qui présente vos conclusions et recommandations pour améliorer la sécurité de l'application."
+            "objectif": "Savoir conduire un audit de sécurité d'une application web.",
+            "instructions": "Vous êtes chargé de réaliser un audit de sécurité pour une application web récemment développée par votre entreprise. Développez un protocole d'audit couvrant l'authentification des utilisateurs, la gestion des sessions, la validation des entrées et la sécurité des communications, puis réalisez des tests de pénétration.",
+            "livrable": "Un rapport d'audit présentant le protocole suivi, les résultats des tests de pénétration, vos conclusions et vos recommandations pour améliorer la sécurité de l'application."
         }
     ],
     "bibliography": [
@@ -113,11 +127,11 @@
         }
     ],
     "OnlineResources": [
-        "ANSSI — Référentiel PASSI (https://cyber.gouv.fr) [FR]",
-        "ISACA — Audit Resources (https://www.isaca.org) [EN]",
+        "ANSSI - Référentiel PASSI (https://cyber.gouv.fr) [FR]",
+        "ISACA - Audit Resources (https://www.isaca.org) [EN]",
         "OWASP Testing Guide (https://owasp.org/www-project-web-security-testing-guide/) [EN]",
         "NIST SP 800-115 (https://csrc.nist.gov) [EN]",
-        "CLUSIF — Méthodes d'audit (https://clusif.fr) [FR]"
+        "CLUSIF - Méthodes d'audit (https://clusif.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

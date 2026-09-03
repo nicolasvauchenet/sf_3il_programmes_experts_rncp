@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Notions de données en temps réel vs données batch",
-            "context": "En utilisant des exemples concrets, identifiez et différenciez les applications qui nécessitent le traitement des données en temps réel de celles qui peuvent être traitées en mode batch.",
-            "objective": "Présentez vos conclusions sous forme de tableau comparatif en mettant en évidence les avantages et les inconvénients de chaque méthode."
+            "objectif": "Savoir distinguer les applications relevant du traitement en temps réel de celles relevant du mode batch.",
+            "instructions": "En utilisant des exemples concrets, identifiez et différenciez les applications qui nécessitent le traitement des données en temps réel de celles qui peuvent être traitées en mode batch. Présentez vos conclusions sous forme de tableau comparatif en mettant en évidence les avantages et les inconvénients de chaque méthode.",
+            "livrable": "Un tableau comparatif distinguant le traitement en temps réel du traitement batch, appuyé sur des exemples concrets et mettant en évidence les avantages et les inconvénients de chaque méthode."
         },
         {
             "title": "Mise en place d'un cluster Kafka",
-            "context": "Créez un plan détaillé pour la mise en place d'un cluster Kafka en spécifiant les ressources nécessaires, les étapes de configuration et les bonnes pratiques à suivre.",
-            "objective": "Présentez ensuite votre plan à l'ensemble du groupe en mettant en avant les avantages d'une telle infrastructure pour le traitement des données en temps réel."
+            "objectif": "Être capable de planifier la mise en place d'un cluster Kafka.",
+            "instructions": "Créez un plan détaillé pour la mise en place d'un cluster Kafka en spécifiant les ressources nécessaires, les étapes de configuration et les bonnes pratiques à suivre. Présentez ensuite votre plan à l'ensemble du groupe en mettant en avant les avantages d'une telle infrastructure pour le traitement des données en temps réel.",
+            "livrable": "Un plan détaillé de mise en place d'un cluster Kafka précisant les ressources, les étapes de configuration et les bonnes pratiques, présenté au groupe."
         },
         {
             "title": "Mise en place d'un job Flink",
-            "context": "En utilisant Flink, concevez un job de traitement de données en temps réel qui soit capable de lire des données depuis un topic Kafka, de les transformer et de les écrire dans un autre topic.",
-            "objective": "Documentez vos choix de conception, les optimisations réalisées et les éventuels compromis effectués."
+            "objectif": "Savoir concevoir un job Flink de traitement de données en temps réel connecté à Kafka.",
+            "instructions": "En utilisant Flink, concevez un job de traitement de données en temps réel capable de lire des données depuis un topic Kafka, de les transformer et de les écrire dans un autre topic. Documentez vos choix de conception, les optimisations réalisées et les éventuels compromis effectués.",
+            "livrable": "Un job Flink lisant, transformant et réécrivant les données entre topics Kafka, accompagné d'une documentation des choix de conception, des optimisations et des compromis effectués."
         },
         {
             "title": "Techniques d'optimisation des requêtes",
-            "context": "À l'aide de cas pratiques, identifiez les principaux goulots d'étranglement dans le traitement des données en temps réel et proposez des solutions concrètes pour les optimiser.",
-            "objective": "Mettez en œuvre ces solutions sur des jeux de données représentatifs et mesurez l'impact des optimisations réalisées."
+            "objectif": "Être capable d'identifier les goulots d'étranglement du traitement en temps réel et de les optimiser.",
+            "instructions": "À l'aide de cas pratiques, identifiez les principaux goulots d'étranglement dans le traitement des données en temps réel et proposez des solutions concrètes pour les optimiser. Mettez en œuvre ces solutions sur des jeux de données représentatifs et mesurez l'impact des optimisations réalisées.",
+            "livrable": "L'identification des goulots d'étranglement, les solutions d'optimisation mises en œuvre et la mesure de leur impact sur des jeux de données représentatifs."
         },
         {
             "title": "Analyse de cas d'utilisation réels",
-            "context": "Analysez un cas d'utilisation concret de traitement des données en temps réel rencontré dans votre organisation ou dans des études de cas disponibles.",
-            "objective": "Identifiez les défis rencontrés, les solutions apportées et les améliorations possibles, puis présentez vos conclusions lors d'une session de partage d'expérience avec le reste du groupe."
+            "objectif": "Savoir analyser un cas réel de traitement de données en temps réel.",
+            "instructions": "Analysez un cas d'utilisation concret de traitement des données en temps réel rencontré dans votre organisation ou dans des études de cas disponibles. Identifiez les défis rencontrés, les solutions apportées et les améliorations possibles, puis présentez vos conclusions lors d'une session de partage d'expérience avec le reste du groupe.",
+            "livrable": "Une analyse du cas retenu exposant les défis rencontrés, les solutions apportées et les améliorations possibles, présentée lors d'une session de partage d'expérience."
         }
     ],
     "bibliography": [

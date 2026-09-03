@@ -69,7 +69,17 @@
                 ]
             },
             {
-                "title": "Chapitre 5 : Exercices pratiques et études de cas",
+                "title": "Chapitre 5 : Supervision des performances et gestion des incidents",
+                "items": [
+                    "Surveiller les performances des systèmes à l'aide d'outils de monitoring",
+                    "Corréler les alertes de performance avec la détection des incidents",
+                    "Exploiter les indicateurs de performance pour diagnostiquer et prioriser les incidents",
+                    "Optimiser les performances des systèmes à la suite d'un incident",
+                    "Suivre l'évolution des performances à l'aide de tableaux de bord"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Exercices pratiques et études de cas",
                 "items": [
                     "Simulation de gestion d'incidents avec des scénarios variés",
                     "Résolution d'incidents en situation de stress",
@@ -83,53 +93,57 @@
     "exercises": [
         {
             "title": "Simulation de gestion d'incidents",
-            "context": "Vous êtes responsable de la gestion des incidents dans votre entreprise.",
-            "objective": "Un matin, vous arrivez au bureau et découvrez que plusieurs incidents critiques ont été signalés pendant la nuit. Priorisez les incidents en fonction de leur impact sur l'organisation, en justifiant vos choix. Pour l'incident le plus critique, créez un ticket dans un système de ticketing fictif avec une description détaillée de l'incident. Élaborez un plan de communication pour informer les parties prenantes de l'incident et des mesures prises. Décrivez les étapes que vous suivrez pour résoudre l'incident. Après la résolution, proposez une analyse post-incident en identifiant les causes, les solutions mises en œuvre et les recommandations pour éviter que l'incident ne se reproduise."
+            "objectif": "Savoir prioriser, tracer, communiquer et résoudre des incidents critiques puis en tirer un retour d'expérience.",
+            "instructions": "Priorisez les incidents critiques signalés en fonction de leur impact sur l'organisation, en justifiant vos choix. Pour l'incident le plus critique, créez un ticket dans un système de ticketing fictif avec une description détaillée. Élaborez un plan de communication pour informer les parties prenantes de l'incident et des mesures prises. Décrivez les étapes de résolution. Après la résolution, réalisez une analyse post-incident.",
+            "livrable": "Un ensemble de productions comprenant la priorisation justifiée, le ticket détaillé, le plan de communication, les étapes de résolution et l'analyse post-incident identifiant causes, solutions et recommandations."
         },
         {
             "title": "Élaboration de procédures",
-            "context": "Vous devez créer une procédure standardisée pour la gestion des incidents au sein de votre entreprise.",
-            "objective": "Rédigez une procédure détaillée couvrant les étapes de la détection, de la notification, de la classification, de la résolution et de la clôture d'un incident. Définissez les rôles et responsabilités pour chaque étape de la procédure. Créez un guide de triage pour aider le personnel à prioriser les incidents. Développez un modèle de rapport post-incident qui sera utilisé pour documenter et analyser les incidents survenus. Présentez un plan de formation pour assurer que tous les employés comprennent et peuvent appliquer la procédure."
+            "objectif": "Savoir créer une procédure standardisée de gestion des incidents au sein d'une entreprise.",
+            "instructions": "Rédigez une procédure détaillée couvrant la détection, la notification, la classification, la résolution et la clôture d'un incident. Définissez les rôles et responsabilités pour chaque étape. Créez un guide de triage pour aider le personnel à prioriser les incidents. Développez un modèle de rapport post-incident. Présentez un plan de formation pour que tous les employés puissent appliquer la procédure.",
+            "livrable": "Une procédure de gestion des incidents complète accompagnée du guide de triage, du modèle de rapport post-incident et du plan de formation."
         },
         {
             "title": "Gestion des changements d'urgence",
-            "context": "Un incident majeur vient de se produire, nécessitant un changement d'urgence dans votre système informatique pour éviter une défaillance plus grave.",
-            "objective": "Proposez un changement d'urgence et documentez-le en suivant le processus de gestion des changements de votre organisation. Décrivez les étapes pour obtenir une approbation rapide du changement d'urgence. Mettez en œuvre le changement et documentez les actions réalisées. Après mise en œuvre, évaluez l'efficacité du changement et identifiez les éventuels impacts non anticipés. Rédigez une communication à envoyer aux utilisateurs concernés pour les informer du changement et de ses conséquences."
+            "objectif": "Savoir proposer, documenter et évaluer un changement d'urgence selon le processus de gestion des changements.",
+            "instructions": "Proposez un changement d'urgence et documentez-le en suivant le processus de gestion des changements de votre organisation. Décrivez les étapes pour obtenir une approbation rapide. Mettez en œuvre le changement et documentez les actions réalisées. Après mise en œuvre, évaluez son efficacité et identifiez les impacts non anticipés. Rédigez une communication à destination des utilisateurs concernés.",
+            "livrable": "Un dossier de changement d'urgence documenté (proposition, approbation, mise en œuvre, évaluation d'efficacité) et une communication aux utilisateurs concernés."
         },
         {
             "title": "Analyse des problèmes récurrents",
-            "context": "Votre organisation fait face à des incidents similaires qui se produisent fréquemment.",
-            "objective": "Vous êtes chargé d'analyser ces problèmes pour en déterminer la cause racine. Collectez les données des incidents récurrents et identifiez les tendances ou modèles communs. Utilisez des techniques d'analyse de cause racine pour identifier les facteurs contribuant aux problèmes récurrents. Proposez des mesures correctives pour résoudre le problème à long terme. Rédigez un rapport détaillé incluant votre analyse, vos conclusions et vos recommandations. Présentez votre rapport à la direction et expliquez comment vos recommandations contribueront à réduire la fréquence et l'impact des incidents similaires."
+            "objectif": "Savoir identifier la cause racine de problèmes récurrents et proposer des mesures correctives durables.",
+            "instructions": "Collectez les données des incidents récurrents et identifiez les tendances ou modèles communs. Utilisez des techniques d'analyse de cause racine pour identifier les facteurs contributifs. Proposez des mesures correctives pour résoudre le problème à long terme. Présentez votre rapport à la direction en expliquant comment vos recommandations réduiront la fréquence et l'impact des incidents.",
+            "livrable": "Un rapport détaillé incluant l'analyse, les conclusions et les recommandations, présenté à la direction."
         },
         {
             "title": "Utilisation d'outils de ticketing en situation réelle",
-            "context": "Vous devez utiliser un outil de ticketing pour gérer une série d'incidents qui ont été simulés pour cet exercice.",
-            "objective": "Configurez un environnement dans un outil de ticketing où vous pouvez recevoir et traiter des tickets d'incidents. Simulez la réception de cinq incidents différents et créez un ticket pour chacun. Assignez les tickets aux membres de votre équipe fictive en fonction de leur expertise, en expliquant vos choix. Pour chaque ticket, décrivez la procédure de résolution et documentez toutes les actions prises dans l'outil de ticketing. Préparez un rapport de fin de journée qui résume l'activité des tickets, les résolutions apportées et les tickets encore ouverts ou en attente de plus d'informations."
+            "objectif": "Savoir utiliser un outil de ticketing pour recevoir, traiter, assigner et documenter une série d'incidents.",
+            "instructions": "Configurez un environnement dans un outil de ticketing permettant de recevoir et traiter des tickets. Simulez la réception de cinq incidents différents et créez un ticket pour chacun. Assignez les tickets aux membres de votre équipe fictive selon leur expertise, en expliquant vos choix. Pour chaque ticket, décrivez la procédure de résolution et documentez toutes les actions prises dans l'outil.",
+            "livrable": "Un rapport de fin de journée résumant l'activité des tickets, les résolutions apportées et les tickets encore ouverts ou en attente d'informations."
         }
     ],
     "bibliography": [
         {
-            "title": "ITIL 4 Essentials: Your Essential Guide for the ITIL 4 Foundation Exam",
+            "title": "ITIL 4 Essentials : your essential guide for the ITIL 4 Foundation exam and beyond (2e éd.). IT Governance Publishing",
             "author": "Agutter, C"
         },
         {
-            "title": "Site Reliability Engineering (2e éd.)",
+            "title": "Site Reliability Engineering : How Google Runs Production Systems. O'Reilly",
             "author": "Beyer, B. et al"
         }
     ],
     "OnlineResources": [
-        "ITIL 4 Framework (https://www.axelos.com/certifications/itil-service-management) [EN]",
-        "GLPI Documentation (https://glpi-project.org/fr/documentation/) [FR/EN]",
+        "GLPI Documentation (https://help.glpi-project.org/) [FR/EN]",
         "ServiceNow Documentation (https://docs.servicenow.com) [EN]",
-        "OTRS Documentation (https://doc.otrs.com) [EN]",
-        "Atlassian — Incident Management Guide (https://www.atlassian.com/incident-management) [EN]"
+        "OTRS Documentation (https://academy.otrs.com/doc) [EN]",
+        "Atlassian - Incident Management Guide (https://www.atlassian.com/incident-management) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

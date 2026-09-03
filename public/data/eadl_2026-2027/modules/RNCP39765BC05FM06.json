@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Identification des tâches pour l'automatisation",
-            "context": "En vous basant sur vos connaissances acquises dans le Chapitre 2, identifiez trois tâches répétitives et à faible valeur ajoutée au sein d'un processus métier de votre choix.",
-            "objective": "Pour chacune de ces tâches, expliquez en détail pourquoi elles seraient propices à l'automatisation et quel impact positif cela pourrait avoir sur l'efficacité opérationnelle de l'entreprise."
+            "objectif": "Savoir identifier les tâches propices à l'automatisation au sein d'un processus métier.",
+            "instructions": "En vous basant sur vos connaissances acquises dans le chapitre 2, identifiez trois tâches répétitives et à faible valeur ajoutée au sein d'un processus métier de votre choix. Pour chacune de ces tâches, expliquez en détail pourquoi elle serait propice à l'automatisation et quel impact positif cela pourrait avoir sur l'efficacité opérationnelle de l'entreprise.",
+            "livrable": "La présentation de trois tâches à automatiser, justifiant pour chacune sa pertinence pour l'automatisation et son impact attendu sur l'efficacité opérationnelle."
         },
         {
             "title": "Développement d'un robot RPA",
-            "context": "Imaginez un processus métier que vous souhaitez automatiser à l'aide d'un robot RPA.",
-            "objective": "Concevez un diagramme de flux décrivant les étapes clés de ce processus et identifiez les points d'intégration potentiels avec des applications tierces. Ensuite, proposez une stratégie de gestion des versions et des mises à jour pour ce robot RPA."
+            "objectif": "Être capable de concevoir le flux d'un robot RPA et d'en planifier la gestion des versions.",
+            "instructions": "Imaginez un processus métier que vous souhaitez automatiser à l'aide d'un robot RPA. Concevez un diagramme de flux décrivant les étapes clés de ce processus et identifiez les points d'intégration potentiels avec des applications tierces. Proposez ensuite une stratégie de gestion des versions et des mises à jour pour ce robot RPA.",
+            "livrable": "Un diagramme de flux du processus automatisé identifiant les points d'intégration, accompagné d'une stratégie de gestion des versions et des mises à jour du robot RPA."
         },
         {
             "title": "Sécurité et contrôle des accès",
-            "context": "À l'aide des bonnes pratiques présentées dans le Chapitre 4, élaborez un plan de sécurisation des robots RPA pour garantir l'intégrité et la confidentialité des données manipulées.",
-            "objective": "En outre, décrivez comment vous contrôleriez les accès et les autorisations pour les processus automatisés, en tenant compte des enjeux de conformité réglementaire."
+            "objectif": "Savoir sécuriser un robot RPA et gérer les accès aux processus automatisés.",
+            "instructions": "À l'aide des bonnes pratiques présentées dans le chapitre 4, élaborez un plan de sécurisation des robots RPA pour garantir l'intégrité et la confidentialité des données manipulées. Décrivez également comment vous contrôleriez les accès et les autorisations pour les processus automatisés, en tenant compte des enjeux de conformité réglementaire.",
+            "livrable": "Un plan de sécurisation des robots RPA couvrant l'intégrité et la confidentialité des données ainsi que le contrôle des accès et des autorisations, dans le respect des exigences de conformité réglementaire."
         },
         {
             "title": "Analyse des performances des robots RPA",
-            "context": "Sélectionnez un robot RPA existant dans votre organisation ou dans un cas d'étude, puis réalisez une analyse approfondie de ses performances.",
-            "objective": "Identifiez les principaux indicateurs de performance (KPI) pertinents pour évaluer l'efficacité du robot, proposez des pistes d'optimisation et discutez des avantages de l'intégration de l'intelligence artificielle dans ce contexte."
+            "objectif": "Être capable d'analyser les performances d'un robot RPA et d'en proposer l'optimisation.",
+            "instructions": "Sélectionnez un robot RPA existant dans votre organisation ou dans un cas d'étude, puis réalisez une analyse approfondie de ses performances. Identifiez les principaux indicateurs de performance (KPI) pertinents pour évaluer l'efficacité du robot, proposez des pistes d'optimisation et discutez des avantages de l'intégration de l'intelligence artificielle dans ce contexte.",
+            "livrable": "Une analyse des performances du robot RPA présentant les KPI retenus, des pistes d'optimisation et une discussion sur l'apport de l'intelligence artificielle."
         },
         {
             "title": "Plan de gestion du cycle de vie des robots RPA",
-            "context": "Élaborez un plan détaillé pour la gestion du cycle de vie d'un robot RPA, en incluant les différentes phases telles que le déploiement, la supervision, l'optimisation et l'évolution.",
-            "objective": "Identifiez les acteurs impliqués à chaque étape et décrivez les activités spécifiques à entreprendre pour assurer le bon déroulement de ces phases, tout en assurant la cohérence avec la stratégie globale de l'entreprise."
+            "objectif": "Savoir élaborer un plan de gestion du cycle de vie d'un robot RPA.",
+            "instructions": "Élaborez un plan détaillé pour la gestion du cycle de vie d'un robot RPA, en incluant les différentes phases telles que le déploiement, la supervision, l'optimisation et l'évolution. Identifiez les acteurs impliqués à chaque étape et décrivez les activités spécifiques à entreprendre pour assurer le bon déroulement de ces phases, tout en assurant la cohérence avec la stratégie globale de l'entreprise.",
+            "livrable": "Un plan de gestion du cycle de vie du robot RPA détaillant les phases, les acteurs impliqués et les activités associées, aligné sur la stratégie globale de l'entreprise."
         }
     ],
     "bibliography": [

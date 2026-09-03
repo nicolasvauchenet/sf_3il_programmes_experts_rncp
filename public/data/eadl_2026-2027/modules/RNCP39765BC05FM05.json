@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Concepts fondamentaux des processus décisionnels et modèles de données",
-            "context": "Vous allez devoir identifier les différents types de modèles de données (relationnel, dimensionnel, en étoile, en flocon) qui pourraient être utilisés dans des scénarios métier spécifiques.",
-            "objective": "Pour chaque type de modèle, expliquez en quoi il serait le plus adapté et ses avantages par rapport aux autres types de modèles."
+            "objectif": "Savoir identifier le type de modèle de données le plus adapté à un scénario métier donné.",
+            "instructions": "Vous devez identifier les différents types de modèles de données (relationnel, dimensionnel, en étoile, en flocon) qui pourraient être utilisés dans des scénarios métier spécifiques. Pour chaque type de modèle, expliquez en quoi il serait le plus adapté et ses avantages par rapport aux autres types de modèles.",
+            "livrable": "Une présentation des types de modèles de données précisant, pour chacun, le scénario métier le plus adapté et ses avantages par rapport aux autres."
         },
         {
             "title": "Conception et modélisation des entrepôts de données",
-            "context": "À l'aide d'un cas d'étude fourni, vous devrez choisir l'approche de modélisation la plus appropriée (top-down, bottom-up, hybrid) pour concevoir un entrepôt de données répondant aux besoins spécifiques de l'entreprise.",
-            "objective": "Vous devrez également justifier votre choix en mettant en avant les avantages de l'approche sélectionnée."
+            "objectif": "Être capable de choisir et de justifier une approche de modélisation d'entrepôt de données.",
+            "instructions": "À l'aide d'un cas d'étude fourni, choisissez l'approche de modélisation la plus appropriée (top-down, bottom-up ou hybride) pour concevoir un entrepôt de données répondant aux besoins spécifiques de l'entreprise, et justifiez votre choix en mettant en avant les avantages de l'approche sélectionnée.",
+            "livrable": "La conception d'un entrepôt de données selon l'approche retenue, assortie d'une justification argumentée du choix de modélisation."
         },
         {
             "title": "Mise en œuvre des processus décisionnels",
-            "context": "En utilisant un outil ETL (Extract, Transform, Load) spécifique, vous serez amené à intégrer des données provenant de sources hétérogènes dans un entrepôt de données.",
-            "objective": "Vous devrez décrire les étapes que vous avez suivies pour l'intégration des données et expliquer comment vous avez géré les métadonnées associées à ces données."
+            "objectif": "Savoir intégrer des données hétérogènes dans un entrepôt à l'aide d'un outil ETL.",
+            "instructions": "En utilisant un outil ETL (Extract, Transform, Load) spécifique, intégrez des données provenant de sources hétérogènes dans un entrepôt de données. Décrivez les étapes que vous avez suivies pour l'intégration des données et expliquez comment vous avez géré les métadonnées associées à ces données.",
+            "livrable": "La description du processus d'intégration réalisé, détaillant les étapes suivies et la gestion des métadonnées associées."
         },
         {
             "title": "Analyse et reporting dans les processus décisionnels",
-            "context": "À partir d'un jeu de données réel, vous serez chargé de réaliser une analyse approfondie en utilisant des outils d'analyse de données tels que l'OLAP, le data mining ou la dataviz.",
-            "objective": "Vous devrez présenter vos résultats sous forme de tableaux de bord et de rapports pertinents, en mettant en évidence les informations clés pour aider à la prise de décision."
+            "objectif": "Être capable de réaliser une analyse décisionnelle et de la restituer sous forme de tableaux de bord.",
+            "instructions": "À partir d'un jeu de données réel, réalisez une analyse approfondie en utilisant des outils d'analyse de données tels que l'OLAP, le data mining ou la dataviz. Présentez vos résultats sous forme de tableaux de bord et de rapports pertinents, en mettant en évidence les informations clés pour aider à la prise de décision.",
+            "livrable": "Des tableaux de bord et des rapports restituant l'analyse réalisée et mettant en évidence les informations clés pour la prise de décision."
         },
         {
             "title": "Optimisation des modèles de données",
-            "context": "En vous basant sur un modèle de données existant, vous devrez identifier les opportunités d'optimisation des requêtes en utilisant des techniques telles que l'indexation, le partitionnement des tables, ou l'optimisation de la gestion des clés et des contraintes.",
-            "objective": "Vous devrez ensuite proposer des améliorations spécifiques pour augmenter les performances du modèle de données tout en maintenant sa qualité."
+            "objectif": "Savoir identifier et proposer des optimisations de requêtes sur un modèle de données existant.",
+            "instructions": "En vous basant sur un modèle de données existant, identifiez les opportunités d'optimisation des requêtes en utilisant des techniques telles que l'indexation, le partitionnement des tables ou l'optimisation de la gestion des clés et des contraintes, puis proposez des améliorations spécifiques pour augmenter les performances du modèle tout en maintenant sa qualité.",
+            "livrable": "Une analyse des opportunités d'optimisation du modèle et des propositions d'amélioration spécifiques préservant la qualité du modèle."
         }
     ],
     "bibliography": [
@@ -121,8 +126,8 @@
         "Microsoft Power BI Documentation (https://learn.microsoft.com/power-bi/) [FR/EN]",
         "Tableau Documentation (https://help.tableau.com) [FR/EN]",
         "Qlik Documentation (https://help.qlik.com) [FR/EN]",
-        "Kimball Group — Data Warehouse Resources (https://www.kimballgroup.com) [EN]",
-        "TDWI — Data Warehousing Institute (https://tdwi.org) [EN]"
+        "Kimball Group - Data Warehouse Resources (https://www.kimballgroup.com) [EN]",
+        "TDWI - Data Warehousing Institute (https://tdwi.org) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

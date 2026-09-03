@@ -83,28 +83,33 @@
     "exercises": [
         {
             "title": "Compréhension des principes de base de la gestion budgétaire",
-            "context": "Vous allez travailler en binôme pour réaliser une étude de cas sur les différents types de budgets.",
-            "objective": "Choisissez un exemple concret d'entreprise ou d'organisation et identifiez les différents types de budgets qui pourraient être pertinents pour cette entité. Présentez ensuite votre analyse en mettant en lumière l'importance de ces budgets pour la gestion financière de l'entité choisie."
+            "objectif": "Être capable d'identifier les différents types de budgets et leur importance pour la gestion financière.",
+            "instructions": "En binôme, réalisez une étude de cas sur les différents types de budgets : choisissez un exemple concret d'entreprise ou d'organisation et identifiez les types de budgets pertinents pour cette entité.",
+            "livrable": "Une analyse présentée en binôme mettant en lumière les types de budgets identifiés et leur importance pour la gestion financière de l'entité choisie."
         },
         {
             "title": "Élaboration d'un budget de projet numérique",
-            "context": "Imaginez que vous êtes responsables d'un projet numérique pour une entreprise de votre choix.",
-            "objective": "Élaborez un budget prévisionnel détaillé pour ce projet en tenant compte des différents postes de dépenses spécifiques aux projets numériques. Présentez ensuite votre budget en mettant en avant les choix que vous avez faits et les raisons qui les justifient."
+            "objectif": "Être capable d'élaborer un budget prévisionnel détaillé pour un projet numérique.",
+            "instructions": "En vous positionnant comme responsable d'un projet numérique pour une entreprise de votre choix, élaborez un budget prévisionnel détaillé tenant compte des différents postes de dépenses spécifiques aux projets numériques.",
+            "livrable": "Un budget prévisionnel détaillé présenté et justifié, mettant en avant les choix effectués et les raisons qui les motivent."
         },
         {
             "title": "Suivi et contrôle budgétaire dans un projet numérique",
-            "context": "A l'aide d'une étude de cas, analysez les écarts entre le budget prévisionnel et le réalisé pour un projet numérique.",
-            "objective": "Identifiez les causes de ces écarts et proposez des mesures correctives pour y remédier. Présentez vos conclusions et recommandations sous forme de rapport détaillé."
+            "objectif": "Être capable d'analyser les écarts budgétaires et de proposer des mesures correctives.",
+            "instructions": "À l'aide d'une étude de cas, analysez les écarts entre le budget prévisionnel et le réalisé pour un projet numérique, identifiez les causes de ces écarts et proposez des mesures correctives.",
+            "livrable": "Un rapport détaillé présentant les conclusions de l'analyse des écarts et les recommandations de mesures correctives."
         },
         {
             "title": "Optimisation des budgets dans un contexte numérique",
-            "context": "Recherchez des exemples concrets de leviers d'optimisation des coûts dans des projets numériques.",
-            "objective": "Identifiez également des cas de retours sur investissement (ROI) liés à des dépenses numériques. Présentez ces exemples en mettant en évidence les méthodes utilisées et les résultats obtenus."
+            "objectif": "Être capable d'identifier des leviers d'optimisation des coûts et des retours sur investissement dans des projets numériques.",
+            "instructions": "Recherchez des exemples concrets de leviers d'optimisation des coûts dans des projets numériques et des cas de retours sur investissement (ROI) liés à des dépenses numériques.",
+            "livrable": "Une présentation d'exemples mettant en évidence les méthodes d'optimisation utilisées et les résultats obtenus."
         },
         {
             "title": "Évaluation de la performance financière des projets numériques",
-            "context": "Choisissez un projet numérique récent dont vous avez connaissance et réalisez une analyse de sa performance financière.",
-            "objective": "Utilisez des outils de mesure de la rentabilité financière pour évaluer les résultats du projet par rapport aux objectifs initialement fixés. Proposez ensuite des recommandations pour améliorer la rentabilité de ce projet en vous basant sur les enseignements tirés de votre analyse."
+            "objectif": "Être capable d'évaluer la performance financière d'un projet numérique et de formuler des recommandations d'amélioration.",
+            "instructions": "Choisissez un projet numérique récent que vous connaissez et analysez sa performance financière à l'aide d'outils de mesure de la rentabilité, en comparant les résultats aux objectifs initialement fixés.",
+            "livrable": "Une analyse de la performance financière assortie de recommandations d'amélioration de la rentabilité, fondées sur les enseignements tirés."
         }
     ],
     "bibliography": [
@@ -118,11 +123,11 @@
         }
     ],
     "OnlineResources": [
-        "PMI — Earned Value Management (https://www.pmi.org/learning/library) [EN]",
-        "AFNOR — Norme NF X50-115 (https://www.afnor.org) [FR]",
-        "INSEE — Indicateurs économiques (https://www.insee.fr) [FR]",
-        "CIGREF — Gestion des budgets IT (https://www.cigref.fr) [FR]",
-        "Harvard Business Review — Finance (https://hbr.org/topic/finance) [EN]"
+        "PMI - Earned Value Management (https://www.pmi.org/learning/library) [EN]",
+        "AFNOR - Norme NF X50-115 (https://www.afnor.org) [FR]",
+        "INSEE - Indicateurs économiques (https://www.insee.fr) [FR]",
+        "CIGREF - Gestion des budgets IT (https://www.cigref.fr) [FR]",
+        "Harvard Business Review - Finance (https://hbr.org/topic/finance) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

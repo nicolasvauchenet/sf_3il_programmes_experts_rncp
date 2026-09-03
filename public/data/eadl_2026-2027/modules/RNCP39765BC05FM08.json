@@ -2,7 +2,7 @@
     "meta": {
         "type": "module",
         "code": "RNCP39765-BC05-FM08",
-        "title": "Gestion et déploiement des pipelines MLops",
+        "title": "Gestion et déploiement des pipelines MLOps",
         "rncpCode": "39765",
         "blocCode": "BC05",
         "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
@@ -87,28 +87,33 @@
     "exercises": [
         {
             "title": "Comprendre les enjeux de l'automatisation des pipelines ML",
-            "context": "Objectif : Analyser les enjeux liés à l'automatisation des pipelines ML et leur impact sur les projets ML.",
-            "objective": "Description : Sélectionnez un cas d'utilisation de l'apprentissage automatique dans un domaine spécifique (par exemple, santé, finance, marketing, etc.) et identifiez les enjeux rencontrés dans la gestion manuelle des pipelines ML. Ensuite, proposez des solutions d'automatisation en vous appuyant sur les bénéfices de l'utilisation de Kubeflow et MLflow. Résultat attendu : Un rapport écrit présentant les enjeux identifiés, les avantages de l'automatisation des pipelines ML à l'aide de Kubeflow et MLflow, et des recommandations pour la mise en place de l'automatisation dans le cas d'utilisation choisi."
+            "objectif": "Savoir analyser les enjeux de l'automatisation des pipelines ML et leur impact sur les projets ML.",
+            "instructions": "Sélectionnez un cas d'utilisation de l'apprentissage automatique dans un domaine spécifique (par exemple la santé, la finance ou le marketing) et identifiez les enjeux rencontrés dans la gestion manuelle des pipelines ML. Proposez ensuite des solutions d'automatisation en vous appuyant sur les bénéfices de l'utilisation de Kubeflow et MLflow.",
+            "livrable": "Un rapport écrit présentant les enjeux identifiés, les avantages de l'automatisation des pipelines ML à l'aide de Kubeflow et MLflow, et des recommandations pour la mise en place de l'automatisation dans le cas d'utilisation choisi."
         },
         {
             "title": "Créer et gérer des pipelines ML avec Kubeflow",
-            "context": "Objectif : Maîtriser la création et la gestion de pipelines ML à l'aide de Kubeflow.",
-            "objective": "Description : À l'aide d'un jeu de données d'exemple, concevez et mettez en place un pipeline ML complet en utilisant Kubeflow. Le pipeline doit inclure les étapes de prétraitement des données, de formation de modèles, d'évaluation et de déploiement. Vous devrez également gérer et surveiller l'exécution du pipeline à l'aide des fonctionnalités fournies par Kubeflow. Résultat attendu : Un script ou un notebook décrivant les étapes de création, de gestion et de surveillance du pipeline ML, ainsi que des captures d'écran illustrant l'exécution du pipeline dans Kubeflow."
+            "objectif": "Être capable de créer et de gérer des pipelines ML à l'aide de Kubeflow.",
+            "instructions": "À l'aide d'un jeu de données d'exemple, concevez et mettez en place un pipeline ML complet en utilisant Kubeflow. Le pipeline doit inclure les étapes de prétraitement des données, de formation de modèles, d'évaluation et de déploiement. Vous devez également gérer et surveiller l'exécution du pipeline à l'aide des fonctionnalités fournies par Kubeflow.",
+            "livrable": "Un script ou un notebook décrivant les étapes de création, de gestion et de surveillance du pipeline ML, accompagné de captures d'écran illustrant l'exécution du pipeline dans Kubeflow."
         },
         {
             "title": "Utiliser MLflow pour le suivi, la gestion et le déploiement des modèles ML",
-            "context": "Objectif : Exploiter les fonctionnalités de MLflow pour le suivi, la gestion et le déploiement des modèles ML.",
-            "objective": "Description : Sélectionnez un modèle d'apprentissage automatique (par exemple, régression, classification, clustering, etc.) et utilisez MLflow pour effectuer le suivi de son entraînement, sa gestion (enregistrement, versioning) et son déploiement. Assurez-vous de documenter le processus complet, y compris la récupération du modèle entraîné et son déploiement. Résultat attendu : Un notebook ou un rapport détaillant l'utilisation de MLflow pour le suivi, la gestion et le déploiement du modèle sélectionné, avec des explications claires sur chaque étape du processus."
+            "objectif": "Savoir exploiter MLflow pour le suivi, la gestion et le déploiement des modèles ML.",
+            "instructions": "Sélectionnez un modèle d'apprentissage automatique (par exemple une régression, une classification ou un clustering) et utilisez MLflow pour effectuer le suivi de son entraînement, sa gestion (enregistrement, versioning) et son déploiement. Documentez le processus complet, y compris la récupération du modèle entraîné et son déploiement.",
+            "livrable": "Un notebook ou un rapport détaillant l'utilisation de MLflow pour le suivi, la gestion et le déploiement du modèle sélectionné, avec des explications claires sur chaque étape du processus."
         },
         {
             "title": "Créer des workflows intégrant Kubeflow et MLflow",
-            "context": "Objectif : Maîtriser l'intégration de Kubeflow et MLflow pour créer des workflows complets.",
-            "objective": "Description : Concevez un workflow complet qui intègre à la fois Kubeflow et MLflow pour gérer l'ensemble du cycle de vie d'un projet ML, de la préparation des données à la production des modèles. Assurez-vous d'expliquer la logique derrière l'intégration des deux outils et de démontrer la complémentarité de leurs fonctionnalités. Résultat attendu : Un schéma représentant le workflow conçu, accompagné d'une explication détaillée de chaque étape et de son lien avec Kubeflow et MLflow."
+            "objectif": "Être capable d'intégrer Kubeflow et MLflow pour créer des workflows ML complets.",
+            "instructions": "Concevez un workflow complet qui intègre à la fois Kubeflow et MLflow pour gérer l'ensemble du cycle de vie d'un projet ML, de la préparation des données à la mise en production des modèles. Expliquez la logique de l'intégration des deux outils et démontrez la complémentarité de leurs fonctionnalités.",
+            "livrable": "Un schéma représentant le workflow conçu, accompagné d'une explication détaillée de chaque étape et de son lien avec Kubeflow et MLflow."
         },
         {
             "title": "Mettre en place des processus de gestion de version pour les workflows ML",
-            "context": "Objectif : Assurer la gestion efficace des versions des workflows ML à l'aide des bonnes pratiques.",
-            "objective": "Description : Sélectionnez un workflow ML que vous avez développé ou un cas d'utilisation factice, et mettez en place des processus de gestion de version pour l'ensemble du workflow. Identifiez les composants à versionner, créez des versions explicites et gérez les dépendances entre les différentes versions. Expliquez comment ces processus de gestion de version peuvent faciliter la collaboration et le suivi des évolutions du workflow. Résultat attendu : Un guide détaillé présentant la structure de versionning mise en place pour le workflow sélectionné, accompagné d'exemples concrets de gestion de versions et de leurs avantages."
+            "objectif": "Savoir mettre en place la gestion de version des workflows ML selon les bonnes pratiques.",
+            "instructions": "Sélectionnez un workflow ML que vous avez développé ou un cas d'utilisation factice, et mettez en place des processus de gestion de version pour l'ensemble du workflow. Identifiez les composants à versionner, créez des versions explicites et gérez les dépendances entre les différentes versions. Expliquez comment ces processus de gestion de version peuvent faciliter la collaboration et le suivi des évolutions du workflow.",
+            "livrable": "Un guide détaillé présentant la structure de gestion de version mise en place pour le workflow sélectionné, accompagné d'exemples concrets de gestion des versions et de leurs avantages."
         }
     ],
     "bibliography": [

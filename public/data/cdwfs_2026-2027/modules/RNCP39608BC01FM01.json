@@ -21,7 +21,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre le rôle et les compétences essentielles du développeur Front-end (Comprendre) Maîtriser les principes, normes et technologies pour la conception d'interfaces web responsives et accessibles (Appliquer) Appliquer ces compétences dans un projet concret en respectant les standards et pratiques du développement Front-end (Créer)"
+        "description": "Les apprenants comprendront le rôle et les compétences essentielles du développeur Front-end. Ils maîtriseront les principes, normes et technologies pour la conception d'interfaces web responsives et accessibles. Ils sauront appliquer ces compétences dans un projet concret en respectant les standards et pratiques du développement Front-end."
     },
     "prerequisites": {
         "description": "Connaissance de base en HTML, CSS. Compréhension des principes fondamentaux de l'Internet et des navigateurs web."
@@ -77,47 +77,50 @@
     "exercises": [
         {
             "title": "Analyse du rôle du développeur Front-end",
-            "context": "En utilisant des exemples concrets, analysez le rôle du développeur Front-end dans la conception des interfaces web.",
-            "objective": "Identifiez les responsabilités spécifiques du développeur Front-end et expliquez l'importance de son rôle dans la création d'une expérience utilisateur de qualité. Présentez votre analyse sous la forme d'un rapport structuré."
+            "objectif": "Comprendre le rôle et les responsabilités du développeur Front-end dans la conception d'interfaces web et son impact sur l'expérience utilisateur.",
+            "instructions": "En vous appuyant sur des exemples concrets, analysez le rôle du développeur Front-end dans la conception des interfaces web. Identifiez ses responsabilités spécifiques et expliquez l'importance de son rôle dans la création d'une expérience utilisateur de qualité.",
+            "livrable": "Un rapport structuré présentant l'analyse du rôle du développeur Front-end, appuyée par des exemples concrets et mettant en évidence ses responsabilités et son importance pour l'expérience utilisateur."
         },
         {
             "title": "Intégration des normes W3C dans un projet concret",
-            "context": "À l'aide d'un exemple de page web, intégrez les normes W3C pour assurer la qualité du code.",
-            "objective": "Identifiez les éléments du code qui nécessitent des ajustements pour être conformes aux normes W3C, et apportez les modifications nécessaires. Présentez le code initial, les modifications effectuées et expliquez en quoi celles-ci améliorent la qualité de la page web."
+            "objectif": "Savoir appliquer les normes W3C pour assurer la qualité et la conformité du code d'une page web.",
+            "instructions": "À partir d'un exemple de page web, intégrez les normes W3C pour assurer la qualité du code. Identifiez les éléments du code qui nécessitent des ajustements pour être conformes aux normes W3C et apportez les modifications nécessaires.",
+            "livrable": "Une présentation incluant le code initial, les modifications effectuées et une explication de la manière dont ces modifications améliorent la qualité de la page web."
         },
         {
             "title": "Création d'une mise en page flexible",
-            "context": "Concevez une mise en page flexible à l'aide de media queries pour rendre une page web responsive.",
-            "objective": "Adaptez la mise en page pour qu'elle s'affiche de manière optimale sur différents appareils tels que les smartphones, les tablettes et les ordinateurs. Présentez votre mise en page flexible en fournissant le code CSS correspondant et des captures d'écran illustrant l'affichage sur les différents appareils."
+            "objectif": "Concevoir une mise en page responsive s'adaptant de manière optimale aux différents appareils grâce aux media queries.",
+            "instructions": "Concevez une mise en page flexible à l'aide de media queries pour rendre une page web responsive. Adaptez la mise en page pour qu'elle s'affiche de manière optimale sur différents appareils tels que les smartphones, les tablettes et les ordinateurs.",
+            "livrable": "La mise en page flexible accompagnée du code CSS correspondant et de captures d'écran illustrant l'affichage sur les différents appareils."
         }
     ],
     "bibliography": [
         {
-            "title": "CSS3 Flexbox & Grid Layout",
+            "title": "CSS 3 Grid Layout : vous allez enfin aimer CSS. Eyrolles",
             "author": "Goetter, R"
         },
         {
-            "title": "Responsive Web Design with HTML5 and CSS (5th ed.)",
+            "title": "Responsive Web Design with HTML5 and CSS (5e éd.). Packt Publishing",
             "author": "Frain, B"
         },
         {
-            "title": "Learning Web Design (6th ed.)",
-            "author": "Robbins, J. N"
+            "title": "Learning Web Design (6e éd.). O'Reilly Media",
+            "author": "Robbins, J. N. & Gustafson, A"
         }
     ],
     "OnlineResources": [
-        "MDN Web Docs — HTML, CSS, accessibilité (https://developer.mozilla.org) [FR/EN]",
+        "MDN Web Docs - HTML, CSS, accessibilité (https://developer.mozilla.org) [FR/EN]",
         "W3C Web Content Accessibility Guidelines (WCAG) 2.2 (https://www.w3.org/WAI/standards-guidelines/wcag/) [EN]",
-        "Référentiel Général d'Amélioration de l'Accessibilité (RGAA 4) — DINUM (https://accessibilite.numerique.gouv.fr) [FR]",
-        "Can I Use — compatibilité navigateurs (https://caniuse.com) [EN]",
-        "Web.dev — bonnes pratiques performance et SEO par Google (https://web.dev) [EN]"
+        "Référentiel Général d'Amélioration de l'Accessibilité (RGAA 4) - DINUM (https://accessibilite.numerique.gouv.fr) [FR]",
+        "Can I Use - compatibilité navigateurs (https://caniuse.com) [EN]",
+        "Web.dev - bonnes pratiques performance et SEO par Google (https://web.dev) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

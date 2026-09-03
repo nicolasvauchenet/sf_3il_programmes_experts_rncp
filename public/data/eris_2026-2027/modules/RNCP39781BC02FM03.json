@@ -83,28 +83,33 @@
     "exercises": [
         {
             "title": "Audit des actifs informatiques",
-            "context": "Vous avez été nommé responsable de la gestion des actifs informatiques dans une entreprise.",
-            "objective": "Votre première tâche consiste à réaliser un audit complet des actifs informatiques existants. Pour cela, vous devez : Créer une liste exhaustive des types d'actifs informatiques présents dans l'entreprise (matériels, logiciels, données, etc.). Élaborer un formulaire d'inventaire qui inclut les informations essentielles telles que le nom de l'actif, la catégorie, le modèle, le numéro de série, l'emplacement, la date d'achat, la fin de garantie, l'utilisateur assigné, etc. Mener un inventaire physique en utilisant le formulaire élaboré pour recenser au moins 10 actifs informatiques différents. Analyser les données recueillies pour identifier les actifs obsolètes ou non utilisés et proposer des actions à prendre pour ces actifs."
+            "objectif": "Être capable de réaliser un audit et un inventaire des actifs informatiques.",
+            "instructions": "Vous avez été nommé responsable de la gestion des actifs informatiques et devez réaliser un audit complet des actifs existants. Créez une liste exhaustive des types d'actifs informatiques présents dans l'entreprise (matériels, logiciels, données, etc.). Élaborez un formulaire d'inventaire incluant les informations essentielles (nom de l'actif, catégorie, modèle, numéro de série, emplacement, date d'achat, fin de garantie, utilisateur assigné, etc.). Menez un inventaire physique en utilisant ce formulaire pour recenser au moins 10 actifs différents. Analysez les données recueillies pour identifier les actifs obsolètes ou non utilisés et proposez des actions à prendre.",
+            "livrable": "Un dossier d'audit comprenant la liste des types d'actifs, un formulaire d'inventaire renseigné pour au moins 10 actifs et une analyse identifiant les actifs obsolètes ou inutilisés avec les actions proposées."
         },
         {
             "title": "Sélection d'un outil d'ITAM",
-            "context": "Votre entreprise envisage d'adopter un nouvel outil de gestion des actifs informatiques (ITAM).",
-            "objective": "Votre mission est de sélectionner l'outil le plus adapté aux besoins de l'entreprise. Pour cela, vous devez : Identifier cinq critères essentiels que l'outil d'ITAM doit satisfaire pour répondre aux exigences de votre entreprise. Rechercher trois outils d'ITAM disponibles sur le marché et les comparer en fonction des critères que vous avez établis. Rédiger un rapport de comparaison, incluant les avantages et inconvénients de chaque outil, ainsi que votre recommandation finale. Justifier votre choix en expliquant comment cet outil peut s'intégrer avec les systèmes d'information existants de l'entreprise."
+            "objectif": "Être capable de sélectionner un outil d'ITAM adapté aux besoins de l'entreprise.",
+            "instructions": "Votre entreprise envisage d'adopter un nouvel outil de gestion des actifs informatiques (ITAM) et vous devez sélectionner l'outil le plus adapté. Identifiez cinq critères essentiels que l'outil doit satisfaire. Recherchez trois outils d'ITAM disponibles sur le marché et comparez-les en fonction de ces critères. Rédigez un rapport de comparaison incluant les avantages et inconvénients de chaque outil ainsi que votre recommandation finale. Justifiez votre choix en expliquant comment cet outil peut s'intégrer avec les systèmes d'information existants.",
+            "livrable": "Un rapport de comparaison de trois outils ITAM selon cinq critères, avec avantages et inconvénients, recommandation finale et justification de l'intégration aux systèmes existants."
         },
         {
             "title": "Calcul du TCO",
-            "context": "Vous devez évaluer le coût total de possession (TCO) pour une catégorie d'actifs informatiques dans votre entreprise.",
-            "objective": "Sélectionnez une catégorie d'actifs (par exemple, les ordinateurs portables) et : Identifier tous les coûts associés à ces actifs sur leur cycle de vie complet (achat, installation, maintenance, support, mise à niveau, élimination, etc.). Collecter les données nécessaires auprès des départements concernés pour estimer ces coûts. Utiliser une méthode de calcul de TCO pour estimer le coût total sur une période de 5 ans. Présenter vos résultats sous forme d'un tableau ou d'un graphique explicatif."
+            "objectif": "Être capable de calculer le coût total de possession d'une catégorie d'actifs informatiques.",
+            "instructions": "Vous devez évaluer le coût total de possession (TCO) d'une catégorie d'actifs informatiques (par exemple, les ordinateurs portables). Identifiez tous les coûts associés à ces actifs sur leur cycle de vie complet (achat, installation, maintenance, support, mise à niveau, élimination, etc.). Collectez les données nécessaires auprès des départements concernés pour estimer ces coûts. Utilisez une méthode de calcul du TCO pour estimer le coût total sur une période de 5 ans. Présentez vos résultats sous forme d'un tableau ou d'un graphique explicatif.",
+            "livrable": "Une estimation du TCO d'une catégorie d'actifs sur 5 ans, appuyée sur les coûts du cycle de vie complet et présentée sous forme de tableau ou de graphique."
         },
         {
             "title": "Plan de gestion des risques",
-            "context": "En tant que gestionnaire des actifs informatiques, vous êtes chargé de développer un plan de gestion des risques pour les actifs informatiques de l'entreprise.",
-            "objective": "Votre plan devra : Identifier au moins cinq risques spécifiques liés à la gestion des actifs informatiques dans votre entreprise (par exemple, perte de données, vol d'actifs, non-conformité des licences, etc.). Évaluer la probabilité et l'impact potentiel de chaque risque identifié. Proposer des mesures de mitigation ou de prévention pour chaque risque. Élaborer un tableau ou une matrice des risques présentant vos évaluations et vos recommandations de gestion."
+            "objectif": "Être capable d'élaborer un plan de gestion des risques liés aux actifs informatiques.",
+            "instructions": "En tant que gestionnaire des actifs informatiques, vous êtes chargé de développer un plan de gestion des risques. Identifiez au moins cinq risques spécifiques liés à la gestion des actifs (par exemple, perte de données, vol d'actifs, non-conformité des licences, etc.). Évaluez la probabilité et l'impact potentiel de chaque risque identifié. Proposez des mesures de mitigation ou de prévention pour chaque risque. Élaborez un tableau ou une matrice des risques présentant vos évaluations et recommandations.",
+            "livrable": "Un plan de gestion des risques comprenant au moins cinq risques évalués (probabilité, impact), les mesures de mitigation ou de prévention associées et une matrice des risques."
         },
         {
             "title": "Politique de conformité des licences logicielles",
-            "context": "Votre entreprise doit s'assurer que toutes les licences logicielles sont gérées de manière conforme pour éviter les violations de droits d'auteur.",
-            "objective": "Vous êtes chargé de créer une politique de conformité des licences logicielles. Voici les étapes à suivre : Élaborer une liste de vérification des points clés à inclure dans la politique de conformité des licences (par exemple, procédures d'achat, d'installation, de suivi, et d'audit des licences). Rédiger une politique qui inclut des directives pour l'achat, l'utilisation et l'audit des licences logicielles au sein de l'entreprise. Développer un processus pour effectuer un audit interne des licences logicielles afin de déceler les éventuelles non-conformités. Proposer un plan d'action pour corriger toute non-conformité détectée et prévenir les violations futures."
+            "objectif": "Être capable de créer une politique de conformité des licences logicielles.",
+            "instructions": "Votre entreprise doit s'assurer que toutes les licences logicielles sont gérées de manière conforme pour éviter les violations de droits d'auteur, et vous êtes chargé de créer une politique de conformité. Élaborez une liste de vérification des points clés à inclure (procédures d'achat, d'installation, de suivi et d'audit des licences). Rédigez une politique incluant des directives pour l'achat, l'utilisation et l'audit des licences logicielles. Développez un processus pour effectuer un audit interne des licences afin de déceler les non-conformités. Proposez un plan d'action pour corriger toute non-conformité détectée et prévenir les violations futures.",
+            "livrable": "Une politique de conformité des licences logicielles accompagnée d'une liste de vérification, d'un processus d'audit interne et d'un plan d'action correctif et préventif."
         }
     ],
     "bibliography": [
@@ -114,11 +119,11 @@
         }
     ],
     "OnlineResources": [
-        "IAITAM — IT Asset Management (https://iaitam.org) [EN]",
-        "ISO/IEC 19770 — ITAM (https://www.iso.org/standard/68531.html) [EN/FR]",
+        "IAITAM - IT Asset Management (https://iaitam.org) [EN]",
+        "ISO/IEC 19770 - ITAM (https://www.iso.org/standard/68531.html) [EN/FR]",
         "GLPI Documentation (https://glpi-project.org/fr/documentation/) [FR/EN]",
         "ServiceNow ITAM (https://docs.servicenow.com) [EN]",
-        "ITIL 4 — Service Configuration Management (https://www.axelos.com) [EN]"
+        "ITIL 4 - Service Configuration Management (https://www.axelos.com) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

@@ -17,7 +17,7 @@
         },
         {
             "code": "C17",
-            "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution"
+            "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des Frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution"
         },
         {
             "code": "C18",
@@ -66,7 +66,7 @@
                 "title": "Chapitre 4 : Gestion des configurations dans un environnement CI/CD",
                 "items": [
                     "Comprendre l'importance de la gestion des configurations dans un environnement CI/CD",
-                    "Utiliser des outils de gestion de configurations tels que Ansible, Puppet, Chef, etc.",
+                    "Utiliser Ansible comme outil de référence en gestion de configuration (Chef et Puppet cités à titre historique)",
                     "Automatiser le déploiement et la configuration des infrastructures",
                     "Gérer les configurations à différents environnements (dev, test, prod)",
                     "Assurer la traçabilité des configurations dans un environnement CI/CD"
@@ -76,29 +76,34 @@
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "En utilisant un dépôt Git vide, les apprenants devront créer un nouveau projet, effectuer des modifications, gérer les conflits et fusionner les branches pour mettre en pratique les concepts de base de la gestion de versions.",
-            "objective": "Ils devront également effectuer des opérations de commit, push et pull pour comprendre le fonctionnement de Git."
+            "title": "Prise en main de la gestion de versions avec Git",
+            "objectif": "Être capable de mettre en pratique les concepts de base de la gestion de versions avec Git.",
+            "instructions": "À partir d'un dépôt Git vide, créer un nouveau projet, effectuer des modifications, gérer les conflits et fusionner les branches; réaliser des opérations de commit, push et pull pour comprendre le fonctionnement de Git.",
+            "livrable": "Un dépôt Git comportant le projet créé, des branches fusionnées, des conflits résolus et un historique de commits (avec push et pull)."
         },
         {
-            "title": "Exercice 2",
-            "context": "Les apprenants devront choisir un projet simple (par exemple, une application web) et mettre en place un pipeline DevOps en utilisant des outils tels que Jenkins, Travis CI ou GitLab CI.",
-            "objective": "Ils devront définir les différentes étapes du pipeline (build, test, deploy) et automatiser ces étapes autant que possible."
+            "title": "Mise en place d'un pipeline DevOps (CI/CD)",
+            "objectif": "Être capable de mettre en place un pipeline DevOps pour un projet.",
+            "instructions": "Choisir un projet simple (par exemple une application web) et mettre en place un pipeline DevOps à l'aide d'outils tels que Jenkins, GitHub Actions ou GitLab CI; définir les différentes étapes du pipeline (build, test, deploy) et automatiser ces étapes autant que possible.",
+            "livrable": "Un pipeline DevOps opérationnel intégrant les étapes build, test et deploy automatisées."
         },
         {
-            "title": "Exercice 3",
-            "context": "En se basant sur le projet utilisé dans l'exercice précédent, les apprenants devront mettre en place des tests automatisés (unitaires, intégration, fonctionnels) et les intégrer dans le pipeline CI/CD.",
-            "objective": "Ils devront utiliser des outils tels que JUnit, Selenium ou tout autre outil de leur choix pour réaliser ces tests."
+            "title": "Intégration de tests automatisés dans le pipeline CI/CD",
+            "objectif": "Être capable de mettre en place des tests automatisés et de les intégrer dans un pipeline CI/CD.",
+            "instructions": "En se basant sur le projet de l'exercice précédent, mettre en place des tests automatisés (unitaires, d'intégration, fonctionnels) et les intégrer dans le pipeline CI/CD, à l'aide d'outils tels que JUnit, Selenium ou un autre outil au choix.",
+            "livrable": "Un pipeline CI/CD intégrant des tests automatisés (unitaires, d'intégration et fonctionnels) exécutés automatiquement."
         },
         {
-            "title": "Exercice 4",
-            "context": "Les apprenants devront automatiser le déploiement et la configuration d'une infrastructure simple en utilisant Ansible.",
-            "objective": "Ils devront écrire des playbooks pour décrire les étapes nécessaires au déploiement et à la configuration, puis les exécuter pour déployer l'infrastructure."
+            "title": "Automatisation du déploiement d'infrastructure avec Ansible",
+            "objectif": "Être capable d'automatiser le déploiement et la configuration d'une infrastructure avec Ansible.",
+            "instructions": "Automatiser le déploiement et la configuration d'une infrastructure simple à l'aide d'Ansible; écrire des playbooks décrivant les étapes nécessaires au déploiement et à la configuration, puis les exécuter pour déployer l'infrastructure.",
+            "livrable": "Des playbooks Ansible fonctionnels permettant de déployer et de configurer l'infrastructure ciblée."
         },
         {
-            "title": "Exercice 5",
-            "context": "En utilisant un environnement de développement, les apprenants devront gérer les configurations à l'aide d'outils tels que Chef, Puppet ou tout autre outil de gestion de configurations.",
-            "objective": "Ils devront assurer la traçabilité des configurations et les déployer dans des environnements spécifiques (dev, test, prod)."
+            "title": "Gestion des configurations avec des outils dédiés",
+            "objectif": "Être capable de gérer les configurations à l'aide d'outils de gestion de configurations.",
+            "instructions": "Dans un environnement de développement, gérer les configurations à l'aide d'Ansible, outil de référence en gestion de configuration (Chef et Puppet n'étant cités qu'à titre historique); assurer la traçabilité des configurations et les déployer dans des environnements spécifiques (dev, test, prod).",
+            "livrable": "Un ensemble de configurations gérées, tracées et déployées dans les environnements dev, test et prod."
         }
     ],
     "bibliography": [

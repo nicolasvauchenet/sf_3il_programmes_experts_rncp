@@ -89,28 +89,33 @@
     "exercises": [
         {
             "title": "Analyse de performance avec monitoring",
-            "context": "Vous travaillez en tant qu'administrateur Cloud pour une entreprise qui utilise des services Cloud étendus.",
-            "objective": "On vous demande de mettre en place une solution de monitoring pour surveiller les performances des ressources Cloud. Votre objectif est de détecter les éventuelles dégradations et de réagir rapidement pour maintenir un niveau de service optimal. Choisissez un outil de monitoring Cloud adapté à l'environnement de l'entreprise. Décrivez le processus de configuration et de déploiement de cet outil dans l'environnement Cloud. Créez un tableau de bord personnalisé qui affiche les principaux indicateurs de performance (CPU, mémoire, bande passante réseau, temps de réponse). Configurez des alertes pour être notifié en cas de dépassement de seuils critiques que vous aurez définis. Rédigez un rapport succinct expliquant comment vous avez utilisé l'outil de monitoring pour identifier et résoudre un problème de performance fictif."
+            "objectif": "Être capable de mettre en place une solution de monitoring pour surveiller les performances des ressources Cloud.",
+            "instructions": "En tant qu'administrateur Cloud d'une entreprise utilisant des services Cloud étendus, choisissez un outil de monitoring adapté à l'environnement de l'entreprise et décrivez son processus de configuration et de déploiement. Créez un tableau de bord personnalisé affichant les principaux indicateurs de performance (CPU, mémoire, bande passante réseau, temps de réponse) et configurez des alertes déclenchées au dépassement de seuils critiques que vous aurez définis.",
+            "livrable": "Un rapport succinct expliquant comment l'outil de monitoring a été utilisé pour identifier et résoudre un problème de performance fictif, appuyé par le tableau de bord personnalisé et les alertes configurés."
         },
         {
             "title": "Optimisation des requêtes de base de données",
-            "context": "Vous êtes responsable de l'optimisation des applications Cloud d'une société de commerce électronique.",
-            "objective": "Après avoir identifié que les requêtes de base de données sont un goulot d'étranglement, vous devez les optimiser pour améliorer la performance de l'application. Analysez une requête de base de données particulièrement lente et identifiez les causes possibles de la latence. Proposez des modifications à apporter à cette requête pour améliorer son exécution. Cela peut inclure des modifications d'indexation, de jointures ou d'autres éléments de la requête. Mettez en place un plan de test pour comparer les performances de la requête avant et après optimisation. Exécutez les tests et recueillez les données de performance. Préparez un rapport expliquant les modifications apportées, les résultats des tests et les bénéfices en termes de performance."
+            "objectif": "Savoir diagnostiquer et optimiser une requête de base de données pour améliorer la performance d'une application.",
+            "instructions": "En tant que responsable de l'optimisation des applications Cloud d'une société de commerce électronique, analysez une requête de base de données particulièrement lente et identifiez les causes possibles de la latence. Proposez des modifications (indexation, jointures ou autres éléments de la requête) pour améliorer son exécution. Mettez en place un plan de test comparant les performances de la requête avant et après optimisation, exécutez les tests et recueillez les données de performance.",
+            "livrable": "Un rapport présentant les modifications apportées, les résultats des tests et les bénéfices obtenus en termes de performance."
         },
         {
             "title": "Mise en œuvre de CDN pour améliorer les performances",
-            "context": "Vous êtes consultant Cloud pour une entreprise de médias qui souhaite améliorer la vitesse de chargement de son contenu à l'échelle mondiale.",
-            "objective": "Vous décidez de mettre en œuvre un réseau de distribution de contenu (CDN). Choisissez un CDN adapté aux besoins de l'entreprise et justifiez votre choix. Intégrez le CDN dans l'architecture existante de l'entreprise. Configurez le CDN pour servir les contenus statiques (par exemple, images, vidéos, fichiers CSS/JS). Réalisez des tests de performance depuis différentes régions géographiques pour évaluer l'amélioration de la vitesse de chargement. Rédigez une documentation pour l'équipe de développement expliquant comment tirer le meilleur parti du CDN pour les nouveaux contenus."
+            "objectif": "Être capable d'intégrer et de configurer un réseau de distribution de contenu (CDN) pour accélérer la diffusion de contenus à l'échelle mondiale.",
+            "instructions": "En tant que consultant Cloud pour une entreprise de médias, choisissez un CDN adapté aux besoins de l'entreprise et justifiez votre choix. Intégrez le CDN dans l'architecture existante de l'entreprise et configurez-le pour servir les contenus statiques (images, vidéos, fichiers CSS/JS). Réalisez des tests de performance depuis différentes régions géographiques pour évaluer l'amélioration de la vitesse de chargement.",
+            "livrable": "Une documentation destinée à l'équipe de développement expliquant comment tirer le meilleur parti du CDN pour les nouveaux contenus, appuyée par les résultats des tests de performance par région géographique."
         },
         {
             "title": "Load Balancing Simulation",
-            "context": "L'entreprise pour laquelle vous travaillez connaît des pics de trafic imprévisibles et souhaite éviter les temps d'arrêt.",
-            "objective": "Vous avez été chargé de concevoir et de simuler un environnement avec load balancing pour mieux répartir la charge sur plusieurs serveurs. Décrivez l'architecture que vous recommandez pour le load balancing, y compris les types de serveurs et leur configuration. Mettez en place une simulation de trafic pour tester l'efficacité de votre solution de load balancing. Recueillez les données de performance et vérifiez que la charge est équitablement répartie entre les serveurs. Ajustez la configuration en fonction des résultats des tests pour optimiser la répartition de la charge. Fournissez un rapport détaillé sur la simulation, les résultats obtenus et les recommandations pour la mise en production."
+            "objectif": "Savoir concevoir et simuler un environnement de répartition de charge (load balancing) pour répartir le trafic sur plusieurs serveurs.",
+            "instructions": "L'entreprise connaît des pics de trafic imprévisibles et souhaite éviter les temps d'arrêt. Décrivez l'architecture de load balancing recommandée, y compris les types de serveurs et leur configuration. Mettez en place une simulation de trafic pour tester l'efficacité de votre solution, recueillez les données de performance et vérifiez que la charge est équitablement répartie entre les serveurs. Ajustez la configuration en fonction des résultats des tests pour optimiser la répartition de la charge.",
+            "livrable": "Un rapport détaillé sur la simulation, les résultats obtenus et les recommandations pour la mise en production."
         },
         {
             "title": "Résolution de cas pratique",
-            "context": "Vous êtes membre d'une équipe d'ingénieurs Cloud confrontée à un cas pratique : un service Cloud de stockage de fichiers connaît des performances dégradées, surtout aux heures de pointe.",
-            "objective": "L'entreprise souhaite que vous identifiiez la source du problème et que vous proposiez des solutions pour améliorer les performances. Analysez les données de monitoring pour identifier les périodes de dégradation et les ressources concernées. Identifiez les goulots d'étranglement et proposez des actions pour résoudre ces problèmes (par exemple, augmentation de la capacité, optimisation de la configuration, etc.). Élaborez un plan d'action détaillé pour mettre en œuvre ces améliorations. Simulez les effets de vos améliorations dans un environnement de test. Rédigez un rapport d'analyse de situation, comprenant votre diagnostic, les solutions proposées, les résultats des simulations et un plan de mise en œuvre."
+            "objectif": "Être capable de diagnostiquer une dégradation de performance et de proposer un plan d'amélioration validé par simulation.",
+            "instructions": "Un service Cloud de stockage de fichiers connaît des performances dégradées, surtout aux heures de pointe. Analysez les données de monitoring pour identifier les périodes de dégradation et les ressources concernées. Repérez les goulots d'étranglement et proposez des actions pour les résoudre (augmentation de la capacité, optimisation de la configuration, etc.). Élaborez un plan d'action détaillé pour mettre en œuvre ces améliorations, puis simulez leurs effets dans un environnement de test.",
+            "livrable": "Un rapport d'analyse de situation comprenant le diagnostic, les solutions proposées, les résultats des simulations et un plan de mise en œuvre."
         }
     ],
     "bibliography": [
@@ -128,11 +133,11 @@
         }
     ],
     "OnlineResources": [
-        "AWS Well-Architected — Performance Pillar (https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/) [EN]",
-        "Google Cloud — Performance (https://cloud.google.com/architecture/framework/performance-optimization) [EN]",
-        "Microsoft Azure — Performance best practices (https://learn.microsoft.com/azure/architecture/framework/scalability/) [FR/EN]",
+        "AWS Well-Architected - Performance Pillar (https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/) [EN]",
+        "Google Cloud - Performance (https://cloud.google.com/architecture/framework/performance-optimization) [EN]",
+        "Microsoft Azure - Performance best practices (https://learn.microsoft.com/azure/architecture/framework/scalability/) [FR/EN]",
         "Prometheus Documentation (https://prometheus.io/docs/) [EN]",
-        "Datadog — Performance monitoring (https://docs.datadoghq.com) [EN]"
+        "Datadog - Performance monitoring (https://docs.datadoghq.com) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

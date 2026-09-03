@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Analyse de tarification des services Cloud",
-            "context": "Objectif : Comprendre et analyser les modèles de tarification des fournisseurs de services Cloud.",
-            "objective": "Vous êtes responsable financier d'une entreprise qui envisage de migrer ses services sur le Cloud. Choisissez deux principaux fournisseurs de services Cloud et comparez leurs modèles de tarification pour un service de calcul (par exemple, instances de machine virtuelle) et un service de stockage. Réalisez un tableau comparatif qui présente les coûts initiaux, les coûts récurrents, les options de tarification à la demande, réservée ou spot, et tout coût caché potentiel que vous pourriez identifier. Présentez une synthèse de votre analyse en recommandant le fournisseur le plus adapté aux besoins de votre entreprise, en justifiant votre choix en fonction des coûts et des avantages associés."
+            "objectif": "Comprendre et analyser les modèles de tarification des fournisseurs de services Cloud afin de recommander le plus adapté.",
+            "instructions": "En tant que responsable financier d'une entreprise envisageant de migrer ses services sur le Cloud, choisissez deux principaux fournisseurs de services Cloud et comparez leurs modèles de tarification pour un service de calcul (par exemple des instances de machine virtuelle) et un service de stockage. Réalisez un tableau comparatif présentant les coûts initiaux, les coûts récurrents, les options de tarification à la demande, réservée ou spot, et tout coût caché potentiel que vous pourriez identifier.",
+            "livrable": "Un tableau comparatif des tarifications et une synthèse recommandant le fournisseur le plus adapté aux besoins de l'entreprise, justifiée en fonction des coûts et des avantages associés."
         },
         {
             "title": "Simulation de budgétisation",
-            "context": "Objectif : Mettre en place un processus de budgétisation pour les ressources Cloud.",
-            "objective": "Votre entreprise prévoit de développer une nouvelle application qui nécessitera des ressources Cloud supplémentaires. En tant que gestionnaire Cloud, créez un budget prévisionnel pour le premier mois d'exploitation de l'application. Déterminez les ressources nécessaires (CPU, mémoire, stockage, bande passante, etc.) et utilisez les outils de tarification des fournisseurs Cloud pour estimer les coûts. Intégrez dans votre budget des postes pour les dépenses imprévues et les coûts de gestion. Enfin, développez un plan d'alerte pour vous avertir si les dépenses réelles dépassent de 10% le budget prévisionnel."
+            "objectif": "Être capable d'établir un budget prévisionnel des ressources Cloud et un dispositif d'alerte associé.",
+            "instructions": "Votre entreprise prévoit de développer une nouvelle application nécessitant des ressources Cloud supplémentaires. En tant que gestionnaire Cloud, créez un budget prévisionnel pour le premier mois d'exploitation de l'application : déterminez les ressources nécessaires (CPU, mémoire, stockage, bande passante, etc.) et estimez les coûts à l'aide des outils de tarification des fournisseurs Cloud. Intégrez dans votre budget des postes pour les dépenses imprévues et les coûts de gestion.",
+            "livrable": "Un budget prévisionnel du premier mois d'exploitation, incluant les postes de dépenses imprévues et de gestion, ainsi qu'un plan d'alerte déclenché si les dépenses réelles dépassent de 10 % le budget prévisionnel."
         },
         {
             "title": "Stratégie d'optimisation des coûts",
-            "context": "Objectif : Élaborer une stratégie d'optimisation des coûts pour les ressources Cloud.",
-            "objective": "Après quelques mois d'exploitation, vous constatez que les coûts Cloud de votre entreprise sont plus élevés que prévu. Votre mission est de proposer une stratégie d'optimisation. Analysez les données d'utilisation de vos services Cloud pendant les 3 derniers mois et identifiez les ressources sous-utilisées. Proposez un plan d'action pour réduire les coûts, qui pourrait inclure la mise en place d'instances réservées, l'arrêt automatique des ressources inactives et le dimensionnement automatique des services en fonction de la charge. Présentez les économies attendues et un calendrier pour la mise en œuvre de votre stratégie."
+            "objectif": "Élaborer une stratégie d'optimisation des coûts pour des ressources Cloud sous-utilisées.",
+            "instructions": "Après quelques mois d'exploitation, vous constatez que les coûts Cloud de votre entreprise sont plus élevés que prévu. Analysez les données d'utilisation de vos services Cloud pendant les trois derniers mois et identifiez les ressources sous-utilisées. Proposez un plan d'action pour réduire les coûts, pouvant inclure la mise en place d'instances réservées, l'arrêt automatique des ressources inactives et le dimensionnement automatique des services en fonction de la charge.",
+            "livrable": "Une stratégie d'optimisation des coûts présentant les économies attendues et un calendrier pour la mise en œuvre."
         },
         {
             "title": "Gestion des licences dans le Cloud",
-            "context": "Objectif : Optimiser les coûts liés aux licences logicielles dans un environnement Cloud.",
-            "objective": "En tant que responsable informatique, vous avez été chargé d'examiner les coûts des licences logicielles de votre entreprise dans le Cloud. Faites l'inventaire des logiciels actuellement utilisés et examinez les termes des contrats de licence et les coûts associés. Identifiez les opportunités de réduction des coûts, telles que la consolidation des licences, l'achat de licences réservées ou l'utilisation de licences open source. Rédigez un rapport qui présente vos recommandations pour réduire les coûts des licences tout en maintenant la conformité légale."
+            "objectif": "Savoir optimiser les coûts liés aux licences logicielles dans un environnement Cloud tout en maintenant la conformité légale.",
+            "instructions": "En tant que responsable informatique chargé d'examiner les coûts des licences logicielles de votre entreprise dans le Cloud, faites l'inventaire des logiciels actuellement utilisés et examinez les termes des contrats de licence et les coûts associés. Identifiez les opportunités de réduction des coûts, telles que la consolidation des licences, l'achat de licences réservées ou l'utilisation de licences open source.",
+            "livrable": "Un rapport présentant vos recommandations pour réduire les coûts des licences tout en maintenant la conformité légale."
         },
         {
             "title": "Plan d'action pour l'optimisation financière",
-            "context": "Objectif : Développer un plan d'action pour améliorer la gestion financière des ressources Cloud.",
-            "objective": "Imaginez que vous êtes consultant en gestion des coûts Cloud pour une entreprise qui souhaite améliorer sa gestion financière du Cloud. Sur la base des bonnes pratiques et des études de cas étudiés en cours, élaborez un plan d'action détaillé pour l'entreprise. Ce plan doit inclure des objectifs spécifiques, des initiatives clés pour atteindre ces objectifs (comme l'automatisation des politiques d'échelle ou l'utilisation d'outils d'analyse des coûts), et des indicateurs de performance pour mesurer l'efficacité de la gestion des coûts. Préparez également une présentation pour la direction afin d'exposer les bénéfices attendus de la mise en œuvre de ce plan d'action."
+            "objectif": "Développer un plan d'action pour améliorer la gestion financière des ressources Cloud.",
+            "instructions": "En tant que consultant en gestion des coûts Cloud pour une entreprise souhaitant améliorer sa gestion financière du Cloud, élaborez, sur la base des bonnes pratiques et des études de cas étudiés en cours, un plan d'action détaillé. Ce plan doit inclure des objectifs spécifiques, des initiatives clés pour atteindre ces objectifs (comme l'automatisation des politiques d'échelle ou l'utilisation d'outils d'analyse des coûts) et des indicateurs de performance pour mesurer l'efficacité de la gestion des coûts.",
+            "livrable": "Un plan d'action détaillé (objectifs spécifiques, initiatives clés, indicateurs de performance) accompagné d'une présentation à destination de la direction exposant les bénéfices attendus de sa mise en œuvre."
         }
     ],
     "bibliography": [
@@ -118,7 +123,7 @@
         "AWS Cost Management (https://aws.amazon.com/aws-cost-management/) [EN]",
         "Azure Cost Management (https://learn.microsoft.com/azure/cost-management-billing/) [FR/EN]",
         "Google Cloud Cost Management (https://cloud.google.com/cost-management) [EN]",
-        "CNCF — FinOps projects (https://www.cncf.io/projects/) [EN]"
+        "CNCF - FinOps projects (https://www.cncf.io/projects/) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

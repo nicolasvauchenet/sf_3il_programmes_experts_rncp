@@ -29,7 +29,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre l'importance de la coordination des équipes de projet pour optimiser les performances et la motivation (Comprendre) Utiliser des outils collaboratifs pour une gestion efficace de la planification et du suivi des tâches (Appliquer) Développer les compétences individuelles et collectives au sein des équipes pour améliorer la réactivité face aux évolutions des projets (Créer)"
+        "description": "Comprendre l'importance de la coordination des équipes de projet pour optimiser les performances et la motivation. Savoir utiliser des outils collaboratifs pour une gestion efficace de la planification et du suivi des tâches. Développer les compétences individuelles et collectives au sein des équipes pour améliorer la réactivité face aux évolutions des projets."
     },
     "prerequisites": {
         "description": "Connaissances de base en gestion de projet et en management d'équipe."
@@ -91,57 +91,58 @@
     "exercises": [
         {
             "title": "Développer un plan de coordination pour un projet spécifique",
-            "context": "Dans cet exercice, les apprenants devront choisir un projet concret sur lequel ils travaillent ou qu'ils connaissent bien.",
-            "objective": "Ils devront développer un plan de coordination détaillé en se basant sur les principes abordés dans le cours. Le plan devra inclure les différentes étapes de coordination, l'identification des ressources humaines nécessaires, la gestion des compétences, l'adaptation pour inclure les personnes en situation de handicap, et l'utilisation d'outils collaboratifs appropriés."
+            "objectif": "Savoir élaborer un plan de coordination détaillé intégrant ressources, compétences, inclusion et outils collaboratifs.",
+            "instructions": "Choisissez un projet concret sur lequel vous travaillez ou que vous connaissez bien. Développez un plan de coordination détaillé incluant les étapes de coordination, l'identification des ressources humaines nécessaires, la gestion des compétences, l'adaptation pour inclure les personnes en situation de handicap et l'utilisation d'outils collaboratifs appropriés.",
+            "livrable": "Un plan de coordination détaillé couvrant les étapes de coordination, les ressources humaines, la gestion des compétences, l'inclusion des personnes en situation de handicap et les outils collaboratifs."
         },
         {
             "title": "Simulation de l'utilisation d'outils collaboratifs pour la planification et le suivi des tâches",
-            "context": "Pour cet exercice, les apprenants seront amenés à simuler l'utilisation d'outils collaboratifs pour la planification et le suivi des tâches.",
-            "objective": "Ils devront choisir un outil collaboratif adapté à un scénario donné et mettre en place un planning, attribuer des tâches à des membres de l'équipe, suivre l'avancement des tâches, gérer des documents, et échanger des informations. Une présentation des résultats de la simulation sera ensuite réalisée en groupe."
+            "objectif": "Être capable d'utiliser un outil collaboratif pour planifier, suivre les tâches et échanger au sein d'une équipe.",
+            "instructions": "Choisissez un outil collaboratif adapté à un scénario donné et simulez son utilisation : mettez en place un planning, attribuez des tâches aux membres de l'équipe, suivez l'avancement, gérez des documents et échangez des informations. Réalisez ensuite une présentation des résultats en groupe.",
+            "livrable": "Une simulation d'outil collaboratif (planning, attribution et suivi des tâches, gestion documentaire) suivie d'une présentation des résultats en groupe."
         },
         {
             "title": "Plan d'accompagnement des compétences individuelles et collectives",
-            "context": "Les apprenants devront élaborer un plan d'accompagnement des compétences pour une équipe fictive ou réelle.",
-            "objective": "Ils devront identifier les besoins en formation, proposer des programmes d'accompagnement individuel et collectif, gérer des situations de conflits, encourager la collaboration et le partage de connaissances, et prévoir des modalités d'évaluation régulière des compétences avec des ajustements si nécessaires."
+            "objectif": "Savoir élaborer un plan d'accompagnement des compétences individuelles et collectives d'une équipe.",
+            "instructions": "Pour une équipe fictive ou réelle, élaborez un plan d'accompagnement des compétences : identifiez les besoins en formation, proposez des programmes d'accompagnement individuel et collectif, gérez des situations de conflits, encouragez la collaboration et le partage de connaissances, et prévoyez des modalités d'évaluation régulière avec ajustements.",
+            "livrable": "Un plan d'accompagnement des compétences couvrant besoins en formation, programmes individuels et collectifs, gestion des conflits, partage de connaissances et modalités d'évaluation avec ajustements."
         },
         {
             "title": "Analyse et planification des ressources pour un projet donné",
-            "context": "Dans cet exercice, les apprenants devront choisir un projet spécifique et réaliser une analyse détaillée des besoins en ressources humaines et matérielles.",
-            "objective": "Ils devront ensuite planifier l'allocation de ces ressources en fonction des besoins du projet, en tenant compte des contraintes et des éventuels imprévus. Une présentation des résultats de l'analyse et de la planification sera demandée."
+            "objectif": "Être capable d'analyser les besoins en ressources et de planifier leur allocation sur un projet.",
+            "instructions": "Choisissez un projet spécifique et réalisez une analyse détaillée des besoins en ressources humaines et matérielles. Planifiez ensuite l'allocation de ces ressources en fonction des besoins du projet, en tenant compte des contraintes et des éventuels imprévus. Présentez les résultats.",
+            "livrable": "Une analyse détaillée des besoins en ressources humaines et matérielles et un plan d'allocation tenant compte des contraintes et imprévus, avec une présentation des résultats."
         },
         {
             "title": "Gestion des ajustements de planification",
-            "context": "Les apprenants seront mis en situation de devoir gérer des ajustements de planification sur un projet donné.",
-            "objective": "Ils devront détecter un écart par rapport à la planification initiale, analyser les causes de cet écart, proposer des actions correctives, communiquer ces ajustements à l'équipe, et suivre les effets de ces ajustements sur le déroulement du projet. Une réflexion sur l'amélioration continue de la planification sera également demandée."
+            "objectif": "Savoir détecter, analyser et corriger un écart de planification dans une logique d'amélioration continue.",
+            "instructions": "Mis en situation sur un projet donné, détectez un écart par rapport à la planification initiale, analysez ses causes, proposez des actions correctives, communiquez ces ajustements à l'équipe et suivez leurs effets sur le déroulement du projet. Menez également une réflexion sur l'amélioration continue de la planification.",
+            "livrable": "Un dossier de gestion des ajustements présentant l'écart détecté, l'analyse des causes, les actions correctives, la communication à l'équipe, le suivi des effets et une réflexion sur l'amélioration continue."
         }
     ],
     "bibliography": [
         {
-            "title": "Les 5 dysfonctions d'une équipe : Une fable sur le leadership",
+            "title": "Optimisez votre équipe : les cinq dysfonctions d'une équipe. Un monde différent",
             "author": "Lencioni, P"
         },
         {
-            "title": "Scrum : pour une pratique vivante de l'agilité (6e éd.)",
+            "title": "Scrum : un outil convivial pour une agilité radicale (6e éd.). Dunod",
             "author": "Aubry, C"
-        },
-        {
-            "title": "L'intelligence émotionnelle au travail",
-            "author": "Goleman, D"
         }
     ],
     "OnlineResources": [
-        "Harvard Business Review — Team Management (https://hbr.org/topic/teams) [EN]",
-        "Atlassian — Team Playbook (https://www.atlassian.com/team-playbook) [EN]",
-        "ANACT — Agence Nationale pour l'Amélioration des Conditions de Travail (https://www.anact.fr) [FR]",
+        "Harvard Business Review - Team Management (https://hbr.org/topic/subject/collaboration-and-teams) [EN]",
+        "Atlassian - Team Playbook (https://www.atlassian.com/team-playbook) [EN]",
+        "ANACT - Agence Nationale pour l'Amélioration des Conditions de Travail (https://www.anact.fr) [FR]",
         "MIT Sloan Management Review (https://sloanreview.mit.edu) [EN]",
-        "Manager-go — Guide management d'équipe (https://www.manager-go.com) [FR]"
+        "Manager-go - Guide management d'équipe (https://www.manager-go.com) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

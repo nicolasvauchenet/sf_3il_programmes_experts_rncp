@@ -75,25 +75,56 @@
             }
         ]
     },
-    "exercises": [],
+    "exercises": [
+        {
+            "title": "Choix d'une solution de supervision",
+            "objectif": "Comprendre les enjeux de la supervision et savoir choisir une solution adaptée aux besoins d'une infrastructure.",
+            "instructions": "À partir d'un contexte d'entreprise donné, identifiez les enjeux de supervision (disponibilité, performance, sécurité). Comparez au moins trois solutions du marché (par exemple Zabbix, Prometheus/Grafana, Centreon) et distinguez les approches réactive, proactive et prédictive. Justifiez le choix d'une solution au regard des besoins identifiés.",
+            "livrable": "Une note de comparaison présentant les enjeux, un tableau comparatif des solutions et la justification du choix retenu."
+        },
+        {
+            "title": "Mise en place d'une solution de supervision",
+            "objectif": "Savoir installer, configurer et éprouver une solution de supervision.",
+            "instructions": "Définissez les besoins de supervision d'une infrastructure de test (serveurs, services, réseau). Installez et configurez l'outil retenu, déclarez les hôtes et les sondes, puis paramétrez les alertes et les notifications. Testez le déclenchement des alertes en simulant une panne.",
+            "livrable": "Une solution de supervision opérationnelle documentée (hôtes et sondes déclarés, règles d'alerte, notifications) et un compte rendu du test des alertes."
+        },
+        {
+            "title": "Supervision des performances",
+            "objectif": "Savoir superviser et optimiser les performances à partir d'indicateurs pertinents.",
+            "instructions": "Définissez des indicateurs de performance pertinents (CPU, mémoire, latence, débit, temps de réponse) pour les services supervisés. Construisez un tableau de bord de suivi, analysez les données recueillies et proposez des optimisations. Configurez des alertes en cas de dégradation.",
+            "livrable": "Un tableau de bord de performance commenté, accompagné des seuils d'alerte définis et des pistes d'optimisation identifiées."
+        },
+        {
+            "title": "Supervision de la sécurité et analyse des journaux",
+            "objectif": "Savoir superviser la sécurité et détecter des incidents par l'analyse des journaux.",
+            "instructions": "Identifiez les menaces et les indicateurs de sécurité à surveiller. Mettez en place la collecte et la supervision des journaux (logs), analysez-les pour repérer des comportements suspects, et configurez des alertes sur ces événements.",
+            "livrable": "Un dispositif de supervision de la sécurité documenté (indicateurs suivis, règles d'alerte) et une analyse de journaux mettant en évidence au moins un comportement suspect."
+        },
+        {
+            "title": "Gestion d'un incident à partir de la supervision",
+            "objectif": "Savoir diagnostiquer, traiter et capitaliser un incident à l'aide des données de supervision.",
+            "instructions": "À partir d'un incident simulé, utilisez les données de supervision pour diagnostiquer la cause. Mettez en œuvre une procédure de remédiation, puis évaluez son efficacité à l'aide de la supervision. Proposez une amélioration du processus.",
+            "livrable": "Un rapport d'incident décrivant le diagnostic, la remédiation appliquée, l'évaluation de son efficacité et les améliorations proposées."
+        }
+    ],
     "bibliography": [
         {
-            "title": "Effective Monitoring and Alerting",
+            "title": "Effective Monitoring and Alerting : For Web Operations. O'Reilly",
             "author": "Ligus, S"
         },
         {
-            "title": "The Art of Monitoring",
+            "title": "The Art of Monitoring. Turnbull Press",
             "author": "Turnbull, J"
         },
         {
-            "title": "Distributed Systems Observability",
+            "title": "Distributed Systems Observability : A Guide to Building Robust Systems. O'Reilly Media",
             "author": "Sridharan, C"
         }
     ],
     "OnlineResources": [
         "Prometheus Documentation (https://prometheus.io/docs/) [EN]",
         "Grafana Documentation (https://grafana.com/docs/) [EN]",
-        "Zabbix Manual (https://www.zabbix.com/documentation/current/fr) [FR/EN]",
+        "Zabbix Manual (https://www.zabbix.com/documentation/current/fr/start) [FR/EN]",
         "Centreon Documentation (https://docs.centreon.com) [FR/EN]",
         "OpenTelemetry Documentation (https://opentelemetry.io/docs/) [EN]"
     ],
@@ -102,7 +133,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

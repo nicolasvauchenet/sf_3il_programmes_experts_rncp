@@ -68,7 +68,7 @@
                     "Utilisation avancée des outils d'automatisation",
                     "Scripting pour l'administration des infrastructures Cloud",
                     "Mise en place de workflows automatisés",
-                    "Gestion des mises à jour et des patches à grande échelle",
+                    "Gestion des mises à jour et des correctifs à grande échelle",
                     "Surveillance et gestion des tâches automatisées"
                 ]
             },
@@ -97,28 +97,33 @@
     "exercises": [
         {
             "title": "Gestion des instances et des images de machines virtuelles",
-            "context": "Vous travaillez en tant qu’administrateur de systèmes cloud pour une entreprise qui utilise intensivement les machines virtuelles pour ses opérations quotidiennes.",
-            "objective": "Votre première tâche consiste à créer une nouvelle instance de machine virtuelle pour un projet nécessitant des ressources spécifiques et à préparer une image personnalisée pour les déploiements futurs. Créez une nouvelle instance de machine virtuelle en sélectionnant des ressources (CPU, mémoire, espace disque) adaptées à une application gourmande en traitement de données. Installez un système d'exploitation de votre choix et configurez-le pour les besoins du projet. Installez une application de traitement de données sur cette machine virtuelle. Après avoir configuré l’environnement de travail nécessaire, créez une image de cette machine virtuelle qui pourra être utilisée pour déployer rapidement des instances similaires à l'avenir. Documentez le processus de création de l’image et les configurations spécifiques apportées pour le projet."
+            "objectif": "Être capable de créer et configurer une instance de machine virtuelle puis d'en produire une image réutilisable pour des déploiements futurs.",
+            "instructions": "En tant qu'administrateur de systèmes cloud, créez une nouvelle instance de machine virtuelle en sélectionnant des ressources (CPU, mémoire, espace disque) adaptées à une application gourmande en traitement de données. Installez un système d'exploitation de votre choix et configurez-le pour les besoins du projet, puis installez une application de traitement de données. Une fois l'environnement de travail configuré, créez une image de cette machine virtuelle permettant de déployer rapidement des instances similaires à l'avenir.",
+            "livrable": "Une instance de machine virtuelle opérationnelle avec son application de traitement de données, l'image personnalisée correspondante, et une documentation décrivant le processus de création de l'image ainsi que les configurations spécifiques apportées au projet."
         },
         {
             "title": "Sécurisation et optimisation du stockage",
-            "context": "En tant que spécialiste en gestion de données cloud, vous devez assurer la sécurité des données tout en optimisant le stockage pour les performances et les coûts.",
-            "objective": "Choisissez un service de stockage objet et téléchargez-y un ensemble de fichiers de test. Configurez les politiques de rétention et d'archivage pour ces fichiers selon un cycle de vie déterminé (par exemple, archivage après 30 jours, suppression après 1 an). Implémentez des mesures de sécurité pour protéger les données stockées, telles que le chiffrement des données au repos. Optimisez le stockage en termes de coûts et de performances en activant, par exemple, la compression des données ou en choisissant des classes de stockage moins coûteuses pour les données moins fréquemment accédées. Rédigez un rapport expliquant les choix effectués, les configurations mises en place et les bénéfices anticipés en termes de sécurité et d’optimisation des coûts."
+            "objectif": "Savoir sécuriser et optimiser un service de stockage objet en termes de coûts et de performances.",
+            "instructions": "En tant que spécialiste en gestion de données cloud, choisissez un service de stockage objet et téléchargez-y un ensemble de fichiers de test. Configurez les politiques de rétention et d'archivage selon un cycle de vie déterminé (par exemple archivage après 30 jours, suppression après 1 an). Implémentez des mesures de sécurité telles que le chiffrement des données au repos. Optimisez le stockage en termes de coûts et de performances, par exemple en activant la compression des données ou en choisissant des classes de stockage moins coûteuses pour les données moins fréquemment accédées.",
+            "livrable": "Un rapport expliquant les choix effectués, les configurations mises en place et les bénéfices anticipés en termes de sécurité et d'optimisation des coûts."
         },
         {
-            "title": "Configuration avancée d’un réseau virtuel",
-            "context": "Vous êtes chargé de configurer un réseau virtuel pour une nouvelle application qui nécessitera une connectivité sécurisée et optimisée.",
-            "objective": "Créez un réseau virtuel avec au moins deux sous-réseaux distincts pour séparer le trafic de l'application du trafic de gestion. Mettez en place des règles de pare-feu pour n'autoriser que le trafic nécessaire à l'application entre les sous- réseaux. Configurez un VPN pour permettre une connexion sécurisée entre votre entreprise et le cloud pour la maintenance à distance. Testez la connectivité et la sécurité du réseau virtuel en simulant des attaques réseau courantes et en vérifiant que les règles de pare-feu résistent. Produisez un rapport détaillé sur la configuration réseau réalisée, les tests effectués et les résultats obtenus, en soulignant les aspects de sécurité et de performance du réseau."
+            "title": "Configuration avancée d'un réseau virtuel",
+            "objectif": "Être capable de configurer un réseau virtuel sécurisé et de valider sa résistance aux attaques réseau courantes.",
+            "instructions": "Vous êtes chargé de configurer un réseau virtuel pour une nouvelle application nécessitant une connectivité sécurisée et optimisée. Créez un réseau virtuel comportant au moins deux sous-réseaux distincts pour séparer le trafic de l'application du trafic de gestion. Mettez en place des règles de pare-feu n'autorisant que le trafic nécessaire à l'application entre les sous-réseaux. Configurez un VPN pour permettre une connexion sécurisée entre l'entreprise et le cloud pour la maintenance à distance. Testez la connectivité et la sécurité en simulant des attaques réseau courantes et en vérifiant que les règles de pare-feu résistent.",
+            "livrable": "Un rapport détaillé sur la configuration réseau réalisée, les tests effectués et les résultats obtenus, soulignant les aspects de sécurité et de performance du réseau."
         },
         {
-            "title": "Automatisation des mises à jour et des patches",
-            "context": "L'automatisation est essentielle pour la gestion efficace des infrastructures cloud à grande échelle.",
-            "objective": "Votre tâche est d'automatiser le processus de mise à jour pour un parc de machines virtuelles. Sélectionnez un outil d'automatisation compatible avec votre environnement cloud. Créez un script ou un workflow automatisé qui peut vérifier la disponibilité des mises à jour et des patches pour le système d'exploitation et les applications critiques sur toutes les machines virtuelles. Testez le script en déployant une mise à jour mineure sur un groupe de machines virtuelles de test. Configurez des notifications pour être alerté en cas de succès ou d'échec des mises à jour automatisées. Documentez la procédure de mise en place de l'automatisation, y compris la façon de gérer les exceptions et les échecs de mise à jour."
+            "title": "Automatisation des mises à jour et des correctifs",
+            "objectif": "Savoir automatiser le déploiement des mises à jour et des correctifs sur un parc de machines virtuelles.",
+            "instructions": "Sélectionnez un outil d'automatisation compatible avec votre environnement cloud. Créez un script ou un workflow automatisé capable de vérifier la disponibilité des mises à jour et des correctifs pour le système d'exploitation et les applications critiques sur toutes les machines virtuelles. Testez le script en déployant une mise à jour mineure sur un groupe de machines virtuelles de test. Configurez des notifications pour être alerté en cas de succès ou d'échec des mises à jour automatisées.",
+            "livrable": "Une documentation de la procédure d'automatisation mise en place, incluant la manière de gérer les exceptions et les échecs de mise à jour."
         },
         {
-            "title": "Analyse avancée des coûts et optimisation financière",
-            "context": "En tant que gestionnaire de coûts cloud, il vous est demandé d'analyser les dépenses actuelles et de développer une stratégie pour optimiser les coûts.",
-            "objective": "Utilisez les outils d'analyse de coûts fournis par votre fournisseur de services cloud pour identifier les principales sources de dépenses au cours du dernier trimestre. Identifiez les ressources sous-utilisées ou surdimensionnées et proposez des modifications pour optimiser l'utilisation des ressources. Élaborez une stratégie pour utiliser les instances réservées ou les remises à long terme afin de réduire les coûts. Calculez les économies potentielles que votre stratégie pourrait réaliser sur une période d'un an. Présentez un rapport détaillé de votre analyse, incluant vos recommandations et les prévisions d'économies, ainsi que les risques associés à la mise en œuvre de votre stratégie d'optimisation des coûts."
+            "title": "Supervision et administration opérationnelle d'une infrastructure cloud",
+            "objectif": "Être capable de mettre en place la supervision et l'administration opérationnelle d'une infrastructure cloud afin d'en garantir la disponibilité et la performance.",
+            "instructions": "En tant qu'administrateur d'infrastructures cloud, déployez une solution de supervision (par exemple CloudWatch, Azure Monitor ou une stack Prometheus/Grafana) sur un ensemble de ressources comprenant des machines virtuelles, du stockage et du réseau. Configurez la collecte de métriques (CPU, mémoire, disque, latence réseau) et de journaux, définissez des seuils d'alerte pertinents et mettez en place des notifications automatiques. Construisez un tableau de bord de supervision et documentez une procédure d'exploitation décrivant les actions d'administration à mener en cas d'alerte (redimensionnement, redémarrage, bascule).",
+            "livrable": "Une infrastructure supervisée avec un tableau de bord opérationnel, des règles d'alerte configurées, et une procédure d'exploitation documentant les actions d'administration à réaliser selon les alertes remontées."
         }
     ],
     "bibliography": [
@@ -140,7 +145,7 @@
         "Microsoft Azure Documentation (https://learn.microsoft.com/azure/) [FR/EN]",
         "Google Cloud Documentation (https://cloud.google.com/docs) [FR/EN]",
         "Cloud Native Computing Foundation (https://www.cncf.io) [EN]",
-        "ANSSI — Sécurité Cloud (https://cyber.gouv.fr) [FR]"
+        "ANSSI - Sécurité Cloud (https://cyber.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

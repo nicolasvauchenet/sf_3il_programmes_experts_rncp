@@ -58,7 +58,7 @@
             {
                 "title": "Chapitre 4 : Technologies de gestion des identités",
                 "items": [
-                    "Présentation des différentes technologies de gestion des identités (annuaires, SSO, IAM, MFA)",
+                    "Présentation de l'IAM comme cadre global de gestion des identités et des briques technologiques associées (annuaires/LDAP, fédération/SSO, MFA, provisioning)",
                     "Comprendre le fonctionnement et les spécificités de chaque technologie",
                     "Choisir les technologies les plus adaptées aux besoins de l'organisation",
                     "Mettre en place et administrer les technologies de gestion des identités"
@@ -78,28 +78,33 @@
     "exercises": [
         {
             "title": "Analyse de Risques et Bonnes Pratiques",
-            "context": "Vous êtes consultant en sécurité informatique et une entreprise vous demande d'auditer leur gestion actuelle des identités.",
-            "objective": "Votre première tâche consiste à identifier les risques associés à leur système actuel et à proposer une liste de bonnes pratiques pour les atténuer. Présentez un rapport comprenant une analyse de risques et un ensemble de recommandations pour améliorer la gestion des identités de l'entreprise."
+            "objectif": "Être capable d'auditer un système de gestion des identités et de recommander des bonnes pratiques.",
+            "instructions": "Vous êtes consultant en sécurité informatique et une entreprise vous demande d'auditer sa gestion actuelle des identités. Identifiez les risques associés à leur système actuel et proposez une liste de bonnes pratiques pour les atténuer. Présentez un rapport comprenant l'analyse de risques et l'ensemble des recommandations pour améliorer la gestion des identités de l'entreprise.",
+            "livrable": "Un rapport d'audit comprenant une analyse des risques du système actuel de gestion des identités et un ensemble de recommandations de bonnes pratiques pour les atténuer."
         },
         {
             "title": "Choix d'un Modèle de Gestion des Identités",
-            "context": "Imaginez que vous êtes le CISO (Chief Information Security Officer) d'une multinationale qui cherche à refondre son système de gestion des identités.",
-            "objective": "Votre mission est de choisir entre un modèle centralisé, décentralisé et fédéré. Rédigez une comparaison détaillée des trois modèles, en soulignant leurs avantages et inconvénients, puis justifiez le choix du modèle que vous recommanderiez pour votre organisation en prenant en compte sa taille, sa structure et ses besoins spécifiques."
+            "objectif": "Être capable de comparer et de choisir un modèle de gestion des identités adapté à une organisation.",
+            "instructions": "Vous êtes le CISO (Chief Information Security Officer) d'une multinationale qui cherche à refondre son système de gestion des identités. Votre mission est de choisir entre un modèle centralisé, décentralisé et fédéré. Rédigez une comparaison détaillée des trois modèles en soulignant leurs avantages et inconvénients, puis justifiez le choix du modèle que vous recommanderiez en prenant en compte la taille, la structure et les besoins spécifiques de l'organisation.",
+            "livrable": "Une comparaison détaillée des modèles centralisé, décentralisé et fédéré avec leurs avantages et inconvénients, assortie du choix justifié du modèle recommandé au regard de la taille, de la structure et des besoins de l'organisation."
         },
         {
             "title": "Planification des Processus de Gestion des Identités",
-            "context": "En tant que responsable IAM (Identity and Access Management) au sein d'une banque, vous devez planifier les processus de gestion des identités pour sécuriser les informations de vos clients.",
-            "objective": "Créez un plan détaillant les étapes du provisioning, du déprovisioning, de la gestion des accès et de la revue des accès. Assurez-vous d'intégrer des bonnes pratiques pour chacun de ces processus et expliquez comment elles contribuent à un environnement sécurisé."
+            "objectif": "Être capable de planifier les processus de gestion des identités.",
+            "instructions": "En tant que responsable IAM (Identity and Access Management) au sein d'une banque, vous devez planifier les processus de gestion des identités pour sécuriser les informations de vos clients. Créez un plan détaillant les étapes du provisioning, du déprovisioning, de la gestion des accès et de la revue des accès. Intégrez des bonnes pratiques pour chacun de ces processus et expliquez comment elles contribuent à un environnement sécurisé.",
+            "livrable": "Un plan détaillant les étapes de provisioning, de déprovisioning, de gestion des accès et de revue des accès, intégrant les bonnes pratiques et leur contribution à la sécurité."
         },
         {
             "title": "Sélection et Mise en Place de Technologies IAM",
-            "context": "Vous travaillez pour une entreprise de commerce en ligne qui souhaite mettre à jour ses systèmes de gestion des identités en intégrant de nouvelles technologies.",
-            "objective": "Comparez les technologies d'annuaires, SSO (Single Sign-On), IAM et MFA (Multi-Factor Authentication). Sélectionnez celles qui seraient les plus adaptées pour l'entreprise, justifiez votre choix et élaborez un plan d'implémentation pour ces technologies, en tenant compte de la facilité d'utilisation pour les utilisateurs et de la sécurité des données."
+            "objectif": "Être capable de sélectionner et de planifier la mise en place de technologies de gestion des identités.",
+            "instructions": "Vous travaillez pour une entreprise de commerce en ligne qui souhaite mettre à jour ses systèmes de gestion des identités. Dans le cadre d'une démarche IAM, comparez les briques technologiques de gestion des identités : annuaires/LDAP, SSO (Single Sign-On), MFA (Multi-Factor Authentication) et provisioning. Sélectionnez celles qui seraient les plus adaptées pour l'entreprise, justifiez votre choix et élaborez un plan d'implémentation en tenant compte de la facilité d'utilisation pour les utilisateurs et de la sécurité des données.",
+            "livrable": "Une comparaison des briques technologiques de gestion des identités (annuaires/LDAP, SSO, MFA, provisioning) dans le cadre d'une démarche IAM, la sélection justifiée des plus adaptées et un plan d'implémentation intégrant l'ergonomie et la sécurité des données."
         },
         {
             "title": "Conformité Réglementaire et Plan d'Audit",
-            "context": "En tant que DPO (Data Protection Officer) de votre entreprise, vous êtes chargé de veiller à la conformité de la gestion des identités avec les réglementations telles que le RGPD.",
-            "objective": "Rédigez un plan d'audit pour évaluer la conformité actuelle de l'entreprise, incluant les étapes pour réviser les politiques de gestion des identités, les technologies utilisées, et les processus en place. Ce plan devra également détailler les actions correctives à prendre en cas de non-conformité et proposer un calendrier pour les audits réguliers."
+            "objectif": "Être capable de rédiger un plan d'audit de conformité de la gestion des identités.",
+            "instructions": "En tant que DPO (Data Protection Officer), vous êtes chargé de veiller à la conformité de la gestion des identités avec les réglementations telles que le RGPD. Rédigez un plan d'audit pour évaluer la conformité actuelle de l'entreprise, incluant les étapes pour réviser les politiques de gestion des identités, les technologies utilisées et les processus en place. Détaillez les actions correctives à prendre en cas de non-conformité et proposez un calendrier pour les audits réguliers.",
+            "livrable": "Un plan d'audit de conformité couvrant la révision des politiques, technologies et processus, les actions correctives en cas de non-conformité et un calendrier d'audits réguliers."
         }
     ],
     "bibliography": [
@@ -121,7 +126,7 @@
         "OAuth 2.0 RFC 6749 (https://datatracker.ietf.org/doc/html/rfc6749) [EN]",
         "OpenID Connect (https://openid.net/connect/) [EN]",
         "Microsoft Entra ID Documentation (https://learn.microsoft.com/entra/) [FR/EN]",
-        "ANSSI — Authentification (https://cyber.gouv.fr) [FR]"
+        "ANSSI - Authentification (https://cyber.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

@@ -17,7 +17,7 @@
         },
         {
             "code": "C15",
-            "description": "Organiser des ateliers pratiques, des revues de code collaboratives, et des séances de retour d'expérience (RETEX) en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence et maintien de la performance collective de l'équipe de développement"
+            "description": "Organiser des ateliers pratiques, des revues de code collaboratives, et des séances de retour d'expérience (RETEX) en utilisant des outils collaboratifs et en déterminant une fréquence idéale de diffusion pour améliorer les connaissances et une montée en compétence et maintien de la performance collective de l'équipe de développement. BLOC 3 : Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)"
         }
     ],
     "objectives": {
@@ -83,28 +83,33 @@
     "exercises": [
         {
             "title": "Analyse de contenus spécialisés",
-            "context": "Vous travaillez sur le développement d'une application et devez trouver des informations pertinentes liées à un problème complexe.",
-            "objective": "Utilisez les différentes sources d'informations spécialisées pour extraire les informations nécessaires. Utilisez ensuite un outil de traitement de l'information pour analyser ces contenus et identifiez les différentes problématiques liées au développement des applications. Présentez vos résultats à l'équipe en mettant en avant les éléments clés de votre analyse."
+            "objectif": "Être capable d'extraire et d'analyser des informations pertinentes à partir de sources spécialisées pour résoudre un problème complexe.",
+            "instructions": "Dans le cadre du développement d'une application, recherchez des informations liées à un problème complexe en exploitant différentes sources d'informations spécialisées. Analysez ces contenus à l'aide d'un outil de traitement de l'information et identifiez les problématiques liées au développement des applications.",
+            "livrable": "Une présentation à l'équipe restituant l'analyse et mettant en avant les éléments clés ainsi que les problématiques identifiées."
         },
         {
             "title": "Mobilisation des connaissances en anglais",
-            "context": "Vous êtes amené à travailler sur un projet international et vous devez vous familiariser avec des documents techniques en anglais.",
-            "objective": "Choisissez un document technique lié à votre domaine de travail, traduisez-le en français et interprétez les informations techniques qu'il contient. Présentez vos traductions et interprétations à l'équipe en mettant en avant les points essentiels du document."
+            "objectif": "Être capable de comprendre, traduire et interpréter des documents techniques en anglais dans un projet international.",
+            "instructions": "Dans le cadre d'un projet international, choisissez un document technique en anglais lié à votre domaine, traduisez-le en français et interprétez les informations techniques qu'il contient.",
+            "livrable": "Une présentation à l'équipe des traductions et interprétations réalisées, mettant en avant les points essentiels du document."
         },
         {
-            "title": "Résolution de problèmes complexes",
-            "context": "Vous faites face à un problème complexe dans le cadre du développement d'une application.",
-            "objective": "Appliquez une méthode de résolution de problèmes en utilisant la pensée critique pour aborder la situation. Collaborez avec l'équipe de développement pour prioriser les problèmes en fonction de leur impact sur le développement des applications. Présentez votre démarche de résolution de problème à l'équipe en expliquant les étapes suivies et les décisions prises."
+            "title": "Leadership technique dans la résolution de problèmes complexes en anglais",
+            "objectif": "Être capable de conduire, en anglais, la résolution collaborative d'un problème complexe au sein d'une équipe technique multiculturelle.",
+            "instructions": "Face à un problème complexe rencontré dans le développement d'une application par une équipe internationale, animez en anglais une démarche structurée de résolution fondée sur la pensée critique. Répartissez les rôles, priorisez les problèmes selon leur impact et facilitez la prise de décision collective. Toute la communication (réunion de cadrage, échanges écrits, synthèse) se déroule en anglais.",
+            "livrable": "Une restitution en anglais (présentation orale et note de synthèse) exposant la démarche de résolution conduite, les décisions prises, la répartition des rôles et le mode d'animation de l'équipe."
         },
         {
-            "title": "Garantir la disponibilité opérationnelle des services",
-            "context": "Imaginez un scénario où la disponibilité opérationnelle des services est compromise.",
-            "objective": "Identifiez les mesures préventives à mettre en place pour assurer la disponibilité des services, gérez de manière proactive les incidents et mettez en place des indicateurs de suivi de la disponibilité opérationnelle. Présentez votre plan d'action à l'équipe en expliquant en détail les différentes mesures proposées."
+            "title": "Pilotage en anglais de la disponibilité opérationnelle des services",
+            "objectif": "Être capable de piloter et de communiquer en anglais un plan garantissant la disponibilité opérationnelle des services au sein d'une équipe distribuée.",
+            "instructions": "À partir d'un scénario où la disponibilité opérationnelle des services est compromise, définissez et pilotez, en tant que responsable technique d'une équipe distribuée, un plan de mesures préventives, de gestion proactive des incidents et d'indicateurs de suivi. Présentez et argumentez ce plan en anglais auprès de parties prenantes internationales (équipe, management, client) et coordonnez sa mise en oeuvre.",
+            "livrable": "Un plan d'action rédigé et présenté en anglais, détaillant les mesures préventives, la gestion proactive des incidents, les indicateurs de suivi et les modalités de coordination de l'équipe distribuée."
         },
         {
-            "title": "Contribution à la résolution efficace des incidents",
-            "context": "Vous êtes confronté à un incident majeur impactant les services.",
-            "objective": "Mettez en place un processus de gestion des incidents en collaborant avec les équipes techniques pour résoudre la situation. Communiquez de manière efficace sur l'état d'avancement de la résolution des incidents et proposez des actions correctives pour éviter la récurrence des incidents. Présentez votre plan d'action à l'équipe en mettant en avant les actions prioritaires à mettre en place."
+            "title": "Coordination et communication en anglais lors de la résolution d'incidents",
+            "objectif": "Être capable de coordonner en anglais la résolution d'un incident majeur et d'en assurer la communication auprès des parties prenantes internationales.",
+            "instructions": "Confronté à un incident majeur impactant les services, jouez le rôle de responsable technique coordonnant en anglais les équipes concernées. Mettez en place un processus de gestion de l'incident, animez les points de situation, communiquez en anglais sur l'état d'avancement auprès des parties prenantes internationales et proposez des actions correctives pour éviter la récurrence.",
+            "livrable": "Un dossier en anglais comprenant le processus de gestion de l'incident, des exemples de communications de situation (courriel, point d'avancement) et les actions correctives proposées contre la récurrence."
         }
     ],
     "bibliography": [
@@ -122,10 +127,10 @@
         }
     ],
     "OnlineResources": [
-        "Harvard Business Review — Leadership (https://hbr.org/topic/leadership) [EN]",
+        "Harvard Business Review - Leadership (https://hbr.org/topic/leadership) [EN]",
         "MIT Sloan Management Review (https://sloanreview.mit.edu) [EN]",
-        "TED Talks — Technology and Leadership (https://www.ted.com) [EN]",
-        "Cambridge Dictionary — Business English (https://dictionary.cambridge.org) [EN]",
+        "TED Talks - Technology and Leadership (https://www.ted.com) [EN]",
+        "Cambridge Dictionary - Business English (https://dictionary.cambridge.org) [EN]",
         "BBC Learning English (https://www.bbc.co.uk/learningenglish) [EN]"
     ],
     "teachingMethods": [

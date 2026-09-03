@@ -17,7 +17,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes de base et l'utilisation d'UML pour la modélisation des données et des flux (Comprendre) Maîtriser la création et l'utilisation des différents types de diagrammes UML (cas d'utilisation, classes, séquence, activité) (Appliquer) Appliquer ces connaissances à des projets logiciels concrets (Créer)"
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes de base et l'utilisation d'UML pour la modélisation des données et des flux (Comprendre) Maîtriser la création et l'utilisation des différents types de diagrammes UML (cas d'utilisation, classes, séquence, activité) (Appliquer) Appliquer ces connaissances à des projets logiciels concrets (Appliquer)"
     },
     "prerequisites": {
         "description": "Des connaissances de base en programmation orientée objet et en analyse et conception de systèmes sont nécessaires pour suivre ce cours."
@@ -65,131 +65,69 @@
                     "Modélisation des étapes et des décisions dans un processus",
                     "Utilisation des diagrammes d'activité pour la modélisation des flux de contrôle et des flux de données"
                 ]
-            },
-            {
-                "title": "Chapitre 6 : Diagramme d'états-transitions",
-                "items": [
-                    "Compréhension du cycle de vie d'un objet",
-                    "Représentation des états, des transitions et des événements",
-                    "Modélisation des changements d'état d'un objet métier",
-                    "Utilisation des diagrammes d'états-transitions pour représenter le comportement dynamique d'un système logiciel"
-                ]
-            },
-            {
-                "title": "Chapitre 7 : Diagramme de composants",
-                "items": [
-                    "Identification des composants d'une application",
-                    "Représentation des interfaces fournies et requises",
-                    "Modélisation des dépendances entre les composants",
-                    "Utilisation des diagrammes de composants pour représenter l'architecture logique d'un système logiciel"
-                ]
-            },
-            {
-                "title": "Chapitre 8 : Diagramme de déploiement",
-                "items": [
-                    "Représentation de l'architecture physique d'un système",
-                    "Identification des nœuds matériels et logiciels",
-                    "Déploiement des composants sur les différents nœuds",
-                    "Utilisation des diagrammes de déploiement pour modéliser l'infrastructure d'un système logiciel"
-                ]
             }
         ]
     },
     "exercises": [
         {
-            "title": "Découverte d'UML à travers un système logiciel",
-            "context": "Imaginez un scénario où vous devez concevoir un système logiciel.",
-            "objective": "Identifiez les différents éléments et flux qui entrent en jeu dans ce système et représentez-les à l'aide de diagrammes UML pertinents."
+            "title": "Modélisation d'un système avec les principes de base d'UML",
+            "objectif": "Savoir appliquer les principes de base d'UML pour représenter les éléments et les flux d'un système logiciel.",
+            "instructions": "Imaginez un scénario où vous devez concevoir un système logiciel. Identifiez les différents éléments et flux qui entrent en jeu dans ce système, puis utilisez les principes de base d'UML pour les représenter.",
+            "livrable": "Les diagrammes UML pertinents représentant les éléments et les flux identifiés dans le système."
         },
         {
-            "title": "Modélisation des besoins avec un diagramme de cas d'utilisation",
-            "context": "Choisissez un domaine d'application et identifiez les acteurs ainsi que les cas d'utilisation.",
-            "objective": "Réalisez un diagramme de cas d'utilisation représentant les interactions."
+            "title": "Diagramme de cas d'utilisation",
+            "objectif": "Être capable de créer un diagramme de cas d'utilisation à partir d'un domaine d'application.",
+            "instructions": "Choisissez un domaine d'application de votre choix (par exemple la gestion d'une bibliothèque, la réservation de billets en ligne, etc.) et identifiez les acteurs concernés ainsi que les cas d'utilisation associés.",
+            "livrable": "Un diagramme de cas d'utilisation représentant ces acteurs et cas d'utilisation, en indiquant les interactions entre eux."
         },
         {
-            "title": "Conception d'un diagramme de classes",
-            "context": "Identifiez les entités et leurs relations dans un système logiciel.",
-            "objective": "Réalisez un diagramme de classes conforme aux principes de la modélisation orientée objet."
+            "title": "Diagramme de classes",
+            "objectif": "Savoir modéliser la structure d'un système à l'aide d'un diagramme de classes.",
+            "instructions": "Pensez à un système logiciel que vous connaissez (par exemple un système de gestion des étudiants, un système de réservation de salles, etc.) et identifiez les entités et leurs relations.",
+            "livrable": "Un diagramme de classes modélisant la structure du système à l'aide des concepts de la modélisation orientée objet."
         },
         {
-            "title": "Modélisation des interactions avec un diagramme de séquence",
-            "context": "Décrivez un scénario métier ou logiciel.",
-            "objective": "Réalisez un diagramme de séquence représentant les interactions et les échanges de messages."
+            "title": "Diagramme de séquence",
+            "objectif": "Être capable de représenter les interactions entre objets d'un scénario à l'aide d'un diagramme de séquence.",
+            "instructions": "Décrivez un scénario courant lié à un processus métier ou à une interaction logicielle (par exemple une commande en ligne, un processus de paiement, etc.) et identifiez les objets impliqués.",
+            "livrable": "Un diagramme de séquence représentant les interactions entre les objets, en indiquant les échanges de messages et le déroulement chronologique."
         },
         {
-            "title": "Modélisation d'un processus métier avec un diagramme d'activité",
-            "context": "Identifiez un processus métier.",
-            "objective": "Réalisez un diagramme d'activité représentant les étapes, décisions et flux."
-        },
-        {
-            "title": "Cycle de vie d'un objet métier",
-            "context": "Choisissez un objet métier dont l'état évolue.",
-            "objective": "Réalisez un diagramme d'états-transitions représentant son cycle de vie."
-        },
-        {
-            "title": "Architecture logique d'une application",
-            "context": "Identifiez les principaux composants d'une application.",
-            "objective": "Réalisez un diagramme de composants représentant interfaces et dépendances."
-        },
-        {
-            "title": "Architecture physique et déploiement d'une application",
-            "context": "Imaginez l'architecture technique d'une application web.",
-            "objective": "Réalisez un diagramme de déploiement représentant les nœuds, composants et leurs liens."
+            "title": "Diagramme d'activité",
+            "objectif": "Savoir modéliser un processus métier à l'aide d'un diagramme d'activité.",
+            "instructions": "Identifiez un processus métier que vous connaissez (par exemple le processus de recrutement dans une entreprise, le processus de traitement des commandes, etc.) et repérez ses différentes étapes et décisions.",
+            "livrable": "Un diagramme d'activité modélisant les différentes étapes et décisions du processus, en indiquant les flux de contrôle et les flux de données."
         }
     ],
     "bibliography": [
         {
-            "title": "UML 2.5 par la pratique : études de cas et exercices corrigés",
-            "author": "Pascal Roques",
-            "edition": "8e édition",
-            "publisher": "Eyrolles",
-            "year": 2018,
-            "isbn": "978-2-212-67565-8",
-            "language": "FR"
+            "title": "UML 2 par la pratique (8e éd.)",
+            "author": "Roques, P"
         },
         {
-            "title": "UML Distilled: A Brief Guide to the Standard Object Modeling Language",
-            "author": "Martin Fowler",
-            "edition": "3rd edition",
-            "publisher": "Addison-Wesley Professional",
-            "year": 2003,
-            "isbn": "978-0-321-19368-1",
-            "language": "EN"
+            "title": "UML 2 : Modéliser une application web (4e éd.)",
+            "author": "Laurent, A"
         },
         {
-            "title": "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development",
-            "author": "Craig Larman",
-            "edition": "3rd edition",
-            "publisher": "Pearson",
-            "year": 2004,
-            "isbn": "978-0-13-148906-6",
-            "language": "EN"
-        },
-        {
-            "title": "OMG Unified Modeling Language (OMG UML), Version 2.5.1",
-            "author": "Object Management Group",
-            "publisher": "Object Management Group",
-            "year": 2017,
-            "language": "EN"
+            "title": "UML Distilled: A Brief Guide to the Standard Object Modeling Language (3e éd.)",
+            "author": "Fowler, M"
         }
     ],
     "OnlineResources": [
-        "Object Management Group — Unified Modeling Language, spécification officielle UML 2.5.1 (https://www.omg.org/spec/UML/2.5.1/) [EN]",
-        "Object Management Group — Portail officiel UML (https://www.omg.org/uml/) [EN]",
-        "PlantUML — Documentation officielle (https://plantuml.com/) [EN]",
-        "PlantUML — Guide de démarrage (https://plantuml.com/starting) [EN]",
-        "diagrams.net — UML (https://drawio-app.com/uml-diagrams/) [EN]",
-        "Visual Paradigm — UML Practical Guide (https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-practical-guide/) [EN]"
+        "OMG UML Specification (https://www.omg.org/spec/UML) [EN]",
+        "PlantUML documentation (https://plantuml.com) [FR/EN]",
+        "UML Diagrams - Visual Paradigm (https://www.visual-paradigm.com/guide/uml-unified-modeling-language/) [EN]",
+        "developpez.com - Tutoriels UML (https://uml.developpez.com) [FR]",
+        "IBM Rational - UML Resource Center (https://www.ibm.com/docs/en/rsas) [EN]"
     ],
     "teachingMethods": [
-        "Apports théoriques courts et progressifs, illustrés par des exemples d'architectures logicielles",
-        "Démonstrations guidées de lecture, de correction et de construction de diagrammes UML",
-        "Ateliers pratiques consacrés aux diagrammes de cas d'utilisation, de classes, de séquence, d'activité, d'états-transitions, de composants et de déploiement",
-        "Étude de cas fil rouge permettant de faire évoluer progressivement la modélisation d'une même application",
-        "Travaux individuels puis en binômes avec confrontation des choix de modélisation",
-        "Revues croisées de diagrammes selon des critères de qualité UML",
-        "Utilisation conjointe de diagrams.net et PlantUML",
-        "Évaluation formative continue par exercices et corrections collectives",
-        "Mise en relation des modèles UML avec l'architecture logicielle et le code"
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]
 }

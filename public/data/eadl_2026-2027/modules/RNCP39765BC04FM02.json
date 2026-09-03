@@ -88,29 +88,34 @@
     },
     "exercises": [
         {
-            "title": "Création d'une infrastructure basique avec Terraform Énoncé :",
-            "context": "Vous êtes un ingénieur DevOps et avez reçu la tâche de déployer une infrastructure basique sur un fournisseur de cloud de votre choix (par exemple AWS, Azure, GCP).",
-            "objective": "Utilisez Terraform pour écrire et appliquer une configuration qui crée une instance de serveur virtuel (par exemple EC2 pour AWS). Votre configuration doit inclure : Un provider configuré pour le cloud choisi. Une ressource pour une instance de serveur virtuel, avec une image de serveur (AMI pour AWS) et une configuration de type d'instance spécifiée. Des outputs pour afficher l'adresse IP publique de l'instance créée. Assurez-vous de tester votre code Terraform en l'appliquant pour créer l'infrastructure, et puis en la détruisant après vérification."
+            "title": "Création d'une infrastructure élémentaire avec Terraform",
+            "objectif": "Être capable de décrire et de déployer une infrastructure cloud élémentaire à l'aide de Terraform.",
+            "instructions": "En tant qu'ingénieur DevOps, utilisez Terraform pour écrire et appliquer une configuration créant une instance de serveur virtuel sur un fournisseur de cloud de votre choix (par exemple AWS, Azure ou GCP). La configuration doit inclure un provider configuré pour le cloud choisi, une ressource d'instance de serveur virtuel précisant une image de serveur (AMI pour AWS) et un type d'instance, ainsi que des outputs affichant l'adresse IP publique de l'instance créée. Testez le code en l'appliquant pour créer l'infrastructure, puis en la détruisant après vérification.",
+            "livrable": "Le code Terraform fonctionnel, l'adresse IP publique affichée en sortie, et la preuve du cycle de création puis de destruction de l'infrastructure."
         },
         {
-            "title": "Automatisation d'une configuration avec Ansible Énoncé :",
-            "context": "Maintenant que vous avez votre instance de serveur virtuel créée, il est temps d'automatiser sa configuration.",
-            "objective": "Votre objectif est d'utiliser Ansible pour installer un serveur web NGINX sur cette instance. Créez un playbook Ansible qui : Définit votre instance de serveur comme l'hôte cible. Installe NGINX sur l'instance. Assure que le service NGINX est démarré et activé au démarrage de l'instance Utilise une tâche pour créer un fichier index.html personnalisé dans le répertoire de NGINX. Testez votre playbook pour vous assurer que le serveur web est correctement installé et accessible via l'adresse IP publique de l'instance."
+            "title": "Automatisation d'une configuration avec Ansible",
+            "objectif": "Savoir automatiser la configuration d'un serveur cloud à l'aide d'Ansible.",
+            "instructions": "À partir de l'instance de serveur virtuel créée précédemment, créez un playbook Ansible qui définit cette instance comme hôte cible, installe le serveur web NGINX, s'assure que le service NGINX est démarré et activé au démarrage de l'instance, et crée un fichier index.html personnalisé dans le répertoire de NGINX. Testez le playbook pour vérifier que le serveur web est correctement installé.",
+            "livrable": "Le playbook Ansible et la démonstration que le serveur web NGINX est correctement installé et accessible via l'adresse IP publique de l'instance."
         },
         {
-            "title": "Intégration de Terraform et Ansible Énoncé :",
-            "context": "Afin de combiner les capacités de Terraform et Ansible, vous allez créer un workflow qui provisionne une infrastructure avec Terraform et la configure ensuite avec Ansible.",
-            "objective": "Votre tâche est de : Modifier le fichier Terraform de l'exercice 1 pour inclure un fichier d'inventaire Ansible dynamique (peut être un template de fichier). Assurer que l'adresse IP de l'instance est automatiquement mise à jour dans l'inventaire Ansible après que l'infrastructure est créée. Écrire un script ou une commande qui exécute le playbook Ansible de l'exercice 2 après la création de l'infrastructure par Terraform. Déployez et configurez votre infrastructure automatiquement en exécutant Terraform suivi par Ansible."
+            "title": "Intégration de Terraform et Ansible",
+            "objectif": "Être capable d'enchaîner le provisionnement Terraform et la configuration Ansible dans un workflow automatisé.",
+            "instructions": "Modifiez le fichier Terraform de l'exercice 1 pour générer un inventaire Ansible dynamique (par exemple via un template de fichier), en veillant à ce que l'adresse IP de l'instance soit automatiquement mise à jour dans l'inventaire après la création de l'infrastructure. Écrivez un script ou une commande qui exécute le playbook Ansible de l'exercice 2 une fois l'infrastructure créée par Terraform.",
+            "livrable": "Un workflow automatisé déployant et configurant l'infrastructure en exécutant Terraform puis Ansible, avec l'inventaire Ansible renseigné automatiquement."
         },
         {
-            "title": "Gestion des erreurs et des mises à jour Énoncé :",
-            "context": "Simulez un scénario de gestion des erreurs et des mises à jour dans votre environnement automatisé.",
-            "objective": "Imaginez que le type d'instance de votre serveur doit être mis à jour pour supporter une charge plus importante, et que la mise à jour doit être effectuée sans interruption de service. Réalisez les étapes suivantes : Mettez à jour votre configuration Terraform pour changer le type d'instance de votre serveur virtuel. Appliquez la mise à jour avec Terraform tout en gérant les erreurs potentielles qui pourraient survenir. Documentez la procédure que vous avez suivie, y compris les mesures prises pour minimiser le temps d'arrêt et les erreurs."
+            "title": "Gestion des erreurs et des mises à jour",
+            "objectif": "Savoir appliquer une mise à jour d'infrastructure avec Terraform en gérant les erreurs et en minimisant l'interruption de service.",
+            "instructions": "Simulez un scénario de gestion des erreurs et des mises à jour dans votre environnement automatisé : le type d'instance de votre serveur doit être mis à jour pour supporter une charge plus importante, sans interruption de service. Mettez à jour votre configuration Terraform pour changer le type d'instance du serveur virtuel, puis appliquez la mise à jour avec Terraform en gérant les erreurs potentielles susceptibles de survenir.",
+            "livrable": "La documentation de la procédure suivie, incluant les mesures prises pour minimiser le temps d'arrêt et les erreurs."
         },
         {
-            "title": "Projet d'automatisation complet Énoncé :",
-            "context": "Pour cet exercice, vous devez concevoir et exécuter un projet d'automatisation qui utilise à la fois Terraform et Ansible.",
-            "objective": "Prenons en exemple le déploiement d'une application simple sur plusieurs serveurs avec une base de données. Votre projet doit inclure : Une configuration Terraform qui crée une architecture comprenant au moins deux serveurs applicatifs et une instance de base de données. Un playbook Ansible qui configure les serveurs avec l'application nécessaire et la base de données. L'automatisation doit inclure des tâches telles que la création d'utilisateurs, la configuration de la sécurité et l'installation des dépendances de l'application. Assurez-vous d'intégrer des bonnes pratiques, telles que l'utilisation de variables, de modules et de gestion d'erreurs. Après le déploiement, validez le fonctionnement de l'application et de la base de données, et présentez un bref rapport de vos observations et des avantages apportés par l'automatisation."
+            "title": "Projet d'automatisation complet",
+            "objectif": "Être capable de concevoir et d'exécuter un projet complet d'automatisation combinant Terraform et Ansible.",
+            "instructions": "Concevez et exécutez le déploiement d'une application simple sur plusieurs serveurs avec une base de données. Le projet doit comprendre une configuration Terraform créant une architecture d'au moins deux serveurs applicatifs et une instance de base de données, ainsi qu'un playbook Ansible configurant les serveurs avec l'application nécessaire et la base de données (création d'utilisateurs, configuration de la sécurité, installation des dépendances de l'application). Intégrez les bonnes pratiques telles que l'utilisation de variables, de modules et de gestion d'erreurs. Après le déploiement, validez le fonctionnement de l'application et de la base de données.",
+            "livrable": "L'infrastructure déployée et configurée automatiquement, accompagnée d'un bref rapport d'observations sur le fonctionnement obtenu et les avantages apportés par l'automatisation."
         }
     ],
     "bibliography": [

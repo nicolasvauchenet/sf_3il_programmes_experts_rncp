@@ -24,24 +24,24 @@
         {% if pdfMode|default(false) %}
             <style>
                 @page {
-                    margin-top: 31mm;
-                    margin-right: 8mm;
-                    margin-bottom: 12mm;
-                    margin-left: 8mm;
+                    margin-top: 28mm;
+                    margin-right: 12mm;
+                    margin-bottom: 15mm;
+                    margin-left: 12mm;
                 }
                 * { box-sizing: border-box; }
                 html { padding: 0; color: #202020; background: #fff; font-family: "DejaVu Sans", sans-serif; font-size: 9pt; line-height: 1.35; }
                 body { margin: 0; padding: 0; color: #202020; background-color: #fff !important; font-family: "DejaVu Sans", sans-serif; font-size: 9pt; line-height: 1.35; }
-                .app-main { margin: 0 5mm; }
+                .app-main { margin: 0; }
                 article { width: auto; margin: 0; }
                 .app-grid { display: block; }
-                .app-section { margin: 0 0 4mm; padding: 4mm; background: #fff; border: 0; border-radius: 0; }
+                .app-section { margin: 0 0 4mm; padding: 3.5mm 4mm; background: #fff; border: 0; border-radius: 0; }
                 .app-section .app-section { page-break-inside: avoid; }
                 .app-section.sub { margin-left: 4mm !important; }
                 .centered, .text-center { text-align: center; }
                 h1, h2, h3, h4 { page-break-after: avoid; color: #285d70; }
                 h1 { margin: 2mm 0; font-size: 16pt; }
-                h2 { margin: 0 0 3mm; font-size: 11pt; text-align: center; text-transform: uppercase; }
+                h2 { margin: 0 0 3mm; padding: 2.5mm 3mm; color: #fff; background: #285d70; border-left: 1.5mm solid #ef6b3b; font-size: 11pt; text-align: left; text-transform: uppercase; }
                 h3 { margin: 0 0 2mm; font-size: 10pt; }
                 h4 { margin: 0 0 2mm; font-size: 9pt; }
                 p { margin: 0 0 2mm; }
@@ -54,6 +54,42 @@
                 .pdf-metrics td { width: 33.33%; padding: 2.5mm; background: #eef3f5; border-bottom: 1mm solid #285d70; }
                 .pdf-metrics strong { display: block; font-size: 15pt; color: #285d70; }
                 .pdf-metrics span { font-size: 8pt; text-transform: uppercase; }
+                .pdf-cover { margin: -28mm -12mm -15mm; padding: 36mm 20mm 18mm; color: #173f4d; background: #f4f8f9; page-break-after: always; }
+                .pdf-cover-kicker { margin-bottom: 5mm; color: #ef6b3b; font-size: 11pt; font-weight: bold; letter-spacing: 1.8pt; text-transform: uppercase; }
+                .pdf-cover-program { width: 82%; color: #466a77; font-size: 11pt; line-height: 1.45; }
+                .pdf-cover-code { margin-top: 10mm; color: #285d70; font-size: 12pt; font-weight: bold; letter-spacing: 0.5pt; }
+                .pdf-cover h1 { width: 90%; margin: 3mm 0 6mm; color: #173f4d; font-size: 29pt; line-height: 1.15; }
+                .pdf-cover-rule { width: 24mm; height: 1.5mm; margin-bottom: 9mm; background: #ef6b3b; }
+                .pdf-cover-details, .pdf-cover-stats { width: 100%; border-collapse: separate; border-spacing: 3mm; table-layout: fixed; }
+                .pdf-cover-details { margin: 0 -3mm 8mm; }
+                .pdf-cover-details td { width: 33.33%; padding: 4mm; vertical-align: top; background: #fff; border-top: 0.8mm solid #78a6b4; }
+                .pdf-cover-details span, .pdf-cover-details small { display: block; color: #68828b; font-size: 7.5pt; line-height: 1.35; }
+                .pdf-cover-details span { margin-bottom: 2mm; text-transform: uppercase; }
+                .pdf-cover-details strong { display: block; margin-bottom: 1mm; color: #173f4d; font-size: 13pt; }
+                .pdf-cover-stats { margin: 0 -3mm; }
+                .pdf-cover-stats td { padding: 4mm 2mm; text-align: center; background: #285d70; }
+                .pdf-cover-stats strong { display: block; color: #fff; font-size: 20pt; }
+                .pdf-cover-stats span { color: #dbe8ec; font-size: 6.8pt; text-transform: uppercase; }
+                .pdf-cover-footer { margin-top: 12mm; padding-top: 4mm; color: #68828b; border-top: 0.3mm solid #b7cbd2; font-size: 8pt; letter-spacing: 0.4pt; }
+                .pdf-cover--compact { padding-top: 28mm; }
+                .pdf-cover--compact .pdf-cover-kicker { margin-bottom: 4mm; }
+                .pdf-cover--compact .pdf-cover-code { margin-top: 7mm; }
+                .pdf-cover--compact h1 { margin-bottom: 4mm; font-size: 22pt; line-height: 1.12; }
+                .pdf-cover--compact .pdf-cover-rule { margin-bottom: 6mm; }
+                .pdf-cover--compact .pdf-cover-details { margin-bottom: 5mm; }
+                .pdf-cover--compact .pdf-cover-details td { padding: 3mm; }
+                .pdf-cover--compact .pdf-cover-stats td { padding: 3mm 2mm; }
+                .pdf-cover--compact .pdf-cover-footer { margin-top: 6mm; }
+                .pdf-associations { display: table; width: 100%; border-collapse: separate; border-spacing: 2mm 0; table-layout: fixed; }
+                .pdf-associations > .app-section { display: table-cell; width: 50%; vertical-align: top; }
+                .pdf-chapter { margin-bottom: 3mm !important; padding: 4mm !important; background: #f4f8f9; border-left: 1mm solid #78a6b4 !important; }
+                .pdf-chapter h3 { color: #214f60; }
+                .pdf-exercise { margin-bottom: 4mm !important; padding: 4mm 4.5mm !important; background: #fbfcfc; border: 0.3mm solid #d8e4e8 !important; border-left: 1mm solid #ef6b3b !important; }
+                .pdf-exercise h3 { color: #214f60; }
+                .pdf-skill { padding: 3.5mm 4mm !important; background: #f4f8f9; border-left: 1mm solid #78a6b4 !important; }
+                .pdf-keep { page-break-inside: avoid; }
+                .pdf-section-parent { padding-right: 0; padding-left: 0; }
+                .pdf-section-parent > h2 { margin-right: 0; margin-left: 0; }
                 .info { margin-top: 2mm; }
                 .subtitle { color: #555; font-style: italic; }
                 .mt-2 { margin-top: 4mm !important; }

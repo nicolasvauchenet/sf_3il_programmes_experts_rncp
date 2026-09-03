@@ -95,28 +95,33 @@
     "exercises": [
         {
             "title": "Processus de mise en production",
-            "context": "Objectif : Mettre en pratique la méthodologie de mise en production Vous êtes responsable de déployer une nouvelle version d'une application dans un environnement de production.",
-            "objective": "Décrivez les différentes étapes que vous allez suivre pour assurer une mise en production réussie tout en prenant en compte les bonnes pratiques et la gestion des risques."
+            "objectif": "Mettre en pratique la méthodologie de mise en production.",
+            "instructions": "Responsable du déploiement d'une nouvelle version d'une application dans un environnement de production, décrivez les différentes étapes à suivre pour assurer une mise en production réussie en tenant compte des bonnes pratiques et de la gestion des risques.",
+            "livrable": "La description des étapes de la mise en production, intégrant les bonnes pratiques et la prise en compte de la gestion des risques."
         },
         {
             "title": "Gestion des configurations",
-            "context": "Objectif : Maîtriser la gestion des configurations en environnement de production À l'aide d'un outil de gestion des configurations de votre choix, créez une configuration standard pour un serveur d'application en environnement de production.",
-            "objective": "Assurez-vous d'inclure les paramètres essentiels pour garantir la stabilité et la sécurité du serveur."
+            "objectif": "Maîtriser la gestion des configurations en environnement de production.",
+            "instructions": "À l'aide d'un outil de gestion des configurations de votre choix, créez une configuration standard pour un serveur d'application en environnement de production.",
+            "livrable": "Une configuration standard de serveur d'application incluant les paramètres essentiels garantissant la stabilité et la sécurité du serveur."
         },
         {
             "title": "Surveillance et monitoring des systèmes en production",
-            "context": "Objectif : Savoir mettre en place un système de surveillance et de monitoring efficace Installez un outil de surveillance et de monitoring sur un serveur en environnement de production.",
-            "objective": "Configurez-le pour qu'il surveille les ressources système, les performances de l'application et génère des alertes en cas de dysfonctionnement."
+            "objectif": "Savoir mettre en place un système de surveillance et de monitoring efficace.",
+            "instructions": "Installez un outil de surveillance et de monitoring sur un serveur en environnement de production et configurez-le pour qu'il surveille les ressources système et les performances de l'application.",
+            "livrable": "Un outil de surveillance installé et configuré, surveillant les ressources système et les performances de l'application et générant des alertes en cas de dysfonctionnement."
         },
         {
             "title": "Gestion des incidents en production",
-            "context": "Objectif : Être en mesure de gérer efficacement les incidents en environnement de production Simulez un incident majeur en environnement de production (par exemple : une indisponibilité de l'application) et mettez en œuvre les étapes de gestion des incidents que vous avez apprises.",
-            "objective": "Assurez-vous de documenter vos actions et de proposer des solutions pour éviter que cet incident ne se reproduise."
+            "objectif": "Être en mesure de gérer efficacement les incidents en environnement de production.",
+            "instructions": "Simulez un incident majeur en environnement de production (par exemple une indisponibilité de l'application) et mettez en œuvre les étapes de gestion des incidents apprises.",
+            "livrable": "La documentation des actions menées lors de la gestion de l'incident et des solutions proposées pour éviter que cet incident ne se reproduise."
         },
         {
             "title": "Analyse des performances et optimisation",
-            "context": "Objectif : Savoir analyser les performances en production et les optimiser À l'aide d'un outil d'analyse des performances, identifiez et analysez les goulots d'étranglement d'un serveur en environnement de production.",
-            "objective": "Proposez des mesures d'optimisation pour améliorer les performances du serveur tout en garantissant la disponibilité de l'application."
+            "objectif": "Savoir analyser les performances en production et les optimiser.",
+            "instructions": "À l'aide d'un outil d'analyse des performances, identifiez et analysez les goulots d'étranglement d'un serveur en environnement de production.",
+            "livrable": "L'identification des goulots d'étranglement et des mesures d'optimisation proposées pour améliorer les performances du serveur tout en garantissant la disponibilité de l'application."
         }
     ],
     "bibliography": [
@@ -134,8 +139,8 @@
         }
     ],
     "OnlineResources": [
-        "ITIL 4 — Release Management (https://www.axelos.com) [EN]",
-        "DORA — DevOps Research and Assessment (https://dora.dev) [EN]",
+        "ITIL 4 - Release Management (https://www.axelos.com) [EN]",
+        "DORA - DevOps Research and Assessment (https://dora.dev) [EN]",
         "GitLab Continuous Delivery (https://docs.gitlab.com/ee/ci/) [EN]",
         "DevOps Institute (https://www.devopsinstitute.com) [EN]",
         "CNCF Cloud Native Landscape (https://landscape.cncf.io) [EN]"

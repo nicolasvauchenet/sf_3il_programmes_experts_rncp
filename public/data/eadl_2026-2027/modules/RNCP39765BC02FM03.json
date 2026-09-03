@@ -79,8 +79,33 @@
     "exercises": [
         {
             "title": "Gestion des compétences et des carrières",
-            "context": "Imaginez que vous êtes responsable des ressources humaines dans une entreprise.",
-            "objective": "Vous devez créer un plan de développement des compétences pour l'ensemble des collaborateurs. Décrivez les étapes que vous allez mettre en place pour identifier les besoins en compétences, élaborer un plan de formation et assurer le suivi de son déploiement.Exercice 2 : Gestion de l'équipe Vous êtes promu(e) responsable d'une équipe et vous faites face à des conflits récurrents entre les membres. Proposez une stratégie de communication et de gestion de ces conflits. Expliquez comment vous allez aborder la situation et mettre en place des actions concrètes pour favoriser la résolution des conflits et renforcer la cohésion de l'équipe.Exercice 3 : Gestion du temps et des priorités Identifiez les principaux obstacles à une gestion efficace du temps au sein d'une équipe. En vous basant sur ces obstacles, élaborez un plan d'action concret pour améliorer la gestion du temps et des priorités. Expliquez comment vous allez sensibiliser les membres de l'équipe à cette démarche et mesurer les résultats de vos actions.Exercice 4 : Suivi et évaluation des équipes projets Vous pilotez un projet important au sein de votre entreprise et vous devez mettre en place un système de suivi et d'évaluation pour garantir la bonne progression du projet. Décrivez les outils que vous allez utiliser pour mesurer les performances de l'équipe, évaluer les risques et assurer le respect des délais. Proposez également des actions correctives en cas de dérive par rapport aux objectifs initiaux.Exercice 5 : Stratégies de résolution de conflits À partir d'une étude de cas fictive mettant en scène un conflit au sein d'une équipe, proposez une analyse détaillée du conflit et identifiez les différentes stratégies de résolution possibles. Choisissez la stratégie qui vous semble la plus adaptée à la situation et justifiez votre choix. Présentez ensuite un plan d'action étape par étape pour mettre en œuvre cette stratégie et assurer la résolution du conflit."
+            "objectif": "Être capable d'élaborer un plan de développement des compétences pour l'ensemble des collaborateurs.",
+            "instructions": "Vous êtes responsable des ressources humaines dans une entreprise et vous devez créer un plan de développement des compétences pour l'ensemble des collaborateurs. Décrivez les étapes que vous allez mettre en place pour identifier les besoins en compétences, élaborer un plan de formation et assurer le suivi de son déploiement.",
+            "livrable": "Un plan de développement des compétences décrivant les étapes d'identification des besoins, l'élaboration du plan de formation et les modalités de suivi de son déploiement."
+        },
+        {
+            "title": "Gestion de l'équipe",
+            "objectif": "Être capable de définir une stratégie de communication et de gestion des conflits pour renforcer la cohésion d'une équipe.",
+            "instructions": "Vous êtes promu(e) responsable d'une équipe et vous faites face à des conflits récurrents entre les membres. Proposez une stratégie de communication et de gestion de ces conflits. Expliquez comment vous allez aborder la situation et mettre en place des actions concrètes pour favoriser la résolution des conflits et renforcer la cohésion de l'équipe.",
+            "livrable": "Une stratégie de communication et de gestion des conflits détaillant l'approche retenue et les actions concrètes pour favoriser la résolution des conflits et renforcer la cohésion de l'équipe."
+        },
+        {
+            "title": "Gestion du temps et des priorités",
+            "objectif": "Être capable d'élaborer un plan d'action pour améliorer la gestion du temps et des priorités d'une équipe.",
+            "instructions": "Identifiez les principaux obstacles à une gestion efficace du temps au sein d'une équipe. En vous basant sur ces obstacles, élaborez un plan d'action concret pour améliorer la gestion du temps et des priorités. Expliquez comment vous allez sensibiliser les membres de l'équipe à cette démarche et mesurer les résultats de vos actions.",
+            "livrable": "Un plan d'action identifiant les obstacles à la gestion du temps, décrivant les mesures d'amélioration, les modalités de sensibilisation de l'équipe et les indicateurs de mesure des résultats."
+        },
+        {
+            "title": "Suivi et évaluation des équipes projets",
+            "objectif": "Être capable de mettre en place un système de suivi et d'évaluation garantissant la bonne progression d'un projet.",
+            "instructions": "Vous pilotez un projet important au sein de votre entreprise et vous devez mettre en place un système de suivi et d'évaluation pour garantir la bonne progression du projet. Décrivez les outils que vous allez utiliser pour mesurer les performances de l'équipe, évaluer les risques et assurer le respect des délais. Proposez également des actions correctives en cas de dérive par rapport aux objectifs initiaux.",
+            "livrable": "Un dispositif de suivi et d'évaluation précisant les outils de mesure des performances, l'évaluation des risques, le suivi des délais et les actions correctives prévues en cas de dérive."
+        },
+        {
+            "title": "Stratégies de résolution de conflits",
+            "objectif": "Être capable d'analyser un conflit d'équipe et de choisir une stratégie de résolution adaptée et argumentée.",
+            "instructions": "À partir d'une étude de cas fictive mettant en scène un conflit au sein d'une équipe, proposez une analyse détaillée du conflit et identifiez les différentes stratégies de résolution possibles. Choisissez la stratégie qui vous semble la plus adaptée à la situation et justifiez votre choix. Présentez ensuite un plan d'action étape par étape pour mettre en oeuvre cette stratégie et assurer la résolution du conflit.",
+            "livrable": "Une analyse détaillée du conflit, la comparaison des stratégies de résolution possibles, le choix argumenté d'une stratégie et un plan d'action étape par étape pour sa mise en oeuvre."
         }
     ],
     "bibliography": [
@@ -98,10 +123,10 @@
         }
     ],
     "OnlineResources": [
-        "Harvard Business Review — Managing People (https://hbr.org/topic/managing-people) [EN]",
-        "Manager-go — Guide management (https://www.manager-go.com) [FR]",
-        "ANACT — Conditions de travail (https://www.anact.fr) [FR]",
-        "Google — re:Work (https://rework.withgoogle.com) [EN]",
+        "Harvard Business Review - Managing People (https://hbr.org/topic/managing-people) [EN]",
+        "Manager-go - Guide management (https://www.manager-go.com) [FR]",
+        "ANACT - Conditions de travail (https://www.anact.fr) [FR]",
+        "Google - re:Work (https://rework.withgoogle.com) [EN]",
         "MIT Sloan Management Review (https://sloanreview.mit.edu) [EN]"
     ],
     "teachingMethods": [

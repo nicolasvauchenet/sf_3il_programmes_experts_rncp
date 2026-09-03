@@ -29,7 +29,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux et les valeurs du Manifeste Agile ainsi que les bénéfices de l'approche Agile (Comprendre) Explorer les principaux frameworks Agiles (Scrum, Kanban, XP) et leurs rôles, événements et artefacts (Analyser) Mettre en œuvre la méthodologie Agile de manière adaptable dans différents projets en favorisant la collaboration, la gestion des changements et l'auto-organisation (Appliquer)"
+        "description": "Comprendre les principes fondamentaux et les valeurs du Manifeste Agile ainsi que les bénéfices de l'approche Agile. Explorer les principaux Frameworks Agiles tels que Scrum, Kanban et Extreme Programming, y compris leurs rôles, événements et artefacts spécifiques. Apprendre à mettre en œuvre la méthodologie Agile de manière adaptable dans différents projets en favorisant la collaboration, la gestion des changements et l'auto-organisation."
     },
     "prerequisites": {
         "description": "Une compréhension de base des concepts de gestion de projet et une expérience pratique en développement logiciel seraient bénéfiques, bien que non indispensables."
@@ -49,7 +49,7 @@
             {
                 "title": "Chapitre 2 : Scrum, un framework Agile incontournable",
                 "items": [
-                    "Les différents rôles dans une équipe Scrum (Product Owner, Scrum Master, Equipe de développement)",
+                    "Les différents rôles dans une équipe Scrum (Product Owner, Scrum Master, Developers)",
                     "Les événements Scrum (Sprint, Daily Scrum, Sprint Review, Sprint Retrospective)",
                     "Les artefacts Scrum (Product Backlog, Sprint Backlog, Increment)",
                     "La gestion des exigences dans Scrum (User Stories, Definition of Done)",
@@ -90,42 +90,47 @@
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "En vous basant sur le Manifeste Agile, identifiez et expliquez les quatre valeurs fondamentales de l'Agilité.",
-            "objective": "Ensuite, choisissez deux principes de l'Agilité et illustrez-les avec des exemples concrets issus de votre expérience professionnelle ou de projets que vous connaissez."
+            "title": "Identifiez les valeurs et principes de l'Agilité",
+            "objectif": "Comprendre les valeurs et principes fondamentaux de l'Agilité à partir du Manifeste Agile.",
+            "instructions": "En vous basant sur le Manifeste Agile, identifiez et expliquez les quatre valeurs fondamentales de l'Agilité. Choisissez ensuite deux principes de l'Agilité et illustrez-les avec des exemples concrets issus de votre expérience ou de projets connus.",
+            "livrable": "Une présentation des quatre valeurs fondamentales expliquées et de deux principes illustrés par des exemples concrets."
         },
         {
-            "title": "Exercice 2",
-            "context": "Imaginez que vous êtes impliqué dans un projet qui envisage d'adopter Scrum comme méthode de travail.",
-            "objective": "Identifiez et décrivez les rôles clés nécessaires pour mettre en place une équipe Scrum efficace. Ensuite, élaborez un plan de travail pour la première itération (Sprint) en incluant les différentes phases, les tâches et les livrables attendus."
+            "title": "Implémentation de Scrum",
+            "objectif": "Savoir mettre en place une équipe Scrum et planifier une première itération.",
+            "instructions": "Pour un projet envisageant d'adopter Scrum, identifiez et décrivez les rôles clés nécessaires à une équipe Scrum efficace. Élaborez ensuite un plan de travail pour la première itération (Sprint) incluant les différentes phases, les tâches et les livrables attendus.",
+            "livrable": "La description des rôles clés de l'équipe Scrum et un plan de travail du premier Sprint détaillant phases, tâches et livrables."
         },
         {
-            "title": "Exercice 3",
-            "context": "Créez un tableau Kanban pour un projet de développement logiciel.",
-            "objective": "Identifiez les différentes colonnes que vous allez inclure dans votre tableau en expliquant le flux de travail. Ensuite, utilisez un exemple de votre choix pour attribuer des tâches à chaque colonne et expliquez comment vous allez gérer le flux de travail avec des limites de travaux en cours."
+            "title": "Conception d'un tableau Kanban",
+            "objectif": "Être capable de concevoir un tableau Kanban et de gérer le flux de travail avec des limites d'en-cours.",
+            "instructions": "Créez un tableau Kanban pour un projet de développement logiciel. Identifiez les colonnes à inclure en expliquant le flux de travail, puis, à partir d'un exemple de votre choix, attribuez des tâches à chaque colonne et expliquez la gestion du flux avec des limites de travaux en cours.",
+            "livrable": "Un tableau Kanban structuré en colonnes avec tâches réparties, accompagné de l'explication du flux de travail et des limites de travaux en cours."
         },
         {
-            "title": "Exercice 4",
-            "context": "Choisissez deux pratiques clés de l'Extreme Programming (XP) et expliquez comment vous les mettriez en œuvre dans un projet de développement logiciel.",
-            "objective": "Identifiez les bénéfices attendus de ces pratiques et les défis potentiels que vous pourriez rencontrer lors de leur implémentation, ainsi que les solutions pour surmonter ces défis."
+            "title": "Pratiques clés de l'Extreme Programming",
+            "objectif": "Comprendre et savoir mettre en œuvre des pratiques clés de l'Extreme Programming.",
+            "instructions": "Choisissez deux pratiques clés de l'Extreme Programming (XP) et expliquez comment vous les mettriez en œuvre dans un projet de développement logiciel. Identifiez les bénéfices attendus, les défis potentiels et les solutions pour les surmonter.",
+            "livrable": "Une présentation de deux pratiques XP, de leur mise en œuvre, des bénéfices attendus et des défis potentiels avec les solutions associées."
         },
         {
-            "title": "Exercice 5",
-            "context": "Sélectionnez un cas d'utilisation réel ou fictif et proposez une adaptation de l'approche Agile en fonction de ses spécificités.",
-            "objective": "Identifiez les pratiques et les outils Agile que vous allez mettre en place pour favoriser la collaboration, gérer les changements et évaluer les progrès du projet. Justifiez vos choix en expliquant comment ils répondent aux besoins et contraintes du cas d'étude choisi."
+            "title": "Adaptation de l'approche Agile à un projet spécifique",
+            "objectif": "Savoir adapter l'approche Agile aux spécificités d'un projet donné.",
+            "instructions": "Sélectionnez un cas d'utilisation réel ou fictif et proposez une adaptation de l'approche Agile selon ses spécificités. Identifiez les pratiques et outils Agile à mettre en place pour favoriser la collaboration, gérer les changements et évaluer les progrès. Justifiez vos choix.",
+            "livrable": "Une proposition d'adaptation Agile pour le cas choisi, précisant les pratiques et outils retenus et justifiant leur adéquation aux besoins et contraintes du cas."
         }
     ],
     "bibliography": [
         {
-            "title": "Scrum : pour une pratique vivante de l'agilité (6e éd.)",
+            "title": "Scrum : un outil convivial pour une agilité radicale (6e éd.). Dunod",
             "author": "Aubry, C"
         },
         {
-            "title": "Scrum : le guide pratique de la méthode agile la plus populaire",
+            "title": "Scrum : The Art of Doing Twice the Work in Half the Time. Currency",
             "author": "Sutherland, J"
         },
         {
-            "title": "Agile Software Development: The Cooperative Game",
+            "title": "Agile Software Development : The Cooperative Game (2e éd.). Addison-Wesley",
             "author": "Cockburn, A"
         }
     ],
@@ -141,7 +146,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

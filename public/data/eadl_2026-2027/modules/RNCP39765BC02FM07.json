@@ -67,28 +67,33 @@
     "exercises": [
         {
             "title": "Analyse des enjeux de la responsabilité numérique",
-            "context": "Vous êtes chargé(e) d'analyser l'impact des activités numériques sur la société d'une entreprise de votre choix.",
-            "objective": "Vous devrez identifier les principaux enjeux liés à la responsabilité sociale et environnementale ainsi que les exigences légales et normatives qui s'appliquent. Enfin, proposez des mesures pour gérer les risques associés à ces enjeux."
+            "objectif": "Être capable d'analyser les enjeux de la responsabilité numérique d'une entreprise et de gérer les risques associés.",
+            "instructions": "Analysez l'impact des activités numériques sur la société pour une entreprise de votre choix : identifiez les principaux enjeux de responsabilité sociale et environnementale ainsi que les exigences légales et normatives applicables, puis proposez des mesures pour gérer les risques associés.",
+            "livrable": "Une analyse des enjeux de responsabilité numérique (sociaux, environnementaux, légaux et normatifs) assortie de mesures de gestion des risques associés."
         },
         {
             "title": "Élaboration d'une stratégie numériquement responsable",
-            "context": "En vous inspirant des enseignements du cours, développez une stratégie visant à intégrer la responsabilité numérique dans la stratégie globale d'une entreprise fictive.",
-            "objective": "Cette stratégie devra inclure des actions concrètes pour promouvoir la durabilité, sensibiliser les parties prenantes et mettre en place des bonnes pratiques pour la gestion responsable des données."
+            "objectif": "Être capable d'intégrer la responsabilité numérique dans la stratégie globale d'une entreprise.",
+            "instructions": "En vous inspirant des enseignements du cours, développez une stratégie intégrant la responsabilité numérique dans la stratégie globale d'une entreprise fictive, incluant des actions concrètes pour promouvoir la durabilité, sensibiliser les parties prenantes et instaurer de bonnes pratiques de gestion responsable des données.",
+            "livrable": "Une stratégie numériquement responsable détaillant les actions de durabilité, de sensibilisation des parties prenantes et de gestion responsable des données."
         },
         {
             "title": "Étude de cas sur la gestion responsable des données",
-            "context": "À partir d'une étude de cas fournie, identifiez les normes et standards en matière de gestion des données qui s'appliquent.",
-            "objective": "Ensuite, proposez des mesures pour assurer la sécurisation des données et la protection de la vie privée, tout en garantissant une utilisation éthique des données dans les activités numériques."
+            "objectif": "Être capable d'appliquer les normes de gestion des données et de garantir une utilisation éthique des données.",
+            "instructions": "À partir d'une étude de cas fournie, identifiez les normes et standards de gestion des données applicables, puis proposez des mesures pour sécuriser les données et protéger la vie privée tout en garantissant une utilisation éthique des données.",
+            "livrable": "Une analyse identifiant les normes applicables et proposant des mesures de sécurisation, de protection de la vie privée et d'utilisation éthique des données."
         },
         {
             "title": "Sensibilisation à la responsabilité numérique",
-            "context": "Imaginez et créez un programme de sensibilisation à la responsabilité numérique au sein d'une entreprise.",
-            "objective": "Ce programme devra inclure des activités ou des supports pour sensibiliser les équipes à l'importance de la protection des données et des enjeux sociétaux liés aux activités numériques."
+            "objectif": "Être capable de concevoir un programme de sensibilisation à la responsabilité numérique.",
+            "instructions": "Imaginez et créez un programme de sensibilisation à la responsabilité numérique au sein d'une entreprise, incluant des activités ou des supports pour sensibiliser les équipes à la protection des données et aux enjeux sociétaux liés aux activités numériques.",
+            "livrable": "Un programme de sensibilisation à la responsabilité numérique comprenant les activités ou supports destinés à sensibiliser les équipes."
         },
         {
             "title": "Évaluation des performances en responsabilité numérique",
-            "context": "Mettez en place un système d'évaluation des performances en termes de responsabilité numérique pour une entreprise fictive.",
-            "objective": "Définissez les critères et les outils d'évaluation à utiliser, puis élaborez un plan d'action en fonction des résultats obtenus."
+            "objectif": "Être capable de mettre en place un système d'évaluation des performances en responsabilité numérique.",
+            "instructions": "Mettez en place un système d'évaluation des performances en matière de responsabilité numérique pour une entreprise fictive : définissez les critères et outils d'évaluation, puis élaborez un plan d'action en fonction des résultats obtenus.",
+            "livrable": "Un système d'évaluation des performances en responsabilité numérique précisant les critères et outils, assorti d'un plan d'action fondé sur les résultats."
         }
     ],
     "bibliography": [
@@ -99,10 +104,10 @@
     ],
     "OnlineResources": [
         "Institut du Numérique Responsable (https://institutnr.org) [FR]",
-        "GreenIT.fr — Sobriété numérique (https://www.greenit.fr) [FR]",
-        "DINUM — Mission numérique écoresponsable (https://ecoresponsable.numerique.gouv.fr) [FR]",
-        "The Shift Project — Lean ICT (https://theshiftproject.org) [FR/EN]",
-        "ADEME — Numérique responsable (https://www.ademe.fr) [FR]"
+        "GreenIT.fr - Sobriété numérique (https://www.greenit.fr) [FR]",
+        "DINUM - Mission numérique écoresponsable (https://ecoresponsable.numerique.gouv.fr) [FR]",
+        "The Shift Project - Lean ICT (https://theshiftproject.org) [FR/EN]",
+        "ADEME - Numérique responsable (https://www.ademe.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

@@ -91,28 +91,33 @@
     "exercises": [
         {
             "title": "Simulation de rôles dans une équipe agile",
-            "context": "Dans cet exercice, vous serez amenés à simuler les différents rôles au sein d'une équipe agile (Product Owner, Scrum Master, Equipe de développement).",
-            "objective": "Chaque participant devra endosser un rôle et interagir avec les autres membres de l'équipe pour mener à bien une tâche donnée. L'objectif est de comprendre les responsabilités de chaque rôle et de gérer efficacement les interactions au sein de l'équipe."
+            "objectif": "Être capable de comprendre les responsabilités de chaque rôle d'une équipe agile et de gérer les interactions au sein de l'équipe.",
+            "instructions": "En groupe, simulez les différents rôles d'une équipe agile (Product Owner, Scrum Master, Developers). Chaque participant endosse un rôle et interagit avec les autres membres pour mener à bien une tâche donnée.",
+            "livrable": "Restitution de la simulation démontrant la compréhension des responsabilités de chaque rôle et une gestion efficace des interactions au sein de l'équipe."
         },
         {
             "title": "Construction d'un backlog de produit",
-            "context": "Vous serez chargés de construire un backlog de produit pour un projet donné.",
-            "objective": "À partir de scénarios concrets, vous devrez identifier et hiérarchiser les éléments du backlog en utilisant les techniques de planification adaptative. Cet exercice vise à vous familiariser avec le processus de construction et de gestion d'un backlog de produit dans un contexte agile."
+            "objectif": "Être capable de construire et de hiérarchiser un backlog de produit dans un contexte agile.",
+            "instructions": "À partir de scénarios concrets, construisez un backlog de produit pour un projet donné : identifiez et hiérarchisez les éléments du backlog en utilisant les techniques de planification adaptative.",
+            "livrable": "Un backlog de produit structuré et hiérarchisé, illustrant la maîtrise du processus de construction et de gestion d'un backlog en contexte agile."
         },
         {
             "title": "Gestion des risques et des changements",
-            "context": "Vous serez confrontés à des scénarios de risques et de changements fréquents dans un projet agile.",
-            "objective": "Votre mission sera d'anticiper ces risques, de proposer des solutions d'adaptation et de gérer efficacement les changements au sein de l'équipe. Cet exercice vous permettra de mettre en pratique les outils et techniques de gestion des risques et des changements en agilité."
+            "objectif": "Être capable d'anticiper les risques et de gérer les changements fréquents au sein d'un projet agile.",
+            "instructions": "Face à des scénarios de risques et de changements fréquents dans un projet agile, anticipez ces risques, proposez des solutions d'adaptation et gérez les changements au sein de l'équipe en mobilisant les outils et techniques de gestion des risques en agilité.",
+            "livrable": "Un plan présentant les risques anticipés, les solutions d'adaptation proposées et les modalités de gestion des changements, mettant en pratique les outils et techniques de gestion des risques en agilité."
         },
         {
             "title": "Mise en place d'une communication agile",
-            "context": "Vous serez amenés à mettre en place un système de communication transparente et fréquente au sein d'une équipe agile.",
-            "objective": "Vous devrez utiliser des outils de communication adaptés et favoriser la collaboration entre les membres de l'équipe. De plus, vous serez confrontés à des situations de communication avec des parties prenantes externes au projet. L'objectif est de comprendre l'impact de la communication agile et de gérer efficacement la communication dans un environnement agile."
+            "objectif": "Être capable de mettre en place une communication transparente et fréquente dans un environnement agile.",
+            "instructions": "Mettez en place un système de communication transparente et fréquente au sein d'une équipe agile en utilisant des outils adaptés et en favorisant la collaboration. Confrontez-vous également à des situations de communication avec des parties prenantes externes au projet.",
+            "livrable": "Un dispositif de communication agile décrit et argumenté, démontrant la compréhension de l'impact de la communication agile et la gestion efficace des échanges avec les parties prenantes internes et externes."
         },
         {
             "title": "Adaptation du rôle de chef de projet",
-            "context": "À partir de cas pratiques, vous serez invités à adapter le rôle de chef de projet dans un contexte agile.",
-            "objective": "Vous devrez identifier les différences entre la gestion de projet traditionnelle et la gestion de projet agile, et proposer des solutions pour intégrer efficacement le rôle du chef de projet dans une équipe agile. Cet exercice vous permettra de comprendre comment le rôle du chef de projet évolue dans un environnement agile."
+            "objectif": "Être capable d'adapter le rôle de chef de projet dans un contexte agile.",
+            "instructions": "À partir de cas pratiques, adaptez le rôle de chef de projet à un contexte agile : identifiez les différences entre la gestion de projet traditionnelle et la gestion de projet agile, puis proposez des solutions pour intégrer efficacement ce rôle dans une équipe agile.",
+            "livrable": "Une analyse comparée gestion traditionnelle / gestion agile assortie de propositions concrètes d'intégration du rôle de chef de projet dans une équipe agile."
         }
     ],
     "bibliography": [

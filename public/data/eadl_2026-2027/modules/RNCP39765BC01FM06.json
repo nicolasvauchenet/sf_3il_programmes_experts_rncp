@@ -13,7 +13,7 @@
     "skills": [
         {
             "code": "C8",
-            "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel"
+            "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des Frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel"
         }
     ],
     "objectives": {
@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Principe de base du Test Driven Development",
-            "context": "Vous êtes un développeur nouvellement intégré à une équipe qui pratique le Test Driven Development. Votre responsable vous demande de rédiger des tests unitaires pour une fonction qui calcule le carré d'un nombre entier. Objectif : Rédiger les tests unitaires en respectant le principe de base du Test Driven Development. Critères d'évaluation : Les tests unitaires doivent couvrir différents cas de figure, inclure des assertions pertinentes pour valider les résultats et suivre la méthodologie du cycle de développement en Test Driven Development.",
-            "objective": "Critères d'évaluation : Les tests unitaires doivent couvrir différents cas de figure, inclure des assertions pertinentes pour valider les résultats et suivre la méthodologie du cycle de développement en Test Driven Development."
+            "objectif": "Savoir rédiger des tests unitaires en respectant le principe de base du Test Driven Development.",
+            "instructions": "Vous êtes un développeur nouvellement intégré à une équipe qui pratique le Test Driven Development. Votre responsable vous demande de rédiger des tests unitaires pour une fonction qui calcule le carré d'un nombre entier.",
+            "livrable": "Les tests unitaires rédigés, couvrant différents cas de figure, incluant des assertions pertinentes pour valider les résultats et suivant la méthodologie du cycle de développement en Test Driven Development."
         },
         {
             "title": "Utilisation des assertions pour valider les résultats",
-            "context": "Vous travaillez sur un projet où la gestion des dépendances et l'isolation des tests sont des aspects critiques. Vous devez écrire des tests unitaires pour une fonction de recherche dans une liste. Objectif : Utiliser des assertions appropriées pour valider les résultats de la fonction de recherche, tout en respectant les bonnes pratiques de gestion des dépendances et d'isolation des tests. Critères d'évaluation : Les tests doivent couvrir plusieurs scénarios de recherche, et les assertions utilisées doivent être pertinentes pour valider les résultats corrects ou les cas d'erreur.",
-            "objective": "Critères d'évaluation : Les tests doivent couvrir plusieurs scénarios de recherche, et les assertions utilisées doivent être pertinentes pour valider les résultats corrects ou les cas d'erreur."
+            "objectif": "Être capable d'utiliser des assertions appropriées pour valider les résultats tout en isolant les tests.",
+            "instructions": "Vous travaillez sur un projet où la gestion des dépendances et l'isolation des tests sont des aspects critiques. Écrivez des tests unitaires pour une fonction de recherche dans une liste en utilisant des assertions appropriées et en respectant les bonnes pratiques de gestion des dépendances et d'isolation des tests.",
+            "livrable": "Des tests couvrant plusieurs scénarios de recherche, avec des assertions pertinentes pour valider les résultats corrects ou les cas d'erreur."
         },
         {
-            "title": "Intégration des tests unitaires dans le processus d'intégration continue",
-            "context": "Vous avez la charge de configurer un outil d'intégration continue pour un projet en Test Driven Development. Votre tâche consiste à intégrer les tests unitaires dans le processus d'intégration continue. Objectif : Configurer l'outil d'intégration continue pour exécuter les tests unitaires automatiquement à chaque validation de code, et assurer la rapidité du feedback. Critères d'évaluation : L'outil doit être configuré pour exécuter les tests unitaires, générer des rapports et fournir un feedback rapide en cas d'échec de test.",
-            "objective": "Critères d'évaluation : L'outil doit être configuré pour exécuter les tests unitaires, générer des rapports et fournir un feedback rapide en cas d'échec de test."
+            "title": "Intégration des tests unitaires dans l'intégration continue",
+            "objectif": "Savoir intégrer des tests unitaires dans un processus d'intégration continue.",
+            "instructions": "Vous avez la charge de configurer un outil d'intégration continue pour un projet en Test Driven Development. Configurez l'outil pour exécuter les tests unitaires automatiquement à chaque validation de code et assurer la rapidité du feedback.",
+            "livrable": "L'outil d'intégration continue configuré pour exécuter les tests unitaires, générer des rapports et fournir un feedback rapide en cas d'échec de test."
         },
         {
             "title": "Intégration du refactoring dans le cycle du Test Driven Development",
-            "context": "Vous travaillez sur un projet existant et vous identifiez des portions de code nécessitant du refactoring. Votre objectif est d'intégrer le refactoring dans le cycle du Test Driven Development. Objectif : Appliquer le processus de refactoring sur une portion de code tout en assurant l'intégrité des tests unitaires associés. Critères d'évaluation : Le refactoring doit être effectué en préservant les fonctionnalités et en garantissant que les tests unitaires continuent de passer avec succès.",
-            "objective": "Critères d'évaluation : Le refactoring doit être effectué en préservant les fonctionnalités et en garantissant que les tests unitaires continuent de passer avec succès."
+            "objectif": "Être capable d'intégrer le refactoring dans le cycle du Test Driven Development tout en préservant l'intégrité des tests.",
+            "instructions": "Vous travaillez sur un projet existant et identifiez des portions de code nécessitant du refactoring. Appliquez le processus de refactoring sur une portion de code tout en assurant l'intégrité des tests unitaires associés.",
+            "livrable": "Le code refactorisé préservant les fonctionnalités et garantissant que les tests unitaires continuent de passer avec succès."
         },
         {
-            "title": "Mise en pratique à travers des exercices et des mini-projets",
-            "context": "Vous êtes amené à travailler sur un mini-projet où vous devrez mettre en pratique les concepts du Test Driven Development. Objectif : Implémenter les fonctionnalités demandées en suivant la méthodologie du Test Driven Development, en rédigeant des tests unitaires et en les intégrant dans le processus d'intégration continue. Critères d'évaluation : La capacité à suivre le cycle de développement en Test Driven Development, la qualité des tests unitaires rédigés et la pertinence de l'intégration continue dans le projet.",
-            "objective": "Critères d'évaluation : La capacité à suivre le cycle de développement en Test Driven Development, la qualité des tests unitaires rédigés et la pertinence de l'intégration continue dans le projet."
+            "title": "Mise en pratique du Test Driven Development sur un mini-projet",
+            "objectif": "Savoir mettre en pratique le Test Driven Development sur un mini-projet complet.",
+            "instructions": "Vous êtes amené à travailler sur un mini-projet où vous devrez mettre en pratique les concepts du Test Driven Development. Implémentez les fonctionnalités demandées en suivant la méthodologie du Test Driven Development, en rédigeant des tests unitaires et en les intégrant dans le processus d'intégration continue.",
+            "livrable": "Les fonctionnalités implémentées démontrant la capacité à suivre le cycle de développement en Test Driven Development, la qualité des tests unitaires rédigés et la pertinence de l'intégration continue dans le projet."
         }
     ],
     "bibliography": [
@@ -118,11 +123,11 @@
         }
     ],
     "OnlineResources": [
-        "Martin Fowler — Test-Driven Development (https://martinfowler.com/bliki/TestDrivenDevelopment.html) [EN]",
+        "Martin Fowler - Test-Driven Development (https://martinfowler.com/bliki/TestDrivenDevelopment.html) [EN]",
         "JUnit 5 Documentation (https://junit.org/junit5/docs/current/user-guide/) [EN]",
         "pytest Documentation (https://docs.pytest.org) [EN]",
         "Kata Coding Dojo (https://codingdojo.org/kata/) [EN]",
-        "developpez.com — Tutoriels TDD (https://qualite.developpez.com) [FR]"
+        "developpez.com - Tutoriels TDD (https://qualite.developpez.com) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

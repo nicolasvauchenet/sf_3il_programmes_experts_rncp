@@ -101,9 +101,7 @@
                 "items": [
                     "Analyser les retours d'expérience à la suite d’incidents",
                     "Mettre en place des actions d'amélioration continue",
-                    "Intégrer la culture de la continuité des activités dans l'organisation",
-                    "En prenant en compte ces chapitres et leurs points clés, ce module de 21h permettra aux apprenants",
-                    "De maîtriser les concepts, les méthodologies et les bonnes pratiques liés à l'élaboration d'un plan de continuité PCA pour assurer la fourniture des services en cas d'incident majeur."
+                    "Intégrer la culture de la continuité des activités dans l'organisation"
                 ]
             }
         ]
@@ -111,28 +109,33 @@
     "exercises": [
         {
             "title": "Évaluation des Risques et Menaces",
-            "context": "Vous êtes le responsable de la continuité des activités pour votre entreprise.",
-            "objective": "Votre première tâche est d'identifier les risques et menaces pouvant affecter les opérations critiques de l'organisation. Créez un tableau dans lequel vous listerez au moins 10 risques (naturels, technologiques, humains, etc.), déterminez leur probabilité d'occurrence et leur impact potentiel sur l'entreprise. Pour chaque risque identifié, proposez une mesure préventive qui pourrait être mise en œuvre pour réduire soit la probabilité, soit l'impact de ce risque."
+            "objectif": "Savoir identifier et évaluer les risques et menaces pouvant affecter les opérations critiques d'une organisation.",
+            "instructions": "En tant que responsable de la continuité des activités, identifiez les risques et menaces pouvant affecter les opérations critiques de l'organisation, puis créez un tableau listant au moins 10 risques (naturels, technologiques, humains, etc.) avec leur probabilité d'occurrence et leur impact potentiel sur l'entreprise.",
+            "livrable": "Un tableau d'au moins 10 risques évalués (probabilité et impact) assorti, pour chaque risque, d'une mesure préventive réduisant sa probabilité ou son impact."
         },
         {
             "title": "Analyse d'Impact sur l'Activité (AIA)",
-            "context": "Afin de préparer le plan de continuité des activités de votre entreprise, réalisez une Analyse d'Impact sur l'Activité (AIA).",
-            "objective": "Sélectionnez trois processus critiques de l'organisation et évaluez leur importance en termes de niveaux de service et de conséquences financières et opérationnelles en cas de défaillance. Utilisez une échelle de 1 à 5 pour évaluer l'importance de chaque processus et rédigez un bref rapport qui explique vos conclusions et recommandations pour la priorisation des efforts de continuité."
+            "objectif": "Être capable de réaliser une analyse d'impact sur l'activité (AIA) pour prioriser les efforts de continuité.",
+            "instructions": "Pour préparer le plan de continuité des activités, réalisez une Analyse d'Impact sur l'Activité (AIA) : sélectionnez trois processus critiques de l'organisation et évaluez leur importance en termes de niveaux de service et de conséquences financières et opérationnelles en cas de défaillance, à l'aide d'une échelle de 1 à 5.",
+            "livrable": "Un bref rapport présentant l'évaluation des trois processus critiques ainsi que des conclusions et recommandations pour la priorisation des efforts de continuité."
         },
         {
             "title": "Choix et Justification d'une Stratégie de Continuité",
-            "context": "Considérant que vous avez maintenant une compréhension des risques et des impacts sur l'activité de votre entreprise, choisissez une stratégie de continuité adaptée à un des processus critiques que vous avez identifiés.",
-            "objective": "Rédigez une proposition qui décrit la stratégie choisie (redondance, relocalisation, etc.), justifiez pourquoi cette stratégie est la plus adaptée aux besoins de l'entreprise pour ce processus, et expliquez comment elle sera mise en œuvre opérationnellement."
+            "objectif": "Savoir choisir et justifier une stratégie de continuité adaptée à un processus critique.",
+            "instructions": "À partir de votre compréhension des risques et des impacts sur l'activité, choisissez une stratégie de continuité adaptée à l'un des processus critiques identifiés et rédigez une proposition décrivant la stratégie retenue (redondance, relocalisation, etc.).",
+            "livrable": "Une proposition décrivant la stratégie de continuité choisie, justifiant son adéquation aux besoins de l'entreprise pour ce processus et expliquant sa mise en œuvre opérationnelle."
         },
         {
             "title": "Plan de Reprise d'Activité",
-            "context": "Vous avez été chargé de développer un plan de reprise d'activité pour un service spécifique de votre entreprise qui est essentiel à son fonctionnement.",
-            "objective": "Créez un document de planification qui inclut les éléments suivants : les objectifs de reprise, les ressources nécessaires pour la reprise, les procédures à suivre pour restaurer le service, ainsi qu'un plan de communication interne et externe. Assurez-vous également d'inclure un calendrier pour les tests réguliers de votre plan."
+            "objectif": "Être capable de développer un plan de reprise d'activité pour un service essentiel de l'entreprise.",
+            "instructions": "Chargé de développer un plan de reprise d'activité pour un service essentiel de l'entreprise, créez un document de planification incluant les objectifs de reprise, les ressources nécessaires, les procédures à suivre pour restaurer le service ainsi qu'un plan de communication interne et externe.",
+            "livrable": "Un document de planification de reprise d'activité comprenant les objectifs de reprise, les ressources, les procédures de restauration, un plan de communication interne et externe, et un calendrier des tests réguliers."
         },
         {
             "title": "Simulation de Crise et Gestion de la Communication",
-            "context": "Organisez un exercice de simulation de crise pour tester l'efficacité du plan de continuité des activités de votre entreprise.",
-            "objective": "Décrivez le scénario de la crise, y compris l'incident majeur qui a eu lieu et ses conséquences immédiates. Assignez des rôles et responsabilités à différents membres de l'équipe de gestion de crise. Rédigez le plan de communication qui sera utilisé pendant la crise, en incluant le protocole de communication interne et la stratégie de communication avec les médias et les parties prenantes externes. Après la simulation, rédigez un rapport d'analyse qui évalue la réaction de l'équipe, identifie les points forts et les faiblesses de la réponse, et propose des améliorations pour le plan de continuité."
+            "objectif": "Savoir organiser une simulation de crise et gérer la communication pour tester le plan de continuité.",
+            "instructions": "Organisez un exercice de simulation de crise pour tester l'efficacité du plan de continuité : décrivez le scénario de crise et ses conséquences immédiates, assignez des rôles et responsabilités aux membres de l'équipe de gestion de crise, et rédigez le plan de communication (protocole interne et stratégie avec les médias et les parties prenantes externes).",
+            "livrable": "Le scénario de crise, la répartition des rôles, le plan de communication, et un rapport d'analyse post-simulation évaluant la réaction de l'équipe, ses points forts et ses faiblesses, et proposant des améliorations du plan de continuité."
         }
     ],
     "bibliography": [
@@ -146,11 +149,11 @@
         }
     ],
     "OnlineResources": [
-        "ISO 22301 — Business continuity (https://www.iso.org/iso-22301-business-continuity.html) [EN/FR]",
-        "ANSSI — PCA / PRA (https://cyber.gouv.fr) [FR]",
+        "ISO 22301 - Business continuity (https://www.iso.org/iso-22301-business-continuity.html) [EN/FR]",
+        "ANSSI - PCA / PRA (https://cyber.gouv.fr) [FR]",
         "Disaster Recovery Journal (https://www.drj.com) [EN]",
         "Continuity Central (https://www.continuitycentral.com) [EN]",
-        "CLUSIF — Continuité d'activité (https://clusif.fr) [FR]"
+        "CLUSIF - Continuité d'activité (https://clusif.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

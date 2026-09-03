@@ -14,6 +14,7 @@ use App\Entity\Skill;
 use App\Enum\Program;
 use App\Repository\PromotionRepository;
 use App\Service\Context\Loader\FrameworkStructureLoader;
+use App\Service\Context\ModuleTextBlockFormatter;
 use App\Service\Context\ModuleSheetResolver;
 
 final readonly class FrameworkModulesProvider
@@ -23,6 +24,7 @@ final readonly class FrameworkModulesProvider
         private FrameworkSkillsProvider  $skillsProvider,
         private FrameworkStructureLoader $structureLoader,
         private ModuleSheetResolver      $resolver,
+        private ModuleTextBlockFormatter $textBlockFormatter,
     )
     {
     }
@@ -165,8 +167,8 @@ final readonly class FrameworkModulesProvider
             'durationHours' => (int)($module->getDurationHours() ?? 0),
         ];
 
-        $objectives = $this->normalizeTextBlock($module->getObjectives());
-        $prerequisites = $this->normalizeTextBlock($module->getPrerequisites());
+        $objectives = $this->textBlockFormatter->formatObjectives($module->getObjectives());
+        $prerequisites = $this->textBlockFormatter->formatPrerequisites($module->getPrerequisites());
         $outline = ['chapters' => $outlineChapters];
         $exercises = is_array($module->getExercises()) ? $module->getExercises() : [];
         $bibliography = is_array($module->getBibliography()) ? $module->getBibliography() : [];
@@ -248,35 +250,6 @@ final readonly class FrameworkModulesProvider
     private function buildSkillKey(string $blocCode, string $skillCode): string
     {
         return strtolower(trim($blocCode) . '|' . trim($skillCode));
-    }
-
-    /**
-     * @return array<string,mixed>
-     */
-    private function normalizeTextBlock(?string $value): array
-    {
-        $value = trim((string)$value);
-
-        if ($value === '') {
-            return [];
-        }
-
-        $decoded = json_decode($value, true);
-
-        if (is_array($decoded)) {
-            return $decoded;
-        }
-
-        $items = preg_split('/\R+/', $value) ?: [];
-        $items = array_values(array_filter(array_map(
-            static fn(string $item): string => trim(ltrim($item, "-• \t")),
-            $items
-        )));
-
-        return [
-            'text' => $value,
-            'items' => $items,
-        ];
     }
 
     /**

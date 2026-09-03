@@ -8,7 +8,7 @@
         "blocName": "Concevoir et modéliser l'architecture logicielle",
         "durationDays": 3,
         "durationHours": 21,
-        "academicYear": "2026-2027"
+        "academicYear": ""
     },
     "skills": [
         {
@@ -41,7 +41,7 @@
         },
         {
             "code": "C9",
-            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet"
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet. BLOC 2 : Manager les projets numériques"
         }
     ],
     "objectives": {
@@ -106,29 +106,34 @@
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "Vous travaillez sur un projet de développement logiciel et vous devez comprendre les besoins des utilisateurs.",
-            "objective": "Pour cela, réalisez une liste des acteurs et des cas d'utilisation pour votre système, en utilisant les techniques d'interviews, de questionnaires, etc. Ensuite, structurez les besoins identifiés à l'aide de diagrammes UML."
+            "title": "Analyse des besoins des utilisateurs",
+            "objectif": "Être capable d'analyser et de structurer les besoins des utilisateurs d'un système logiciel.",
+            "instructions": "Vous travaillez sur un projet de développement logiciel et devez comprendre les besoins des utilisateurs. Réalisez une liste des acteurs et des cas d'utilisation pour votre système en utilisant des techniques d'interviews, de questionnaires, etc.",
+            "livrable": "La liste des acteurs et des cas d'utilisation, puis la structuration des besoins identifiés à l'aide de diagrammes UML."
         },
         {
-            "title": "Exercice 2",
-            "context": "Imaginez que vous devez évaluer la compatibilité d'un nouveau module avec les technologies existantes de votre entreprise.",
-            "objective": "Identifiez les contraintes techniques et les risques potentiels. Proposez des solutions pour surmonter ces obstacles et estimez les coûts et les délais liés à vos choix techniques. Enfin, présentez des solutions alternatives au cas où certaines contraintes ne pourraient pas être respectées."
+            "title": "Étude de faisabilité technique",
+            "objectif": "Savoir réaliser une étude de faisabilité technique d'un nouveau module.",
+            "instructions": "Vous devez évaluer la compatibilité d'un nouveau module avec les technologies existantes de votre entreprise. Identifiez les contraintes techniques et les risques potentiels, et estimez les coûts et les délais liés à vos choix techniques.",
+            "livrable": "Les contraintes et risques identifiés, les solutions proposées pour les surmonter, l'estimation des coûts et délais, ainsi que des solutions alternatives au cas où certaines contraintes ne pourraient pas être respectées."
         },
         {
-            "title": "Exercice 3",
-            "context": "Vous participez à l'élaboration d'un cahier des charges pour un nouveau projet.",
-            "objective": "Définissez clairement les objectifs du projet, spécifiez les fonctionnalités attendues et décrivez l'interface utilisateur souhaitée. Précisez également les contraintes techniques et opérationnelles auxquelles le projet doit répondre, ainsi que les critères de validation qui seront utilisés pour mesurer sa réussite."
+            "title": "Rédaction du cahier des charges",
+            "objectif": "Être capable de rédiger un cahier des charges précis et détaillé.",
+            "instructions": "Vous participez à l'élaboration d'un cahier des charges pour un nouveau projet. Définissez clairement les objectifs du projet, spécifiez les fonctionnalités attendues et décrivez l'interface utilisateur souhaitée.",
+            "livrable": "Un cahier des charges précisant les objectifs, les fonctionnalités, l'interface utilisateur, les contraintes techniques et opérationnelles ainsi que les critères de validation du projet."
         },
         {
-            "title": "Exercice 4",
-            "context": "Vous êtes chargé de modéliser l'architecture logicielle d'un nouveau système en utilisant UML.",
-            "objective": "Définissez les différents composants, leurs interfaces et les interactions entre eux. Utilisez des patrons de conception adaptés au contexte pour répondre aux besoins identifiés. Enfin, précisez les contraintes de performance, de sécurité, etc. que l'architecture doit respecter, en assurant la traçabilité entre les besoins et l'architecture."
+            "title": "Spécifications techniques de l'architecture",
+            "objectif": "Savoir modéliser une architecture logicielle avec UML et des patrons de conception adaptés.",
+            "instructions": "Vous êtes chargé de modéliser l'architecture logicielle d'un nouveau système en utilisant UML. Définissez les différents composants, leurs interfaces et les interactions entre eux, et utilisez des patrons de conception adaptés au contexte.",
+            "livrable": "La modélisation UML de l'architecture, précisant les contraintes de performance, de sécurité, etc. et assurant la traçabilité entre les besoins et l'architecture."
         },
         {
-            "title": "Exercice 5",
-            "context": "Vous avez terminé la phase de conception de l'architecture logicielle et vous devez maintenant la valider.",
-            "objective": "Vérifiez la conformité de l'architecture aux besoins identifiés, réalisez des revues de conception pour recueillir des retours d'experts, effectuez des tests d'intégration et de validation pour vous assurer du bon fonctionnement de l'architecture. Enfin, documentez l'architecture et les décisions prises tout au long du processus."
+            "title": "Validation de l'architecture logicielle",
+            "objectif": "Être capable de valider la conformité d'une architecture logicielle aux besoins.",
+            "instructions": "Vous avez terminé la phase de conception de l'architecture logicielle et devez maintenant la valider. Vérifiez la conformité de l'architecture aux besoins identifiés, réalisez des revues de conception et effectuez des tests d'intégration et de validation.",
+            "livrable": "Les résultats de la validation (conformité, revues, tests) et la documentation de l'architecture et des décisions prises tout au long du processus."
         }
     ],
     "bibliography": [
@@ -141,16 +146,16 @@
             "author": "Printz, J"
         },
         {
-            "title": "Scrum, Kanban et l'agilité — Pour les chefs de projet et MOA",
+            "title": "Scrum, Kanban et l'agilité - Pour les chefs de projet et MOA",
             "author": "Aubry, C"
         }
     ],
     "OnlineResources": [
-        "BABOK Guide v3 — Business Analysis Body of Knowledge (https://www.iiba.org/babok-guide/) [EN]",
-        "CIGREF — Cahiers des charges (https://www.cigref.fr) [FR]",
-        "DINUM — Guide projets numériques (https://www.numerique.gouv.fr) [FR]",
+        "BABOK Guide v3 - Business Analysis Body of Knowledge (https://www.iiba.org/babok-guide/) [EN]",
+        "CIGREF - Cahiers des charges (https://www.cigref.fr) [FR]",
+        "DINUM - Guide projets numériques (https://www.numerique.gouv.fr) [FR]",
         "PMBOK Guide (https://www.pmi.org) [EN]",
-        "AFNOR — Normes de management de projet (https://www.afnor.org) [FR]"
+        "AFNOR - Normes de management de projet (https://www.afnor.org) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

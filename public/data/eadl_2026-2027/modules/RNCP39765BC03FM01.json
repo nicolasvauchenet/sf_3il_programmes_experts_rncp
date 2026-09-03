@@ -10,7 +10,28 @@
         "durationHours": 35,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines (CI/CD) en automatisant les processus d'intégration et de déploiement continus en utilisant des outils de conteneurisation et d'orchestration pour réduire les erreurs, accélérer les livraisons, les déploiements et assurer une qualité constante des livrables"
+        },
+        {
+            "code": "C17",
+            "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des Frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution"
+        },
+        {
+            "code": "C18",
+            "description": "Intégrer des pratiques de sécurité DevSecOps tout au long du cycle de développement logiciel par la mise en œuvre d'outils d'analyse et de sécurité tel que OWASP zap, Burp Suite pour identifier et corriger les vulnérabilités, assurer la conformité aux normes de sécurité et protéger les applications contre les menaces courantes"
+        },
+        {
+            "code": "C19",
+            "description": "Optimiser les développements et Structurer l'application en code modulaire en adoptant les pratiques de Clean Code, des revues de code régulières et des outils d'analyse tel que SonarQube ou DeepScan pour identifier et corriger les problèmes de qualité afin d'assurer la maintenabilité et Identifier et mettre en œuvre des améliorations pour optimiser les performances et l'efficacité des développements"
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en place, rédiger et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en suivant les meilleures pratiques de documentation et en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes et minimiser la dette technique. BLOC 4 : Optimiser le Système d'Information (SI) par l'apport du Cloud Computing"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Structurer un projet Python en respectant les bonnes pratiques d'architecture logicielle (Appliquer) Mettre en place des pipelines de tests, de packaging et de qualité de code (Créer) Développer un socle applicatif avancé servant de support aux autres modules du bloc (Créer)"
     },
@@ -68,29 +89,34 @@
     },
     "exercises": [
         {
-            "title": "Création et structuration d’un projet Python complet",
-            "context": "À partir d'un cahier des charges simplifié, créez un nouveau projet Python destiné à servir de base à une future application métier. Mettez en place l'environnement de développement, l'organisation des packages, le dépôt Git ainsi que les premiers modules de l'application.",
-            "objective": "Produire un projet Python correctement structuré, versionné avec Git, respectant les bonnes pratiques d'organisation du code et prêt à accueillir les développements des modules suivants."
+            "title": "Création et structuration d'un projet Python complet",
+            "objectif": "Être capable d'initialiser et de structurer un projet Python selon les bonnes pratiques d'architecture logicielle.",
+            "instructions": "Mettez en place l'environnement d'un nouveau projet Python à l'aide d'un gestionnaire de dépendances (Poetry ou pipenv) et d'un environnement virtuel isolé. Organisez le code en packages et modules cohérents en séparant le domaine métier, la couche d'accès aux données et les points d'entrée. Implémentez un premier module applicatif simple (par exemple gestion d'utilisateurs ou catalogue de produits) et initialisez un dépôt Git avec un fichier .gitignore adapté, une branche de développement et au moins deux commits significatifs.",
+            "livrable": "Un dépôt Git contenant un projet Python structuré en packages et modules, un fichier de gestion des dépendances (pyproject.toml ou Pipfile), un module applicatif fonctionnel et un README décrivant l'organisation du projet et les commandes d'installation."
         },
         {
-            "title": "Implémentation d’un design pattern dans un module métier",
-            "context": "À partir d'un besoin fonctionnel fourni (gestion d'utilisateurs, catalogue ou commandes), identifiez un problème de conception pouvant être résolu par un design pattern adapté, puis implémentez cette solution dans votre projet.",
-            "objective": "Mettre en œuvre un design pattern pertinent (Factory, Observer ou équivalent), justifier son choix et produire un code modulaire, maintenable et facilement extensible."
+            "title": "Implémentation d'un design pattern dans un module métier",
+            "objectif": "Être capable de concevoir et d'implémenter un design pattern adapté à un besoin métier en Python.",
+            "instructions": "À partir du socle applicatif de l'exercice 1, identifiez un besoin métier justifiant l'emploi d'un design pattern (par exemple Factory pour l'instanciation de différents types d'objets, ou Observer pour la notification d'événements). Implémentez ce pattern en mobilisant les concepts avancés de la programmation orientée objet en Python (héritage, mixins, décorateurs, gestion des exceptions). Documentez le choix du pattern, son diagramme de classes et la manière dont il améliore l'extensibilité du module.",
+            "livrable": "Un module métier intégrant un design pattern documenté (diagramme de classes, justification du choix), accompagné d'un exemple d'utilisation démontrant l'extensibilité apportée."
         },
         {
-            "title": "Validation de l'application par les tests automatisés",
-            "context": "Développez une suite de tests permettant de vérifier le bon fonctionnement des principales fonctionnalités de votre application à l'aide de pytest.",
-            "objective": "Écrire des tests unitaires et d'intégration couvrant les fonctionnalités essentielles, mesurer la couverture de code et garantir la non-régression lors des évolutions de l'application."
+            "title": "Rédaction et exécution de tests unitaires et d'intégration avec pytest",
+            "objectif": "Être capable de concevoir une suite de tests unitaires et d'intégration couvrant un module applicatif avec pytest.",
+            "instructions": "Rédigez avec pytest une suite de tests unitaires couvrant les fonctions et classes du module métier, en utilisant les fixtures et le paramétrage pour couvrir les cas nominaux et les cas limites. Ajoutez au moins un test d'intégration validant l'interaction entre plusieurs composants. Mesurez la couverture de code à l'aide de pytest-cov et visez un taux représentatif (par exemple supérieur à 80 pour cent) en justifiant les portions non couvertes.",
+            "livrable": "Une suite de tests unitaires et d'intégration exécutable avec pytest, accompagnée d'un rapport de couverture de code et d'un commentaire justifiant le taux atteint et les zones non couvertes."
         },
         {
-            "title": "Amélioration de la qualité du code",
-            "context": "Analysez votre projet avec plusieurs outils d'analyse statique afin d'identifier les problèmes de qualité, de style ou de typage, puis apportez les corrections nécessaires.",
-            "objective": "Produire un code conforme aux bonnes pratiques Python en utilisant flake8, pylint, black et mypy, jusqu'à obtenir un niveau de qualité satisfaisant sans régression fonctionnelle."
+            "title": "Analyse et correction des problèmes de qualité avec Ruff et mypy",
+            "objectif": "Être capable d'analyser et de corriger les problèmes de qualité et de typage d'un code Python à l'aide d'outils d'analyse statique.",
+            "instructions": "Configurez Ruff (linting et formatage) et mypy (vérification de typage statique) sur le projet à l'aide d'un fichier de configuration versionné. Exécutez l'analyse, identifiez les avertissements et erreurs remontés (style, imports inutilisés, complexité, annotations de types manquantes) et corrigez-les. Ajoutez des annotations de types aux signatures de fonctions et documentez les règles activées ou désactivées ainsi que leur justification.",
+            "livrable": "Un code conforme aux règles de Ruff et de mypy (analyse sans erreur bloquante), un fichier de configuration versionné et une note expliquant les règles retenues et les principales corrections apportées."
         },
         {
-            "title": "Industrialisation d'une API Python",
-            "context": "À partir du projet réalisé pendant le module, générez une documentation technique, créez une API REST avec FastAPI puis automatisez les contrôles qualité et les tests dans un pipeline CI/CD.",
-            "objective": "Livrer une application documentée, testée et industrialisée disposant d'une documentation exploitable, d'une API REST fonctionnelle et d'un pipeline d'intégration continue automatisant les contrôles de qualité."
+            "title": "Documentation technique et mise en place d'un pipeline CI/CD",
+            "objectif": "Être capable de documenter un projet et d'industrialiser sa validation via un pipeline d'intégration et de déploiement continus.",
+            "instructions": "Rédigez les docstrings des modules et fonctions en respectant la convention PEP257, puis générez une documentation technique du projet avec Sphinx ou MkDocs. Exposez une API REST simple avec FastAPI documentée automatiquement (OpenAPI). Mettez en place un pipeline CI/CD (par exemple GitHub Actions ou GitLab CI) exécutant à chaque push l'analyse Ruff et mypy, la suite de tests pytest avec couverture, puis la construction du paquet distribuable.",
+            "livrable": "Une documentation technique générée (Sphinx ou MkDocs), une API REST FastAPI documentée et un pipeline CI/CD fonctionnel enchaînant analyse statique, tests et packaging, avec une capture ou un journal d'exécution réussie."
         }
     ],
     "bibliography": [

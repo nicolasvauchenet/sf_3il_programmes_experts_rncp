@@ -77,28 +77,33 @@
     "exercises": [
         {
             "title": "Étude de cas et analyse des risques",
-            "context": "Objectif : Appliquer les connaissances acquises sur l'identification des risques et menaces pour les infrastructures systèmes et réseaux.",
-            "objective": "Imaginez que vous êtes responsable de la sécurité informatique pour une entreprise de commerce en ligne. Énumérez et décrivez cinq risques qui pourraient affecter les infrastructures systèmes et réseaux de l'entreprise. Pour chaque risque identifié, évaluez la probabilité et l'impact potentiel sur les opérations commerciales."
+            "objectif": "Appliquer les connaissances acquises sur l'identification des risques et menaces pour les infrastructures systèmes et réseaux.",
+            "instructions": "En tant que responsable de la sécurité informatique d'une entreprise de commerce en ligne, énumérez et décrivez cinq risques qui pourraient affecter les infrastructures systèmes et réseaux de l'entreprise.",
+            "livrable": "Cinq risques décrits, avec pour chacun une évaluation de la probabilité et de l'impact potentiel sur les opérations commerciales."
         },
         {
             "title": "Élaboration d'un Business Impact Analysis (BIA)",
-            "context": "Objectif : Analyser les besoins spécifiques de reprise d'activité et évaluer l'impact d'une interruption sur les services.",
-            "objective": "Vous travaillez pour une banque qui doit réaliser un Business Impact Analysis (BIA) pour son service de transactions en ligne. Déterminez les services critiques à analyser, évaluez le temps maximal admissible d'interruption (RTO) et le point d'objectif de reprise des données (RPO) pour chaque service. Présentez vos résultats dans un tableau récapitulatif."
+            "objectif": "Analyser les besoins spécifiques de reprise d'activité et évaluer l'impact d'une interruption sur les services.",
+            "instructions": "Pour une banque devant réaliser un Business Impact Analysis (BIA) de son service de transactions en ligne, déterminez les services critiques à analyser et évaluez le temps maximal admissible d'interruption (RTO) et le point d'objectif de reprise des données (RPO) pour chaque service.",
+            "livrable": "Un tableau récapitulatif présentant les services critiques avec leur RTO et leur RPO."
         },
         {
             "title": "Conception d'une stratégie de reprise d'activité",
-            "context": "Objectif : Élaborer une stratégie de reprise d'activité pour les infrastructures systèmes et réseaux.",
-            "objective": "Une organisation non gouvernementale (ONG) a subi plusieurs pannes de son système d'information. Vous êtes chargé de concevoir une stratégie de reprise d'activité. Présentez une solution complète incluant des mesures de sauvegarde, de redondance et de continuité des services. Justifiez vos choix en fonction des besoins et contraintes de l'ONG."
+            "objectif": "Être capable d'élaborer une stratégie de reprise d'activité pour les infrastructures systèmes et réseaux.",
+            "instructions": "Pour une organisation non gouvernementale (ONG) ayant subi plusieurs pannes de son système d'information, concevez une stratégie de reprise d'activité et présentez une solution complète incluant des mesures de sauvegarde, de redondance et de continuité des services.",
+            "livrable": "Une stratégie de reprise d'activité complète (sauvegarde, redondance, continuité des services), avec justification des choix en fonction des besoins et contraintes de l'ONG."
         },
         {
             "title": "Simulation d'interruption d'activité",
-            "context": "Objectif : Tester la réactivité et l'efficacité du plan de reprise d'activité.",
-            "objective": "Organisez une simulation de sinistre pour tester le plan de reprise d'activité d'une entreprise de services logistiques. Décrivez le scénario de simulation incluant le type de sinistre, l'heure d'occurrence et les étapes de notification des équipes. Après la simulation, rédigez un rapport d'évaluation qui identifie les points forts et les faiblesses du plan."
+            "objectif": "Savoir tester la réactivité et l'efficacité du plan de reprise d'activité.",
+            "instructions": "Organisez une simulation de sinistre pour tester le plan de reprise d'activité d'une entreprise de services logistiques : décrivez le scénario de simulation incluant le type de sinistre, l'heure d'occurrence et les étapes de notification des équipes.",
+            "livrable": "Le scénario de simulation détaillé et un rapport d'évaluation identifiant les points forts et les faiblesses du plan de reprise d'activité."
         },
         {
             "title": "Rédaction et communication du plan de reprise d'activité",
-            "context": "Objectif : Créer la documentation nécessaire et communiquer les procédures de reprise d'activité.",
-            "objective": "Vous avez été nommé responsable du plan de reprise d'activité (PRA) pour une entreprise de fabrication de matériel électronique. Rédigez un extrait du document officiel du PRA qui inclut les rôles et responsabilités des différentes équipes en cas de sinistre. Ensuite, concevez un programme de formation pour les employés qui explique comment ils doivent réagir et quelles actions ils doivent entreprendre en cas d'activation du plan."
+            "objectif": "Être capable de créer la documentation nécessaire et de communiquer les procédures de reprise d'activité.",
+            "instructions": "Nommé responsable du plan de reprise d'activité (PRA) d'une entreprise de fabrication de matériel électronique, rédigez un extrait du document officiel du PRA incluant les rôles et responsabilités des différentes équipes en cas de sinistre, puis concevez un programme de formation pour les employés.",
+            "livrable": "Un extrait du document officiel du PRA précisant les rôles et responsabilités des équipes, et un programme de formation expliquant aux employés les actions à entreprendre en cas d'activation du plan."
         }
     ],
     "bibliography": [
@@ -116,11 +121,11 @@
         }
     ],
     "OnlineResources": [
-        "NIST SP 800-34 — Contingency Planning (https://csrc.nist.gov) [EN]",
+        "NIST SP 800-34 - Contingency Planning (https://csrc.nist.gov) [EN]",
         "ISO 22301 (https://www.iso.org/iso-22301-business-continuity.html) [EN/FR]",
-        "ANSSI — Guide PCA/PRA (https://cyber.gouv.fr) [FR]",
+        "ANSSI - Guide PCA/PRA (https://cyber.gouv.fr) [FR]",
         "DRI International (https://drii.org) [EN]",
-        "Veeam — DR Resources (https://www.veeam.com/disaster-recovery.html) [EN]"
+        "Veeam - DR Resources (https://www.veeam.com/disaster-recovery.html) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

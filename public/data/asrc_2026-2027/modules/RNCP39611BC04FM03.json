@@ -81,43 +81,66 @@
                     "Organiser les phases de tests et de recette",
                     "Assurer la transition vers l'exploitation et la maintenance de l'architecture"
                 ]
+            },
+            {
+                "title": "Chapitre 6 : Conduite agile du projet d'architecture",
+                "items": [
+                    "Principes des méthodes agiles (Scrum, Kanban) appliqués à un projet d'architecture",
+                    "Planifier et prioriser les tâches à l'aide d'outils de suivi (Jira, Trello)",
+                    "Suivre l'avancement, gérer les priorités et ajuster le projet",
+                    "Animer les rituels agiles et la communication d'équipe"
+                ]
+            },
+            {
+                "title": "Chapitre 7 : Gestion budgétaire du projet d'architecture",
+                "items": [
+                    "Estimer les coûts d'un projet d'architecture",
+                    "Suivre le budget à l'aide d'outils de gestion financière (MS Project, tableur)",
+                    "Analyser la valeur acquise et les écarts de coûts",
+                    "Rendre compte du suivi financier aux parties prenantes"
+                ]
             }
         ]
     },
     "exercises": [
         {
             "title": "Méthodologie de conception d'architecture",
-            "context": "Vous allez travailler en groupe pour concevoir l'architecture d'un système de gestion de stock pour une entreprise de vente en ligne.",
-            "objective": "Pour cela, vous devrez : Identifier les besoins métier et les contraintes techniques liés à la gestion de stock. Définir les objectifs de l'architecture à mettre en place pour optimiser la gestion de stock. Analyser l'existant de l'entreprise et identifier les éventuelles limitations qui pourraient impacter l'architecture. Proposer une démarche itérative pour la conception de l'architecture en prenant en compte les retours d'expérience des utilisateurs."
+            "objectif": "Savoir appliquer une démarche itérative de conception d'architecture à partir des besoins métier et contraintes techniques.",
+            "instructions": "En groupe, pour un système de gestion de stock destiné à une entreprise de vente en ligne, identifiez les besoins métier et contraintes techniques, définissez les objectifs de l'architecture, analysez l'existant et ses limitations, puis proposez une démarche itérative intégrant les retours d'expérience des utilisateurs.",
+            "livrable": "Une proposition d'architecture de gestion de stock incluant besoins, objectifs, analyse de l'existant et démarche itérative de conception."
         },
         {
             "title": "Gestion des risques et sécurité de l'architecture",
-            "context": "Vous allez simuler un atelier de gestion des risques et sécurité pour une architecture cloud.",
-            "objective": "Chaque participant devra: Identifier les risques liés à une architecture basée sur le cloud, en se basant sur des cas concrets. Proposer des mesures de sécurité adaptées pour prévenir ou contrer ces risques. Évaluer les impacts de ces risques sur la continuité de l'activité de l'entreprise. Préparer une présentation des mesures de sécurité proposées, en mettant en avant les avantages par rapport aux risques identifiés."
+            "objectif": "Être capable d'identifier les risques d'une architecture cloud et de proposer des mesures de sécurité adaptées.",
+            "instructions": "Dans le cadre d'un atelier simulé de gestion des risques pour une architecture cloud, identifiez les risques liés au cloud à partir de cas concrets, proposez des mesures de sécurité adaptées et évaluez leurs impacts sur la continuité de l'activité.",
+            "livrable": "Une présentation des mesures de sécurité proposées, mettant en avant leurs avantages au regard des risques identifiés et de leurs impacts sur la continuité d'activité."
         },
         {
             "title": "Choix technologiques et outils d'architecture",
-            "context": "Vous aurez pour mission de réaliser une étude comparative des différentes technologies disponibles pour la mise en place d'une architecture orientée microservices.",
-            "objective": "Pour cela, vous devrez : Évaluer trois technologies adaptées à la mise en place de microservices, en prenant en compte leurs avantages et inconvénients. Sélectionner un outil d'architecture adapté aux besoins du projet en justifiant votre choix. Intégrer les contraintes de performances et de scalabilité liées à l'architecture en microservices dans votre étude. Garantir la pérennité des choix technologiques en anticipant les évolutions futures."
+            "objectif": "Savoir mener une étude comparative des technologies pour une architecture orientée microservices.",
+            "instructions": "Réalisez une étude comparative des technologies disponibles pour une architecture microservices : évaluez trois technologies avec leurs avantages et inconvénients, sélectionnez un outil d'architecture adapté en justifiant votre choix, intégrez les contraintes de performances et de scalabilité, et anticipez les évolutions futures pour garantir la pérennité des choix.",
+            "livrable": "Une étude comparative de trois technologies microservices, incluant le choix justifié d'un outil d'architecture et la prise en compte des contraintes de performance, de scalabilité et de pérennité."
         },
         {
             "title": "Conception et modélisation de l'architecture",
-            "context": "Dans cet exercice individuel, vous devrez concevoir l'architecture d'un système de commande en ligne pour une chaîne de restaurants.",
-            "objective": "Vous devrez : Définir les différents composants de l'architecture en prenant en compte les besoins spécifiques des restaurants. Modéliser l'architecture à l'aide d'un outil approprié de votre choix. Assurer la cohérence et l'intégration des différents composants dans votre modélisation. Documenter de manière exhaustive l'architecture conçue, en précisant les interactions entre les composants."
+            "objectif": "Être capable de concevoir et modéliser l'architecture d'un système en assurant sa cohérence et sa documentation.",
+            "instructions": "Individuellement, concevez l'architecture d'un système de commande en ligne pour une chaîne de restaurants : définissez les composants selon les besoins spécifiques, modélisez l'architecture avec un outil approprié, assurez la cohérence et l'intégration des composants, et documentez de manière exhaustive les interactions.",
+            "livrable": "Une modélisation documentée de l'architecture du système de commande en ligne, précisant les composants et leurs interactions."
         },
         {
             "title": "Pilotage et suivi de la mise en œuvre de l'architecture",
-            "context": "En équipe, vous serez amenés à simuler le pilotage et le suivi de la mise en œuvre d'une architecture de système de paiement en ligne pour une start-up.",
-            "objective": "Chaque membre de l'équipe devra : Établir un planning détaillé pour la mise en œuvre de l'architecture, en tenant compte des contraintes de temps et de ressources. Suivre l'avancement des différentes étapes de déploiement en identifiant les éventuels retards et en proposant des actions correctives. Organiser les phases de tests et de recette pour valider le bon fonctionnement de l'architecture de paiement. Assurer une transition fluide vers l'exploitation et la maintenance de l'architecture, en intégrant les retours et les ajustements nécessaires à cette transition."
+            "objectif": "Savoir piloter et suivre la mise en œuvre d'une architecture jusqu'à sa transition vers l'exploitation.",
+            "instructions": "En équipe, simulez le pilotage de la mise en œuvre d'une architecture de système de paiement en ligne pour une start-up : établissez un planning détaillé tenant compte des contraintes de temps et de ressources, suivez l'avancement en identifiant les retards et actions correctives, organisez les phases de tests et de recette, et assurez une transition fluide vers l'exploitation et la maintenance.",
+            "livrable": "Un dispositif de pilotage comprenant planning détaillé, suivi d'avancement avec actions correctives, phases de tests et de recette, et plan de transition vers l'exploitation."
         }
     ],
     "bibliography": [
         {
-            "title": "Patterns of Enterprise Application Architecture",
+            "title": "Patterns of Enterprise Application Architecture. Addison-Wesley",
             "author": "Fowler, M"
         },
         {
-            "title": "Fundamentals of Software Architecture (2e éd.)",
+            "title": "Fundamentals of Software Architecture : A Modern Engineering Approach (2e éd.). O'Reilly Media",
             "author": "Richards, M. & Ford, N"
         }
     ],
@@ -125,15 +148,14 @@
         "TOGAF Standard (https://www.opengroup.org/togaf) [EN]",
         "Microsoft Azure Architecture Center (https://learn.microsoft.com/azure/architecture/) [FR/EN]",
         "AWS Architecture Center (https://aws.amazon.com/architecture/) [EN]",
-        "CIGREF — Architecture d'entreprise (https://www.cigref.fr) [FR]",
-        "IEEE Software Architecture (https://www.computer.org/csdl/magazine/so) [EN]"
+        "CIGREF - Architecture d'entreprise (https://www.cigref.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

@@ -25,7 +25,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Installer, configurer et gérer des serveurs et des environnements virtualisés pour répondre aux besoins d'une entreprise (Appliquer) Acquérir des compétences en administration des bases de données tout en garantissant leur sécurité et leur performance (Appliquer) Maîtriser la gestion des configurations et des services informatiques en respectant les normes de sécurité et de qualité (Évaluer)"
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Installer, configurer et gérer des serveurs et des environnements virtualisés pour répondre aux besoins d'une entreprise (Appliquer) Concevoir et administrer un annuaire d'entreprise sécurisé (Active Directory, LDAP) pour structurer la gestion des identités et des accès (Appliquer) Maîtriser la gestion des configurations et des services informatiques en respectant les normes de sécurité et de qualité (Évaluer)"
     },
     "prerequisites": {
         "description": "Connaissances de base en informatique et réseaux. Familiarité avec les principes de virtualisation et de sécurité informatique."
@@ -66,50 +66,45 @@
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "Vous êtes nouvellement en poste dans une entreprise en croissance.",
-            "objective": "Votre mission est de choisir la solution de virtualisation la plus adaptée aux besoins de l'entreprise. Pour cela, vous devrez analyser les besoins actuels et futurs de l'entreprise, comparer les fonctionnalités des différentes solutions (VMware vSphere, Microsoft Hyper-V, etc.) et justifier votre choix."
+            "title": "Choix d'une solution de virtualisation",
+            "objectif": "Savoir sélectionner et justifier la solution de virtualisation la plus adaptée aux besoins d'une entreprise.",
+            "instructions": "En situation de prise de poste dans une entreprise en croissance, analysez les besoins actuels et futurs de l'entreprise. Comparez les fonctionnalités des différentes solutions de virtualisation (VMware vSphere, Microsoft Hyper-V, etc.). Justifiez votre choix au regard des besoins identifiés.",
+            "livrable": "Une analyse comparative des solutions de virtualisation accompagnée du choix retenu et de sa justification."
         },
         {
-            "title": "Exercice 2",
-            "context": "Vous avez la charge de l'administration d'une base de données relationnelle.",
-            "objective": "Vous devez identifier les requêtes SQL les plus gourmandes en ressources et proposer des optimisations pour améliorer leurs performances. Pour cela, vous devrez analyser les plans d'exécution des requêtes, proposer des index appropriés et éventuellement réécrire des requêtes pour améliorer leur efficacité."
+            "title": "Conception d'un annuaire d'entreprise sécurisé",
+            "objectif": "Savoir concevoir une topologie d'annuaire (Active Directory, LDAP) structurant la gestion des identités et des accès dans le respect des exigences de sécurité.",
+            "instructions": "En charge de la refonte du système d'annuaire d'une entreprise multi-sites, modélisez une architecture Active Directory (forêt, domaines, unités d'organisation) et définissez les stratégies LDAP d'authentification et de délégation d'administration. Appliquez les principes de moindre privilège et de cloisonnement des accès.",
+            "livrable": "Un dossier de conception de l'annuaire précisant la topologie retenue (forêt, domaines, OU), les stratégies d'accès et de délégation, ainsi que les mesures de sécurisation associées."
         },
         {
-            "title": "Exercice 3",
-            "context": "Vous devez élaborer une stratégie de sauvegarde et de récupération des données pour les serveurs de l'entreprise.",
-            "objective": "En vous basant sur les besoins spécifiques de chaque service et les contraintes de temps et d'espace, vous devrez définir des politiques de sauvegarde complètes, différentielles ou incrémentielles, en garantissant la sécurité et l'intégrité des données."
+            "title": "Mise en place de mesures de sécurité serveur",
+            "objectif": "Savoir implémenter des mesures de sécurité pour protéger les serveurs de l'entreprise face aux menaces identifiées.",
+            "instructions": "À la suite d'une analyse des menaces potentielles, mettez en place des pare-feu et des politiques de sécurité d'accès. Assurez des mises à jour régulières. Déployez des outils de détection et de prévention des intrusions.",
+            "livrable": "Un dispositif de sécurité des serveurs comprenant pare-feu, politiques d'accès, mises à jour et outils de détection et de prévention des intrusions."
         },
         {
-            "title": "Exercice 4",
-            "context": "À la suite d’une analyse des menaces potentielles, vous êtes chargé d'implémenter des mesures de sécurité pour protéger les serveurs de l'entreprise.",
-            "objective": "Vous devrez mettre en place des pare-feu, des politiques de sécurité d'accès, des mises à jour régulières, ainsi que des outils de détection et de prévention des intrusions."
-        },
-        {
-            "title": "Exercice 5",
-            "context": "En tant qu'administrateur système, vous devez mettre en place des stratégies via Group Policy Objects (GPO) pour garantir la sécurité et l'efficacité du système d'information.",
-            "objective": "Vous devrez définir des GPOs pour gérer les mises à jour, les politiques de mot de passe, les restrictions d'accès aux ressources, etc. Tout en veillant à la conformité aux normes de sécurité et de qualité de services."
+            "title": "Gestion des stratégies via GPO",
+            "objectif": "Savoir mettre en place des stratégies via Group Policy Objects pour garantir la sécurité et l'efficacité du système d'information.",
+            "instructions": "En tant qu'administrateur système, définissez des GPO pour gérer les mises à jour, les politiques de mot de passe et les restrictions d'accès aux ressources. Veillez à la conformité aux normes de sécurité et de qualité de service.",
+            "livrable": "Un ensemble de GPO configurées (mises à jour, mots de passe, restrictions d'accès) conformes aux normes de sécurité et de qualité de service."
         }
     ],
     "bibliography": [
         {
-            "title": "UNIX and Linux System Administration Handbook (5e éd.)",
+            "title": "UNIX and Linux System Administration Handbook (5e éd.). Addison-Wesley",
             "author": "Nemeth, E. et al"
         },
         {
-            "title": "Windows Server 2022 : administration et sécurité",
-            "author": "Minasi, M"
-        },
-        {
-            "title": "Virtualization Essentials (3e éd.)",
+            "title": "Virtualization Essentials (3e éd.). Sybex",
             "author": "Portnoy, M"
         }
     ],
     "OnlineResources": [
-        "Microsoft Learn — Windows Server (https://learn.microsoft.com/windows-server/) [FR/EN]",
-        "Red Hat Documentation (https://access.redhat.com/documentation) [EN]",
-        "VMware Docs (https://docs.vmware.com) [EN]",
-        "ANSSI — Guide d'administration sécurisée (https://cyber.gouv.fr) [FR]",
+        "Microsoft Learn - Windows Server (https://learn.microsoft.com/windows-server/) [FR/EN]",
+        "Red Hat Documentation (https://docs.redhat.com/en) [EN]",
+        "VMware Docs (https://techdocs.broadcom.com) [EN]",
+        "ANSSI - Guide d'administration sécurisée (https://cyber.gouv.fr) [FR]",
         "The Linux Documentation Project (https://tldp.org) [EN]"
     ],
     "teachingMethods": [
@@ -117,7 +112,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

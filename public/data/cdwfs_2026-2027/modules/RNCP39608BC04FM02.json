@@ -29,7 +29,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir une compréhension approfondie des outils collaboratifs et savoir les utiliser pour améliorer la communication et la gestion des projets (Comprendre) Sélectionner et adapter les méthodologies de gestion de projet en fonction des besoins spécifiques d'un projet donné (Analyser) Élaborer des plans de projet, gérer proactivement les risques et surveiller les indicateurs de performance pour assurer la réussite des projets (Créer)"
+        "description": "Acquérir une compréhension approfondie des outils collaboratifs et savoir les utiliser pour améliorer la communication et la gestion des projets. Apprendre à sélectionner et adapter les méthodologies de gestion de projet en fonction des besoins spécifiques d'un projet donné. Développer des compétences en élaboration de plans de projet, gestion proactive des risques et surveillance des indicateurs de performance pour assurer la réussite des projets."
     },
     "prerequisites": {
         "description": "Connaissance de base en gestion de projet, familier avec les principes fondamentaux de la gestion d'équipe et de communication, et expérience pratique préalable avec au moins un outil collaboratif."
@@ -91,53 +91,57 @@
     "exercises": [
         {
             "title": "Mise en pratique des outils collaboratifs",
-            "context": "Vous travaillez sur un projet de développement logiciel avec une équipe dispersée géographiquement.",
-            "objective": "Choisissez trois outils collaboratifs que vous estimez les plus adaptés pour faciliter la communication et la coordination au sein de votre équipe. Justifiez brièvement votre choix pour chaque outil en expliquant comment il pourrait contribuer à la gestion globale du projet."
+            "objectif": "Savoir sélectionner des outils collaboratifs adaptés à une équipe dispersée géographiquement.",
+            "instructions": "Pour un projet de développement logiciel mené par une équipe dispersée géographiquement, choisissez trois outils collaboratifs les plus adaptés pour faciliter la communication et la coordination. Justifiez brièvement chaque choix.",
+            "livrable": "La liste des trois outils retenus avec, pour chacun, une justification expliquant sa contribution à la gestion globale du projet."
         },
         {
             "title": "Adaptation de la méthodologie de gestion de projet",
-            "context": "Vous êtes responsable d'un projet de lancement d'un nouveau produit.",
-            "objective": "Identifiez les spécificités de votre projet qui pourraient favoriser l'utilisation d'une méthodologie agile plutôt que traditionnelle, ou vice versa. En fonction de ces spécificités, choisissez et justifiez la méthode de gestion de projet la plus adaptée à votre situation."
+            "objectif": "Être capable de choisir une méthodologie de gestion de projet (agile ou traditionnelle) en fonction des spécificités du projet.",
+            "instructions": "Pour un projet de lancement d'un nouveau produit, identifiez les spécificités qui favoriseraient une méthodologie agile plutôt que traditionnelle, ou l'inverse. En fonction de ces spécificités, choisissez et justifiez la méthode la plus adaptée.",
+            "livrable": "Le choix de méthode de gestion de projet retenu, argumenté à partir des spécificités identifiées du projet."
         },
         {
             "title": "Élaboration d'un plan de projet exhaustif",
-            "context": "Imaginez que vous lancez un nouveau service dans votre entreprise.",
-            "objective": "Établissez les étapes clés du projet, les jalons à atteindre et les livrables attendus. Assurez-vous d'inclure tous les éléments essentiels dans votre plan de projet et expliquez comment vous garantissez sa cohérence et sa complétude."
+            "objectif": "Savoir élaborer un plan de projet complet et cohérent intégrant étapes, jalons et livrables.",
+            "instructions": "Pour le lancement d'un nouveau service dans votre entreprise, établissez les étapes clés du projet, les jalons à atteindre et les livrables attendus. Veillez à inclure tous les éléments essentiels et expliquez comment vous garantissez la cohérence et la complétude du plan.",
+            "livrable": "Un plan de projet exhaustif présentant étapes clés, jalons et livrables, assorti d'une explication sur sa cohérence et sa complétude."
         },
         {
             "title": "Gestion proactive des risques",
-            "context": "En utilisant un exemple concret de projet, créez une matrice des risques en identifiant au moins cinq risques, en les évaluant et en proposant des interventions correctives pour chacun.",
-            "objective": "Assurez-vous de hiérarchiser les risques en fonction de leur impact et de leur probabilité."
+            "objectif": "Être capable d'identifier, d'évaluer et de hiérarchiser les risques d'un projet et d'y répondre.",
+            "instructions": "À partir d'un exemple concret de projet, créez une matrice des risques identifiant au moins cinq risques, évaluez-les et proposez des interventions correctives pour chacun. Hiérarchisez les risques selon leur impact et leur probabilité.",
+            "livrable": "Une matrice des risques comportant au moins cinq risques évalués et hiérarchisés selon impact et probabilité, avec les interventions correctives associées."
         },
         {
             "title": "Surveillance des indicateurs de performance",
-            "context": "Supposons que vous avez un budget limité pour un projet donné.",
-            "objective": "Proposez trois indicateurs de performance que vous surveillerez régulièrement pour détecter les écarts budgétaires et réagir en conséquence. Expliquez comment chacun de ces indicateurs vous aidera à assurer le contrôle budgétaire et à garantir la réussite du projet."
+            "objectif": "Savoir définir des indicateurs de performance pour assurer le contrôle budgétaire d'un projet.",
+            "instructions": "Pour un projet à budget limité, proposez trois indicateurs de performance à surveiller régulièrement afin de détecter les écarts budgétaires et de réagir. Expliquez comment chaque indicateur aide au contrôle budgétaire et à la réussite du projet.",
+            "livrable": "Une proposition de trois indicateurs de performance, avec l'explication de leur contribution au contrôle budgétaire et à la réussite du projet."
         }
     ],
     "bibliography": [
         {
-            "title": "Scrum : pour une pratique vivante de l'agilité (6e éd.)",
+            "title": "Scrum : un outil convivial pour une agilité radicale (6e éd.). Dunod",
             "author": "Aubry, C"
         },
         {
-            "title": "Manager un projet informatique",
-            "author": "Lalande, F"
+            "title": "Manager un projet informatique (4e éd.). Eyrolles",
+            "author": "Englender, O. & Fernandes, S"
         }
     ],
     "OnlineResources": [
-        "PMI — A Guide to the Project Management Body of Knowledge (PMBOK) (https://www.pmi.org) [EN]",
-        "PRINCE2 — Projects In Controlled Environments (https://www.axelos.com) [EN]",
+        "PMI - A Guide to the Project Management Body of Knowledge (PMBOK) (https://www.pmi.org) [EN]",
+        "PRINCE2 - Projects In Controlled Environments (https://www.axelos.com) [EN]",
         "Atlassian Agile Coach (https://www.atlassian.com/agile) [EN]",
-        "AFITEP — Association Francophone de Management de Projet (https://www.afitep.org) [FR]",
-        "Project Management Hub — DINUM (https://www.numerique.gouv.fr) [FR]"
+        "Project Management Hub - DINUM (https://www.numerique.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

@@ -41,7 +41,8 @@
                     "Apprendre à mettre en place une politique d'achat responsable pour les équipements IT",
                     "Maîtriser les bonnes pratiques en matière de gestion des données et de la consommation énergétique",
                     "Mettre en place des actions concrètes pour réduire l'empreinte carbone des infrastructures IT",
-                    "Élaborer une stratégie RSE intégrant les enjeux du numérique responsable"
+                    "Élaborer une stratégie RSE intégrant les enjeux du numérique responsable",
+                    "Intégrer l'accessibilité numérique dès la conception des services (personnes en situation de handicap), en s'appuyant sur les référentiels RGAA et WCAG et sur les obligations légales, pour garantir un usage équitable du SI"
                 ]
             },
             {
@@ -69,28 +70,39 @@
     "exercises": [
         {
             "title": "Analyse de l'impact environnemental",
-            "context": "Vous travaillez pour une entreprise qui souhaite réduire son empreinte environnementale liée au numérique.",
-            "objective": "Votre première mission consiste à évaluer l'impact actuel des infrastructures IT de votre société. Réalisez un inventaire des équipements IT utilisés dans votre entreprise. Utilisez un outil d'évaluation de l'empreinte environnementale pour estimer l'impact de ces équipements. Rédigez un rapport présentant les résultats de votre évaluation et identifiez les postes les plus énergivores ou les plus polluants."
+            "objectif": "Savoir évaluer l'impact environnemental des infrastructures IT d'une entreprise.",
+            "instructions": "Pour une entreprise souhaitant réduire son empreinte environnementale liée au numérique, réalisez un inventaire des équipements IT utilisés dans la société, puis utilisez un outil d'évaluation de l'empreinte environnementale pour estimer l'impact de ces équipements.",
+            "livrable": "Un rapport présentant les résultats de l'évaluation et identifiant les postes les plus énergivores ou les plus polluants."
         },
         {
             "title": "Élaboration d'une politique d'achat responsable",
-            "context": "La direction de votre entreprise a pris conscience de l'importance des achats responsables pour les équipements IT.",
-            "objective": "Concevez une politique d'achat responsable pour les équipements IT de votre entreprise. Cette politique doit inclure des critères de sélection des fournisseurs et des produits (durabilité, réparabilité, certification écologique, etc.). Expliquez comment cette politique contribuera à une approche plus responsable du numérique."
+            "objectif": "Être capable de concevoir une politique d'achat responsable pour les équipements IT.",
+            "instructions": "La direction ayant pris conscience de l'importance des achats responsables pour les équipements IT, concevez une politique d'achat responsable incluant des critères de sélection des fournisseurs et des produits (durabilité, réparabilité, certification écologique, etc.).",
+            "livrable": "Une politique d'achat responsable détaillant les critères de sélection des fournisseurs et des produits, et expliquant comment elle contribue à une approche plus responsable du numérique."
         },
         {
             "title": "Diagnostic RSE et plan d'action",
-            "context": "Votre entreprise envisage d'intégrer les enjeux du numérique responsable dans sa stratégie RSE globale.",
-            "objective": "Réalisez un diagnostic RSE en mettant l'accent sur les aspects numériques. Proposez un plan d'action basé sur les résultats du diagnostic pour intégrer le numérique responsable dans la stratégie RSE de l'entreprise. Le plan d'action doit inclure des objectifs mesurables, des indicateurs de suivi, et des initiatives concrètes pour chaque objectif."
+            "objectif": "Savoir réaliser un diagnostic RSE axé sur le numérique et en déduire un plan d'action.",
+            "instructions": "Votre entreprise envisageant d'intégrer les enjeux du numérique responsable dans sa stratégie RSE globale, réalisez un diagnostic RSE en mettant l'accent sur les aspects numériques, puis proposez un plan d'action basé sur les résultats du diagnostic.",
+            "livrable": "Un diagnostic RSE axé sur le numérique et un plan d'action comportant des objectifs mesurables, des indicateurs de suivi et des initiatives concrètes pour chaque objectif."
         },
         {
             "title": "Sensibilisation et formation des équipes",
-            "context": "La sensibilisation des équipes est un élément clé pour le succès de la stratégie de numérique responsable de l'entreprise.",
-            "objective": "Concevez un programme de formation et de sensibilisation aux enjeux du numérique responsable pour les employés de votre entreprise. Ce programme doit inclure des modules pédagogiques, des ateliers pratiques et des supports de communication. Prévoyez une évaluation de l'efficacité de ce programme à travers un questionnaire de satisfaction et des indicateurs de comportement post-formation."
+            "objectif": "Être capable de concevoir un programme de sensibilisation et de formation au numérique responsable.",
+            "instructions": "La sensibilisation des équipes étant un élément clé pour le succès de la stratégie de numérique responsable, concevez un programme de formation et de sensibilisation aux enjeux du numérique responsable pour les employés, incluant des modules pédagogiques, des ateliers pratiques et des supports de communication.",
+            "livrable": "Un programme de formation et de sensibilisation complet, assorti d'une évaluation de son efficacité à travers un questionnaire de satisfaction et des indicateurs de comportement post-formation."
         },
         {
             "title": "Étude de cas et amélioration continue",
-            "context": "Votre entreprise souhaite apprendre des meilleures pratiques du secteur et s'inspirer des retours d'expérience pour améliorer sa démarche RSE dans le numérique.",
-            "objective": "Sélectionnez une étude de cas d'une entreprise qui a réussi à mettre en place une démarche de numérique responsable. Analysez les actions mises en œuvre, les bénéfices obtenus et les difficultés rencontrées. Proposez des recommandations pour que votre entreprise puisse adapter ces bonnes pratiques à son contexte, et établissez un plan d'amélioration continue basé sur cette analyse."
+            "objectif": "Savoir analyser une étude de cas pour améliorer en continu la démarche de numérique responsable.",
+            "instructions": "Pour vous inspirer des meilleures pratiques du secteur, sélectionnez une étude de cas d'une entreprise ayant réussi à mettre en place une démarche de numérique responsable et analysez les actions mises en œuvre, les bénéfices obtenus et les difficultés rencontrées.",
+            "livrable": "Une analyse de l'étude de cas et des recommandations adaptées au contexte de l'entreprise, assorties d'un plan d'amélioration continue fondé sur cette analyse."
+        },
+        {
+            "title": "Audit d'accessibilité numérique et plan de mise en conformité",
+            "objectif": "Être capable d'évaluer le niveau d'accessibilité d'un service numérique au regard du RGAA et des WCAG, puis d'élaborer un plan de mise en conformité intégré à la démarche de numérique responsable.",
+            "instructions": "En tant que responsable SI, sélectionnez un service numérique de l'organisation (site web, application métier ou intranet) et réalisez un audit d'accessibilité sur un échantillon représentatif de pages ou d'écrans. Appuyez-vous sur les critères du RGAA (aligné sur les WCAG niveau AA) pour contrôler au moins dix critères couvrant les principaux thèmes : alternatives aux images, contrastes et usage de la couleur, navigation au clavier, structure et titrage, formulaires et libellés. Consignez pour chaque critère le constat, le niveau de conformité (conforme, non conforme, non applicable) et la non-conformité relevée, puis identifiez les corrections techniques et organisationnelles associées.",
+            "livrable": "Un rapport d'audit d'accessibilité présentant la grille d'évaluation des critères testés, le taux de conformité obtenu et un plan de mise en conformité priorisé (corrections, responsables, échéances), articulé avec la stratégie RSE et de numérique responsable de l'organisation."
         }
     ],
     "bibliography": [
@@ -102,9 +114,9 @@
     "OnlineResources": [
         "Institut du Numérique Responsable (https://institutnr.org) [FR]",
         "GreenIT.fr (https://www.greenit.fr) [FR]",
-        "DINUM — Numérique écoresponsable (https://ecoresponsable.numerique.gouv.fr) [FR]",
-        "The Shift Project — Lean ICT (https://theshiftproject.org) [FR/EN]",
-        "ADEME — Numérique responsable (https://www.ademe.fr) [FR]"
+        "DINUM - Numérique écoresponsable (https://ecoresponsable.numerique.gouv.fr) [FR]",
+        "The Shift Project - Lean ICT (https://theshiftproject.org) [FR/EN]",
+        "ADEME - Numérique responsable (https://www.ademe.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

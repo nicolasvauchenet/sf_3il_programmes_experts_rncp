@@ -10,9 +10,22 @@
         "durationHours": 21,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement en paramétrant un IDE et en utilisant le terminal afin de l'aligner de l'environnement de production cible"
+        },
+        {
+            "code": "C09",
+            "description": "Optimiser et sécuriser les serveurs web, en ajustant les paramètres serveur et en employant des commandes avancées via le terminal pour améliorer les performances et la sécurité (SSH, MFA) des applications web en fonction de son OS (Linux, Windows)"
+        },
+        {
+            "code": "C23",
+            "description": "Développer des environnements virtualisés en utilisant une plateforme conteneurisation pour standardiser et simplifier le déploiement d'applications sur tous types d'infrastructure"
+        }
+    ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les fondamentaux de l'administration système Linux (Comprendre) Maîtriser les commandes et outils d'optimisation des performances système (Appliquer) Diagnostiquer et résoudre les problèmes de performance ou de sécurité (Analyser)"
+        "description": "A la fin de ce module, les apprenants sauront installer et configurer un système Linux, administrer et sécuriser efficacement un serveur Linux, ainsi que mettre en place des environnements virtualisés et gérer des conteneurs. Ils développeront une compréhension approfondie des concepts avancés d'administration Linux. Ils seront également capables de comparer les avantages de Linux avec les autres systèmes d'exploitation."
     },
     "prerequisites": {
         "description": "Connaissances de base en informatique et en systèmes d'exploitation, expérience préalable avec des commandes fondamentales de terminal, compréhension basique des concepts réseau."
@@ -64,52 +77,48 @@
     "exercises": [
         {
             "title": "Introduction à Linux",
-            "context": "En utilisant les ressources fournies, choisissez une distribution Linux et expliquez en quelques phrases pourquoi vous l'avez choisie.",
-            "objective": "Indiquez également les avantages de l'utilisation de Linux par rapport à d'autres systèmes d'exploitation."
+            "objectif": "Choisir une distribution Linux adaptée et justifier l'intérêt de Linux face aux autres systèmes d'exploitation.",
+            "instructions": "À partir des ressources fournies, sélectionnez une distribution Linux. Expliquez en quelques phrases les raisons de votre choix. Indiquez les avantages de l'utilisation de Linux par rapport à d'autres systèmes d'exploitation.",
+            "livrable": "Une note écrite présentant la distribution choisie, la justification du choix et les avantages de Linux par rapport aux autres systèmes d'exploitation."
         },
         {
             "title": "Installation et configuration de Linux",
-            "context": "Installez une distribution Linux sur une machine virtuelle ou un ordinateur dédié, puis configurez le réseau en attribuant une adresse IP statique.",
-            "objective": "Créez un utilisateur et un groupe, puis gérez les permissions pour ces utilisateurs."
+            "objectif": "Installer et configurer un système Linux, son réseau et sa gestion des utilisateurs et des permissions.",
+            "instructions": "Installez une distribution Linux sur une machine virtuelle ou un ordinateur dédié. Configurez le réseau en attribuant une adresse IP statique. Créez un utilisateur et un groupe, puis gérez les permissions pour ces utilisateurs.",
+            "livrable": "Un système Linux opérationnel avec une adresse IP statique configurée, un utilisateur et un groupe créés, et des permissions correctement gérées."
         },
         {
             "title": "Administration avancée de Linux",
-            "context": "Surveillez les performances de votre système en utilisant des outils comme top, htop ou vmstat.",
-            "objective": "Identifiez un processus gourmand en ressources et gérez-le en conséquence. Créez un script pour automatiser une tâche de maintenance système."
+            "objectif": "Surveiller les performances d'un système Linux et automatiser une tâche de maintenance.",
+            "instructions": "Surveillez les performances de votre système à l'aide d'outils comme top, htop ou vmstat. Identifiez un processus gourmand en ressources et gérez-le en conséquence. Créez un script pour automatiser une tâche de maintenance système.",
+            "livrable": "Un relevé de surveillance identifiant un processus gourmand et l'action menée, accompagné d'un script d'automatisation d'une tâche de maintenance système."
         },
         {
             "title": "Virtualisation et conteneurisation sous Linux",
-            "context": "Installez Docker sur votre système et créez un conteneur pour exécuter une application.",
-            "objective": "Explorez les fonctionnalités de gestion des conteneurs Docker et identifiez les limites de la virtualisation et de la conteneurisation pour les différents cas d'utilisation."
+            "objectif": "Mettre en oeuvre Docker et cerner les limites de la virtualisation et de la conteneurisation selon les cas d'usage.",
+            "instructions": "Installez Docker sur votre système et créez un conteneur pour exécuter une application. Explorez les fonctionnalités de gestion des conteneurs Docker. Identifiez les limites de la virtualisation et de la conteneurisation pour les différents cas d'utilisation.",
+            "livrable": "Un conteneur Docker fonctionnel exécutant une application, accompagné d'une analyse des fonctionnalités de gestion des conteneurs et des limites de la virtualisation et de la conteneurisation."
         }
     ],
     "bibliography": [
         {
-            "title": "UNIX and Linux System Administration Handbook (5th ed.)",
-            "author": "Nemeth, E. et al"
-        },
-        {
-            "title": "Understanding the Linux Kernel (4th ed.)",
-            "author": "Bovet, D. P. & Cesati, M"
-        },
-        {
-            "title": "The Design of the UNIX Operating System",
-            "author": "Bach, M. J"
+            "title": "Nemeth, E., Snyder, G., Hein, T. R., Whaley, B. & Mackin, D. (2017). UNIX and Linux System Administration Handbook (5e éd.). Addison-Wesley. ISBN 9780134277554.",
+            "author": ""
         }
     ],
     "OnlineResources": [
         "Linux Kernel Documentation (https://www.kernel.org/doc/) [EN]",
         "ArchLinux Wiki (https://wiki.archlinux.org) [EN/FR]",
-        "Red Hat Documentation (https://access.redhat.com/documentation/) [EN]",
-        "Linuxfr.org — Communauté francophone (https://linuxfr.org) [FR]",
-        "Brendan Gregg — Performance tools (https://www.brendangregg.com) [EN]"
+        "Red Hat Documentation (https://docs.redhat.com/en) [EN]",
+        "Linuxfr.org - Communauté francophone (https://linuxfr.org) [FR]",
+        "Brendan Gregg - Performance tools (https://www.brendangregg.com) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

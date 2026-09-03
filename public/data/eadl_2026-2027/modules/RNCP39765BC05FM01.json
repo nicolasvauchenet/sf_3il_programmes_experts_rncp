@@ -13,7 +13,7 @@
     "skills": [
         {
             "code": "C27",
-            "description": "Concevoir l’architecture d’entrepôts de données décisionnelles (Data Warehouse et Data Lake) en stockant et organisant de grands volumes de données structurées et non structurées pour développer des solutions adaptés aux exigences des utilisateurs et des décideurs"
+            "description": "Concevoir l’architecture d’entrepôts de données décisionnelles (Data Warehouses et Data Lakes) en stockant et organisant de grands volumes de données structurées et non structurées pour développer des solutions adaptées aux exigences des utilisateurs et des décideurs"
         }
     ],
     "objectives": {
@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Compréhension des architectures de données",
-            "context": "En vous basant sur les concepts abordés dans le chapitre 1, identifiez trois exemples concrets d'architectures de données utilisés dans des entreprises différentes.",
-            "objective": "Pour chaque exemple, décrivez les types d'architectures de données utilisés et discutez de l'importance de ces architectures pour l'entreprise en question."
+            "objectif": "Être capable d'identifier et de caractériser différents types d'architectures de données décisionnelles en contexte d'entreprise.",
+            "instructions": "En vous basant sur les concepts abordés dans le chapitre 1, identifiez trois exemples concrets d'architectures de données utilisées dans des entreprises différentes. Pour chaque exemple, décrivez les types d'architectures de données mis en œuvre et discutez de l'importance de ces architectures pour l'entreprise concernée.",
+            "livrable": "Un document présentant les trois exemples d'architectures, décrivant pour chacun les types d'architectures utilisés et justifiant leur importance pour l'entreprise concernée."
         },
         {
             "title": "Conception de modèles de données",
-            "context": "Imaginons que vous travaillez pour une entreprise qui souhaite mettre en place un système décisionnel pour analyser ses données commerciales.",
-            "objective": "En vous basant sur les connaissances acquises dans le chapitre 2, concevez un modèle de données adapté à ce contexte. Identifiez les entités, les relations et les attributs importants à prendre en compte pour ce système décisionnel."
+            "objectif": "Savoir concevoir un modèle de données adapté à un système décisionnel d'analyse commerciale.",
+            "instructions": "Une entreprise souhaite mettre en place un système décisionnel pour analyser ses données commerciales. En vous basant sur les connaissances acquises dans le chapitre 2, concevez un modèle de données adapté à ce contexte en identifiant les entités, les relations et les attributs importants à prendre en compte.",
+            "livrable": "Un modèle de données du système décisionnel faisant apparaître les entités, les relations et les attributs retenus, accompagné d'une justification des choix de modélisation."
         },
         {
             "title": "Choix d'un système de stockage de données",
-            "context": "Vous avez la charge de choisir un système de stockage de données pour une entreprise qui gère un volume important de données client.",
-            "objective": "En vous basant sur les informations du chapitre 3, évaluez les avantages et les inconvénients des bases de données relationnelles et des bases de données NoSQL pour ce cas d'utilisation. Faites une recommandation en justifiant votre choix."
+            "objectif": "Être capable de choisir et de justifier un système de stockage adapté à un volume important de données client.",
+            "instructions": "Vous avez la charge de choisir un système de stockage de données pour une entreprise qui gère un volume important de données client. En vous basant sur les informations du chapitre 3, évaluez les avantages et les inconvénients des bases de données relationnelles et des bases de données NoSQL pour ce cas d'utilisation, puis formulez une recommandation.",
+            "livrable": "Une analyse comparative des bases relationnelles et NoSQL pour le cas d'utilisation, assortie d'une recommandation argumentée justifiant le choix retenu."
         },
         {
             "title": "Gestion de la qualité des données",
-            "context": "En utilisant les concepts abordés dans le chapitre 4, élaborez un plan de gestion de la qualité des données pour une entreprise qui collecte des données provenant de différentes sources.",
-            "objective": "Identifiez les étapes clés du processus de gestion de la qualité des données et proposez des mesures pour assurer la fiabilité et la cohérence des données."
+            "objectif": "Savoir élaborer un plan de gestion de la qualité des données issues de sources multiples.",
+            "instructions": "En utilisant les concepts abordés dans le chapitre 4, élaborez un plan de gestion de la qualité des données pour une entreprise qui collecte des données provenant de différentes sources. Identifiez les étapes clés du processus de gestion de la qualité des données et proposez des mesures pour assurer la fiabilité et la cohérence des données.",
+            "livrable": "Un plan de gestion de la qualité des données détaillant les étapes clés du processus et les mesures proposées pour garantir la fiabilité et la cohérence des données."
         },
         {
             "title": "Adaptation des architectures de données aux nouvelles technologies",
-            "context": "Analysez l'impact de l'IA et du Big Data sur les architectures de données en vous basant sur les informations du chapitre 5.",
-            "objective": "Identifiez deux cas d'usage où l'IA et le Big Data ont influencé l'évolution des architectures de données dans des entreprises. Discutez des changements nécessaires au niveau des stratégies et des technologies pour adopter ces évolutions."
+            "objectif": "Être capable d'analyser l'impact de l'IA et du Big Data sur l'évolution des architectures de données.",
+            "instructions": "Analysez l'impact de l'IA et du Big Data sur les architectures de données en vous basant sur les informations du chapitre 5. Identifiez deux cas d'usage où l'IA et le Big Data ont influencé l'évolution des architectures de données en entreprise, puis discutez des changements nécessaires au niveau des stratégies et des technologies pour adopter ces évolutions.",
+            "livrable": "Une analyse présentant deux cas d'usage documentés et exposant les évolutions de stratégie et de technologie nécessaires pour adapter les architectures de données."
         }
     ],
     "bibliography": [
@@ -121,7 +126,7 @@
         "Snowflake Documentation (https://docs.snowflake.com) [EN]",
         "Databricks Documentation (https://docs.databricks.com) [EN]",
         "Google BigQuery Documentation (https://cloud.google.com/bigquery/docs) [FR/EN]",
-        "dbt Labs — Analytics Engineering (https://docs.getdbt.com) [EN]",
+        "dbt Labs - Analytics Engineering (https://docs.getdbt.com) [EN]",
         "Data Engineering Podcast (https://www.dataengineeringpodcast.com) [EN]"
     ],
     "teachingMethods": [

@@ -13,7 +13,7 @@
     "skills": [
         {
             "code": "C26",
-            "description": "Intégrer et mettre en œuvre des technologies blockchain, en utilisant des plateformes telles que Ethereum ou Hyperledger et en réalisant des smart contract (Contrats Intelligents) pour assurer la traçabilité, la sécurité et l'intégrité des transactions et des données dans le système d'information"
+            "description": "Intégrer et mettre en œuvre des technologies blockchain, en utilisant des plateformes telles que Ethereum ou Hyperledger et en réalisant des smart contract (Contrats Intelligents) pour assurer la traçabilité, la sécurité et l'intégrité des transactions et des données dans le système d'information. BLOC 5 : Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier"
         }
     ],
     "objectives": {
@@ -39,7 +39,7 @@
                 "items": [
                     "Comprendre la structure et le fonctionnement des blocs et des chaînes de blocs",
                     "Identifier les différents types de consensus (Proof of Work, Proof of Stake, etc.)",
-                    "Connaître les différents types de blockchains (publiques, privées, autorisées, etc.)",
+                    "Connaître les différents types de blockchains (publiques, privées, de consortium, etc.)",
                     "Comprendre la notion de smart contract et son rôle dans la blockchain",
                     "Connaître les principaux protocoles de blockchain (Bitcoin, Ethereum, etc.)"
                 ]
@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Analyse comparative des blockchains",
-            "context": "Objectif : Mettre en pratique la connaissance des différents types de blockchain et de leurs applications.",
-            "objective": "Vous travaillez pour une entreprise qui envisage d'adopter la technologie blockchain pour améliorer la sécurité de ses transactions. Votre tâche est de rédiger un rapport comparatif qui présente les avantages et les inconvénients des blockchains publiques, privées et autorisées. Dans votre rapport, incluez des exemples d'utilisation de chaque type de blockchain dans des secteurs d'activité spécifiques et recommandez le type de blockchain le plus adapté aux besoins de votre entreprise."
+            "objectif": "Savoir distinguer les différents types de blockchain et leurs applications afin de recommander le plus adapté à un besoin.",
+            "instructions": "Vous travaillez pour une entreprise qui envisage d'adopter la technologie blockchain pour améliorer la sécurité de ses transactions. Rédigez un rapport comparatif présentant les avantages et les inconvénients des blockchains publiques, privées et de consortium. Incluez des exemples d'utilisation de chaque type de blockchain dans des secteurs d'activité spécifiques.",
+            "livrable": "Un rapport comparatif des types de blockchain, illustré d'exemples sectoriels, recommandant et justifiant le type le plus adapté aux besoins de l'entreprise."
         },
         {
-            "title": "Création d'un smart contract basique",
-            "context": "Objectif : Appliquer les connaissances acquises sur le développement de smart contracts.",
-            "objective": "Vous êtes un développeur blockchain et votre mission est de créer un smart contract simple pour une plateforme de crowdfunding. Le contrat doit permettre : (1) aux utilisateurs de contribuer à des projets en envoyant de la cryptomonnaie, (2) de suivre le montant total collecté et (3) de rembourser automatiquement les contributeurs si le projet n'atteint pas son objectif de financement dans un délai déterminé. Utilisez un langage de programmation adapté aux smart contracts et décrivez les étapes clés pour le développement et le déploiement du contrat."
+            "title": "Création d'un smart contract simple",
+            "objectif": "Être capable de développer et de déployer un smart contract simple répondant à un cahier des charges donné.",
+            "instructions": "En tant que développeur blockchain, créez un smart contract simple pour une plateforme de crowdfunding. Le contrat doit permettre aux utilisateurs de contribuer à des projets en envoyant de la cryptomonnaie, de suivre le montant total collecté, et de rembourser automatiquement les contributeurs si le projet n'atteint pas son objectif de financement dans un délai déterminé. Utilisez un langage de programmation adapté aux smart contracts et décrivez les étapes clés du développement et du déploiement du contrat.",
+            "livrable": "Le smart contract développé et déployé, accompagné de la description des étapes clés de son développement et de son déploiement."
         },
         {
             "title": "Déploiement d'un nœud blockchain",
-            "context": "Objectif : Comprendre concrètement comment configurer et déployer un nœud sur une blockchain.",
-            "objective": "Choisissez une plateforme blockchain populaire et déployez un nœud complet sur votre machine locale ou un serveur cloud. Documentez le processus en spécifiant les étapes, les configurations nécessaires et les difficultés rencontrées. Testez la connexion de votre nœud au réseau et assurez-vous qu'il est bien synchronisé avec la blockchain."
+            "objectif": "Savoir configurer et déployer un nœud complet sur une blockchain.",
+            "instructions": "Choisissez une plateforme blockchain populaire et déployez un nœud complet sur votre machine locale ou un serveur cloud. Testez la connexion de votre nœud au réseau et assurez-vous qu'il est bien synchronisé avec la blockchain.",
+            "livrable": "Le nœud déployé et synchronisé au réseau, accompagné d'une documentation du processus précisant les étapes, les configurations nécessaires et les difficultés rencontrées."
         },
         {
             "title": "Sécurité de la blockchain",
-            "context": "Objectif : Évaluer la compréhension des bonnes pratiques en matière de sécurité blockchain.",
-            "objective": "Vous êtes chargé de réaliser un audit de sécurité pour un réseau blockchain d'entreprise. Élaborez une liste de contrôle (checklist) des points de sécurité à vérifier, qui comprend la gestion des clés privées, la sécurisation des nœuds, les protocoles de communication et la résilience du réseau aux attaques. Pour chaque point de la liste, proposez une méthode ou un outil qui pourrait être utilisé pour assurer ou améliorer la sécurité du réseau."
+            "objectif": "Être capable de réaliser un audit de sécurité d'un réseau blockchain d'entreprise.",
+            "instructions": "Vous êtes chargé de réaliser un audit de sécurité pour un réseau blockchain d'entreprise. Élaborez une liste de contrôle (checklist) des points de sécurité à vérifier, comprenant la gestion des clés privées, la sécurisation des nœuds, les protocoles de communication et la résilience du réseau aux attaques. Pour chaque point de la liste, proposez une méthode ou un outil permettant d'assurer ou d'améliorer la sécurité du réseau.",
+            "livrable": "Une checklist d'audit de sécurité où chaque point est associé à une méthode ou un outil permettant d'assurer ou d'améliorer la sécurité du réseau."
         },
         {
             "title": "Étude de cas et proposition de solution blockchain",
-            "context": "Objectif : Synthétiser les connaissances acquises à travers l'analyse de cas réels et la proposition de solutions innovantes.",
-            "objective": "Imaginez que vous êtes consultant en blockchain pour une entreprise du secteur de la logistique. Cette entreprise souhaite améliorer la traçabilité de ses produits et réduire les fraudes. Votre mission est de rédiger une étude de cas détaillée d'une situation actuelle problématique dans l'entreprise, puis de proposer une solution basée sur la technologie blockchain. Expliquez comment la blockchain peut être implémentée pour résoudre le problème, en mettant en avant les smart contracts, la transparence des transactions et l'amélioration de la sécurité."
+            "objectif": "Savoir synthétiser l'analyse d'un cas réel et proposer une solution blockchain adaptée.",
+            "instructions": "En tant que consultant en blockchain pour une entreprise du secteur de la logistique souhaitant améliorer la traçabilité de ses produits et réduire les fraudes, rédigez une étude de cas détaillée d'une situation actuelle problématique dans l'entreprise, puis proposez une solution fondée sur la technologie blockchain. Expliquez comment la blockchain peut être implémentée pour résoudre le problème, en mettant en avant les smart contracts, la transparence des transactions et l'amélioration de la sécurité.",
+            "livrable": "Une étude de cas détaillée assortie d'une proposition de solution blockchain argumentée, mettant en avant les smart contracts, la transparence des transactions et l'amélioration de la sécurité."
         }
     ],
     "bibliography": [

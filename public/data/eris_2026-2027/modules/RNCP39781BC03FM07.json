@@ -10,7 +10,20 @@
         "durationHours": 28,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l'infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d'attaques et d'outils d'analyse de sécurité afin d'évaluer la robustesse des systèmes et la réactivité des équipes"
+        },
+        {
+            "code": "C23",
+            "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l'ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes, et en collectant les preuves numériques afin de préparer des rapports en vue des audits de sécurité et conserver des preuves légales"
+        },
+        {
+            "code": "C24",
+            "description": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC), en gérant les incidents de sécurité au moyen de solutions SIEM, en analysant les données de sécurité, en détectant les anomalies, en orchestrant des réponses rapides et efficaces, en pilotant le déploiement des correctifs, s'il y a lieu de façon automatisée, et en assurant une surveillance continue afin de maintenir la sécurité et la résilience de l'infrastructure"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre le rôle et l'importance de la gestion des incidents en sécurité informatique (Comprendre) Mettre en place un Security Operations Center (SOC) (Créer) Appliquer les techniques d'analyse forensique pour réagir efficacement aux incidents (Appliquer)"
     },
@@ -53,7 +66,7 @@
                 "items": [
                     "Comprendre les différentes phases de gestion des incidents",
                     "Identifier les bonnes pratiques pour la réaction aux attaques",
-                    "Connaître les techniques de containment et d'éradiation des incidents",
+                    "Connaître les techniques de confinement (containment) et d'éradication des incidents",
                     "Comprendre l'importance de la communication pendant la gestion des incidents",
                     "Connaître les principaux challenges liés à la gestion des incidents et à la réaction aux attaques"
                 ]
@@ -73,28 +86,33 @@
     "exercises": [
         {
             "title": "Simulation d'identification d'incident",
-            "context": "Vous êtes un analyste en sécurité dans une entreprise fictive.",
-            "objective": "Vous recevez des journaux (logs) d'événements suspects provenant du système d'information de l'entreprise. Votre tâche est d'analyser ces journaux et de déterminer si un incident de sécurité a eu lieu. Identifiez et listez les signes d'activités suspectes en vous basant sur les journaux fournis. Catégorisez le type d'incident (par exemple, malware, intrusion, fuite de données, etc.). Rédigez un bref rapport expliquant votre analyse et les raisons qui vous ont mené à conclure à un incident de sécurité informatique."
+            "objectif": "Savoir analyser des journaux pour identifier et catégoriser un incident de sécurité.",
+            "instructions": "Vous êtes analyste en sécurité dans une entreprise fictive et recevez des journaux (logs) d'événements suspects provenant du système d'information. Identifiez et listez les signes d'activités suspectes en vous basant sur les journaux fournis, puis catégorisez le type d'incident (par exemple malware, intrusion, fuite de données).",
+            "livrable": "Un bref rapport expliquant votre analyse et les raisons qui vous ont mené à conclure à un incident de sécurité informatique."
         },
         {
             "title": "Planification d'un SOC",
-            "context": "Vous êtes un consultant en sécurité chargé d'aider une organisation à mettre en place son premier SOC.",
-            "objective": "Rédigez un plan détaillé qui comprend : Les étapes clés nécessaires à la mise en place du SOC. Les types d'outils et de technologies que vous recommanderiez pour le SOC. Une stratégie pour traiter les principaux défis identifiés lors de la mise en place du SOC. Les rôles et responsabilités du personnel du SOC."
+            "objectif": "Être capable de planifier la mise en place d'un Security Operations Center (SOC).",
+            "instructions": "Vous êtes consultant en sécurité chargé d'aider une organisation à mettre en place son premier SOC. Définissez les étapes clés nécessaires à la mise en place du SOC, les types d'outils et de technologies que vous recommanderiez, une stratégie pour traiter les principaux défis identifiés et les rôles et responsabilités du personnel du SOC.",
+            "livrable": "Un plan détaillé de mise en place du SOC présentant les étapes clés, les outils et technologies recommandés, la stratégie de traitement des défis et les rôles et responsabilités du personnel."
         },
         {
             "title": "Analyse forensique d'un disque dur",
-            "context": "Un disque dur vous est remis dans le cadre d'une enquête sur un incident de sécurité.",
-            "objective": "On vous demande de réaliser une analyse forensique pour récupérer les données potentiellement compromises. Documentez votre processus d'analyse étape par étape, en commençant par la préservation de la preuve jusqu'à l'analyse des données. Utilisez des outils forensiques pour examiner le disque dur et identifier les fichiers supprimés, les traces de logiciels malveillants ou toute autre activité suspecte. Rédigez un rapport d'analyse forensique, en incluant vos conclusions sur la nature de l'incident et les données compromises."
+            "objectif": "Savoir conduire une analyse forensique d'un disque dur dans le cadre d'une enquête.",
+            "instructions": "Un disque dur vous est remis dans le cadre d'une enquête sur un incident de sécurité. Documentez votre processus d'analyse étape par étape, de la préservation de la preuve jusqu'à l'analyse des données, et utilisez des outils forensiques pour examiner le disque dur et identifier les fichiers supprimés, les traces de logiciels malveillants ou toute autre activité suspecte.",
+            "livrable": "Un rapport d'analyse forensique documentant le processus suivi, de la préservation de la preuve à l'analyse, et présentant vos conclusions sur la nature de l'incident et les données compromises."
         },
         {
             "title": "Réaction à une attaque simulée",
-            "context": "Un scénario d'attaque est présenté, et vous avez la charge de la gestion de l'incident.",
-            "objective": "Suivez les phases de gestion des incidents pour traiter l'attaque : Décrivez les actions immédiates que vous prendriez pour contenir l'attaque. Identifiez les techniques que vous utiliseriez pour éradiquer la menace. Élaborez un plan de communication pour informer les parties prenantes internes et externes de l'incident. Analysez les conséquences de l'attaque et proposez des mesures de prévention pour l'avenir."
+            "objectif": "Être capable de gérer un incident en suivant les phases de réaction à une attaque.",
+            "instructions": "Un scénario d'attaque vous est présenté et vous avez la charge de la gestion de l'incident. En suivant les phases de gestion des incidents, décrivez les actions immédiates que vous prendriez pour contenir l'attaque, identifiez les techniques que vous utiliseriez pour éradiquer la menace et analysez les conséquences de l'attaque.",
+            "livrable": "Un dossier de gestion d'incident présentant les actions de containment, les techniques d'éradication, un plan de communication à l'attention des parties prenantes internes et externes et des mesures de prévention pour l'avenir."
         },
         {
             "title": "Étude de cas et résolution de problème",
-            "context": "On vous présente un cas réel d'incident de sécurité informatique qu'une entreprise a rencontré.",
-            "objective": "Votre mission est de : Analyser l'étude de cas pour comprendre les événements qui se sont déroulés pendant l'incident. Identifier les erreurs faites pendant la gestion de l'incident et proposez des améliorations. Réfléchir aux leçons apprises à partir de l'étude de cas et à comment ces leçons peuvent être appliquées à d'autres situations. Rédiger une analyse du cas, comprenant les étapes que vous auriez prises pour résoudre l'incident, ainsi que les recommandations pour les meilleures pratiques à adopter."
+            "objectif": "Savoir analyser un cas réel d'incident et en tirer des recommandations de bonnes pratiques.",
+            "instructions": "On vous présente un cas réel d'incident de sécurité informatique rencontré par une entreprise. Analysez l'étude de cas pour comprendre les événements qui se sont déroulés pendant l'incident, identifiez les erreurs faites pendant la gestion de l'incident et proposez des améliorations, puis réfléchissez aux leçons apprises et à la manière dont elles peuvent être appliquées à d'autres situations.",
+            "livrable": "Une analyse du cas comprenant les événements survenus, les erreurs identifiées et les améliorations proposées, les étapes que vous auriez prises pour résoudre l'incident et des recommandations sur les meilleures pratiques à adopter."
         }
     ],
     "bibliography": [
@@ -103,8 +121,8 @@
             "author": "Carrier, B"
         },
         {
-            "title": "Digital Forensics with Open Source Tools (2e éd.)",
-            "author": "Zimmerman, B"
+            "title": "Digital Forensics with Open Source Tools",
+            "author": "Altheide, C. & Carvey, H"
         },
         {
             "title": "The Practice of Network Security Monitoring",
@@ -112,9 +130,9 @@
         }
     ],
     "OnlineResources": [
-        "SANS — Digital Forensics (https://www.sans.org/cyber-security-courses/?focus-area=digital-forensics) [EN]",
+        "SANS - Digital Forensics (https://www.sans.org/cyber-security-courses/?focus-area=digital-forensics) [EN]",
         "MITRE ATT&CK (https://attack.mitre.org) [EN]",
-        "CERT-FR — Bulletins d'alerte (https://www.cert.ssi.gouv.fr) [FR]",
+        "CERT-FR - Bulletins d'alerte (https://www.cert.ssi.gouv.fr) [FR]",
         "The Sleuth Kit / Autopsy (https://www.sleuthkit.org) [EN]",
         "Volatility Foundation (https://www.volatilityfoundation.org) [EN]"
     ],

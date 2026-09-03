@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Réalisation d'une documentation technique",
-            "context": "Vous avez été chargé de rédiger la documentation technique d'un projet d'IA.",
-            "objective": "À partir des bonnes pratiques et des exemples présentés dans le cours, rédigez une documentation technique complète comprenant les spécifications, les guides et autres documents pertinents."
+            "objectif": "Savoir rédiger une documentation technique complète pour un projet d'IA.",
+            "instructions": "Vous êtes chargé de rédiger la documentation technique d'un projet d'IA. À partir des bonnes pratiques et des exemples présentés dans le cours, rédigez une documentation technique complète comprenant les spécifications, les guides et les autres documents pertinents.",
+            "livrable": "Une documentation technique complète du projet d'IA comprenant les spécifications, les guides et les documents pertinents, conforme aux bonnes pratiques présentées."
         },
         {
             "title": "Traduction des besoins métier en spécifications techniques",
-            "context": "Imaginez un cas d'utilisation réel dans le domaine de l'intelligence artificielle.",
-            "objective": "Traduisez les besoins métier de ce cas d'utilisation en spécifications techniques détaillées, en utilisant les modèles et les méthodologies présentés dans le cours."
+            "objectif": "Être capable de traduire des besoins métier en spécifications techniques détaillées.",
+            "instructions": "Imaginez un cas d'utilisation réel dans le domaine de l'intelligence artificielle. Traduisez les besoins métier de ce cas d'utilisation en spécifications techniques détaillées, en utilisant les modèles et les méthodologies présentés dans le cours.",
+            "livrable": "Un document de spécifications techniques détaillées traduisant les besoins métier du cas d'utilisation, établi selon les modèles et méthodologies du cours."
         },
         {
             "title": "Modélisation des processus métier",
-            "context": "Sélectionnez un processus métier lié à un projet d'IA et utilisez une technique de modélisation (BPMN, UML, etc.) pour représenter graphiquement ce processus.",
-            "objective": "Expliquez les éléments clés de la modélisation et leur intégration dans l'architecture de données décisionnelles."
+            "objectif": "Savoir modéliser graphiquement un processus métier lié à un projet d'IA.",
+            "instructions": "Sélectionnez un processus métier lié à un projet d'IA et utilisez une technique de modélisation (BPMN, UML, etc.) pour représenter graphiquement ce processus. Expliquez les éléments clés de la modélisation et leur intégration dans l'architecture de données décisionnelles.",
+            "livrable": "Une représentation graphique du processus métier réalisée avec la technique de modélisation choisie, accompagnée de l'explication des éléments clés et de leur intégration dans l'architecture décisionnelle."
         },
         {
             "title": "Gestion de la documentation technique",
-            "context": "Élaborez un plan de gestion de la documentation technique pour un projet d'IA.",
-            "objective": "Incluez l'organisation, la structuration, la gestion des versions, la collaboration au sein de l'équipe projet, ainsi que les mesures de sécurité et de confidentialité à mettre en place."
+            "objectif": "Être capable d'élaborer un plan de gestion de la documentation technique d'un projet d'IA.",
+            "instructions": "Élaborez un plan de gestion de la documentation technique pour un projet d'IA. Incluez l'organisation, la structuration, la gestion des versions, la collaboration au sein de l'équipe projet ainsi que les mesures de sécurité et de confidentialité à mettre en place.",
+            "livrable": "Un plan de gestion de la documentation technique couvrant l'organisation, la structuration, la gestion des versions, la collaboration et les mesures de sécurité et de confidentialité."
         },
         {
             "title": "Présentation des spécifications techniques",
-            "context": "Préparez une présentation des spécifications techniques d'un projet d'IA à destination des différentes parties prenantes.",
-            "objective": "Choisissez les techniques de communication et de documentation visuelle appropriées pour assurer une bonne compréhension et un impact efficace. Intégrez également les retours et les rétroactions dans la présentation."
+            "objectif": "Savoir présenter des spécifications techniques adaptées aux différentes parties prenantes.",
+            "instructions": "Préparez une présentation des spécifications techniques d'un projet d'IA à destination des différentes parties prenantes. Choisissez les techniques de communication et de documentation visuelle appropriées pour assurer une bonne compréhension et un impact efficace, et intégrez les retours et les rétroactions dans la présentation.",
+            "livrable": "Une présentation des spécifications techniques adaptée aux parties prenantes, mobilisant des techniques de communication et de documentation visuelle appropriées et intégrant les retours reçus."
         }
     ],
     "bibliography": [
@@ -109,7 +114,7 @@
             "author": "Bleiel, N"
         },
         {
-            "title": "Diátaxis — A systematic approach to technical documentation",
+            "title": "Diátaxis - A systematic approach to technical documentation",
             "author": "Procida, D"
         },
         {
@@ -118,8 +123,8 @@
         }
     ],
     "OnlineResources": [
-        "Google — Model Cards (https://modelcards.withgoogle.com) [EN]",
-        "Hugging Face — Model Documentation (https://huggingface.co/docs) [EN]",
+        "Google - Model Cards (https://modelcards.withgoogle.com) [EN]",
+        "Hugging Face - Model Documentation (https://huggingface.co/docs) [EN]",
         "Diátaxis Framework (https://diataxis.fr) [EN]",
         "MLOps Community (https://mlops.community) [EN]",
         "Write the Docs (https://www.writethedocs.org) [EN]"

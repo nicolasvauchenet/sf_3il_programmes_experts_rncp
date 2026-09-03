@@ -26,6 +26,48 @@
             {% endif %}
 
             <article class="printable-content">
+                {% if pdfMode|default(false) %}
+                    {% set chapters = module.outline.chapters ?? [] %}
+                    <section class="pdf-cover">
+                        <div class="pdf-cover-kicker">Fiche matière</div>
+                        <div class="pdf-cover-program">{{ promotionContext.promotionTitle }}</div>
+                        <div class="pdf-cover-code">{{ module.moduleCode }}</div>
+                        <h1>{{ module.title ?: 'Matière' }}</h1>
+
+                        <div class="pdf-cover-rule"></div>
+
+                        <table class="pdf-cover-details">
+                            <tr>
+                                <td>
+                                    <span>Bloc de compétences</span>
+                                    <strong>{{ module.blocCode }}</strong>
+                                    <small>{{ module.blocName }}</small>
+                                </td>
+                                <td>
+                                    <span>Promotion</span>
+                                    <strong>{{ promotion|upper }}</strong>
+                                    <small>{{ year }}</small>
+                                </td>
+                                <td>
+                                    <span>Volume pédagogique</span>
+                                    <strong>{{ module.durationHours }} h</strong>
+                                    <small>{{ module.durationDays }} jour{{ module.durationDays > 1 ? 's' : '' }}</small>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="pdf-cover-stats">
+                            <tr>
+                                <td><strong>{{ module.skills|length }}</strong><span>Compétences</span></td>
+                                <td><strong>{{ module.projects|length }}</strong><span>Projets</span></td>
+                                <td><strong>{{ module.evaluations|length }}</strong><span>Évaluations</span></td>
+                            </tr>
+                        </table>
+
+                        <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
+                    </section>
+                {% endif %}
+
                 <div class="app-grid third">
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
@@ -58,29 +100,33 @@
                         <div style="height: 200px">
                             {{ render_chart(moduleVolumeChart) }}
                         </div>
-                    </section>{% else %}
-                        <section class="app-section centered">
-                            <h2>Métriques</h2>
-                            <table class="pdf-metrics"><tr>
-                                <td><strong>{{ module.skills|length }}</strong><span>Compétences</span></td>
-                                <td><strong>{{ (module.outline.chapters ?? [])|length }}</strong><span>Chapitres</span></td>
-                                <td><strong>{{ module.exercises|length }}</strong><span>Exercices</span></td>
-                            </tr></table>
-                        </section>
-                    {% endif %}
+                    </section>{% endif %}
                 </div>
 
                 {% if module.objectives.description is defined and module.objectives.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>{{ module.blocCode }} : {{ module.blocName }}</h2>
-                        <p>{{ module.objectives.description }}</p>
+                        <h2>Objectifs pédagogiques</h2>
+
+                        {% if module.objectives.items is defined and module.objectives.items is not empty %}
+                            <p>{{ module.objectives.intro }}</p>
+                            <ul>
+                                {% for objective in module.objectives.items %}
+                                    <li>{{ objective }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>{{ module.objectives.description }}</p>
+                        {% endif %}
                     </section>
                 {% endif %}
 
                 {% if module.prerequisites.description is defined and module.prerequisites.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Prérequis</h2>
-                        <p>{{ module.prerequisites.description }}</p>
+
+                        {% for paragraph in module.prerequisites.paragraphs ?? [module.prerequisites.description] %}
+                            <p>{{ paragraph }}</p>
+                        {% endfor %}
                     </section>
                 {% endif %}
 
@@ -89,7 +135,7 @@
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Plan des cours</h2>
                         {% for ch in chapters %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-chapter mx-0 mt-2 mb-0">
                                 <h3>{{ ch.title ?? 'Chapitre' }}</h3>
                                 {% set items = ch.items ?? [] %}
                                 {% if items is not empty %}
@@ -110,27 +156,20 @@
 
                         {% for ex in module.exercises %}
                             {% set title = ex.title ?? 'Exercice' %}
-                            {% set context = (ex.context ?? '')|trim %}
-                            {% set objective = (ex.objective ?? '')|trim %}
-                            {% set objectiveText = objective ?: context %}
-                            {% set hasObjective = objectiveText|length > 0 %}
-                            {% set hasContext = context|length > 0 and objective|length > 0 %}
-                            {% set normContext = context|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-                            {% set normObjective = objective|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-                            {% set normContext = normContext|split(' ')|filter(v => v != '')|join(' ') %}
-                            {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
-                            {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
 
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-exercise mx-0 mt-2 mb-0">
                                 <h3>Exercice {{ loop.index }} : {{ title }}</h3>
 
-                                {% if showContextAndObjective %}
-                                    <p><strong>Contexte :</strong> {{ context }}</p>
-                                    <p><strong>Objectif :</strong> {{ objective }}</p>
-                                {% else %}
-                                    {% if hasObjective %}
-                                        <p><strong>Objectif :</strong> {{ objectiveText }}</p>
-                                    {% endif %}
+                                {% if ex.objective ?? null %}
+                                    <p><strong>Objectif :</strong> {{ ex.objective }}</p>
+                                {% endif %}
+
+                                {% if ex.instructions ?? null %}
+                                    <p><strong>Consignes :</strong> {{ ex.instructions }}</p>
+                                {% endif %}
+
+                                {% if ex.deliverable ?? null %}
+                                    <p><strong>Livrable :</strong> {{ ex.deliverable }}</p>
                                 {% endif %}
                             </section>
                         {% endfor %}
@@ -142,7 +181,7 @@
                         <h2>Compétences mobilisées</h2>
 
                         {% for s in module.skillsWithCriteria %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
                                 <p>
                                     <a href="{{ path('app_promotion_skills', {
                                         'promotion': promotion,
@@ -171,7 +210,7 @@
                 {% endif %}
 
                 {% if module.bibliography is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
+                    <section class="app-section pdf-keep mx-0 mt-2 mb-0">
                         <h2>Bibliographie</h2>
 
                         <ul>
@@ -188,7 +227,7 @@
                 {% endif %}
 
                 {% if module.onlineResources is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
+                    <section class="app-section pdf-keep mx-0 mt-2 mb-0">
                         <h2>Ressources en ligne</h2>
 
                         <ul>
@@ -212,7 +251,7 @@
                 {% endif %}
 
                 {% if module.teachingMethods is not empty %}
-                    <section class="app-section mx-0 mt-2 mb-0">
+                    <section class="app-section pdf-keep mx-0 mt-2 mb-0">
                         <h2>Méthodes pédagogiques</h2>
 
                         <ul>
@@ -223,7 +262,7 @@
                     </section>
                 {% endif %}
 
-                <div class="app-grid two">
+                <div class="app-grid two pdf-associations">
                     {% if module.projects is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
                             <h2>Projets associés</h2>

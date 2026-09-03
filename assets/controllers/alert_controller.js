@@ -4,9 +4,9 @@ export default class extends Controller {
     connect() {
         this.element.addEventListener('click', this.close)
 
-        setTimeout(() => {
+        /*setTimeout(() => {
             this.element.remove()
-        }, 5000)
+        }, 5000)*/
     }
 
     close(e) {

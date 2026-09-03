@@ -79,57 +79,58 @@
     "exercises": [
         {
             "title": "Conception d'une politique d'authentification forte",
-            "context": "Votre entreprise souhaite renforcer la sécurité de ses systèmes d'information en mettant en œuvre une politique d'authentification forte.",
-            "objective": "Votre tâche est de concevoir une politique d'authentification qui inclut l'utilisation de l'authentification multi-facteurs (MFA). Vous devrez décrire les types de facteurs qui seront employés (quelque chose que l'utilisateur sait, quelque chose qu'il a, et quelque chose qu'il est), les conditions d'activation de l'authentification multi-facteurs (par exemple, lors de la connexion à des systèmes critiques ou de l'accès à distance) et les mesures à prendre en cas de perte d'un des facteurs d'authentification."
+            "objectif": "Concevoir une politique d'authentification forte reposant sur l'authentification multi-facteurs.",
+            "instructions": "Concevez une politique d'authentification forte integrant l'authentification multi-facteurs (MFA). Decrivez les types de facteurs employes (ce que l'utilisateur sait, ce qu'il a, ce qu'il est), les conditions d'activation de la MFA (par exemple connexion a des systemes critiques ou acces a distance) et les mesures a prendre en cas de perte d'un des facteurs.",
+            "livrable": "Une politique d'authentification forte documentant les facteurs MFA retenus, leurs conditions d'activation et les mesures a prendre en cas de perte d'un facteur."
         },
         {
-            "title": "Analyse de risques liés aux identités et accès inactifs",
-            "context": "Vous êtes chargé d'auditer les comptes utilisateurs d'une organisation.",
-            "objective": "Votre mission consiste à identifier les comptes inactifs et à évaluer les risques associés à ces comptes. Pour cela, vous devrez élaborer une liste de critères pour déterminer ce qu'est un compte inactif, identifier ces comptes dans un système donné, et proposer une procédure pour les désactiver ou les supprimer, en prenant en compte les éventuelles contraintes règlementaires ou d'entreprise."
+            "title": "Analyse de risques lies aux identites et acces inactifs",
+            "objectif": "Auditer les comptes utilisateurs pour identifier les comptes inactifs et traiter les risques associes.",
+            "instructions": "Auditez les comptes utilisateurs d'une organisation. Elaborez une liste de criteres definissant un compte inactif, identifiez ces comptes dans un systeme donne, puis proposez une procedure de desactivation ou de suppression tenant compte des contraintes reglementaires ou d'entreprise.",
+            "livrable": "Un audit des comptes inactifs comprenant les criteres de definition, la liste des comptes identifies et une procedure de desactivation ou de suppression respectant les contraintes reglementaires."
         },
         {
-            "title": "Mise en place d'une revue des accès",
-            "context": "Afin de s'assurer que les employés ont uniquement accès aux ressources nécessaires à l'exercice de leurs fonctions, votre entreprise a décidé de mettre en place un processus de revue des accès.",
-            "objective": "Vous êtes responsable de concevoir et de documenter ce processus. Il devra inclure les étapes à suivre pour réaliser la revue des accès, la fréquence des revues, les rôles et responsabilités des différentes parties prenantes, ainsi que la manière dont les modifications des accès seront suivies et documentées."
+            "title": "Mise en place d'une revue des acces",
+            "objectif": "Concevoir et documenter un processus de revue des acces garantissant le juste niveau de droits.",
+            "instructions": "Concevez et documentez un processus de revue des acces. Il devra inclure les etapes de realisation de la revue, la frequence des revues, les roles et responsabilites des parties prenantes, ainsi que la maniere dont les modifications d'acces seront suivies et documentees.",
+            "livrable": "Un processus de revue des acces documente precisant les etapes, la frequence, les roles et responsabilites et le suivi des modifications d'acces."
         },
         {
-            "title": "Planification de la sécurisation des accès à distance",
-            "context": "Avec l'augmentation du télétravail, votre entreprise doit impérativement sécuriser les accès à distance à son réseau d'entreprise.",
-            "objective": "Vous devez concevoir un plan de sécurisation qui comprendra la sélection d'une solution de VPN, la mise en place de pare-feu et de systèmes de détection d'intrusions, ainsi que des procédures pour la formation des employés aux bonnes pratiques de sécurité. Décrivez également comment vous comptez tester l'efficacité de ces mesures."
+            "title": "Planification de la securisation des acces a distance",
+            "objectif": "Concevoir un plan de securisation des acces a distance au reseau d'entreprise.",
+            "instructions": "Concevez un plan de securisation des acces a distance comprenant la selection d'une solution VPN, la mise en place de pare-feu et de systemes de detection d'intrusions, ainsi que des procedures de formation des employes aux bonnes pratiques. Decrivez egalement comment vous testerez l'efficacite de ces mesures.",
+            "livrable": "Un plan de securisation des acces a distance detaillant la solution VPN, les pare-feu et systemes de detection d'intrusions, la formation des employes et la methode de test de l'efficacite des mesures."
         },
         {
-            "title": "Évaluation d'une solution IAM pour environnements hybrides",
-            "context": "Votre entreprise opère dans un environnement hybride avec des ressources tant sur site qu’en cloud.",
-            "objective": "Vous êtes chargé d'évaluer différentes solutions d'IAM (Identity and Access Management) adaptées à cet environnement. Votre exercice consistera à élaborer une grille d'évaluation comprenant des critères tels que la compatibilité avec les infrastructures existantes, la facilité de gestion des identités, l'intégration de l'authentification forte, le support de la fédération d'identités, et la conformité aux règlementations en vigueur. Sur la base de cette grille, vous réaliserez une analyse comparative de trois solutions IAM du marché et formulerez une recommandation pour la solution la plus adaptée aux besoins de votre entreprise."
+            "title": "Evaluation d'une solution IAM pour environnements hybrides",
+            "objectif": "Evaluer et comparer des solutions IAM adaptees a un environnement hybride pour formuler une recommandation.",
+            "instructions": "Elaborez une grille d'evaluation IAM comprenant des criteres tels que la compatibilite avec les infrastructures existantes, la facilite de gestion des identites, l'integration de l'authentification forte, le support de la federation d'identites et la conformite reglementaire. Sur cette base, realisez une analyse comparative de trois solutions IAM du marche et formulez une recommandation.",
+            "livrable": "Une grille d'evaluation IAM, l'analyse comparative de trois solutions du marche et une recommandation argumentee de la solution la plus adaptee a l'environnement hybride."
         }
     ],
     "bibliography": [
         {
-            "title": "NIST SP 800-63 Digital Identity Guidelines",
-            "author": "Grassi, P. et al"
-        },
-        {
-            "title": "Learning Digital Identity",
+            "title": "Learning Digital Identity. O'Reilly",
             "author": "Windley, P. J"
         },
         {
-            "title": "Mastering Identity and Access Management with Microsoft Azure (2e éd.)",
-            "author": "Sharma, A"
+            "title": "Mastering Identity and Access Management with Microsoft Azure (2e éd.). Packt",
+            "author": "Nickel, J"
         }
     ],
     "OnlineResources": [
         "NIST SP 800-63 Digital Identity Guidelines (https://pages.nist.gov/800-63-3/) [EN]",
         "OAuth 2.0 RFC 6749 (https://datatracker.ietf.org/doc/html/rfc6749) [EN]",
-        "OpenID Connect (https://openid.net/connect/) [EN]",
+        "OpenID Connect (https://openid.net/developers/how-connect-works/) [EN]",
         "Microsoft Entra ID Documentation (https://learn.microsoft.com/entra/) [FR/EN]",
-        "ANSSI — Recommandations authentification (https://cyber.gouv.fr) [FR]"
+        "ANSSI - Recommandations authentification (https://cyber.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

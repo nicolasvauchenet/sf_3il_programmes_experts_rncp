@@ -10,7 +10,16 @@
         "durationHours": 21,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Participer à l'élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s'appuyant sur les standards et sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI), pour protéger les données et les systèmes de l'entreprise"
+        },
+        {
+            "code": "C21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les préconisations de l'ANSSI au moyen d'ateliers, de documentation, d'exercices de simulation d'attaque, et de campagnes de phishing afin de diminuer les comportements à risques et de contribuer à l'amélioration continue de la sécurité de l'entreprise"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux et bonnes pratiques en matière de sécurité des systèmes d'information (Comprendre) Maîtriser les fondements du management de la sécurité et élaborer une politique de sécurité efficace (Créer) Piloter la gestion des incidents et les actions correctives associées (Évaluer)"
     },
@@ -74,28 +83,33 @@
     "exercises": [
         {
             "title": "Analyse de Menaces et Vulnérabilités",
-            "context": "Vous êtes consultant en sécurité des systèmes d'information pour une entreprise.",
-            "objective": "Votre premier mandat est de réaliser une analyse des menaces et vulnérabilités pour l'entreprise. Pour cet exercice, vous devez : Identifier cinq menaces potentielles spécifiques à l'industrie de l'entreprise. Associer à chaque menace identifiée une vulnérabilité possible dans le système d'information de l'entreprise. Proposer une mesure de mitigation ou une bonne pratique de sécurité pour chaque couple menace- vulnérabilité identifié."
+            "objectif": "Savoir analyser les menaces et vulnérabilités d'un système d'information et proposer des mesures de mitigation.",
+            "instructions": "Vous êtes consultant en sécurité des systèmes d'information pour une entreprise. Identifiez cinq menaces potentielles spécifiques à l'industrie de l'entreprise et associez à chaque menace identifiée une vulnérabilité possible dans le système d'information de l'entreprise.",
+            "livrable": "Une analyse des menaces et vulnérabilités présentant les cinq couples menace-vulnérabilité et, pour chacun, une mesure de mitigation ou une bonne pratique de sécurité."
         },
         {
             "title": "Étude de Cas sur la Gouvernance de la Sécurité",
-            "context": "Imaginez que vous êtes le CISO (Chief Information Security Officer) d'une organisation qui vient de subir une violation de données.",
-            "objective": "Votre tâche consiste à présenter au conseil d'administration un plan d'action pour améliorer la gouvernance de la sécurité. Pour cet exercice, vous devez : Élaborer un plan d'action qui inclut la révision des normes et standards de sécurité actuellement en place. Décrire comment vous intégrez les concepts de GRC (Gouvernance, Risque et Conformité) dans votre plan. Identifier les changements à apporter aux rôles et responsabilités des acteurs clés de la sécurité de l'information au sein de votre organisation."
+            "objectif": "Être capable d'élaborer un plan d'amélioration de la gouvernance de la sécurité après une violation de données.",
+            "instructions": "Vous êtes le CISO (Chief Information Security Officer) d'une organisation qui vient de subir une violation de données et devez présenter un plan d'action au conseil d'administration. Élaborez un plan incluant la révision des normes et standards de sécurité actuellement en place, décrivez comment vous intégrez les concepts de GRC (Gouvernance, Risque et Conformité) et identifiez les changements à apporter aux rôles et responsabilités des acteurs clés de la sécurité de l'information.",
+            "livrable": "Un plan d'action à destination du conseil d'administration présentant la révision des normes et standards, l'intégration de la GRC et les évolutions des rôles et responsabilités des acteurs clés de la sécurité."
         },
         {
             "title": "Création d'une Politique de Sécurité",
-            "context": "En tant que responsable de la sécurité des systèmes d'information d'une PME, on vous demande de rédiger une politique de sécurité adaptée à votre entreprise.",
-            "objective": "Votre politique doit : Définir clairement les objectifs de sécurité de l'information pour l'entreprise. Établir les principes et règles de base que tous les employés doivent suivre. Proposer un plan de sensibilisation et de formation des employés à la sécurité des systèmes d'information. Intégrer des directives pour la gestion des identités et des accès (IAM)."
+            "objectif": "Savoir rédiger une politique de sécurité adaptée à une PME.",
+            "instructions": "En tant que responsable de la sécurité des systèmes d'information d'une PME, définissez clairement les objectifs de sécurité de l'information pour l'entreprise, établissez les principes et règles de base que tous les employés doivent suivre et proposez un plan de sensibilisation et de formation des employés à la sécurité des systèmes d'information.",
+            "livrable": "Une politique de sécurité présentant les objectifs de sécurité, les principes et règles de base, le plan de sensibilisation et de formation et les directives de gestion des identités et des accès (IAM)."
         },
         {
             "title": "Simulation de Gestion d'Incident",
-            "context": "Vous travaillez dans le département de sécurité d'une grande organisation.",
-            "objective": "Une alerte de sécurité vient d'être déclenchée, signalant une activité suspecte dans le réseau. Pour cet exercice, vous devez : Décrire les étapes que vous suivriez pour détecter, trier et classer cet incident. Simuler une réponse appropriée à l'incident, y compris les techniques d'investigation que vous utiliseriez. Préparer un plan de communication à l'attention des parties prenantes concernant l'incident et les mesures prises."
+            "objectif": "Être capable de gérer un incident de sécurité, de la détection à la communication.",
+            "instructions": "Vous travaillez dans le département de sécurité d'une grande organisation et une alerte signale une activité suspecte dans le réseau. Décrivez les étapes que vous suivriez pour détecter, trier et classer cet incident, puis simulez une réponse appropriée en précisant les techniques d'investigation que vous utiliseriez.",
+            "livrable": "Un dossier de gestion d'incident présentant la démarche de détection, tri et classement, la réponse à l'incident et les techniques d'investigation, ainsi qu'un plan de communication à l'attention des parties prenantes concernant l'incident et les mesures prises."
         },
         {
             "title": "Planification de la Sécurité Physique",
-            "context": "En tant que membre de l'équipe de sécurité d'une nouvelle installation de données, vous êtes chargé de contribuer à la conception des mesures de sécurité physique.",
-            "objective": "Pour cet exercice, vous devez : Identifier cinq menaces physiques potentielles que pourrait rencontrer l'installation. Proposer une mesure de sécurité correspondante pour chacune des menaces identifiées. Expliquer comment ces mesures de sécurité physique s'intègrent dans la stratégie globale de sécurité des systèmes d'information de l'organisation."
+            "objectif": "Savoir concevoir des mesures de sécurité physique intégrées à la stratégie de sécurité globale.",
+            "instructions": "En tant que membre de l'équipe de sécurité d'une nouvelle installation de données, vous contribuez à la conception des mesures de sécurité physique. Identifiez cinq menaces physiques potentielles que pourrait rencontrer l'installation et proposez une mesure de sécurité correspondante pour chacune des menaces identifiées.",
+            "livrable": "Un plan de sécurité physique présentant les cinq menaces, les mesures de sécurité associées et l'explication de leur intégration dans la stratégie globale de sécurité des systèmes d'information de l'organisation."
         }
     ],
     "bibliography": [
@@ -115,7 +129,7 @@
     "OnlineResources": [
         "ISO/IEC 27001 (https://www.iso.org/isoiec-27001-information-security.html) [EN/FR]",
         "NIST Cybersecurity Framework (https://www.nist.gov/cyberframework) [EN]",
-        "ANSSI — Méthode EBIOS Risk Manager (https://cyber.gouv.fr) [FR]",
+        "ANSSI - Méthode EBIOS Risk Manager (https://cyber.gouv.fr) [FR]",
         "(ISC)² CISSP Resources (https://www.isc2.org/Certifications/CISSP) [EN]",
         "CLUSIF (https://clusif.fr) [FR]"
     ],

@@ -10,9 +10,22 @@
         "durationHours": 21,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue"
+        },
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l'infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d'attaques et d'outils d'analyse de sécurité afin d'évaluer la robustesse des systèmes et la réactivité des équipes"
+        },
+        {
+            "code": "C23",
+            "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l'ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes, et en collectant les preuves numériques afin de préparer des rapports en vue des audits de sécurité et conserver des preuves légales"
+        }
+    ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes éthiques du piratage et leur importance dans la cybersécurité (Comprendre) Connaître la méthodologie des tests de pénétration (Analyser) Mener des simulations d'attaques de manière sécurisée et éthique (Appliquer)"
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes éthiques du piratage et leur importance dans la cybersécurité (Comprendre) Analyser la méthodologie des tests de pénétration (Analyser) Mener des simulations d'attaques de manière sécurisée et éthique (Appliquer)"
     },
     "prerequisites": {
         "description": "Une compréhension de base des concepts de cybersécurité et des connaissances en réseaux et systèmes informatiques sont recommandées pour suivre ce cours."
@@ -64,28 +77,33 @@
     "exercises": [
         {
             "title": "Rédaction d'une charte éthique du piratage",
-            "context": "Vous travaillez en tant que consultant en cybersécurité pour une entreprise qui souhaite mettre en place une équipe de pirates éthiques.",
-            "objective": "Rédigez une charte d'éthique pour les membres de cette équipe en vous appuyant sur les principes de l'éthique du piratage que vous avez appris. Votre charte devra inclure : Les objectifs et les limites du piratage éthique au sein de l'entreprise. Les différences entre les activités autorisées et celles qui sont considérées comme malveillantes. Les références aux lois et réglementations pertinentes qui régissent cette pratique. Les engagements que chaque membre de l'équipe doit prendre pour respecter les principes éthiques."
+            "objectif": "Savoir rédiger une charte encadrant l'activité d'une équipe de piratage éthique.",
+            "instructions": "Vous travaillez comme consultant en cybersécurité pour une entreprise qui souhaite mettre en place une équipe de pirates éthiques. En vous appuyant sur les principes de l'éthique du piratage, rédigez une charte incluant les objectifs et les limites du piratage éthique au sein de l'entreprise, les différences entre activités autorisées et activités malveillantes et les références aux lois et réglementations pertinentes qui régissent cette pratique.",
+            "livrable": "Une charte éthique du piratage présentant les objectifs et limites, la distinction entre activités autorisées et malveillantes, les références légales et réglementaires et les engagements que chaque membre de l'équipe doit prendre pour respecter les principes éthiques."
         },
         {
             "title": "Planification d'un test de pénétration",
-            "context": "Imaginez que vous êtes chargé de planifier un test de pénétration pour une nouvelle application web développée par votre entreprise.",
-            "objective": "Créez un plan détaillé qui couvre les différentes phases du test de pénétration, de la reconnaissance à la rédaction du rapport. Votre plan doit inclure : Les outils et techniques que vous prévoyez d'utiliser pour chaque phase. Une évaluation des risques associés à chaque étape. Les étapes pour documenter et évaluer les vulnérabilités découvertes."
+            "objectif": "Être capable de planifier un test de pénétration couvrant l'ensemble de ses phases.",
+            "instructions": "Vous êtes chargé de planifier un test de pénétration pour une nouvelle application web développée par votre entreprise. Créez un plan détaillé couvrant les différentes phases du test, de la reconnaissance à la rédaction du rapport, en précisant les outils et techniques prévus pour chaque phase et une évaluation des risques associés à chaque étape.",
+            "livrable": "Un plan de test de pénétration détaillé présentant les phases, les outils et techniques par phase, l'évaluation des risques et les étapes pour documenter et évaluer les vulnérabilités découvertes."
         },
         {
             "title": "Simulation d'attaque",
-            "context": "Vous avez été chargé de réaliser une simulation d'attaque contre le réseau interne de votre entreprise pour évaluer sa résilience.",
-            "objective": "Utilisez un environnement de test isolé pour simuler une attaque par déni de service distribué (DDoS). Votre exercice devra : Décrire la technique d'attaque choisie et expliquer pourquoi elle est représentative d'une menace réelle pour l'entreprise. Mettre en œuvre la simulation sans affecter les opérations réelles et en respectant les bonnes pratiques éthiques. Documenter l'efficacité de l'attaque et les réponses du système."
+            "objectif": "Savoir mener une simulation d'attaque de manière sécurisée et éthique pour évaluer la résilience d'un système.",
+            "instructions": "Vous êtes chargé de réaliser une simulation d'attaque contre le réseau interne de votre entreprise pour évaluer sa résilience. Dans un environnement de test isolé, simulez une attaque par déni de service distribué (DDoS). Décrivez la technique d'attaque choisie et expliquez pourquoi elle est représentative d'une menace réelle pour l'entreprise, puis mettez en œuvre la simulation sans affecter les opérations réelles et en respectant les bonnes pratiques éthiques.",
+            "livrable": "Un compte rendu de simulation documentant la technique d'attaque choisie et sa justification, la mise en œuvre en environnement isolé, l'efficacité de l'attaque et les réponses du système."
         },
         {
             "title": "Analyse et rapport de vulnérabilité",
-            "context": "Après avoir mené un test de pénétration sur l'infrastructure réseau de votre entreprise, vous avez identifié plusieurs vulnérabilités.",
-            "objective": "Rédigez un rapport qui analyse les résultats du test. Votre rapport doit : Décrire chaque vulnérabilité identifiée et son niveau de risque. Proposer des mesures correctives pour chacune des vulnérabilités. Expliquer la manière de communiquer ces résultats aux parties prenantes de l'entreprise de façon claire et non technique."
+            "objectif": "Être capable d'analyser les résultats d'un test de pénétration et de les restituer aux parties prenantes.",
+            "instructions": "À la suite d'un test de pénétration mené sur l'infrastructure réseau de votre entreprise, vous avez identifié plusieurs vulnérabilités. Décrivez chaque vulnérabilité identifiée et son niveau de risque et proposez des mesures correctives pour chacune d'elles.",
+            "livrable": "Un rapport de vulnérabilité présentant chaque vulnérabilité et son niveau de risque, les mesures correctives proposées et la manière de communiquer ces résultats aux parties prenantes de l'entreprise de façon claire et non technique."
         },
         {
             "title": "Étude de cas sur le cadre légal et éthique",
-            "context": "Étudiez un cas réel ou fictif où un test de pénétration ou une simulation d'attaque a conduit à des implications légales ou éthiques.",
-            "objective": "Analysez le cas en soulignant : Les actions qui ont mené à des conséquences légales ou éthiques. Les lois et réglementations qui ont été appliquées ou violées. Comment la situation aurait pu être gérée différemment pour respecter la confidentialité et l'intégrité des données et éviter les implications négatives. Présentez vos résultats sous forme d'une étude de cas détaillée."
+            "objectif": "Savoir analyser les implications légales et éthiques d'un test de pénétration ou d'une simulation d'attaque.",
+            "instructions": "Étudiez un cas réel ou fictif où un test de pénétration ou une simulation d'attaque a conduit à des implications légales ou éthiques. Analysez les actions qui ont mené à ces conséquences, les lois et réglementations qui ont été appliquées ou violées et la manière dont la situation aurait pu être gérée différemment pour respecter la confidentialité et l'intégrité des données et éviter les implications négatives.",
+            "livrable": "Une étude de cas détaillée présentant l'analyse des actions, les lois et réglementations concernées et les recommandations pour une gestion respectueuse de la confidentialité et de l'intégrité des données."
         }
     ],
     "bibliography": [
@@ -106,8 +124,8 @@
         "OWASP Testing Guide (https://owasp.org/www-project-web-security-testing-guide/) [EN]",
         "HackTheBox (https://www.hackthebox.com) [EN]",
         "PortSwigger Web Security Academy (https://portswigger.net/web-security) [EN]",
-        "ANSSI — Tests d'intrusion (https://cyber.gouv.fr) [FR]",
-        "Offensive Security (https://www.offensive-security.com) [EN]"
+        "ANSSI - Tests d'intrusion (https://cyber.gouv.fr) [FR]",
+        "OffSec (https://www.offsec.com) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

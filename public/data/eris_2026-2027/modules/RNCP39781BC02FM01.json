@@ -10,7 +10,36 @@
         "durationHours": 56,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions, en conformité avec le schéma directeur de la DSI, en combinant des ressources locales (on-premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications"
+        },
+        {
+            "code": "C12",
+            "description": "Définir, implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*) afin de protéger les systèmes et les données sensibles contre les accès non autorisés"
+        },
+        {
+            "code": "C13",
+            "description": "Arbitrer la technologie d’hébergement des systèmes et/ou applications (serveur dédié, virtualisation, conteneurisation/orchestration ou cloud) en évaluant et optimisant les ressources nécessaires à leur usage (telles que machine, stockage, bande passante, processeur, mémoire, consommation électrique), pour les déployer, les mettre en production et les gérer de manière fiable, flexible et scalable"
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites, en tenant compte des engagements de disponibilité, de capacité afin de garantir la qualité de service (QoS), la résilience (PCA) et la sécurité des communications"
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place, au contrôle et à l’administration de l'infrastructure, en mobilisant ses compétences techniques, en collaborant avec les équipes pluridisciplinaires et en documentant la solution pour déployer les éléments techniques de la solution"
+        },
+        {
+            "code": "C16",
+            "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications en utilisant des outils d’orchestration, de gestion de déploiement et de DevOps et en contrôlant le résultat par l’analyse des logs produits pour assurer la fiabilité et la reproductibilité des mises en production"
+        },
+        {
+            "code": "C17",
+            "description": "Organiser et piloter la gestion des incidents et du support en définissant les processus standardisés pour la création, l'attribution, le suivi des tickets et leur élévation, dans un cadre d'amélioration continue et en s'appuyant sur des outils de gestion des tickets (ITSM), pour suivre, prioriser et résoudre les incidents, ainsi qu'assurer une résolution rapide et efficace des problèmes techniques"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de la conception d'infrastructures (sécurisation, virtualisation, cloud) (Comprendre) Analyser les besoins pour concevoir des infrastructures performantes et sécurisées (Analyser) Élaborer des architectures techniques répondant aux exigences fonctionnelles et de sécurité (Créer)"
     },
@@ -74,28 +103,33 @@
     "exercises": [
         {
             "title": "Analyse des Besoins et Conception d'Infrastructure",
-            "context": "Vous travaillez en tant que consultant en systèmes d'information pour une entreprise qui souhaite mettre en place une nouvelle infrastructure pour son application de commerce en ligne.",
-            "objective": "Votre tâche est de rédiger un document d'analyse des besoins qui prend en compte les principes de base de la conception d'infrastructure. Vous devez : Identifier les besoins en matière de matériel, logiciel, et réseau pour l'application. Évaluer les exigences en termes de scalabilité et de disponibilité pour gérer les pics de trafic pendant les soldes. Proposer une architecture d'infrastructure adaptée (centralisée, distribuée, en cloud) en justifiant votre choix."
+            "objectif": "Être capable d'analyser les besoins d'une organisation et de concevoir une architecture d'infrastructure adaptée.",
+            "instructions": "Vous travaillez en tant que consultant en systèmes d'information pour une entreprise qui souhaite mettre en place une nouvelle infrastructure pour son application de commerce en ligne. Vous devez rédiger un document d'analyse des besoins prenant en compte les principes de base de la conception d'infrastructure. Identifiez les besoins en matière de matériel, de logiciel et de réseau pour l'application. Évaluez les exigences en termes de scalabilité et de disponibilité pour gérer les pics de trafic pendant les soldes. Proposez une architecture d'infrastructure adaptée (centralisée, distribuée ou en cloud) en justifiant votre choix.",
+            "livrable": "Un document d'analyse des besoins présentant les besoins matériels, logiciels et réseau, l'évaluation des exigences de scalabilité et de disponibilité, et une proposition d'architecture (centralisée, distribuée ou cloud) justifiée."
         },
         {
             "title": "Élaboration d'une Politique de Sécurité",
-            "context": "En tant que responsable de la sécurité des systèmes d'information, votre mission est de créer une politique de sécurité pour la nouvelle infrastructure de l'entreprise.",
-            "objective": "Vous devez : Identifier cinq risques liés à la sécurité de l'infrastructure. Établir des bonnes pratiques pour sécuriser les composantes de l'infrastructure contre ces risques. Définir des mesures de conformité réglementaire que l'entreprise doit respecter. Proposer une stratégie pour protéger l'infrastructure contre les attaques, incluant des solutions de détection et de réponse aux incidents."
+            "objectif": "Être capable d'élaborer une politique de sécurité pour une infrastructure.",
+            "instructions": "En tant que responsable de la sécurité des systèmes d'information, vous devez créer une politique de sécurité pour la nouvelle infrastructure de l'entreprise. Identifiez cinq risques liés à la sécurité de l'infrastructure. Établissez des bonnes pratiques pour sécuriser les composantes de l'infrastructure contre ces risques. Définissez les mesures de conformité réglementaire que l'entreprise doit respecter. Proposez une stratégie pour protéger l'infrastructure contre les attaques, incluant des solutions de détection et de réponse aux incidents.",
+            "livrable": "Une politique de sécurité documentée listant cinq risques, les bonnes pratiques de sécurisation associées, les mesures de conformité réglementaire et une stratégie de protection incluant la détection et la réponse aux incidents."
         },
         {
             "title": "Planification d'une Migration vers le Cloud",
-            "context": "Votre entreprise envisage de migrer certaines de ses ressources vers le cloud.",
-            "objective": "En tant que chef de projet, vous devez préparer un plan de migration. L'exercice consiste à : Comparer les avantages et inconvénients de la virtualisation et du cloud computing pour l'entreprise. Choisir entre IaaS, PaaS et SaaS pour différents types d'applications en expliquant les raisons de vos choix. Élaborer une estimation des coûts et une analyse des performances attendues après la migration. Définir une stratégie de virtualisation adaptée, en tenant compte des besoins spécifiques de l'entreprise."
+            "objectif": "Être capable de planifier une migration de ressources vers le cloud.",
+            "instructions": "Votre entreprise envisage de migrer certaines de ses ressources vers le cloud et, en tant que chef de projet, vous devez préparer un plan de migration. Comparez les avantages et inconvénients de la virtualisation et du cloud computing pour l'entreprise. Choisissez entre IaaS, PaaS et SaaS pour différents types d'applications en expliquant les raisons de vos choix. Élaborez une estimation des coûts et une analyse des performances attendues après la migration. Définissez une stratégie de virtualisation adaptée aux besoins spécifiques de l'entreprise.",
+            "livrable": "Un plan de migration comprenant la comparaison virtualisation/cloud, le choix justifié entre IaaS, PaaS et SaaS selon les applications, une estimation des coûts et des performances attendues, et une stratégie de virtualisation adaptée."
         },
         {
             "title": "Simulation de Gestion des Capacités",
-            "context": "Vous avez la charge de la planification des capacités pour une infrastructure IT.",
-            "objective": "On vous demande de réaliser une simulation de gestion des capacités, où vous devez : Évaluer les besoins actuels en termes de puissance de calcul, stockage et bande passante. Projeter les besoins futurs sur une période de deux ans, en tenant compte de la croissance prévue de l'entreprise. Sélectionner et mettre en œuvre des outils de surveillance pour la gestion des capacités. Proposer des recommandations pour optimiser l'utilisation des ressources tout en maintenant les performances requises."
+            "objectif": "Être capable de planifier et de gérer les capacités d'une infrastructure IT.",
+            "instructions": "Vous avez la charge de la planification des capacités pour une infrastructure IT et devez réaliser une simulation de gestion des capacités. Évaluez les besoins actuels en termes de puissance de calcul, de stockage et de bande passante. Projetez les besoins futurs sur une période de deux ans en tenant compte de la croissance prévue de l'entreprise. Sélectionnez et mettez en œuvre des outils de surveillance pour la gestion des capacités. Proposez des recommandations pour optimiser l'utilisation des ressources tout en maintenant les performances requises.",
+            "livrable": "Une simulation de gestion des capacités présentant l'évaluation des besoins actuels, la projection sur deux ans, les outils de surveillance retenus et des recommandations d'optimisation des ressources."
         },
         {
             "title": "Création d'un Plan de Reprise d'Activité",
-            "context": "Vous faites partie de l'équipe IT d'une banque qui doit élaborer un plan de reprise d'activité (PRA) pour ses services critiques.",
-            "objective": "Pour cet exercice, vous devez : Identifier les services critiques qui nécessitent une haute disponibilité. Élaborer un plan de reprise d'activité pour ces services, en définissant les objectifs de temps de reprise (RTO) et de point de récupération (RPO). Décrire le processus de basculement sur un site de secours en cas de sinistre. Planifier et documenter les procédures de test régulier du PRA. Mettre en place une stratégie pour assurer une continuité de service lors de la maintenance ou d'incidents non critiques."
+            "objectif": "Être capable d'élaborer un plan de reprise d'activité pour des services critiques.",
+            "instructions": "Vous faites partie de l'équipe IT d'une banque qui doit élaborer un plan de reprise d'activité (PRA) pour ses services critiques. Identifiez les services critiques qui nécessitent une haute disponibilité. Élaborez un plan de reprise d'activité pour ces services en définissant les objectifs de temps de reprise (RTO) et de point de récupération (RPO). Décrivez le processus de basculement sur un site de secours en cas de sinistre. Planifiez et documentez les procédures de test régulier du PRA. Mettez en place une stratégie pour assurer la continuité de service lors de la maintenance ou d'incidents non critiques.",
+            "livrable": "Un plan de reprise d'activité documenté identifiant les services critiques, définissant les RTO et RPO, décrivant le basculement sur site de secours, les procédures de test régulier et une stratégie de continuité de service."
         }
     ],
     "bibliography": [
@@ -113,7 +147,7 @@
         "AWS Well-Architected Framework (https://aws.amazon.com/architecture/well-architected/) [EN]",
         "Google Cloud Architecture Framework (https://cloud.google.com/architecture/framework) [EN]",
         "TOGAF Standard (https://www.opengroup.org/togaf) [EN]",
-        "ANSSI — Conception d'infrastructures (https://cyber.gouv.fr) [FR]"
+        "ANSSI - Conception d'infrastructures (https://cyber.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

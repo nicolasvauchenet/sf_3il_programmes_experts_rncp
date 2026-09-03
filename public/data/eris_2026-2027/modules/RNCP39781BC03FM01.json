@@ -10,7 +10,16 @@
         "durationHours": 21,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Conduire une veille active en matière de cybersécurité, en analysant régulièrement les bulletins de sécurité, les publications des organismes de référence tant francophones qu'anglophones et en partageant les fruits de ses recherches conformément aux us de l'équipe (rapport/article, réseau social interne, plateforme collaborative), afin d'anticiper les menaces et vulnérabilités émergentes et mener des actions correctives"
+        },
+        {
+            "code": "C19",
+            "description": "Participer à l'élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s'appuyant sur les standards et sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI), pour protéger les données et les systèmes de l'entreprise"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre l'importance de la veille en cybersécurité et identifier les principales menaces (Comprendre) Utiliser et analyser les informations et technologies liées à la veille pour anticiper et évaluer les risques (Analyser) Maîtriser les processus de conformité réglementaire dans un contexte multilingue (Appliquer)"
     },
@@ -32,7 +41,8 @@
                 "items": [
                     "Apprendre les différentes méthodes de collecte d'informations en veille cybersécurité",
                     "Comprendre les techniques d'analyse de ces informations pour détecter les menaces",
-                    "Connaître les outils et technologies utilisés dans la veille cybersécurité"
+                    "Connaître les outils et technologies utilisés dans la veille cybersécurité",
+                    "Exploiter des sources de veille en plusieurs langues (notamment anglais et français) et maîtriser la terminologie technique de la cybersécurité pour comparer et fiabiliser les informations collectées"
                 ]
             },
             {
@@ -64,28 +74,33 @@
     "exercises": [
         {
             "title": "Évaluation de la menace",
-            "context": "Vous êtes un analyste de cybersécurité pour une entreprise et récemment, vous avez observé une augmentation du volume de courriels suspects envoyés aux employés.",
-            "objective": "Votre tâche est de : Identifier les caractéristiques qui font de ces courriels une menace potentielle (par exemple, pièces jointes suspectes, liens vers des sites web malveillants). Évaluer l'impact potentiel d'une attaque réussie via ces courriels sur l'entreprise. Rédiger un rapport bref qui résume vos conclusions et recommande des mesures pour réduire le risque associé à ces courriels."
+            "objectif": "Être capable d'évaluer une menace de cybersécurité et d'en mesurer l'impact potentiel pour l'entreprise.",
+            "instructions": "Vous êtes analyste de cybersécurité pour une entreprise qui observe une augmentation du volume de courriels suspects envoyés aux employés. Identifiez les caractéristiques qui font de ces courriels une menace potentielle (par exemple pièces jointes suspectes, liens vers des sites web malveillants). Évaluez l'impact potentiel d'une attaque réussie via ces courriels sur l'entreprise.",
+            "livrable": "Un rapport bref résumant vos conclusions et recommandant des mesures pour réduire le risque associé à ces courriels."
         },
         {
-            "title": "Collecte d'informations",
-            "context": "Simulez une session de veille cybersécurité en utilisant des outils et des sources d'information en ligne (ouvertes) pour collecter des données sur les dernières menaces cyber-sécuritaires.",
-            "objective": "Vous devrez : Identifier au moins trois sources d'information fiables sur les menaces actuelles. Extraire des informations pertinentes concernant une menace spécifique. Présenter comment les données collectées peuvent être intégrées dans le processus de veille cybersécurité de l'entreprise."
+            "title": "Collecte d'informations à partir de sources multilingues",
+            "objectif": "Savoir collecter et exploiter des sources ouvertes en plusieurs langues (notamment anglais et français) pour alimenter la veille cybersécurité de l'entreprise et fiabiliser l'information par recoupement.",
+            "instructions": "Simulez une session de veille cybersécurité en utilisant des outils et des sources d'information en ligne (ouvertes) pour collecter des données sur les dernières menaces. Identifiez au moins trois sources d'information fiables portant sur une menace spécifique, dont au moins une source en anglais et une source en français (par exemple bulletins de CERT, avis d'éditeurs, blogs spécialisés). Extrayez les informations pertinentes de chaque source, recoupez-les et signalez les éventuels écarts entre les versions. Établissez un court lexique des principaux termes techniques rencontrés en donnant leur équivalent anglais et français afin d'assurer une compréhension homogène au sein de l'équipe.",
+            "livrable": "Une présentation montrant les sources retenues avec leur langue, les informations extraites et recoupées sur la menace choisie, un lexique bilingue (anglais-français) des termes techniques clés et la manière dont les données collectées s'intègrent dans le processus de veille cybersécurité de l'entreprise."
         },
         {
             "title": "Veille technologique",
-            "context": "Imaginez que vous êtes responsable de la veille technologique dans votre entreprise.",
-            "objective": "Votre mission est de : Identifier une technologie émergente qui pourrait influencer la cybersécurité de votre entreprise. Évaluer les risques et les avantages potentiels de cette technologie pour la sécurité informatique de votre organisation. Rédiger une synthèse à présenter à la direction, qui explique l'impact possible de cette technologie et propose une stratégie pour y faire face."
+            "objectif": "Être capable de conduire une veille technologique et d'en évaluer l'impact sur la cybersécurité de l'organisation.",
+            "instructions": "Vous êtes responsable de la veille technologique dans votre entreprise. Identifiez une technologie émergente susceptible d'influencer la cybersécurité de l'entreprise et évaluez les risques et les avantages potentiels de cette technologie pour la sécurité informatique de l'organisation.",
+            "livrable": "Une synthèse destinée à la direction expliquant l'impact possible de cette technologie et proposant une stratégie pour y faire face."
         },
         {
             "title": "Mise en place d'une veille réglementaire",
-            "context": "Votre entreprise opère dans plusieurs régions avec des réglementations en matière de cybersécurité différentes.",
-            "objective": "Créez un plan de veille réglementaire qui : Identifie les principales réglementations en vigueur dans au moins deux régions. Définit un processus pour suivre les changements législatifs et réglementaires pertinents. Propose une méthode pour s'assurer que l'entreprise reste conforme aux exigences réglementaires."
+            "objectif": "Savoir mettre en place une veille réglementaire pour maintenir la conformité dans un contexte multi-régional.",
+            "instructions": "Votre entreprise opère dans plusieurs régions soumises à des réglementations de cybersécurité différentes. Identifiez les principales réglementations en vigueur dans au moins deux régions et définissez un processus pour suivre les changements législatifs et réglementaires pertinents.",
+            "livrable": "Un plan de veille réglementaire présentant les réglementations identifiées, le processus de suivi des évolutions et une méthode pour s'assurer que l'entreprise reste conforme aux exigences réglementaires."
         },
         {
             "title": "Analyse de logs",
-            "context": "On vous a fourni un ensemble de logs (fichiers journaux) de divers systèmes et dispositifs de sécurité au sein de votre entreprise après une suspicion d'activité malveillante.",
-            "objective": "Vous devez : Utiliser les techniques d'analyse de logs pour identifier les anomalies ou les comportements suspects. Corréler les données des logs avec des événements de sécurité connus pour déterminer s'il y a eu une violation. Écrire un rapport d'incident qui décrit vos découvertes, les méthodes utilisées pour l'analyse et les mesures recommandées pour répondre à l'incident."
+            "objectif": "Être capable d'analyser des logs pour détecter une activité malveillante et caractériser un incident.",
+            "instructions": "On vous fournit un ensemble de logs (fichiers journaux) de divers systèmes et dispositifs de sécurité de l'entreprise, à la suite d'une suspicion d'activité malveillante. Utilisez les techniques d'analyse de logs pour identifier les anomalies ou comportements suspects, puis corrélez les données des logs avec des événements de sécurité connus pour déterminer s'il y a eu une violation.",
+            "livrable": "Un rapport d'incident décrivant vos découvertes, les méthodes utilisées pour l'analyse et les mesures recommandées pour répondre à l'incident."
         }
     ],
     "bibliography": [
@@ -106,8 +121,8 @@
         "MITRE ATT&CK (https://attack.mitre.org) [EN]",
         "CERT-FR (https://www.cert.ssi.gouv.fr) [FR]",
         "ENISA Threat Landscape (https://www.enisa.europa.eu) [EN]",
-        "Feedly — Veille RSS (https://feedly.com) [EN]",
-        "ANSSI — Panorama des menaces (https://cyber.gouv.fr) [FR]"
+        "Feedly - Veille RSS (https://feedly.com) [EN]",
+        "ANSSI - Panorama des menaces (https://cyber.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

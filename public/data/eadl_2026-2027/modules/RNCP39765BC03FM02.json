@@ -10,7 +10,28 @@
         "durationHours": 35,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines (CI/CD) en automatisant les processus d'intégration et de déploiement continus en utilisant des outils de conteneurisation et d'orchestration pour réduire les erreurs, accélérer les livraisons, les déploiements et assurer une qualité constante des livrables"
+        },
+        {
+            "code": "C17",
+            "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des Frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution"
+        },
+        {
+            "code": "C18",
+            "description": "Intégrer des pratiques de sécurité DevSecOps tout au long du cycle de développement logiciel par la mise en œuvre d'outils d'analyse et de sécurité tel que OWASP zap, Burp Suite pour identifier et corriger les vulnérabilités, assurer la conformité aux normes de sécurité et protéger les applications contre les menaces courantes"
+        },
+        {
+            "code": "C19",
+            "description": "Optimiser les développements et Structurer l'application en code modulaire en adoptant les pratiques de Clean Code, des revues de code régulières et des outils d'analyse tel que SonarQube ou DeepScan pour identifier et corriger les problèmes de qualité afin d'assurer la maintenabilité et Identifier et mettre en œuvre des améliorations pour optimiser les performances et l'efficacité des développements"
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en place, rédiger et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en suivant les meilleures pratiques de documentation et en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes et minimiser la dette technique. BLOC 4 : Optimiser le Système d'Information (SI) par l'apport du Cloud Computing"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et la méthodologie de l'eXtreme Programming pour optimiser le développement logiciel (Comprendre) Identifier les rôles et responsabilités au sein d'une équipe XP pour assurer une collaboration efficace (Analyser) Mettre en œuvre les pratiques de tests et de qualité pour améliorer la fiabilité et la maintenabilité du code (Appliquer)"
     },
@@ -74,23 +95,27 @@
     "exercises": [
         {
             "title": "Application des principes et valeurs de l'eXtreme Programming",
-            "context": "En utilisant un projet concret ou fictif, identifiez et expliquez comment chaque principe et valeur de l'eXtreme Programming peut être mis en œuvre dans le contexte de ce projet.",
-            "objective": "Présentez vos conclusions sous forme de rapport ou de présentation."
+            "objectif": "Savoir mettre en œuvre les principes et valeurs de l'eXtreme Programming dans un projet.",
+            "instructions": "À partir d'un projet concret ou fictif, identifier et expliquer comment chaque principe et valeur de l'eXtreme Programming peut être mis en œuvre dans le contexte de ce projet.",
+            "livrable": "Un rapport ou une présentation exposant les conclusions et montrant la mise en œuvre de chaque principe et valeur de l'eXtreme Programming."
         },
         {
             "title": "Planification des itérations et gestion des risques",
-            "context": "À l'aide d'un scénario de projet, créez un plan d'itération pour une phase de développement spécifique.",
-            "objective": "Identifiez les risques liés à cette itération et proposez des stratégies pour les atténuer. Présentez votre plan d'itération et votre analyse des risques."
+            "objectif": "Être capable de planifier des itérations et de gérer les risques associés.",
+            "instructions": "À l'aide d'un scénario de projet, créer un plan d'itération pour une phase de développement spécifique, identifier les risques liés à cette itération et proposer des stratégies pour les atténuer.",
+            "livrable": "Un plan d'itération accompagné d'une analyse des risques et des stratégies d'atténuation."
         },
         {
             "title": "Élaboration de tests et mesure de la qualité du code",
-            "context": "Sélectionnez un cas d'utilisation ou une fonctionnalité d'un projet existant ou fictif et élaborez une suite de tests unitaires, d'intégration et fonctionnels pour cette fonctionnalité.",
-            "objective": "En outre, proposez des métriques pour mesurer la qualité du code applicable à cette fonctionnalité."
+            "objectif": "Être capable d'élaborer des tests et de mesurer la qualité du code.",
+            "instructions": "Sélectionner un cas d'utilisation ou une fonctionnalité d'un projet existant ou fictif et élaborer une suite de tests unitaires, d'intégration et fonctionnels pour cette fonctionnalité; proposer des métriques pour mesurer la qualité du code applicable.",
+            "livrable": "Une suite de tests (unitaires, d'intégration et fonctionnels) et un ensemble de métriques de qualité du code pour la fonctionnalité retenue."
         },
         {
             "title": "Conception émergente et développement collaboratif",
-            "context": "Imaginez une situation de développement où une conception initiale doit être modifiée en raison de nouvelles exigences ou de découvertes pendant le développement.",
-            "objective": "Utilisez le concept de refactoring pour ajuster la conception initiale et décrivez comment le Pair Programming peut être bénéfique dans ce scénario."
+            "objectif": "Comprendre la conception émergente et le développement collaboratif par le refactoring et le Pair Programming.",
+            "instructions": "Imaginer une situation de développement où une conception initiale doit être modifiée en raison de nouvelles exigences ou de découvertes pendant le développement; utiliser le refactoring pour ajuster la conception initiale et décrire en quoi le Pair Programming peut être bénéfique dans ce scénario.",
+            "livrable": "Une description du scénario montrant l'ajustement de la conception par refactoring et l'apport du Pair Programming."
         }
     ],
     "bibliography": [
@@ -108,11 +133,11 @@
         }
     ],
     "OnlineResources": [
-        "Extreme Programming — Don Wells (http://www.extremeprogramming.org) [EN]",
-        "Agile Alliance — XP Resources (https://www.agilealliance.org/glossary/xp/) [EN]",
-        "Martin Fowler — Extreme Programming (https://martinfowler.com/bliki/ExtremeProgramming.html) [EN]",
+        "Extreme Programming - Don Wells (http://www.extremeprogramming.org) [EN]",
+        "Agile Alliance - XP Resources (https://www.agilealliance.org/glossary/xp/) [EN]",
+        "Martin Fowler - Extreme Programming (https://martinfowler.com/bliki/ExtremeProgramming.html) [EN]",
         "Craftsmanship Manifesto (https://manifesto.softwarecraftsmanship.org) [EN]",
-        "developpez.com — Méthodes Agiles (https://agile.developpez.com) [FR]"
+        "developpez.com - Méthodes Agiles (https://agile.developpez.com) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

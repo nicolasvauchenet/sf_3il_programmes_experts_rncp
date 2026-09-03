@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC02-FM01",
+        "title": "Infrastructures réseaux sécurisées",
+        "rncpCode": "39611",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l'infrastructure réseau et les solutions cloud",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C09",
+            "description": "Configurer l'infrastructure réseau à l'aide de protocoles et d'équipements adaptés aux besoins fonctionnels et en collaboration avec l'équipe réseau, pour assurer une connectivité fluide et sécurisée du système d'information."
+        },
+        {
+            "code": "C10",
+            "description": "Déployer les solutions de télécommunications, de réseaux de données et voix, en supervisant l'installation et la configuration dans l'environnement de production, en collaboration avec les équipes techniques et les fournisseurs, pour garantir l'efficacité des communications internes et externes et assurer la continuité des services."
+        },
+        {
+            "code": "C11",
+            "description": "Superviser et assurer la maintenance du réseau en utilisant des systèmes de monitoring, en collaboration avec les équipes de sécurité informatique et d'exploitation, pour maintenir une performance réseau optimale."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module de cours sont de permettre aux apprenants de configurer et maintenir des réseaux Voix/data ainsi que des VLAN, de renforcer la sécurité réseau à l'aide d'équipements avancés et de solutions VPN, et d'automatiser les processus réseautiques pour améliorer l'efficience opérationnelle."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en réseaux informatiques, compréhension des protocoles IP et expérience préalable avec des équipements de réseau tels que routeurs et switches."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Configuration et maintenance des réseaux Voix/data et VLAN",
+                "items": [
+                    "Comprendre les principes de segmentation réseau",
+                    "Maîtriser la configuration des réseaux Voix/data",
+                    "Savoir mettre en place et gérer des VLAN",
+                    "Assurer la maintenance des réseaux Voix/data et VLAN",
+                    "Appliquer une segmentation réseau stratégique"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Les solutions VPN pour établir des réseaux privés virtuels sécurisés",
+                "items": [
+                    "Comprendre le fonctionnement des VPN",
+                    "Maîtriser l'installation et la configuration des VPN",
+                    "Assurer la sécurité des échanges de données via les VPN",
+                    "Gérer les réseaux privés virtuels au sein de l'entreprise",
+                    "Mettre en place une politique de sécurité adaptée aux VPN"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Renforcement de la sécurité réseau avec des équipements avancés",
+                "items": [
+                    "Connaître les solutions de sécurité réseau Cisco, Stormshield et Fortinet",
+                    "Savoir configurer et administrer ces équipements avancés",
+                    "Assurer la protection des données et des échanges via ces équipements",
+                    "Mettre en place des stratégies de sécurité adaptées aux besoins de l'entreprise",
+                    "Garantir une connectivité fiable et sécurisée grâce à ces équipements"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Automatisation des processus réseautiques",
+                "items": [
+                    "Comprendre l'importance de l'automatisation dans l'efficience opérationnelle",
+                    "Maîtriser les outils d'automatisation des processus réseautiques",
+                    "Mettre en place des processus automatisés pour augmenter l'efficacité",
+                    "Assurer la supervision et la maintenance des processus automatisés",
+                    "Adapter l'automatisation aux besoins spécifiques de l'infrastructure réseau"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Supervision proactive des réseaux",
+                "items": [
+                    "Savoir utiliser les outils de surveillance tels que Wireshark, Prometheus et Zabbix",
+                    "Assurer une surveillance continue et proactive des réseaux",
+                    "Réagir rapidement aux incidents grâce à une supervision proactive",
+                    "Optimiser la performance réseau en accord avec les besoins du système d'information",
+                    "Mettre en place des mesures préventives basées sur la supervision proactive"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Configuration des réseaux Voix/data et VLAN",
+            "context": "Vous avez la charge de configurer un réseau d'entreprise en mettant en place des réseaux Voix/data et des VLAN.",
+            "objective": "Identifier les besoins spécifiques liés à la séparation des réseaux Voix et Data. Configurer les équipements réseau pour assurer une segmentation efficace. Mettre en place des VLAN pour optimiser la gestion du trafic réseau. Assurer la maintenance des réseaux Voix/data et des VLAN en cas de dysfonctionnement."
+        },
+        {
+            "title": "Mise en place d'un réseau privé virtuel (VPN)",
+            "context": "Vous devez mettre en place un VPN pour assurer la sécurité des échanges de données au sein de l'entreprise.",
+            "objective": "Sélectionner le type de VPN le plus adapté aux besoins de l'entreprise. Installer et configurer le VPN sur les équipements réseau concernés. Mettre en place des politiques de sécurité pour garantir la confidentialité des communications. Mettre en œuvre une gestion efficace des réseaux privés virtuels au sein de l'entreprise."
+        },
+        {
+            "title": "Configuration d'équipements avancés de sécurité réseau",
+            "context": "Vous devez configurer des équipements avancés de sécurité réseau (tels que Cisco, Stormshield ou Fortinet) pour garantir la protection des données et des échanges.",
+            "objective": "Comprendre le fonctionnement des équipements de sécurité sélectionnés. Configurer ces équipements pour répondre aux besoins spécifiques de l'entreprise. Mettre en place des stratégies de sécurité adaptées aux menaces potentielles. Assurer une connectivité fiable et sécurisée grâce à ces équipements."
+        },
+        {
+            "title": "Automatisation des processus réseautiques",
+            "context": "Vous devez mettre en place des processus automatisés pour augmenter l'efficacité opérationnelle du réseau.",
+            "objective": "Identifier les processus réseautiques qui peuvent bénéficier de l'automatisation. Sélectionner les outils d'automatisation adaptés aux besoins spécifiques de l'infrastructure réseau. Mettre en place ces processus automatisés et les superviser régulièrement. Adapter l'automatisation aux besoins évolutifs de l'infrastructure réseau."
+        },
+        {
+            "title": "Supervision proactive des réseaux",
+            "context": "Vous devez mettre en place une surveillance proactive des réseaux en utilisant des outils tels que Wireshark, Prometheus et Zabbix.",
+            "objective": "Configurer ces outils de surveillance pour collecter les données pertinentes. Assurer une surveillance continue et proactive des performances réseau. Réagir rapidement aux incidents détectés grâce à une supervision proactive. Mettre en place des mesures préventives basées sur l'analyse des données de supervision."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Réseaux : Cours et exercices corrigés",
+            "author": "Olivier Bonaventure, Dunod, 2016."
+        },
+        {
+            "title": "Les réseaux numériques de données : Internet et les réseaux de télécommunications",
+            "author": "Jean-Philippe Lemaire, Hermès Science Publications, 2013."
+        },
+        {
+            "title": "Les Réseaux",
+            "author": "Guy Pujolle, Eyrolles, 2015."
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

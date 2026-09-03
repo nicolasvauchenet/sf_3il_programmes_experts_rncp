@@ -10,7 +10,24 @@
         "durationHours": 35,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s'adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d'assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs"
+        },
+        {
+            "code": "C27",
+            "description": "Élaborer et mettre en œuvre la conduite du changement en s'appuyant sur des référentiels tels qu'ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l'impact d'une évolution (mineure, delta ou majeure) de l'infrastructure sur l'environnement de production"
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l'équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l'écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les fondamentaux du management de projet (Comprendre) Planifier, suivre et contrôler efficacement un projet (Appliquer) Développer des compétences en gestion des risques et en clôture de projet (Évaluer)"
     },
@@ -36,7 +53,8 @@
                     "Les étapes de la planification du projet",
                     "La construction d'un diagramme de Gantt",
                     "L'estimation des ressources et des délais",
-                    "La gestion des risques dans la planification"
+                    "La gestion des risques dans la planification",
+                    "Les approches agiles de planification (Scrum, Kanban) : backlog, sprints et cadence itérative, complémentarité avec la planification prédictive"
                 ]
             },
             {
@@ -74,28 +92,33 @@
     "exercises": [
         {
             "title": "Définition et Initialisation du Projet (Chapitre 1)",
-            "context": "Vous venez d'être nommé chef de projet pour le lancement d'un nouveau produit au sein de votre entreprise.",
-            "objective": "Rédigez un document d'initialisation de projet qui comprendra : Une définition claire du projet, incluant ses objectifs et ses livrables attendus. Une liste des principales caractéristiques de ce projet (par exemple, sa durée estimée, les ressources nécessaires, etc.). Une discussion sur les principaux enjeux du management de ce projet spécifique. La définition des rôles et responsabilités au sein de l'équipe projet, y compris le vôtre. Une réflexion sur les compétences clés que vous et votre équipe devrez développer ou mobiliser pour mener à bien ce projet."
+            "objectif": "Être capable de rédiger un document d'initialisation définissant un projet, ses rôles et ses enjeux.",
+            "instructions": "Vous venez d'être nommé chef de projet pour le lancement d'un nouveau produit au sein de votre entreprise. Rédigez un document d'initialisation de projet comprenant : une définition claire du projet, incluant ses objectifs et ses livrables attendus ; une liste des principales caractéristiques du projet (durée estimée, ressources nécessaires, etc.) ; une discussion sur les principaux enjeux du management de ce projet ; la définition des rôles et responsabilités au sein de l'équipe projet, y compris le vôtre ; et une réflexion sur les compétences clés que vous et votre équipe devrez développer ou mobiliser pour mener à bien ce projet.",
+            "livrable": "Un document d'initialisation de projet présentant la définition du projet (objectifs et livrables), ses caractéristiques principales, ses enjeux de management, les rôles et responsabilités de l'équipe et les compétences clés à mobiliser."
         },
         {
-            "title": "Planification du Projet (Chapitre 2)",
-            "context": "Élaborez un plan pour le projet défini à l'exercice 1.",
-            "objective": "Votre plan doit inclure : Les différentes étapes de la planification du projet avec une brève description de chacune. Un diagramme de Gantt qui illustre la chronologie du projet, les tâches principales, les dépendances entre tâches et les jalons. Une estimation des ressources (humaines, matérielles et financières) nécessaires pour chaque phase du projet. Une évaluation des délais associés à chaque tâche et phase du projet. Un plan de gestion des risques initial, où vous identifierez au moins trois risques et proposerez des stratégies pour les mitiger."
+            "title": "Planification du Projet - approche prédictive et approche agile",
+            "objectif": "Être capable d'élaborer un plan de projet selon une approche prédictive puis de le décliner en approche agile, et de justifier le choix d'un mode de planification adapté au contexte.",
+            "instructions": "Élaborez le plan du projet défini à l'exercice 1 en deux volets complémentaires. Volet prédictif : présentez les différentes étapes de la planification avec une brève description de chacune ; construisez un diagramme de Gantt illustrant la chronologie du projet, les tâches principales, les dépendances entre tâches et les jalons ; estimez les ressources humaines, matérielles et financières par phase ; évaluez les délais associés à chaque tâche et phase ; et proposez un plan de gestion des risques initial identifiant au moins trois risques avec des stratégies d'atténuation. Volet agile : déclinez ce même projet selon une approche agile en constituant un backlog priorisé d'au moins huit éléments, en organisant le travail en sprints (cadence itérative, définition d'un incrément livrable) et en représentant le flux des tâches sur un tableau Kanban (colonnes et limites d'en-cours). Concluez par une analyse comparative d'une demi-page justifiant, selon les caractéristiques du projet (incertitude des besoins, délais, implication du client), l'approche de planification la plus adaptée ou la manière de combiner les deux.",
+            "livrable": "Un plan de projet en deux volets : un volet prédictif (étapes de planification, diagramme de Gantt avec tâches, dépendances et jalons, estimation des ressources et des délais, plan de gestion des risques d'au moins trois risques) et un volet agile (backlog priorisé d'au moins huit éléments, organisation en sprints à cadence itérative, tableau Kanban avec limites d'en-cours), accompagnés d'une analyse comparative justifiant le choix ou la combinaison des approches selon le contexte du projet."
         },
         {
             "title": "Suivi et Contrôle du Projet (Chapitre 3)",
-            "context": "Imaginez que le projet que vous gérez est maintenant à mi-parcours.",
-            "objective": "Créez un tableau de bord de suivi du projet qui devra inclure : Les indicateurs de performance clés (KPIs) pour évaluer l'avancement du projet. Un système de reporting pour les écarts et déviations par rapport sur le plan initial. Une analyse de cas où une déviation a été identifiée, et la technique de contrôle que vous utiliseriez pour y remédier. Un exemple de communication que vous adresseriez à l'équipe projet et aux parties prenantes pour les informer de l'état actuel du projet. Des propositions d'ajustements du plan pour corriger les écarts identifiés."
+            "objectif": "Être capable de mettre en place un tableau de bord de suivi et de contrôle d'un projet.",
+            "instructions": "Le projet que vous gérez est maintenant à mi-parcours. Créez un tableau de bord de suivi du projet comprenant : les indicateurs de performance clés (KPI) permettant d'évaluer l'avancement du projet ; un système de reporting des écarts et déviations par rapport au plan initial ; une analyse d'un cas où une déviation a été identifiée, précisant la technique de contrôle que vous utiliseriez pour y remédier ; un exemple de communication à adresser à l'équipe projet et aux parties prenantes pour les informer de l'état actuel du projet ; et des propositions d'ajustements du plan pour corriger les écarts identifiés.",
+            "livrable": "Un tableau de bord de suivi de projet présentant les KPI, le système de reporting des écarts, l'analyse d'une déviation et sa technique de contrôle, un exemple de communication aux parties prenantes et des propositions d'ajustements du plan."
         },
         {
             "title": "Gestion des Risques et des Problèmes (Chapitre 4)",
-            "context": "Partant du plan de gestion des risques élaboré dans l'exercice 2, réalisez les tâches suivantes : Menez une session de brainstorming avec votre équipe et identifiez 5 risques supplémentaires qui pourraient affecter le projet.",
-            "objective": "Évaluez ces risques en termes de probabilité et d'impact. Développez des stratégies de réponse pour chacun des cinq risques identifiés, en précisant si vous comptez les éviter, les transférer, les atténuer ou les accepter. Mettez en place un plan d'action pour le cas où un des risques identifiés se concrétise, en décrivant les étapes que vous prendriez pour gérer le problème. Discutez de l'impact potentiel des risques sur la réussite du projet et intégrez des mesures correctives dans votre plan de projet global."
+            "objectif": "Être capable d'identifier, d'évaluer et de traiter les risques d'un projet par des stratégies de réponse adaptées.",
+            "instructions": "En partant du plan de gestion des risques élaboré à l'exercice 2, réalisez les tâches suivantes : menez une session de brainstorming avec votre équipe et identifiez cinq risques supplémentaires susceptibles d'affecter le projet ; évaluez ces risques en termes de probabilité et d'impact ; développez une stratégie de réponse pour chacun des cinq risques en précisant si vous comptez les éviter, les transférer, les atténuer ou les accepter ; mettez en place un plan d'action pour le cas où l'un des risques se concrétiserait, en décrivant les étapes de gestion du problème ; et discutez de l'impact potentiel des risques sur la réussite du projet en intégrant des mesures correctives dans votre plan de projet global.",
+            "livrable": "Un dossier de gestion des risques présentant cinq risques supplémentaires évalués en probabilité et impact, une stratégie de réponse par risque (éviter, transférer, atténuer, accepter), un plan d'action en cas de concrétisation et les mesures correctives intégrées au plan de projet."
         },
         {
             "title": "Clôture du Projet (Chapitre 5)",
-            "context": "Le projet que vous gérez est maintenant terminé.",
-            "objective": "Pour clore le projet, effectuez les actions suivantes : Dressez la liste des étapes que vous suivrez pour la clôture formelle du projet. Rédigez un rapport de clôture qui inclut une analyse des résultats obtenus par rapport aux objectifs initiaux, ainsi que les leçons apprises durant le projet. Organisez les documents finaux et les livrables du projet pour qu'ils soient facilement accessibles pour les futurs projets. Concevez un plan pour célébrer les succès du projet et reconnaître les contributions des membres de l'équipe, en proposant des idées concrètes pour une reconnaissance significative."
+            "objectif": "Être capable de conduire la clôture formelle d'un projet et d'en capitaliser les enseignements.",
+            "instructions": "Le projet que vous gérez est maintenant terminé. Pour le clore, effectuez les actions suivantes : dressez la liste des étapes à suivre pour la clôture formelle du projet ; rédigez un rapport de clôture incluant une analyse des résultats obtenus au regard des objectifs initiaux ainsi que les leçons apprises ; organisez les documents finaux et les livrables du projet afin qu'ils soient facilement accessibles pour les futurs projets ; et concevez un plan pour célébrer les succès du projet et reconnaître les contributions des membres de l'équipe, en proposant des idées concrètes de reconnaissance significative.",
+            "livrable": "Un dossier de clôture comprenant la liste des étapes de clôture formelle, le rapport de clôture (résultats au regard des objectifs et leçons apprises), l'organisation des documents et livrables finaux, et un plan de reconnaissance de l'équipe."
         }
     ],
     "bibliography": [
@@ -109,11 +132,11 @@
         }
     ],
     "OnlineResources": [
-        "PMI — PMBOK Guide (https://www.pmi.org) [EN]",
+        "PMI - PMBOK Guide (https://www.pmi.org) [EN]",
         "PRINCE2 (https://www.axelos.com) [EN]",
         "Atlassian Agile Coach (https://www.atlassian.com/agile) [EN]",
         "AFITEP (https://www.afitep.org) [FR]",
-        "DINUM — Guide projets (https://www.numerique.gouv.fr) [FR]"
+        "DINUM - Guide projets (https://www.numerique.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

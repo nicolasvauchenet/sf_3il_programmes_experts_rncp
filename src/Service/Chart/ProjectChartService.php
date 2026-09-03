@@ -20,17 +20,17 @@ final readonly class ProjectChartService
     public function createProjectVolumeChart(ResolvedProjectSheet $project): Chart
     {
         $skillsCount = count($project->skills);
+        $modulesCount = count($project->modules);
         $evaluationsCount = count($project->evaluations);
-        $exercisesCount = count($project->exercises);
 
         $chart = $this->chartBuilder->createChart(Chart::TYPE_BAR);
 
         $chart->setData([
-            'labels' => ['Compétences', 'Évaluations', 'Exercices'],
+            'labels' => ['Compétences', 'Matières', 'Évaluations'],
             'datasets' => [
                 [
                     'label' => 'Volumétrie du projet',
-                    'data' => [$skillsCount, $evaluationsCount, $exercisesCount],
+                    'data' => [$skillsCount, $modulesCount, $evaluationsCount],
                     'backgroundColor' => [
                         $this->hexToRgba(self::COLOR_BLUE, 1),
                         $this->hexToRgba(self::COLOR_ORANGE, 1),

@@ -86,29 +86,34 @@
     },
     "exercises": [
         {
-            "title": "Exercice 1",
-            "context": "Dans cet exercice, les apprenants auront pour tâche de présenter une définition claire et concise du Machine Learning ainsi que ses domaines d'application.",
-            "objective": "Ensuite, ils devront expliquer les différences entre l'apprentissage supervisé et non supervisé en illustrant chaque type par un exemple concret. Enfin, ils devront identifier au moins deux types de modèles de Machine Learning et expliquer brièvement dans quels cas chaque type de modèle est utilisé."
+            "title": "Fondamentaux du Machine Learning",
+            "objectif": "Savoir définir le Machine Learning et distinguer ses types d'apprentissage et ses modèles.",
+            "instructions": "Présentez une définition claire et concise du Machine Learning ainsi que ses domaines d'application. Expliquez ensuite les différences entre l'apprentissage supervisé et non supervisé en illustrant chaque type par un exemple concret. Enfin, identifiez au moins deux types de modèles de Machine Learning et expliquez brièvement dans quels cas chaque type de modèle est utilisé.",
+            "livrable": "Un document présentant la définition et les domaines d'application du Machine Learning, la distinction entre apprentissage supervisé et non supervisé illustrée d'exemples, et au moins deux types de modèles avec leurs cas d'usage."
         },
         {
-            "title": "Exercice 2",
-            "context": "Les apprenants auront pour mission de choisir un exemple d'application du Machine Learning dans le domaine professionnel et de décrire les différentes étapes du processus de Machine Learning impliquées dans ce cas d'usage spécifique.",
-            "objective": "Ils devront également expliquer l'importance de chaque étape dans la réussite du projet."
+            "title": "Étapes du processus de Machine Learning",
+            "objectif": "Être capable de décrire les étapes du processus de Machine Learning sur un cas d'usage professionnel.",
+            "instructions": "Choisissez un exemple d'application du Machine Learning dans le domaine professionnel et décrivez les différentes étapes du processus de Machine Learning impliquées dans ce cas d'usage spécifique. Expliquez également l'importance de chaque étape dans la réussite du projet.",
+            "livrable": "La description des étapes du processus de Machine Learning appliquées au cas d'usage choisi, précisant l'importance de chaque étape pour la réussite du projet."
         },
         {
-            "title": "Exercice 3",
-            "context": "Dans cet exercice, les apprenants seront amenés à réfléchir aux différentes stratégies de gestion des mises à jour et du versioning des modèles déployés.",
-            "objective": "Ils devront élaborer un plan détaillé pour gérer efficacement les mises à jour des modèles en production et assurer un versioning adéquat."
+            "title": "Feature engineering et préparation des données",
+            "objectif": "Être capable de préparer un jeu de données et de construire des variables explicatives pertinentes pour l'entraînement d'un modèle de Machine Learning.",
+            "instructions": "À partir d'un jeu de données fourni, réalisez le nettoyage et le prétraitement des données (gestion des valeurs manquantes, encodage des variables catégorielles, normalisation ou standardisation). Menez une phase de feature engineering en créant, transformant et sélectionnant des variables explicatives pertinentes, et justifiez leurs apports au regard du problème à modéliser. Analysez les corrélations et l'importance des variables retenues.",
+            "livrable": "Un notebook ou un script documenté présentant le prétraitement des données, les variables construites et sélectionnées, ainsi que la justification de leur pertinence pour la modélisation."
         },
         {
-            "title": "Exercice 4",
-            "context": "Les apprenants auront pour défi de concevoir un pipeline d'intégration continue et de déploiement continu adapté au contexte du Machine Learning.",
-            "objective": "Ils devront identifier les étapes clés du processus, les outils et les technologies nécessaires, ainsi que les bonnes pratiques à suivre pour assurer un déploiement fluide des modèles."
+            "title": "Entraînement et optimisation d'un modèle de Machine Learning",
+            "objectif": "Être capable d'entraîner un modèle de Machine Learning et d'en optimiser les hyperparamètres sur un cas d'usage donné.",
+            "instructions": "Sur le jeu de données préparé, choisissez un ou plusieurs algorithmes adaptés au problème (régression, classification ou clustering) et entraînez les modèles correspondants. Mettez en place une stratégie de division des données (entraînement, validation, test) et optimisez les hyperparamètres à l'aide d'une technique appropriée (recherche par grille ou validation croisée). Comparez les modèles obtenus et sélectionnez le plus performant en argumentant votre choix.",
+            "livrable": "Un notebook ou un script présentant l'entraînement des modèles, la stratégie de division des données, l'optimisation des hyperparamètres et le choix argumenté du modèle retenu."
         },
         {
-            "title": "Exercice 5",
-            "context": "Pour cet exercice, les apprenants devront analyser un cas concret de déploiement et de gestion de modèles de Machine Learning en production.",
-            "objective": "Ils devront identifier les bonnes pratiques mises en œuvre, les défis rencontrés et les leçons apprises. En se basant sur cette étude de cas, ils devront proposer des recommandations pour améliorer l'efficacité des processus MLOps et optimiser les modèles en production."
+            "title": "Évaluation et interprétation d'un modèle de Machine Learning",
+            "objectif": "Être capable d'évaluer les performances d'un modèle de Machine Learning et d'en interpréter les résultats.",
+            "instructions": "Évaluez le modèle retenu à l'exercice précédent sur le jeu de test à l'aide de métriques adaptées au type de problème (par exemple exactitude, précision, rappel, F1-score et matrice de confusion pour la classification, ou RMSE et R2 pour la régression). Analysez les cas d'erreur, contrôlez l'éventuel surapprentissage et interprétez l'importance des variables pour expliquer le comportement du modèle. Formulez des recommandations d'amélioration.",
+            "livrable": "Un rapport d'évaluation présentant les métriques de performance, l'analyse des erreurs et du surapprentissage, l'interprétation de l'importance des variables et des recommandations d'amélioration du modèle."
         }
     ],
     "bibliography": [
@@ -121,8 +126,8 @@
         "scikit-learn Documentation (https://scikit-learn.org/stable/documentation.html) [FR/EN]",
         "TensorFlow Documentation (https://www.tensorflow.org/learn) [FR/EN]",
         "PyTorch Documentation (https://pytorch.org/docs/) [EN]",
-        "Kaggle — Competitions and Learning (https://www.kaggle.com) [EN]",
-        "Coursera — Machine Learning par Stanford (https://www.coursera.org) [EN]"
+        "Kaggle - Competitions and Learning (https://www.kaggle.com) [EN]",
+        "Coursera - Machine Learning par Stanford (https://www.coursera.org) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

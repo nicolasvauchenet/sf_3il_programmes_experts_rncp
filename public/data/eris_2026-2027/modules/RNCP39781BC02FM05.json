@@ -70,7 +70,7 @@
                 "title": "Chapitre 4 : Orchestration de conteneurs et gestion de clusters",
                 "items": [
                     "Comprendre le concept d'orchestration de conteneurs",
-                    "Présenter les principaux outils d'orchestration de conteneurs (ex : Kubernetes, Docker Swarm)",
+                    "Présenter les principaux outils d'orchestration de conteneurs (Kubernetes comme standard ; Docker Swarm à titre historique)",
                     "Configurer un cluster de conteneurs à l'aide d'un outil d'orchestration",
                     "Gérer la scalabilité et la haute disponibilité à l'aide de l'orchestration de conteneurs",
                     "Analyser les enjeux de la sécurité liés à l'orchestration de conteneurs"
@@ -90,7 +90,7 @@
                 "title": "Chapitre 6 : Gestion de la configuration",
                 "items": [
                     "Comprendre l'importance de la gestion de la configuration dans un environnement automatisé",
-                    "Présenter les outils de gestion de la configuration (ex : Ansible, Puppet, Chef)",
+                    "Présenter les outils de gestion de la configuration (Ansible comme référence et approches GitOps ; Puppet et Chef à titre historique)",
                     "Mettre en place des playbooks ou des recettes pour automatiser la gestion de la configuration",
                     "Analyser les avantages de la gestion de la configuration par rapport à des méthodes manuelles",
                     "Gérer les versions et les changements de configuration de manière efficace"
@@ -101,28 +101,39 @@
     "exercises": [
         {
             "title": "Scénario d'automatisation DevOps",
-            "context": "Vous êtes chargé de créer un scénario d'automatisation pour une nouvelle application web.",
-            "objective": "Votre objectif est de réduire le temps de mise sur le marché et de garantir une qualité constante. Écrivez un script qui utilise un outil DevOps pour automatiser le clonage d'un dépôt Git, installer les dépendances de l'application et déployer l'application sur un serveur de test. Assurez-vous que votre script inclut des validations pour vérifier le succès de chaque étape. Documentez votre script pour expliquer chaque commande et son rôle dans le processus d'automatisation."
+            "objectif": "Être capable d'automatiser le déploiement d'une application à l'aide d'un outil DevOps.",
+            "instructions": "Vous êtes chargé de créer un scénario d'automatisation pour une nouvelle application web afin de réduire le temps de mise sur le marché et de garantir une qualité constante. Écrivez un script qui utilise un outil DevOps pour automatiser le clonage d'un dépôt Git, l'installation des dépendances de l'application et le déploiement de l'application sur un serveur de test. Assurez-vous que votre script inclut des validations pour vérifier le succès de chaque étape. Documentez votre script pour expliquer chaque commande et son rôle dans le processus d'automatisation.",
+            "livrable": "Un script d'automatisation documenté réalisant le clonage du dépôt Git, l'installation des dépendances et le déploiement sur un serveur de test, avec des validations vérifiant le succès de chaque étape."
         },
         {
             "title": "Mise en œuvre de l'Intégration Continue (CI)",
-            "context": "Imaginez que vous travaillez sur un projet où le code source évolue fréquemment.",
-            "objective": "Vous devez mettre en place un pipeline d'intégration continue. Créez un pipeline CI à l'aide d'un outil comme Jenkins, GitLab CI ou CircleCI. Configurez le pipeline pour qu'il lance automatiquement la compilation du code et exécute un ensemble de tests unitaires à chaque push dans le dépôt. Préparez un rapport de test qui est généré après chaque build et qui peut être consulté par l'équipe de développement. Décrivez comment ce pipeline CI sera bénéfique pour l'équipe de développement et les parties prenantes du projet."
+            "objectif": "Être capable de mettre en place un pipeline d'intégration continue.",
+            "instructions": "Vous travaillez sur un projet où le code source évolue fréquemment et devez mettre en place un pipeline d'intégration continue. Créez un pipeline CI à l'aide d'un outil comme Jenkins, GitLab CI ou CircleCI. Configurez le pipeline pour qu'il lance automatiquement la compilation du code et exécute un ensemble de tests unitaires à chaque push dans le dépôt. Préparez un rapport de test généré après chaque build et consultable par l'équipe de développement. Décrivez comment ce pipeline CI sera bénéfique pour l'équipe et les parties prenantes du projet.",
+            "livrable": "Un pipeline CI opérationnel déclenchant la compilation et les tests unitaires à chaque push, produisant un rapport de test consultable, accompagné d'une description de ses bénéfices pour l'équipe et les parties prenantes."
         },
         {
             "title": "Infrastructure as Code (IaC) avec Terraform",
-            "context": "Vous devez déployer une infrastructure pour une application sur le cloud en utilisant le principe d'Infrastructure as Code avec Terraform.",
-            "objective": "Écrivez un fichier de configuration Terraform pour provisionner une instance de serveur web (par exemple, sur AWS, GCP ou Azure) et une base de données associée. Assurez-vous d'inclure les règles de sécurité nécessaires pour que seul le serveur web puisse accéder à la base de données. Décrivez les étapes pour déployer cette infrastructure à l'aide de votre fichier de configuration Terraform. Expliquez comment IaC améliore la cohérence et l'efficacité de la gestion de l'infrastructure."
+            "objectif": "Être capable de provisionner une infrastructure cloud avec Terraform selon le principe d'Infrastructure as Code.",
+            "instructions": "Vous devez déployer une infrastructure pour une application sur le cloud en utilisant le principe d'Infrastructure as Code avec Terraform. Écrivez un fichier de configuration Terraform pour provisionner une instance de serveur web (par exemple, sur AWS, GCP ou Azure) et une base de données associée. Incluez les règles de sécurité nécessaires pour que seul le serveur web puisse accéder à la base de données. Décrivez les étapes pour déployer cette infrastructure à l'aide de votre fichier de configuration. Expliquez comment l'IaC améliore la cohérence et l'efficacité de la gestion de l'infrastructure.",
+            "livrable": "Un fichier de configuration Terraform provisionnant un serveur web et une base de données avec les règles de sécurité adéquates, accompagné des étapes de déploiement et d'une explication des apports de l'IaC."
         },
         {
             "title": "Orchestration de conteneurs avec Kubernetes",
-            "context": "En tant qu'ingénieur DevOps, vous êtes chargé de configurer un cluster Kubernetes pour orchestrer le déploiement de plusieurs instances d'une application conteneurisée.",
-            "objective": "Déployez et configurez un cluster Kubernetes local à l'aide de Minikube ou d'une autre solution similaire. Créez un fichier de configuration YAML pour déployer une application conteneurisée qui inclut un déploiement, un service et un ingress. Configurez l'application pour qu'elle soit scalable et résiliente, en utilisant les fonctionnalités de Kubernetes telles que les ReplicaSets et les Readiness/Liveness Probes. Documentez le processus de mise à jour de l'application sans temps d'arrêt en utilisant les stratégies de déploiement de Kubernetes."
+            "objectif": "Être capable de déployer et d'orchestrer une application conteneurisée avec Kubernetes.",
+            "instructions": "En tant qu'ingénieur DevOps, vous êtes chargé de configurer un cluster Kubernetes pour orchestrer le déploiement de plusieurs instances d'une application conteneurisée. Déployez et configurez un cluster Kubernetes local à l'aide de Minikube ou d'une autre solution similaire. Créez un fichier de configuration YAML pour déployer l'application conteneurisée, incluant un déploiement, un service et un ingress. Configurez l'application pour qu'elle soit scalable et résiliente, en utilisant les fonctionnalités de Kubernetes telles que les ReplicaSets et les Readiness/Liveness Probes. Documentez le processus de mise à jour de l'application sans temps d'arrêt en utilisant les stratégies de déploiement de Kubernetes.",
+            "livrable": "Un cluster Kubernetes local avec un fichier YAML déployant l'application (déploiement, service, ingress), configuré pour la scalabilité et la résilience, et une documentation de la mise à jour sans temps d'arrêt."
         },
         {
             "title": "Monitoring et alertes avec Prometheus et Grafana",
-            "context": "Vous devez configurer un système de monitoring pour une infrastructure existante en utilisant Prometheus et visualiser les métriques avec Grafana.",
-            "objective": "Installez et configurez Prometheus pour collecter les métriques de plusieurs serveurs web. Créez des règles d'alerte dans Prometheus pour des conditions telles que la haute utilisation du CPU, l'échec des requêtes HTTP ou la faible disponibilité de la mémoire. Utilisez Grafana pour créer un tableau de bord qui affiche les métriques critiques collectées par Prometheus. Configurez des notifications d'alerte pour informer l'équipe DevOps lorsque des seuils critiques sont atteints, via un canal de communication comme le courriel ou Slack."
+            "objectif": "Être capable de mettre en place un système de monitoring et d'alertes avec Prometheus et Grafana.",
+            "instructions": "Vous devez configurer un système de monitoring pour une infrastructure existante en utilisant Prometheus et visualiser les métriques avec Grafana. Installez et configurez Prometheus pour collecter les métriques de plusieurs serveurs web. Créez des règles d'alerte dans Prometheus pour des conditions telles que la haute utilisation du CPU, l'échec des requêtes HTTP ou la faible disponibilité de la mémoire. Utilisez Grafana pour créer un tableau de bord affichant les métriques critiques collectées par Prometheus. Configurez des notifications d'alerte pour informer l'équipe DevOps lorsque des seuils critiques sont atteints, via un canal de communication comme le courriel ou Slack.",
+            "livrable": "Un système de monitoring Prometheus/Grafana comprenant la collecte des métriques, des règles d'alerte, un tableau de bord des métriques critiques et des notifications vers l'équipe DevOps."
+        },
+        {
+            "title": "Automatisation de la configuration avec Ansible",
+            "objectif": "Être capable d'écrire et d'exécuter un playbook Ansible idempotent pour automatiser la configuration d'un parc de serveurs, en structurant le code à l'aide d'un inventaire et de rôles réutilisables.",
+            "instructions": "Vous êtes ingénieur système au sein de l'entreprise fictive CloudOps Services et devez automatiser la mise en conformité de deux serveurs Linux (un serveur web, un serveur applicatif). À partir d'un nœud de contrôle Ansible, définissez un inventaire distinguant au moins deux groupes d'hôtes (par exemple web et app) avec leurs variables de groupe. Écrivez un playbook s'appuyant sur au moins un rôle structuré selon l'arborescence standard (tasks, handlers, templates, defaults) qui installe et configure un service (par exemple Nginx sur le groupe web), déploie un fichier de configuration à partir d'un template Jinja2 et déclenche un handler de redémarrage uniquement en cas de changement. Exécutez le playbook une première fois, puis une seconde fois pour démontrer l'idempotence (aucune tâche modifiée au second passage, statut changed à zéro). Versionnez l'ensemble du code (inventaire, playbook, rôle) dans un dépôt Git en documentant l'organisation retenue.",
+            "livrable": "Un dépôt Git contenant l'inventaire, le playbook et le ou les rôles, accompagné d'un court rapport (2 à 3 pages) présentant l'architecture du code, les deux sorties d'exécution consécutives prouvant l'idempotence (récapitulatif PLAY RECAP des deux passages) et une analyse des bénéfices de cette approche par rapport à une configuration manuelle."
         }
     ],
     "bibliography": [

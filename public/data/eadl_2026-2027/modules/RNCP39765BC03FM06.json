@@ -68,29 +68,34 @@
     },
     "exercises": [
         {
-            "title": "Comprendre l'importance de la revue de code Énoncé :",
-            "context": "Imaginons que vous travaillez au sein d'une équipe de développement et que vous devez présenter à vos collègues l'importance de la revue de code.",
-            "objective": "Créez une présentation PowerPoint de 10 diapositives expliquant les bénéfices de la revue de code dans le processus de développement. Utilisez des exemples concrets pour illustrer vos propos."
+            "title": "Comprendre l'importance de la revue de code",
+            "objectif": "Comprendre l'importance de la revue de code dans le processus de développement.",
+            "instructions": "Se placer au sein d'une équipe de développement et présenter à ses collègues l'importance de la revue de code; créer une présentation PowerPoint de 10 diapositives expliquant les bénéfices de la revue de code, en utilisant des exemples concrets pour illustrer le propos.",
+            "livrable": "Une présentation PowerPoint de 10 diapositives, illustrée d'exemples concrets, exposant les bénéfices de la revue de code."
         },
         {
             "title": "Installation de SonarQube",
-            "context": "Vous avez été chargé de mettre en place SonarQube dans votre environnement de développement.",
-            "objective": "Suivez les étapes d'installation fournies dans le cours pour installer et configurer SonarQube sur votre propre machine. Prenez des captures d'écran à chaque étape pour documenter le processus et identifiez les éventuels problèmes rencontrés avec les solutions correspondantes."
+            "objectif": "Être capable d'installer et de configurer SonarQube dans un environnement de développement.",
+            "instructions": "Suivre les étapes d'installation fournies dans le cours pour installer et configurer SonarQube sur sa propre machine; prendre des captures d'écran à chaque étape pour documenter le processus et identifier les éventuels problèmes rencontrés avec les solutions correspondantes.",
+            "livrable": "Une documentation du processus d'installation et de configuration de SonarQube, avec captures d'écran et liste des problèmes rencontrés et de leurs solutions."
         },
         {
-            "title": "Analyse des rapports de qualité générés par SonarQube Énoncé :",
-            "context": "Téléchargez un projet open-source de votre choix depuis un dépôt tel que GitHub.",
-            "objective": "Effectuez une analyse statique du code source à l'aide de SonarQube. Étudiez les rapports de qualité générés et identifiez au moins 5 exemples de problèmes de code détectés. Pour chaque problème identifié, proposez une solution et expliquez comment il aurait pu être évité lors de la phase de développement."
+            "title": "Analyse des rapports de qualité générés par SonarQube",
+            "objectif": "Être capable d'analyser les rapports de qualité générés par SonarQube.",
+            "instructions": "Télécharger un projet open source de son choix depuis un dépôt tel que GitHub, effectuer une analyse statique du code source à l'aide de SonarQube, étudier les rapports de qualité générés et identifier au moins 5 exemples de problèmes de code détectés; pour chaque problème, proposer une solution et expliquer comment il aurait pu être évité lors de la phase de développement.",
+            "livrable": "Un rapport présentant au moins 5 problèmes de code détectés par SonarQube, chacun accompagné d'une solution et d'une explication sur sa prévention."
         },
         {
-            "title": "Intégration de SonarQube dans les outils de gestion de versions Énoncé :",
-            "context": "Intégrez SonarQube dans un projet que vous gérez à l'aide d'un outil de gestion de versions tel que Git.",
-            "objective": "Configurez l'automatisation des analyses de qualité pour ce projet et assurez-vous que les retours de SonarQube sont visibles par votre équipe. Documentez les étapes que vous avez suivies et expliquez comment cette intégration pourrait faciliter le processus de revue de code au sein de votre équipe."
+            "title": "Intégration de SonarQube dans les outils de gestion de versions",
+            "objectif": "Être capable d'intégrer SonarQube à un outil de gestion de versions et d'automatiser les analyses de qualité.",
+            "instructions": "Intégrer SonarQube à un projet géré à l'aide d'un outil de gestion de versions tel que Git, configurer l'automatisation des analyses de qualité et s'assurer que les retours de SonarQube sont visibles par l'équipe; documenter les étapes suivies et expliquer comment cette intégration peut faciliter le processus de revue de code au sein de l'équipe.",
+            "livrable": "Une intégration fonctionnelle de SonarQube avec analyses automatisées et retours visibles par l'équipe, documentée étape par étape avec l'apport pour la revue de code."
         },
         {
-            "title": "Promotion des bonnes pratiques de revue de code Énoncé :",
-            "context": "Organisez une réunion de votre équipe de développement pour discuter des bonnes pratiques de revue de code et d'analyse de qualité présentées dans le cours.",
-            "objective": "Proposez des exemples concrets de critères de revue de code efficace et de façon dont l'analyse de qualité peut être intégrée dans les pratiques DevOps. Préparez un compte- rendu de la réunion incluant les propositions de votre équipe pour améliorer la revue de code et l'analyse de qualité dans vos projets de développement."
+            "title": "Promotion des bonnes pratiques de revue de code",
+            "objectif": "Savoir promouvoir les bonnes pratiques de revue de code et d'analyse de qualité au sein d'une équipe.",
+            "instructions": "Organiser une réunion d'équipe de développement pour discuter des bonnes pratiques de revue de code et d'analyse de qualité présentées dans le cours; proposer des exemples concrets de critères de revue de code efficace et de la façon dont l'analyse de qualité peut être intégrée dans les pratiques DevOps.",
+            "livrable": "Un compte rendu de la réunion incluant les propositions de l'équipe pour améliorer la revue de code et l'analyse de qualité dans les projets de développement."
         }
     ],
     "bibliography": [
@@ -104,11 +109,11 @@
         }
     ],
     "OnlineResources": [
-        "SonarSource — Clean Code Documentation (https://docs.sonarsource.com) [EN]",
-        "Google Engineering Practices — Code Review (https://google.github.io/eng-practices/) [EN]",
-        "ISO/IEC 25010 — Qualité logicielle (https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) [EN]",
+        "SonarSource - Clean Code Documentation (https://docs.sonarsource.com) [EN]",
+        "Google Engineering Practices - Code Review (https://google.github.io/eng-practices/) [EN]",
+        "ISO/IEC 25010 - Qualité logicielle (https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) [EN]",
         "OWASP Code Review Guide (https://owasp.org/www-project-code-review-guide/) [EN]",
-        "developpez.com — Qualité logicielle (https://qualite.developpez.com) [FR]"
+        "developpez.com - Qualité logicielle (https://qualite.developpez.com) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Importance de la sécurité dans le processus de développement",
-            "context": "En vous basant sur des exemples concrets, identifiez et expliquez l'impact d'une négligence en matière de sécurité sur le processus de développement.",
-            "objective": "Proposez des mesures préventives pour éviter de telles situations à l'avenir."
+            "objectif": "Comprendre l'importance de la sécurité dans le processus de développement.",
+            "instructions": "En se basant sur des exemples concrets, identifier et expliquer l'impact d'une négligence en matière de sécurité sur le processus de développement, puis proposer des mesures préventives pour éviter de telles situations à l'avenir.",
+            "livrable": "Une analyse illustrée d'exemples concrets présentant l'impact d'une négligence de sécurité et les mesures préventives proposées."
         },
         {
             "title": "Sécurisation des pipelines CI/CD",
-            "context": "Imaginez un scénario où une vulnérabilité est détectée au sein d'un pipeline CI/CD.",
-            "objective": "Proposez un plan d'action détaillé pour gérer cette vulnérabilité de manière efficace, en incluant les étapes de remédiation et les acteurs impliqués."
+            "objectif": "Être capable de sécuriser un pipeline CI/CD face à une vulnérabilité.",
+            "instructions": "Imaginer un scénario où une vulnérabilité est détectée au sein d'un pipeline CI/CD et proposer un plan d'action détaillé pour la gérer efficacement, en incluant les étapes de remédiation et les acteurs impliqués.",
+            "livrable": "Un plan d'action détaillé de gestion de la vulnérabilité, précisant les étapes de remédiation et les acteurs impliqués."
         },
         {
             "title": "Intégration des tests de sécurité dans les pipelines CI/CD",
-            "context": "Élaborez un plan de test de sécurité pour un pipeline CI/CD, en identifiant les points critiques à tester et en détaillant les différentes étapes du processus de test.",
-            "objective": "Précisez également les mesures à prendre en cas de détection de vulnérabilités."
+            "objectif": "Être capable d'intégrer des tests de sécurité dans un pipeline CI/CD.",
+            "instructions": "Élaborer un plan de test de sécurité pour un pipeline CI/CD, en identifiant les points critiques à tester et en détaillant les différentes étapes du processus de test; préciser les mesures à prendre en cas de détection de vulnérabilités.",
+            "livrable": "Un plan de test de sécurité identifiant les points critiques, les étapes de test et les mesures à prendre en cas de vulnérabilité."
         },
         {
             "title": "Étude de cas - Gestion des vulnérabilités",
-            "context": "À partir d'un cas pratique, effectuez une analyse approfondie des vulnérabilités identifiées dans un environnement DevSecOps.",
-            "objective": "Proposez des stratégies de remédiation adaptées à chaque vulnérabilité en mettant en avant les meilleures pratiques en matière de gestion des vulnérabilités."
+            "objectif": "Être capable d'analyser et de remédier aux vulnérabilités dans un environnement DevSecOps.",
+            "instructions": "À partir d'un cas pratique, effectuer une analyse approfondie des vulnérabilités identifiées dans un environnement DevSecOps et proposer des stratégies de remédiation adaptées à chaque vulnérabilité, en mettant en avant les meilleures pratiques en matière de gestion des vulnérabilités.",
+            "livrable": "Une étude de cas présentant l'analyse des vulnérabilités et les stratégies de remédiation adaptées, appuyées sur les bonnes pratiques."
         },
         {
             "title": "Retours d'expérience et bonnes pratiques",
-            "context": "Partagez une expérience réelle liée à l'utilisation d'un outil d'analyse de vulnérabilités dans un contexte DevSecOps.",
-            "objective": "Présentez les principaux enseignements tirés de cette expérience, et proposez des recommandations pour optimiser l'intégration et l'utilisation d'outils similaires dans un environnement de développement sécurisé."
+            "objectif": "Savoir tirer parti des retours d'expérience et des bonnes pratiques d'utilisation des outils d'analyse de vulnérabilités.",
+            "instructions": "Partager une expérience réelle liée à l'utilisation d'un outil d'analyse de vulnérabilités dans un contexte DevSecOps, présenter les principaux enseignements tirés et proposer des recommandations pour optimiser l'intégration et l'utilisation d'outils similaires dans un environnement de développement sécurisé.",
+            "livrable": "Un retour d'expérience présentant les enseignements tirés et des recommandations d'optimisation pour l'usage de ces outils."
         }
     ],
     "bibliography": [
@@ -119,10 +124,10 @@
     ],
     "OnlineResources": [
         "OWASP Top 10 (https://owasp.org/www-project-top-ten/) [EN]",
-        "SANS — DevSecOps (https://www.sans.org/cyber-security-courses/?focus-area=cloud-security) [EN]",
+        "SANS - DevSecOps (https://www.sans.org/cyber-security-courses/?focus-area=cloud-security) [EN]",
         "CNCF Security (https://www.cncf.io/projects/) [EN]",
-        "Snyk — Vulnerability Database (https://security.snyk.io) [EN]",
-        "ANSSI — SecOps (https://cyber.gouv.fr) [FR]"
+        "Snyk - Vulnerability Database (https://security.snyk.io) [EN]",
+        "ANSSI - SecOps (https://cyber.gouv.fr) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

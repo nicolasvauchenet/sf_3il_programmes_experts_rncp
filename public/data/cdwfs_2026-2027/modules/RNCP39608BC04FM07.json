@@ -25,7 +25,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Utiliser efficacement les méthodes et outils de veille technologique pour collecter et analyser des informations (Appliquer) Comprendre l'importance de la veille technologique multilingue dans un contexte globalisé (Comprendre) Intégrer la veille technologique dans la stratégie globale de l'entreprise pour améliorer l'innovation et la compétitivité (Créer)"
+        "description": "Les objectifs de ce module sont d'apprendre à utiliser efficacement les méthodes et outils de veille technologique pour collecter et analyser des informations, comprendre l'importance de la veille technologique multilingue dans un contexte globalisé, et intégrer la veille technologique dans la stratégie globale de l'entreprise pour améliorer l'innovation et la compétitivité."
     },
     "prerequisites": {
         "description": "Une compréhension basique des stratégies d'entreprise et des concepts de gestion de l'information, ainsi qu'une familiarité avec les outils numériques est nécessaire pour suivre ce cours."
@@ -81,57 +81,58 @@
     "exercises": [
         {
             "title": "Analyse des besoins en veille technologique",
-            "context": "Vous travaillez pour une entreprise spécialisée dans la conception de logiciels de sécurité informatique.",
-            "objective": "Vous devez identifier les besoins spécifiques en veille technologique pour améliorer la compétitivité de votre entreprise. Réalisez une analyse détaillée des besoins en veille technologique en tenant compte des enjeux du marché et des attentes des clients. Proposez des solutions pour mettre en place une veille technologique efficace et adaptée à votre entreprise."
+            "objectif": "Savoir analyser les besoins en veille technologique d'une entreprise et proposer une organisation adaptée.",
+            "instructions": "Pour une entreprise de conception de logiciels de sécurité informatique, réalisez une analyse détaillée des besoins en veille technologique en tenant compte des enjeux du marché et des attentes des clients. Proposez des solutions pour mettre en place une veille efficace et adaptée à l'entreprise.",
+            "livrable": "Une analyse détaillée des besoins en veille technologique et des propositions de solutions pour une veille efficace et adaptée à l'entreprise."
         },
         {
             "title": "Collecte et analyse de l'information",
-            "context": "Imaginez que vous travaillez pour une entreprise de fabrication de véhicules électriques.",
-            "objective": "Identifiez les sources d'informations pertinentes pour suivre les avancées technologiques dans le domaine des véhicules électriques. Mettez en place une stratégie de collecte de l'information en utilisant des outils adaptés. Analysez les données recueillies et identifiez les tendances clés qui pourraient impacter le secteur."
+            "objectif": "Être capable d'identifier des sources, de collecter et d'analyser l'information pour dégager des tendances.",
+            "instructions": "Pour une entreprise de fabrication de véhicules électriques, identifiez les sources d'informations pertinentes pour suivre les avancées technologiques du domaine. Mettez en place une stratégie de collecte à l'aide d'outils adaptés, analysez les données recueillies et identifiez les tendances clés susceptibles d'impacter le secteur.",
+            "livrable": "Une stratégie de collecte d'information avec ses outils et une analyse des données recueillies faisant ressortir les tendances clés du secteur."
         },
         {
             "title": "Veille technologique multilingue",
-            "context": "Vous travaillez pour une entreprise internationale opérant dans le secteur de la santé.",
-            "objective": "Identifiez les besoins en veille technologique multilingue pour répondre aux exigences d'un marché mondialisé. Proposez des outils et des ressources pour la veille technologique dans différentes langues. Mettez en place une stratégie de traduction et d'interprétation de l'information technologique tout en tenant compte des différences culturelles."
+            "objectif": "Savoir organiser une veille technologique multilingue tenant compte des différences culturelles.",
+            "instructions": "Pour une entreprise internationale du secteur de la santé, identifiez les besoins en veille technologique multilingue liés à un marché mondialisé. Proposez des outils et ressources pour la veille dans différentes langues et mettez en place une stratégie de traduction et d'interprétation de l'information, en tenant compte des différences culturelles.",
+            "livrable": "Une organisation de veille multilingue précisant besoins, outils et ressources par langue, ainsi qu'une stratégie de traduction et d'interprétation intégrant les différences culturelles."
         },
         {
             "title": "Évaluation de la fiabilité de l'information technologique",
-            "context": "Vous êtes responsable de la veille technologique au sein d'une entreprise de télécommunications.",
-            "objective": "Mettez en place des critères d'évaluation pour mesurer la fiabilité et la pertinence de l'information technologique recueillie. Proposez des méthodes de diffusion de l'information au sein de l'organisation en utilisant des outils de partage et de diffusion adaptés."
+            "objectif": "Être capable d'évaluer la fiabilité de l'information technologique et d'organiser sa diffusion.",
+            "instructions": "Responsable de la veille technologique dans une entreprise de télécommunications, mettez en place des critères d'évaluation pour mesurer la fiabilité et la pertinence de l'information recueillie. Proposez des méthodes de diffusion de l'information au sein de l'organisation en utilisant des outils de partage et de diffusion adaptés.",
+            "livrable": "Un ensemble de critères d'évaluation de la fiabilité et de la pertinence de l'information, assorti de méthodes et d'outils de diffusion au sein de l'organisation."
         },
         {
             "title": "Intégration de la veille technologique dans la stratégie d'entreprise",
-            "context": "Imaginez que vous êtes consultant en stratégie d'entreprise et que vous travaillez avec une entreprise de haute technologie.",
-            "objective": "Proposez un plan d'intégration de la veille technologique dans la stratégie globale de l'entreprise. Identifiez comment l'information issue de la veille technologique peut influencer les processus décisionnels et favoriser l'innovation et la compétitivité de l'entreprise. Proposez des indicateurs de mesure de l'impact de la veille technologique sur la performance de l'entreprise."
+            "objectif": "Savoir intégrer la veille technologique dans la stratégie d'entreprise et en mesurer l'impact.",
+            "instructions": "En tant que consultant en stratégie auprès d'une entreprise de haute technologie, proposez un plan d'intégration de la veille technologique dans la stratégie globale. Identifiez comment l'information issue de la veille peut influencer les processus décisionnels et favoriser l'innovation et la compétitivité. Proposez des indicateurs de mesure de son impact sur la performance.",
+            "livrable": "Un plan d'intégration de la veille dans la stratégie d'entreprise, précisant son influence sur les décisions et l'innovation, avec des indicateurs de mesure de son impact sur la performance."
         }
     ],
     "bibliography": [
         {
-            "title": "Net recherche : surveiller le web et trouver l'information stratégique",
+            "title": "Rechercher l'information stratégique sur le web : sourcing, veille et analyse à l'heure de l'IA (3e éd.). De Boeck Supérieur",
             "author": "Mesguich, V"
         },
         {
-            "title": "Intelligence économique et veille stratégique",
-            "author": "Hassanaly, P"
-        },
-        {
-            "title": "Compétitivité et veille technologique : enjeux et méthodes",
-            "author": "Quoniam, L"
+            "title": "Faire de la veille : collecter, traiter, analyser et diffuser l'information (2e éd.). Éditions ENI",
+            "author": "Balmisse, G"
         }
     ],
     "OnlineResources": [
-        "Feedly — Agrégateur RSS pour veille technologique (https://feedly.com) [EN]",
-        "Inoreader — Veille et curation multilingue (https://www.inoreader.com) [EN/FR]",
+        "Feedly - Agrégateur RSS pour veille technologique (https://feedly.com) [EN]",
+        "Inoreader - Veille et curation multilingue (https://www.inoreader.com) [EN/FR]",
         "Google Alerts (https://www.google.fr/alerts) [FR/EN]",
-        "Hacker News — Veille tech communautaire (https://news.ycombinator.com) [EN]",
-        "Outils Froids — blog veille (https://www.outilsfroids.net) [FR]"
+        "Hacker News - Veille tech communautaire (https://news.ycombinator.com) [EN]",
+        "Outils Froids - blog veille (https://www.outilsfroids.net) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

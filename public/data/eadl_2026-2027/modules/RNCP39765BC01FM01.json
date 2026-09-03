@@ -21,7 +21,7 @@
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de l'architecture logicielle (Comprendre) Connaître les différents modèles et méthodologies de conception (Connaître) Mettre en œuvre des pratiques efficaces pour gérer les dépendances, les contraintes et la qualité dans le cadre de l'architecture logicielle (Créer)"
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de l'architecture logicielle (Comprendre) Connaître les différents modèles et méthodologies de conception (Connaître) Mettre en œuvre des pratiques efficaces pour gérer les dépendances, les contraintes et la qualité dans le cadre de l'architecture logicielle (Appliquer)"
     },
     "prerequisites": {
         "description": ""
@@ -83,28 +83,33 @@
     "exercises": [
         {
             "title": "Principes de l'architecture logicielle",
-            "context": "Vous avez la charge de concevoir l'architecture logicielle d'une application de gestion de stock pour une entreprise de retail. Objectif : Identifiez et expliquez les différentes couches que vous allez intégrer dans votre architecture logicielle, en justifiant votre choix pour chaque couche.",
-            "objective": ""
+            "objectif": "Être capable d'identifier et de justifier les différentes couches d'une architecture logicielle adaptée à un contexte métier.",
+            "instructions": "Vous avez la charge de concevoir l'architecture logicielle d'une application de gestion de stock pour une entreprise de retail. Identifiez les différentes couches que vous allez intégrer dans votre architecture logicielle et expliquez le rôle de chacune.",
+            "livrable": "Une présentation des différentes couches retenues, accompagnée de la justification du choix de chaque couche."
         },
         {
             "title": "Modèles d'architecture logicielle",
-            "context": "Vous rejoignez une équipe en charge de développer un nouveau système de gestion de commandes pour une entreprise de commerce en ligne. Objectif : Proposez un comparatif des avantages et inconvénients des modèles d'architecture logicielle monolithique et orientée services, en mettant en lumière les spécificités de chaque modèle et en recommandant le modèle le plus adapté pour ce projet.",
-            "objective": ""
+            "objectif": "Savoir comparer des modèles d'architecture logicielle et recommander le plus adapté à un projet.",
+            "instructions": "Vous rejoignez une équipe en charge de développer un nouveau système de gestion de commandes pour une entreprise de commerce en ligne. Comparez les modèles d'architecture logicielle monolithique et orientée services en mettant en lumière les spécificités de chaque modèle.",
+            "livrable": "Un comparatif des avantages et inconvénients des deux modèles et la recommandation du modèle le plus adapté à ce projet."
         },
         {
             "title": "Méthodologies de conception",
-            "context": "Vous travaillez sur un projet de développement d'une application de suivi des dépenses personnelles. Objectif : Choisissez une méthodologie de conception d'architecture logicielle qui serait la plus appropriée pour ce projet et justifiez votre choix en décrivant les différentes étapes clés que vous allez suivre pour concevoir l'architecture logicielle.",
-            "objective": ""
+            "objectif": "Être capable de choisir et de justifier une méthodologie de conception d'architecture logicielle adaptée à un projet.",
+            "instructions": "Vous travaillez sur un projet de développement d'une application de suivi des dépenses personnelles. Choisissez la méthodologie de conception d'architecture logicielle la plus appropriée pour ce projet et décrivez les différentes étapes clés que vous allez suivre pour concevoir l'architecture.",
+            "livrable": "Le choix de la méthodologie justifié et la description des étapes clés de conception de l'architecture logicielle."
         },
         {
             "title": "Gestion des dépendances et des contraintes",
-            "context": "Vous êtes confronté à un projet de modernisation d'un système de gestion de ressources humaines au sein d'une entreprise. Objectif : Proposez des solutions pour gérer les dépendances et les contraintes existantes dans l'architecture logicielle actuelle, en mettant en avant les approches que vous allez utiliser pour minimiser les dépendances et contraintes lors de la modernisation.",
-            "objective": ""
+            "objectif": "Savoir gérer et minimiser les dépendances et les contraintes d'une architecture logicielle lors d'une modernisation.",
+            "instructions": "Vous êtes confronté à un projet de modernisation d'un système de gestion de ressources humaines au sein d'une entreprise. Analysez les dépendances et les contraintes existantes dans l'architecture logicielle actuelle et déterminez les approches à utiliser pour les minimiser lors de la modernisation.",
+            "livrable": "Des solutions de gestion des dépendances et des contraintes, présentant les approches retenues pour les minimiser lors de la modernisation."
         },
         {
             "title": "Gestion de la qualité de l'architecture logicielle",
-            "context": "Vous faites partie d'une équipe en charge de développer une application de gestion de projet pour une entreprise de services informatiques. Objectif : Identifiez les critères de qualité essentiels pour l'architecture logicielle de cette application, proposez des outils et des processus pour évaluer la qualité de l'architecture logicielle, et anticipez les problèmes potentiels liés à la qualité.",
-            "objective": ""
+            "objectif": "Être capable d'évaluer et d'anticiper la qualité d'une architecture logicielle.",
+            "instructions": "Vous faites partie d'une équipe en charge de développer une application de gestion de projet pour une entreprise de services informatiques. Identifiez les critères de qualité essentiels pour l'architecture logicielle de cette application et déterminez les outils et processus permettant d'évaluer cette qualité.",
+            "livrable": "La liste des critères de qualité essentiels, les outils et processus d'évaluation proposés et l'anticipation des problèmes potentiels liés à la qualité."
         }
     ],
     "bibliography": [
@@ -119,7 +124,7 @@
     ],
     "OnlineResources": [
         "Microsoft Architecture Center (https://learn.microsoft.com/azure/architecture/) [FR/EN]",
-        "Martin Fowler — Bliki (https://martinfowler.com/bliki/) [EN]",
+        "Martin Fowler - Bliki (https://martinfowler.com/bliki/) [EN]",
         "The C4 model for software architecture (https://c4model.com) [EN]",
         "AWS Architecture Center (https://aws.amazon.com/architecture/) [EN]",
         "TOGAF Standard (https://www.opengroup.org/togaf) [EN]"

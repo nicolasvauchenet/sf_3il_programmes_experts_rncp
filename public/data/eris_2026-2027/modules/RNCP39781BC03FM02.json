@@ -10,7 +10,24 @@
         "durationHours": 28,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Conduire une veille active en matière de cybersécurité, en analysant régulièrement les bulletins de sécurité, les publications des organismes de référence tant francophones qu'anglophones et en partageant les fruits de ses recherches conformément aux us de l'équipe (rapport/article, réseau social interne, plateforme collaborative), afin d'anticiper les menaces et vulnérabilités émergentes et mener des actions correctives"
+        },
+        {
+            "code": "C19",
+            "description": "Participer à l'élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s'appuyant sur les standards et sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI), pour protéger les données et les systèmes de l'entreprise"
+        },
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue"
+        },
+        {
+            "code": "C21",
+            "description": "Sensibiliser le personnel aux bonnes pratiques de la sécurité informatique en conformité avec les préconisations de l'ANSSI au moyen d'ateliers, de documentation, d'exercices de simulation d'attaque, et de campagnes de phishing afin de diminuer les comportements à risques et de contribuer à l'amélioration continue de la sécurité de l'entreprise"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et l'utilité d'une politique de sécurité des systèmes d'information (Comprendre) Rédiger une politique de sécurité cohérente et l'intégrer dans la gouvernance de l'entreprise (Créer) Mettre en place les procédures, standards et actions de sensibilisation associés (Appliquer)"
     },
@@ -41,35 +58,47 @@
             },
             {
                 "title": "Chapitre 3 : Élaboration d'une politique de sécurité des SI",
-                "items": []
+                "items": [
+                    "Comprendre la structure et les composantes d'une PSSI (politique cadre, politiques thématiques, standards et procédures)",
+                    "Définir le périmètre et les objectifs de sécurité alignés sur les enjeux métier et l'analyse des risques",
+                    "Identifier les rôles et responsabilités des acteurs (direction, RSSI, propriétaires d'actifs, utilisateurs)",
+                    "Formaliser les règles, mesures et procédures de sécurité couvrant les principaux domaines (contrôle d'accès, gestion des incidents, continuité d'activité)",
+                    "Assurer la validation par la direction, la diffusion et l'appropriation de la politique auprès du personnel",
+                    "Organiser la révision périodique et l'amélioration continue de la politique de sécurité"
+                ]
             }
         ]
     },
     "exercises": [
         {
             "title": "Élaboration d'un tableau de classification des risques",
-            "context": "Vous êtes chargé de l'analyse des risques pour une entreprise fictive, DataSecure Inc., spécialisée dans la gestion de données sensibles pour ses clients.",
-            "objective": "Votre première tâche consiste à créer un tableau de classification des risques qui identifie les actifs critiques de l'entreprise, les menaces potentielles et les vulnérabilités associées à ces actifs. Instructions : Identifiez au moins cinq actifs critiques pour DataSecure Inc. (par exemple, serveurs de données, applications de gestion client, réseau interne). Pour chaque actif, identifiez deux menaces potentielles (comme le phishing, l'attaque par déni de service). Évaluez et classez les risques associés à chaque menace selon leur probabilité d'occurrence et leur impact potentiel sur l'entreprise (utilisez une échelle de bas, moyen, élevé). Proposez une stratégie de traitement pour les deux risques les plus élevés."
+            "objectif": "Savoir élaborer un tableau de classification des risques identifiant actifs, menaces et vulnérabilités.",
+            "instructions": "Vous êtes chargé de l'analyse des risques pour l'entreprise fictive DataSecure Inc., spécialisée dans la gestion de données sensibles. Identifiez au moins cinq actifs critiques (par exemple serveurs de données, applications de gestion client, réseau interne). Pour chaque actif, identifiez deux menaces potentielles (comme le phishing ou l'attaque par déni de service). Évaluez et classez les risques associés à chaque menace selon leur probabilité d'occurrence et leur impact potentiel (échelle bas, moyen, élevé).",
+            "livrable": "Un tableau de classification des risques complété, accompagné d'une stratégie de traitement pour les deux risques les plus élevés."
         },
         {
             "title": "Rédaction d'une charte de sécurité",
-            "context": "En tant que consultant en sécurité des systèmes d'information pour DataSecure Inc., vous devez rédiger une charte de sécurité qui sera distribuée à tous les employés pour les sensibiliser aux enjeux de la sécurité informatique.",
-            "objective": "Instructions : Formulez les objectifs de la charte de sécurité en tenant compte des enjeux identifiés pour DataSecure Inc. Définissez les principes de base que les employés doivent suivre en matière de sécurité informatique. Incluez une section sur les responsabilités des employés envers la protection des données de l'entreprise. Élaborez des directives claires sur les procédures à suivre en cas d'incident de sécurité. Assurez-vous que la charte est concise, compréhensible et qu'elle incite à l'action."
+            "objectif": "Être capable de rédiger une charte de sécurité de sensibilisation destinée aux employés.",
+            "instructions": "En tant que consultant en sécurité des systèmes d'information pour DataSecure Inc., formulez les objectifs de la charte en tenant compte des enjeux identifiés, définissez les principes de base que les employés doivent suivre, incluez une section sur leurs responsabilités envers la protection des données et élaborez des directives claires sur les procédures à suivre en cas d'incident de sécurité.",
+            "livrable": "Une charte de sécurité concise, compréhensible et incitant à l'action, destinée à être distribuée à tous les employés."
         },
         {
             "title": "Conception d'un plan de gestion des vulnérabilités",
-            "context": "DataSecure Inc.",
-            "objective": "a identifié plusieurs vulnérabilités au sein de son infrastructure informatique. En tant que responsable de la sécurité, élaborez un plan de gestion des vulnérabilités qui guidera l'entreprise dans le traitement de ces faiblesses. Instructions : Listez cinq vulnérabilités possibles au sein de l'infrastructure IT de DataSecure Inc. (par exemple, logiciels non mis à jour, configurations par défaut non sécurisées). Proposez des mesures correctives pour chacune des vulnérabilités identifiées. Établissez un calendrier pour la mise en œuvre de ces mesures correctives. Décrivez le processus de suivi pour s'assurer que les vulnérabilités sont effectivement traitées. Intégrez dans votre plan une procédure de réévaluation périodique des vulnérabilités."
+            "objectif": "Savoir concevoir un plan de gestion des vulnérabilités et son suivi.",
+            "instructions": "DataSecure Inc. a identifié plusieurs vulnérabilités au sein de son infrastructure informatique. Listez cinq vulnérabilités possibles (par exemple logiciels non mis à jour, configurations par défaut non sécurisées), proposez des mesures correctives pour chacune, établissez un calendrier pour la mise en œuvre de ces mesures et décrivez le processus de suivi. Intégrez une procédure de réévaluation périodique des vulnérabilités.",
+            "livrable": "Un plan de gestion des vulnérabilités comprenant les vulnérabilités identifiées, les mesures correctives, le calendrier de mise en œuvre, le processus de suivi et la procédure de réévaluation périodique."
         },
         {
             "title": "Simulation d'un audit de conformité",
-            "context": "Vous avez été désigné pour effectuer un audit de conformité interne sur les pratiques actuelles de sécurité de DataSecure Inc.",
-            "objective": "par rapport à sa politique de sécurité des systèmes d'information. Instructions : Établissez une liste de contrôle basée sur la politique de sécurité de DataSecure Inc. qui couvre au moins cinq domaines clés (accès aux données, gestion des mots de passe, protection contre les malwares, etc.). Concevez un scénario d'audit pour un des domaines de la liste de contrôle. Documentez le processus d'audit, y compris la méthode de collecte des informations, les personnes à interroger, et les documents à examiner. Rédigez un rapport sommaire des résultats de l'audit, identifiant les conformités et les non-conformités. Proposez des recommandations pour améliorer les pratiques de sécurité et pour s'aligner avec la politique de sécurité existante."
+            "objectif": "Être capable de conduire un audit de conformité interne au regard d'une politique de sécurité.",
+            "instructions": "Vous devez auditer les pratiques de sécurité de DataSecure Inc. par rapport à sa politique de sécurité des systèmes d'information. Établissez une liste de contrôle couvrant au moins cinq domaines clés (accès aux données, gestion des mots de passe, protection contre les malwares, etc.), concevez un scénario d'audit pour l'un de ces domaines et documentez le processus d'audit (méthode de collecte des informations, personnes à interroger, documents à examiner).",
+            "livrable": "Un rapport sommaire d'audit identifiant les conformités et les non-conformités, assorti de recommandations pour améliorer les pratiques de sécurité et s'aligner sur la politique de sécurité existante."
         },
         {
             "title": "Gestion d'un incident de sécurité",
-            "context": "Un incident de sécurité a été détecté chez DataSecure Inc.",
-            "objective": ": une tentative d'intrusion sur le réseau de l'entreprise a été identifiée. En tant que membre de l'équipe de réponse aux incidents, vous devez gérer la situation. Instructions : Documentez la procédure à suivre immédiatement après la détection de la tentative d'intrusion. Identifiez les parties prenantes internes et externes à informer (direction, équipe IT, autorités légales, etc.). Élaborez un plan pour contenir et éradiquer la menace. Déterminez les mesures à prendre pour récupérer les systèmes affectés et reprendre les opérations normales. Enfin, proposez une stratégie pour prévenir de futurs incidents similaires, en incluant des améliorations possibles de la politique de sécurité des SI."
+            "objectif": "Savoir gérer un incident de sécurité, de la détection à la prévention.",
+            "instructions": "Une tentative d'intrusion sur le réseau de DataSecure Inc. a été détectée. En tant que membre de l'équipe de réponse aux incidents, documentez la procédure à suivre immédiatement après la détection, identifiez les parties prenantes internes et externes à informer (direction, équipe IT, autorités légales, etc.), élaborez un plan pour contenir et éradiquer la menace et déterminez les mesures à prendre pour récupérer les systèmes affectés et reprendre les opérations normales.",
+            "livrable": "Un dossier de gestion d'incident présentant la procédure, les parties prenantes, le plan de containment et d'éradication, les mesures de reprise et une stratégie pour prévenir de futurs incidents similaires, incluant des améliorations possibles de la politique de sécurité des systèmes d'information."
         }
     ],
     "bibliography": [
@@ -89,9 +118,9 @@
     "OnlineResources": [
         "ISO/IEC 27001 (https://www.iso.org/isoiec-27001-information-security.html) [EN/FR]",
         "NIST Cybersecurity Framework (https://www.nist.gov/cyberframework) [EN]",
-        "ANSSI — Guides PSSI (https://cyber.gouv.fr) [FR]",
-        "CLUSIF — Bonnes pratiques (https://clusif.fr) [FR]",
-        "ENISA — Security Frameworks (https://www.enisa.europa.eu) [EN]"
+        "ANSSI - Guides PSSI (https://cyber.gouv.fr) [FR]",
+        "CLUSIF - Bonnes pratiques (https://clusif.fr) [FR]",
+        "ENISA - Security Frameworks (https://www.enisa.europa.eu) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

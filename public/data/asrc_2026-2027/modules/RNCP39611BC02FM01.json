@@ -87,49 +87,54 @@
     "exercises": [
         {
             "title": "Configuration des réseaux Voix/data et VLAN",
-            "context": "Vous avez la charge de configurer un réseau d'entreprise en mettant en place des réseaux Voix/data et des VLAN.",
-            "objective": "Pour cela, vous devez : Identifier les besoins spécifiques liés à la séparation des réseaux Voix et Data. Configurer les équipements réseau pour assurer une segmentation efficace. Mettre en place des VLAN pour optimiser la gestion du trafic réseau. Assurer la maintenance des réseaux Voix/data et des VLAN en cas de dysfonctionnement."
+            "objectif": "Savoir configurer un réseau d'entreprise en séparant les flux Voix et Data et en segmentant le trafic à l'aide de VLAN.",
+            "instructions": "Identifiez les besoins spécifiques liés à la séparation des réseaux Voix et Data. Configurez les équipements réseau pour assurer une segmentation efficace. Mettez en place des VLAN pour optimiser la gestion du trafic réseau. Assurez la maintenance des réseaux Voix/data et des VLAN en cas de dysfonctionnement.",
+            "livrable": "Une infrastructure réseau configurée avec réseaux Voix/data séparés et VLAN opérationnels, accompagnée de la procédure de maintenance en cas de dysfonctionnement."
         },
         {
             "title": "Mise en place d'un réseau privé virtuel (VPN)",
-            "context": "Vous devez mettre en place un VPN pour assurer la sécurité des échanges de données au sein de l'entreprise.",
-            "objective": "Les étapes à suivre sont les suivantes : Sélectionner le type de VPN le plus adapté aux besoins de l'entreprise. Installer et configurer le VPN sur les équipements réseau concernés. Mettre en place des politiques de sécurité pour garantir la confidentialité des communications. Mettre en œuvre une gestion efficace des réseaux privés virtuels au sein de l'entreprise."
+            "objectif": "Savoir déployer un VPN pour sécuriser les échanges de données au sein de l'entreprise.",
+            "instructions": "Sélectionnez le type de VPN le plus adapté aux besoins de l'entreprise. Installez et configurez le VPN sur les équipements réseau concernés. Mettez en place des politiques de sécurité pour garantir la confidentialité des communications. Mettez en oeuvre une gestion efficace des réseaux privés virtuels au sein de l'entreprise.",
+            "livrable": "Un VPN installé et configuré, assorti des politiques de sécurité garantissant la confidentialité des communications et d'un dispositif de gestion des réseaux privés virtuels."
         },
         {
             "title": "Configuration d'équipements avancés de sécurité réseau",
-            "context": "Vous devez configurer des équipements avancés de sécurité réseau (tels que Cisco, Stormshield ou Fortinet) pour garantir la protection des données et des échanges.",
-            "objective": "Les actions à effectuer sont les suivantes : Comprendre le fonctionnement des équipements de sécurité sélectionnés. Configurer ces équipements pour répondre aux besoins spécifiques de l'entreprise. Mettre en place des stratégies de sécurité adaptées aux menaces potentielles. Assurer une connectivité fiable et sécurisée grâce à ces équipements."
+            "objectif": "Savoir configurer des équipements avancés de sécurité réseau (Cisco, Stormshield, Fortinet) pour protéger les données et les échanges.",
+            "instructions": "Comprenez le fonctionnement des équipements de sécurité sélectionnés. Configurez ces équipements pour répondre aux besoins spécifiques de l'entreprise. Mettez en place des stratégies de sécurité adaptées aux menaces potentielles. Assurez une connectivité fiable et sécurisée grâce à ces équipements.",
+            "livrable": "Des équipements de sécurité réseau configurés avec des stratégies adaptées aux menaces, assurant une connectivité fiable et sécurisée."
         },
         {
             "title": "Automatisation des processus réseautiques",
-            "context": "Vous devez mettre en place des processus automatisés pour augmenter l'efficacité opérationnelle du réseau.",
-            "objective": "Pour cela, vous devez : Identifier les processus réseautiques qui peuvent bénéficier de l'automatisation. Sélectionner les outils d'automatisation adaptés aux besoins spécifiques de l'infrastructure réseau. Mettre en place ces processus automatisés et les superviser régulièrement. Adapter l'automatisation aux besoins évolutifs de l'infrastructure réseau."
+            "objectif": "Savoir automatiser des processus réseau pour augmenter l'efficacité opérationnelle de l'infrastructure.",
+            "instructions": "Identifiez les processus réseautiques qui peuvent bénéficier de l'automatisation. Sélectionnez les outils d'automatisation adaptés aux besoins spécifiques de l'infrastructure réseau. Mettez en place ces processus automatisés et supervisez-les régulièrement. Adaptez l'automatisation aux besoins évolutifs de l'infrastructure réseau.",
+            "livrable": "Des processus réseau automatisés et supervisés, adaptés aux besoins évolutifs de l'infrastructure."
         },
         {
             "title": "Supervision proactive des réseaux",
-            "context": "Vous devez mettre en place une surveillance proactive des réseaux en utilisant des outils tels que Wireshark, Prometheus et Zabbix.",
-            "objective": "Les étapes à suivre sont les suivantes : Configurer ces outils de surveillance pour collecter les données pertinentes. Assurer une surveillance continue et proactive des performances réseau. Réagir rapidement aux incidents détectés grâce à une supervision proactive. Mettre en place des mesures préventives basées sur l'analyse des données de supervision."
+            "objectif": "Savoir mettre en place une surveillance proactive des réseaux à l'aide d'outils tels que Wireshark, Prometheus et Zabbix.",
+            "instructions": "Configurez les outils de surveillance pour collecter les données pertinentes. Assurez une surveillance continue et proactive des performances réseau. Réagissez rapidement aux incidents détectés grâce à cette supervision. Mettez en place des mesures préventives basées sur l'analyse des données de supervision.",
+            "livrable": "Un dispositif de supervision proactive opérationnel collectant les données pertinentes, complété de mesures préventives issues de l'analyse des données recueillies."
         }
     ],
     "bibliography": [
         {
-            "title": "CCNA 200-301 Official Cert Guide, Volume 1 & 2 (2e éd.)",
+            "title": "CCNA 200-301 Official Cert Guide, Volume 1 (2e éd.). Cisco Press",
             "author": "Odom, W"
         },
         {
-            "title": "Implementing Cisco IP Switched Networks (SWITCH) Foundation Learning Guide",
+            "title": "Implementing Cisco IP Switched Networks (SWITCH) Foundation Learning Guide : CCNP SWITCH 300-115. Cisco Press",
             "author": "Froom, R. & Frahim, E"
         },
         {
-            "title": "Networking Self-Teaching Guide: OSI, TCP/IP, LANs, MANs, WANs, Implementation, Management, and Maintenance",
-            "author": "Edwards, M. & Bramante, R"
+            "title": "Networking Self-Teaching Guide : OSI, TCP/IP, LANs, MANs, WANs, Implementation, Management, and Maintenance. Wiley",
+            "author": "Edwards, J. & Bramante, R"
         }
     ],
     "OnlineResources": [
         "Cisco Networking Academy (https://www.netacad.com) [FR/EN]",
-        "RFC Editor — Normes Internet (https://www.rfc-editor.org) [EN]",
+        "RFC Editor - Normes Internet (https://www.rfc-editor.org) [EN]",
         "Cisco Documentation (https://www.cisco.com/c/fr_fr/support/index.html) [FR/EN]",
-        "ANSSI — Guide de sécurité des réseaux (https://cyber.gouv.fr) [FR]",
+        "ANSSI - Guide de sécurité des réseaux (https://cyber.gouv.fr) [FR]",
         "NetworkLessons (https://networklessons.com) [EN]"
     ],
     "teachingMethods": [
@@ -137,7 +142,7 @@
         "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
         "Classe inversée : ressources documentaires à consulter avant les séances",
         "Étude de cas réels issus du secteur",
-        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
         "Revue par les pairs",
         "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
     ]

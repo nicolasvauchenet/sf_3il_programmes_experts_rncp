@@ -13,11 +13,11 @@
     "skills": [
         {
             "code": "C1",
-            "description": "Mettre en place une veille technologique, normative, et législative en analysant des contenus de diverses sources d'informations multilingues afin d’identifier les nouvelles tendances, technologies et meilleures pratiques dans le domaine du développement et de l'architecture logicielle, afin de proposer des solutions innovantes et d'anticiper les évolutions du marché"
+            "description": "Mettre en place une veille technologique, normative, et législative en analysant des contenus de diverses sources d'informations spécialisé afin d’identifier les nouvelles tendances, technologies et meilleures pratiques dans le domaine du développement et de l'architecture logicielle, afin de proposer des solutions innovantes et d'anticiper les évolutions du marché"
         }
     ],
     "objectives": {
-        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir une compréhension approfondie de la veille technologique dans le domaine de l'architecture logicielle (Comprendre) Utiliser des méthodes et outils pour collecter et analyser efficacement les informations pertinentes (Appliquer) Intégrer l'innovation dans des projets d'architecture logicielle en tenant compte des enjeux technologiques et métiers (Créer)"
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir une compréhension approfondie de la veille technologique dans le domaine de l'architecture logicielle (Comprendre) Utiliser des méthodes et outils pour collecter et analyser efficacement les informations pertinentes (Appliquer) Intégrer l'innovation dans des projets d'architecture logicielle en tenant compte des enjeux technologiques et métiers (Créer) Mener une veille concurrentielle et réglementaire et en évaluer les risques et opportunités pour le positionnement des projets d'architecture logicielle (Évaluer)"
     },
     "prerequisites": {
         "description": "Connaissance de base en architecture logicielle, une familiarité avec les concepts d'innovation technologique, et des compétences fondamentales en recherche d'information."
@@ -79,28 +79,33 @@
     "exercises": [
         {
             "title": "Mise en place d'un processus de veille technologique",
-            "context": "Dans cet exercice, les apprenants devront élaborer un plan détaillé pour la mise en place d'un processus de veille technologique au sein d'une entreprise d'architecture logicielle.",
-            "objective": "Ils devront identifier les étapes clés, les acteurs impliqués, les outils à utiliser, ainsi que les indicateurs de performance à mettre en place pour évaluer l'efficacité du processus."
+            "objectif": "Être capable de concevoir un processus de veille technologique au sein d'une entreprise.",
+            "instructions": "Élaborez un plan détaillé pour la mise en place d'un processus de veille technologique au sein d'une entreprise d'architecture logicielle. Identifiez les étapes clés, les acteurs impliqués et les outils à utiliser.",
+            "livrable": "Un plan détaillé du processus de veille précisant les étapes clés, les acteurs, les outils et les indicateurs de performance permettant d'évaluer l'efficacité du processus."
         },
         {
             "title": "Analyse des tendances actuelles en architecture logicielle",
-            "context": "Les apprenants devront sélectionner deux tendances majeures en matière d'architecture logicielle et réaliser une analyse approfondie de leur impact sur le développement des logiciels.",
-            "objective": "Ils devront identifier les avantages et les inconvénients de chaque tendance, et proposer des recommandations pour intégrer ces tendances de manière efficace dans un projet d'architecture logicielle."
+            "objectif": "Savoir analyser l'impact des tendances actuelles de l'architecture logicielle.",
+            "instructions": "Sélectionnez deux tendances majeures en matière d'architecture logicielle et réalisez une analyse approfondie de leur impact sur le développement des logiciels.",
+            "livrable": "Une analyse identifiant les avantages et les inconvénients de chaque tendance, assortie de recommandations pour les intégrer efficacement dans un projet d'architecture logicielle."
         },
         {
             "title": "Utilisation d'outils d'analyse de données pour la veille technologique",
-            "context": "Pour cet exercice, les apprenants seront amenés à utiliser un outil d'analyse de données spécifique pour collecter et analyser des informations pertinentes pour la veille technologique.",
-            "objective": "Ils devront choisir un outil adapté à un contexte d'architecture logicielle, collecter des données en lien avec une technologie spécifique, et présenter les résultats de leur analyse."
+            "objectif": "Être capable d'utiliser un outil d'analyse de données au service de la veille technologique.",
+            "instructions": "Choisissez un outil d'analyse de données adapté à un contexte d'architecture logicielle, puis collectez des données en lien avec une technologie spécifique.",
+            "livrable": "La présentation des résultats de l'analyse des informations collectées à l'aide de l'outil choisi."
         },
         {
             "title": "Génération d'idées innovantes pour l'architecture logicielle",
-            "context": "Les apprenants seront mis au défi de mener une séance de créativité pour générer des idées innovantes dans le domaine de l'architecture logicielle.",
-            "objective": "Ils devront utiliser des techniques de créativité spécifiques pour proposer des idées originales, les évaluer en fonction de leur pertinence et de leur faisabilité, puis sélectionner les idées les plus prometteuses pour les intégrer dans un projet d'architecture logicielle."
+            "objectif": "Savoir générer et sélectionner des idées innovantes pour un projet d'architecture logicielle.",
+            "instructions": "Menez une séance de créativité pour générer des idées innovantes dans le domaine de l'architecture logicielle en utilisant des techniques de créativité spécifiques, puis évaluez ces idées en fonction de leur pertinence et de leur faisabilité.",
+            "livrable": "Les idées les plus prometteuses sélectionnées en vue de leur intégration dans un projet d'architecture logicielle."
         },
         {
             "title": "Veille concurrentielle et réglementaire",
-            "context": "Pour cet exercice, les apprenants devront réaliser une analyse de la stratégie concurrentielle d'une entreprise dans le domaine de l'architecture logicielle.",
-            "objective": "Ils devront identifier les forces et les faiblesses de cette stratégie, ainsi que les opportunités et les menaces liées à l'environnement concurrentiel. De plus, ils devront également réaliser une veille réglementaire pour identifier les normes et réglementations impactant l'architecture logicielle, et évaluer les risques associés à la non-conformité."
+            "objectif": "Être capable de mener une veille concurrentielle et réglementaire en architecture logicielle.",
+            "instructions": "Réalisez une analyse de la stratégie concurrentielle d'une entreprise dans le domaine de l'architecture logicielle, puis menez une veille réglementaire pour identifier les normes et réglementations impactant l'architecture logicielle.",
+            "livrable": "L'analyse concurrentielle (forces, faiblesses, opportunités, menaces) et la veille réglementaire, avec l'évaluation des risques associés à la non-conformité."
         }
     ],
     "bibliography": [
@@ -119,10 +124,10 @@
     ],
     "OnlineResources": [
         "ThoughtWorks Technology Radar (https://www.thoughtworks.com/radar) [EN]",
-        "InfoQ — News on software development (https://www.infoq.com) [EN]",
+        "InfoQ - News on software development (https://www.infoq.com) [EN]",
         "Hacker News (https://news.ycombinator.com) [EN]",
-        "Feedly — Veille RSS (https://feedly.com) [EN]",
-        "Outils Froids — blog veille (https://www.outilsfroids.net) [FR]"
+        "Feedly - Veille RSS (https://feedly.com) [EN]",
+        "Outils Froids - blog veille (https://www.outilsfroids.net) [FR]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",

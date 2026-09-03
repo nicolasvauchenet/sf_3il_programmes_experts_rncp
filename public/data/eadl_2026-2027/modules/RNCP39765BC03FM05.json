@@ -13,7 +13,7 @@
     "skills": [
         {
             "code": "C20",
-            "description": "Mettre en place, rédiger et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en suivant les meilleures pratiques de documentation et en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes et minimiser la dette technique"
+            "description": "Mettre en place, rédiger et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en suivant les meilleures pratiques de documentation et en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes et minimiser la dette technique. BLOC 4 : Optimiser le Système d'Information (SI) par l'apport du Cloud Computing"
         }
     ],
     "objectives": {
@@ -78,28 +78,33 @@
     "exercises": [
         {
             "title": "Rôle et importance de la documentation technique",
-            "context": "En utilisant des exemples concrets, identifiez trois situations dans lesquelles une documentation technique claire et précise aurait un impact positif sur la résolution de problèmes dans un environnement professionnel.",
-            "objective": "Expliquez en détail pourquoi la documentation technique est si cruciale dans ces cas."
+            "objectif": "Comprendre le rôle et l'importance de la documentation technique.",
+            "instructions": "À l'aide d'exemples concrets, identifier trois situations dans lesquelles une documentation technique claire et précise aurait un impact positif sur la résolution de problèmes en environnement professionnel, et expliquer en détail pourquoi la documentation technique est cruciale dans ces cas.",
+            "livrable": "Une présentation de trois situations illustrées expliquant en détail l'impact positif et le caractère crucial de la documentation technique."
         },
         {
             "title": "Structuration de la documentation technique",
-            "context": "Imaginez que vous êtes chargé de réorganiser la documentation technique existante d'un produit ou d'un processus.",
-            "objective": "Proposez une nouvelle structure hiérarchique pour cette documentation et justifiez vos choix en expliquant comment cette nouvelle organisation améliorera la compréhension et l'accessibilité des informations pour les utilisateurs."
+            "objectif": "Être capable de structurer la documentation technique.",
+            "instructions": "Se placer dans le rôle d'un responsable chargé de réorganiser la documentation technique existante d'un produit ou d'un processus; proposer une nouvelle structure hiérarchique et justifier ses choix en expliquant comment cette organisation améliore la compréhension et l'accessibilité des informations pour les utilisateurs.",
+            "livrable": "Une nouvelle structure hiérarchique de la documentation, accompagnée de la justification des choix au regard de la compréhension et de l'accessibilité."
         },
         {
             "title": "Rédaction de la documentation technique",
-            "context": "Sélectionnez un processus ou un système technique et rédigez un guide étape par étape pour son utilisation ou sa maintenance.",
-            "objective": "En utilisant les normes et les bonnes pratiques de rédaction, veillez à ce que le document soit clair, concis et facile à suivre pour un utilisateur débutant."
+            "objectif": "Être capable de rédiger une documentation technique claire et conforme aux bonnes pratiques.",
+            "instructions": "Sélectionner un processus ou un système technique et rédiger un guide étape par étape pour son utilisation ou sa maintenance, en appliquant les normes et bonnes pratiques de rédaction pour que le document soit clair, concis et facile à suivre pour un utilisateur débutant.",
+            "livrable": "Un guide étape par étape clair, concis et accessible à un utilisateur débutant, conforme aux normes et bonnes pratiques de rédaction."
         },
         {
             "title": "Maintenance de la documentation technique",
-            "context": "En utilisant un scénario fictif de mise à jour majeure d'un produit ou d'un système, élaborez un plan de gestion des changements pour la documentation technique associée à ce produit ou système.",
-            "objective": "Identifiez les étapes clés, les responsabilités des différents acteurs et les délais pour assurer une mise à jour efficace et pertinente."
+            "objectif": "Être capable d'assurer la maintenance de la documentation technique.",
+            "instructions": "À partir d'un scénario fictif de mise à jour majeure d'un produit ou d'un système, élaborer un plan de gestion des changements pour la documentation technique associée, en identifiant les étapes clés, les responsabilités des différents acteurs et les délais pour assurer une mise à jour efficace et pertinente.",
+            "livrable": "Un plan de gestion des changements documentaires précisant les étapes clés, les responsabilités des acteurs et les délais."
         },
         {
             "title": "Outils et technologies pour la documentation technique",
-            "context": "Recherchez et comparez deux outils de gestion de contenu (CMS) populaires utilisés pour la documentation technique.",
-            "objective": "Présentez les avantages et les inconvénients de chaque outil, et recommandez celui que vous considérez le plus adapté à un environnement professionnel spécifique, en justifiant votre choix."
+            "objectif": "Connaître les outils et technologies pour la documentation technique.",
+            "instructions": "Rechercher et comparer deux outils de gestion de contenu (CMS) populaires utilisés pour la documentation technique, présenter les avantages et les inconvénients de chacun, puis recommander celui jugé le plus adapté à un environnement professionnel spécifique en justifiant son choix.",
+            "livrable": "Une comparaison de deux CMS (avantages et inconvénients) assortie d'une recommandation justifiée pour un environnement professionnel donné."
         }
     ],
     "bibliography": [
@@ -108,7 +113,7 @@
             "author": "Bleiel, N"
         },
         {
-            "title": "Diátaxis — A systematic approach to technical documentation",
+            "title": "Diátaxis - A systematic approach to technical documentation",
             "author": "Procida, D"
         },
         {

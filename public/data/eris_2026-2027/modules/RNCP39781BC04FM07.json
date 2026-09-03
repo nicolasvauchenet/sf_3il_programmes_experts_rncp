@@ -10,7 +10,12 @@
         "durationHours": 21,
         "academicYear": "2026-2027"
     },
-    "skills": [],
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        }
+    ],
     "objectives": {
         "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux et les conditions de validité des contrats de prestation (Comprendre) Analyser les responsabilités des parties et les recours disponibles en cas de litige (Analyser) Appliquer les connaissances juridiques sur des cas pratiques de contrats de prestation et de sous-traitance (Appliquer)"
     },
@@ -74,28 +79,33 @@
     "exercises": [
         {
             "title": "Rédaction d'un contrat de prestation",
-            "context": "Vous êtes le gérant d'une entreprise spécialisée dans les services informatiques.",
-            "objective": "Un nouveau client souhaite engager votre entreprise pour la mise en place d'un système de gestion des ressources humaines. Rédigez un contrat de prestation qui couvre les éléments suivants : Identification des parties contractantes Description détaillée de la prestation de services Les obligations de chaque partie Les conditions de validité du contrat Les modalités de paiement La durée du contrat avec les éventuelles conditions de renouvellement Les clauses de résiliation anticipée Assurez-vous que le contrat respecte les principes généraux du droit des contrats et qu'il est équilibré pour les deux parties."
+            "objectif": "Être capable de rédiger un contrat de prestation équilibré respectant les principes du droit des contrats.",
+            "instructions": "Gérant d'une entreprise spécialisée dans les services informatiques, vous êtes sollicité par un nouveau client pour la mise en place d'un système de gestion des ressources humaines. Rédigez un contrat de prestation couvrant les éléments suivants : l'identification des parties contractantes ; la description détaillée de la prestation de services ; les obligations de chaque partie ; les conditions de validité du contrat ; les modalités de paiement ; la durée du contrat avec les éventuelles conditions de renouvellement ; et les clauses de résiliation anticipée. Assurez-vous que le contrat respecte les principes généraux du droit des contrats et qu'il est équilibré pour les deux parties.",
+            "livrable": "Un contrat de prestation équilibré et conforme aux principes du droit des contrats, comprenant l'identification des parties, la description de la prestation, les obligations, les conditions de validité, les modalités de paiement, la durée et les conditions de renouvellement, et les clauses de résiliation anticipée."
         },
         {
             "title": "Gestion d'un litige contractuel",
-            "context": "Imaginez que vous êtes un avocat spécialisé dans le droit des contrats.",
-            "objective": "Un client vient vous voir avec un problème : il a engagé une entreprise de construction pour agrandir son restaurant, mais les travaux ont été interrompus en raison d'une découverte archéologique sur le site. Le client souhaite savoir quelles sont ses options juridiques, sachant qu'il y a une clause de force majeure dans le contrat, et que le constructeur refuse de reprendre les travaux ou de rembourser les acomptes versés. Analysez la situation et proposez une stratégie pour résoudre le litige en tenant compte de la responsabilité contractuelle et des recours possibles."
+            "objectif": "Être capable d'analyser un litige contractuel et de proposer une stratégie de résolution fondée sur la responsabilité contractuelle.",
+            "instructions": "Dans le rôle d'un avocat spécialisé dans le droit des contrats, vous recevez un client confronté au problème suivant : il a engagé une entreprise de construction pour agrandir son restaurant, mais les travaux ont été interrompus à la suite d'une découverte archéologique sur le site ; le contrat comporte une clause de force majeure et le constructeur refuse de reprendre les travaux comme de rembourser les acomptes versés. Analysez la situation et proposez une stratégie pour résoudre le litige, en tenant compte de la responsabilité contractuelle et des recours possibles.",
+            "livrable": "Une analyse du litige et une stratégie de résolution tenant compte de la clause de force majeure, de la responsabilité contractuelle et des recours possibles pour le client."
         },
         {
             "title": "Évaluation des risques dans un contrat de sous-traitance",
-            "context": "Vous êtes consultant en gestion des risques pour une entreprise qui envisage de sous-traiter une partie de sa production à un fournisseur étranger.",
-            "objective": "Votre mission est d'évaluer les risques juridiques associés à cette sous-traitance et de conseiller l'entreprise sur les clauses essentielles à inclure dans le contrat pour se protéger. Identifiez les principaux risques et rédigez un rapport qui présente les clauses recommandées pour limiter la responsabilité de votre entreprise et garantir la qualité de la prestation."
+            "objectif": "Être capable d'évaluer les risques juridiques d'un contrat de sous-traitance et de recommander des clauses de protection.",
+            "instructions": "En tant que consultant en gestion des risques pour une entreprise qui envisage de sous-traiter une partie de sa production à un fournisseur étranger, évaluez les risques juridiques associés à cette sous-traitance et conseillez l'entreprise sur les clauses essentielles à inclure dans le contrat pour se protéger. Identifiez les principaux risques et rédigez un rapport présentant les clauses recommandées pour limiter la responsabilité de l'entreprise et garantir la qualité de la prestation.",
+            "livrable": "Un rapport identifiant les principaux risques juridiques de la sous-traitance et présentant les clauses recommandées pour limiter la responsabilité de l'entreprise et garantir la qualité de la prestation."
         },
         {
             "title": "Clause de confidentialité",
-            "context": "Vous travaillez pour une entreprise de conseil en gestion qui est sur le point de signer un contrat de prestation avec un grand groupe industriel.",
-            "objective": "Le contrat requiert le partage d'informations sensibles et confidentielles. Rédigez une clause de confidentialité robuste qui pourrait être intégrée au contrat. Cette clause devrait inclure les définitions des informations confidentielles, les obligations des parties, les exceptions à la confidentialité, la durée de l'obligation de confidentialité et les conséquences en cas de violation de cette clause."
+            "objectif": "Être capable de rédiger une clause de confidentialité robuste pour un contrat de prestation.",
+            "instructions": "Vous travaillez pour une entreprise de conseil en gestion sur le point de signer un contrat de prestation avec un grand groupe industriel, contrat qui requiert le partage d'informations sensibles et confidentielles. Rédigez une clause de confidentialité robuste pouvant être intégrée au contrat. Cette clause doit inclure la définition des informations confidentielles, les obligations des parties, les exceptions à la confidentialité, la durée de l'obligation de confidentialité et les conséquences en cas de violation de la clause.",
+            "livrable": "Une clause de confidentialité robuste précisant la définition des informations confidentielles, les obligations des parties, les exceptions, la durée de l'obligation et les conséquences en cas de violation."
         },
         {
             "title": "Simulation de négociation contractuelle",
-            "context": "Divisez-vous en deux groupes représentant respectivement un prestataire de services marketing et une entreprise cliente dans le secteur de la mode.",
-            "objective": "Effectuez une simulation de négociation contractuelle où le prestataire cherche à obtenir un contrat à long terme tandis que l'entreprise souhaite une flexibilité maximale pour adapter ou résilier le contrat selon les fluctuations du marché. Les points à négocier incluent la durée du contrat, les modalités de paiement, les clauses de performance et de résiliation, ainsi que les dispositions relatives à la propriété intellectuelle. Chaque groupe doit élaborer une stratégie de négociation, identifier ses objectifs principaux et ses concessions possibles. Après la simulation, débriefez pour analyser les accords atteints et les stratégies utilisées."
+            "objectif": "Être capable de conduire une négociation contractuelle en élaborant une stratégie et en analysant l'accord obtenu.",
+            "instructions": "Répartissez-vous en deux groupes représentant respectivement un prestataire de services marketing et une entreprise cliente du secteur de la mode. Réalisez une simulation de négociation contractuelle dans laquelle le prestataire cherche à obtenir un contrat à long terme tandis que l'entreprise souhaite une flexibilité maximale pour adapter ou résilier le contrat selon les fluctuations du marché. Les points à négocier incluent la durée du contrat, les modalités de paiement, les clauses de performance et de résiliation, ainsi que les dispositions relatives à la propriété intellectuelle. Chaque groupe doit élaborer une stratégie de négociation et identifier ses objectifs principaux et ses concessions possibles. Après la simulation, débriefez pour analyser les accords atteints et les stratégies utilisées.",
+            "livrable": "Pour chaque groupe, une stratégie de négociation (objectifs principaux et concessions possibles), l'accord issu de la simulation et un débriefing analysant les accords atteints et les stratégies utilisées."
         }
     ],
     "bibliography": [
@@ -115,9 +125,9 @@
     "OnlineResources": [
         "Légifrance (https://www.legifrance.gouv.fr) [FR]",
         "Syntec Numérique / Numeum (https://numeum.fr) [FR]",
-        "CNIL — Contrats (https://www.cnil.fr) [FR]",
+        "CNIL - Contrats (https://www.cnil.fr) [FR]",
         "EUR-Lex (https://eur-lex.europa.eu) [FR/EN]",
-        "OECD — Digital economy contracts (https://www.oecd.org/digital) [EN]"
+        "OECD - Digital economy contracts (https://www.oecd.org/digital) [EN]"
     ],
     "teachingMethods": [
         "Cours magistraux interactifs avec démonstrations sur des cas réels",
