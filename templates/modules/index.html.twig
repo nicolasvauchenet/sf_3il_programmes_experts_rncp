@@ -110,27 +110,20 @@
 
                         {% for ex in module.exercises %}
                             {% set title = ex.title ?? 'Exercice' %}
-                            {% set context = (ex.context ?? '')|trim %}
-                            {% set objective = (ex.objective ?? '')|trim %}
-                            {% set objectiveText = objective ?: context %}
-                            {% set hasObjective = objectiveText|length > 0 %}
-                            {% set hasContext = context|length > 0 and objective|length > 0 %}
-                            {% set normContext = context|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-                            {% set normObjective = objective|lower|replace({"\n":" ", "\r":" ", "\t":" "}) %}
-                            {% set normContext = normContext|split(' ')|filter(v => v != '')|join(' ') %}
-                            {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
-                            {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
 
                             <section class="app-section mx-0 mt-2 mb-0">
                                 <h3>Exercice {{ loop.index }} : {{ title }}</h3>
 
-                                {% if showContextAndObjective %}
-                                    <p><strong>Contexte :</strong> {{ context }}</p>
-                                    <p><strong>Objectif :</strong> {{ objective }}</p>
-                                {% else %}
-                                    {% if hasObjective %}
-                                        <p><strong>Objectif :</strong> {{ objectiveText }}</p>
-                                    {% endif %}
+                                {% if ex.objective ?? null %}
+                                    <p><strong>Objectif :</strong> {{ ex.objective }}</p>
+                                {% endif %}
+
+                                {% if ex.instructions ?? null %}
+                                    <p><strong>Consignes :</strong> {{ ex.instructions }}</p>
+                                {% endif %}
+
+                                {% if ex.deliverable ?? null %}
+                                    <p><strong>Livrable :</strong> {{ ex.deliverable }}</p>
                                 {% endif %}
                             </section>
                         {% endfor %}

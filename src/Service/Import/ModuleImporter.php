@@ -17,6 +17,7 @@ final readonly class ModuleImporter
         private EntityManagerInterface $entityManager,
         private RelationSyncService    $relationSyncService,
         private CodeNormalizer         $codeNormalizer,
+        private ExerciseNormalizer     $exerciseNormalizer,
     )
     {
     }
@@ -81,7 +82,10 @@ final readonly class ModuleImporter
             $module->setDurationHours($this->toNullableInt($detail['meta']['durationHours'] ?? null));
             $module->setObjectives($this->extractNestedString($detail, ['objectives', 'description']));
             $module->setPrerequisites($this->extractNestedString($detail, ['prerequisites', 'description']));
-            $module->setExercises($this->nullableArray($detail['exercises'] ?? null));
+            $module->setExercises($this->exerciseNormalizer->normalizeMany(
+                $detail['exercises'] ?? null,
+                $code,
+            ));
             $module->setBibliography($this->nullableArray($detail['bibliography'] ?? null));
             $module->setOnlineResources($this->extractOnlineResources($detail));
             $module->setTeachingMethods($this->nullableArray($detail['teachingMethods'] ?? null));
