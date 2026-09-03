@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC02-C12",
+        "title": "Définir , implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*)",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Définir , implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*) afin de protéger les systèmes et les données sensibles contre les accès non autorisés.",
+    "criteria": [
+        "Les règles d’accès mises en place dans l’IAM sont conformes aux règles métiers de l’entreprise.",
+        "Les contrôles effectués permettent de vérifier que les bonnes personnes ont le bon niveau d’accès aux ressources."
+    ]
+}

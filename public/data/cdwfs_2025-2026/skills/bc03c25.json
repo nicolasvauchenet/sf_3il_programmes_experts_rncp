@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC03-C25",
+        "title": "Automatiser la gestion et le déploiement des ressources cloud selon les principes DevOps",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "academicYear": "2025"
+    },
+    "description": "Automatiser la gestion et le déploiement des ressources cloud en appliquant les principes DevOps et en paramétrant les mesures de sécurité des applications et des données hébergées pour l’optimisation continue des processus de développement et de déploiement.",
+    "criteria": [
+        "Conformité de l'automatisation : les processus d'automatisation de gestion et de déploiement des ressources cloud sont conformes aux meilleures pratiques DevOps.",
+        "Sécurité des déploiements : les mesures de sécurité appliquées lors de l'automatisation protègent efficacement les applications et les données contre les accès non autorisés et autres vulnérabilités potentielles."
+    ]
+}

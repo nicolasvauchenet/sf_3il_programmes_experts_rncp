@@ -1,0 +1,142 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM04",
+        "title": "Management des Hommes",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d’une méthode de gestion de projet et des outils adapté s au contexte , en analysant le besoin, en rédigeant les documents d’initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l’entreprise et garantir la qualité des livrables , le respect des délais et des coûts."
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s’adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d’assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs."
+        },
+        {
+            "code": "C27",
+            "description": "Elaborer et mettre en œuvre la conduite du changement en s’appuyant sur des référentiels tels qu’ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l’impact d’une évolution (mineure, delta ou majeure) de l’infrastructure sur l’environnement de production."
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l’équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l’écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées ."
+        },
+        {
+            "code": "C29",
+            "description": "Contribuer au recrutement des collaborateurs en participant aux rédactions de fiches de poste, en assurant une caution technique au moyen d’évaluations des compétences lors des entretiens, et en mettant l'accent sur l'inclusion notamment des personnes en situation de handicap , afin de contribuer à la construction d'une équipe diversifiée, reflétant les valeurs de l'égalité des chances et de la responsabilité sociétale (RSE)."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre et appliquer les principales théories de la motivation au travail, développer des compétences en communication interpersonnelle et en gestion des conflits, et acquérir les bases d'un leadership efficace permettant de motiver et d'accompagner les équipes."
+    },
+    "prerequisites": {
+        "description": "Une connaissance de base en psychologie générale et en management est recommandée."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Les théories de la motivation au travail",
+                "items": [
+                    "Théorie de Maslow",
+                    "Théorie de Herzberg",
+                    "Théorie de McGregor",
+                    "Théorie de McClelland",
+                    "Théorie de Vroom"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : La communication interpersonnelle",
+                "items": [
+                    "Les différents types de communication",
+                    "Les obstacles à la communication",
+                    "Les techniques de communication efficace",
+                    "L'empathie et l'écoute active",
+                    "La communication non verbale"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : La gestion des conflits",
+                "items": [
+                    "Les sources de conflits dans une équipe",
+                    "Les styles de gestion des conflits",
+                    "Les étapes de résolution des conflits",
+                    "La médiation et la négociation",
+                    "La prévention des conflits"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Leadership et management d'équipe",
+                "items": [
+                    "Les styles de leadership",
+                    "Les compétences d'un leader",
+                    "La constitution et le développement d'une équipe performante",
+                    "La délégation et l'autonomie",
+                    "La gestion de la diversité"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Motivation et engagement des équipes",
+                "items": [
+                    "Les leviers de motivation au travail",
+                    "Reconnaissance et récompense",
+                    "Engagement des collaborateurs",
+                    "Mesure de la satisfaction au travail",
+                    "Actions pour favoriser l'engagement"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de la motivation selon différentes théories",
+            "context": "Analyse de la situation d'un collaborateur fictif.",
+            "objective": "Utiliser les théories de Maslow, Herzberg, McGregor, McClelland et Vroom pour analyser la motivation d'un employé et proposer des actions d'amélioration."
+        },
+        {
+            "title": "Mise en pratique de l'écoute active",
+            "context": "Entretien entre un manager et un collaborateur rencontrant des difficultés personnelles.",
+            "objective": "Mettre en œuvre des techniques d'écoute active, de reformulation et d'empathie afin de comprendre les besoins du collaborateur."
+        },
+        {
+            "title": "Gestion de conflit en équipe",
+            "context": "Conflit entre deux membres d'une équipe sur la gestion d'un projet.",
+            "objective": "Décrire les étapes de résolution du conflit en mobilisant médiation, négociation et styles de gestion des conflits."
+        },
+        {
+            "title": "Leadership et développement d'équipe",
+            "context": "Prise de poste d'un nouveau leader d'équipe.",
+            "objective": "Identifier son style de leadership et élaborer un plan d'action pour développer une équipe performante."
+        },
+        {
+            "title": "Évaluation et amélioration de l'engagement d'équipe",
+            "context": "Mesure et amélioration de la motivation au sein d'une équipe.",
+            "objective": "Créer un outil d'évaluation de l'engagement, analyser les résultats et proposer un plan d'action pour améliorer la motivation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Motivation et personnalité",
+            "author": "Abraham Maslow"
+        },
+        {
+            "title": "Le travail et la nature de l'homme",
+            "author": "Frederick Herzberg"
+        },
+        {
+            "title": "L'art de la communication : Techniques et outils pour mieux communiquer",
+            "author": "H. Bauche"
+        }
+    ],
+    "teachingMethods": [
+        "Utilisation de supports (ppt, etc.)",
+        "Travaux de groupe",
+        "Étude de texte",
+        "Étude de cas"
+    ]
+}

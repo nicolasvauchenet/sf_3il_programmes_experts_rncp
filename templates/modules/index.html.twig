@@ -72,15 +72,28 @@
 
                 {% if module.objectives.description is defined and module.objectives.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>{{ module.blocCode }} : {{ module.blocName }}</h2>
-                        <p>{{ module.objectives.description }}</p>
+                        <h2>Objectifs pédagogiques</h2>
+
+                        {% if module.objectives.items is defined and module.objectives.items is not empty %}
+                            <p>{{ module.objectives.intro }}</p>
+                            <ul>
+                                {% for objective in module.objectives.items %}
+                                    <li>{{ objective }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>{{ module.objectives.description }}</p>
+                        {% endif %}
                     </section>
                 {% endif %}
 
                 {% if module.prerequisites.description is defined and module.prerequisites.description %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Prérequis</h2>
-                        <p>{{ module.prerequisites.description }}</p>
+
+                        {% for paragraph in module.prerequisites.paragraphs ?? [module.prerequisites.description] %}
+                            <p>{{ paragraph }}</p>
+                        {% endfor %}
                     </section>
                 {% endif %}
 

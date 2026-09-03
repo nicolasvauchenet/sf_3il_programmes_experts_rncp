@@ -1,0 +1,124 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM04",
+        "title": "Gestion des coûts et du budget",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C31",
+            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre et utiliser les outils de suivi budgétaire dans la gestion de projet. Maîtriser la gestion des coûts, ainsi que l'analyse et l'optimisation des dépenses. Savoir interpréter les indicateurs de performance financière pour prendre des décisions de gestion proactives."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Outils de suivi budgétaire",
+                "items": [
+                    "Les différents outils de suivi budgétaire disponibles",
+                    "Les critères de choix d'un outil de suivi budgétaire",
+                    "La mise en place d'un outil de suivi budgétaire adapté au projet",
+                    "L'importance de l'intégration des outils de suivi budgétaire dans la gestion de projet",
+                    "Les bonnes pratiques pour l'utilisation des outils de suivi budgétaire"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des coûts",
+                "items": [
+                    "La différence entre coûts directs et coûts indirects",
+                    "Les méthodes de prévision et de suivi des coûts",
+                    "L'analyse des écarts de coûts",
+                    "Les actions correctives en cas d'écarts importants",
+                    "L'optimisation des coûts sans compromettre la qualité du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Suivi continu des indicateurs de performance",
+                "items": [
+                    "Les principaux indicateurs de performance liés à la gestion financière",
+                    "La mise en place de tableaux de bord de suivi de la performance financière",
+                    "L'interprétation des indicateurs de performance financière",
+                    "L'articulation entre les indicateurs de performance financière et les décisions de gestion",
+                    "L'adaptation des actions en fonction des indicateurs de performance financière"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion proactive du projet",
+                "items": [
+                    "L'anticipation des risques financiers",
+                    "La planification des actions en cas de variations budgétaires importantes",
+                    "La communication des informations financières aux parties prenantes",
+                    "L'alignement des décisions de gestion sur les objectifs financiers du projet",
+                    "L'implication des équipes dans la gestion proactive des coûts"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Amélioration continue de la gestion financière",
+                "items": [
+                    "L'analyse des retours d'expérience pour améliorer la gestion financière",
+                    "L'adaptation des pratiques de gestion financière en fonction des enseignements tirés",
+                    "La capitalisation des bonnes pratiques en gestion financière",
+                    "L'évolution des outils et méthodes de gestion financière",
+                    "La contribution à l'amélioration continue des processus de gestion financière de l'organisation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Outils de suivi budgétaire",
+            "context": "Choix d'un outil de suivi budgétaire pour un projet de construction.",
+            "objective": "Définir et hiérarchiser les critères de choix et justifier leur importance."
+        },
+        {
+            "title": "Gestion des coûts",
+            "context": "Écart important entre coût réel et coût prévu dans un projet informatique.",
+            "objective": "Proposer trois actions correctives détaillées pour réduire l'écart tout en maintenant la qualité."
+        },
+        {
+            "title": "Suivi continu des indicateurs de performance",
+            "context": "Création d'un tableau de bord financier.",
+            "objective": "Sélectionner cinq indicateurs pertinents, justifier leur choix et expliquer leur interprétation."
+        },
+        {
+            "title": "Gestion proactive du projet",
+            "context": "Identification de risques financiers pour un projet de développement.",
+            "objective": "Proposer des plans d'action préventifs et correctifs et détailler les étapes associées."
+        },
+        {
+            "title": "Amélioration continue de la gestion financière",
+            "context": "Analyse d'un retour d'expérience sur un projet passé.",
+            "objective": "Identifier points forts et faibles et proposer des pistes d'amélioration."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Le pilotage des coûts en entreprise",
+            "author": "Michaël Lanfranchi et Xavier Piveteau"
+        },
+        {
+            "title": "Maîtriser la gestion budgétaire : Contrôle et planification financière",
+            "author": "Philippe Chanjou"
+        },
+        {
+            "title": "Contrôle de gestion et pilotage de l'entreprise",
+            "author": "Michel Capron"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM05",
+        "title": "Techniques de Résilience",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Conduire des audits de sécurité réguliers pour évaluer l'efficacité des mesures de sécurité en place, en utilisant des méthodologies d'audit standardisées et en collaboration avec les équipes internes et les auditeurs externes, afin de détecter les faiblesses et de recommander des améliorations"
+        },
+        {
+            "code": "C17",
+            "description": "Élaborer et mettre en œuvre des actions correctives en analysant les résultats des audits de sécurité et en identifiant les vulnérabilités et les non-conformités, en coopération avec les équipes de sécurité et de conformité, afin d'améliorer continuellement les mesures de sécurité de l'organisation et de garantir la conformité réglementaire"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les différents types d'attaques et de failles de sécurité (Comprendre) Planifier la continuité des opérations durant une crise (Créer) Maîtriser la gestion des incidents de sécurité ainsi que la récupération après ces incidents (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en sécurité informatique, compréhension des infrastructures réseau, et expérience préalable en gestion de systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Compréhension des attaques et des failles",
+                "items": [
+                    "Types d'attaques courantes",
+                    "Méthodes de détection des failles",
+                    "Analyse des scénarios d'attaques"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Planification de la continuité des opérations",
+                "items": [
+                    "Identification des processus critiques",
+                    "Mise en place de plans de continuité",
+                    "Tests et simulations de scénarios de crise"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion des incidents de sécurité",
+                "items": [
+                    "Processus de gestion des incidents",
+                    "Classification des incidents",
+                    "Mise en place d'une équipe de réponse aux incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Récupération après incident",
+                "items": [
+                    "Stratégies de récupération",
+                    "Restauration des données",
+                    "Retour à la normale"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Amélioration continue de la résilience",
+                "items": [
+                    "Analyse post-incident",
+                    "Révision des plans de continuité",
+                    "Mise à jour des mesures de sécurité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comprehension des attaques et des failles",
+            "objectif": "Comprendre le fonctionnement d'attaques courantes et proposer des methodes de detection.",
+            "instructions": "A partir d'etudes de cas reels, identifiez trois types d'attaques courantes et expliquez en detail le fonctionnement de chacune. Proposez ensuite des methodes de detection pour chaque attaque.",
+            "livrable": "Une analyse de trois attaques courantes decrivant leur fonctionnement, chacune assortie de methodes de detection."
+        },
+        {
+            "title": "Planification de la continuite des operations",
+            "objectif": "Elaborer un plan de continuite assurant la resilience des processus critiques d'une entreprise.",
+            "instructions": "Choisissez une entreprise fictive et identifiez ses processus critiques. Creez un plan de continuite incluant des mesures specifiques pour assurer la resilience de ces processus critiques et presentez vos conclusions.",
+            "livrable": "Un rapport detaille presentant les processus critiques identifies et le plan de continuite assorti de mesures de resilience."
+        },
+        {
+            "title": "Gestion des incidents de securite",
+            "objectif": "Appliquer le processus de gestion des incidents pour resoudre un incident de securite.",
+            "instructions": "Simulez un scenario d'incident de securite et suivez le processus de gestion des incidents pour le resoudre. Identifiez et classez l'incident, puis formez une equipe de reponse aux incidents pour gerer la situation.",
+            "livrable": "Le compte rendu de la gestion de l'incident simule, incluant sa classification et la composition de l'equipe de reponse aux incidents."
+        },
+        {
+            "title": "Recuperation apres incident",
+            "objectif": "Elaborer une strategie de recuperation pour restaurer les donnees et revenir a la normale.",
+            "instructions": "A la suite de l'incident simule a l'exercice 3, elaborez une strategie de recuperation detaillee. Identifiez les etapes necessaires pour restaurer les donnees et assurer un retour a la normale le plus rapidement possible.",
+            "livrable": "Une strategie de recuperation detaillee precisant les etapes de restauration des donnees et de retour a la normale."
+        },
+        {
+            "title": "Amelioration continue de la resilience",
+            "objectif": "Mener une analyse post-incident et proposer des ameliorations du plan de continuite.",
+            "instructions": "Apres avoir gere l'incident simule et effectue la recuperation, menez une analyse post-incident. Identifiez les lacunes du plan de continuite et proposez des mises a jour specifiques pour ameliorer la resilience de l'entreprise face a de futurs incidents.",
+            "livrable": "Une analyse post-incident identifiant les lacunes du plan de continuite et les mises a jour specifiques proposees pour renforcer la resilience."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Business Continuity and Disaster Recovery Planning for IT Professionals (2e éd.). Syngress",
+            "author": "Snedaker, S"
+        },
+        {
+            "title": "Security Engineering : A Guide to Building Dependable Distributed Systems (3e éd.). Wiley",
+            "author": "Anderson, R"
+        },
+        {
+            "title": "Principles of Incident Response and Disaster Recovery (3e éd.). Cengage",
+            "author": "Whitman, M. & Mattord, H"
+        }
+    ],
+    "OnlineResources": [
+        "NIST SP 800-34 - Contingency Planning Guide (https://csrc.nist.gov) [EN]",
+        "ISO 22301 - Continuité d'activité (https://www.iso.org/standard/75106.html) [EN/FR]",
+        "ANSSI - PCA/PRA (https://cyber.gouv.fr) [FR]",
+        "Disaster Recovery Journal (https://www.drj.com) [EN]",
+        "SANS - Incident Handler's Handbook (https://www.sans.org/white-papers/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

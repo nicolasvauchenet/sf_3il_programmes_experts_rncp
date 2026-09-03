@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM05",
+        "title": "Mise en production et amélioration continue",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives."
+        },
+        {
+            "code": "C06",
+            "description": "Évaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité."
+        },
+        {
+            "code": "C07",
+            "description": "Élaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel."
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre."
+        },
+        {
+            "code": "C09",
+            "description": "Établir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module sont d'apprendre à gérer efficacement la mise en production de projets, à appliquer les meilleures pratiques pour minimiser les risques et à assurer le suivi et l'optimisation post-déploiement. Les participants comprendront comment configurer et sécuriser l'environnement de production tout en utilisant les outils technologiques appropriés. Ils seront également capables de gérer les incidents et les changements afin d'assurer la continuité et l'optimisation des performances en production."
+    },
+    "prerequisites": {
+        "description": "Les apprenants doivent avoir des connaissances de base en gestion de projet informatique, ainsi qu'une compréhension des concepts de développement logiciel et des systèmes d'exploitation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Méthodologie de mise en production",
+                "items": [
+                    "Processus de mise en production",
+                    "Bonnes pratiques en matière de déploiement",
+                    "Gestion des risques liés à la mise en production",
+                    "Planification et coordination des opérations de mise en production",
+                    "Suivi et évaluation post-déploiement"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Environnement de mise en production",
+                "items": [
+                    "Environnement de développement, de test et de production",
+                    "Gestion des configurations",
+                    "Virtualisation et conteneurisation",
+                    "Automatisation des déploiements",
+                    "Sécurité des environnements de mise en production"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et technologies de mise en production",
+                "items": [
+                    "Gestion de versions",
+                    "Outils de déploiement continu",
+                    "Surveillance et monitoring des systèmes en production",
+                    "Ordonnancement des tâches",
+                    "Gestion des mises à jour et des correctifs"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents et des changements en production",
+                "items": [
+                    "Processus de gestion des incidents",
+                    "Gestion des changements en environnement de production",
+                    "Mécanismes de retour arrière",
+                    "Communication en cas d'incident",
+                    "Analyse post-mortem des incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Optimisation des performances en production",
+                "items": [
+                    "Analyse des performances",
+                    "Tuning des systèmes",
+                    "Gestion de la capacité",
+                    "Scalabilité des infrastructures",
+                    "Optimisation des ressources et des coûts"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Processus de mise en production",
+            "context": "Déploiement d'une nouvelle version d'une application dans un environnement de production.",
+            "objective": "Décrire les étapes nécessaires pour assurer une mise en production réussie en prenant en compte les bonnes pratiques et la gestion des risques."
+        },
+        {
+            "title": "Gestion des configurations",
+            "context": "Création d'une configuration standard pour un serveur d'application.",
+            "objective": "Mettre en place une configuration stable et sécurisée en utilisant un outil de gestion de configuration."
+        },
+        {
+            "title": "Surveillance et monitoring des systèmes en production",
+            "context": "Installation d'un outil de monitoring sur un serveur de production.",
+            "objective": "Configurer la surveillance des ressources système, des performances applicatives et la génération d'alertes."
+        },
+        {
+            "title": "Gestion des incidents en production",
+            "context": "Simulation d'un incident majeur en production.",
+            "objective": "Appliquer les procédures de gestion des incidents, documenter les actions et proposer des améliorations."
+        },
+        {
+            "title": "Analyse des performances et optimisation",
+            "context": "Analyse des goulots d'étranglement d'un serveur en production.",
+            "objective": "Identifier les causes de dégradation des performances et proposer des actions d'optimisation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "DevOps : Transformer et améliorer l'organisation des opérations informatiques",
+            "author": "P. Chassang"
+        },
+        {
+            "title": "Comprendre et pratiquer DevOps : Déploiement continu, livraison continue et culture DevOps",
+            "author": "E. Moreau"
+        },
+        {
+            "title": "SRE et DevOps - Transformer des conflits en progrès",
+            "author": "R. Bell et G. Savchenko"
+        }
+    ],
+    "teachingMethods": [
+        "Utilisation de supports (ppt, etc.)",
+        "Travaux de groupe",
+        "Étude de cas"
+    ]
+}

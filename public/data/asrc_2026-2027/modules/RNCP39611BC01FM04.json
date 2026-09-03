@@ -1,0 +1,150 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM04",
+        "title": "Gestion des incidents et système de ticketing",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C06",
+            "description": "Surveiller et optimiser les performances des systèmes informatiques en utilisant des outils de monitoring et d'analyse, en coordination avec les équipes d'exploitation, pour détecter et résoudre proactivement les problèmes techniques et améliorer la performance des systèmes"
+        },
+        {
+            "code": "C07",
+            "description": "Manager le processus de gestion des incidents informatiques en utilisant un système de ticketing pour conduire, hiérarchiser ou escalader les incidents en collaboration avec les équipes techniques et en respectant les SLA définis pour assurer une reprise ou continuité des activités de l'entreprise"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre le concept de gestion des incidents ainsi que leur cycle de vie (Comprendre) Utiliser les outils de ticketing pour suivre et résoudre efficacement les incidents (Appliquer) Élaborer et mettre en œuvre des procédures efficaces articulant gestion des incidents, des changements et des problèmes (Créer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et en systèmes d'information, ainsi qu'une compréhension générale des processus de gestion d'entreprise et des services informatiques."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Concepts de gestion des incidents",
+                "items": [
+                    "Comprendre le concept de gestion des incidents",
+                    "Identifier les différents types d'incidents",
+                    "Connaître les bonnes pratiques en matière de gestion des incidents",
+                    "Savoir prioriser les incidents en fonction de leur impact",
+                    "Comprendre le cycle de vie d'un incident"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Outils de gestion des incidents",
+                "items": [
+                    "Présentation des outils de gestion des incidents",
+                    "Comparaison des différentes solutions de ticketing",
+                    "Configuration et utilisation d'un système de ticketing",
+                    "Gestion des files d'attente et des priorités",
+                    "Suivi et résolution des incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Bonnes pratiques et procédures",
+                "items": [
+                    "Élaboration de procédures de gestion des incidents",
+                    "Définition des rôles et responsabilités dans la gestion des incidents",
+                    "Mise en place de processus de résolution d'incidents",
+                    "Gestion de la communication en cas d'incident",
+                    "Analyse post-incident et amélioration continue"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des changements et des problèmes",
+                "items": [
+                    "Différencier gestion des incidents, gestion des changements et gestion des problèmes",
+                    "Articulation entre la gestion des incidents, des changements et des problèmes",
+                    "Gestion des changements d'urgence liés à un incident",
+                    "Analyse des problèmes récurrents pour prévention d'incidents futurs",
+                    "Utilisation des données d'incidents pour améliorer la gestion des changements et des problèmes"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Supervision des performances et gestion des incidents",
+                "items": [
+                    "Surveiller les performances des systèmes à l'aide d'outils de monitoring",
+                    "Corréler les alertes de performance avec la détection des incidents",
+                    "Exploiter les indicateurs de performance pour diagnostiquer et prioriser les incidents",
+                    "Optimiser les performances des systèmes à la suite d'un incident",
+                    "Suivre l'évolution des performances à l'aide de tableaux de bord"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Exercices pratiques et études de cas",
+                "items": [
+                    "Simulation de gestion d'incidents avec des scénarios variés",
+                    "Résolution d'incidents en situation de stress",
+                    "Analyse de cas concrets de gestion d'incidents",
+                    "Utilisation des outils de ticketing en situation réelle",
+                    "Retours d'expérience sur des situations d'incidents critiques"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Simulation de gestion d'incidents",
+            "objectif": "Savoir prioriser, tracer, communiquer et résoudre des incidents critiques puis en tirer un retour d'expérience.",
+            "instructions": "Priorisez les incidents critiques signalés en fonction de leur impact sur l'organisation, en justifiant vos choix. Pour l'incident le plus critique, créez un ticket dans un système de ticketing fictif avec une description détaillée. Élaborez un plan de communication pour informer les parties prenantes de l'incident et des mesures prises. Décrivez les étapes de résolution. Après la résolution, réalisez une analyse post-incident.",
+            "livrable": "Un ensemble de productions comprenant la priorisation justifiée, le ticket détaillé, le plan de communication, les étapes de résolution et l'analyse post-incident identifiant causes, solutions et recommandations."
+        },
+        {
+            "title": "Élaboration de procédures",
+            "objectif": "Savoir créer une procédure standardisée de gestion des incidents au sein d'une entreprise.",
+            "instructions": "Rédigez une procédure détaillée couvrant la détection, la notification, la classification, la résolution et la clôture d'un incident. Définissez les rôles et responsabilités pour chaque étape. Créez un guide de triage pour aider le personnel à prioriser les incidents. Développez un modèle de rapport post-incident. Présentez un plan de formation pour que tous les employés puissent appliquer la procédure.",
+            "livrable": "Une procédure de gestion des incidents complète accompagnée du guide de triage, du modèle de rapport post-incident et du plan de formation."
+        },
+        {
+            "title": "Gestion des changements d'urgence",
+            "objectif": "Savoir proposer, documenter et évaluer un changement d'urgence selon le processus de gestion des changements.",
+            "instructions": "Proposez un changement d'urgence et documentez-le en suivant le processus de gestion des changements de votre organisation. Décrivez les étapes pour obtenir une approbation rapide. Mettez en œuvre le changement et documentez les actions réalisées. Après mise en œuvre, évaluez son efficacité et identifiez les impacts non anticipés. Rédigez une communication à destination des utilisateurs concernés.",
+            "livrable": "Un dossier de changement d'urgence documenté (proposition, approbation, mise en œuvre, évaluation d'efficacité) et une communication aux utilisateurs concernés."
+        },
+        {
+            "title": "Analyse des problèmes récurrents",
+            "objectif": "Savoir identifier la cause racine de problèmes récurrents et proposer des mesures correctives durables.",
+            "instructions": "Collectez les données des incidents récurrents et identifiez les tendances ou modèles communs. Utilisez des techniques d'analyse de cause racine pour identifier les facteurs contributifs. Proposez des mesures correctives pour résoudre le problème à long terme. Présentez votre rapport à la direction en expliquant comment vos recommandations réduiront la fréquence et l'impact des incidents.",
+            "livrable": "Un rapport détaillé incluant l'analyse, les conclusions et les recommandations, présenté à la direction."
+        },
+        {
+            "title": "Utilisation d'outils de ticketing en situation réelle",
+            "objectif": "Savoir utiliser un outil de ticketing pour recevoir, traiter, assigner et documenter une série d'incidents.",
+            "instructions": "Configurez un environnement dans un outil de ticketing permettant de recevoir et traiter des tickets. Simulez la réception de cinq incidents différents et créez un ticket pour chacun. Assignez les tickets aux membres de votre équipe fictive selon leur expertise, en expliquant vos choix. Pour chaque ticket, décrivez la procédure de résolution et documentez toutes les actions prises dans l'outil.",
+            "livrable": "Un rapport de fin de journée résumant l'activité des tickets, les résolutions apportées et les tickets encore ouverts ou en attente d'informations."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "ITIL 4 Essentials : your essential guide for the ITIL 4 Foundation exam and beyond (2e éd.). IT Governance Publishing",
+            "author": "Agutter, C"
+        },
+        {
+            "title": "Site Reliability Engineering : How Google Runs Production Systems. O'Reilly",
+            "author": "Beyer, B. et al"
+        }
+    ],
+    "OnlineResources": [
+        "GLPI Documentation (https://help.glpi-project.org/) [FR/EN]",
+        "ServiceNow Documentation (https://docs.servicenow.com) [EN]",
+        "OTRS Documentation (https://academy.otrs.com/doc) [EN]",
+        "Atlassian - Incident Management Guide (https://www.atlassian.com/incident-management) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

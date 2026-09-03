@@ -242,18 +242,18 @@ final readonly class FrameworkProjectsProvider
         $decoded = json_decode($value, true);
 
         if (is_array($decoded)) {
+            if (!isset($decoded['description'])) {
+                $description = trim((string)($decoded['text'] ?? $decoded['summary'] ?? ''));
+                if ($description !== '') {
+                    $decoded['description'] = $description;
+                }
+            }
+
             return $decoded;
         }
 
-        $items = preg_split('/\R+/', $value) ?: [];
-        $items = array_values(array_filter(array_map(
-            static fn(string $item): string => trim(ltrim($item, "-• \t")),
-            $items
-        )));
-
         return [
-            'text' => $value,
-            'items' => $items,
+            'description' => $value,
         ];
     }
 

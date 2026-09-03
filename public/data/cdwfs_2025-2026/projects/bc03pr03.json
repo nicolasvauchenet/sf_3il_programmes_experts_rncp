@@ -1,0 +1,89 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC03-PR03",
+        "title": "Projet CI/CD : mise en place, monitoring, évolution",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Évaluer les besoins et intégrer les solutions cloud."
+        },
+        {
+            "code": "C19",
+            "description": "Analyser les besoins techniques."
+        },
+        {
+            "code": "C20",
+            "description": "Administrer et rationaliser les plateformes cloud."
+        },
+        {
+            "code": "C21",
+            "description": "Assurer la gestion et le suivi des révisions de code source."
+        },
+        {
+            "code": "C22",
+            "description": "Définir et appliquer des procédures de fusion de code et de résolution de conflits."
+        },
+        {
+            "code": "C23",
+            "description": "Développer des environnements virtualisés."
+        },
+        {
+            "code": "C24",
+            "description": "Coordonner les conteneurs avec des logiciels d’orchestration."
+        },
+        {
+            "code": "C25",
+            "description": "Automatiser la gestion et le déploiement des ressources cloud."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à mettre les apprenants en situation de conception, de mise en place et d’amélioration continue d’une chaîne d’intégration et de déploiement continu. Il mobilise les compétences du bloc BC03 en préparation des épreuves certifiantes, en abordant les problématiques d’automatisation, de monitoring, de performance et d’industrialisation du développement."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en développement logiciel, gestion de version et environnements de développement."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Analyse des outils CI/CD",
+            "context": "Étude comparative des outils d’intégration et de déploiement continu.",
+            "objective": "Identifier les solutions adaptées et définir des critères de choix pertinents."
+        },
+        {
+            "title": "Configuration d’un environnement CI",
+            "context": "Mise en place d’un environnement d’intégration continue.",
+            "objective": "Configurer les outils et assurer leur bon fonctionnement."
+        },
+        {
+            "title": "Planification de la mise en place CI/CD",
+            "context": "Conception d’une stratégie d’implémentation dans un contexte d’entreprise.",
+            "objective": "Structurer une démarche complète et adaptée aux contraintes."
+        },
+        {
+            "title": "Gestion des incidents CI/CD",
+            "context": "Analyse de scénarios de dysfonctionnement.",
+            "objective": "Identifier les problèmes et proposer des solutions opérationnelles."
+        },
+        {
+            "title": "Monitoring et amélioration continue",
+            "context": "Mise en place d’indicateurs et analyse des performances.",
+            "objective": "Optimiser les processus à partir des métriques et KPIs."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": [
+        "Travaux de groupe",
+        "Utilisation de supports (ppt, etc.)",
+        "Étude de cas"
+    ]
+}

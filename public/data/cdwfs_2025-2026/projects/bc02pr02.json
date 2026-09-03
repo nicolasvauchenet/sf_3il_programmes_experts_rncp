@@ -1,0 +1,103 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC02-PR02",
+        "title": "Projet de développement Back-end (Fil rouge)",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement."
+        },
+        {
+            "code": "C08",
+            "description": "Élaborer et implémenter des solutions Back-end."
+        },
+        {
+            "code": "C09",
+            "description": "Optimiser et sécuriser les serveurs web."
+        },
+        {
+            "code": "C10",
+            "description": "Élaborer et administrer des bases de données relationnelles."
+        },
+        {
+            "code": "C11",
+            "description": "Concevoir et gérer l’administration des bases de données NoSQL."
+        },
+        {
+            "code": "C12",
+            "description": "Arbitrer et décider du choix entre les bases de données."
+        },
+        {
+            "code": "C13",
+            "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir des API."
+        },
+        {
+            "code": "C15",
+            "description": "Sécuriser les API."
+        },
+        {
+            "code": "C16",
+            "description": "Réaliser des tests sur les API."
+        },
+        {
+            "code": "C17",
+            "description": "Maintenir la documentation de l’API."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de conception et de développement d’une application Back-end complète, depuis l’analyse du besoin jusqu’à la mise en place d’une API sécurisée et testée. Il mobilise les compétences du bloc BC02 en préparation des épreuves certifiantes, en intégrant les problématiques d’architecture, de gestion des données, de performance et de sécurité."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en développement logiciel, compréhension des principes de programmation orientée objet et bases en gestion de bases de données relationnelles."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et spécifications",
+            "context": "À partir d’un cas d’étude, les apprenants identifient les besoins utilisateurs et définissent les fonctionnalités et contraintes du projet.",
+            "objective": "Formaliser les spécifications techniques et planifier les étapes du projet."
+        },
+        {
+            "title": "Choix de l’architecture et des technologies",
+            "context": "Étude comparative des architectures et sélection des technologies adaptées au projet.",
+            "objective": "Justifier les choix techniques et définir l’infrastructure cible."
+        },
+        {
+            "title": "Conception de la base de données",
+            "context": "Modélisation de la base de données à partir du scénario projet.",
+            "objective": "Structurer les données, optimiser les requêtes et intégrer des mécanismes de sécurité et de scalabilité."
+        },
+        {
+            "title": "Développement de l’API",
+            "context": "Implémentation des endpoints et gestion des échanges client-serveur.",
+            "objective": "Développer une API performante, sécurisée et documentée."
+        },
+        {
+            "title": "Tests et optimisation",
+            "context": "Mise en place de tests et analyse des performances de l’application.",
+            "objective": "Garantir la fiabilité, la performance et la conformité aux spécifications."
+        }
+    ],
+    "bibliography": [
+        "Lallemand, Carine. 'Méthodes de design UX'.",
+        "Mingant, Rémy. 'Architecture logicielle : Principes et méthode pour des logiciels robustes et performants'.",
+        "Barret, Bruno. 'Conception et implémentation des API Web : efficacité, performance et sécurité'."
+    ],
+    "teachingMethods": [
+        "Étude de cas"
+    ]
+}

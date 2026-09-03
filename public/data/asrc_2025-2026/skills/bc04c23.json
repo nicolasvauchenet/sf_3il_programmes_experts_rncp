@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC04-C23",
+        "title": "Analyser les besoins et les traduire en exigences fonctionnelles et techniques",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d’infrastructure systèmes et réseaux sécurisée",
+        "academicYear": "2025-2026"
+    },
+    "description": "Analyser les besoins opérationnels et les traduire en exigences fonctionnelles et techniques détaillées, en conduisant des études de faisabilité et en évaluant les options technologiques, pour définir des solutions alignées avec les objectifs stratégiques de l'entreprise.",
+    "criteria": [
+        "Exhaustivité de l'analyse : au moins 80% des besoins sont identifiés à partir des sources disponibles.",
+        "Précision des objectifs : les objectifs identifiés couvrent 100% des objectifs exprimés.",
+        "Qualité des choix technologiques : les choix (protocoles, équipements réseau, virtualisation, etc.) correspondent aux besoins exprimés."
+    ]
+}

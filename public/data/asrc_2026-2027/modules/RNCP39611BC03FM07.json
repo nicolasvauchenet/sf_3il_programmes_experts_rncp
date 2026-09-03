@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM07",
+        "title": "Protection des données et respect de la conformité",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C20",
+            "description": "Superviser les opérations de sauvegarde et de restauration des données, en élaborant des plans de reprise après sinistre, en coopération avec les équipes IT et les parties prenantes opérationnelles, pour assurer la continuité des activités et la protection des données"
+        },
+        {
+            "code": "C21",
+            "description": "Assurer le support et le suivi des incidents IT en supervisant les équipes techniques à l'aide d'outils de gestion d'incidents et en communiquant avec les utilisateurs et différentes parties prenantes, afin de respecter les objectifs en RTO et RPO établis par les SLA dans le Plan de Reprise d'Activité sous la Direction des Systèmes d'Information"
+        },
+        {
+            "code": "C22",
+            "description": "Assurer la conformité aux réglementations de protection des données, telles que le RGPD, en menant des évaluations et des audits de conformité, en collaboration avec les conseillers juridiques et les experts en réglementation, et en mettant en place des actions correctives, pour éviter les sanctions et renforcer la confiance des parties prenantes dans la gouvernance des données de l'entreprise"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Sensibiliser les apprenants à l'importance de la protection des données personnelles et aux risques associés en cas de non-conformité (Comprendre) Explorer les principes fondamentaux et les cadres légaux qui régissent la protection des données (Analyser) Gérer les incidents de sécurité et mettre en œuvre des bonnes pratiques au sein des entreprises (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Une compréhension de base des concepts liés à la sécurité de l'information et aux systèmes d'information est recommandée. Une familiarité avec les notions de confidentialité et de gestion des risques serait bénéfique pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Enjeux de la protection des données",
+                "items": [
+                    "Importance de la protection des données personnelles",
+                    "Risques liés à la violation de la confidentialité des données",
+                    "Cadre légal et réglementaire en matière de protection des données",
+                    "Conséquences d'une violation des règles de protection des données",
+                    "Obligations des entreprises en matière de protection des données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Principes de protection des données",
+                "items": [
+                    "Principes de minimisation des données",
+                    "Sécurisation des données au repos et en transit",
+                    "Chiffrement des données",
+                    "Gestion des accès aux données sensibles",
+                    "Politique de conservation et d'archivage des données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Conformité aux réglementations",
+                "items": [
+                    "Règlement général sur la protection des données (RGPD)",
+                    "Loi Informatique et Libertés et cadre européen (RGPD, directive NIS2)",
+                    "Autres réglementations nationales et internationales",
+                    "Responsabilités des entreprises vis-à-vis des réglementations",
+                    "Sanctions en cas de non-conformité"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents de sécurité des données",
+                "items": [
+                    "Détection et gestion des violations de données",
+                    "Plan de réponse aux incidents de sécurité des données",
+                    "Notification des violations de données aux autorités compétentes",
+                    "Communication avec les parties prenantes en cas de violation de données",
+                    "Mesures de correction et d'amélioration après un incident"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Bonnes pratiques et outils de protection des données",
+                "items": [
+                    "Sensibilisation des employés à la protection des données",
+                    "Mise en place de processus de sécurisation des données",
+                    "Utilisation d'outils de sécurité des données (chiffrement, DLP, etc.)",
+                    "Gestion des consentements et des droits des personnes concernées",
+                    "Évaluation et amélioration continue des mesures de protection des données"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Identification des risques lies a la violation de la confidentialite des donnees",
+            "objectif": "Identifier les risques pour la confidentialite des donnees et comprendre leurs implications.",
+            "instructions": "Identifiez au moins cinq risques lies a la violation de la confidentialite des donnees dans votre environnement de travail. Pour chaque risque identifie, expliquez brievement les consequences qu'il pourrait avoir sur la securite des donnees et sur l'entreprise.",
+            "livrable": "Une liste d'au moins cinq risques de violation de la confidentialite des donnees, chacun accompagne de ses consequences sur la securite des donnees et sur l'entreprise."
+        },
+        {
+            "title": "Analyse de cas de non-conformite a la reglementation sur la protection des donnees",
+            "objectif": "Analyser un cas de non-conformite a la reglementation et en comprendre les implications.",
+            "instructions": "Etudiez le cas d'une entreprise ayant fait l'objet d'une sanction pour non-conformite a la reglementation sur la protection des donnees. Analysez les raisons de cette non-conformite, les consequences pour l'entreprise et les mesures correctives prises. Presentez vos conclusions en mettant en evidence les lecons a retenir.",
+            "livrable": "Un rapport d'analyse du cas exposant les raisons de la non-conformite, ses consequences, les mesures correctives prises et les lecons a retenir."
+        },
+        {
+            "title": "Elaboration d'un plan de reponse aux incidents de securite des donnees",
+            "objectif": "Concevoir un plan de reponse efficace en cas de violation des donnees.",
+            "instructions": "A partir d'un scenario fictif de violation de donnees au sein de votre entreprise, elaborez un plan de reponse aux incidents de securite des donnees. Ce plan devra inclure les etapes a suivre, les personnes responsables, les communications a etablir et les mesures correctives pour limiter les dommages et eviter la recurrence.",
+            "livrable": "Un plan de reponse aux incidents precisant les etapes, les responsables, les communications a etablir et les mesures correctives destinees a limiter les dommages et prevenir la recurrence."
+        },
+        {
+            "title": "Audit de securite des donnees",
+            "objectif": "Evaluer la securite des donnees dans un contexte donne et proposer des recommandations.",
+            "instructions": "Menez un audit de securite des donnees dans votre entreprise ou dans un contexte similaire. Identifiez les points forts et les points faibles en matiere de protection des donnees, puis proposez des recommandations en prenant en compte les principes de minimisation des donnees, de securisation et de gestion des acces.",
+            "livrable": "Un rapport d'audit identifiant les points forts et faibles de la protection des donnees et formulant des recommandations conformes aux principes de minimisation, de securisation et de gestion des acces."
+        },
+        {
+            "title": "Elaboration d'une politique de conservation et d'archivage des donnees",
+            "objectif": "Mettre en place une politique de conservation des donnees respectant les principes de protection des donnees.",
+            "instructions": "Elaborez une politique de conservation et d'archivage des donnees pour votre entreprise. Prenez en compte les principes de minimisation des donnees, de securisation et de gestion des acces, et assurez la conformite aux reglementations en vigueur. Expliquez les choix de conservation, les mesures de securisation et les procedures d'archivage.",
+            "livrable": "Un document detaille de politique de conservation et d'archivage des donnees, conforme aux reglementations, explicitant les choix de conservation, les mesures de securisation et les procedures d'archivage."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "The EU General Data Protection Regulation (GDPR) : A Practical Guide (2e éd.). Springer",
+            "author": "Voigt, P. & von dem Bussche, A"
+        }
+    ],
+    "OnlineResources": [
+        "CNIL - Guide RGPD (https://www.cnil.fr/fr/reglement-europeen-protection-donnees) [FR]",
+        "EDPB - European Data Protection Board (https://edpb.europa.eu) [EN/FR]",
+        "Règlement général sur la protection des données - EUR-Lex (https://eur-lex.europa.eu) [FR/EN]",
+        "ANSSI - Guide d'hygiène informatique (https://cyber.gouv.fr) [FR]",
+        "NIST Privacy Framework (https://www.nist.gov/privacy-framework) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

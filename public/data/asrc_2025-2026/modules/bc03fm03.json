@@ -1,0 +1,128 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM03",
+        "title": "Audit de sécurité́ et amélioration continue",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Conduire des audits de sécurité réguliers pour évaluer l'efficacité des mesures de sécurité en place, en utilisant des méthodologies d'audit standardisées et en collaboration avec les équipes internes et les auditeurs externes, afin de détecter les faiblesses et de recommander des améliorations."
+        },
+        {
+            "code": "C17",
+            "description": "Élaborer et mettre en œuvre des actions correctives en analysant les résultats des audits de sécurité et en identifiant les vulnérabilités et les non-conformités, en coopération avec les équipes de sécurité et de conformité, afin d'améliorer continuellement les mesures de sécurité de l'organisation et de garantir la conformité réglementaire."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs sont de comprendre les principes et objectifs de l'audit de sécurité, de maîtriser les méthodologies et normes associées, ainsi que de savoir analyser les risques et communiquer efficacement les résultats d'un audit."
+    },
+    "prerequisites": {
+        "description": "Connaissance des fondamentaux de la cybersécurité, familiarité avec les systèmes d'information, et compréhension de base des concepts de risque et de vulnérabilités informatiques."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'audit de sécurité",
+                "items": [
+                    "Les principes de base de l'audit de sécurité",
+                    "Les objectifs de l'audit de sécurité",
+                    "Les différentes approches méthodologiques de l'audit de sécurité",
+                    "Les normes et bonnes pratiques en matière d'audit de sécurité",
+                    "Les outils et techniques d'audit de sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Identification des actifs et des vulnérabilités",
+                "items": [
+                    "Méthodes d'identification des actifs informatiques",
+                    "Les types de vulnérabilités courantes",
+                    "Les outils d'identification des vulnérabilités",
+                    "La cartographie des actifs et des vulnérabilités",
+                    "L'évaluation de l'impact des vulnérabilités sur la sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Méthodes d'analyse de risques",
+                "items": [
+                    "Les principes de l'analyse de risques",
+                    "Les méthodes quantitatives et qualitatives d'analyse de risques",
+                    "L'évaluation des risques liés à la cybersécurité",
+                    "L'identification des scénarios d'attaques potentielles",
+                    "La hiérarchisation des risques identifiés"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Techniques d'audit des systèmes d'information",
+                "items": [
+                    "Les différentes phases d'un audit des systèmes d'information",
+                    "L'identification des contrôles de sécurité mis en place",
+                    "L'évaluation de l'efficacité des contrôles de sécurité",
+                    "L'analyse des journaux d'activité et des traces d'audit",
+                    "La vérification de la conformité aux normes et réglementations en vigueur"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Rapport d'audit et plan d'action",
+                "items": [
+                    "La rédaction d'un rapport d'audit de sécurité",
+                    "La communication des résultats de l'audit aux parties prenantes",
+                    "L'identification des mesures correctives et préventives à mettre en place",
+                    "L'élaboration d'un plan d'action pour donner suite à l'audit",
+                    "Le suivi des recommandations et des actions correctives pour donner suite à l'audit"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des objectifs de l'audit de sécurité",
+            "context": "Lire un cas d'entreprise fictif et identifier les objectifs spécifiques d'un audit de sécurité.",
+            "objective": "Expliquer comment ces objectifs pourraient orienter l'approche méthodologique de l'audit."
+        },
+        {
+            "title": "Identification des vulnérabilités courantes",
+            "context": "Associer des scénarios de vulnérabilités courantes à une méthode d'identification appropriée.",
+            "objective": "Expliquer l'importance de la cartographie des actifs et des vulnérabilités pour prioriser les actions de sécurité."
+        },
+        {
+            "title": "Analyse de risques liés à la cybersécurité",
+            "context": "Identifier des scénarios d'attaques potentielles dans un environnement technologique donné.",
+            "objective": "Évaluer les risques à l'aide de méthodes quantitatives et qualitatives et proposer des mesures de mitigation."
+        },
+        {
+            "title": "Analyse des contrôles de sécurité",
+            "context": "Évaluer l'efficacité des contrôles de sécurité à partir de rapports d'audit fictifs.",
+            "objective": "Analyser les journaux d'activité et les traces d'audit pour déterminer l'efficacité des contrôles."
+        },
+        {
+            "title": "Rédaction d'un rapport d'audit de sécurité",
+            "context": "Rédiger un rapport synthétisant les résultats d'un audit fictif.",
+            "objective": "Inclure un plan d'action comprenant des mesures correctives et préventives ainsi qu'un suivi des recommandations."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Guide pratique de la sécurité des systèmes d'information",
+            "author": "Olivier Kempf"
+        },
+        {
+            "title": "Audit et contrôle internes : maîtrise des risques et sécurité du système d'information",
+            "author": "Didier Bensadon"
+        },
+        {
+            "title": "Norme ISO/ IEC 27001 : Systèmes de management de la sécurité de l'information",
+            "author": ""
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM04",
+        "title": "Support de services et Plan de Reprise d’Activité",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C04",
+            "description": "Élaborer, documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et/ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services."
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre."
+        },
+        {
+            "code": "C09",
+            "description": "Établir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les enjeux et les approches de la planification de reprise d'activité. Savoir analyser les besoins et contraintes pour établir des stratégies efficaces de reprise. Maîtriser les tests, la validation, la documentation et la communication d'un plan de reprise d'activité."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en infrastructures systèmes et réseaux, ainsi qu'une compréhension des concepts fondamentaux de gestion des risques et de continuité d'activité."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la planification de reprise d'activité (PRA)",
+                "items": [
+                    "Comprendre les enjeux de la planification de reprise d'activité",
+                    "Identifier les risques et les menaces pour les infrastructures systèmes et réseaux",
+                    "Connaître les différentes approches de planification de reprise d'activité"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Évaluation des besoins et des contraintes",
+                "items": [
+                    "Analyser les besoins spécifiques de reprise d'activité pour les infrastructures et les réseaux",
+                    "Identifier les contraintes techniques, financières et humaines liées à la planification de reprise d'activité",
+                    "Évaluer l'impact d'une interruption d'activité sur les services et les utilisateurs"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Stratégies de reprise d'activité",
+                "items": [
+                    "Élaborer des stratégies de reprise d'activité adaptées aux infrastructures systèmes et réseaux",
+                    "Mettre en place des solutions de sauvegarde, de redondance et de continuité des services",
+                    "Définir les procédures de reprise d'activité en cas de sinistre"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Tests et validation du plan de reprise d'activité",
+                "items": [
+                    "Mettre en place des scénarios de test de la planification de reprise d'activité",
+                    "Valider l'efficacité des solutions de reprise d'activité",
+                    "Réaliser des simulations d'interruption d'activité pour évaluer la réactivité du plan de reprise d'activité"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Documentation et communication",
+                "items": [
+                    "Rédiger la documentation nécessaire à la mise en œuvre du plan de reprise d'activité",
+                    "Communiquer les procédures et les responsabilités en cas de sinistre",
+                    "Former les équipes à la mise en œuvre du plan de reprise d'activité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Étude de cas et analyse des risques",
+            "context": "Identifier les risques pour les infrastructures systèmes et réseaux d’une entreprise de commerce en ligne.",
+            "objective": "Lister cinq risques, évaluer leur probabilité et leur impact sur les opérations."
+        },
+        {
+            "title": "Élaboration d'un Business Impact Analysis (BIA)",
+            "context": "Analyse d'impact pour un service de transactions en ligne dans une banque.",
+            "objective": "Identifier les services critiques et définir les RTO et RPO associés."
+        },
+        {
+            "title": "Conception d'une stratégie de reprise d'activité",
+            "context": "Concevoir une stratégie de reprise pour une ONG ayant subi des pannes répétées.",
+            "objective": "Proposer une solution incluant sauvegarde, redondance et continuité des services."
+        },
+        {
+            "title": "Simulation d'interruption d'activité",
+            "context": "Organisation d'une simulation de sinistre pour une entreprise de services logistiques.",
+            "objective": "Évaluer l'efficacité du plan de reprise et proposer des améliorations."
+        },
+        {
+            "title": "Rédaction et communication du plan de reprise d'activité",
+            "context": "Création d'une documentation PRA pour une entreprise de fabrication électronique.",
+            "objective": "Définir rôles, responsabilités et programme de formation pour les équipes."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Continuité d’Activité : Élaborer un Plan de Continuité d'Activité Efficace",
+            "author": "P. Giraud"
+        },
+        {
+            "title": "La gestion de crise à l'ère numérique",
+            "author": "J.-M. Peyrat"
+        },
+        {
+            "title": "La résilience des organisations : Concepts et pratiques",
+            "author": "P. Virilio et J.-P. Dupuy"
+        }
+    ],
+    "teachingMethods": [
+        "Utilisation de supports (ppt, etc.)",
+        "Étude de cas"
+    ]
+}

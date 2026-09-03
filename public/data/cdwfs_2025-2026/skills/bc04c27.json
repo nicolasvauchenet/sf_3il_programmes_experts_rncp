@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC04-C27",
+        "title": "Étudier et évaluer la faisabilité d’un projet",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "academicYear": "2025"
+    },
+    "description": "Étudier et évaluer la faisabilité du projet en tenant compte de la mobilisation des ressources humaines et matériels disponibles et nécessaires et de la pertinence et la faisabilité technique du projet numérique, afin d'atteindre les objectifs de l'application.",
+    "criteria": [
+        "Adéquation des ressources : l'évaluation des ressources humaines et matérielles nécessaires correspond aux besoins réels du projet.",
+        "Évaluation technique : chaque critère technique est scoré (ex : compatibilité, performance, sécurité) pour mesurer la faisabilité technique des solutions proposées.",
+        "Réalisme du projet : la faisabilité globale du projet est évaluée (ex : haute, moyenne, basse) à partir de l'analyse des ressources et des contraintes techniques."
+    ]
+}

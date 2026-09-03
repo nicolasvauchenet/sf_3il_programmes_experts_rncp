@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC01-C05",
+        "title": "Analyser les causes de non -respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouverner les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Analyser les causes de non -respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives.",
+    "criteria": [
+        "La méthodologie suivie pour interpréter les données et les KPI permet d’identifier les causes de non-respect des SLA.",
+        "Les actions correctives proposées permettent de se replacer dans le contexte de respect des SLA ."
+    ]
+}

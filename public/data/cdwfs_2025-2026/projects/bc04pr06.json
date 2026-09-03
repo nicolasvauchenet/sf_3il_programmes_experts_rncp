@@ -1,0 +1,81 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC04-PR06",
+        "title": "Projet Qualité logicielle et amélioration continue",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C33",
+            "description": "Effectuer des revues de code en utilisant des outils d'analyse en respectant les principes de développement et les standards de l'entreprise, pour assurer une qualité et une maintenabilité élevées du code."
+        },
+        {
+            "code": "C34",
+            "description": "Concevoir et mettre en œuvre des tests automatisés en employant les meilleures pratiques et outils de test et en tenant compte des contraintes techniques et des exigences de performance pour valider la fiabilité et l'efficacité des applications."
+        },
+        {
+            "code": "C35",
+            "description": "Mettre en place, éditer et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de structuration et d’amélioration de la qualité d’un projet logiciel. Il mobilise les compétences du bloc BC04 en préparation de l’EC10, en articulant revues de code, tests automatisés, documentation technique et démarche d’amélioration continue."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base du développement logiciel, des processus de gestion de projet, des concepts de tests logiciels et de gestion de la qualité. Une première expérience en programmation et en usage d’outils de développement est recommandée."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Évaluation de la qualité d’un projet existant",
+            "context": "À partir d’un projet logiciel réel ou fictif, les apprenants analysent les pratiques en place, les écarts aux standards et les axes d’amélioration possibles.",
+            "objective": "Identifier les points faibles de qualité et établir un diagnostic initial exploitable."
+        },
+        {
+            "title": "Organisation des revues de code",
+            "context": "Les apprenants définissent une démarche de revue de code incluant critères, outils d’analyse, rôles et bonnes pratiques.",
+            "objective": "Mettre en place un cadre de revue de code cohérent et orienté maintenabilité."
+        },
+        {
+            "title": "Conception d’une stratégie de tests automatisés",
+            "context": "Le projet est enrichi par une stratégie de tests couvrant les cas fonctionnels, techniques et critiques.",
+            "objective": "Structurer une démarche de validation automatisée fiable et pertinente."
+        },
+        {
+            "title": "Production de la documentation technique",
+            "context": "Les apprenants rédigent ou restructurent la documentation technique du projet en tenant compte de la maintenance, de l’exploitation et du partage de connaissances.",
+            "objective": "Produire une documentation claire, exploitable et alignée avec les besoins de l’équipe."
+        },
+        {
+            "title": "Élaboration d’un guide de bonnes pratiques",
+            "context": "À partir des analyses et productions réalisées, les apprenants formalisent un guide de référence sur les revues de code, les tests et la documentation.",
+            "objective": "Construire un livrable structuré et opérationnel répondant aux attendus de l’EC10."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Effective Methods for Software Testing",
+            "author": "William E. Perry"
+        },
+        {
+            "title": "The Pragmatic Programmer : Your Journey To Mastery",
+            "author": "Andrew Hunt"
+        },
+        {
+            "title": "Software Testing Techniques",
+            "author": "Boris Beizen"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

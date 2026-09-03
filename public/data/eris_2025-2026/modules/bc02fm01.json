@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM01",
+        "title": "Conception d'infrastructures",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 8,
+        "durationHours": 56,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions , en conformité avec le schéma directeur de la DSI , en combinant des ressources locales (on -premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications."
+        },
+        {
+            "code": "C12",
+            "description": "Définir , implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*) afin de protéger les systèmes et les données sensibles contre les accès non autorisés."
+        },
+        {
+            "code": "C13",
+            "description": "Arbitrer la technologie d’hébergement des systèmes et/ou applications (serveur dédié, virtualisation, conteneurisation /orchestration ou cloud ) en évaluant et optimisant les ressources nécessaires à leur usage (telles que machine, stockage, bande passante, processeur, mémoire, consommation électrique) , pour les déployer, les mettre en production et les gérer de manière fiable, flexible et scalable."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir une topologie des réseaux de l’entreprise tant mono que multisites, en tenant compte des engagements de disponibilité, de capacité afin de garantir la qualité de service (QoS), la résilience (PCA) et la sécurité des communications."
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place , au contrôle et à l’administration de l'infrastructure, en mobilisant ses compétences techniques, en collaborant avec les équipes pluridisciplinaires et en documentant la solution pour déployer les éléments techniques de la solution."
+        },
+        {
+            "code": "C16",
+            "description": "Automatiser les processus d'intégration, de déploiement et de maintenance des systèmes et applications en utilisant des outils d’orchestration, de gestion de déploiement et de DevOps et en contrôlant le résultat par l’analyse des logs produits pour assurer la fiabilité et la reproductibilité des mises en production."
+        },
+        {
+            "code": "C17",
+            "description": "Organiser et piloter la gestion des incidents et du support en définissant les processus standardisés pour la création, l’attribution, le suivi des tickets et leur élévation, dans un cadre d’amélioration continue et en s’appuyant sur des outils de gestion des tickets (ITSM) , pour suivre, prioriser et résoudre les incidents, ainsi qu’assurer une résolution rapide et efficace des problèmes techniques."
+        }
+    ],
+    "objectives": {
+        "description": "Fournir une compréhension approfondie des principes fondamentaux de la conception d'infrastructures, incluant la sécurisation, la virtualisation et le cloud computing. Les apprenants seront capables d'analyser les besoins afin de concevoir des infrastructures performantes et sécurisées, de planifier la capacité et la continuité des services, ainsi que d’optimiser et maintenir des architectures adaptées aux besoins actuels et futurs."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base des réseaux informatiques et de l'architecture des systèmes. Une compréhension générale du cloud computing et des concepts de sécurité informatique est recommandée."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Les fondements de la conception d'infrastructures",
+                "items": [
+                    "Comprendre les principes de base de la conception d'infrastructures",
+                    "Identifier les différentes composantes d'une infrastructure (matériel, logiciel, réseau)",
+                    "Analyser les besoins et contraintes pour la conception d'infrastructures",
+                    "Comprendre les enjeux de la scalabilité et de la disponibilité",
+                    "Appréhender les architectures centralisées, distribuées et cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Sécurité dans la conception d'infrastructures",
+                "items": [
+                    "Intégrer la sécurité dès la conception des infrastructures",
+                    "Identifier les risques et menaces liés aux infrastructures",
+                    "Mettre en place des bonnes pratiques de sécurité",
+                    "Comprendre les enjeux de conformité réglementaire",
+                    "Définir des stratégies de protection contre les attaques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Virtualisation et cloud computing",
+                "items": [
+                    "Comprendre les concepts de virtualisation et de cloud computing",
+                    "Identifier les avantages et limites de ces technologies",
+                    "Définir une stratégie de virtualisation adaptée",
+                    "Comprendre les modèles IaaS, PaaS et SaaS",
+                    "Évaluer les coûts et performances liés au cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Planification et gestion des capacités",
+                "items": [
+                    "Comprendre la gestion de capacité dans les infrastructures IT",
+                    "Évaluer les besoins actuels et futurs",
+                    "Mettre en place des outils de surveillance",
+                    "Anticiper les évolutions technologiques et métier",
+                    "Optimiser l'utilisation des ressources tout en garantissant la performance"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Haute disponibilité et reprise d'activité",
+                "items": [
+                    "Comprendre les enjeux de la haute disponibilité",
+                    "Mettre en place des stratégies de disponibilité pour les infrastructures critiques",
+                    "Élaborer un plan de reprise d'activité",
+                    "Tester et maintenir les solutions de continuité",
+                    "Assurer la continuité de service en toutes circonstances"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et conception d'infrastructure",
+            "context": "Conception d'une infrastructure pour une application de commerce en ligne.",
+            "objective": "Identifier les besoins matériels, logiciels et réseau, évaluer la scalabilité et proposer une architecture adaptée."
+        },
+        {
+            "title": "Élaboration d'une politique de sécurité",
+            "context": "Création d'une politique de sécurité pour une infrastructure IT.",
+            "objective": "Identifier les risques, définir des bonnes pratiques et proposer une stratégie de protection."
+        },
+        {
+            "title": "Planification d'une migration vers le cloud",
+            "context": "Préparer un plan de migration vers le cloud pour certaines ressources IT.",
+            "objective": "Comparer IaaS, PaaS et SaaS, estimer les coûts et définir une stratégie de virtualisation."
+        },
+        {
+            "title": "Simulation de gestion des capacités",
+            "context": "Planification de la capacité d'une infrastructure IT.",
+            "objective": "Évaluer les besoins actuels et futurs et proposer des recommandations d'optimisation."
+        },
+        {
+            "title": "Création d'un plan de reprise d'activité",
+            "context": "Élaboration d'un PRA pour des services critiques d'une banque.",
+            "objective": "Définir RTO et RPO, planifier les procédures de basculement et tester régulièrement le plan."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Conception et gestion des infrastructures IT",
+            "author": "Michel Rodriguez"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

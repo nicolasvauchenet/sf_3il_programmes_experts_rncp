@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC04-C27",
+        "title": "Elaborer et mettre en œuvre la conduite du changement en s’appuyant sur des référentiels tels qu’ITIL",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les Projets et la Conduite du Changement",
+        "academicYear": "2025-2026"
+    },
+    "description": "Elaborer et mettre en œuvre la conduite du changement en s’appuyant sur des référentiels tels qu’ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l’impact d’une évolution (mineure, delta ou majeure) de l’infrastructure sur l’environnement de production.",
+    "criteria": [
+        "L’analyse de l’existant, des impacts du changement et des risques afférents permet de formaliser un plan de conduite du changement structuré.",
+        "L’accompagnement des parties prenantes est pris en compte au travers de documentation et/ou d’actions de formation favorisant l’adaptation. 4.3 – Accompagnement et Développement des équipes projets L’expert ERIS identifie les besoins en compétences, développe les talents et planifie la formation des collaborateurs. Il contribue au recrutement des collaborateurs en assurant la caution technique. Il participe à l’évaluation de la performance des collaborateurs en mesurant l’écart entre les objectifs et le réalisé. Il organise des feedbacks réguliers pour contribuer à l’amélioration continue."
+    ]
+}

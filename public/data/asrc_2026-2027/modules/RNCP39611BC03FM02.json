@@ -1,0 +1,121 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM02",
+        "title": "Politique de sécurité",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C15",
+            "description": "Développer, documenter et mettre en œuvre des politiques de sécurité informatique, en évaluant les risques et en établissant des stratégies de mitigation en collaboration avec les équipes de gouvernance et de conformité, et en se servant d'outils d'analyse de risques et en réalisant des procédures pour renforcer la posture de sécurité de l'entreprise et protéger les actifs du système d’information"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et objectifs d'une politique de sécurité de l'information (Comprendre) Rédiger une politique de sécurité cohérente en impliquant les parties prenantes (Créer) Intégrer la politique de sécurité dans la stratégie globale de l'entreprise et les normes en vigueur (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et en réseaux. Familiarité avec les concepts de sécurité des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la cybersécurité et aux risques",
+                "items": [
+                    "Compréhension des enjeux de la cybersécurité",
+                    "Identification des principales cybermenaces",
+                    "Évaluation des risques liés à la cybersécurité",
+                    "Impact des cybermenaces sur les organisations",
+                    "Enjeux de la protection des données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodologie de gestion des risques",
+                "items": [
+                    "Processus d'analyse des risques",
+                    "Identification des actifs à protéger",
+                    "Analyse des vulnérabilités",
+                    "Évaluation des menaces potentielles",
+                    "Hiérarchisation des risques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Élaboration d'une politique de sécurité",
+                "items": [
+                    "Structure et composantes d'une PSSI (Politique de Sécurité des Systèmes d'Information)",
+                    "Rôles et responsabilités des acteurs de la sécurité",
+                    "Cycle de vie de la politique : rédaction, validation, diffusion et révision",
+                    "Déclinaison en procédures et chartes (charte informatique, gestion des accès)",
+                    "Articulation avec les normes et référentiels (ISO/IEC 27001, guides de l'ANSSI)"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Identification des cybermenaces",
+            "objectif": "Realiser une etude structuree des cybermenaces actuelles et potentielles pesant sur une organisation.",
+            "instructions": "Dressez une liste exhaustive des cybermenaces susceptibles d'impacter votre organisation. Pour chaque menace, mettez en evidence son mode operatoire et son impact potentiel sur les activites de l'entreprise, en vous appuyant sur des exemples reels pour illustrer vos propos.",
+            "livrable": "Une etude presentant une liste exhaustive des cybermenaces, chacune documentee par son mode operatoire, son impact potentiel et des exemples reels."
+        },
+        {
+            "title": "Analyse des risques",
+            "objectif": "Appliquer une methodologie d'analyse des risques a un actif critique de l'entreprise.",
+            "instructions": "Choisissez un actif critique pour votre entreprise (par exemple une base de donnees clients). En vous basant sur la methodologie vue en cours, identifiez les vulnerabilites potentielles, evaluez les menaces susceptibles de compromettre sa securite et proposez une hierarchisation des risques.",
+            "livrable": "Une analyse complete des risques de l'actif choisi, incluant vulnerabilites, menaces evaluees et hierarchisation des risques."
+        },
+        {
+            "title": "Redaction d'une politique de securite",
+            "objectif": "Rediger une politique de securite adaptee a la taille et aux activites d'une entreprise.",
+            "instructions": "En vous placant en responsable de la redaction, redigez un projet de politique de securite. Tenez compte des objectifs attendus, des principes de redaction presentes en cours et impliquez les parties prenantes necessaires.",
+            "livrable": "Un projet de politique de securite adapte a la taille et aux activites de l'entreprise, respectant les principes de redaction etudies."
+        },
+        {
+            "title": "Conformite aux normes de cybersecurite",
+            "objectif": "Evaluer l'impact d'une norme ou reglementation de cybersecurite sur la politique de securite de l'entreprise.",
+            "instructions": "Selectionnez une norme de cybersecurite (par exemple ISO 27001) ou une reglementation (comme le RGPD) et evaluez son impact sur la politique de securite de votre entreprise. Identifiez les principaux points de convergence et d'ecart, puis proposez des mesures correctives pour assurer la conformite.",
+            "livrable": "Une evaluation de conformite identifiant les points de convergence et d'ecart avec la norme ou reglementation choisie, assortie de mesures correctives."
+        },
+        {
+            "title": "Gestion des incidents de securite",
+            "objectif": "Mettre en place un plan de gestion de crise et en tirer un retour d'experience.",
+            "instructions": "A partir d'un scenario d'incident de securite fictif, mettez en place un plan de gestion de crise. Identifiez les etapes cles, les ressources necessaires et les actions a mener. Redigez ensuite un retour d'experience apres la resolution de l'incident et proposez des axes d'amelioration continue.",
+            "livrable": "Un plan de gestion de crise (etapes, ressources, actions) complete d'un retour d'experience et d'axes d'amelioration continue."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "ISO 27001 Controls : A Guide to Implementing and Auditing (2e éd.). IT Governance Publishing",
+            "author": "Kenyon, B"
+        },
+        {
+            "title": "Cybersécurité : analyser les risques, mettre en œuvre les solutions (7e éd.). Dunod",
+            "author": "Ghernaouti, S"
+        },
+        {
+            "title": "Information Security Management Principles (3e éd.). BCS",
+            "author": "Taylor, A. et al"
+        }
+    ],
+    "OnlineResources": [
+        "ISO/IEC 27001 (https://www.iso.org/isoiec-27001-information-security.html) [EN/FR]",
+        "NIST Cybersecurity Framework (https://www.nist.gov/cyberframework) [EN]",
+        "ANSSI - Guides et bonnes pratiques PSSI (https://cyber.gouv.fr) [FR]",
+        "CLUSIF - Méthodes et outils (https://clusif.fr) [FR]",
+        "ENISA - Security Frameworks (https://www.enisa.europa.eu) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

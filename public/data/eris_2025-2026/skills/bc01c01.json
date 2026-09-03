@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39781-BC01-C01",
+        "title": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouverner les Infrastructures Systèmes et Réseaux",
+        "academicYear": "2025-2026"
+    },
+    "description": "Participer aux politiques de gouvernance IT dans le cadre du schéma directeur de la DSI, en s’appuyant sur des référentiels de bonnes pratiques, en mobilisant son expertise technique , et en contribuant à la structuration de la gestion des services IT , pour garantir que la gestion l’infrastructure répondent aux exigences de performance, de sécurité et de conformité .",
+    "criteria": [
+        "Les politiques de gouvernance définies permettent d’assurer la cohérence et l’homogénéité des pratiques.",
+        "Les politiques de gouvernance définies s’inscrivent dans le cadre du schéma directeur de la DSI.",
+        "Les politiques de gouvernance permettent à l’entreprise d’atteindre ses objectifs en matière de performance, sécurité et conformité."
+    ]
+}

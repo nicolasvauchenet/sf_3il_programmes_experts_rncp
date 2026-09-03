@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC02-C13",
+        "title": "Coordonner des conteneurs avec un logiciel d’orchestration",
+        "rncpCode": "39611",
+        "blocCode": "BC02",
+        "blocName": "Configurer et administrer l’infrastructure réseau et les solutions cloud",
+        "academicYear": "2025-2026"
+    },
+    "description": "Coordonner les conteneurs avec des logiciels d'orchestration en garantissant l'activité des pipelines d'intégration et de déploiement continus pour optimiser la résilience et la performance des applications.",
+    "criteria": [
+        "Outil d’orchestration : l'outil garantit la gestion dynamique des ressources.",
+        "Mise à l'échelle : le scaling des ressources orchestrées garantit la robustesse des pipelines d'intégration et de déploiement continus."
+    ]
+}

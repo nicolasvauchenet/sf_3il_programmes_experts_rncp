@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39611-BC03-C19",
+        "title": "Administrer les systèmes IAM et mettre en œuvre des politiques d’accès (MFA)",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de Cybersécurité pour la protection des données",
+        "academicYear": "2025-2026"
+    },
+    "description": "Administrer les systèmes de gestion des identités et des accès (IAM), en mettant en œuvre des politiques d'accès rigoureuses et des technologies d'authentification avancées (MFA), en tenant compte des personnes en situation de handicap, pour garantir que seul le personnel autorisé accède aux systèmes critiques et aux données sensibles.",
+    "criteria": [
+        "Qualité des propositions IAM : les propositions montrent une compréhension des exigences de sécurité et facilitent une gestion efficace et sécurisée des accès utilisateurs.",
+        "Pertinence des politiques d’accès : les politiques proposées sont alignées avec les niveaux de sécurité requis par l'organisation."
+    ]
+}

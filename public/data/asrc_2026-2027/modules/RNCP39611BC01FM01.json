@@ -1,0 +1,119 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM01",
+        "title": "Administration des Infrastructures sécurisées",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Administrer et optimiser les systèmes d'exploitation Unix, Linux et Windows en tenant compte des bonnes pratiques de la qualité de service (QoS), en collaboration avec les équipes techniques, pour assurer les exigences de performance et de fiabilité de l'entreprise"
+        },
+        {
+            "code": "C02",
+            "description": "Concevoir des topologies systèmes à l'aide d'un annuaire, en structurant efficacement les ressources informatiques et la gestion des identités et des accès aux différentes ressources, pour répondre aux besoins opérationnels, et respecter les politiques d'accès et sécurité de l'entreprise"
+        },
+        {
+            "code": "C03",
+            "description": "Concevoir et déployer des environnements virtualisés à l'aide de plateformes spécialisées On-Premise ou sur un cloud provider, en coopération avec les architectes système, pour rationaliser l'utilisation des ressources informatiques et répondre à l'évolutivité des besoins de l'entreprise"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Installer, configurer et gérer des serveurs et des environnements virtualisés pour répondre aux besoins d'une entreprise (Appliquer) Concevoir et administrer un annuaire d'entreprise sécurisé (Active Directory, LDAP) pour structurer la gestion des identités et des accès (Appliquer) Maîtriser la gestion des configurations et des services informatiques en respectant les normes de sécurité et de qualité (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et réseaux. Familiarité avec les principes de virtualisation et de sécurité informatique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Installation et configuration des serveurs",
+                "items": [
+                    "Comprendre les besoins de l'entreprise pour une installation adaptée",
+                    "Maîtriser les différentes étapes de configuration des serveurs",
+                    "Optimiser les performances des serveurs pour répondre aux besoins stratégiques",
+                    "Assurer la sécurité des serveurs lors de l'installation et la configuration",
+                    "Mettre en place des stratégies de sauvegarde et de récupération des données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des configurations et des services informatiques",
+                "items": [
+                    "Connaître les principes de qualité de service (QoS) et les méthodes ITIL",
+                    "Implémenter des services d'annuaire tels qu'Active Directory et utiliser LDAP pour une gestion efficace des identités et des accès",
+                    "Appliquer des stratégies via Group Policy Objects (GPO) en adéquation avec les besoins de sécurité et d'efficacité du système d'information",
+                    "Participer activement à la gestion des configurations et des services informatiques en collaboration avec la Direction des Systèmes d'Information (DSI)",
+                    "Assurer la conformité aux normes de sécurité et de qualité de services"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Conception, configuration et gestion des environnements virtualisés",
+                "items": [
+                    "Comprendre les enjeux de la virtualisation pour l'optimisation des ressources",
+                    "Concevoir des environnements virtualisés adaptés aux besoins de l'entreprise",
+                    "Configurer et gérer des environnements virtualisés sur des plateformes telles que VMware vSphere ou Microsoft Hyper-V",
+                    "Évaluer et sélectionner les solutions d'hébergement les plus appropriées",
+                    "Assurer la flexibilité des services informatiques tout en optimisant l'utilisation des ressources"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Choix d'une solution de virtualisation",
+            "objectif": "Savoir sélectionner et justifier la solution de virtualisation la plus adaptée aux besoins d'une entreprise.",
+            "instructions": "En situation de prise de poste dans une entreprise en croissance, analysez les besoins actuels et futurs de l'entreprise. Comparez les fonctionnalités des différentes solutions de virtualisation (VMware vSphere, Microsoft Hyper-V, etc.). Justifiez votre choix au regard des besoins identifiés.",
+            "livrable": "Une analyse comparative des solutions de virtualisation accompagnée du choix retenu et de sa justification."
+        },
+        {
+            "title": "Conception d'un annuaire d'entreprise sécurisé",
+            "objectif": "Savoir concevoir une topologie d'annuaire (Active Directory, LDAP) structurant la gestion des identités et des accès dans le respect des exigences de sécurité.",
+            "instructions": "En charge de la refonte du système d'annuaire d'une entreprise multi-sites, modélisez une architecture Active Directory (forêt, domaines, unités d'organisation) et définissez les stratégies LDAP d'authentification et de délégation d'administration. Appliquez les principes de moindre privilège et de cloisonnement des accès.",
+            "livrable": "Un dossier de conception de l'annuaire précisant la topologie retenue (forêt, domaines, OU), les stratégies d'accès et de délégation, ainsi que les mesures de sécurisation associées."
+        },
+        {
+            "title": "Mise en place de mesures de sécurité serveur",
+            "objectif": "Savoir implémenter des mesures de sécurité pour protéger les serveurs de l'entreprise face aux menaces identifiées.",
+            "instructions": "À la suite d'une analyse des menaces potentielles, mettez en place des pare-feu et des politiques de sécurité d'accès. Assurez des mises à jour régulières. Déployez des outils de détection et de prévention des intrusions.",
+            "livrable": "Un dispositif de sécurité des serveurs comprenant pare-feu, politiques d'accès, mises à jour et outils de détection et de prévention des intrusions."
+        },
+        {
+            "title": "Gestion des stratégies via GPO",
+            "objectif": "Savoir mettre en place des stratégies via Group Policy Objects pour garantir la sécurité et l'efficacité du système d'information.",
+            "instructions": "En tant qu'administrateur système, définissez des GPO pour gérer les mises à jour, les politiques de mot de passe et les restrictions d'accès aux ressources. Veillez à la conformité aux normes de sécurité et de qualité de service.",
+            "livrable": "Un ensemble de GPO configurées (mises à jour, mots de passe, restrictions d'accès) conformes aux normes de sécurité et de qualité de service."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "UNIX and Linux System Administration Handbook (5e éd.). Addison-Wesley",
+            "author": "Nemeth, E. et al"
+        },
+        {
+            "title": "Virtualization Essentials (3e éd.). Sybex",
+            "author": "Portnoy, M"
+        }
+    ],
+    "OnlineResources": [
+        "Microsoft Learn - Windows Server (https://learn.microsoft.com/windows-server/) [FR/EN]",
+        "Red Hat Documentation (https://docs.redhat.com/en) [EN]",
+        "VMware Docs (https://techdocs.broadcom.com) [EN]",
+        "ANSSI - Guide d'administration sécurisée (https://cyber.gouv.fr) [FR]",
+        "The Linux Documentation Project (https://tldp.org) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM02",
+        "title": "Gestion de la Haute Disponibilité",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C05",
+            "description": "Mettre en œuvre des solutions de redondance, de réplication et de clustering, en tenant compte des contraintes de sécurité et de performance, afin la continuité de l'activité de l'entreprise."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs pédagogiques sont de permettre aux apprenants de comprendre et d'implémenter des stratégies de redondance et de tolérance aux pannes, de maîtriser les principes et techniques de réplication de données, et d'apprendre à mettre en place et gérer des clusters pour assurer la haute disponibilité et la sécurité dans les environnements informatiques."
+    },
+    "prerequisites": {
+        "description": "Les apprenants doivent avoir une connaissance de base des systèmes d'exploitation, des réseaux informatiques, et des bases de la gestion de données pour suivre ce cours efficacement."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Principes de redondance et tolérance aux pannes",
+                "items": [
+                    "Comprendre les concepts de redondance et de tolérance aux pannes",
+                    "Identifier les avantages et inconvénients de la redondance",
+                    "Connaître les différentes stratégies de redondance",
+                    "Comprendre les mécanismes de détection et de récupération des pannes",
+                    "Étudier les cas d'utilisation de la redondance dans les environnements informatiques"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Mécanismes de réplication de données",
+                "items": [
+                    "Comprendre les principes de base de la réplication de données",
+                    "Connaître les différents modèles de réplication (master-slave, master-master)",
+                    "Étudier les outils et technologies de réplication de données",
+                    "Analyser les techniques de synchronisation et de cohérence des données répliquées",
+                    "Mettre en place un environnement de réplication de données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Introduction au clustering",
+                "items": [
+                    "Comprendre les concepts de base du clustering",
+                    "Identifier les types de clustering (load balancing, failover, parallel processing)",
+                    "Étudier les architectures de clustering (à nœud unique, à nœuds multiples)",
+                    "Analyser les avantages et les limites du clustering",
+                    "Mettre en place un cluster pour des applications critiques"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Haute disponibilité et gestion de la charge",
+                "items": [
+                    "Comprendre les enjeux de la haute disponibilité",
+                    "Étudier les mécanismes de basculement (failover) et de répartition de charge",
+                    "Analyser les solutions de haute disponibilité sur les systèmes d'exploitation",
+                    "Mettre en place des mécanismes de gestion de la charge (load balancing)",
+                    "Assurer la continuité de service à travers des solutions de clustering"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurité et performances dans les architectures redondantes et clustérisées",
+                "items": [
+                    "Comprendre les enjeux de sécurité dans les environnements redondants et clustérisés",
+                    "Étudier les bonnes pratiques de sécurisation des architectures redondantes",
+                    "Analyser l'impact des solutions de redondance et de clustering sur les performances",
+                    "Mettre en place des mécanismes de surveillance et d'optimisation des performances",
+                    "Assurer l'intégrité et la disponibilité des données dans un environnement redondant"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Cas pratiques et études de cas",
+                "items": [
+                    "Analyser des cas pratiques d'implémentation de solutions de redondance, réplication et clustering",
+                    "Étudier des scénarios concrets de gestion de pannes et de reprise d'activité",
+                    "Mettre en place des simulations de pannes et évaluer les réponses apportées",
+                    "Analyser des exemples d'architecture redondante dans différents domaines d'application",
+                    "Étudier des retours d'expérience et des bonnes pratiques de mise en place de ces solutions"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Évaluation de la redondance",
+            "context": "Vous travaillez en tant qu'ingénieur système dans une entreprise qui souhaite améliorer sa tolérance aux pannes pour son service en ligne critique. Votre première tâche consiste à évaluer les stratégies de redondance actuelles et proposer des améliorations.",
+            "objective": "Dressez une liste des composants de l'infrastructure actuelle et identifiez ceux qui n'ont pas de redondance. Proposez une stratégie de redondance pour chaque composant non redondant en justifiant votre choix en termes de coût et de complexité. Expliquez comment vous mettriez en œuvre la détection des pannes pour ces composants. Rédigez un bref rapport présentant vos recommandations."
+        },
+        {
+            "title": "Simulation de réplication de données",
+            "context": "Vous avez à votre disposition deux serveurs de bases de données. Votre but est de mettre en place une réplication master-slave entre ces deux serveurs.",
+            "objective": "Configurez le serveur principal (master) pour qu'il envoie les mises à jour au serveur secondaire (slave). Configurez le serveur secondaire pour qu'il reçoive les données du serveur principal. Créez un script qui insère des données dans la base de données principale. Vérifiez que les données sont correctement répliquées sur le serveur secondaire. Documentez les étapes réalisées et les configurations appliquées."
+        },
+        {
+            "title": "Configuration d'un cluster de serveurs",
+            "context": "Vous avez la charge de mettre en place un cluster de serveurs pour une application web critique.",
+            "objective": "Choisissez un logiciel de clustering adapté à l'application web. Configurez deux serveurs en tant que nœuds du cluster. Implémentez un mécanisme de failover pour assurer la continuité de service en cas de défaillance d'un serveur. Testez la bascule automatique en simulant une panne sur le serveur actif. Rédigez un compte rendu de la procédure de configuration et des tests effectués."
+        },
+        {
+            "title": "Mise en place de la haute disponibilité",
+            "context": "Vous devez concevoir une solution de haute disponibilité pour le site e-commerce de l'entreprise, qui subit des pics de charge importants.",
+            "objective": "Proposez une architecture capable de gérer les montées en charge tout en assurant une haute disponibilité. Mettez en place un mécanisme de load balancing qui répartit le trafic entre plusieurs serveurs. Configurez les serveurs pour qu'ils partagent l'état des sessions utilisateur de manière transparente. Simulez un pic de trafic et observez la répartition de la charge entre les serveurs. Rédigez un rapport détaillant votre architecture, les tests de charge effectués et les résultats observés."
+        },
+        {
+            "title": "Audit de sécurité et optimisation des performances",
+            "context": "Après avoir mis en œuvre des solutions de redondance et de clustering, vous devez maintenant vous assurer que l'environnement est sécurisé et optimisé pour les performances.",
+            "objective": "Élaborer une liste de contrôle pour l'audit de sécurité des architectures redondantes et clustérisées. Effectuez un audit de sécurité basé sur cette liste de contrôle. Utilisez des outils de surveillance pour identifier les goulots d'étranglement de performance dans votre environnement. Proposez et implémentez des améliorations pour résoudre les problèmes de performances identifiés. Rédigez un rapport d'audit qui inclut vos constatations de sécurité, les actions correctives prises et les optimisations de performances réalisées."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Redondance et tolérance aux pannes dans les Systèmes d'Information",
+            "author": "Jean-Michel Bruinsma"
+        },
+        {
+            "title": "Techniques de Réplication de Données - Concepts et Pratiques",
+            "author": "Frédéric Tchou"
+        },
+        {
+            "title": "Les Clusters Informatiques : Architecture et Applications",
+            "author": "Pierre Coey"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

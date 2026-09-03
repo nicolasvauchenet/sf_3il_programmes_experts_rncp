@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM07",
+        "title": "Droit et Contrats de Prestation",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d’une méthode de gestion de projet et des outils adaptés au contexte en analysant le besoin, en rédigeant les documents d’initialisation et de suivi de projet, en mobilisant les ressources nécessaires afin de garantir la qualité des livrables, le respect des délais et des coûts."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes fondamentaux des contrats de prestation, analyser les responsabilités des parties, identifier les recours en cas de litige et appliquer les connaissances juridiques dans des situations concrètes de sous-traitance ou de prestation de services."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en droit des affaires ou en droit des obligations et capacité à analyser des textes juridiques."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondamentaux du droit des contrats de prestation",
+                "items": [
+                    "Principes généraux du droit des contrats",
+                    "Types de contrats de prestation",
+                    "Conditions de validité d'un contrat",
+                    "Obligations des parties",
+                    "Modalités de résiliation"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Responsabilités et litiges",
+                "items": [
+                    "Responsabilité contractuelle et extracontractuelle",
+                    "Cas de force majeure",
+                    "Gestion et résolution des litiges",
+                    "Recours en cas de non-respect du contrat",
+                    "Clauses de limitation de responsabilité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Aspects juridiques de la prestation de services",
+                "items": [
+                    "Propriété intellectuelle",
+                    "Protection des données",
+                    "Confidentialité et secret professionnel",
+                    "Prestations internationales",
+                    "Clauses contractuelles spécifiques"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sous-traitance et relations contractuelles",
+                "items": [
+                    "Enjeux des contrats de sous-traitance",
+                    "Relations entre donneur d'ordre et sous-traitant",
+                    "Clauses essentielles d'un contrat de sous-traitance",
+                    "Risques liés à la sous-traitance",
+                    "Gestion des litiges"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Études de cas et mise en pratique",
+                "items": [
+                    "Analyse de contrats réels",
+                    "Résolution de cas pratiques",
+                    "Simulation de négociation contractuelle",
+                    "Conséquences juridiques des choix contractuels",
+                    "Retours d'expérience"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Rédaction d'un contrat de prestation",
+            "context": "Mise en place d'un système de gestion des ressources humaines pour un client.",
+            "objective": "Rédiger un contrat comprenant identification des parties, description de la prestation, obligations, modalités de paiement et clauses de résiliation."
+        },
+        {
+            "title": "Gestion d'un litige contractuel",
+            "context": "Travaux interrompus à cause d'une découverte archéologique.",
+            "objective": "Analyser les responsabilités contractuelles et proposer une stratégie juridique pour résoudre le litige."
+        },
+        {
+            "title": "Évaluation des risques dans un contrat de sous-traitance",
+            "context": "Sous-traitance d'une partie de la production à un fournisseur étranger.",
+            "objective": "Identifier les risques juridiques et proposer des clauses contractuelles pour sécuriser la relation."
+        },
+        {
+            "title": "Rédaction d'une clause de confidentialité",
+            "context": "Partage d'informations sensibles entre deux entreprises.",
+            "objective": "Élaborer une clause définissant les informations confidentielles, les obligations des parties et les conséquences en cas de violation."
+        },
+        {
+            "title": "Simulation de négociation contractuelle",
+            "context": "Négociation entre un prestataire marketing et une entreprise cliente.",
+            "objective": "Définir une stratégie de négociation autour de la durée du contrat, des paiements et des clauses de performance."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Droit des obligations",
+            "author": "Philippe Malinvaud"
+        },
+        {
+            "title": "Contrats civils et commerciaux",
+            "author": "Jacques Ghestin et Jean Paillusseau"
+        },
+        {
+            "title": "Les obligations",
+            "author": "François Terré, Philippe Simler et Yves Lequette"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Étude de textes juridiques",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

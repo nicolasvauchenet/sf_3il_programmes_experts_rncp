@@ -1,0 +1,52 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39781-BC03-EC04",
+        "title": "Veille cybersécurité (en anglais)",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Piloter la Sécurité des Systèmes d'Information",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 4,
+    "description": "Veille cybersécurité en anglais.",
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Conduire une veille active en matière de cybersécurité, en analysant régulièrement les bulletins de sécurité, les publications des organismes de référence tant francophones qu’anglophones et en partageant les fruits de ses recherches conformément aux us de l’équipe (rapport/article, réseau social interne, plateforme collaborative), afin d’anticiper les menaces et vulnérabilités émergentes et mener des actions correctives."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr18",
+            "description": "Conduire une veille active en matière de cybersécurité, en analysant régulièrement les bulletins de sécurité, les publications des organismes de référence tant francophones qu’anglophones et en partageant les fruits de ses recherches conformément aux us de l’équipe (rapport/article, réseau social interne, plateforme collaborative), afin d’anticiper les menaces et vulnérabilités émergentes et mener des actions correctives.",
+            "indicators": [
+                "Le rapport de veille est rédigé en anglais technique. La qualité de la rédaction permet la compréhension pour un collaborateur anglophone.",
+                "Le contenu du rapport de veille identifie clairement les sources, les confronte et permet d’adapter des actions correctives."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée, écrit et/ou sur ordinateur (en anglais)",
+        "delivery": "Épreuve individuelle",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E5",
+                "title": "Épreuve écrite",
+                "type": "Épreuve écrite",
+                "coefficient": 3,
+                "points": 60,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 30,
+            "compensationMin": 21,
+            "remedialBelow": 21,
+            "blockThreshold": 110
+        }
+    }
+}

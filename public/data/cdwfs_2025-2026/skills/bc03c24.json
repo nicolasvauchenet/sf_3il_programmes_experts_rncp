@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39608-BC03-C24",
+        "title": "Coordonner des conteneurs avec un logiciel d’orchestration",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "academicYear": "2025"
+    },
+    "description": "Coordonner les containeurs avec des logiciels d'orchestration en garantissant l'activité des pipelines d'intégration et de déploiement continus pour optimiser la résilience et la performance des applications.",
+    "criteria": [
+        "Outil d’orchestration : l'outil d'orchestration garantit la gestion dynamique des ressources.",
+        "Mise à l'échelle : le scaling des ressources orchestrées garantit la robustesse des pipelines d'intégration et de déploiement continus."
+    ]
+}

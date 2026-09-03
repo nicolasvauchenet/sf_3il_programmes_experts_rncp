@@ -1,0 +1,101 @@
+{
+    "meta": {
+        "type": "evaluation",
+        "code": "RNCP39608-BC01-EC01",
+        "title": "Conception d'interfaces Front-end adaptatives et interactives sans Framework",
+        "rncpCode": "39608",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et réaliser des interfaces utilisateurs adaptatives et des expériences interactives front-end",
+        "academicYear": "2025-2026"
+    },
+    "evaluationNumber": 1,
+    "description": "Conception d'interfaces Front-end adaptatives et interactives sans Framework.",
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Concevoir et structurer des interfaces web en utilisant le langage HTML5 en appliquant des pratiques de codage sémantique avancées pour produire des sites conformes aux besoins des personnes en situation de handicap (standards d'accessibilité du W3C) et à l'optimisation pour le référencement (SEO)."
+        },
+        {
+            "code": "C02",
+            "description": "Créer et Intégrer, grâce au CSS3, des interfaces intuitives pour les utilisateurs (UI), en tenant compte de la compréhension approfondie de l'expérience utilisateurs (UX) et des meilleures pratiques en matière de design d'interaction"
+        },
+        {
+            "code": "C03",
+            "description": "Élaborer et réaliser des interfaces web adaptatives en utilisant des techniques de Responsive Web Design, notamment avec l'aide d'un Framework dédié pour assurer une expérience utilisateur cohérente et de qualité sur tous types de terminaux."
+        },
+        {
+            "code": "C04",
+            "description": "Implémenter des interactions côté client en utilisant JavaScript et TypeScript et respectant les standards ECMAScript pour concevoir des fonctionnalités interactives (validation de formulaires, animations…) permettant d’améliorer l’engagement utilisateur et l’interactivité du site web."
+        },
+        {
+            "code": "C05",
+            "description": "Optimiser la communication asynchrone entre les utilisateurs et les serveurs en développant des requêtes AJAX pour accroître la réactivité et la performance des applications web."
+        }
+    ],
+    "criteria": [
+        {
+            "code": "Cr01",
+            "description": "Qualité de la Conception et Structure en HTML5",
+            "indicators": [
+                "Indicateurs de validation W3C : le code HTML est conforme aux normes du W3C.",
+                "Accessibilité : des normes d'accessibilité (tel que l'attribut \"ARIA\" (Accessible Rich Internet Applications), l'attribut \"alt\", ...) pour les personnes en situation de handicap sont mises en place et permettent l’accessibilité universelle.",
+                "Clarté du code : La clarté et la structure du code permettent une maintenance facile et une compréhension rapide par d’autres développeurs. (Indentation et Espacement, Commentaires, Nommage compréhensible des Variables et Fonctions...)"
+            ]
+        },
+        {
+            "code": "Cr02",
+            "description": "Création et Intégration avec CSS3",
+            "indicators": [
+                "Consistance du design : Les éléments graphiques présentent un cohérence visuelle et une uniformité sur les différentes pages du site.",
+                "Expérience utilisateur : La navigation répond au standard de l'UX. (Règle des 3 clics, Facilité de navigation, principe de continuité de la navigation...)"
+            ]
+        },
+        {
+            "code": "Cr03",
+            "description": "Responsive Web Design",
+            "indicators": [
+                "Responsivité : L'interface s'adapte sur tous types d'appareils (desktop, tablette, mobile...)."
+            ]
+        },
+        {
+            "code": "Cr04",
+            "description": "Interactions avec JavaScript/TypeScript",
+            "indicators": [
+                "Fonctionnalités interactives : Les fonctionnalités interactives demandées sont implémentées : les menus déroulants, les validations de formulaires ....",
+                "Compatibilité cross-browser : Les scripts fonctionnent de manière identique sur les principaux navigateurs web.",
+                "Conformité ECMAScript : Le code JavaScript/TypeScript est à jour avec les dernières spécifications ECMAScript."
+            ]
+        },
+        {
+            "code": "Cr05",
+            "description": "Fonctionnalités AJAX",
+            "indicators": [
+                "Interaction client/serveur : Des requêtes AJAX sont utilisées pour interagir avec le serveur (par exemple, sauvegarder une nouvelle tâche) sans recharger la page web.",
+                "Performance de l'Application : Les requêtes AJAX sont optimisées et évitent la surcharge du serveur garantissent un retour rapide des données."
+            ]
+        }
+    ],
+    "modalities": {
+        "format": "Mise en situation reconstituée sur ordinateur",
+        "delivery": "Conception d'interfaces Front-end adaptatives et interactives sans Framework",
+        "totalDuration": "4h00"
+    },
+    "exam": {
+        "parts": [
+            {
+                "code": "E1",
+                "title": "Conception d'interfaces Front-end adaptatives et interactives sans Framework",
+                "type": "Épreuve écrite",
+                "coefficient": 4,
+                "points": 80,
+                "duration": "4h00"
+            }
+        ],
+        "validation": {
+            "evaluationThreshold": 40,
+            "compensationMin": 28,
+            "remedialBelow": 28,
+            "blockThreshold": 90
+        }
+    }
+}
