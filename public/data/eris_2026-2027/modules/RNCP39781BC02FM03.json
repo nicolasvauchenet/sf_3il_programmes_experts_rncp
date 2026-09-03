@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM03",
+        "title": "IT Assets Management (ITAM)",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions, en conformité avec le schéma directeur de la DSI, en combinant des ressources locales (on-premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications"
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place, au contrôle et à l’administration de l'infrastructure, en mobilisant ses compétences techniques, en collaborant avec les équipes pluridisciplinaires et en documentant la solution pour déployer les éléments techniques de la solution"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux et les bénéfices de la gestion des actifs informatiques (Comprendre) Maîtriser les processus et outils utilisés pour leur gestion efficace (Appliquer) Intégrer la gestion financière et des risques dans le cadre de la gouvernance des actifs IT (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Avoir des connaissances de base en informatique et en gestion des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gestion des actifs informatiques",
+                "items": [
+                    "Comprendre les enjeux de la gestion des actifs informatiques",
+                    "Connaître les principaux objectifs de l'ITAM",
+                    "Identifier les différents types d'actifs informatiques",
+                    "Comprendre les bénéfices de l'ITAM pour une organisation",
+                    "Connaître les risques liés à une mauvaise gestion des actifs informatiques"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Processus de gestion des actifs informatiques",
+                "items": [
+                    "Comprendre le cycle de vie des actifs informatiques",
+                    "Identifier les étapes clés du processus de gestion des actifs informatiques",
+                    "Connaître les bonnes pratiques de gestion des actifs informatiques",
+                    "Apprendre à mettre en place un processus efficace d'inventaire et de suivi des actifs",
+                    "Comprendre l'importance de la normalisation et de la documentation des actifs informatiques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et technologies pour la gestion des actifs informatiques",
+                "items": [
+                    "Connaître les différents types d'outils d'inventaire et de gestion des actifs",
+                    "Comprendre les critères de sélection des outils d'ITAM",
+                    "Apprendre à utiliser les outils de découverte et d'inventaire des actifs",
+                    "Connaître les fonctionnalités avancées des outils d'ITAM (gestion des licences, gestion des contrats, etc.)",
+                    "Apprendre à intégrer les outils d'ITAM avec d'autres systèmes d'information de l'entreprise"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion financière des actifs informatiques",
+                "items": [
+                    "Comprendre les enjeux de la gestion financière des actifs informatiques",
+                    "Apprendre à évaluer la valeur des actifs informatiques",
+                    "Connaître les méthodes de calcul du coût total de possession (TCO) des actifs",
+                    "Apprendre à optimiser les coûts liés à la gestion des actifs informatiques",
+                    "Comprendre l'impact financier de l'obsolescence des actifs informatiques"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des risques et conformité liés aux actifs informatiques",
+                "items": [
+                    "Identifier les risques liés à la gestion des actifs informatiques",
+                    "Comprendre les enjeux de conformité (licences, sécurité, etc.) liés aux actifs informatiques",
+                    "Apprendre à mettre en place des mesures de sécurité et de conformité pour les actifs informatiques",
+                    "Connaître les bonnes pratiques de gestion des risques liés aux actifs informatiques",
+                    "Apprendre à intégrer la gestion des risques liés aux actifs informatiques dans la gouvernance de l'entreprise"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Audit des actifs informatiques",
+            "objectif": "Être capable de réaliser un audit et un inventaire des actifs informatiques.",
+            "instructions": "Vous avez été nommé responsable de la gestion des actifs informatiques et devez réaliser un audit complet des actifs existants. Créez une liste exhaustive des types d'actifs informatiques présents dans l'entreprise (matériels, logiciels, données, etc.). Élaborez un formulaire d'inventaire incluant les informations essentielles (nom de l'actif, catégorie, modèle, numéro de série, emplacement, date d'achat, fin de garantie, utilisateur assigné, etc.). Menez un inventaire physique en utilisant ce formulaire pour recenser au moins 10 actifs différents. Analysez les données recueillies pour identifier les actifs obsolètes ou non utilisés et proposez des actions à prendre.",
+            "livrable": "Un dossier d'audit comprenant la liste des types d'actifs, un formulaire d'inventaire renseigné pour au moins 10 actifs et une analyse identifiant les actifs obsolètes ou inutilisés avec les actions proposées."
+        },
+        {
+            "title": "Sélection d'un outil d'ITAM",
+            "objectif": "Être capable de sélectionner un outil d'ITAM adapté aux besoins de l'entreprise.",
+            "instructions": "Votre entreprise envisage d'adopter un nouvel outil de gestion des actifs informatiques (ITAM) et vous devez sélectionner l'outil le plus adapté. Identifiez cinq critères essentiels que l'outil doit satisfaire. Recherchez trois outils d'ITAM disponibles sur le marché et comparez-les en fonction de ces critères. Rédigez un rapport de comparaison incluant les avantages et inconvénients de chaque outil ainsi que votre recommandation finale. Justifiez votre choix en expliquant comment cet outil peut s'intégrer avec les systèmes d'information existants.",
+            "livrable": "Un rapport de comparaison de trois outils ITAM selon cinq critères, avec avantages et inconvénients, recommandation finale et justification de l'intégration aux systèmes existants."
+        },
+        {
+            "title": "Calcul du TCO",
+            "objectif": "Être capable de calculer le coût total de possession d'une catégorie d'actifs informatiques.",
+            "instructions": "Vous devez évaluer le coût total de possession (TCO) d'une catégorie d'actifs informatiques (par exemple, les ordinateurs portables). Identifiez tous les coûts associés à ces actifs sur leur cycle de vie complet (achat, installation, maintenance, support, mise à niveau, élimination, etc.). Collectez les données nécessaires auprès des départements concernés pour estimer ces coûts. Utilisez une méthode de calcul du TCO pour estimer le coût total sur une période de 5 ans. Présentez vos résultats sous forme d'un tableau ou d'un graphique explicatif.",
+            "livrable": "Une estimation du TCO d'une catégorie d'actifs sur 5 ans, appuyée sur les coûts du cycle de vie complet et présentée sous forme de tableau ou de graphique."
+        },
+        {
+            "title": "Plan de gestion des risques",
+            "objectif": "Être capable d'élaborer un plan de gestion des risques liés aux actifs informatiques.",
+            "instructions": "En tant que gestionnaire des actifs informatiques, vous êtes chargé de développer un plan de gestion des risques. Identifiez au moins cinq risques spécifiques liés à la gestion des actifs (par exemple, perte de données, vol d'actifs, non-conformité des licences, etc.). Évaluez la probabilité et l'impact potentiel de chaque risque identifié. Proposez des mesures de mitigation ou de prévention pour chaque risque. Élaborez un tableau ou une matrice des risques présentant vos évaluations et recommandations.",
+            "livrable": "Un plan de gestion des risques comprenant au moins cinq risques évalués (probabilité, impact), les mesures de mitigation ou de prévention associées et une matrice des risques."
+        },
+        {
+            "title": "Politique de conformité des licences logicielles",
+            "objectif": "Être capable de créer une politique de conformité des licences logicielles.",
+            "instructions": "Votre entreprise doit s'assurer que toutes les licences logicielles sont gérées de manière conforme pour éviter les violations de droits d'auteur, et vous êtes chargé de créer une politique de conformité. Élaborez une liste de vérification des points clés à inclure (procédures d'achat, d'installation, de suivi et d'audit des licences). Rédigez une politique incluant des directives pour l'achat, l'utilisation et l'audit des licences logicielles. Développez un processus pour effectuer un audit interne des licences afin de déceler les non-conformités. Proposez un plan d'action pour corriger toute non-conformité détectée et prévenir les violations futures.",
+            "livrable": "Une politique de conformité des licences logicielles accompagnée d'une liste de vérification, d'un processus d'audit interne et d'un plan d'action correctif et préventif."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "IT Asset Management: A Pocket Survival Guide (2e éd.). IAITAM. IAITAM. (2023). IT Asset Management Body of Knowledge. IAITAM. O'Reilly, M. (2022). Software Asset Management: Practical Guide",
+            "author": "Fomin, V"
+        }
+    ],
+    "OnlineResources": [
+        "IAITAM - IT Asset Management (https://iaitam.org) [EN]",
+        "ISO/IEC 19770 - ITAM (https://www.iso.org/standard/68531.html) [EN/FR]",
+        "GLPI Documentation (https://glpi-project.org/fr/documentation/) [FR/EN]",
+        "ServiceNow ITAM (https://docs.servicenow.com) [EN]",
+        "ITIL 4 - Service Configuration Management (https://www.axelos.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

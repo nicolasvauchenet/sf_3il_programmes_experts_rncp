@@ -1,0 +1,149 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM08",
+        "title": "Techniques de Communication professionnelle",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet en s'adaptant aux parties prenantes concernées (COPIL, équipe projet, client) afin de garantir une communication claire, efficace et adaptée aux besoins, de faciliter la prise de décision, d'assurer la transparence sur l'avancement du projet, et de maintenir l'alignement des objectifs"
+        },
+        {
+            "code": "C27",
+            "description": "Élaborer et mettre en œuvre la conduite du changement en s'appuyant sur des référentiels tels qu'ITIL, en réalisant une analyse de risques, en mettant au point une procédure de mise en production et au moyen de documentations et/ou de formations pour les utilisateurs concernés (acteurs comme usagers), afin de minimiser l'impact d'une évolution (mineure, delta ou majeure) de l'infrastructure sur l'environnement de production"
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l'équipe en identifiant les besoins en compétences, en développant les talents, en planifiant la formation des collaborateurs, en participant à leur évaluation, et en mesurant l'écart entre les objectifs et le réalisé, pour améliorer la réussite des projets dans le respect des exigences fixées"
+        },
+        {
+            "code": "C29",
+            "description": "Contribuer au recrutement des collaborateurs en participant aux rédactions de fiches de poste, en assurant une caution technique au moyen d'évaluations des compétences lors des entretiens, et en mettant l'accent sur l'inclusion notamment des personnes en situation de handicap, afin de contribuer à la construction d'une équipe diversifiée, reflétant les valeurs de l'égalité des chances et de la responsabilité sociétale (RSE)"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre et pratiquer les différents types de communication et leurs principes (Comprendre) Identifier et surmonter les obstacles à la communication (Analyser) Maîtriser les techniques de communication interpersonnelle et professionnelle (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Aucun pré-requis n'est nécessaire pour suivre ce cours, bien qu'une expérience ou un intérêt en relations interpersonnelles et en dynamique de groupe puisse être bénéfique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Les fondamentaux de la communication",
+                "items": [
+                    "Les différents types de communication (verbale, non-verbale, écrite)",
+                    "Les principes de la communication efficace",
+                    "Les obstacles à la communication et comment les surmonter",
+                    "L'importance de l'écoute active dans la communication",
+                    "Les concepts de feed-back et de reformulation"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Communication interpersonnelle",
+                "items": [
+                    "Les styles de communication",
+                    "La gestion des conflits par la communication",
+                    "La communication assertive",
+                    "L'empathie et la communication",
+                    "Les techniques de communication non violente"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Communication en groupe et en équipe",
+                "items": [
+                    "Les caractéristiques de la communication en groupe",
+                    "Les dynamiques de groupe et leur impact sur la communication",
+                    "Les rôles et responsabilités dans la communication en équipe",
+                    "La résolution des problèmes de communication en équipe",
+                    "Les outils de communication pour les réunions et les présentations"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Communication en situation de changement",
+                "items": [
+                    "La communication dans le processus de conduite du changement",
+                    "Les stratégies de communication pour accompagner le changement",
+                    "La gestion des résistances par la communication",
+                    "La communication dans un contexte de crise",
+                    "L'importance de la transparence et de l'authenticité dans la communication en situation de changement"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Communication dans un contexte professionnel",
+                "items": [
+                    "La communication dans le cadre du management",
+                    "La communication interne et externe de l'organisation",
+                    "Les outils de communication professionnelle (e-mails, rapports, présentations)",
+                    "La communication dans un contexte multiculturel",
+                    "Les enjeux de la communication digitale pour l'entreprise"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse et Amélioration de Communication Verbale et Non-Verbale",
+            "objectif": "Être capable d'analyser une situation de communication et de proposer une stratégie d'amélioration fondée sur les principes de la communication efficace.",
+            "instructions": "Lors d'une réunion d'équipe, vous observez que le message d'un collègue n'est pas bien compris par les autres membres de l'équipe. En vous appuyant sur vos connaissances des différents types de communication et des principes de la communication efficace, analysez la situation et proposez une stratégie pour améliorer la communication de votre collègue. Votre réponse doit accorder une attention particulière à l'écoute active, au feedback et à la reformulation.",
+            "livrable": "Une analyse de la situation de communication et une stratégie d'amélioration mettant en oeuvre l'écoute active, le feedback et la reformulation."
+        },
+        {
+            "title": "Mise en Pratique de la Communication Assertive",
+            "objectif": "Être capable d'exprimer un désaccord de manière assertive en mobilisant la communication non violente.",
+            "instructions": "Imaginez que vous êtes en désaccord avec un collègue concernant la direction d'un projet. Rédigez un dialogue dans lequel vous utilisez la communication assertive pour exprimer votre point de vue tout en maintenant le respect et l'empathie envers votre collègue. Votre dialogue doit refléter les techniques de communication non violente pour gérer ce conflit.",
+            "livrable": "Un dialogue écrit illustrant l'expression assertive d'un désaccord, dans le respect et l'empathie, et mobilisant les techniques de communication non violente."
+        },
+        {
+            "title": "Rôle et Responsabilités dans une Réunion d'Équipe",
+            "objectif": "Être capable de préparer une réunion d'équipe en définissant les rôles et les techniques de communication adaptés.",
+            "instructions": "Leader d'une équipe qui doit résoudre un problème de communication interne ayant affecté la performance du groupe, créez un plan de réunion en définissant les rôles et responsabilités de chaque membre de l'équipe. Décrivez également les outils et techniques de communication que vous utiliserez pour faciliter la résolution des problèmes de communication et assurer une réunion productive.",
+            "livrable": "Un plan de réunion précisant les rôles et responsabilités de chaque membre de l'équipe ainsi que les outils et techniques de communication mobilisés pour résoudre les problèmes de communication et garantir une réunion productive."
+        },
+        {
+            "title": "Plan de communication en situation de conduite du changement",
+            "objectif": "Être capable de concevoir un plan de communication accompagnant une conduite du changement et gérant les résistances, y compris en contexte de crise.",
+            "instructions": "Votre direction des systèmes d'information déploie un nouvel ERP qui remplace plusieurs applications métiers historiques. Ce changement suscite de fortes inquiétudes chez les utilisateurs (crainte pour l'emploi, perte de repères, surcharge pendant la bascule). En tant que responsable de la conduite du changement, élaborez un plan de communication couvrant l'ensemble du déploiement. Votre plan doit : identifier les parties prenantes et leurs profils de résistance ; définir au moins trois messages clés adaptés à chaque phase (annonce, transition, mise en production) ; préciser les canaux et le rythme de communication retenus ; proposer une stratégie explicite de gestion des résistances mobilisant la transparence et l'authenticité ; et prévoir un dispositif de communication de crise à activer en cas d'incident majeur lors de la bascule (par exemple une indisponibilité prolongée de l'ERP), en précisant qui communique, quoi, à qui et par quel canal.",
+            "livrable": "Un plan de communication de conduite du changement présentant la cartographie des parties prenantes et de leurs résistances, les messages clés par phase, les canaux et le rythme retenus, la stratégie de gestion des résistances fondée sur la transparence et l'authenticité, et un volet de communication de crise activable en cas d'incident majeur."
+        },
+        {
+            "title": "Communication professionnelle en contexte digital et multiculturel",
+            "objectif": "Être capable d'adapter sa communication professionnelle à un contexte digital et multiculturel en mobilisant les outils appropriés (courriels, rapports, présentations).",
+            "instructions": "Vous pilotez une équipe projet SI répartie sur plusieurs sites (France, Côte d'Ivoire, Inde) travaillant à distance et fonctionnant majoritairement en asynchrone. Vous devez préparer le lancement d'un nouveau lot de développement. Réalisez les productions suivantes : rédigez le courriel de lancement adressé à l'ensemble de l'équipe, en tenant compte des écarts de fuseaux horaires, de langue et de codes culturels ; construisez la trame d'une réunion de lancement en visioconférence favorisant la participation de tous malgré la distance ; et définissez une charte de communication digitale pour l'équipe (choix des canaux selon le type de message, règles de réactivité, bonnes pratiques pour les échanges écrits asynchrones). Justifiez vos choix au regard des enjeux de la communication digitale et des sensibilités multiculturelles.",
+            "livrable": "Un dossier de communication professionnelle comprenant le courriel de lancement adapté au contexte multiculturel et asynchrone, la trame de réunion de lancement en visioconférence favorisant la participation de tous, et une charte de communication digitale de l'équipe justifiée au regard des enjeux digitaux et multiculturels."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "L'intelligence émotionnelle au travail",
+            "author": "Goleman, D"
+        }
+    ],
+    "OnlineResources": [
+        "Harvard Business Review - Communication (https://hbr.org/topic/business-communication) [EN]",
+        "Cadremploi - Communication professionnelle (https://www.cadremploi.fr) [FR]",
+        "Toastmasters International (https://www.toastmasters.org) [EN]",
+        "Manager-go - Communication (https://www.manager-go.com) [FR]",
+        "MIT Sloan Management Review (https://sloanreview.mit.edu) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

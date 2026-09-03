@@ -1,0 +1,139 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM08",
+        "title": "Qualité logicielle et amélioration continue",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C33",
+            "description": "Effectuer des revues de code en utilisant des outils d'analyse en respectant les principes de développement et les standards de l'entreprise, pour assurer une qualité et une maintenabilité élevées du code"
+        },
+        {
+            "code": "C34",
+            "description": "Concevoir et mettre en œuvre des tests automatisés en employant les meilleures pratiques et outils de test et en tenant compte des contraintes techniques et des exigences de performance pour valider la fiabilité et l'efficacité des applications"
+        },
+        {
+            "code": "C35",
+            "description": "Mettre en place, éditer et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes"
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre et appliquer les principes de l'assurance qualité dans le développement logiciel. Évaluer et mettre en œuvre des tests automatisés pour améliorer la qualité des applications. Intégrer des pratiques de revue de code et documentation technique pour assurer la maintenance et l'évolution des systèmes."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base du développement logiciel et des processus de gestion de projet. Familiarité avec les concepts de tests logiciels et de gestion de la qualité. Expérience préalable en programmation et utilisation d'outils de développement."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Assurance qualité des processus de développement logiciel",
+                "items": [
+                    "Les principes fondamentaux de l'assurance qualité dans le développement logiciel",
+                    "Les normes et référentiels à respecter pour garantir la qualité des processus",
+                    "La mise en place de processus systématiques pour l'excellence technique et la sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Tests automatisés pour la qualité des applications",
+                "items": [
+                    "Les différents types de tests automatisés (fonctionnels, de performance, de charge, etc.)",
+                    "Les outils et techniques pour assurer une couverture de test complète",
+                    "L'importance de la détection précoce des problèmes grâce aux tests automatisés"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Revues de code et correction des erreurs",
+                "items": [
+                    "Les bonnes pratiques pour mener des revues de code efficaces",
+                    "La détection et la correction des erreurs, des failles de sécurité et des écarts de normes",
+                    "L'impact des revues de code sur la qualité du logiciel final"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Documentation technique pour la maintenance et l'évolution des systèmes",
+                "items": [
+                    "La création d'une documentation technique approfondie",
+                    "Les spécificités du développement et les choix techniques à capturer dans la documentation",
+                    "Les procédures à suivre pour assurer la maintenance et l'évolution des systèmes"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Amélioration continue de la qualité des logiciels",
+                "items": [
+                    "L'importance de l'instauration de processus d'amélioration continue",
+                    "Les actions à mettre en place pour soutenir l'excellence technique et la sécurité",
+                    "La gestion de la qualité tout au long du cycle de vie du développement logiciel"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Évaluation de la conformité aux normes",
+            "objectif": "Identifier les normes applicables et évaluer la conformité d'un processus de développement logiciel à ces normes.",
+            "instructions": "Sélectionnez un processus de développement logiciel dans votre environnement professionnel ou imaginez-en un. Identifiez les normes et référentiels qui s'y appliquent, puis évaluez sa conformité à ces normes.",
+            "livrable": "Un rapport détaillé d'évaluation de la conformité mettant en avant les éventuels écarts et les actions correctives à entreprendre."
+        },
+        {
+            "title": "Mise en place d'un scénario de test automatisé",
+            "objectif": "Créer un scénario de test automatisé pour une fonctionnalité spécifique d'une application.",
+            "instructions": "Sélectionnez une fonctionnalité d'une application existante ou créez un exemple. Concevez et mettez en place un scénario de test automatisé pour cette fonctionnalité à l'aide d'un outil de test automatisé de votre choix. Passez en revue votre scénario avec un collègue et recueillez ses retours pour l'améliorer.",
+            "livrable": "Un scénario de test automatisé opérationnel pour la fonctionnalité choisie, revu avec un collègue et amélioré à partir de ses retours."
+        },
+        {
+            "title": "Revue de code et détection d'erreurs",
+            "objectif": "Effectuer une revue de code et détecter les erreurs potentielles dans un script donné.",
+            "instructions": "À partir d'un script de code source fourni, effectuez une revue de code approfondie en mettant en évidence les erreurs, les failles de sécurité et les écarts par rapport aux normes de programmation. Proposez des corrections et des améliorations pour chaque problème identifié en justifiant vos recommandations.",
+            "livrable": "Un compte rendu de revue de code recensant erreurs, failles de sécurité et écarts aux normes, avec des corrections et améliorations justifiées pour chaque problème."
+        },
+        {
+            "title": "Création d'une documentation technique",
+            "objectif": "Créer une documentation technique complète pour un projet de développement logiciel.",
+            "instructions": "Choisissez un projet de développement logiciel auquel vous avez participé ou créez un exemple hypothétique. Élaborez une documentation technique exhaustive capturant les spécificités du développement, les choix techniques effectués et les procédures de maintenance et d'évolution du système.",
+            "livrable": "Une documentation technique exhaustive prête à être transmise à une équipe de maintenance ou de développement, couvrant spécificités, choix techniques et procédures de maintenance et d'évolution."
+        },
+        {
+            "title": "Plan d'amélioration continue de la qualité",
+            "objectif": "Élaborer un plan d'amélioration continue de la qualité pour un projet de développement logiciel.",
+            "instructions": "Identifiez un projet de développement logiciel existant ou fictif pour lequel mettre en place un plan d'amélioration continue de la qualité. Proposez un plan détaillé comprenant des actions spécifiques soutenant l'excellence technique, la sécurité et la gestion de la qualité tout au long du cycle de vie du projet. Argumentez et justifiez chaque action.",
+            "livrable": "Un plan d'amélioration continue de la qualité détaillé, présentant des actions argumentées couvrant excellence technique, sécurité et gestion de la qualité sur tout le cycle de vie du projet."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Agile Testing : A Practical Guide for Testers and Agile Teams. Addison-Wesley",
+            "author": "Crispin, L. & Gregory, J"
+        },
+        {
+            "title": "Clean Code : A Handbook of Agile Software Craftsmanship (2e éd.). Addison-Wesley",
+            "author": "Martin, R. C"
+        },
+        {
+            "title": "Unit Testing Principles, Practices, and Patterns. Manning",
+            "author": "Khorikov, V"
+        }
+    ],
+    "OnlineResources": [
+        "ISO/IEC 25010 - Qualité logicielle (https://www.iso.org/standard/78176.html) [EN]",
+        "OWASP - Code Review Guide (https://owasp.org/www-project-code-review-guide/) [EN]",
+        "SonarSource - Documentation Clean Code (https://docs.sonarsource.com) [EN]",
+        "Google Engineering Practices - Code Review (https://google.github.io/eng-practices/) [EN]",
+        "Developpez.com - Qualité logicielle et tests (https://www.developpez.com/) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

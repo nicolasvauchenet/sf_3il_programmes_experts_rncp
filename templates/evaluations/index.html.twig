@@ -24,6 +24,28 @@
             } %}{% endif %}
 
             <article class="printable-content">
+                {% if pdfMode|default(false) %}
+                    <section class="pdf-cover pdf-cover--compact">
+                        <div class="pdf-cover-kicker">Fiche évaluation</div>
+                        <div class="pdf-cover-program">{{ promotionContext.promotionTitle }}</div>
+                        <div class="pdf-cover-code">{{ evaluation.evaluationCode }}</div>
+                        <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
+                        <div class="pdf-cover-rule"></div>
+                        <table class="pdf-cover-details"><tr>
+                            <td><span>Bloc de compétences</span><strong>{{ evaluation.blocCode }}</strong><small>{{ evaluation.blocName }}</small></td>
+                            <td><span>Promotion</span><strong>{{ promotion|upper }}</strong><small>{{ evaluation.academicYear ?: year }}</small></td>
+                            <td><span>Modalité</span><strong>{{ evaluation.format ?: '—' }}</strong><small>{{ evaluation.totalDuration ?: 'Durée non précisée' }}</small></td>
+                        </tr></table>
+                        <table class="pdf-cover-stats"><tr>
+                            <td><strong>{{ evaluation.skills|length }}</strong><span>Compétences</span></td>
+                            <td><strong>{{ evaluation.criteria|length }}</strong><span>Critères</span></td>
+                            <td><strong>{{ evaluation.examParts|length }}</strong><span>Épreuves</span></td>
+                            <td><strong>{{ evaluation.modules|length }}</strong><span>Matières</span></td>
+                            <td><strong>{{ evaluation.projects|length }}</strong><span>Projets</span></td>
+                        </tr></table>
+                        <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
+                    </section>
+                {% endif %}
                 <div class="app-grid third">
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
@@ -56,15 +78,7 @@
                         <div style="height: 200px;">
                             {{ render_chart(evaluationVolumeChart) }}
                         </div>
-                    </section>{% else %}
-                        <section class="app-section centered">
-                            <h2>Métriques</h2>
-                            <table class="pdf-metrics"><tr>
-                                <td><strong>{{ evaluation.skills|length }}</strong><span>Compétences</span></td>
-                                <td><strong>{{ evaluation.criteria|length }}</strong><span>Critères</span></td>
-                                <td><strong>{{ evaluation.examParts|length }}</strong><span>Épreuves</span></td>
-                            </tr></table>
-                        </section>
+                    </section>
                     {% endif %}
                 </div>
 
@@ -114,7 +128,7 @@
                             {% endif %}
 
                             {% for part in examParts %}
-                                <section class="app-section mx-0 my-0">
+                                <section class="app-section pdf-exercise mx-0 my-0">
                                     <h3 class="mb-0">{{ evaluation.evaluationCode }}{{ examParts | length > 1 ? '.' ~ loop.index : '' }}</h3>
 
                                     <p class="subtitle text-left">{{ part.title }}</p>
@@ -184,7 +198,7 @@
                         <h2>Compétences mobilisées</h2>
 
                         {% for s in evaluation.skillsWithCriteria %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
                                 <p>
                                     <a href="{{ path('app_promotion_skills', {
                                         'promotion': promotion,
@@ -218,7 +232,7 @@
                         <h2>Compétences mobilisées</h2>
 
                         {% for s in evaluation.skills %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
                                 <p>
                                     <a href="{{ path('app_promotion_skills', {
                                         'promotion': promotion,
@@ -235,7 +249,7 @@
                     </section>
                 {% endif %}
 
-                <div class="app-grid two">
+                <div class="app-grid two pdf-associations">
                     {% if evaluation.modules is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
                             <h2>Matières associées</h2>

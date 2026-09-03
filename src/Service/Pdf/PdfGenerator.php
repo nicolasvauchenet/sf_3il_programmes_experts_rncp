@@ -46,6 +46,12 @@ final class PdfGenerator
             $primaryColor = [0.16, 0.36, 0.44];
             $headerSideMargin = 43;
 
+            if ($pageNumber === 1) {
+                $canvas->image($logoPath, $headerSideMargin, 24, 230, 22.2);
+
+                return;
+            }
+
             $canvas->filled_rectangle(0, 0, $pageWidth, 88, [1, 1, 1]);
             $canvas->image($logoPath, $headerSideMargin, 23, 230, 22.2);
 
@@ -131,7 +137,7 @@ final class PdfGenerator
                 0.6,
             );
 
-            $label = sprintf('Page %d/%d', $pageNumber, $pageCount);
+            $label = sprintf('Page %d/%d', $pageNumber - 1, $pageCount - 1);
             $fontSize = 8;
             $rightMargin = 31;
             $bottomMargin = 23;

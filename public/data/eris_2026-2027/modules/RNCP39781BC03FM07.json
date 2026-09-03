@@ -1,0 +1,148 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM07",
+        "title": "SOC et Analyse Forensique",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Manager la cybersécurité de l'entreprise : politique, audit, défense, SOC et forensique",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l'infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d'attaques et d'outils d'analyse de sécurité afin d'évaluer la robustesse des systèmes et la réactivité des équipes"
+        },
+        {
+            "code": "C23",
+            "description": "Investiguer et analyser les incidents de sécurité, en conformité avec les recommandations de l'ANSSI, en examinant les systèmes compromis, en retraçant les actions malveillantes, et en collectant les preuves numériques afin de préparer des rapports en vue des audits de sécurité et conserver des preuves légales"
+        },
+        {
+            "code": "C24",
+            "description": "Contribuer au fonctionnement du Centre Opérationnel de Sécurité (SOC), en gérant les incidents de sécurité au moyen de solutions SIEM, en analysant les données de sécurité, en détectant les anomalies, en orchestrant des réponses rapides et efficaces, en pilotant le déploiement des correctifs, s'il y a lieu de façon automatisée, et en assurant une surveillance continue afin de maintenir la sécurité et la résilience de l'infrastructure"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre le rôle et l'importance de la gestion des incidents en sécurité informatique (Comprendre) Mettre en place un Security Operations Center (SOC) (Créer) Appliquer les techniques d'analyse forensique pour réagir efficacement aux incidents (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en sécurité informatique et en gestion de systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gestion des incidents en sécurité informatique",
+                "items": [
+                    "Comprendre le rôle et l'importance de la gestion des incidents en sécurité informatique",
+                    "Identifier les types d'incidents en sécurité informatique",
+                    "Connaître les principaux objectifs de la gestion des incidents en sécurité informatique",
+                    "Comprendre le processus de gestion des incidents en sécurité informatique",
+                    "Connaître les bonnes pratiques en matière de gestion des incidents en sécurité informatique"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Mise en place d'un SOC (Security Operations Center)",
+                "items": [
+                    "Comprendre le rôle et les responsabilités d'un SOC",
+                    "Connaître les différentes étapes de mise en place d'un SOC",
+                    "Identifier les outils et technologies utilisés dans un SOC",
+                    "Comprendre les bonnes pratiques pour la mise en place d'un SOC",
+                    "Connaître les principaux défis liés à la mise en place d'un SOC"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Analyse forensique en sécurité informatique",
+                "items": [
+                    "Comprendre le rôle et l'importance de l'analyse forensique en sécurité informatique",
+                    "Connaître les différentes étapes de l'analyse forensique",
+                    "Identifier les outils et techniques d'analyse forensique",
+                    "Comprendre les bonnes pratiques en matière d'analyse forensique"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents et réaction aux attaques",
+                "items": [
+                    "Comprendre les différentes phases de gestion des incidents",
+                    "Identifier les bonnes pratiques pour la réaction aux attaques",
+                    "Connaître les techniques de confinement (containment) et d'éradication des incidents",
+                    "Comprendre l'importance de la communication pendant la gestion des incidents",
+                    "Connaître les principaux challenges liés à la gestion des incidents et à la réaction aux attaques"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Exercices pratiques et études de cas",
+                "items": [
+                    "Mettre en pratique les concepts appris à travers des exercices pratiques",
+                    "Analyser des études de cas réels liés à la gestion des incidents et à l'analyse forensique",
+                    "Comprendre la démarche à suivre pour résoudre des incidents réels",
+                    "Identifier les leçons apprises à travers les exercices pratiques et études de cas",
+                    "Évaluer ses compétences en gestion des incidents et analyse forensique"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Simulation d'identification d'incident",
+            "objectif": "Savoir analyser des journaux pour identifier et catégoriser un incident de sécurité.",
+            "instructions": "Vous êtes analyste en sécurité dans une entreprise fictive et recevez des journaux (logs) d'événements suspects provenant du système d'information. Identifiez et listez les signes d'activités suspectes en vous basant sur les journaux fournis, puis catégorisez le type d'incident (par exemple malware, intrusion, fuite de données).",
+            "livrable": "Un bref rapport expliquant votre analyse et les raisons qui vous ont mené à conclure à un incident de sécurité informatique."
+        },
+        {
+            "title": "Planification d'un SOC",
+            "objectif": "Être capable de planifier la mise en place d'un Security Operations Center (SOC).",
+            "instructions": "Vous êtes consultant en sécurité chargé d'aider une organisation à mettre en place son premier SOC. Définissez les étapes clés nécessaires à la mise en place du SOC, les types d'outils et de technologies que vous recommanderiez, une stratégie pour traiter les principaux défis identifiés et les rôles et responsabilités du personnel du SOC.",
+            "livrable": "Un plan détaillé de mise en place du SOC présentant les étapes clés, les outils et technologies recommandés, la stratégie de traitement des défis et les rôles et responsabilités du personnel."
+        },
+        {
+            "title": "Analyse forensique d'un disque dur",
+            "objectif": "Savoir conduire une analyse forensique d'un disque dur dans le cadre d'une enquête.",
+            "instructions": "Un disque dur vous est remis dans le cadre d'une enquête sur un incident de sécurité. Documentez votre processus d'analyse étape par étape, de la préservation de la preuve jusqu'à l'analyse des données, et utilisez des outils forensiques pour examiner le disque dur et identifier les fichiers supprimés, les traces de logiciels malveillants ou toute autre activité suspecte.",
+            "livrable": "Un rapport d'analyse forensique documentant le processus suivi, de la préservation de la preuve à l'analyse, et présentant vos conclusions sur la nature de l'incident et les données compromises."
+        },
+        {
+            "title": "Réaction à une attaque simulée",
+            "objectif": "Être capable de gérer un incident en suivant les phases de réaction à une attaque.",
+            "instructions": "Un scénario d'attaque vous est présenté et vous avez la charge de la gestion de l'incident. En suivant les phases de gestion des incidents, décrivez les actions immédiates que vous prendriez pour contenir l'attaque, identifiez les techniques que vous utiliseriez pour éradiquer la menace et analysez les conséquences de l'attaque.",
+            "livrable": "Un dossier de gestion d'incident présentant les actions de containment, les techniques d'éradication, un plan de communication à l'attention des parties prenantes internes et externes et des mesures de prévention pour l'avenir."
+        },
+        {
+            "title": "Étude de cas et résolution de problème",
+            "objectif": "Savoir analyser un cas réel d'incident et en tirer des recommandations de bonnes pratiques.",
+            "instructions": "On vous présente un cas réel d'incident de sécurité informatique rencontré par une entreprise. Analysez l'étude de cas pour comprendre les événements qui se sont déroulés pendant l'incident, identifiez les erreurs faites pendant la gestion de l'incident et proposez des améliorations, puis réfléchissez aux leçons apprises et à la manière dont elles peuvent être appliquées à d'autres situations.",
+            "livrable": "Une analyse du cas comprenant les événements survenus, les erreurs identifiées et les améliorations proposées, les étapes que vous auriez prises pour résoudre l'incident et des recommandations sur les meilleures pratiques à adopter."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "File System Forensic Analysis",
+            "author": "Carrier, B"
+        },
+        {
+            "title": "Digital Forensics with Open Source Tools",
+            "author": "Altheide, C. & Carvey, H"
+        },
+        {
+            "title": "The Practice of Network Security Monitoring",
+            "author": "Bejtlich, R"
+        }
+    ],
+    "OnlineResources": [
+        "SANS - Digital Forensics (https://www.sans.org/cyber-security-courses/?focus-area=digital-forensics) [EN]",
+        "MITRE ATT&CK (https://attack.mitre.org) [EN]",
+        "CERT-FR - Bulletins d'alerte (https://www.cert.ssi.gouv.fr) [FR]",
+        "The Sleuth Kit / Autopsy (https://www.sleuthkit.org) [EN]",
+        "Volatility Foundation (https://www.volatilityfoundation.org) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

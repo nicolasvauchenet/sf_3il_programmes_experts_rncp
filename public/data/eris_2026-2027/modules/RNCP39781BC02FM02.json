@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM02",
+        "title": "Gestion des identités",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée en analysant les besoins métiers et en proposant des solutions, en conformité avec le schéma directeur de la DSI, en combinant des ressources locales (on-premise) et/ou Cloud (SaaS, PaaS, IaaS) afin de fournir une base technique robuste et efficace soutenant les opérations de l'entreprise tout en garantissant la sécurité des données et des communications"
+        },
+        {
+            "code": "C12",
+            "description": "Définir, implémenter et contrôler les règles d’accès aux données et aux services en retranscrivant les règles métiers dans une solution de gestion des identités (IAM*) afin de protéger les systèmes et les données sensibles contre les accès non autorisés"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les fondements et les modèles de gestion des identités (Comprendre) Analyser les technologies et processus de gestion des identités (Analyser) Appliquer les réglementations et normes de conformité en gestion des identités (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et sécurité des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondements de la gestion des identités",
+                "items": [
+                    "Comprendre les enjeux de la gestion des identités",
+                    "Identifier les principaux acteurs et processus de la gestion des identités",
+                    "Analyser les risques liés à une mauvaise gestion des identités",
+                    "Comprendre les bonnes pratiques en matière de gestion des identités",
+                    "Identifier les différentes technologies de gestion des identités"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Modèles de gestion des identités",
+                "items": [
+                    "Comprendre les modèles de gestion des identités (centralisé, décentralisé, fédéré)",
+                    "Analyser les avantages et inconvénients de chaque modèle",
+                    "Choisir le modèle le plus adapté en fonction des besoins de l'organisation",
+                    "Mettre en place un modèle de gestion des identités efficace"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Processus de gestion des identités",
+                "items": [
+                    "Comprendre les processus de gestion des identités (provisioning, déprovisioning, gestion des accès, revue des accès)",
+                    "Identifier les bonnes pratiques pour chaque processus",
+                    "Mettre en place des processus efficaces de gestion des identités"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Technologies de gestion des identités",
+                "items": [
+                    "Présentation de l'IAM comme cadre global de gestion des identités et des briques technologiques associées (annuaires/LDAP, fédération/SSO, MFA, provisioning)",
+                    "Comprendre le fonctionnement et les spécificités de chaque technologie",
+                    "Choisir les technologies les plus adaptées aux besoins de l'organisation",
+                    "Mettre en place et administrer les technologies de gestion des identités"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des identités et conformité réglementaire",
+                "items": [
+                    "Comprendre les enjeux de la conformité réglementaire en matière de gestion des identités",
+                    "Identifier les réglementations et normes applicables (RGPD, ISO 27001, NIST, etc.)",
+                    "Mettre en place une gestion des identités conforme aux réglementations",
+                    "Assurer le suivi et l'audit de la gestion des identités pour garantir la conformité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de Risques et Bonnes Pratiques",
+            "objectif": "Être capable d'auditer un système de gestion des identités et de recommander des bonnes pratiques.",
+            "instructions": "Vous êtes consultant en sécurité informatique et une entreprise vous demande d'auditer sa gestion actuelle des identités. Identifiez les risques associés à leur système actuel et proposez une liste de bonnes pratiques pour les atténuer. Présentez un rapport comprenant l'analyse de risques et l'ensemble des recommandations pour améliorer la gestion des identités de l'entreprise.",
+            "livrable": "Un rapport d'audit comprenant une analyse des risques du système actuel de gestion des identités et un ensemble de recommandations de bonnes pratiques pour les atténuer."
+        },
+        {
+            "title": "Choix d'un Modèle de Gestion des Identités",
+            "objectif": "Être capable de comparer et de choisir un modèle de gestion des identités adapté à une organisation.",
+            "instructions": "Vous êtes le CISO (Chief Information Security Officer) d'une multinationale qui cherche à refondre son système de gestion des identités. Votre mission est de choisir entre un modèle centralisé, décentralisé et fédéré. Rédigez une comparaison détaillée des trois modèles en soulignant leurs avantages et inconvénients, puis justifiez le choix du modèle que vous recommanderiez en prenant en compte la taille, la structure et les besoins spécifiques de l'organisation.",
+            "livrable": "Une comparaison détaillée des modèles centralisé, décentralisé et fédéré avec leurs avantages et inconvénients, assortie du choix justifié du modèle recommandé au regard de la taille, de la structure et des besoins de l'organisation."
+        },
+        {
+            "title": "Planification des Processus de Gestion des Identités",
+            "objectif": "Être capable de planifier les processus de gestion des identités.",
+            "instructions": "En tant que responsable IAM (Identity and Access Management) au sein d'une banque, vous devez planifier les processus de gestion des identités pour sécuriser les informations de vos clients. Créez un plan détaillant les étapes du provisioning, du déprovisioning, de la gestion des accès et de la revue des accès. Intégrez des bonnes pratiques pour chacun de ces processus et expliquez comment elles contribuent à un environnement sécurisé.",
+            "livrable": "Un plan détaillant les étapes de provisioning, de déprovisioning, de gestion des accès et de revue des accès, intégrant les bonnes pratiques et leur contribution à la sécurité."
+        },
+        {
+            "title": "Sélection et Mise en Place de Technologies IAM",
+            "objectif": "Être capable de sélectionner et de planifier la mise en place de technologies de gestion des identités.",
+            "instructions": "Vous travaillez pour une entreprise de commerce en ligne qui souhaite mettre à jour ses systèmes de gestion des identités. Dans le cadre d'une démarche IAM, comparez les briques technologiques de gestion des identités : annuaires/LDAP, SSO (Single Sign-On), MFA (Multi-Factor Authentication) et provisioning. Sélectionnez celles qui seraient les plus adaptées pour l'entreprise, justifiez votre choix et élaborez un plan d'implémentation en tenant compte de la facilité d'utilisation pour les utilisateurs et de la sécurité des données.",
+            "livrable": "Une comparaison des briques technologiques de gestion des identités (annuaires/LDAP, SSO, MFA, provisioning) dans le cadre d'une démarche IAM, la sélection justifiée des plus adaptées et un plan d'implémentation intégrant l'ergonomie et la sécurité des données."
+        },
+        {
+            "title": "Conformité Réglementaire et Plan d'Audit",
+            "objectif": "Être capable de rédiger un plan d'audit de conformité de la gestion des identités.",
+            "instructions": "En tant que DPO (Data Protection Officer), vous êtes chargé de veiller à la conformité de la gestion des identités avec les réglementations telles que le RGPD. Rédigez un plan d'audit pour évaluer la conformité actuelle de l'entreprise, incluant les étapes pour réviser les politiques de gestion des identités, les technologies utilisées et les processus en place. Détaillez les actions correctives à prendre en cas de non-conformité et proposez un calendrier pour les audits réguliers.",
+            "livrable": "Un plan d'audit de conformité couvrant la révision des politiques, technologies et processus, les actions correctives en cas de non-conformité et un calendrier d'audits réguliers."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Learning Digital Identity",
+            "author": "Windley, P. J"
+        },
+        {
+            "title": "Mastering Identity and Access Management with Microsoft Azure (2e éd.)",
+            "author": "Sharma, A"
+        },
+        {
+            "title": "NIST SP 800-63 Digital Identity Guidelines",
+            "author": "Grassi, P. et al"
+        }
+    ],
+    "OnlineResources": [
+        "NIST SP 800-63 (https://pages.nist.gov/800-63-3/) [EN]",
+        "OAuth 2.0 RFC 6749 (https://datatracker.ietf.org/doc/html/rfc6749) [EN]",
+        "OpenID Connect (https://openid.net/connect/) [EN]",
+        "Microsoft Entra ID Documentation (https://learn.microsoft.com/entra/) [FR/EN]",
+        "ANSSI - Authentification (https://cyber.gouv.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC03-PR03",
+        "title": "Novaria Signal Platform",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C18",
+            "description": "Évaluer les besoins et intégrer les solutions cloud."
+        },
+        {
+            "code": "C19",
+            "description": "Analyser les besoins techniques."
+        },
+        {
+            "code": "C20",
+            "description": "Administrer et rationaliser les plateformes cloud."
+        },
+        {
+            "code": "C21",
+            "description": "Assurer la gestion et le suivi des révisions de code source."
+        },
+        {
+            "code": "C22",
+            "description": "Définir et appliquer des procédures de fusion de code et de résolution de conflits."
+        },
+        {
+            "code": "C23",
+            "description": "Développer des environnements virtualisés."
+        },
+        {
+            "code": "C24",
+            "description": "Coordonner les conteneurs avec des logiciels d’orchestration."
+        },
+        {
+            "code": "C25",
+            "description": "Automatiser la gestion et le déploiement des ressources cloud."
+        }
+    ],
+    "description": "Novaria Signal Platform porte l'infrastructure technique de la solution. Le projet vise à rendre Novaria Signal déployable, observable, sécurisée et scalable grâce à une architecture cloud cohérente, des conteneurs, une chaîne CI/CD, du monitoring et des procédures de sauvegarde.",
+    "objectives": {
+        "description": "Les apprenants conçoivent et industrialisent la plateforme technique Novaria Signal afin d'assurer un déploiement fiable, sécurisé et scalable à l'échelle de la ville de Novaria. Le projet mobilise les compétences du bloc BC03 autour de l'étude d'architectures, de la conteneurisation, de la CI/CD, du cloud, du monitoring, des sauvegardes automatisées, de la sécurité des environnements et du plan de reprise d'activité."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en administration système, Git, conteneurisation, intégration continue, déploiement applicatif et principes d'architecture cloud."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Étude d'architecture cible",
+            "context": "La municipalité prévoit un déploiement à grande échelle de Novaria Signal et souhaite comparer plusieurs architectures applicatives.",
+            "objective": "Comparer les approches monolithe, modulaire et microservices, puis justifier une architecture cible adaptée."
+        },
+        {
+            "title": "Conteneurisation des composants applicatifs",
+            "context": "Les applications Front-End, API et services techniques doivent être préparés pour un déploiement reproductible.",
+            "objective": "Produire les configurations Docker nécessaires et documenter les environnements de développement, test et production."
+        },
+        {
+            "title": "Pipeline CI/CD et déploiement automatisé",
+            "context": "L'équipe met en place une chaîne d'intégration et de déploiement continu avec gestion des environnements.",
+            "objective": "Automatiser les tests, builds, contrôles qualité et déploiements à l'aide d'un pipeline documenté."
+        },
+        {
+            "title": "Supervision, logs et alerting",
+            "context": "La plateforme doit permettre aux équipes techniques de suivre la disponibilité et la performance du service.",
+            "objective": "Définir les indicateurs, collecter les logs, configurer le monitoring et prévoir les alertes opérationnelles."
+        },
+        {
+            "title": "Sécurité, sauvegardes et reprise d'activité",
+            "context": "Novaria Signal doit rester exploitable en cas d'incident technique ou de perte de données.",
+            "objective": "Formaliser les mesures de sécurité, les sauvegardes automatisées et le plan de reprise ou de continuité d'activité."
+        }
+    ],
+    "bibliography": [
+        "Humble, Jez; Farley, David. Continuous Delivery.",
+        "Burns, Brendan; Beda, Joe; Hightower, Kelsey. Kubernetes: Up and Running.",
+        "Kim, Gene; Humble, Jez; Debois, Patrick; Willis, John. The DevOps Handbook.",
+        "OWASP. Application Security Verification Standard."
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Atelier DevOps",
+        "Mise en situation professionnelle"
+    ]
+}

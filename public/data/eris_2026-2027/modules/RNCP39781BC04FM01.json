@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM01",
+        "title": "Étude d'avant-projet",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Maîtriser l'analyse du contexte et des besoins d'un projet afin d'en identifier les contraintes et les risques (Analyser) Utiliser des méthodes d'analyse et de diagnostic pour évaluer la faisabilité technique (Appliquer) Formaliser une étude d'avant-projet structurée et documentée (Créer)"
+    },
+    "prerequisites": {
+        "description": "Les apprenants doivent posséder des connaissances de base en gestion de projet et en analyse d'organisation. Une familiarité avec les outils d'analyse stratégique tels que SWOT et PESTEL est recommandée."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Analyse du contexte et des besoins",
+                "items": [
+                    "Comprendre les enjeux et les objectifs du projet",
+                    "Analyser les besoins des parties prenantes",
+                    "Identifier les contraintes et les risques",
+                    "Définir les critères de réussite du projet",
+                    "Évaluer l'impact du projet sur l'organisation"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodes d'analyse et de diagnostic",
+                "items": [
+                    "Utiliser les outils d'analyse stratégique (SWOT, PESTEL, etc.)",
+                    "Mettre en place des méthodes de recueil d'informations (entretiens, questionnaires, etc.)",
+                    "Évaluer les différentes options et solutions possibles",
+                    "Effectuer un diagnostic de l'existant",
+                    "Identifier les opportunités et les menaces liées au projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Étude de faisabilité",
+                "items": [
+                    "Évaluer la faisabilité technique, économique et financière du projet",
+                    "Analyser les risques liés à la mise en œuvre du projet",
+                    "Estimer les ressources nécessaires (humaines, matérielles, financières)",
+                    "Évaluer l'impact environnemental et sociétal du projet",
+                    "Proposer des scénarios d'actions et leurs impacts potentiels"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Élaboration du cahier des charges",
+                "items": [
+                    "Identifier les besoins des utilisateurs et des clients",
+                    "Définir les fonctionnalités et les spécifications du projet",
+                    "Rédiger un cahier des charges clair et précis",
+                    "Intégrer les contraintes techniques, économiques et réglementaires",
+                    "Valider le cahier des charges avec les parties prenantes"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Planification et organisation de l'avant-projet",
+                "items": [
+                    "Définir les grandes étapes de l'avant-projet",
+                    "Identifier les ressources et compétences nécessaires",
+                    "Établir un planning prévisionnel",
+                    "Organiser les différentes phases de l'étude d'avant-projet",
+                    "Définir les indicateurs de suivi et de performance"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et des parties prenantes",
+            "objectif": "Être capable d'analyser les besoins et les parties prenantes d'un projet afin d'en identifier les enjeux et les contraintes.",
+            "instructions": "En vous plaçant dans le rôle d'un consultant pour une entreprise qui souhaite lancer un nouveau service numérique (une plateforme SaaS de gestion de la relation client), commencez par comprendre les enjeux du projet et analyser les besoins des différentes parties prenantes. Rédigez la liste des parties prenantes clés du projet (direction, futurs utilisateurs métier, DSI, équipe de développement, service sécurité, clients finaux). Développez un questionnaire destiné à interviewer l'une de ces parties prenantes afin d'identifier ses besoins spécifiques. Identifiez et listez trois contraintes majeures que le projet pourrait rencontrer (par exemple contraintes techniques d'intégration au système d'information existant, contraintes réglementaires liées aux données personnelles, contraintes de délai ou de budget). Décrivez enfin brièvement la manière dont vous évalueriez l'impact du projet sur l'organisation.",
+            "livrable": "Un dossier comprenant la liste des parties prenantes clés du projet de service numérique, le questionnaire d'entretien d'une partie prenante, la liste de trois contraintes majeures et une description de la méthode d'évaluation de l'impact du projet sur l'organisation."
+        },
+        {
+            "title": "Utilisation d'outils d'analyse stratégique",
+            "objectif": "Savoir utiliser les outils d'analyse stratégique SWOT et PESTEL pour évaluer l'environnement externe d'un projet.",
+            "instructions": "Pour un éditeur de logiciels qui envisage de lancer une nouvelle offre SaaS sur un segment de marché numérique où il n'est pas encore présent, et dont la direction a besoin d'une analyse complète de l'environnement externe, réalisez une analyse SWOT relative à ce lancement (forces et faiblesses de l'offre logicielle, opportunités et menaces du marché). Complétez-la par une analyse PESTEL identifiant les facteurs externes susceptibles d'affecter le projet (évolutions technologiques, cadre réglementaire du numérique et protection des données, facteurs économiques du marché du logiciel, tendances d'usage, enjeux environnementaux du numérique). Présentez les résultats de ces deux analyses dans un rapport concis mettant en avant les opportunités et les menaces clés.",
+            "livrable": "Un rapport concis présentant l'analyse SWOT et l'analyse PESTEL du lancement de l'offre SaaS et soulignant les opportunités et les menaces clés identifiées."
+        },
+        {
+            "title": "Étude de faisabilité",
+            "objectif": "Être capable de réaliser une étude de faisabilité technique, financière et environnementale d'un projet.",
+            "instructions": "En tant que responsable de l'évaluation de la faisabilité d'un projet de mise en place d'une nouvelle infrastructure d'hébergement (datacenter privé et plateforme cloud interne pour héberger les applications de l'entreprise), évaluez la faisabilité technique en listant les principales exigences techniques et les défis potentiels (dimensionnement des serveurs et du réseau, haute disponibilité, sécurité, intégration au système d'information existant). Réalisez une analyse financière sommaire en estimant les coûts initiaux du projet (matériel, licences, main-d'oeuvre, migration) et les sources de financement possibles. Discutez des impacts environnementaux et sociétaux éventuels de l'infrastructure (consommation énergétique, empreinte carbone, démarche de numérique responsable, impact sur les emplois et les compétences) et proposez des mesures d'atténuation. Présentez enfin deux scénarios d'action (par exemple hébergement interne contre recours à un cloud public) en détaillant leurs impacts potentiels sur l'entreprise et les parties prenantes.",
+            "livrable": "Une étude de faisabilité présentant les exigences et défis techniques de l'infrastructure d'hébergement, l'analyse financière sommaire, l'analyse des impacts environnementaux et sociétaux assortie de mesures d'atténuation, et deux scénarios d'action avec leurs impacts potentiels."
+        },
+        {
+            "title": "Rédaction d'un cahier des charges",
+            "objectif": "Être capable de rédiger un cahier des charges structuré à partir des besoins des utilisateurs et des contraintes du projet.",
+            "instructions": "Votre équipe est chargée par la ville de concevoir une application mobile destinée à améliorer les services de transport public. Identifiez les besoins des utilisateurs finaux et des clients internes de l'application. Définissez les fonctionnalités clés que l'application doit posséder. Rédigez un cahier des charges incluant les spécifications techniques, les contraintes réglementaires et les critères de performance. Proposez enfin un processus de validation du cahier des charges avec les parties prenantes.",
+            "livrable": "Un cahier des charges de l'application mobile comprenant les besoins des utilisateurs et clients internes, les fonctionnalités clés, les spécifications techniques, les contraintes réglementaires, les critères de performance et le processus de validation avec les parties prenantes."
+        },
+        {
+            "title": "Planification de l'avant-projet",
+            "objectif": "Être capable de planifier les premières étapes d'un projet et de définir ses indicateurs de suivi.",
+            "instructions": "Nommé chef de projet pour le développement d'un nouveau logiciel de gestion de projet, planifiez les premières étapes du processus de développement. Décomposez le projet en grandes étapes et établissez un ordre logique entre elles. Identifiez les ressources humaines, matérielles et financières nécessaires à la première phase du projet. Créez un planning prévisionnel couvrant les trois premiers mois du projet. Développez enfin des indicateurs de suivi et de performance permettant d'évaluer l'avancement du projet durant la phase d'avant-projet.",
+            "livrable": "Un dossier de planification de l'avant-projet comprenant la décomposition du projet en grandes étapes ordonnées, l'identification des ressources de la première phase, un planning prévisionnel des trois premiers mois et les indicateurs de suivi et de performance."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Management d'un projet système d'information (10e éd.)",
+            "author": "Morley, C"
+        },
+        {
+            "title": "Le génie logiciel : pratique des projets informatiques (4e éd.)",
+            "author": "Printz, J"
+        },
+        {
+            "title": "Scrum, Kanban et l'agilité - Pour les chefs de projet et MOA",
+            "author": "Aubry, C"
+        }
+    ],
+    "OnlineResources": [
+        "BABOK Guide v3 (https://www.iiba.org/babok-guide/) [EN]",
+        "PMBOK Guide (https://www.pmi.org) [EN]",
+        "CIGREF - Méthodes d'avant-projet (https://www.cigref.fr) [FR]",
+        "DINUM - Projets numériques (https://www.numerique.gouv.fr) [FR]",
+        "AFITEP (https://www.afitep.org) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

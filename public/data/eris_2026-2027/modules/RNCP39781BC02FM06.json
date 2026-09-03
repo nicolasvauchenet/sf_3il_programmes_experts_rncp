@@ -1,0 +1,136 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC02-FM06",
+        "title": "Gestion des incidents et support ITSM",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et Piloter les Infrastructures Systèmes et Réseaux",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C17",
+            "description": "Organiser et piloter la gestion des incidents et du support en définissant les processus standardisés pour la création, l'attribution, le suivi des tickets et leur élévation, dans un cadre d'amélioration continue et en s'appuyant sur des outils de gestion des tickets (ITSM), pour suivre, prioriser et résoudre les incidents, ainsi qu'assurer une résolution rapide et efficace des problèmes techniques"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Mettre en pratique les concepts de la gestion des incidents et du support ITSM dans une infrastructure informatique (Appliquer) Gérer efficacement le processus d'incidents en utilisant les outils appropriés (Appliquer) Se familiariser avec les référentiels et bonnes pratiques de support ITSM (Comprendre)"
+    },
+    "prerequisites": {
+        "description": "Avoir suivi le module IT Service Management"
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gestion des incidents et support ITSM",
+                "items": [
+                    "Comprendre les concepts de base de la gestion des incidents",
+                    "Connaître les principaux objectifs du support ITSM",
+                    "Comprendre l'importance de la gestion des incidents et du support dans une infrastructure informatique",
+                    "Identifier les acteurs impliqués dans la gestion des incidents et le support ITSM",
+                    "Connaître les principaux processus liés à la gestion des incidents et au support ITSM"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Processus de gestion des incidents",
+                "items": [
+                    "Comprendre le processus de gestion des incidents de bout en bout",
+                    "Savoir comment enregistrer, catégoriser, prioriser et attribuer les incidents",
+                    "Apprendre à diagnostiquer et résoudre les incidents de manière efficace",
+                    "Connaître les bonnes pratiques pour la gestion des incidents",
+                    "Savoir comment surveiller et communiquer sur l'avancement de la résolution des incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Processus de support ITSM",
+                "items": [
+                    "Comprendre le processus de support ITSM et son rôle dans la gestion des infrastructures",
+                    "Apprendre à définir les niveaux de support et les accords de niveau de service (SLA)",
+                    "Connaître les outils et les techniques pour offrir un support efficace",
+                    "Savoir comment documenter et partager les connaissances au sein de l'équipe de support",
+                    "Apprendre à évaluer la performance du support et à identifier les axes d'amélioration"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Outils de gestion des incidents et du support ITSM",
+                "items": [
+                    "Connaître les différents outils de gestion des incidents et du support disponibles sur le marché",
+                    "Mettre en place un système de ticketing pour suivre les incidents et les demandes de support",
+                    "Alimenter la base de connaissances (solutions et erreurs connues) en la distinguant de la CMDB (inventaire des éléments de configuration) dans le processus de support ITSM",
+                    "Élaborer des outils de monitoring contribuant à la détection proactive des incidents",
+                    "Analyser et communiquer les données de performance pour la gouvernance."
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des changements et impact sur la gestion des incidents",
+                "items": [
+                    "Mettre en place des bonnes pratiques pour gérer les changements de manière à minimiser les incidents",
+                    "Évaluer et prévoir l'impact des changements sur la gestion des incidents",
+                    "Documenter les changements et les incidents",
+                    "Mettre en place une culture de gestion des changements au sein de l'organisation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Simulation de Gestion d'Incident",
+            "objectif": "Être capable d'appliquer le processus de gestion des incidents sur un scénario réel.",
+            "instructions": "Vous travaillez dans le département IT d'une entreprise et recevez un rapport indiquant qu'un service critique est hors ligne. Suivez le processus de gestion des incidents pour enregistrer, catégoriser, prioriser et attribuer cet incident. Rédigez un rapport détaillé des étapes que vous suivez, y compris le diagnostic initial, les actions de résolution tentées et la communication avec les parties prenantes concernées. Décrivez également comment vous surveillerez et communiquerez sur l'avancement jusqu'à la résolution de l'incident.",
+            "livrable": "Un rapport détaillé de gestion de l'incident couvrant l'enregistrement, la catégorisation, la priorisation, l'attribution, le diagnostic initial, les actions de résolution et la communication avec les parties prenantes jusqu'à la résolution."
+        },
+        {
+            "title": "Définition SLA et Niveaux de Support",
+            "objectif": "Être capable de rédiger un accord de niveau de service (SLA) et de définir les niveaux de support.",
+            "instructions": "Vous êtes responsable du support ITSM dans votre entreprise. Rédigez un SLA clair pour un nouveau service IT interne ou externe, incluant les heures de service, les temps de réponse garantis et les niveaux de support (par exemple, support de base, support technique avancé). Justifiez vos choix en fonction des besoins de l'entreprise et des capacités du support IT.",
+            "livrable": "Un SLA rédigé précisant les heures de service, les temps de réponse garantis et les niveaux de support, avec la justification des choix au regard des besoins de l'entreprise et des capacités du support."
+        },
+        {
+            "title": "Utilisation d'un Système de Ticketing",
+            "objectif": "Être capable d'utiliser un système de ticketing pour la gestion des incidents et des demandes de support.",
+            "instructions": "Votre entreprise utilise un système de ticketing pour gérer les incidents et les demandes de support. Créez un guide d'utilisation pour les nouveaux employés du service IT, décrivant comment créer, suivre et clôturer un ticket. Incluez des captures d'écran d'un système de ticketing fictif pour illustrer les différentes étapes et fonctions.",
+            "livrable": "Un guide d'utilisation du système de ticketing décrivant la création, le suivi et la clôture d'un ticket, illustré de captures d'écran d'un système de ticketing fictif."
+        },
+        {
+            "title": "Analyse de Données de Performance",
+            "objectif": "Être capable d'exploiter des données de performance pour améliorer le support ITSM.",
+            "instructions": "Vous avez accès à trois mois de données de performance du support IT, incluant les temps de réponse, les taux de résolution et la satisfaction utilisateur. Utilisez ces données pour identifier deux problèmes majeurs dans le processus actuel et proposez une stratégie d'amélioration pour chaque problème identifié. Présentez vos constatations et recommandations sous forme de rapport, avec des graphiques et des analyses pour appuyer vos propositions.",
+            "livrable": "Un rapport d'analyse des données de performance identifiant deux problèmes majeurs et proposant une stratégie d'amélioration pour chacun, appuyé de graphiques et d'analyses."
+        },
+        {
+            "title": "Planification et Documentation de Changements",
+            "objectif": "Être capable de planifier et de documenter un changement afin d'en minimiser l'impact sur les incidents.",
+            "instructions": "Un nouveau logiciel doit être déployé sur le réseau de l'entreprise, ce qui nécessitera des changements significatifs dans l'infrastructure IT. Rédigez un plan de gestion des changements détaillant les étapes pour évaluer et minimiser l'impact sur les opérations courantes. Incluez dans votre plan les processus de documentation et de communication à suivre avant, pendant et après le déploiement. Expliquez comment ce plan de changement sera intégré dans le processus de gestion des incidents pour assurer une transition en douceur.",
+            "livrable": "Un plan de gestion des changements détaillant l'évaluation et la minimisation des impacts, les processus de documentation et de communication avant, pendant et après le déploiement, et son articulation avec la gestion des incidents."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Site Reliability Engineering (2e éd.)",
+            "author": "Beyer, B. et al"
+        },
+        {
+            "title": "Incident Management Best Practice",
+            "author": "Agutter, C"
+        }
+    ],
+    "OnlineResources": [
+        "ITIL 4 - Incident Management (https://www.axelos.com) [EN]",
+        "ServiceNow Documentation (https://docs.servicenow.com) [EN]",
+        "GLPI Documentation (https://glpi-project.org/fr/documentation/) [FR/EN]",
+        "Atlassian - Incident Management Guide (https://www.atlassian.com/incident-management) [EN]",
+        "PagerDuty Incident Response (https://response.pagerduty.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

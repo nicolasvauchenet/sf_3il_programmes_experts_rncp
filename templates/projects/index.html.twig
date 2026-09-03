@@ -24,6 +24,29 @@
             } %}{% endif %}
 
             <article class="printable-content">
+                {% if pdfMode|default(false) %}
+                    {% set chapters = project.outline.chapters ?? [] %}
+                    <section class="pdf-cover">
+                        <div class="pdf-cover-kicker">Fiche projet</div>
+                        <div class="pdf-cover-program">{{ promotionContext.promotionTitle }}</div>
+                        <div class="pdf-cover-code">{{ project.projectCode }}</div>
+                        <h1>{{ project.title ?: 'Projet' }}</h1>
+                        <div class="pdf-cover-rule"></div>
+                        <table class="pdf-cover-details"><tr>
+                            <td><span>Bloc de compétences</span><strong>{{ project.blocCode }}</strong><small>{{ project.blocName }}</small></td>
+                            <td><span>Promotion</span><strong>{{ promotion|upper }}</strong><small>{{ project.academicYear ?: year }}</small></td>
+                            <td><span>Volume pédagogique</span><strong>{{ project.durationHours }} h</strong><small>{{ project.durationDays }} jour{{ project.durationDays > 1 ? 's' : '' }}</small></td>
+                        </tr></table>
+                        <table class="pdf-cover-stats"><tr>
+                            <td><strong>{{ project.skills|length }}</strong><span>Compétences</span></td>
+                            <td><strong>{{ chapters|length }}</strong><span>Chapitres</span></td>
+                            <td><strong>{{ project.exercises|length }}</strong><span>Exercices</span></td>
+                            <td><strong>{{ project.modules|length }}</strong><span>Matières</span></td>
+                            <td><strong>{{ project.evaluations|length }}</strong><span>Évaluations</span></td>
+                        </tr></table>
+                        <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
+                    </section>
+                {% endif %}
                 <div class="app-grid third">
                     {% if not pdfMode|default(false) %}
                         <section class="app-section centered">
@@ -58,16 +81,6 @@
                         <div style="height: 200px">
                             {{ render_chart(projectVolumeChart) }}
                         </div>
-                        </section>{% else %}
-                        <section class="app-section centered">
-                            <h2>Métriques</h2>
-                            <table class="pdf-metrics">
-                                <tr>
-                                    <td><strong>{{ project.skills|length }}</strong><span>Compétences</span></td>
-                                    <td><strong>{{ project.evaluations|length }}</strong><span>Évaluations</span></td>
-                                    <td><strong>{{ project.exercises|length }}</strong><span>Exercices</span></td>
-                                </tr>
-                            </table>
                         </section>
                     {% endif %}
                 </div>
@@ -100,7 +113,7 @@
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Plan des cours</h2>
                         {% for ch in chapters %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-chapter mx-0 mt-2 mb-0">
                                 <h3>{{ ch.title ?? 'Chapitre' }}</h3>
                                 {% set items = ch.items ?? [] %}
                                 {% if items is not empty %}
@@ -132,7 +145,7 @@
                             {% set normObjective = normObjective|split(' ')|filter(v => v != '')|join(' ') %}
                             {% set showContextAndObjective = hasContext and (normContext != normObjective) %}
 
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-exercise mx-0 mt-2 mb-0">
                                 <h3>Exercice {{ loop.index }} : {{ title }}</h3>
 
                                 {% if showContextAndObjective %}
@@ -153,7 +166,7 @@
                         <h2>Compétences mobilisées</h2>
 
                         {% for s in project.skillsWithCriteria %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
                                 <p>
                                     <a href="{{ path('app_promotion_skills', {
                                         'promotion': promotion,
@@ -187,7 +200,7 @@
                         <h2>Compétences mobilisées</h2>
 
                         {% for s in project.skills %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
                                 <p>
                                     <a href="{{ path('app_promotion_skills', {
                                         'promotion': promotion,
@@ -204,7 +217,7 @@
                     </section>
                 {% endif %}
 
-                <div class="app-grid two">
+                <div class="app-grid two pdf-associations">
                     {% if project.modules is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
                             <h2>Matières associées</h2>

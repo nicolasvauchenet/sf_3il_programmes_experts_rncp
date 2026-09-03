@@ -1,0 +1,81 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39781-BC04-PR05",
+        "title": "Projet : Management de projet",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 10,
+        "durationHours": 70,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet."
+        },
+        {
+            "code": "C26",
+            "description": "Assurer le suivi et le reporting du projet."
+        },
+        {
+            "code": "C27",
+            "description": "Élaborer et mettre en œuvre la conduite du changement."
+        },
+        {
+            "code": "C28",
+            "description": "Développer la performance de l’équipe."
+        },
+        {
+            "code": "C29",
+            "description": "Contribuer au recrutement des collaborateurs."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de pilotage complet d’un projet, de sa planification à sa clôture. Il mobilise les compétences du bloc BC04 en préparation des épreuves certifiantes, en abordant les enjeux de gestion des ressources, de management d’équipe, de suivi de performance, de gestion des risques et de retour d’expérience."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi l’ensemble des modules du bloc de compétences BC04."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Planification du projet",
+            "context": "Élaboration d’un plan de projet pour le développement d’une application.",
+            "objective": "Structurer les phases, organiser les tâches, estimer les délais et définir les ressources."
+        },
+        {
+            "title": "Gestion des risques",
+            "context": "Identification et analyse des risques liés à un projet.",
+            "objective": "Évaluer les risques et définir des stratégies de gestion adaptées."
+        },
+        {
+            "title": "Suivi et pilotage du projet",
+            "context": "Mise en place d’indicateurs de suivi et analyse des écarts.",
+            "objective": "Suivre l’avancement, mesurer la performance et proposer des actions correctives."
+        },
+        {
+            "title": "Management d’équipe",
+            "context": "Organisation et animation d’une équipe projet.",
+            "objective": "Définir les rôles, motiver les équipes, gérer les conflits et évaluer les performances."
+        },
+        {
+            "title": "Clôture et retour d’expérience",
+            "context": "Analyse des résultats et capitalisation des apprentissages.",
+            "objective": "Évaluer le projet, identifier les axes d’amélioration et formaliser un retour d’expérience."
+        }
+    ],
+    "bibliography": [
+        "Project Management Institute, 'Guide du Corpus des connaissances en management de projet (PMBOK)', 6ème édition.",
+        "Jean-Michel Jourdain, 'La gestion de projet : Méthodes et pratiques'.",
+        "Claude Besner et Brian Hobbs, 'Management de projet : un guide pratique'."
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travail en groupe",
+        "Management de projet"
+    ]
+}

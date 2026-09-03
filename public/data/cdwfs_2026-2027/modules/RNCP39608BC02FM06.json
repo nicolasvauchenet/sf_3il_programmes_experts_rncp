@@ -1,0 +1,149 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM06",
+        "title": "Conception et développement d'API REST",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C14",
+            "description": "Concevoir des API (Application Programming Interface) en utilisant des architectures et des langages de programmation pertinents en prenant en compte les besoins d'intégration et d'interopérabilité des systèmes pour faciliter et optimiser les échanges de données entre différents services"
+        },
+        {
+            "code": "C15",
+            "description": "Sécuriser les API, en mettant en œuvre des protocoles d'authentification et d'autorisation en utilisant des outils et des pratiques de sécurité standardisés pour protéger les données et les interactions contre les accès non autorisés et les vulnérabilités"
+        },
+        {
+            "code": "C16",
+            "description": "Réaliser différents tests sur les API (tests unitaires, d'intégration, de charge et de performance) avec des Frameworks pour garantir la fiabilité et la robustesse des API dans des conditions d'utilisation variées et à fort trafic"
+        },
+        {
+            "code": "C17",
+            "description": "Réaliser et maintenir la documentation de l'API en collaboration avec les développeurs, en utilisant des outils tels que Swagger pour les API ou des générateurs de documentation de code dans le but de faciliter la maintenabilité et l'évolutivité de l'API"
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module sont de comprendre le rôle et le fonctionnement des API, de savoir concevoir et développer des API sécurisées et performantes, ainsi que d'appliquer les bonnes pratiques et techniques d'optimisation pour garantir une efficacité maximale."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en programmation web, compréhension des concepts du protocole HTTP, et familiarité avec les services web."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux API",
+                "items": [
+                    "Définition et rôle des API",
+                    "Types d'API (REST, SOAP, GraphQL, etc.)",
+                    "Avantages et inconvénients des API",
+                    "Bonnes pratiques pour la conception d'API",
+                    "Exemples d'utilisation d'API dans des applications concrètes"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Conception d'API",
+                "items": [
+                    "Analyse des besoins et spécifications des API",
+                    "Conception de l'architecture des API",
+                    "Choix des endpoints et des méthodes HTTP",
+                    "Gestion des erreurs et des retours",
+                    "Sécurité des API (authentification, autorisation, gestion des tokens)"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Développement d'API",
+                "items": [
+                    "Choix des technologies pour le développement d'API",
+                    "Création des endpoints et des routes",
+                    "Gestion des requêtes et des réponses",
+                    "Documentation et test des API",
+                    "Gestion des versions des API"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sécurité des API",
+                "items": [
+                    "Risques de sécurité liés aux API",
+                    "Stratégies de sécurisation des API",
+                    "Chiffrement des données",
+                    "Gestion des accès et des permissions",
+                    "Surveillance et gestion des vulnérabilités des API"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Optimisation et performances des API",
+                "items": [
+                    "Bonnes pratiques pour l'optimisation des API",
+                    "Gestion de la charge et de la scalabilité",
+                    "Mesure des performances des API",
+                    "Mise en cache des données",
+                    "Techniques d'amélioration de la vitesse de réponse des API"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et spécifications des API",
+            "objectif": "Savoir analyser les besoins d'un cas d'utilisation pour concevoir les spécifications d'une API.",
+            "instructions": "Choisissez un cas d'utilisation concret, par exemple une application de réservation de billets de train, et analysez les besoins pour concevoir les spécifications d'une API correspondante. Identifiez les fonctionnalités nécessaires, les données à échanger, les méthodes HTTP à utiliser et définissez les endpoints pertinents.",
+            "livrable": "Les spécifications de l'API décrivant fonctionnalités, données échangées, méthodes HTTP et endpoints pertinents."
+        },
+        {
+            "title": "Conception d'architecture d'une API",
+            "objectif": "Savoir concevoir l'architecture d'une API à partir de ses spécifications.",
+            "instructions": "Concevez l'architecture d'une API selon les spécifications établies à l'exercice précédent. Déterminez les différents endpoints, les méthodes HTTP associées, la gestion des erreurs et les mécanismes de sécurité à mettre en place.",
+            "livrable": "L'architecture de l'API précisant les endpoints, les méthodes HTTP, la gestion des erreurs et les mécanismes de sécurité."
+        },
+        {
+            "title": "Développement d'endpoints et de routes",
+            "objectif": "Savoir développer et documenter les endpoints et les routes d'une API.",
+            "instructions": "Développez les endpoints et les routes de l'API conçue précédemment. Choisissez les technologies adaptées, gérez les requêtes et les réponses, documentez l'API et mettez en place des tests pour vérifier son bon fonctionnement.",
+            "livrable": "Les endpoints et routes développés, documentés et accompagnés des tests vérifiant le bon fonctionnement de l'API."
+        },
+        {
+            "title": "Sécurisation d'une API",
+            "objectif": "Savoir sécuriser une API par des mécanismes d'authentification, d'autorisation et de surveillance.",
+            "instructions": "Choisissez les stratégies de sécurité adéquates, mettez en place des mécanismes d'authentification et d'autorisation, et gérez les accès et les permissions pour garantir la sécurité de l'API. Élaborez également une stratégie de surveillance et de gestion des vulnérabilités.",
+            "livrable": "Une API sécurisée avec authentification, autorisation, gestion des accès et stratégie de surveillance des vulnérabilités."
+        },
+        {
+            "title": "Optimisation des performances d'une API",
+            "objectif": "Savoir optimiser les performances d'une API par les bonnes pratiques étudiées.",
+            "instructions": "Optimisez les performances d'une API en appliquant les bonnes pratiques étudiées. Gérez la charge et la scalabilité, mesurez les performances de l'API, mettez en place des mécanismes de mise en cache des données et appliquez des techniques pour améliorer la vitesse de réponse.",
+            "livrable": "Une API optimisée intégrant gestion de la charge et de la scalabilité, mesures de performance, mise en cache et amélioration de la vitesse de réponse."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "The Design of Web APIs (2e éd.). Manning",
+            "author": "Lauret, A"
+        },
+        {
+            "title": "Build APIs You Won't Hate. LeanPub",
+            "author": "Sturgeon, P"
+        }
+    ],
+    "OnlineResources": [
+        "OpenAPI Specification (https://www.openapis.org) [EN]",
+        "Swagger Documentation (https://swagger.io/docs/) [EN]",
+        "REST API Tutorial (https://restfulapi.net) [EN]",
+        "OAuth 2.0 - RFC 6749 (https://datatracker.ietf.org/doc/html/rfc6749) [EN]",
+        "MDN - HTTP (https://developer.mozilla.org/fr/docs/Web/HTTP) [FR/EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}
