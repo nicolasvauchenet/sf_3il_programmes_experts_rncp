@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC04-FM05",
+        "title": "Technologies de Blockchain",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing.",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C26",
+            "description": "Intégrer et mettre en œuvre des technologies blockchain, en utilisant des plateformes telles que Ethereum ou Hyperledger et en réalisant des smart contract (Contrats Intelligents) pour assurer la traçabilité, la sécurité et l'intégrité des transactions et des données dans le système d'information."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module sont de fournir une compréhension approfondie des fondamentaux, de l'architecture, et des implémentations de la blockchain, ainsi que des smart contracts. Les apprenants seront capables de développer et interagir avec des smart contracts et de comprendre les cas d'utilisation de la blockchain dans divers secteurs. Ils acquerront également des connaissances sur les protocoles, les typologies de consensus, et les enjeux de sécurité liés à la blockchain."
+    },
+    "prerequisites": {
+        "description": "Avoir des connaissances de base en informatique et des notions en cryptographie et en programmation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la blockchain",
+                "items": [
+                    "Comprendre les fondamentaux de la technologie blockchain",
+                    "Identifier les avantages et les inconvénients de la blockchain",
+                    "Connaître les différentes applications de la blockchain dans divers secteurs",
+                    "Comprendre le fonctionnement des réseaux blockchain publics et privés",
+                    "Connaître les principaux acteurs de l'écosystème blockchain"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Architecture et fonctionnement des blockchains",
+                "items": [
+                    "Comprendre la structure et le fonctionnement des blocs et des chaînes de blocs",
+                    "Identifier les différents types de consensus (Proof of Work, Proof of Stake, etc.)",
+                    "Connaître les différents types de blockchains (publiques, privées, autorisées, etc.)",
+                    "Comprendre la notion de smart contract et son rôle dans la blockchain",
+                    "Connaître les principaux protocoles de blockchain (Bitcoin, Ethereum, etc.)"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Implémentation d'une blockchain",
+                "items": [
+                    "Comprendre les étapes pour la mise en place d'une blockchain",
+                    "Connaître les outils et les plateformes pour le développement de projets blockchain",
+                    "Apprendre à configurer et déployer un nœud sur une blockchain",
+                    "Comprendre les bonnes pratiques en matière de sécurité dans une implémentation blockchain",
+                    "Connaître les méthodes de test et de débogage d'une blockchain"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Smart Contracts",
+                "items": [
+                    "Comprendre le fonctionnement des smart contracts",
+                    "Apprendre à développer un smart contract sur une plateforme donnée",
+                    "Connaître les langages de programmation utilisés pour les smart contracts",
+                    "Comprendre les bonnes pratiques de développement et de déploiement des smart contracts",
+                    "Savoir comment interagir avec un smart contract depuis une application externe"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas d'utilisation et études de cas",
+                "items": [
+                    "Étudier les différents cas d'utilisation de la blockchain dans divers secteurs (finance, logistique, santé, etc.)",
+                    "Analyser des études de cas de déploiement de blockchain et de smart contracts",
+                    "Comprendre les défis et les opportunités liés à l'implémentation de la blockchain",
+                    "Identifier les tendances futures de la blockchain et des smart contracts",
+                    "Apprendre des retours d'expérience et des bonnes pratiques à travers les études de cas"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse comparative des blockchains",
+            "context": "Rédiger un rapport comparatif présentant les avantages et inconvénients des blockchains publiques, privées et autorisées, avec recommandations adaptées à un besoin d'entreprise.",
+            "objective": "Comparer les différents types de blockchain et recommander une solution adaptée."
+        },
+        {
+            "title": "Création d'un smart contract basique",
+            "context": "Développer un smart contract simple pour une plateforme de crowdfunding permettant contribution, suivi des montants et remboursement automatique en cas d'échec.",
+            "objective": "Développer et déployer un smart contract fonctionnel."
+        },
+        {
+            "title": "Déploiement d'un nœud blockchain",
+            "context": "Déployer un nœud complet sur une blockchain populaire, documenter la configuration et vérifier la synchronisation avec le réseau.",
+            "objective": "Configurer et exploiter un nœud blockchain."
+        },
+        {
+            "title": "Sécurité de la blockchain",
+            "context": "Réaliser un audit de sécurité d'un réseau blockchain en élaborant une checklist couvrant gestion des clés, sécurisation des nœuds et résilience aux attaques.",
+            "objective": "Évaluer et renforcer la sécurité d'une infrastructure blockchain."
+        },
+        {
+            "title": "Étude de cas et proposition de solution blockchain",
+            "context": "Analyser un cas problématique en logistique et proposer une solution basée sur la blockchain intégrant smart contracts et traçabilité.",
+            "objective": "Concevoir une solution blockchain adaptée à un besoin métier concret."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Le monde des blockchains",
+            "author": "Jean-Paul Delahaye"
+        },
+        {
+            "title": "Blockchain : la révolution de la confiance",
+            "author": "Laurent Leloup"
+        },
+        {
+            "title": "Bitcoin et cryptomonnaies pour les nuls",
+            "author": "Éric Larchevêque"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}

@@ -1,0 +1,152 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC01-FM04",
+        "title": "Étude d'avant-projet",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l'architecture logicielle",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C02",
+            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews et de la cartographie du SI pour identifier les objectifs et déterminer les besoins d'évolution du Système d'Information."
+        },
+        {
+            "code": "C03",
+            "description": "Étudier et évaluer la faisabilité du projet en tenant compte de la mobilisation des ressources humaines et matériels disponibles nécessaires afin d'atteindre les objectifs d'évolution et de pérennisation du Système d'Information."
+        },
+        {
+            "code": "C04",
+            "description": "Concevoir l’architecture logicielle en analysant les exigences fonctionnelles et non fonctionnelles, en choisissant le modèle d'architecture et de modélisation et de prototypage adapté aux besoins, en sélectionnant les technologies associées, ainsi que les outils appropriés et en tenant compte des contraintes du système d’information, telles que la compatibilité avec les infrastructures existantes, la sécurité, et les performances requises, tout en anticipant la maintenance et les potentielles évolutions technologiques et organisationnelles, afin de garantir que la solution réponde de manière optimale aux besoins métiers identifiés et puisse évoluer sans interruption significative des services."
+        },
+        {
+            "code": "C05",
+            "description": "Sélectionner les technologies et outils les plus adaptés pour le développement, en comparant leurs performances, sécurité et interopérabilité et afin de répondre aux besoins du projet tout en respectant les contraintes de budget et de temps."
+        },
+        {
+            "code": "C06",
+            "description": "Présenter et valider l'architecture logicielle et les aspects techniques et fonctionnels, en organisant des revues de conception avec les parties prenantes et en intégrant les retours, afin d'assurer une compréhension et une acceptation complète."
+        },
+        {
+            "code": "C07",
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet."
+        },
+        {
+            "code": "C08",
+            "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des Frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel."
+        },
+        {
+            "code": "C09",
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module de cours sont de permettre aux apprenants d'analyser efficacement les besoins des utilisateurs, de réaliser une étude de faisabilité technique complète et de rédiger un cahier des charges précis et détaillé. Les apprenants seront capables de modéliser des architectures logicielles robustes et de valider leur conformité aux exigences initiales."
+    },
+    "prerequisites": {
+        "description": "Les pré-requis pour suivre ce cours incluent une connaissance de base en analyse et conception de systèmes, une maîtrise des concepts fondamentaux en technologies de l'information et une expérience préalable dans la rédaction de documentation technique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Méthodologie d'analyse des besoins",
+                "items": [
+                    "Comprendre les besoins des utilisateurs",
+                    "Identifier les acteurs et les cas d'utilisation",
+                    "Utiliser des techniques comme les interviews, les questionnaires, etc.",
+                    "Analyser les besoins fonctionnels et non fonctionnels",
+                    "Structurer les besoins avec des diagrammes UML"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Étude de faisabilité technique",
+                "items": [
+                    "Évaluer la compatibilité avec les technologies existantes",
+                    "Analyser les contraintes techniques",
+                    "Identifier les risques techniques et proposer des solutions",
+                    "Estimer les coûts et les délais liés aux choix techniques",
+                    "Proposer des solutions alternatives"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Rédaction du cahier des charges",
+                "items": [
+                    "Définir les objectifs du projet",
+                    "Spécifier les fonctionnalités attendues",
+                    "Décrire l'interface utilisateur",
+                    "Préciser les contraintes techniques et opérationnelles",
+                    "Définir les critères de validation du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Spécifications techniques avancées",
+                "items": [
+                    "Modéliser l'architecture logicielle avec UML",
+                    "Définir les composants, les interfaces et les interactions",
+                    "Utiliser des patrons de conception adaptés au contexte",
+                    "Préciser les contraintes de performance, de sécurité, etc.",
+                    "Assurer la traçabilité entre les besoins et l'architecture"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Validation de l'architecture logicielle",
+                "items": [
+                    "Vérifier la conformité de l'architecture aux besoins",
+                    "Réaliser des revues de conception",
+                    "Effectuer des tests d'intégration et de validation",
+                    "Valider la performance, la scalabilité et la sécurité",
+                    "Documenter l'architecture et ses décisions"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins",
+            "context": "Vous travaillez sur un projet de développement logiciel et vous devez comprendre les besoins des utilisateurs. Pour cela, réalisez une liste des acteurs et des cas d'utilisation pour votre système, en utilisant les techniques d'interviews, de questionnaires, etc. Ensuite, structurez les besoins identifiés à l'aide de diagrammes UML.",
+            "objective": "Vous travaillez sur un projet de développement logiciel et vous devez comprendre les besoins des utilisateurs. Pour cela, réalisez une liste des acteurs et des cas d'utilisation pour votre système, en utilisant les techniques d'interviews, de questionnaires, etc. Ensuite, structurez les besoins identifiés à l'aide de diagrammes UML."
+        },
+        {
+            "title": "Étude de faisabilité technique",
+            "context": "Imaginez que vous devez évaluer la compatibilité d'un nouveau module avec les technologies existantes de votre entreprise. Identifiez les contraintes techniques et les risques potentiels. Proposez des solutions pour surmonter ces obstacles et estimez les coûts et les délais liés à vos choix techniques. Enfin, présentez des solutions alternatives au cas où certaines contraintes ne pourraient pas être respectées.",
+            "objective": "Imaginez que vous devez évaluer la compatibilité d'un nouveau module avec les technologies existantes de votre entreprise. Identifiez les contraintes techniques et les risques potentiels. Proposez des solutions pour surmonter ces obstacles et estimez les coûts et les délais liés à vos choix techniques. Enfin, présentez des solutions alternatives au cas où certaines contraintes ne pourraient pas être respectées."
+        },
+        {
+            "title": "Rédaction du cahier des charges",
+            "context": "Vous participez à l'élaboration d'un cahier des charges pour un nouveau projet. Définissez clairement les objectifs du projet, spécifiez les fonctionnalités attendues et décrivez l'interface utilisateur souhaitée. Précisez également les contraintes techniques et opérationnelles auxquelles le projet doit répondre, ainsi que les critères de validation qui seront utilisés pour mesurer sa réussite.",
+            "objective": "Vous participez à l'élaboration d'un cahier des charges pour un nouveau projet. Définissez clairement les objectifs du projet, spécifiez les fonctionnalités attendues et décrivez l'interface utilisateur souhaitée. Précisez également les contraintes techniques et opérationnelles auxquelles le projet doit répondre, ainsi que les critères de validation qui seront utilisés pour mesurer sa réussite."
+        },
+        {
+            "title": "Spécifications techniques avancées",
+            "context": "Vous êtes chargé de modéliser l'architecture logicielle d'un nouveau système en utilisant UML. Définissez les différents composants, leurs interfaces et les interactions entre eux. Utilisez des patrons de conception adaptés au contexte pour répondre aux besoins identifiés. Enfin, précisez les contraintes de performance, de sécurité, etc. que l'architecture doit respecter, en assurant la traçabilité entre les besoins et l'architecture.",
+            "objective": "Vous êtes chargé de modéliser l'architecture logicielle d'un nouveau système en utilisant UML. Définissez les différents composants, leurs interfaces et les interactions entre eux. Utilisez des patrons de conception adaptés au contexte pour répondre aux besoins identifiés. Enfin, précisez les contraintes de performance, de sécurité, etc. que l'architecture doit respecter, en assurant la traçabilité entre les besoins et l'architecture."
+        },
+        {
+            "title": "Validation de l'architecture logicielle",
+            "context": "Vous avez terminé la phase de conception de l'architecture logicielle et vous devez maintenant la valider. Vérifiez la conformité de l'architecture aux besoins identifiés, réalisez des revues de conception pour recueillir des retours d'experts, effectuez des tests d'intégration et de validation pour vous assurer du bon fonctionnement de l'architecture. Enfin, documentez l'architecture et les décisions prises tout au long du processus.",
+            "objective": "Vous avez terminé la phase de conception de l'architecture logicielle et vous devez maintenant la valider. Vérifiez la conformité de l'architecture aux besoins identifiés, réalisez des revues de conception pour recueillir des retours d'experts, effectuez des tests d'intégration et de validation pour vous assurer du bon fonctionnement de l'architecture. Enfin, documentez l'architecture et les décisions prises tout au long du processus."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Analyse et Conception des Systèmes d’Information : avec UML 2",
+            "author": "Ibrahima Niang"
+        },
+        {
+            "title": "Conception orientée objet : exercices corrigés en UML 2",
+            "author": "Jean-Louis Maréchaux"
+        },
+        {
+            "title": "Design Patterns : Elements of Reusable Object-Oriented Software",
+            "author": "Eric Gamma, Richard Helm, Ralph Johnson, John Vlissides"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe"
+    ]
+}

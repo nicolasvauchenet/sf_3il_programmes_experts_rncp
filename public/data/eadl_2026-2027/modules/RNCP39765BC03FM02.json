@@ -1,0 +1,151 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC03-FM02",
+        "title": "eXtreme Programming",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines (CI/CD) en automatisant les processus d'intégration et de déploiement continus en utilisant des outils de conteneurisation et d'orchestration pour réduire les erreurs, accélérer les livraisons, les déploiements et assurer une qualité constante des livrables"
+        },
+        {
+            "code": "C17",
+            "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des Frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution"
+        },
+        {
+            "code": "C18",
+            "description": "Intégrer des pratiques de sécurité DevSecOps tout au long du cycle de développement logiciel par la mise en œuvre d'outils d'analyse et de sécurité tel que OWASP zap, Burp Suite pour identifier et corriger les vulnérabilités, assurer la conformité aux normes de sécurité et protéger les applications contre les menaces courantes"
+        },
+        {
+            "code": "C19",
+            "description": "Optimiser les développements et Structurer l'application en code modulaire en adoptant les pratiques de Clean Code, des revues de code régulières et des outils d'analyse tel que SonarQube ou DeepScan pour identifier et corriger les problèmes de qualité afin d'assurer la maintenabilité et Identifier et mettre en œuvre des améliorations pour optimiser les performances et l'efficacité des développements"
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en place, rédiger et maintenir les documentations techniques complètes des applications et partager les connaissances au sein de l'équipe, en suivant les meilleures pratiques de documentation et en utilisant des plateformes collaboratives pour faciliter la maintenance et assurer l'évolutivité des systèmes et minimiser la dette technique. BLOC 4 : Optimiser le Système d'Information (SI) par l'apport du Cloud Computing"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes et la méthodologie de l'eXtreme Programming pour optimiser le développement logiciel (Comprendre) Identifier les rôles et responsabilités au sein d'une équipe XP pour assurer une collaboration efficace (Analyser) Mettre en œuvre les pratiques de tests et de qualité pour améliorer la fiabilité et la maintenabilité du code (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base des méthodologies agiles, expérience en développement logiciel, familiarité avec les concepts de gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'eXtreme Programming",
+                "items": [
+                    "Principes et valeurs de l'eXtreme Programming",
+                    "Méthodologie itérative et incrémentale",
+                    "Place de l'eXtreme Programming dans le processus de développement logiciel",
+                    "Rôles et responsabilités des membres de l'équipe XP",
+                    "Avantages et inconvénients de l'eXtreme Programming"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Planification et gestion de projet XP",
+                "items": [
+                    "User Stories et backlog de développement",
+                    "Planification des itérations",
+                    "Estimation de la charge de travail",
+                    "Gestion des risques dans un projet XP",
+                    "Suivi et Reporting de l'avancement du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Tests et qualité dans l'eXtreme Programming",
+                "items": [
+                    "Tests unitaires, d'intégration et fonctionnels",
+                    "TDD (Test Driven Development)",
+                    "Intégration continue et déploiement continu",
+                    "Assurance qualité dans l'eXtreme Programming",
+                    "Mesure de la qualité du code"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Conception et développement dans l'eXtreme Programming",
+                "items": [
+                    "Conception émergente et refactoring",
+                    "Pair Programming et code review",
+                    "Pratiques de développement collaboratif",
+                    "Utilisation des patterns de conception",
+                    "Bonnes pratiques de développement dans un environnement XP"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Communication et collaboration dans l'équipe XP",
+                "items": [
+                    "Communication efficace au sein de l'équipe XP",
+                    "Gestion des conflits et prises de décision",
+                    "Auto-organisation de l'équipe",
+                    "Feedback continu et amélioration continue",
+                    "Partage des connaissances et compétences au sein de l'équipe XP"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Application des principes et valeurs de l'eXtreme Programming",
+            "objectif": "Savoir mettre en œuvre les principes et valeurs de l'eXtreme Programming dans un projet.",
+            "instructions": "À partir d'un projet concret ou fictif, identifier et expliquer comment chaque principe et valeur de l'eXtreme Programming peut être mis en œuvre dans le contexte de ce projet.",
+            "livrable": "Un rapport ou une présentation exposant les conclusions et montrant la mise en œuvre de chaque principe et valeur de l'eXtreme Programming."
+        },
+        {
+            "title": "Planification des itérations et gestion des risques",
+            "objectif": "Être capable de planifier des itérations et de gérer les risques associés.",
+            "instructions": "À l'aide d'un scénario de projet, créer un plan d'itération pour une phase de développement spécifique, identifier les risques liés à cette itération et proposer des stratégies pour les atténuer.",
+            "livrable": "Un plan d'itération accompagné d'une analyse des risques et des stratégies d'atténuation."
+        },
+        {
+            "title": "Élaboration de tests et mesure de la qualité du code",
+            "objectif": "Être capable d'élaborer des tests et de mesurer la qualité du code.",
+            "instructions": "Sélectionner un cas d'utilisation ou une fonctionnalité d'un projet existant ou fictif et élaborer une suite de tests unitaires, d'intégration et fonctionnels pour cette fonctionnalité; proposer des métriques pour mesurer la qualité du code applicable.",
+            "livrable": "Une suite de tests (unitaires, d'intégration et fonctionnels) et un ensemble de métriques de qualité du code pour la fonctionnalité retenue."
+        },
+        {
+            "title": "Conception émergente et développement collaboratif",
+            "objectif": "Comprendre la conception émergente et le développement collaboratif par le refactoring et le Pair Programming.",
+            "instructions": "Imaginer une situation de développement où une conception initiale doit être modifiée en raison de nouvelles exigences ou de découvertes pendant le développement; utiliser le refactoring pour ajuster la conception initiale et décrire en quoi le Pair Programming peut être bénéfique dans ce scénario.",
+            "livrable": "Une description du scénario montrant l'ajustement de la conception par refactoring et l'apport du Pair Programming."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Extreme Programming Explained: Embrace Change (2e éd.)",
+            "author": "Beck, K. & Andres, C"
+        },
+        {
+            "title": "The Art of Agile Development (2e éd.)",
+            "author": "Shore, J. & Warden, S"
+        },
+        {
+            "title": "Agile Testing : A Practical Guide for Testers and Agile Teams",
+            "author": "Crispin, L. & Gregory, J"
+        }
+    ],
+    "OnlineResources": [
+        "Extreme Programming - Don Wells (http://www.extremeprogramming.org) [EN]",
+        "Agile Alliance - XP Resources (https://www.agilealliance.org/glossary/xp/) [EN]",
+        "Martin Fowler - Extreme Programming (https://martinfowler.com/bliki/ExtremeProgramming.html) [EN]",
+        "Craftsmanship Manifesto (https://manifesto.softwarecraftsmanship.org) [EN]",
+        "developpez.com - Méthodes Agiles (https://agile.developpez.com) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC03-FM03",
+        "title": "Usine Logiciel",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Systèmes d'Information (SI)",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines (CI/CD) en automatisant les processus d'intégration et de déploiement continus en utilisant des outils de conteneurisation et d'orchestration pour réduire les erreurs, accélérer les livraisons, les déploiements et assurer une qualité constante des livrables."
+        },
+        {
+            "code": "C17",
+            "description": "Intégrer dans les pipelines CI/CD les tests fonctionnels et non-fonctionnels automatisés en utilisant des frameworks et outils de test informatique pour garantir que les nouvelles versions du logiciel sont fonctionnelles et répondent aux demandes d'évolution."
+        },
+        {
+            "code": "C18",
+            "description": "Intégrer des pratiques de sécurité DevSecOps tout au long du cycle de développement logiciel par la mise en œuvre d'outils d'analyse et de sécurité tel que OWASP zap, Burp Suite pour identifier et corriger les vulnérabilités, assurer la conformité aux normes de sécurité et protéger les applications contre les menaces courantes."
+        }
+    ],
+    "objectives": {
+        "description": "Les apprenants comprendront l'importance de la gestion des versions et maîtriseront l'utilisation de Git. Ils seront capables de mettre en place un pipeline DevOps et d'intégrer des tests automatisés dans les processus CI/CD. De plus, ils sauront gérer les configurations dans un environnement CI/CD."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en développement logiciel et en lignes de commande, expérience pratique avec des projets de développement, compréhension des concepts fondamentaux des systèmes d'exploitation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Gestion des versions dans le processus de développement logiciel",
+                "items": [
+                    "Comprendre l'importance de la gestion de versions",
+                    "Maîtriser les concepts de base de la gestion de versions (commit, push, pull, merge, etc.)",
+                    "Utiliser un système de contrôle de version tel que Git",
+                    "Comprendre les bonnes pratiques de gestion de versions dans un environnement DevOps",
+                    "Gérer les conflits et les branches dans un projet versionné"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Pipeline DevOps : concepts et mise en place",
+                "items": [
+                    "Comprendre le concept de pipeline DevOps",
+                    "Identifier les différents outils et technologies utilisés dans un pipeline DevOps",
+                    "Définir les étapes clés d'un pipeline DevOps (build, test, deploy, etc.)",
+                    "Mettre en place un pipeline DevOps pour un projet spécifique",
+                    "Automatiser les différentes étapes du pipeline"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Intégration de tests automatisés dans les CI/CD",
+                "items": [
+                    "Comprendre l'importance des tests automatisés dans un processus CI/CD",
+                    "Identifier les types de tests automatisés (unitaires, intégration, fonctionnels, etc.)",
+                    "Mettre en place des tests automatisés dans un pipeline CI/CD",
+                    "Utiliser des outils de tests automatisés tels que JUnit, Selenium, etc.",
+                    "Analyser les résultats des tests automatisés et intégrer ces résultats dans le pipeline"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des configurations dans un environnement CI/CD",
+                "items": [
+                    "Comprendre l'importance de la gestion des configurations dans un environnement CI/CD",
+                    "Utiliser des outils de gestion de configurations tels que Ansible, Puppet, Chef, etc.",
+                    "Automatiser le déploiement et la configuration des infrastructures",
+                    "Gérer les configurations à différents environnements (dev, test, prod)",
+                    "Assurer la traçabilité des configurations dans un environnement CI/CD"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Pratique de la gestion de versions avec Git",
+            "context": "En utilisant un dépôt Git vide, les apprenants devront créer un nouveau projet, effectuer des modifications, gérer les conflits et fusionner les branches pour mettre en pratique les concepts de base de la gestion de versions. Ils devront également effectuer des opérations de commit, push et pull pour comprendre le fonctionnement de Git.",
+            "objective": "Mettre en pratique les concepts fondamentaux de la gestion de versions avec Git."
+        },
+        {
+            "title": "Mise en place d'un pipeline DevOps",
+            "context": "Les apprenants devront choisir un projet simple (par exemple, une application web) et mettre en place un pipeline DevOps en utilisant des outils tels que Jenkins, Travis CI ou GitLab CI. Ils devront définir les différentes étapes du pipeline (build, test, deploy) et automatiser ces étapes autant que possible.",
+            "objective": "Mettre en place et automatiser un pipeline DevOps pour un projet."
+        },
+        {
+            "title": "Intégration de tests automatisés dans un pipeline CI/CD",
+            "context": "En se basant sur le projet utilisé dans l'exercice précédent, les apprenants devront mettre en place des tests automatisés (unitaires, intégration, fonctionnels) et les intégrer dans le pipeline CI/CD. Ils devront utiliser des outils tels que JUnit, Selenium ou tout autre outil de leur choix pour réaliser ces tests.",
+            "objective": "Intégrer des tests automatisés dans un pipeline CI/CD."
+        },
+        {
+            "title": "Automatisation du déploiement avec Ansible",
+            "context": "Les apprenants devront automatiser le déploiement et la configuration d'une infrastructure simple en utilisant Ansible. Ils devront écrire des playbooks pour décrire les étapes nécessaires au déploiement et à la configuration, puis les exécuter pour déployer l'infrastructure.",
+            "objective": "Automatiser le déploiement et la configuration d'une infrastructure avec Ansible."
+        },
+        {
+            "title": "Gestion des configurations dans un environnement CI/CD",
+            "context": "En utilisant un environnement de développement, les apprenants devront gérer les configurations à l'aide d'outils tels que Chef, Puppet ou tout autre outil de gestion de configurations. Ils devront assurer la traçabilité des configurations et les déployer dans des environnements spécifiques (dev, test, prod).",
+            "objective": "Mettre en œuvre une gestion structurée et traçable des configurations dans un environnement CI/CD."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Git : Pour une gestion de versions optimisée",
+            "author": "É. Lambert"
+        },
+        {
+            "title": "DevOps : Principes et pratiques pour la mise en œuvre agile",
+            "author": "M. Dupont"
+        },
+        {
+            "title": "Clean Architecture : A Craftsman's Guide to Software Structure and Design",
+            "author": "Robert C. Martin"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}

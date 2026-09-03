@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC02-C14",
+        "title": "Évaluation périodique de l'avancement des projets",
+        "rncpCode": "39765",
+        "blocCode": "BC02",
+        "blocName": "Manager les projets numériques",
+        "academicYear": "2025-2026"
+    },
+    "description": "Réaliser des évaluations périodiques de l'avancement de projet par des revues de performance et des rapports d'étape pour mesurer l'atteinte des objectifs et l'efficacité des méthodologies de gestion de projet mises en œuvre.",
+    "criteria": [
+        "Qualité des revues de performance : Les revues de performance sont complètes, reflétant fidèlement l'état actuel du projet et l'atteinte des objectifs à chaque étape.",
+        "Pertinence des rapports d'étape : Les rapports d'étape fournissent des informations actualisées et pertinentes sur la progression du projet, avec des preuves d'amélioration continue basées sur les évaluations."
+    ]
+}

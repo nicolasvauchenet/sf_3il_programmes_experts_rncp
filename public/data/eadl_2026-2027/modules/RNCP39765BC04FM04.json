@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC04-FM04",
+        "title": "Stratégies de sécurité Cloud",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing.",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Implémenter des stratégies de sécurité robustes dans les environnements cloud en appliquant des politiques de sécurité, utilisant des outils de gestion des identités et des accès, et conduisant des audits de sécurité réguliers pour protéger les infrastructures contre les menaces"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Se familiariser avec les principaux risques de sécurité associés aux environnements Cloud et les différences avec les infrastructures sur site (Comprendre) Maîtriser la gestion des identités et la surveillance des menaces dans le Cloud (Appliquer) Appliquer les bonnes pratiques pour sécuriser les données et gérer les clés et secrets dans le Cloud (Créer)"
+    },
+    "prerequisites": {
+        "description": "Pour suivre ce module, les apprenants devraient avoir des connaissances de base en informatique, une compréhension générale des concepts de réseau et de sécurité informatique, et une familiarité avec les services Cloud."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondamentaux de la sécurité dans le Cloud",
+                "items": [
+                    "Comprendre les principaux risques de sécurité liés aux environnements Cloud",
+                    "Identifier les différences entre la sécurité dans un environnement Cloud et sur site",
+                    "Connaître les bonnes pratiques de sécurité Cloud",
+                    "Comprendre les modèles de responsabilité partagée pour la sécurité dans le Cloud",
+                    "Connaître les normes et réglementations de sécurité applicable aux environnements Cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Contrôles d'accès et gestion des identités dans le Cloud",
+                "items": [
+                    "Comprendre les concepts de gestion des identités et des accès (IAM) dans le Cloud",
+                    "Savoir mettre en place des politiques de contrôle d'accès granulaires",
+                    "Comprendre les mécanismes d'authentification et d'autorisation dans le Cloud",
+                    "Connaître les bonnes pratiques de gestion des identités et des accès dans le Cloud",
+                    "Savoir gérer les privilèges et les rôles dans un environnement Cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion des clés et des secrets dans le Cloud",
+                "items": [
+                    "Comprendre l'importance de la gestion des clés et des secrets dans le Cloud",
+                    "Connaître les différentes techniques de gestion des clés de chiffrement",
+                    "Savoir mettre en place des politiques de rotation et de révocation des clés",
+                    "Connaître les services de gestion des clés et des secrets proposés par les fournisseurs Cloud",
+                    "Comprendre les bonnes pratiques de gestion des clés et des secrets dans un environnement Cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Surveillance, détection et réponse aux incidents dans le Cloud",
+                "items": [
+                    "Comprendre l'importance de la surveillance continue dans un environnement Cloud",
+                    "Connaître les outils de surveillance et de détection des menaces dans le Cloud",
+                    "Savoir mettre en place des alertes et des mécanismes de réponse aux incidents",
+                    "Comprendre les bonnes pratiques de surveillance et de réponse aux incidents dans le Cloud",
+                    "Savoir gérer les journaux d'activité et les événements de sécurité dans le Cloud"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurisation des données dans le Cloud",
+                "items": [
+                    "Comprendre les défis liés à la sécurisation des données dans le Cloud",
+                    "Connaître les techniques de chiffrement des données en transit et au repos",
+                    "Savoir mettre en œuvre des politiques de classification et de protection des données",
+                    "Comprendre les bonnes pratiques de sécurisation des données dans un environnement Cloud",
+                    "Connaître les services de gestion des clés et de chiffrement proposés par les fournisseurs Cloud"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Évaluation des risques et planification de la sécurité Cloud",
+            "objectif": "Être capable de réaliser une évaluation des risques de sécurité liés à une migration vers le Cloud.",
+            "instructions": "En tant que consultant en sécurité Cloud pour une entreprise envisageant de migrer son infrastructure sur site vers le Cloud, identifiez cinq risques de sécurité clés que l'entreprise pourrait rencontrer dans l'environnement Cloud. Pour chaque risque, expliquez brièvement en quoi il est spécifique au Cloud par rapport à un environnement sur site, proposez une stratégie de mitigation, et déterminez les responsabilités respectives de l'entreprise et du fournisseur Cloud selon le modèle de responsabilité partagée.",
+            "livrable": "Une évaluation des risques présentant les cinq risques identifiés, leur spécificité au Cloud, une stratégie de mitigation par risque et la répartition des responsabilités selon le modèle de responsabilité partagée."
+        },
+        {
+            "title": "Création de politiques IAM",
+            "objectif": "Savoir concevoir des politiques de contrôle d'accès IAM respectant le principe du moindre privilège.",
+            "instructions": "En tant qu'administrateur Cloud d'une entreprise stockant des données sensibles, créez une politique IAM définissant les droits d'accès pour trois rôles différents : Administrateur, Développeur et Analyste. Pour chaque rôle, spécifiez les permissions nécessaires pour accomplir les tâches typiques associées, tout en adhérant au principe du moindre privilège. Expliquez comment vous implémenteriez un mécanisme d'authentification multi-facteurs pour tous les utilisateurs.",
+            "livrable": "La politique IAM détaillant les permissions des trois rôles, la description du mécanisme d'authentification multi-facteurs, et une procédure de gestion des droits d'accès en cas de départ d'un employé."
+        },
+        {
+            "title": "Gestion des clés de chiffrement",
+            "objectif": "Être capable de mettre en place un système de gestion des clés de chiffrement pour une base de données hébergée dans le Cloud.",
+            "instructions": "En tant que responsable de la sécurité des informations, choisissez un service de gestion des clés proposé par un fournisseur Cloud populaire et décrivez son utilisation. Établissez une politique de rotation des clés pour la base de données en indiquant la fréquence de rotation et les étapes du processus. Expliquez le processus de révocation d'une clé compromise et la manière d'assurer une transition sécurisée vers une nouvelle clé. Traitez les bonnes pratiques de partage et de stockage des secrets utilisés pour accéder à la base de données.",
+            "livrable": "Une politique de gestion des clés couvrant le service retenu, la rotation, la révocation et la transition des clés, ainsi que les bonnes pratiques de partage et de stockage des secrets."
+        },
+        {
+            "title": "Simulation de réponse aux incidents",
+            "objectif": "Savoir élaborer et dérouler un plan de réponse à un incident de sécurité dans un environnement Cloud.",
+            "instructions": "En tant que chef de la sécurité informé d'une activité suspecte suggérant une possible violation de données, décrivez les étapes que vous entreprendriez immédiatement après avoir été alerté. Identifiez les outils de surveillance et de détection des menaces que vous utiliseriez pour enquêter sur l'incident, et expliquez comment vous exploiteriez les journaux d'activités pour aider à l'investigation.",
+            "livrable": "Un plan de réponse aux incidents incluant la notification des parties prenantes, le confinement de la menace et la récupération post-incident, ainsi que les outils de détection retenus et l'usage des journaux d'activités."
+        },
+        {
+            "title": "Mise en œuvre des politiques de sécurisation des données",
+            "objectif": "Être capable de définir et de mettre en œuvre une stratégie de sécurisation des données clients dans le Cloud.",
+            "instructions": "En mission de conseil auprès d'une start-up, proposez une stratégie de classification des données pour identifier les données sensibles devant être protégées. Expliquez comment vous implémenteriez le chiffrement des données en transit et au repos pour ces données. Mettez en place des politiques de protection des données couvrant l'accès, la modification et la suppression des données, puis sélectionnez et configurez un service de gestion des clés de chiffrement fourni par un fournisseur Cloud, en accord avec les politiques établies.",
+            "livrable": "Un guide de bonnes pratiques à destination de la start-up couvrant la classification des données, le chiffrement en transit et au repos, les politiques de protection et la configuration du service de gestion des clés, pour maintenir la sécurité des données dans le Cloud à long terme."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Cloud Security and Privacy (2e éd.)",
+            "author": "Mather, T. et al"
+        },
+        {
+            "title": "Zero Trust Networks",
+            "author": "Gilman, E. & Barth, D"
+        },
+        {
+            "title": "Securing the Cloud",
+            "author": "Winkler, V"
+        }
+    ],
+    "OnlineResources": [
+        "Cloud Security Alliance (https://cloudsecurityalliance.org) [EN]",
+        "AWS Security Best Practices (https://docs.aws.amazon.com/security/) [EN]",
+        "Microsoft Cloud Security (https://learn.microsoft.com/security/) [FR/EN]",
+        "Google Cloud Security (https://cloud.google.com/security) [EN]",
+        "ANSSI - Sécurité Cloud (https://cyber.gouv.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

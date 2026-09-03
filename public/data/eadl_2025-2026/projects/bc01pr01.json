@@ -1,0 +1,130 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39765-BC01-PR01",
+        "title": "Projet Architecture logicielle",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l'architecture logicielle",
+        "durationDays": 15,
+        "durationHours": 105,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Mettre en place une veille technologique, normative, et législative en analysant des contenus de diverses sources d'informations multilingues afin d’identifier les nouvelles tendances, technologies et meilleures pratiques dans le domaine du développement et de l'architecture logicielle, afin de proposer des solutions innovantes et d'anticiper les évolutions du marché."
+        },
+        {
+            "code": "C02",
+            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir d'animation d'atelier, de résultats d'enquêtes et d'interviews et de la cartographie du SI pour identifier les objectifs et déterminer les besoins d'évolution du Système d'Information."
+        },
+        {
+            "code": "C03",
+            "description": "Étudier et évaluer la faisabilité du projet en tenant compte de la mobilisation des ressources humaines et matériels disponibles nécessaires afin d'atteindre les objectifs d'évolution et de pérennisation du Système d'Information."
+        },
+        {
+            "code": "C04",
+            "description": "Concevoir l’architecture logicielle en analysant les exigences fonctionnelles et non fonctionnelles, en choisissant le modèle d'architecture et de modélisation et de prototypage adapté aux besoins, en sélectionnant les technologies associées, ainsi que les outils appropriés et en tenant compte des contraintes du système d’information, telles que la compatibilité avec les infrastructures existantes, la sécurité, et les performances requises, tout en anticipant la maintenance et les potentielles évolutions technologiques et organisationnelles, afin de garantir que la solution réponde de manière optimale aux besoins métiers identifiés et puisse évoluer sans interruption significative des services."
+        },
+        {
+            "code": "C05",
+            "description": "Sélectionner les technologies et outils les plus adaptés pour le développement, en comparant leurs performances, sécurité et interopérabilité et afin de répondre aux besoins du projet tout en respectant les contraintes de budget et de temps."
+        },
+        {
+            "code": "C06",
+            "description": "Présenter et valider l'architecture logicielle et les aspects techniques et fonctionnels, en organisant des revues de conception avec les parties prenantes et en intégrant les retours, afin d'assurer une compréhension et une acceptation complète."
+        },
+        {
+            "code": "C07",
+            "description": "Créer des diagrammes et modèles de données et de flux en utilisant des outils comme UML pour définir les structures et les relations de données nécessaires, optimisant ainsi la gestion et l'accessibilité des données et des flux pour les applications tout en garantissant leur évolutivité et performance."
+        },
+        {
+            "code": "C08",
+            "description": "Intégrer les pratiques de Test Driven Development (TDD) en écrivant des tests automatisés avant le développement des fonctionnalités, en utilisant des frameworks de tests comme JUnit ou PyTest, pour garantir que chaque élément de code sera testé de manière rigoureuse et continue, assurant ainsi une haute qualité et une facilité de maintenance du logiciel."
+        },
+        {
+            "code": "C09",
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels, des spécifications et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités et les ressources du projet."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de conception et de modélisation d’une architecture logicielle complète, depuis la veille et l’analyse du besoin jusqu’à la formalisation d’une proposition d’architecture argumentée, modélisée et validée. Il mobilise l’ensemble des compétences du bloc BC01 en préparation de l’EC01, en articulant étude d’avant-projet, modélisation UML, choix d’architecture, sélection technologique, innovation et conception des tests."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en développement logiciel, en programmation orientée objet, en analyse et conception de systèmes, ainsi qu’une première familiarité avec l’architecture logicielle, la recherche d’information technique et la documentation de projet."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Veille, cadrage et analyse du besoin",
+            "context": "À partir d’un contexte de système d’information à faire évoluer, les apprenants analysent les besoins métier, les attentes des parties prenantes, les contraintes réglementaires et les tendances technologiques pertinentes.",
+            "objective": "Structurer une démarche de veille et d’analyse permettant d’identifier les enjeux, les objectifs, les opportunités technologiques et les contraintes du projet."
+        },
+        {
+            "title": "Étude de faisabilité et note de cadrage",
+            "context": "Les apprenants évaluent la faisabilité du projet au regard des ressources, des contraintes techniques, des risques, du budget et des délais, puis rédigent les premiers livrables de cadrage.",
+            "objective": "Formaliser une étude d’avant-projet cohérente, argumenter les choix d’orientation et produire une base exploitable pour la conception."
+        },
+        {
+            "title": "Conception de l’architecture et modélisation UML",
+            "context": "À partir des besoins validés, les apprenants conçoivent une architecture logicielle cible et produisent les diagrammes nécessaires à la compréhension des données, des flux, des composants et des interactions.",
+            "objective": "Définir une architecture robuste, modéliser clairement le système et assurer la traçabilité entre besoins, composants et flux."
+        },
+        {
+            "title": "Choix technologiques, innovation et validation de la solution",
+            "context": "Les apprenants comparent plusieurs options techniques, évaluent leur pertinence, intègrent les contraintes d’interopérabilité, de sécurité et de performance, puis présentent et défendent leur proposition.",
+            "objective": "Justifier les choix de technologies, intégrer une dimension d’innovation maîtrisée et préparer une revue de conception argumentée."
+        },
+        {
+            "title": "Conception des tests et consolidation documentaire",
+            "context": "En cohérence avec l’architecture proposée, les apprenants définissent les principes de test, structurent une approche TDD et finalisent les documents de spécification et de validation.",
+            "objective": "Préparer la validation de l’architecture, concevoir les tests associés et produire une documentation de projet claire, exploitable et alignée avec l’EC01."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Conception et architecture logicielle",
+            "author": "Philippe Merle"
+        },
+        {
+            "title": "Architecture logicielle : des concepts aux modèles",
+            "author": "Philippe Kruchten"
+        },
+        {
+            "title": "Les cahiers du programmeur : Architecture logicielle",
+            "author": "Gilles Dowek"
+        },
+        {
+            "title": "Le guide d'utilisation d'UML",
+            "author": "Booch, G., Rumbaugh, J., & Jacobson, I. (2005)"
+        },
+        {
+            "title": "UML Distilled : Brève introduction à la modélisation orientée objet",
+            "author": "Fowler, M. (2004)"
+        },
+        {
+            "title": "Architecture logicielle : principes et techniques d'architectures durables",
+            "author": "David Gassner"
+        },
+        {
+            "title": "Design Patterns : éléments d'architecture logicielle réutilisables",
+            "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides"
+        },
+        {
+            "title": "La veille technologique - Stratégies pour innover",
+            "author": "Stéphane Prévost"
+        },
+        {
+            "title": "Test Driven Development : By Example",
+            "author": "Kent Beck"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (présentation, vidéo, etc.)"
+    ]
+}

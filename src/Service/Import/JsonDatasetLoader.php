@@ -11,6 +11,7 @@ final readonly class JsonDatasetLoader
 {
     public function __construct(
         private CodeNormalizer $codeNormalizer,
+        private DatabaseDatasetInheritanceProvider $inheritanceProvider,
     )
     {
     }
@@ -78,8 +79,23 @@ final readonly class JsonDatasetLoader
             }
         }
 
-        if ($structure === null) {
-            throw new \RuntimeException(sprintf('Aucun fichier structure.json valide trouvé dans "%s".', $directory));
+        $datasetName = basename(str_replace('\\', '/', rtrim($directory, '/\\')));
+        $inherited = null;
+
+        try {
+            $inherited = $this->inheritanceProvider->inherit($datasetName);
+        } catch (\RuntimeException $e) {
+            if ($structure === null) {
+                throw $e;
+            }
+        }
+
+        if ($inherited !== null) {
+            $structure ??= $this->normalizeStructure($inherited['structure']);
+            $modules = array_replace($inherited['modules'], $modules);
+            $projects = array_replace($inherited['projects'], $projects);
+            $skills = array_replace($inherited['skills'], $skills);
+            $evaluations = array_replace($inherited['evaluations'], $evaluations);
         }
 
         return [

@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM05",
+        "title": "Processus décisionnels et modèles de données",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C30",
+            "description": "Développer des solutions de Business Intelligence (BI) en créant des tableaux de bord et des rapports interactifs à l'aide d'outils comme Power BI, Tableau, ou QlikView pour fournir des insights pertinents et adaptés aux besoins spécifiques des utilisateurs et des décideurs pour piloter les performances des activités (DAS) de l'entreprise."
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les principes fondamentaux des processus décisionnels et les différents types de modèles de données. Acquérir les compétences nécessaires pour concevoir, modéliser et mettre en œuvre des entrepôts de données. Maîtriser les outils, techniques et meilleures pratiques de l'analyse, du reporting et de l'optimisation des modèles de données."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base des systèmes de gestion de bases de données relationnelles. Notions fondamentales en analyse de données et en statistiques."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Concepts fondamentaux des processus décisionnels et modèles de données",
+                "items": [
+                    "Les principes de base des processus décisionnels",
+                    "Les différents types de modèles de données (relationnel, dimensionnel, en étoile, en flocon)",
+                    "Les outils et technologies utilisés dans les processus décisionnels",
+                    "Les avantages et inconvénients des modèles de données",
+                    "Les bonnes pratiques de conception des modèles de données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Conception et modélisation des entrepôts de données",
+                "items": [
+                    "Les étapes de conception d'un entrepôt de données",
+                    "Les différentes approches de modélisation des entrepôts de données (top-down, bottom-up, hybrid)",
+                    "Les techniques de modélisation dimensionnelle",
+                    "L'optimisation des requêtes dans les entrepôts de données",
+                    "Les stratégies de gestion des données historiques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Mise en œuvre des processus décisionnels",
+                "items": [
+                    "Les étapes de mise en œuvre d'un processus décisionnel",
+                    "Les outils ETL (Extract, Transform, Load) et leurs fonctionnalités",
+                    "L'intégration des données provenant de sources hétérogènes",
+                    "La gestion des métadonnées dans un processus décisionnel",
+                    "Les bonnes pratiques de gestion des processus décisionnels"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Analyse et reporting dans les processus décisionnels",
+                "items": [
+                    "Les besoins en analyse et reporting dans les entreprises",
+                    "Les outils et techniques d'analyse de données (OLAP, data mining, dataviz)",
+                    "La création de tableaux de bord et de rapports pertinents",
+                    "L'interprétation des résultats et la prise de décision basée sur les données",
+                    "L'automatisation des rapports et des analyses"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Optimisation des modèles de données",
+                "items": [
+                    "L'évolution des modèles de données en fonction des besoins métier",
+                    "Les techniques d'optimisation des requêtes dans les modèles de données",
+                    "L'indexation et la partitionnement des tables pour améliorer les performances",
+                    "L'optimisation de la gestion des clés et des contraintes",
+                    "Les bonnes pratiques pour maintenir la qualité des modèles de données"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Concepts fondamentaux des processus décisionnels et modèles de données",
+            "context": "Identifier les différents types de modèles de données (relationnel, dimensionnel, en étoile, en flocon) adaptés à des scénarios métier spécifiques et justifier les choix.",
+            "objective": "Comparer et sélectionner des modèles de données adaptés à un contexte décisionnel."
+        },
+        {
+            "title": "Conception et modélisation des entrepôts de données",
+            "context": "Choisir une approche de modélisation (top-down, bottom-up, hybrid) pour concevoir un entrepôt de données adapté à un cas d'étude et justifier ce choix.",
+            "objective": "Concevoir une architecture d'entrepôt de données cohérente."
+        },
+        {
+            "title": "Mise en œuvre des processus décisionnels",
+            "context": "Intégrer des données hétérogènes dans un entrepôt via un outil ETL et décrire la gestion des métadonnées.",
+            "objective": "Mettre en œuvre un processus décisionnel complet."
+        },
+        {
+            "title": "Analyse et reporting dans les processus décisionnels",
+            "context": "Réaliser une analyse approfondie à partir d'un jeu de données réel et produire des tableaux de bord et rapports pertinents.",
+            "objective": "Créer des outils de BI adaptés à la prise de décision."
+        },
+        {
+            "title": "Optimisation des modèles de données",
+            "context": "Identifier des opportunités d'optimisation d'un modèle existant (indexation, partitionnement, gestion des clés) et proposer des améliorations.",
+            "objective": "Optimiser les performances d'un modèle décisionnel."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Building the Data Warehouse",
+            "author": "Inmon, W. H."
+        },
+        {
+            "title": "The Data Warehouse Toolkit : The Definitive Guide to Dimensional Modeling",
+            "author": "Kimball, R., & Ross, M."
+        },
+        {
+            "title": "Data Warehouse Design : Modern Principles and Methodologies",
+            "author": "Golfarelli, M., & Rizzi, S."
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}

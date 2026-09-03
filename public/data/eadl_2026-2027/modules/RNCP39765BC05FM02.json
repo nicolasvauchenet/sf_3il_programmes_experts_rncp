@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM02",
+        "title": "Processus ETL et intégration de données",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C28",
+            "description": "Mise en œuvre de processus ETL (Extract, Transform, Load) par l'extraction de données de différentes sources, et en les transformant selon les besoins métier pour les charger dans des systèmes de stockage centralisés"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les concepts fondamentaux des processus ETL (Comprendre) Maîtriser les techniques d'extraction, de transformation et de chargement des données (Appliquer) Optimiser les performances de ces processus dans le cadre d'une architecture de données décisionnelles (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en gestion de bases de données et en systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux processus ETL",
+                "items": [
+                    "Comprendre les concepts de base des processus ETL",
+                    "Identifier les enjeux liés à l'intégration de données",
+                    "Comprendre le rôle des processus ETL dans l'architecture de données décisionnelles",
+                    "Présenter les différents outils et technologies utilisés dans les processus ETL",
+                    "Illustrer les étapes clés d'un processus ETL"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Extraction des données",
+                "items": [
+                    "Comprendre les différentes sources de données",
+                    "Identifier les méthodes d'extraction des données",
+                    "Maîtriser les techniques d'extraction des données structurées et non structurées",
+                    "Présenter les bonnes pratiques pour l'extraction des données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Transformation des données",
+                "items": [
+                    "Comprendre l'importance de la transformation des données",
+                    "Maîtriser les différentes techniques de transformation des données",
+                    "Aborder les méthodes de nettoyage, de filtrage et d'enrichissement des données",
+                    "Présenter les outils et technologies pour la transformation des données"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Chargement des données",
+                "items": [
+                    "Comprendre les enjeux liés au chargement des données",
+                    "Maîtriser les différentes méthodes de chargement des données",
+                    "Aborder les bonnes pratiques pour le chargement des données",
+                    "Présenter les outils et technologies pour le chargement des données"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Optimisation des processus ETL",
+                "items": [
+                    "Comprendre les principes d'optimisation des processus ETL",
+                    "Identifier les points critiques des processus ETL",
+                    "Maîtriser les techniques d'optimisation des performances",
+                    "Aborder les bonnes pratiques pour l'optimisation des processus ETL"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Concept des processus ETL",
+            "objectif": "Savoir expliquer les concepts de base des processus ETL et leur rôle dans une architecture décisionnelle.",
+            "instructions": "Vous êtes chargé de présenter à vos collègues les concepts de base des processus ETL. Concevez une présentation succincte illustrant les enjeux liés à l'intégration de données et le rôle des processus ETL dans l'architecture de données décisionnelles, en vous appuyant sur des exemples concrets.",
+            "livrable": "Une présentation succincte exposant les concepts des processus ETL, les enjeux de l'intégration de données et leur rôle dans l'architecture décisionnelle, illustrée d'exemples concrets."
+        },
+        {
+            "title": "Extraction des données",
+            "objectif": "Être capable de mettre en place un processus d'extraction de données depuis une source donnée.",
+            "instructions": "Vous devez extraire des données à partir de différentes sources pour alimenter un entrepôt de données. Choisissez une source de données (par exemple un fichier CSV, une base de données relationnelle ou une API) et mettez en place un processus d'extraction en identifiant les différentes étapes à suivre et en expliquant les méthodes que vous utiliseriez.",
+            "livrable": "La description d'un processus d'extraction pour la source choisie, précisant les étapes suivies et les méthodes employées."
+        },
+        {
+            "title": "Transformation des données",
+            "objectif": "Savoir nettoyer et enrichir un jeu de données à l'aide des techniques de transformation.",
+            "instructions": "Vous avez reçu un jeu de données contenant des erreurs, des doublons et des valeurs manquantes. Mettez en place un processus de nettoyage et d'enrichissement des données en utilisant les techniques de transformation que vous avez apprises, puis présentez les résultats obtenus après la transformation.",
+            "livrable": "Le processus de transformation appliqué et les résultats obtenus après nettoyage et enrichissement du jeu de données."
+        },
+        {
+            "title": "Chargement des données",
+            "objectif": "Être capable de choisir et de mettre en œuvre une méthode de chargement de données adaptée.",
+            "instructions": "Vous devez charger des données transformées dans une base de données. Choisissez une méthode de chargement (par lot, en continu ou par incrément) et expliquez comment vous la mettriez en œuvre en tenant compte des bonnes pratiques et des contraintes de performance.",
+            "livrable": "La description de la méthode de chargement retenue et de sa mise en œuvre, intégrant les bonnes pratiques et la prise en compte des contraintes de performance."
+        },
+        {
+            "title": "Optimisation des processus ETL",
+            "objectif": "Savoir analyser et optimiser les performances d'un processus ETL existant.",
+            "instructions": "Analysez un processus ETL existant en identifiant ses points critiques et en proposant des pistes d'optimisation pour améliorer ses performances, en mettant en avant les bonnes pratiques d'optimisation des processus ETL.",
+            "livrable": "Une analyse du processus ETL identifiant ses points critiques, accompagnée de recommandations d'optimisation fondées sur les bonnes pratiques."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Fundamentals of Data Engineering",
+            "author": "Reis, J. & Housley, M"
+        },
+        {
+            "title": "The Data Warehouse ETL Toolkit (2e éd.)",
+            "author": "Kimball, R. et al"
+        },
+        {
+            "title": "Data Pipelines Pocket Reference",
+            "author": "Densmore, J"
+        }
+    ],
+    "OnlineResources": [
+        "Apache Airflow Documentation (https://airflow.apache.org/docs/) [EN]",
+        "dbt Documentation (https://docs.getdbt.com) [EN]",
+        "Talend Documentation (https://help.talend.com) [FR/EN]",
+        "Matillion Documentation (https://docs.matillion.com) [EN]",
+        "Microsoft Data Factory (https://learn.microsoft.com/azure/data-factory/) [FR/EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

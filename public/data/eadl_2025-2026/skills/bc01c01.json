@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "type": "skill",
+        "code": "RNCP39765-BC01-C01",
+        "title": "Définition et mise en place de la veille technologique, normative et législative",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l’architecture logicielle",
+        "academicYear": "2025-2026"
+    },
+    "description": "Mettre en place une veille technologique, normative, et législative en analysant des contenus de diverses sources d'informations multilingues afin d’identifier les nouvelles tendances, technologies et meilleures pratiques dans le domaine du développement et de l'architecture logicielle, afin de proposer des solutions innovantes et d'anticiper les évolutions du marché.",
+    "criteria": [
+        "Sélection et pertinence des sources : Les sources d'information choisies doivent être pertinentes et crédibles, couvrant divers domaines technologiques liés aux objectifs du projet.",
+        "Maîtrise de l'anglais technique : L’exploitation des sources en langue anglaise à contribuer à obtenir des informations pertinentes pour optimiser la gestion de projet.",
+        "Vérification et exactitude des informations : Les informations collectées sont vérifiées pour leur exactitude et leur actualité, en utilisant des critères d'évaluation clairs pour établir la fiabilité de chaque source.",
+        "Utilisation d'outils de collecte : Des outils de collecte et d'analyse de données sont employés efficacement pour organiser et stocker les informations dans une base de connaissance structurée et consultable.",
+        "Analyse et synthèse des données : Aptitude à analyser les informations recueillies, à en faire la synthèse et à en tirer des conclusions logiques et applicables au contexte du projet."
+    ]
+}

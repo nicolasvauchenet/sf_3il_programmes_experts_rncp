@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC02-FM03",
+        "title": "Management des hommes",
+        "rncpCode": "39765",
+        "blocCode": "BC02",
+        "blocName": "Manager les projets numériques",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Coordonner les équipes de projet (incluant les personnes en situation de handicap), en utilisant des outils collaboratifs tel que Trello ou Kanban et des outils de ticketing comme Jira pour le suivi des tâches, la résolution des problèmes en lien avec les équipes exploitation afin de garantir la maintenabilité du projet et d'ajuster la planification en fonction des écarts identifiés."
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs de ce module de cours sont de comprendre les principes fondamentaux de l'agilité et le rôle du chef de projet dans cet environnement, d'apprendre à planifier et suivre efficacement un projet agile, et de savoir gérer les risques, les changements, ainsi que la communication et la collaboration dans une équipe agile."
+    },
+    "prerequisites": {
+        "description": "Une connaissance de base en gestion de projet et une familiarité avec les concepts de travail en équipe sont recommandées."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Gestion des ressources humaines",
+                "items": [
+                    "Recrutement et intégration",
+                    "Gestion des compétences et des carrières",
+                    "Gestion des performances",
+                    "Développement des collaborateurs",
+                    "Gestion des conflits"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Communication et leadership",
+                "items": [
+                    "Communication interpersonnelle",
+                    "Leadership et motivation",
+                    "Gestion de l'équipe",
+                    "Prise de décision",
+                    "Gestion du changement"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Organisation et management",
+                "items": [
+                    "Structure organisationnelle",
+                    "Gestion du temps et des priorités",
+                    "Délégation et responsabilisation",
+                    "Culture d'entreprise",
+                    "Gestion de la diversité"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des équipes projets",
+                "items": [
+                    "Formation des équipes",
+                    "Suivi et évaluation",
+                    "Cohésion d'équipe",
+                    "Gestion des risques humains",
+                    "Gestion des intérêts individuels et collectifs"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Résolution des conflits et négociation",
+                "items": [
+                    "Identification des conflits",
+                    "Stratégies de résolution",
+                    "Négociation et compromis",
+                    "Médiation",
+                    "Renforcement des relations interpersonnelles"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Gestion des compétences et des carrières",
+            "context": "Imaginez que vous êtes responsable des ressources humaines dans une entreprise. Vous devez créer un plan de développement des compétences pour l'ensemble des collaborateurs. Décrivez les étapes que vous allez mettre en place pour identifier les besoins en compétences, élaborer un plan de formation et assurer le suivi de son déploiement.",
+            "objective": "Créer un plan structuré de développement des compétences et en assurer le suivi."
+        },
+        {
+            "title": "Gestion de l'équipe",
+            "context": "Vous êtes promu(e) responsable d'une équipe et vous faites face à des conflits récurrents entre les membres. Proposez une stratégie de communication et de gestion de ces conflits. Expliquez comment vous allez aborder la situation et mettre en place des actions concrètes pour favoriser la résolution des conflits et renforcer la cohésion de l'équipe.",
+            "objective": "Mettre en place une stratégie efficace de gestion des conflits et de renforcement de la cohésion d'équipe."
+        },
+        {
+            "title": "Gestion du temps et des priorités",
+            "context": "Identifiez les principaux obstacles à une gestion efficace du temps au sein d'une équipe. En vous basant sur ces obstacles, élaborez un plan d'action concret pour améliorer la gestion du temps et des priorités. Expliquez comment vous allez sensibiliser les membres de l'équipe à cette démarche et mesurer les résultats de vos actions.",
+            "objective": "Améliorer la gestion du temps et des priorités au sein d'une équipe par un plan d'action structuré."
+        },
+        {
+            "title": "Suivi et évaluation des équipes projets",
+            "context": "Vous pilotez un projet important au sein de votre entreprise et vous devez mettre en place un système de suivi et d'évaluation pour garantir la bonne progression du projet. Décrivez les outils que vous allez utiliser pour mesurer les performances de l'équipe, évaluer les risques et assurer le respect des délais. Proposez également des actions correctives en cas de dérive par rapport aux objectifs initiaux.",
+            "objective": "Mettre en place un système structuré de suivi et d'évaluation des performances d'une équipe projet."
+        },
+        {
+            "title": "Stratégies de résolution de conflits",
+            "context": "À partir d'une étude de cas fictive mettant en scène un conflit au sein d'une équipe, proposez une analyse détaillée du conflit et identifiez les différentes stratégies de résolution possibles. Choisissez la stratégie qui vous semble la plus adaptée à la situation et justifiez votre choix. Présentez ensuite un plan d'action étape par étape pour mettre en œuvre cette stratégie et assurer la résolution du conflit.",
+            "objective": "Analyser un conflit et mettre en œuvre une stratégie adaptée de résolution."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Management des ressources humaines : enjeux et démarches",
+            "author": "Thomas Durand"
+        },
+        {
+            "title": "Le leadership positif : comment mobiliser vos équipes et réussir collectivement",
+            "author": "Michel Barry"
+        },
+        {
+            "title": "Comportements organisationnels",
+            "author": "Stephen P. Robbins, Timothy A. Judge"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Travaux de groupe",
+        "Support d'apprentissage (Présentation, Vidéo, etc.)"
+    ]
+}
