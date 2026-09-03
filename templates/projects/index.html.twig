@@ -25,7 +25,6 @@
 
             <article class="printable-content">
                 {% if pdfMode|default(false) %}
-                    {% set chapters = project.outline.chapters ?? [] %}
                     <section class="pdf-cover">
                         <div class="pdf-cover-kicker">Fiche projet</div>
                         <div class="pdf-cover-program">{{ promotionContext.promotionTitle }}</div>
@@ -39,8 +38,6 @@
                         </tr></table>
                         <table class="pdf-cover-stats"><tr>
                             <td><strong>{{ project.skills|length }}</strong><span>Compétences</span></td>
-                            <td><strong>{{ chapters|length }}</strong><span>Chapitres</span></td>
-                            <td><strong>{{ project.exercises|length }}</strong><span>Exercices</span></td>
                             <td><strong>{{ project.modules|length }}</strong><span>Matières</span></td>
                             <td><strong>{{ project.evaluations|length }}</strong><span>Évaluations</span></td>
                         </tr></table>

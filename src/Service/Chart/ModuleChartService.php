@@ -20,17 +20,17 @@ final readonly class ModuleChartService
     public function createModuleVolumeChart(ResolvedModuleSheet $module): Chart
     {
         $skillsCount = count($module->skills);
-        $chaptersCount = count($module->outline['chapters'] ?? []);
-        $exercisesCount = count($module->exercises);
+        $projectsCount = count($module->projects);
+        $evaluationsCount = count($module->evaluations);
 
         $chart = $this->chartBuilder->createChart(Chart::TYPE_BAR);
 
         $chart->setData([
-            'labels' => ['Compétences', 'Chapitres', 'Exercices'],
+            'labels' => ['Compétences', 'Projets', 'Évaluations'],
             'datasets' => [
                 [
                     'label' => 'Volumétrie du module',
-                    'data' => [$skillsCount, $chaptersCount, $exercisesCount],
+                    'data' => [$skillsCount, $projectsCount, $evaluationsCount],
                     'backgroundColor' => [
                         $this->hexToRgba(self::COLOR_BLUE, 1),
                         $this->hexToRgba(self::COLOR_ORANGE, 1),
