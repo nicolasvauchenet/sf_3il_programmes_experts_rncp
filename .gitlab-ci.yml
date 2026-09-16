@@ -19,6 +19,7 @@ ci:composer:
         - composer validate --no-check-publish
         - composer audit
     rules:
+        -   if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
         -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
 
 ci:phpunit:
@@ -35,6 +36,7 @@ ci:phpunit:
         - php bin/console lint:twig templates
         - php bin/phpunit
     rules:
+        -   if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
         -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
 
 deploy:prod:
@@ -69,5 +71,5 @@ deploy:prod:
             && docker compose ps
             && curl --retry 5 --retry-delay 2 --retry-connrefused -f http://127.0.0.1 || exit 1"
     rules:
-        -   if: '$CI_COMMIT_BRANCH == "main"'
+        -   if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "main"'
             when: on_success

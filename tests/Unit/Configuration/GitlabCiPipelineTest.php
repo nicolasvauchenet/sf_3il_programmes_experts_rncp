@@ -14,11 +14,35 @@ final class GitlabCiPipelineTest extends TestCase
         $configuration = Yaml::parseFile($this->projectPath('.gitlab-ci.yml'));
         $rules = $configuration['ci:phpunit']['rules'] ?? [];
 
+        self::assertContains(['if' => '$CI_PIPELINE_SOURCE == "merge_request_event"'], $rules);
         self::assertContains(
             ['if' => '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'],
             $rules,
         );
         self::assertNotContains(['when' => 'never'], $rules);
+    }
+
+    public function testComposerJobIsEnabledOnMergeRequestsDevelopAndMain(): void
+    {
+        $configuration = Yaml::parseFile($this->projectPath('.gitlab-ci.yml'));
+        $rules = $configuration['ci:composer']['rules'] ?? [];
+
+        self::assertContains(['if' => '$CI_PIPELINE_SOURCE == "merge_request_event"'], $rules);
+        self::assertContains(
+            ['if' => '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'],
+            $rules,
+        );
+    }
+
+    public function testProductionDeploymentOnlyRunsAfterPushOnMain(): void
+    {
+        $configuration = Yaml::parseFile($this->projectPath('.gitlab-ci.yml'));
+        $rules = $configuration['deploy:prod']['rules'] ?? [];
+
+        self::assertContains(
+            ['if' => '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "main"', 'when' => 'on_success'],
+            $rules,
+        );
     }
 
     public function testPhpunitJobInstallsRuntimeExtensionsAndRunsChecks(): void
