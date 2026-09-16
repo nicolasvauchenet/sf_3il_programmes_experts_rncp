@@ -29,6 +29,16 @@ final class ApplicationConfigurationTest extends TestCase
         );
     }
 
+    public function testTestEnvironmentUsesDedicatedSqliteDatabase(): void
+    {
+        $testEnv = (string) file_get_contents($this->projectPath('.env.test'));
+
+        self::assertStringContainsString(
+            'DATABASE_URL="sqlite:///%kernel.project_dir%/var/test.db"',
+            $testEnv,
+        );
+    }
+
     private function projectPath(string $path): string
     {
         return dirname(__DIR__, 3) . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $path);
