@@ -1,29 +1,51 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
+    {{ promotionContext.promotionLabel ? promotionContext.promotionLabel | upper : 'Résumé du Référentiel' }}
     - Compétence {{ skill.fullSkillCode }} -
     {{ skill.title ?: '' }}
 {% endblock %}
 
 {% block body %}
-    {% include '_layout/default/_header.html.twig' %}
-    {% include '_layout/default/_alert.html.twig' %}
+    {% if not pdfMode|default(false) %}
+        {% include '_layout/default/_header.html.twig' %}
+        {% include '_layout/default/_alert.html.twig' %}
+    {% endif %}
 
     <main class="app-main">
-        <div class="app-grid third layout">
-            {% include '_layout/default/_toc.html.twig' with {
+        <div class="{{ pdfMode|default(false) ? '' : 'app-grid third layout' }}">
+            {% if not pdfMode|default(false) %}{% include '_layout/default/_toc.html.twig' with {
                 'title': 'Compétence',
                 'path': 'app_promotion_skills',
                 'promotion': promotion,
                 'year': year,
                 'content': skills,
                 'selectedCode': selectedCode
-            } %}
+            } %}{% endif %}
 
-            <article>
+            <article class="printable-content">
+                {% if pdfMode|default(false) %}
+                    <section class="pdf-cover">
+                        <div class="pdf-cover-kicker">Fiche compétence</div>
+                        <div class="pdf-cover-program">{{ promotionContext.promotionTitle }}</div>
+                        <div class="pdf-cover-code">{{ skill.fullSkillCode }}</div>
+                        <h1>{{ skill.title ?: 'Compétence' }}</h1>
+                        <div class="pdf-cover-rule"></div>
+                        <table class="pdf-cover-details"><tr>
+                            <td><span>Bloc de compétences</span><strong>{{ skill.blocCode }}</strong><small>{{ skill.blocName }}</small></td>
+                            <td><span>Promotion</span><strong>{{ promotion|upper }}</strong><small>{{ skill.academicYear ?: year }}</small></td>
+                            <td><span>Référence RNCP</span><strong>{{ skill.rncpCode ?: '—' }}</strong><small>{{ skill.skillCode }}</small></td>
+                        </tr></table>
+                        <table class="pdf-cover-stats"><tr>
+                            <td><strong>{{ skill.modules|length }}</strong><span>Matières</span></td>
+                            <td><strong>{{ skill.projects|length }}</strong><span>Projets</span></td>
+                            <td><strong>{{ skill.evaluations|length }}</strong><span>Évaluations</span></td>
+                        </tr></table>
+                        <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
+                    </section>
+                {% endif %}
                 <div class="app-grid third">
-                    <section class="app-section centered">
+                    {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
@@ -37,16 +59,21 @@
                             {% if skill.academicYear %}
                                 <span class="app-badge">{{ skill.academicYear }}</span>
                             {% endif %}
-                        </div>
-                    </section>
 
-                    <section class="app-section centered">
+                            {% if not pdfMode|default(false) %}
+                                {% include '_layout/default/_print_button.html.twig' %}
+                            {% endif %}
+                        </div>
+                    </section>{% endif %}
+
+                    {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h2>Métriques</h2>
 
                         <div style="height: 200px">
                             {{ render_chart(skillMetricsChart) }}
                         </div>
                     </section>
+                    {% endif %}
                 </div>
 
                 {% if skill.description is not empty %}
@@ -62,14 +89,13 @@
                         <h2>Critères d’évaluation</h2>
 
                         <div class="skill-criteria-list">
-
                             {% for criterion in skill.criteria %}
                                 {% set rawCriterion = criterion|trim %}
                                 {% set parts = rawCriterion|split(':', 2) %}
                                 {% set label = (parts[0] ?? '')|trim %}
                                 {% set details = (parts[1] ?? '')|trim %}
 
-                                <section class="app-section mb-2">
+                                <section class="app-section pdf-skill mb-2">
                                     <p>
                                         {% if details %}
                                             <strong>{{ label }}</strong>
@@ -81,12 +107,11 @@
                                     </p>
                                 </section>
                             {% endfor %}
-
                         </div>
                     </section>
                 {% endif %}
 
-                <div class="app-grid two">
+                <div class="app-grid two pdf-associations">
                     {% if skill.modules is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
                             <h2>Matières associées</h2>
@@ -98,9 +123,9 @@
                                             <a href="{{ path('app_promotion_modules', {
                                                 'promotion': promotion,
                                                 'year': year,
-                                                'code': (skill.blocCode ~ module.code) | lower
+                                                'code': module.fullCode
                                             }) }}">
-                                                <strong>{{ skill.blocCode }}{{ module.code | upper }}</strong>
+                                                <strong>{{ module.fullCode | upper }}</strong>
                                             </a>
                                         </p>
 
@@ -111,9 +136,33 @@
                         </section>
                     {% endif %}
 
-                    {% if skill.evaluations is not empty %}
+                    {% if skill.projects is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Evaluations associées</h2>
+                            <h2>Projets associés</h2>
+
+                            <div class="app-grid">
+                                {% for project in skill.projects %}
+                                    <section class="app-section mx-0 my-0">
+                                        <p class="mb-0">
+                                            <a href="{{ path('app_promotion_projects', {
+                                                'promotion': promotion,
+                                                'year': year,
+                                                'code': project.code
+                                            }) }}">
+                                                <strong>{{ project.code | upper }}</strong>
+                                            </a>
+                                        </p>
+
+                                        <p class="subtitle text-left mb-0">{{ project.title ?: '-' }}</p>
+                                    </section>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if skill.evaluations is not empty %}
+                        <section class="app-section mx-0  mb-0">
+                            <h2>Évaluations associées</h2>
 
                             <div class="app-grid">
                                 {% for evaluation in skill.evaluations %}
@@ -122,9 +171,9 @@
                                             <a href="{{ path('app_promotion_evaluations', {
                                                 'promotion': promotion,
                                                 'year': year,
-                                                'code': (skill.blocCode ~ evaluation.code) | lower
+                                                'code': evaluation.code
                                             }) }}">
-                                                <strong>{{ skill.blocCode }}{{ evaluation.code | upper }}</strong>
+                                                <strong>{{ evaluation.code | upper }}</strong>
                                             </a>
                                         </p>
 
@@ -139,5 +188,5 @@
         </div>
     </main>
 
-    {% include '_layout/default/_footer.html.twig' %}
+    {% if not pdfMode|default(false) %}{% include '_layout/default/_footer.html.twig' %}{% endif %}
 {% endblock %}

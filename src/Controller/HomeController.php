@@ -26,14 +26,53 @@ final class HomeController extends AbstractController
             $contexts
         )));
 
+        $yearsByPromotion = [];
+
+        foreach ($contexts as $context) {
+            $promotionCode = $context->promotionCode;
+            $academicYear = $context->academicYear;
+
+            if (!isset($yearsByPromotion[$promotionCode])) {
+                $yearsByPromotion[$promotionCode] = [];
+            }
+
+            $yearsByPromotion[$promotionCode][] = $academicYear;
+        }
+
+        foreach ($yearsByPromotion as &$years) {
+            $years = array_values(array_unique($years));
+            rsort($years);
+        }
+        unset($years);
+
         sort($allPromotions);
         rsort($allYears);
+
+        $isStudent = $this->isGranted('ROLE_STUDENT');
+
+        if ($isStudent) {
+            $allYears = [];
+
+            foreach ($yearsByPromotion as $promotionCode => $years) {
+                $latestYear = $years[0] ?? null;
+                $yearsByPromotion[$promotionCode] = $latestYear === null ? [] : [$latestYear];
+
+                if ($latestYear !== null) {
+                    $allYears[] = $latestYear;
+                }
+            }
+
+            $allYears = array_values(array_unique($allYears));
+            rsort($allYears);
+        }
 
         return $this->render('home/index.html.twig', [
             'allPromotions' => $allPromotions,
             'allYears' => $allYears,
+            'yearsByPromotion' => $yearsByPromotion,
             'selectedPromotion' => null,
-            'selectedYear' => null,
+            'selectedYear' => $isStudent ? ($allYears[0] ?? null) : null,
+            'isStudent' => $isStudent,
         ]);
     }
 }

@@ -1,0 +1,143 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC04-FM02",
+        "title": "Cahier des Charges et Appels d'Offres",
+        "rncpCode": "39781",
+        "blocCode": "BC04",
+        "blocName": "Piloter les projets et la conduite du changement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Piloter un projet au moyen d'une méthode de gestion de projet et des outils adaptés au contexte, en analysant le besoin, en rédigeant les documents d'initialisation et de suivi de projet adaptés à la méthode, en mobilisant les ressources et moyens nécessaires, pour gérer les équipes, s'assurer que les solutions déployées répondent aux attentes de l'entreprise et garantir la qualité des livrables, le respect des délais et des coûts"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre l'importance et les enjeux du cahier des charges et des appels d'offres (Comprendre) Maîtriser la rédaction de ces documents (Créer) Évaluer et répondre efficacement aux appels d'offres (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet et compréhension générale des processus commerciaux et administratifs."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction au Cahier des Charges et Appels d'Offres",
+                "items": [
+                    "Comprendre la définition et l'importance du cahier des charges",
+                    "Connaître le rôle des appels d'offres dans la gestion de projets",
+                    "Identifier les différents types de cahiers des charges et d'appels d'offres",
+                    "Comprendre les enjeux liés à la rédaction d'un cahier des charges et à la réponse à un appel d'offres",
+                    "Connaître les étapes clés de la procédure d'appel d'offres"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Rédaction d'un Cahier des Charges",
+                "items": [
+                    "Comprendre les éléments essentiels à inclure dans un cahier des charges",
+                    "Savoir rédiger des spécifications techniques claires et précises",
+                    "Maîtriser la structuration et la présentation d'un cahier des charges",
+                    "Apprendre à inclure les clauses contractuelles et les exigences réglementaires",
+                    "Connaître les bonnes pratiques en termes de rédaction et de validation d'un cahier des charges"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Réponse à un Appel d'Offres",
+                "items": [
+                    "Comprendre les attentes et les contraintes liées à la réponse à un appel d'offres",
+                    "Savoir analyser un cahier des charges et identifier les éléments clés",
+                    "Maîtriser la méthodologie de réponse à un appel d'offres",
+                    "Apprendre à rédiger une proposition commerciale convaincante",
+                    "Connaître les étapes de préparation et de soumission d'une offre"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Évaluation des Offres",
+                "items": [
+                    "Comprendre les critères d'évaluation des offres",
+                    "Savoir mettre en place une grille d'évaluation objective",
+                    "Maîtriser les techniques d'analyse des offres",
+                    "Apprendre à mener des négociations avec les soumissionnaires",
+                    "Connaître les étapes de sélection du fournisseur ou du prestataire"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des Risques liés aux Cahiers des Charges et Appels d'Offres",
+                "items": [
+                    "Comprendre les risques associés à un cahier des charges mal rédigé",
+                    "Savoir identifier et évaluer les risques dans un processus d'appel d'offres",
+                    "Maîtriser les stratégies de gestion des risques liés à la rédaction et à la réponse à un appel d'offres",
+                    "Apprendre à anticiper et à minimiser les impacts des risques sur le projet",
+                    "Connaître les bonnes pratiques en matière de gestion des risques dans ce contexte"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Rédaction d'un cahier des charges simplifié",
+            "objectif": "Être capable de rédiger un cahier des charges simplifié clair, structuré et précis pour un projet informatique.",
+            "instructions": "En tant que chef de projet dans une entreprise qui souhaite développer une nouvelle application mobile de gestion de tâches, rédigez un cahier des charges simplifié pour ce projet. Le document doit comprendre : une introduction présentant l'objectif de l'application mobile ; les spécifications techniques générales (plateformes supportées, contraintes de performance, etc.) ; une section détaillée des fonctionnalités attendues (création de tâches, notifications, gestion des priorités, etc.) ; les clauses contractuelles essentielles (délais de livraison, pénalités en cas de retard, propriété intellectuelle) ; et les exigences réglementaires spécifiques à prendre en compte (protection des données personnelles, accessibilité, etc.).",
+            "livrable": "Un cahier des charges simplifié clair, structuré et précis comprenant l'introduction, les spécifications techniques générales, le détail des fonctionnalités attendues, les clauses contractuelles essentielles et les exigences réglementaires."
+        },
+        {
+            "title": "Analyse d'un appel d'offres",
+            "objectif": "Savoir analyser un cahier des charges d'appel d'offres et en identifier les éléments clés.",
+            "instructions": "Vous recevez un appel d'offres pour la fourniture et l'installation d'un système de vidéosurveillance dans un complexe commercial. Analysez le cahier des charges fourni par le client et rédigez un résumé identifiant les éléments clés suivants : les objectifs du projet de vidéosurveillance ; les spécifications techniques exigées pour le système ; les critères de sélection mentionnés par le client ; les délais de réalisation et les pénalités en cas de non-respect ; toute exigence spécifique ou clause susceptible d'influencer votre proposition. Ce résumé servira de base à la préparation d'une future proposition commerciale.",
+            "livrable": "Un résumé d'analyse de l'appel d'offres identifiant les objectifs du projet, les spécifications techniques exigées, les critères de sélection, les délais et pénalités, et les exigences ou clauses particulières, destiné à préparer la proposition commerciale."
+        },
+        {
+            "title": "Création d'une grille d'évaluation des offres",
+            "objectif": "Être capable de construire une grille d'évaluation objective et pondérée pour comparer des offres.",
+            "instructions": "En tant que responsable des achats ayant reçu plusieurs propositions en réponse à un appel d'offres pour le service de nettoyage des locaux, créez une grille d'évaluation objective pour comparer les offres reçues. La grille doit inclure au moins cinq critères d'évaluation, chacun assorti d'une pondération (par exemple : prix, qualité du service proposé, expérience du prestataire, références clients et conformité aux exigences réglementaires). Expliquez brièvement la raison de la pondération retenue pour chaque critère.",
+            "livrable": "Une grille d'évaluation objective comportant au moins cinq critères pondérés et la justification de la pondération de chaque critère."
+        },
+        {
+            "title": "Rédaction d'une proposition commerciale",
+            "objectif": "Être capable de rédiger une proposition commerciale convaincante et conforme au cahier des charges.",
+            "instructions": "Votre entreprise de services informatiques souhaite répondre à un appel d'offres pour la maintenance du parc informatique d'une grande organisation. Rédigez une proposition commerciale comprenant : une lettre d'introduction mettant en avant votre compréhension des besoins du client et les raisons pour lesquelles votre entreprise est le meilleur choix ; une présentation de votre entreprise et de ses qualifications ; une description détaillée de l'offre de services (aspects techniques, planning de mise en oeuvre et support après-vente) ; un devis financier détaillé ; et des témoignages ou études de cas démontrant votre expérience sur des projets similaires. Veillez à ce que la proposition soit convaincante et conforme aux exigences du cahier des charges.",
+            "livrable": "Une proposition commerciale complète et conforme au cahier des charges, comprenant la lettre d'introduction, la présentation de l'entreprise, la description détaillée de l'offre de services, le devis financier détaillé et des témoignages ou études de cas."
+        },
+        {
+            "title": "Étude de cas sur la gestion des risques",
+            "objectif": "Être capable d'analyser les risques liés à un cahier des charges mal rédigé et de proposer des stratégies de prévention.",
+            "instructions": "En tant que consultant en gestion des risques intervenant dans une entreprise qui a récemment perdu beaucoup d'argent à cause d'un cahier des charges mal rédigé ayant entraîné des ambiguïtés contractuelles, réalisez une étude de cas sur cet incident. Vous devez : identifier les risques associés au cahier des charges initial ; évaluer l'impact de ces risques sur le projet et l'entreprise ; proposer des stratégies de gestion des risques pour éviter la répétition d'un tel scénario ; et développer des recommandations pour améliorer les processus de rédaction et de validation des futurs cahiers des charges. Cette étude de cas doit servir de guide pour prévenir les risques liés aux cahiers des charges et appels d'offres dans l'entreprise.",
+            "livrable": "Une étude de cas identifiant les risques du cahier des charges initial, évaluant leur impact, proposant des stratégies de gestion des risques et formulant des recommandations pour améliorer la rédaction et la validation des futurs cahiers des charges."
+        },
+        {
+            "title": "Mise en situation de négociation avec un soumissionnaire",
+            "objectif": "Être capable de préparer et de conduire une négociation avec un soumissionnaire retenu à l'issue de l'évaluation des offres, dans le respect des critères et de l'équité de traitement.",
+            "instructions": "À l'issue de l'évaluation des offres pour un projet de refonte du système d'information de gestion des ressources humaines, deux prestataires arrivent en tête de la grille d'évaluation. Vous êtes le responsable des achats et vous engagez une phase de négociation avec le soumissionnaire le mieux classé avant l'attribution définitive du marché. Préparez et jouez cette négociation en produisant : une fiche de préparation identifiant vos objectifs, vos points négociables (prix, délais, périmètre fonctionnel, engagements de service et pénalités, transfert de compétences) et, pour chacun, votre position affichée, votre objectif cible et votre point de rupture ; une analyse de votre BATNA (meilleure solution de rechange, notamment le recours au second prestataire) ; puis rédiger le script d'un entretien de négociation d'environ deux pages, sous forme de dialogue entre vous et le représentant du prestataire, aboutissant à un accord équilibré. La négociation doit rester conforme aux exigences du cahier des charges et respecter l'égalité de traitement des candidats. Concluez par une synthèse des points d'accord et des concessions réciproques à formaliser dans le contrat.",
+            "livrable": "Un dossier de négociation comprenant la fiche de préparation (objectifs, points négociables avec position affichée, objectif cible et point de rupture), l'analyse du BATNA, le script de l'entretien de négociation sous forme de dialogue aboutissant à un accord équilibré, et une synthèse des points d'accord et des concessions réciproques à formaliser dans le contrat."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Management d'un projet système d'information (10e éd.). Dunod. AFNOR. (2023). Norme NF X50-151 Cahier des charges fonctionnel",
+            "author": "Morley, C"
+        },
+        {
+            "title": "Rédiger son cahier des charges informatique",
+            "author": "Barré, C"
+        }
+    ],
+    "OnlineResources": [
+        "AFNOR - Norme NF X50-151 (https://www.afnor.org) [FR]",
+        "Marchés publics - Service-Public (https://www.service-public.fr/professionnels-entreprises) [FR]",
+        "DINUM - Guides d'achats numériques (https://www.numerique.gouv.fr) [FR]",
+        "CIGREF (https://www.cigref.fr) [FR]",
+        "BABOK Guide (https://www.iiba.org/babok-guide/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

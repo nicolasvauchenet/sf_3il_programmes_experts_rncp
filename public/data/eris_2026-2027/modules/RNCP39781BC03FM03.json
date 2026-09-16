@@ -1,0 +1,145 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM03",
+        "title": "Infrastructures sécurisées",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Manager la cybersécurité de l'entreprise : politique, audit, défense, SOC et forensique",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Participer à l'élaboration et à la mise en œuvre de la Politique de Sécurité des Systèmes d'Information (PSSI) de l'entreprise, en s'appuyant sur les standards et sur une analyse des risques de sécurité, en définissant des mesures, rôles, responsabilités, procédures et protocoles, en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI), pour protéger les données et les systèmes de l'entreprise"
+        },
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue"
+        },
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l'infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d'attaques et d'outils d'analyse de sécurité afin d'évaluer la robustesse des systèmes et la réactivité des équipes"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de la sécurisation des infrastructures, réseaux, systèmes et applications (Comprendre) Analyser les modèles de menaces applicables à une infrastructure critique (Analyser) Mettre en œuvre les contre-mesures appropriées sur l'ensemble des couches techniques (Créer)"
+    },
+    "prerequisites": {
+        "description": "Les apprenants doivent avoir des connaissances de base en informatique et en réseau, ainsi qu'une compréhension des concepts fondamentaux de la sécurité de l'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondements des infrastructures sécurisées",
+                "items": [
+                    "Principes de base de la sécurité des infrastructures",
+                    "Modèles de menaces et attaques courantes",
+                    "Mécanismes de défense des infrastructures",
+                    "Enjeux de la sécurisation des infrastructures",
+                    "Bonnes pratiques de sécurisation des infrastructures"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Sécurité des réseaux",
+                "items": [
+                    "Concepts de base des réseaux sécurisés",
+                    "Protocoles de sécurité des réseaux",
+                    "Sécurisation des accès distants",
+                    "Gestion des identités et des accès",
+                    "Surveillance et détection des menaces réseau"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Sécurité des systèmes d'exploitation",
+                "items": [
+                    "Mécanismes de sécurité des systèmes d'exploitation",
+                    "Gestion des correctifs de sécurité",
+                    "Configuration sécurisée des systèmes d'exploitation",
+                    "Surveillance des activités des systèmes",
+                    "Protection contre les malwares et les ransomwares"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sécurité des applications",
+                "items": [
+                    "Principes de sécurité des applications",
+                    "Méthodes d'authentification et d'autorisation",
+                    "Gestion des vulnérabilités des applications",
+                    "Sécurisation des échanges de données",
+                    "Bonnes pratiques de développement sécurisé"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurité physique et environnementale",
+                "items": [
+                    "Contrôle d'accès physique",
+                    "Surveillance des locaux et des équipements",
+                    "Sécurisation des infrastructures énergétiques",
+                    "Gestion des incidents physiques",
+                    "Protection des équipements sensibles"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Fondements des infrastructures sécurisées",
+            "objectif": "Savoir élaborer un plan de sécurisation des infrastructures fondé sur les principes de base.",
+            "instructions": "Vous êtes responsable de la sécurité des infrastructures d'une entreprise et avez identifié plusieurs failles potentielles dans le réseau et les systèmes. Identifiez les modèles de menaces potentiels pour ces infrastructures, proposez au moins trois mécanismes de défense pour contrer ces menaces et énumérez les enjeux spécifiques liés à la sécurisation des infrastructures en proposant des solutions pour y faire face.",
+            "livrable": "Un plan de sécurisation des infrastructures présentant les modèles de menaces, les mécanismes de défense, les enjeux et leurs solutions, ainsi qu'au moins cinq bonnes pratiques de sécurisation recommandées."
+        },
+        {
+            "title": "Sécurité des réseaux",
+            "objectif": "Être capable de définir des mesures de sécurisation d'un réseau d'entreprise.",
+            "instructions": "Dans le cadre de la sécurisation des réseaux de l'entreprise, identifiez les différents protocoles de sécurité réseau que vous pourriez mettre en place, proposez un plan de sécurisation pour les accès distants à travers des réseaux publics et détaillez les étapes de gestion des identités et des accès au sein du réseau.",
+            "livrable": "Un dossier de sécurisation réseau présentant les protocoles retenus, le plan de sécurisation des accès distants, la démarche de gestion des identités et des accès et la méthode de surveillance et de détection des menaces réseau."
+        },
+        {
+            "title": "Sécurité des systèmes d'exploitation",
+            "objectif": "Savoir sécuriser les systèmes d'exploitation d'une entreprise contre les attaques.",
+            "instructions": "L'entreprise utilise divers systèmes d'exploitation que vous devez sécuriser contre les attaques potentielles. Expliquez comment mettre en place des mécanismes de sécurité pour ces systèmes, présentez un plan pour la gestion des correctifs de sécurité et proposez une configuration sécurisée pour les systèmes utilisés.",
+            "livrable": "Un dossier de sécurisation des systèmes d'exploitation détaillant les mécanismes de sécurité, le plan de gestion des correctifs, la configuration sécurisée, la surveillance des activités des systèmes et la protection contre les malwares et les ransomwares."
+        },
+        {
+            "title": "Sécurité des applications",
+            "objectif": "Être capable de garantir la sécurité des applications d'une entreprise.",
+            "instructions": "L'entreprise développe et utilise différentes applications internes et externes que vous devez sécuriser. Identifiez les principes de sécurité des applications à mettre en place, proposez des méthodes d'authentification et d'autorisation pour renforcer leur sécurité et présentez un plan pour gérer les vulnérabilités des applications utilisées.",
+            "livrable": "Un dossier de sécurité applicative présentant les principes de sécurité, les méthodes d'authentification et d'autorisation, le plan de gestion des vulnérabilités et les mesures de sécurisation des échanges de données entre applications et avec les utilisateurs."
+        },
+        {
+            "title": "Sécurité physique et environnementale",
+            "objectif": "Savoir concevoir des mesures de sécurité physique et environnementale des infrastructures.",
+            "instructions": "En plus des aspects informatiques, vous devez prendre en compte la sécurité physique et environnementale des infrastructures de l'entreprise. Proposez un plan de contrôle d'accès physique pour les locaux et les équipements sensibles, expliquez comment surveiller les locaux et les équipements pour détecter toute activité suspecte et présentez des mesures de sécurisation des infrastructures énergétiques.",
+            "livrable": "Un plan de sécurité physique et environnementale présentant le contrôle d'accès physique, la surveillance des locaux et équipements, la sécurisation des infrastructures énergétiques et la gestion des incidents physiques (intrusions, catastrophes naturelles) afin de protéger les équipements sensibles."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Security Engineering (3e éd.)",
+            "author": "Anderson, R"
+        },
+        {
+            "title": "Computer Security: Principles and Practice (5e éd.)",
+            "author": "Stallings, W"
+        }
+    ],
+    "OnlineResources": [
+        "NIST SP 800-53 (https://csrc.nist.gov/publications/sp800) [EN]",
+        "CIS Benchmarks (https://www.cisecurity.org/cis-benchmarks/) [EN]",
+        "ANSSI - Référentiels (https://cyber.gouv.fr) [FR]",
+        "OWASP (https://owasp.org) [EN]",
+        "SANS Reading Room (https://www.sans.org/white-papers/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

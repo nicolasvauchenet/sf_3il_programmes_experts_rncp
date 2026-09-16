@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC03-FM06",
+        "title": "Gestion des identités et accès sécurisés",
+        "rncpCode": "39611",
+        "blocCode": "BC03",
+        "blocName": "Élaborer et mettre en œuvre des stratégies de cybersécurité et de protection des données",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C19",
+            "description": "Administrer les systèmes de gestion des identités et des accès (IAM), en mettant en œuvre des politiques d'accès rigoureuses et en utilisant des technologies d'authentification avancées (MFA) et tenant compte de personnes en situation de handicap, pour garantir que seul le personnel autorisé a accès aux systèmes critiques et aux données sensibles"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux de la gestion des identités et des accès sécurisés dans la cybersécurité (Comprendre) Connaître les concepts clés liés à l'authentification, l'autorisation et la gestion des privilèges (Comprendre) Évaluer les solutions d'authentification et de gestion des identités au regard des bonnes pratiques et des normes de sécurité (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Des connaissances de base en cybersécurité et en gestion des systèmes d'information sont nécessaires pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la gestion des identités et accès sécurisés",
+                "items": [
+                    "Comprendre les enjeux de la gestion des identités et des accès dans la cybersécurité",
+                    "Identifier les principaux risques liés à une gestion inadéquate des identités et des accès",
+                    "Connaître les concepts clés tels que l'authentification, l'autorisation, la gestion des privilèges, etc.",
+                    "Comprendre les normes et bonnes pratiques en matière de gestion des identités et accès sécurisés",
+                    "Identifier les différents types d'identités et d'accès à protéger"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodes d'authentification et d'autorisation",
+                "items": [
+                    "Comprendre les différentes méthodes d'authentification (mot de passe, biométrie, carte à puce, etc.)",
+                    "Connaître les principes de l'authentification forte et multi-facteurs",
+                    "Identifier les mécanismes d'autorisation (RBAC, ABAC, etc.) et leurs avantages",
+                    "Comprendre les enjeux liés à la gestion des identifiants et mots de passe",
+                    "Évaluer les solutions d'authentification et d'autorisation selon les besoins de l'organisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion des identités et des privilèges",
+                "items": [
+                    "Comprendre les processus de gestion des identités (provisionnement, déprovisionnement, synchronisation, etc.)",
+                    "Identifier les risques liés aux identités inactives ou obsolètes",
+                    "Connaître les principes de gestion des privilèges et les concepts de moindre privilège",
+                    "Évaluer les outils de gestion des identités et des privilèges sur le marché",
+                    "Mettre en place des processus de revue des accès et de certification des droits"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Sécurisation des accès aux données et applications",
+                "items": [
+                    "Comprendre les enjeux de la sécurisation des accès aux données sensibles",
+                    "Identifier les solutions de contrôle d'accès (DLP, DRM, etc.) et leurs fonctionnalités",
+                    "Connaître les bonnes pratiques pour la gestion des accès aux applications critiques",
+                    "Évaluer les risques liés aux accès à distance et mettre en place des mesures de sécurisation",
+                    "Mettre en place des processus de surveillance des accès et de détection d'anomalies"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion des identités dans le cloud et les environnements hybrides",
+                "items": [
+                    "Comprendre les spécificités de la gestion des identités dans les environnements cloud",
+                    "Identifier les solutions d'IAM (Identity and Access Management) adaptées aux environnements hybrides",
+                    "Connaître les bonnes pratiques pour sécuriser les identités dans un contexte de cloud computing",
+                    "Évaluer les risques liés à la fédération d'identités et mettre en place des solutions adéquates",
+                    "Intégrer la gestion des identités dans une stratégie globale de cybersécurité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Conception d'une politique d'authentification forte",
+            "objectif": "Concevoir une politique d'authentification forte reposant sur l'authentification multi-facteurs.",
+            "instructions": "Concevez une politique d'authentification forte integrant l'authentification multi-facteurs (MFA). Decrivez les types de facteurs employes (ce que l'utilisateur sait, ce qu'il a, ce qu'il est), les conditions d'activation de la MFA (par exemple connexion a des systemes critiques ou acces a distance) et les mesures a prendre en cas de perte d'un des facteurs.",
+            "livrable": "Une politique d'authentification forte documentant les facteurs MFA retenus, leurs conditions d'activation et les mesures a prendre en cas de perte d'un facteur."
+        },
+        {
+            "title": "Analyse de risques lies aux identites et acces inactifs",
+            "objectif": "Auditer les comptes utilisateurs pour identifier les comptes inactifs et traiter les risques associes.",
+            "instructions": "Auditez les comptes utilisateurs d'une organisation. Elaborez une liste de criteres definissant un compte inactif, identifiez ces comptes dans un systeme donne, puis proposez une procedure de desactivation ou de suppression tenant compte des contraintes reglementaires ou d'entreprise.",
+            "livrable": "Un audit des comptes inactifs comprenant les criteres de definition, la liste des comptes identifies et une procedure de desactivation ou de suppression respectant les contraintes reglementaires."
+        },
+        {
+            "title": "Mise en place d'une revue des acces",
+            "objectif": "Concevoir et documenter un processus de revue des acces garantissant le juste niveau de droits.",
+            "instructions": "Concevez et documentez un processus de revue des acces. Il devra inclure les etapes de realisation de la revue, la frequence des revues, les roles et responsabilites des parties prenantes, ainsi que la maniere dont les modifications d'acces seront suivies et documentees.",
+            "livrable": "Un processus de revue des acces documente precisant les etapes, la frequence, les roles et responsabilites et le suivi des modifications d'acces."
+        },
+        {
+            "title": "Planification de la securisation des acces a distance",
+            "objectif": "Concevoir un plan de securisation des acces a distance au reseau d'entreprise.",
+            "instructions": "Concevez un plan de securisation des acces a distance comprenant la selection d'une solution VPN, la mise en place de pare-feu et de systemes de detection d'intrusions, ainsi que des procedures de formation des employes aux bonnes pratiques. Decrivez egalement comment vous testerez l'efficacite de ces mesures.",
+            "livrable": "Un plan de securisation des acces a distance detaillant la solution VPN, les pare-feu et systemes de detection d'intrusions, la formation des employes et la methode de test de l'efficacite des mesures."
+        },
+        {
+            "title": "Evaluation d'une solution IAM pour environnements hybrides",
+            "objectif": "Evaluer et comparer des solutions IAM adaptees a un environnement hybride pour formuler une recommandation.",
+            "instructions": "Elaborez une grille d'evaluation IAM comprenant des criteres tels que la compatibilite avec les infrastructures existantes, la facilite de gestion des identites, l'integration de l'authentification forte, le support de la federation d'identites et la conformite reglementaire. Sur cette base, realisez une analyse comparative de trois solutions IAM du marche et formulez une recommandation.",
+            "livrable": "Une grille d'evaluation IAM, l'analyse comparative de trois solutions du marche et une recommandation argumentee de la solution la plus adaptee a l'environnement hybride."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Learning Digital Identity. O'Reilly",
+            "author": "Windley, P. J"
+        },
+        {
+            "title": "Mastering Identity and Access Management with Microsoft Azure (2e éd.). Packt",
+            "author": "Nickel, J"
+        }
+    ],
+    "OnlineResources": [
+        "NIST SP 800-63 Digital Identity Guidelines (https://pages.nist.gov/800-63-3/) [EN]",
+        "OAuth 2.0 RFC 6749 (https://datatracker.ietf.org/doc/html/rfc6749) [EN]",
+        "OpenID Connect (https://openid.net/developers/how-connect-works/) [EN]",
+        "Microsoft Entra ID Documentation (https://learn.microsoft.com/entra/) [FR/EN]",
+        "ANSSI - Recommandations authentification (https://cyber.gouv.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

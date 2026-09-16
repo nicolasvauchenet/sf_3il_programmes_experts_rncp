@@ -10,6 +10,7 @@ final readonly class FrameworkStructure
      * @param array<int,array<string,mixed>> $skills
      * @param array<int,array<string,mixed>> $blocks
      * @param array<int,array<string,mixed>> $evaluations
+     * @param array<int,array<string,mixed>> $projects
      * @param array<string,mixed> $raw
      */
     public function __construct(
@@ -18,6 +19,7 @@ final readonly class FrameworkStructure
         public array $skills,
         public array $blocks,
         public array $evaluations,
+        public array $projects,
         public array $raw,
     )
     {

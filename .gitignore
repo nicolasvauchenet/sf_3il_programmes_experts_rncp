@@ -3,6 +3,11 @@
 .idea/
 programmes-experts-rncp.crt
 programmes-experts-rncp.key
+.env.docker.prod
+.agents/
+/data/*.db
+/data/*.db-*
+/data/referentiels/
 ###< programmes_experts_rncp/local ###
 
 ###> symfony/framework-bundle ###

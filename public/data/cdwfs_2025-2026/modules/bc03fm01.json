@@ -10,12 +10,7 @@
         "durationHours": 21,
         "academicYear": "2025-2026"
     },
-    "skills": [
-        {
-            "code": "BC03",
-            "description": "Cette matière transversale touche toutes les compétences et permet plus particulièrement aux étudiants d'optimiser les infrastructures supportant leur développement (Cloud, on-premise ou hybrides) et de maîtriser toutes les étapes de leurs pipelines CI/CD."
-        }
-    ],
+    "skills": [],
     "objectives": {
         "description": "A la fin de ce module, les apprenants sauront installer et configurer un système Linux, administrer et sécuriser efficacement un serveur Linux, ainsi que mettre en place des environnements virtualisés et gérer des conteneurs. Ils développeront une compréhension approfondie des concepts avancés d'administration Linux. Ils seront également capables de comparer les avantages de Linux avec les autres systèmes d'exploitation."
     },

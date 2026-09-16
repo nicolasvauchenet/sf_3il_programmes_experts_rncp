@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC04-FM04",
+        "title": "Gestion des coûts et du budget",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C31",
+            "description": "Effectuer un suivi continu des indicateurs de performance, en intégrant des outils de suivi budgétaire et de gestion des coûts, pour maintenir une gestion financière précise et proactive du projet"
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre et utiliser les outils de suivi budgétaire dans la gestion de projet. Maîtriser la gestion des coûts, ainsi que l'analyse et l'optimisation des dépenses. Savoir interpréter les indicateurs de performance financière pour prendre des décisions de gestion proactives."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Outils de suivi budgétaire",
+                "items": [
+                    "Les différents outils de suivi budgétaire disponibles",
+                    "Les critères de choix d'un outil de suivi budgétaire",
+                    "La mise en place d'un outil de suivi budgétaire adapté au projet",
+                    "L'importance de l'intégration des outils de suivi budgétaire dans la gestion de projet",
+                    "Les bonnes pratiques pour l'utilisation des outils de suivi budgétaire"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des coûts",
+                "items": [
+                    "La différence entre coûts directs et coûts indirects",
+                    "Les méthodes de prévision et de suivi des coûts",
+                    "L'analyse des écarts de coûts",
+                    "Les actions correctives en cas d'écarts importants",
+                    "L'optimisation des coûts sans compromettre la qualité du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Suivi continu des indicateurs de performance",
+                "items": [
+                    "Les principaux indicateurs de performance liés à la gestion financière",
+                    "La mise en place de tableaux de bord de suivi de la performance financière",
+                    "L'interprétation des indicateurs de performance financière",
+                    "L'articulation entre les indicateurs de performance financière et les décisions de gestion",
+                    "L'adaptation des actions en fonction des indicateurs de performance financière"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion proactive du projet",
+                "items": [
+                    "L'anticipation des risques financiers",
+                    "La planification des actions en cas de variations budgétaires importantes",
+                    "La communication des informations financières aux parties prenantes",
+                    "L'alignement des décisions de gestion sur les objectifs financiers du projet",
+                    "L'implication des équipes dans la gestion proactive des coûts"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Amélioration continue de la gestion financière",
+                "items": [
+                    "L'analyse des retours d'expérience pour améliorer la gestion financière",
+                    "L'adaptation des pratiques de gestion financière en fonction des enseignements tirés",
+                    "La capitalisation des bonnes pratiques en gestion financière",
+                    "L'évolution des outils et méthodes de gestion financière",
+                    "La contribution à l'amélioration continue des processus de gestion financière de l'organisation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Outils de suivi budgétaire",
+            "objectif": "Savoir sélectionner un outil de suivi budgétaire adapté à un projet à partir de critères hiérarchisés.",
+            "instructions": "Pour un projet de construction dont vous avez la charge, établissez la liste des critères à prendre en compte pour choisir l'outil de suivi budgétaire le plus adapté. Classez ensuite ces critères par ordre d'importance et justifiez votre classement.",
+            "livrable": "Une liste de critères de choix classée par ordre d'importance, accompagnée de la justification du classement."
+        },
+        {
+            "title": "Gestion des coûts",
+            "objectif": "Être capable de proposer des actions correctives face à un écart de coûts tout en préservant la qualité.",
+            "instructions": "Face à un écart important entre coût réel et coût prévu sur une phase d'un projet informatique, proposez trois actions correctives permettant de réduire cet écart tout en maintenant la qualité. Détaillez chaque action et justifiez sa pertinence.",
+            "livrable": "Trois actions correctives détaillées et justifiées, visant à réduire l'écart de coûts sans dégrader la qualité du projet."
+        },
+        {
+            "title": "Suivi continu des indicateurs de performance",
+            "objectif": "Savoir construire un tableau de bord de suivi de la performance financière d'un projet.",
+            "instructions": "Créez un tableau de bord de suivi de la performance financière pour un projet de votre choix. Sélectionnez au moins cinq indicateurs de performance financière pertinents et justifiez chaque choix. Expliquez leur interprétation et les actions possibles selon les variations observées.",
+            "livrable": "Un tableau de bord financier comportant au moins cinq indicateurs justifiés, avec l'explication de leur interprétation et des actions à entreprendre selon les variations."
+        },
+        {
+            "title": "Gestion proactive du projet",
+            "objectif": "Être capable d'anticiper les risques financiers d'un projet et de préparer les plans d'action associés.",
+            "instructions": "Identifiez trois risques financiers potentiels pour un projet de développement de produit. Pour chacun, proposez un plan d'action préventif et un plan d'action en cas de réalisation du risque, en détaillant les étapes et en soulignant l'importance de la communication des informations financières aux parties prenantes.",
+            "livrable": "Trois risques financiers assortis chacun d'un plan préventif et d'un plan de réalisation détaillés, intégrant la communication financière aux parties prenantes."
+        },
+        {
+            "title": "Amélioration continue de la gestion financière",
+            "objectif": "Savoir tirer d'un retour d'expérience des pistes d'amélioration de la gestion financière.",
+            "instructions": "Analysez le retour d'expérience d'un projet passé où la gestion financière a été un enjeu majeur. Identifiez deux points forts et deux points faibles de cette gestion, puis proposez des pistes d'amélioration fondées sur cette analyse. Expliquez leur apport pour les projets futurs.",
+            "livrable": "Une analyse identifiant deux points forts et deux points faibles de la gestion financière, assortie de pistes d'amélioration argumentées pour les projets futurs."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Project Management Institute. (2019). Practice Standard for Project Estimating (2e éd.). PMI. ISBN 9781628256420.",
+            "author": ""
+        }
+    ],
+    "OnlineResources": [
+        "PMI - Earned Value Management (https://www.pmi.org/learning/library) [EN]",
+        "AFNOR - Norme NF X50-115 Management de projet (https://www.afnor.org) [FR]",
+        "INSEE - Indicateurs économiques (https://www.insee.fr) [FR]",
+        "ProjectManager - Cost Management Templates (https://www.projectmanager.com) [EN]",
+        "Chief Project Officer - Cost Control Best Practices (https://ipma.world) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

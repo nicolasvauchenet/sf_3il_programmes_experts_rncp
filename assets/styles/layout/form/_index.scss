@@ -5,5 +5,17 @@
         padding: 1.5rem;
     }
 
+    ul {
+        margin: 0.35rem 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: $error;
+    }
+
     @import "./group";
 }

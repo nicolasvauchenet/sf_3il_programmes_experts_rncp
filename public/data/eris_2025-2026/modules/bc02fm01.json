@@ -131,4 +131,10 @@
         {
             "title": "Conception et gestion des infrastructures IT",
             "author": "Michel Rodriguez"
-        },
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas",
+        "Utilisation de supports (ppt, etc.)"
+    ]
+}

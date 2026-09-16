@@ -1,0 +1,81 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39781-BC02-PR02",
+        "title": "Projet : Management du Support",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et piloter les infrastructures systèmes et réseaux",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée."
+        },
+        {
+            "code": "C12",
+            "description": "Définir et contrôler les règles d’accès aux données et services."
+        },
+        {
+            "code": "C13",
+            "description": "Arbitrer les technologies d’hébergement."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir des topologies réseaux."
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place et à l’administration de l’infrastructure."
+        },
+        {
+            "code": "C16",
+            "description": "Automatiser les processus de déploiement et maintenance."
+        },
+        {
+            "code": "C17",
+            "description": "Organiser et piloter la gestion des incidents et du support."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de gestion opérationnelle d’un service de support informatique. Il mobilise les compétences du bloc BC02 en préparation des épreuves certifiantes, en abordant la gestion des incidents, des problèmes, des changements et le pilotage de la performance du support à travers des indicateurs et des démarches d’amélioration continue."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi le module 'Gestion des incidents et support ITSM'."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Simulation de gestion des demandes de support",
+            "context": "Prise en charge d’une demande utilisateur dans un environnement de support IT.",
+            "objective": "Structurer le traitement d’une demande, prioriser, communiquer et évaluer la satisfaction utilisateur."
+        },
+        {
+            "title": "Classification des incidents",
+            "context": "Analyse d’un incident impactant un service critique.",
+            "objective": "Qualifier, prioriser et organiser la résolution d’un incident."
+        },
+        {
+            "title": "Analyse de problème",
+            "context": "Traitement d’incidents récurrents liés à un dysfonctionnement sous-jacent.",
+            "objective": "Identifier la cause racine et définir un plan de résolution durable."
+        },
+        {
+            "title": "Planification d’un changement",
+            "context": "Mise à jour d’un système informatique avec impact utilisateur.",
+            "objective": "Structurer un processus de gestion des changements et maîtriser les risques associés."
+        },
+        {
+            "title": "Pilotage de la performance du support",
+            "context": "Création d’un tableau de bord et suivi des indicateurs de performance.",
+            "objective": "Mesurer la qualité du support et mettre en œuvre une démarche d’amélioration continue."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

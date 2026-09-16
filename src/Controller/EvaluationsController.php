@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
-use App\Dto\Context\EvaluationSheet;
+use App\Dto\Context\ResolvedEvaluationSheet;
 use App\Service\Chart\EvaluationChartService;
 use App\Service\Context\Provider\FrameworkEvaluationsProvider;
+use App\Service\Pdf\PdfGenerator;
+use App\Twig\PromotionContext;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,6 +19,8 @@ final class EvaluationsController extends AbstractController
         Request                      $request,
         FrameworkEvaluationsProvider $evaluationsProvider,
         EvaluationChartService       $evaluationChartService,
+        PdfGenerator                  $pdfGenerator,
+        PromotionContext              $promotionContext,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -47,7 +51,14 @@ final class EvaluationsController extends AbstractController
             $selectedEvaluation = $this->findFirstEvaluationForBlock($evaluations, $selectedBlock) ?? $evaluations[0];
             $selectedFileCode = $selectedEvaluation->fileCode;
         } else {
-            $selectedEvaluation = $this->findSelectedEvaluation($evaluations, $selectedFileCode);
+            $selectedEvaluation = null;
+
+            foreach ($evaluations as $evaluation) {
+                if ($evaluation->fileCode === $selectedFileCode) {
+                    $selectedEvaluation = $evaluation;
+                    break;
+                }
+            }
 
             if ($selectedEvaluation === null) {
                 $selectedEvaluation = $this->findFirstEvaluationForBlock($evaluations, $selectedBlock) ?? $evaluations[0];
@@ -57,7 +68,7 @@ final class EvaluationsController extends AbstractController
 
         $evaluationVolumeChart = $evaluationChartService->createEvaluationVolumeChart($selectedEvaluation);
 
-        return $this->render('evaluations/index.html.twig', [
+        $viewData = [
             'promotion' => $promotion,
             'year' => $year,
             'evaluations' => $evaluations,
@@ -65,11 +76,27 @@ final class EvaluationsController extends AbstractController
             'selectedBlock' => $selectedBlock,
             'evaluation' => $selectedEvaluation,
             'evaluationVolumeChart' => $evaluationVolumeChart,
-        ]);
+        ];
+
+        if ($request->query->get('download') === 'pdf') {
+            $viewData['pdfMode'] = true;
+
+            return $pdfGenerator->download(
+                $this->renderView('evaluations/index.html.twig', $viewData),
+                sprintf('evaluation-%s.pdf', $selectedEvaluation->evaluationCode()),
+                [
+                    'promotionTitle' => $promotionContext->getPromotionTitle() ?? strtoupper($promotion),
+                    'sheetLabel' => sprintf('Fiche Évaluation %s', $selectedEvaluation->evaluationCode()),
+                    'sheetTitle' => $selectedEvaluation->title() ?: 'Évaluation',
+                ],
+            );
+        }
+
+        return $this->render('evaluations/index.html.twig', $viewData);
     }
 
     /**
-     * @param EvaluationSheet[] $evaluations
+     * @param ResolvedEvaluationSheet[] $evaluations
      */
     private function normalizeSelectedCode(string $raw, array $evaluations): ?string
     {
@@ -80,8 +107,8 @@ final class EvaluationsController extends AbstractController
         }
 
         foreach ($evaluations as $evaluation) {
-            if (strtolower($evaluation->fileCode) === $raw) {
-                return $evaluation->fileCode;
+            if (strtolower((string)$evaluation->fileCode) === $raw) {
+                return (string)$evaluation->fileCode;
             }
         }
 
@@ -90,7 +117,7 @@ final class EvaluationsController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -100,30 +127,18 @@ final class EvaluationsController extends AbstractController
     }
 
     /**
-     * @param EvaluationSheet[] $evaluations
+     * @param ResolvedEvaluationSheet[] $evaluations
      */
-    private function findSelectedEvaluation(array $evaluations, string $selectedFileCode): ?EvaluationSheet
-    {
-        foreach ($evaluations as $evaluation) {
-            if ($evaluation->fileCode === $selectedFileCode) {
-                return $evaluation;
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * @param EvaluationSheet[] $evaluations
-     */
-    private function findFirstEvaluationForBlock(array $evaluations, ?string $blockCode): ?EvaluationSheet
+    private function findFirstEvaluationForBlock(array $evaluations, ?string $blockCode): ?ResolvedEvaluationSheet
     {
         if ($blockCode === null) {
             return null;
         }
 
         foreach ($evaluations as $evaluation) {
-            if (strtoupper(trim($evaluation->blocCode())) === $blockCode) {
+            $evaluationBlockCode = strtolower(trim($evaluation->blocCode()));
+
+            if ($evaluationBlockCode === $blockCode) {
                 return $evaluation;
             }
         }

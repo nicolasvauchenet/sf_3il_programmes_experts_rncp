@@ -14,7 +14,8 @@
             <hr/>
 
             <form data-controller="context"
-                  data-context-target="form"
+                  data-context-years-by-promotion-value="{{ yearsByPromotion|json_encode|e('html_attr') }}"
+                  data-context-auto-select-latest-year-value="{{ isStudent ? 'true' : 'false' }}"
                   class="app-form"
                   action="{{ path('app_promotion_summary') }}"
             >
@@ -24,7 +25,7 @@
                     </label>
                     <select
                         data-context-target="promotion"
-                        data-action="change->context#check"
+                        data-action="change->context#onPromotionChange"
                         id="promotion"
                         name="promotion"
                         class="form-control"
@@ -40,7 +41,7 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" {% if isStudent %}hidden{% endif %}>
                     <label for="year" class="form-label">
                         Année académique
                     </label>
@@ -51,6 +52,7 @@
                         name="year"
                         class="form-control"
                         required
+                        disabled
                     >
                         <option value="">Choisissez un Millésime</option>
                         {% for year in allYears %}

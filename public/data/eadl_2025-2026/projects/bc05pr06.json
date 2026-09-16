@@ -1,0 +1,97 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39765-BC05-PR06",
+        "title": "Projet IA, MLOps et optimisation des processus",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA",
+        "durationDays": 12,
+        "durationHours": 84,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C32",
+            "description": "Optimiser les processus de décision en analysant et améliorant les opérations métiers à l'aide de méthodes de machine learning, en intégrant des modèles prédictifs qui facilitent l'automatisation et l'amélioration continue des processus par les pratiques de MLOps, tout en tenant compte des contraintes de qualité des données, de puissance de calcul et des objectifs de performance afin d'augmenter l'efficacité opérationnelle et la compétitivité de l'entreprise."
+        },
+        {
+            "code": "C33",
+            "description": "Assurer la surveillance et la maintenance des systèmes automatisés en utilisant des outils de monitoring et en effectuant des mises à jour régulières pour garantir leur performance et leur fiabilité."
+        },
+        {
+            "code": "C34",
+            "description": "Rédiger la documentation de support et les spécifications des éléments de services ou modèles développés pour les utilisateurs des systèmes automatisés afin de garantir une adoption efficace et une utilisation optimale des technologies déployées."
+        },
+        {
+            "code": "C35",
+            "description": "Mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation en utilisant des indicateurs clés de performance (KPI) ainsi que des outils d'analyse de données, des sondages de satisfaction des employés et des clients, et des audits de processus, tout en tenant compte des contraintes budgétaires, des délais de mise en œuvre et des exigences de conformité, afin d'identifier les améliorations et les ajustements nécessaires pour maximiser l'efficacité opérationnelle et la satisfaction des parties prenantes."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de conception, de déploiement et de supervision d’une solution d’automatisation enrichie par l’intelligence artificielle. Il mobilise les compétences du bloc BC05 en préparation de l’EC06, en articulant modélisation de données, machine learning, pipelines MLOps, monitoring des systèmes automatisés et documentation technique."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en programmation, statistiques, manipulation de données et concepts fondamentaux de l’intelligence artificielle."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Cadrage d’un cas d’usage IA",
+            "context": "Analyse d’un processus métier pouvant être amélioré par un modèle prédictif ou un système automatisé.",
+            "objective": "Identifier les opportunités d’optimisation et formaliser le besoin métier."
+        },
+        {
+            "title": "Conception et entraînement du modèle",
+            "context": "Sélection des données, préparation, entraînement et évaluation d’un modèle de machine learning.",
+            "objective": "Construire une solution prédictive cohérente avec les contraintes métier et techniques."
+        },
+        {
+            "title": "Industrialisation via MLOps",
+            "context": "Conception d’un pipeline d’automatisation pour le cycle de vie du modèle avec outils de type Kubeflow ou MLflow.",
+            "objective": "Assurer la reproductibilité, la traçabilité et le déploiement maîtrisé du modèle."
+        },
+        {
+            "title": "Surveillance et maintenance des systèmes automatisés",
+            "context": "Mise en place de mécanismes de monitoring, de contrôle des dérives et de mise à jour du système.",
+            "objective": "Garantir la performance et la fiabilité dans la durée."
+        },
+        {
+            "title": "Mesure d’impact et amélioration continue",
+            "context": "Définition d’indicateurs de performance, analyse des gains et identification des ajustements nécessaires.",
+            "objective": "Évaluer l’effet réel de l’automatisation sur les processus métier."
+        },
+        {
+            "title": "Documentation et spécifications techniques",
+            "context": "Rédaction de la documentation de support, des spécifications et des éléments de transmission aux utilisateurs et exploitants.",
+            "objective": "Garantir l’adoption, la maintenance et la compréhension de la solution."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Machine Learning - Une approche probabiliste",
+            "author": "Kevin P. Murphy"
+        },
+        {
+            "title": "MLOps Engineering at Scale",
+            "author": "Carl Osipov"
+        },
+        {
+            "title": "The MLflow Guide",
+            "author": "Matei Zaharia et d'autres contributeurs"
+        },
+        {
+            "title": "La Documentation technique : Conception et rédaction des documents",
+            "author": "Bernard Mallet"
+        }
+    ],
+    "teachingMethods": [
+        "Projet fil rouge",
+        "Travaux pratiques",
+        "Étude de cas",
+        "Travaux de groupe",
+        "Mise en situation professionnelle"
+    ]
+}

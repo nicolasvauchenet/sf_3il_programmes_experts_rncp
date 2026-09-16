@@ -19,24 +19,24 @@ final readonly class SkillChartService
     public function createSkillMetricsChart(ResolvedSkillSheet $skill): Chart
     {
         $modulesCount = count($skill->modules);
+        $projectsCount = count($skill->projects);
         $evaluationsCount = count($skill->evaluations);
-        $criteriaCount = count($skill->criteria);
 
         $chart = $this->chartBuilder->createChart(Chart::TYPE_BAR);
 
         $chart->setData([
             'labels' => [
-                'Modules',
+                'Matières',
+                'Projets',
                 'Évaluations',
-                'Critères',
             ],
             'datasets' => [
                 [
                     'label' => 'Métriques de la compétence',
                     'data' => [
                         $modulesCount,
+                        $projectsCount,
                         $evaluationsCount,
-                        $criteriaCount,
                     ],
                     'backgroundColor' => [
                         $this->hexToRgba(self::COLOR_BLUE, 1),

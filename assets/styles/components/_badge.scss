@@ -6,13 +6,13 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    color:  $white;
-    background-color: $secondary;
+    color:  $primary;
+    background-color: rgba($primary, 0.15);
     border-radius: 0.25rem;
 
     &.outline{
         font-size: 0.85rem;
-        color:  $secondary;
+        color:  $primary;
         background-color: transparent;
     }
 }

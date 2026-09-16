@@ -4,6 +4,7 @@ namespace App\Service\Context;
 
 use App\Dto\Context\FrameworkStructure;
 use App\Dto\Context\ModuleSheet;
+use App\Dto\Context\ResolvedModuleSheet;
 use App\Dto\Context\ResolvedSkillSheet;
 
 final class ModuleSheetResolver
@@ -11,23 +12,28 @@ final class ModuleSheetResolver
     /**
      * @param array<string,ResolvedSkillSheet> $skillsIndex
      */
-    public function resolve(ModuleSheet $sheet, FrameworkStructure $structure, array $skillsIndex = []): ModuleSheet
+    public function resolve(ModuleSheet $sheet, FrameworkStructure $structure, array $skillsIndex = []): ResolvedModuleSheet
     {
         $skillsWithCriteria = $this->resolveSkillsWithCriteria($sheet, $skillsIndex);
-        $evaluations = $this->resolveEvaluations($sheet, $structure);
+        $evaluations = $sheet->evaluations !== [] ? $sheet->evaluations : $this->resolveEvaluations($sheet, $structure);
 
-        return new ModuleSheet(
+        return new ResolvedModuleSheet(
             fileCode: $sheet->fileCode,
             path: $sheet->path,
             meta: $sheet->meta,
+            description: (string)($sheet->raw['description'] ?? ''),
+            objectives: $sheet->objectives,
+            prerequisites: $sheet->prerequisites,
+            durationDays: $sheet->durationDays(),
+            durationHours: $sheet->durationHours(),
             skills: $sheet->skills,
             skillsWithCriteria: $skillsWithCriteria,
             evaluations: $evaluations,
-            objectives: $sheet->objectives,
-            prerequisites: $sheet->prerequisites,
+            projects: $sheet->projects,
             outline: $sheet->outline,
             exercises: $sheet->exercises,
             bibliography: $sheet->bibliography,
+            onlineResources: $sheet->onlineResources,
             teachingMethods: $sheet->teachingMethods,
             raw: $sheet->raw,
         );
@@ -37,6 +43,7 @@ final class ModuleSheetResolver
      * @param array<string,ResolvedSkillSheet> $skillsIndex
      * @return array<int,array{
      *     code:string,
+     *     fileCode:string,
      *     description:string,
      *     criteria:array<int,string>
      * }>
@@ -47,6 +54,7 @@ final class ModuleSheetResolver
 
         foreach ($sheet->skills as $skill) {
             $code = (string)($skill['code'] ?? '');
+            $fileCode = (string)($skill['fileCode'] ?? '');
             $description = (string)($skill['description'] ?? '');
 
             if ($code === '' || $description === '') {
@@ -59,10 +67,19 @@ final class ModuleSheetResolver
             $criteria = [];
             if ($resolvedSkill instanceof ResolvedSkillSheet) {
                 $criteria = $resolvedSkill->criteria;
+
+                if ($fileCode === '') {
+                    $fileCode = $resolvedSkill->fileCode;
+                }
+            }
+
+            if ($fileCode === '') {
+                $fileCode = strtolower($code);
             }
 
             $resolved[] = [
                 'code' => $code,
+                'fileCode' => $fileCode,
                 'description' => $description,
                 'criteria' => $criteria,
             ];
@@ -101,9 +118,9 @@ final class ModuleSheetResolver
             $title = $this->extractNullableString($evaluation['title'] ?? null) ?? '';
 
             $resolved[] = [
-                'code' => $code,
+                'code' => strtolower($code),
                 'title' => $title,
-                'blockCode' => $this->extractNullableString($evaluation['blockCode'] ?? null) ?? '',
+                'blockCode' => $this->extractNullableString($evaluation['blockCode'] ?? $evaluation['blocCode'] ?? null) ?? '',
             ];
         }
 

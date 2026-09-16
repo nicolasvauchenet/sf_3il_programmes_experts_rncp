@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM05",
+        "title": "Administration de Bases de Données",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C04",
+            "description": "Concevoir, gérer et administrer les systèmes de gestion de bases de données relationnelles et NoSQL, en appliquant les principes d'optimisation des bases de données et en collaboration avec les développeurs et les analystes de données, pour garantir la cohérence, la qualité, la sécurité et l’accessibilité permanente des informations"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux et les différences entre les bases de données relationnelles et NoSQL (Comprendre) Concevoir, modéliser, gérer et administrer des bases de données de différents types (Appliquer) Optimiser les performances et sécuriser les bases de données tout en garantissant la qualité et l'accessibilité des données (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en informatique et en systèmes d'information. Compréhension générale des principes de stockage et de gestion des données."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction aux bases de données relationnelles et NoSQL",
+                "items": [
+                    "Principes de base des bases de données relationnelles",
+                    "Principes de base des bases de données NoSQL",
+                    "Différences entre les deux types de bases de données",
+                    "Avantages et inconvénients des bases de données relationnelles et NoSQL",
+                    "Cas d'utilisation appropriés pour chaque type de base de données"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Conception et modélisation des bases de données",
+                "items": [
+                    "Les concepts de modélisation des données",
+                    "Les différentes étapes de conception d'une base de données",
+                    "Les types de modèles de données (entité-association, relationnel, conceptuel)",
+                    "Les bonnes pratiques de modélisation des données",
+                    "L'importance de la normalisation des données"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Gestion et administration des bases de données relationnelles",
+                "items": [
+                    "Installation et configuration d'un système de gestion de base de données relationnelle",
+                    "Gestion des utilisateurs et des autorisations",
+                    "Sauvegarde et restauration de bases de données",
+                    "Surveillance des performances et optimisation des requêtes",
+                    "Maintenance et gestion des incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion et administration des bases de données NoSQL",
+                "items": [
+                    "Installation et configuration d'un système de gestion de base de données NoSQL",
+                    "Modélisation des données dans un environnement NoSQL",
+                    "Réplication et sharding dans les bases de données NoSQL",
+                    "Surveillance des performances et optimisation des requêtes NoSQL",
+                    "Sauvegarde et restauration dans un environnement NoSQL"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Sécurité et optimisation des bases de données",
+                "items": [
+                    "Stratégies de sécurité pour les bases de données relationnelles et NoSQL",
+                    "Méthodes d'optimisation des performances des bases de données",
+                    "Gestion des index et des statistiques",
+                    "Utilisation des outils de monitoring et de diagnostic",
+                    "Bonnes pratiques pour garantir la cohérence, la qualité et l'accessibilité des données"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comparaison des bases de données relationnelles et NoSQL",
+            "objectif": "Savoir comparer les avantages et inconvénients des bases de données relationnelles et NoSQL dans un cas d'utilisation spécifique.",
+            "instructions": "Choisissez un exemple concret d'utilisation. Comparez les avantages et inconvénients des bases de données relationnelles et NoSQL dans ce cas. Détaillez les raisons pour lesquelles vous opteriez pour l'un ou l'autre type de base de données.",
+            "livrable": "Une comparaison argumentée des deux types de bases de données appliquée au cas choisi, avec justification du choix retenu."
+        },
+        {
+            "title": "Modélisation des données",
+            "objectif": "Savoir concevoir un schéma conceptuel de base de données et le traduire en modèle relationnel.",
+            "instructions": "Choisissez un domaine d'application (par exemple, un système de gestion d'une bibliothèque ou d'un magasin en ligne). Créez un schéma conceptuel de base de données en utilisant le modèle entité-association. Expliquez ensuite comment vous traduiriez ce schéma en un modèle relationnel.",
+            "livrable": "Un schéma conceptuel entité-association accompagné de l'explication de sa traduction en modèle relationnel."
+        },
+        {
+            "title": "Gestion des utilisateurs et des autorisations",
+            "objectif": "Savoir gérer les utilisateurs et les autorisations dans une base de données relationnelle.",
+            "instructions": "Créez deux utilisateurs avec des rôles différents (par exemple, administrateur et utilisateur). Attribuez-leur des autorisations spécifiques sur une base de données de test. Documentez les étapes suivies pour effectuer cette configuration.",
+            "livrable": "Une documentation des étapes de création des utilisateurs et d'attribution des autorisations sur la base de test."
+        },
+        {
+            "title": "Modélisation des données dans un environnement NoSQL",
+            "objectif": "Savoir modéliser des données dans un environnement NoSQL et justifier la pertinence du modèle retenu.",
+            "instructions": "Choisissez un cas d'utilisation adapté à une base de données NoSQL (comme la gestion de données non structurées ou semi-structurées). Créez un schéma de données pour ce cas. Expliquez pourquoi ce modèle est approprié dans un environnement NoSQL et en quoi il diffère d'un modèle relationnel.",
+            "livrable": "Un schéma de données NoSQL accompagné de la justification de sa pertinence et de sa différence avec un modèle relationnel."
+        },
+        {
+            "title": "Stratégies de sécurité pour les bases de données",
+            "objectif": "Savoir proposer un plan de sécurisation d'une base de données sensible contenant des informations confidentielles.",
+            "instructions": "En tant qu'administrateur d'une base de données sensible, proposez un plan détaillé pour la sécuriser. Incluez des mesures spécifiques pour protéger les données contre les accès non autorisés et les attaques. Argumentez vos choix de stratégies de sécurité.",
+            "livrable": "Un plan de sécurisation détaillé et argumenté de la base de données, précisant les mesures contre les accès non autorisés et les attaques."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "SQL Antipatterns, Volume 1 : Avoiding the Pitfalls of Database Programming. Pragmatic Bookshelf",
+            "author": "Karwin, B"
+        },
+        {
+            "title": "NoSQL Distilled : A Brief Guide to the Emerging World of Polyglot Persistence. Addison-Wesley",
+            "author": "Sadalage, P. J. & Fowler, M"
+        }
+    ],
+    "OnlineResources": [
+        "PostgreSQL Documentation (https://www.postgresql.org/docs/) [EN]",
+        "MySQL Documentation (https://dev.mysql.com/doc/) [EN]",
+        "MongoDB Documentation (https://www.mongodb.com/docs/) [EN]",
+        "Redis Documentation (https://redis.io/docs/) [EN]",
+        "DB-Engines Ranking (https://db-engines.com/en/ranking) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

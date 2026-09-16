@@ -1,0 +1,93 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39781-BC01-PR01",
+        "title": "Projet : Gestion des services",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C01",
+            "description": "Participer aux politiques de gouvernance IT."
+        },
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise."
+        },
+        {
+            "code": "C03",
+            "description": "Établir des accords de niveaux de service (SLA)."
+        },
+        {
+            "code": "C04",
+            "description": "Élaborer et mettre en œuvre des processus et procédures standardisées."
+        },
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA."
+        },
+        {
+            "code": "C06",
+            "description": "Évaluer les risques liés à la production informatique."
+        },
+        {
+            "code": "C07",
+            "description": "Élaborer un plan de continuité d’activité (PCA)."
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA)."
+        },
+        {
+            "code": "C09",
+            "description": "Mettre en œuvre des tests de continuité d’activité."
+        },
+        {
+            "code": "C10",
+            "description": "Mettre en œuvre une démarche de numérique responsable."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à mettre les apprenants en situation de conception, de mise en œuvre et d’évaluation de processus de gestion des services informatiques. Il mobilise l’ensemble des compétences du bloc BC01 en préparation de l’épreuve certifiante, en abordant les enjeux de gouvernance, de qualité de service, de gestion des risques et d’amélioration continue."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi les modules du bloc de compétences BC01."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Compréhension des concepts de gestion des services",
+            "context": "Mise en situation dans un département informatique afin d’expliquer les notions clés de gestion des services.",
+            "objective": "Identifier et vulgariser les concepts fondamentaux de gestion des services."
+        },
+        {
+            "title": "Conception et mise en œuvre des processus",
+            "context": "Modélisation d’un processus de gestion des services (ex : gestion des incidents).",
+            "objective": "Structurer un processus complet avec rôles, étapes et outils."
+        },
+        {
+            "title": "Évaluation et suivi de la qualité des services",
+            "context": "Création d’un plan d’évaluation pour un service informatique.",
+            "objective": "Définir des indicateurs, mesurer la qualité et proposer des actions correctives."
+        },
+        {
+            "title": "Intégration des outils de gestion des services",
+            "context": "Étude d’intégration entre outils ITSM et autres systèmes de l’entreprise.",
+            "objective": "Comprendre les interactions entre systèmes et améliorer l’efficacité des services."
+        },
+        {
+            "title": "Gestion des services dans un projet",
+            "context": "Analyse de l’intégration de la gestion des services dans un projet.",
+            "objective": "Identifier les bonnes pratiques de gestion des risques, de communication et de satisfaction utilisateur."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

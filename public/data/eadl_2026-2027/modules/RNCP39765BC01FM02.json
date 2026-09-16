@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC01-FM02",
+        "title": "Principes et modélisation UML",
+        "rncpCode": "39765",
+        "blocCode": "BC01",
+        "blocName": "Concevoir et modéliser l'architecture logicielle",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C4",
+            "description": "Concevoir l’architecture logicielle en analysant les exigences fonctionnelles et non fonctionnelles, en choisissant le modèle d'architecture et de modélisation et de prototypage adapté aux besoins, en sélectionnant les technologies associées, ainsi que les outils appropriés et en tenant compte des contraintes du système d’information, telles que la compatibilité avec les infrastructures existantes, la sécurité, et les performances requises, tout en anticipant la maintenance et les potentielles évolutions technologiques et organisationnelles, afin de garantir que la solution réponde de manière optimale aux besoins métiers identifiés et puisse évoluer sans interruption significative des services"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes de base et l'utilisation d'UML pour la modélisation des données et des flux (Comprendre) Maîtriser la création et l'utilisation des différents types de diagrammes UML (cas d'utilisation, classes, séquence, activité) (Appliquer) Appliquer ces connaissances à des projets logiciels concrets (Appliquer)"
+    },
+    "prerequisites": {
+        "description": "Des connaissances de base en programmation orientée objet et en analyse et conception de systèmes sont nécessaires pour suivre ce cours."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à UML",
+                "items": [
+                    "Principes de base d'UML",
+                    "Utilisation de l'UML dans la modélisation des données et flux",
+                    "Avantages de l'utilisation d'UML dans la conception logicielle",
+                    "Différents types de diagrammes UML pertinents pour la modélisation des données et des flux",
+                    "Exemples concrets d'utilisation d'UML dans des projets logiciels"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Diagramme de cas d'utilisation",
+                "items": [
+                    "Compréhension des acteurs et des cas d'utilisation",
+                    "Modélisation des interactions entre acteurs et cas d'utilisation",
+                    "Utilisation des diagrammes de cas d'utilisation pour la modélisation des flux"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Diagramme de classes",
+                "items": [
+                    "Principes de base de la modélisation orientée objet",
+                    "Création de classes et représentation des relations entre celles-ci",
+                    "Utilisation des diagrammes de classes pour la modélisation des données"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Diagramme de séquence",
+                "items": [
+                    "Représentation des interactions entre les objets dans un scénario donné",
+                    "Modélisation des flux et des échanges de messages entre les objets",
+                    "Utilisation des diagrammes de séquence pour la modélisation des flux dans un système logiciel"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Diagramme d'activité",
+                "items": [
+                    "Visualisation des processus métier et des workflows",
+                    "Modélisation des étapes et des décisions dans un processus",
+                    "Utilisation des diagrammes d'activité pour la modélisation des flux de contrôle et des flux de données"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Modélisation d'un système avec les principes de base d'UML",
+            "objectif": "Savoir appliquer les principes de base d'UML pour représenter les éléments et les flux d'un système logiciel.",
+            "instructions": "Imaginez un scénario où vous devez concevoir un système logiciel. Identifiez les différents éléments et flux qui entrent en jeu dans ce système, puis utilisez les principes de base d'UML pour les représenter.",
+            "livrable": "Les diagrammes UML pertinents représentant les éléments et les flux identifiés dans le système."
+        },
+        {
+            "title": "Diagramme de cas d'utilisation",
+            "objectif": "Être capable de créer un diagramme de cas d'utilisation à partir d'un domaine d'application.",
+            "instructions": "Choisissez un domaine d'application de votre choix (par exemple la gestion d'une bibliothèque, la réservation de billets en ligne, etc.) et identifiez les acteurs concernés ainsi que les cas d'utilisation associés.",
+            "livrable": "Un diagramme de cas d'utilisation représentant ces acteurs et cas d'utilisation, en indiquant les interactions entre eux."
+        },
+        {
+            "title": "Diagramme de classes",
+            "objectif": "Savoir modéliser la structure d'un système à l'aide d'un diagramme de classes.",
+            "instructions": "Pensez à un système logiciel que vous connaissez (par exemple un système de gestion des étudiants, un système de réservation de salles, etc.) et identifiez les entités et leurs relations.",
+            "livrable": "Un diagramme de classes modélisant la structure du système à l'aide des concepts de la modélisation orientée objet."
+        },
+        {
+            "title": "Diagramme de séquence",
+            "objectif": "Être capable de représenter les interactions entre objets d'un scénario à l'aide d'un diagramme de séquence.",
+            "instructions": "Décrivez un scénario courant lié à un processus métier ou à une interaction logicielle (par exemple une commande en ligne, un processus de paiement, etc.) et identifiez les objets impliqués.",
+            "livrable": "Un diagramme de séquence représentant les interactions entre les objets, en indiquant les échanges de messages et le déroulement chronologique."
+        },
+        {
+            "title": "Diagramme d'activité",
+            "objectif": "Savoir modéliser un processus métier à l'aide d'un diagramme d'activité.",
+            "instructions": "Identifiez un processus métier que vous connaissez (par exemple le processus de recrutement dans une entreprise, le processus de traitement des commandes, etc.) et repérez ses différentes étapes et décisions.",
+            "livrable": "Un diagramme d'activité modélisant les différentes étapes et décisions du processus, en indiquant les flux de contrôle et les flux de données."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "UML 2 par la pratique (8e éd.)",
+            "author": "Roques, P"
+        },
+        {
+            "title": "UML 2 : Modéliser une application web (4e éd.)",
+            "author": "Laurent, A"
+        },
+        {
+            "title": "UML Distilled: A Brief Guide to the Standard Object Modeling Language (3e éd.)",
+            "author": "Fowler, M"
+        }
+    ],
+    "OnlineResources": [
+        "OMG UML Specification (https://www.omg.org/spec/UML) [EN]",
+        "PlantUML documentation (https://plantuml.com) [FR/EN]",
+        "UML Diagrams - Visual Paradigm (https://www.visual-paradigm.com/guide/uml-unified-modeling-language/) [EN]",
+        "developpez.com - Tutoriels UML (https://uml.developpez.com) [FR]",
+        "IBM Rational - UML Resource Center (https://www.ibm.com/docs/en/rsas) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

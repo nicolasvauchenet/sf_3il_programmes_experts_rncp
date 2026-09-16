@@ -1,0 +1,149 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC05-FM08",
+        "title": "Gestion et déploiement des pipelines MLOps",
+        "rncpCode": "39765",
+        "blocCode": "BC05",
+        "blocName": "Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier par l’apport de l’IA.",
+        "durationDays": 5,
+        "durationHours": 35,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C32",
+            "description": "Optimiser les processus de décision en analysant et améliorant les opérations métiers à l'aide de méthodes de machine learning, en intégrant des modèles prédictifs qui facilitent l'automatisation et l'amélioration continue des processus par les pratiques de MLOps, tout en tenant compte des contraintes de qualité des données, de puissance de calcul et des objectifs de performance afin d'augmenter l'efficacité opérationnelle et la compétitivité de l'entreprise"
+        },
+        {
+            "code": "C33",
+            "description": "Assurer la surveillance et la maintenance des systèmes automatisés en utilisant des outils de monitoring et en effectuant des mises à jour régulières pour garantir leur performance et leur fiabilité"
+        },
+        {
+            "code": "C35",
+            "description": "Mesurer l'impact des solutions d'automatisation sur les processus métiers et les performances de l'organisation en utilisant des indicateurs clés de performance (KPI) ainsi que des outils d'analyse de données, des sondages de satisfaction des employés et des clients, et des audits de processus, tout en tenant compte des contraintes budgétaires, des délais de mise en œuvre et des exigences de conformité, afin d'identifier les améliorations et les ajustements nécessaires pour maximiser l'efficacité opérationnelle et la satisfaction des parties prenantes"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux de l'automatisation des pipelines ML (Comprendre) Identifier les bénéfices et les caractéristiques de Kubeflow et MLflow (Analyser) Intégrer ces outils pour créer des pipelines ML efficaces et contrôlés (Créer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en CI/CD, compréhension des concepts de pipelines de données."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'automatisation des pipelines ML",
+                "items": [
+                    "Comprendre les enjeux de l'automatisation des pipelines ML",
+                    "Identifier les bénéfices de l'utilisation de Kubeflow et MLflow",
+                    "Comparer Kubeflow et MLflow avec d'autres solutions d'automatisation des pipelines ML",
+                    "Comprendre les concepts de base de Kubeflow et MLflow",
+                    "Étudier des cas d'utilisation de l'automatisation des pipelines ML"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Prise en main de Kubeflow",
+                "items": [
+                    "Installer et configurer Kubeflow",
+                    "Explorer les fonctionnalités principales de Kubeflow",
+                    "Comprendre le rôle de Kubeflow dans l'automatisation des pipelines ML",
+                    "Créer et gérer des pipelines ML avec Kubeflow",
+                    "Optimiser l'utilisation de Kubeflow pour des cas d'utilisation spécifiques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Maîtrise de MLflow",
+                "items": [
+                    "Installer et configurer MLflow",
+                    "Explorer les fonctionnalités principales de MLflow",
+                    "Comprendre le rôle de MLflow dans l'automatisation des pipelines ML",
+                    "Utiliser MLflow pour le suivi, la gestion et le déploiement des modèles ML",
+                    "Étudier des bonnes pratiques d'utilisation de MLflow"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Intégration de Kubeflow et MLflow",
+                "items": [
+                    "Comprendre comment Kubeflow et MLflow peuvent être utilisés conjointement",
+                    "Créer des workflows intégrant Kubeflow et MLflow",
+                    "Gérer les interactions entre Kubeflow et MLflow",
+                    "Étudier des exemples d'intégration de Kubeflow et MLflow dans des projets ML",
+                    "Analyser les avantages et les limites de l'intégration de Kubeflow et MLflow"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Bonnes pratiques de l'automatisation des pipelines ML",
+                "items": [
+                    "Mettre en place des processus de gestion de version pour les workflows ML",
+                    "Optimiser la reproductibilité et la traçabilité des expériences ML",
+                    "Assurer la sécurité des pipelines ML automatisés",
+                    "Anticiper les défis et les écueils dans l'automatisation des pipelines ML",
+                    "Établir des stratégies pour maintenir et améliorer les pipelines ML automatisés"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comprendre les enjeux de l'automatisation des pipelines ML",
+            "objectif": "Savoir analyser les enjeux de l'automatisation des pipelines ML et leur impact sur les projets ML.",
+            "instructions": "Sélectionnez un cas d'utilisation de l'apprentissage automatique dans un domaine spécifique (par exemple la santé, la finance ou le marketing) et identifiez les enjeux rencontrés dans la gestion manuelle des pipelines ML. Proposez ensuite des solutions d'automatisation en vous appuyant sur les bénéfices de l'utilisation de Kubeflow et MLflow.",
+            "livrable": "Un rapport écrit présentant les enjeux identifiés, les avantages de l'automatisation des pipelines ML à l'aide de Kubeflow et MLflow, et des recommandations pour la mise en place de l'automatisation dans le cas d'utilisation choisi."
+        },
+        {
+            "title": "Créer et gérer des pipelines ML avec Kubeflow",
+            "objectif": "Être capable de créer et de gérer des pipelines ML à l'aide de Kubeflow.",
+            "instructions": "À l'aide d'un jeu de données d'exemple, concevez et mettez en place un pipeline ML complet en utilisant Kubeflow. Le pipeline doit inclure les étapes de prétraitement des données, de formation de modèles, d'évaluation et de déploiement. Vous devez également gérer et surveiller l'exécution du pipeline à l'aide des fonctionnalités fournies par Kubeflow.",
+            "livrable": "Un script ou un notebook décrivant les étapes de création, de gestion et de surveillance du pipeline ML, accompagné de captures d'écran illustrant l'exécution du pipeline dans Kubeflow."
+        },
+        {
+            "title": "Utiliser MLflow pour le suivi, la gestion et le déploiement des modèles ML",
+            "objectif": "Savoir exploiter MLflow pour le suivi, la gestion et le déploiement des modèles ML.",
+            "instructions": "Sélectionnez un modèle d'apprentissage automatique (par exemple une régression, une classification ou un clustering) et utilisez MLflow pour effectuer le suivi de son entraînement, sa gestion (enregistrement, versioning) et son déploiement. Documentez le processus complet, y compris la récupération du modèle entraîné et son déploiement.",
+            "livrable": "Un notebook ou un rapport détaillant l'utilisation de MLflow pour le suivi, la gestion et le déploiement du modèle sélectionné, avec des explications claires sur chaque étape du processus."
+        },
+        {
+            "title": "Créer des workflows intégrant Kubeflow et MLflow",
+            "objectif": "Être capable d'intégrer Kubeflow et MLflow pour créer des workflows ML complets.",
+            "instructions": "Concevez un workflow complet qui intègre à la fois Kubeflow et MLflow pour gérer l'ensemble du cycle de vie d'un projet ML, de la préparation des données à la mise en production des modèles. Expliquez la logique de l'intégration des deux outils et démontrez la complémentarité de leurs fonctionnalités.",
+            "livrable": "Un schéma représentant le workflow conçu, accompagné d'une explication détaillée de chaque étape et de son lien avec Kubeflow et MLflow."
+        },
+        {
+            "title": "Mettre en place des processus de gestion de version pour les workflows ML",
+            "objectif": "Savoir mettre en place la gestion de version des workflows ML selon les bonnes pratiques.",
+            "instructions": "Sélectionnez un workflow ML que vous avez développé ou un cas d'utilisation factice, et mettez en place des processus de gestion de version pour l'ensemble du workflow. Identifiez les composants à versionner, créez des versions explicites et gérez les dépendances entre les différentes versions. Expliquez comment ces processus de gestion de version peuvent faciliter la collaboration et le suivi des évolutions du workflow.",
+            "livrable": "Un guide détaillé présentant la structure de gestion de version mise en place pour le workflow sélectionné, accompagné d'exemples concrets de gestion des versions et de leurs avantages."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Introducing MLOps: How to Scale Machine Learning in the Enterprise",
+            "author": "Treveil, M. et al"
+        },
+        {
+            "title": "Designing Machine Learning Systems",
+            "author": "Huyen, C"
+        },
+        {
+            "title": "Machine Learning Design Patterns",
+            "author": "Lakshmanan, V"
+        }
+    ],
+    "OnlineResources": [
+        "MLflow Documentation (https://mlflow.org/docs/latest/index.html) [EN]",
+        "Kubeflow Documentation (https://www.kubeflow.org/docs/) [EN]",
+        "ML Engineering for Production (https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops) [EN]",
+        "Google Cloud Vertex AI (https://cloud.google.com/vertex-ai/docs) [FR/EN]",
+        "AWS SageMaker Documentation (https://docs.aws.amazon.com/sagemaker/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

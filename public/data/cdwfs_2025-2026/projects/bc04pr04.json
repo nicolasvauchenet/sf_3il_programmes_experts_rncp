@@ -1,0 +1,76 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39608-BC04-PR04",
+        "title": "Projet Étude d’avant-projet",
+        "rncpCode": "39608",
+        "blocCode": "BC04",
+        "blocName": "Gérer les projets numériques et collaborer à l'amélioration continue des systèmes d'information",
+        "durationDays": 3,
+        "durationHours": 28,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C26",
+            "description": "Analyser les besoins des utilisateurs et des parties prenantes à partir de résultats d'enquêtes et d'interviews pour identifier les objectifs et déterminer les fonctionnalités du projet numérique."
+        },
+        {
+            "code": "C27",
+            "description": "Étudier et évaluer la faisabilité du projet en tenant compte de la mobilisation des ressources humaines et matériels disponibles et nécessaires et de la pertinence et la faisabilité technique du projet numérique, afin d'atteindre les objectifs de l'application."
+        },
+        {
+            "code": "C28",
+            "description": "Collaborer activement à la rédaction du cahier des charges fonctionnels et/ou à la note de cadrage en évaluant les différentes solutions techniques et les performances attendues pour chaque fonctionnalité afin de définir les modalités du projet."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation d’analyse amont d’un projet numérique, depuis l’identification des besoins jusqu’à la formalisation d’une étude d’avant-projet complète. Il mobilise les compétences du bloc BC04 en préparation de l’EC07, en articulant analyse des besoins, étude de faisabilité, rédaction de la note de cadrage ou du cahier des charges et comparaison argumentée de solutions."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet, en informatique et en compréhension des processus métier. Une première familiarité avec l’analyse des besoins et la rédaction de documents techniques est recommandée."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Analyse des besoins et cadrage du projet",
+            "context": "À partir d’un besoin exprimé par une organisation, les apprenants identifient les attentes des utilisateurs, les objectifs du projet et les contraintes à prendre en compte.",
+            "objective": "Structurer une analyse des besoins claire, complète et exploitable."
+        },
+        {
+            "title": "Étude de faisabilité",
+            "context": "Les apprenants évaluent les ressources humaines et matérielles nécessaires, la compatibilité avec l’existant, les contraintes techniques et les risques du projet.",
+            "objective": "Déterminer la faisabilité globale du projet et objectiver les conditions de réussite."
+        },
+        {
+            "title": "Rédaction du cahier des charges ou de la note de cadrage",
+            "context": "À partir des éléments recueillis, les apprenants formalisent un document structurant les besoins, les fonctionnalités attendues, les contraintes et les critères de réussite.",
+            "objective": "Produire un livrable de cadrage cohérent, précis et compréhensible par les parties prenantes."
+        },
+        {
+            "title": "Spécifications et choix techniques",
+            "context": "Les apprenants décrivent les grandes orientations techniques, les performances attendues et les principales options envisageables.",
+            "objective": "Préparer une base de décision technique alignée avec les besoins exprimés."
+        },
+        {
+            "title": "Comparaison et justification des solutions",
+            "context": "Plusieurs solutions sont comparées selon des critères de pertinence, de faisabilité, de coût, de performance et de cohérence avec les objectifs du projet.",
+            "objective": "Justifier de manière argumentée le choix d’une solution adaptée."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "L'Analyse des besoins : Guide pratique",
+            "author": "Jean-Michel Dreyfus"
+        },
+        {
+            "title": "Ingénierie des exigences : De la gestion des besoins à la spécification",
+            "author": "Albert Abran"
+        }
+    ],
+    "teachingMethods": [
+        "Étude de cas"
+    ]
+}

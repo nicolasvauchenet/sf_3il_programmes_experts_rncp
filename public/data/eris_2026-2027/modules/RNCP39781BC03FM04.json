@@ -1,0 +1,145 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC03-FM04",
+        "title": "Audit de sécurité et conformité",
+        "rncpCode": "39781",
+        "blocCode": "BC03",
+        "blocName": "Manager la cybersécurité de l'entreprise : politique, audit, défense, SOC et forensique",
+        "durationDays": 4,
+        "durationHours": 28,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C20",
+            "description": "Auditer la sécurité en collaboration avec le Responsable de la Sécurité des Systèmes d'Information (RSSI) en couvrant les volets organisationnels, physiques et techniques afin de vérifier la mise en œuvre de la politique de sécurité et assurer son amélioration continue"
+        },
+        {
+            "code": "C22",
+            "description": "Éprouver la sécurité de l'infrastructure sous la responsabilité du RSSI, au moyen de tests de pénétration, de simulations d'attaques et d'outils d'analyse de sécurité afin d'évaluer la robustesse des systèmes et la réactivité des équipes"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux et méthodologies de l'audit de sécurité (Comprendre) Maîtriser le processus et les outils nécessaires pour conduire un audit de sécurité (Appliquer) Réaliser et évaluer un audit de conformité aux normes et régulations en vigueur (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en sécurité informatique et en gestion des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Fondamentaux de l'audit de sécurité",
+                "items": [
+                    "Comprendre les principes de base de l'audit de sécurité",
+                    "Identifier les objectifs et les enjeux de l'audit de sécurité",
+                    "Connaître les différentes normes et référentiels en matière d'audit de sécurité",
+                    "Comprendre les méthodologies d'audit de sécurité",
+                    "Apprendre à différencier l'audit interne de l'audit externe"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Processus d'audit et outils",
+                "items": [
+                    "Maîtriser les différentes étapes du processus d'audit de sécurité",
+                    "Savoir utiliser les outils d'audit de sécurité",
+                    "Comprendre la gestion des risques liés à l'audit de sécurité",
+                    "Apprendre à réaliser un plan d'audit de sécurité",
+                    "Savoir évaluer les résultats de l'audit de sécurité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Audit de conformité",
+                "items": [
+                    "Comprendre les exigences en matière de conformité réglementaire",
+                    "Apprendre à réaliser un audit de conformité par rapport aux normes et réglementations en vigueur",
+                    "Savoir évaluer la conformité des systèmes d'information",
+                    "Identifier les écarts de conformité et proposer des mesures correctives",
+                    "Maîtriser les bonnes pratiques pour assurer la conformité des SI"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des recommandations et des plans d'actions",
+                "items": [
+                    "Savoir hiérarchiser et prioriser les recommandations issues de l'audit de sécurité",
+                    "Apprendre à élaborer un plan d'actions à la suite d'un audit de sécurité",
+                    "Comprendre la mise en œuvre et le suivi des plans d'actions",
+                    "Identifier les acteurs et les responsabilités dans la gestion des recommandations",
+                    "Maîtriser les outils de suivi et de reporting des plans d'actions"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Audit des technologies spécifiques",
+                "items": [
+                    "Apprendre à réaliser un audit de sécurité des réseaux",
+                    "Comprendre les spécificités de l'audit des infrastructures cloud",
+                    "Savoir auditer la sécurité des applications web et mobiles",
+                    "Maîtriser les techniques d'audit des systèmes de gestion de bases de données",
+                    "Identifier les particularités de l'audit des systèmes embarqués et des objets connectés"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Élaboration d'un plan d'audit interne",
+            "objectif": "Savoir élaborer un plan d'audit interne de la sécurité des systèmes d'information.",
+            "instructions": "Vous êtes l'auditeur interne de votre entreprise et devez préparer un plan d'audit pour évaluer la sécurité des systèmes d'information. Décrivez les étapes à suivre pour élaborer ce plan, en précisant les objectifs de l'audit, les domaines clés à examiner, les méthodologies que vous utiliserez et la manière d'intégrer la gestion des risques dans votre planification.",
+            "livrable": "Un plan d'audit interne documenté précisant les objectifs de l'audit, les domaines clés à examiner, les méthodologies retenues et l'intégration de la gestion des risques."
+        },
+        {
+            "title": "Analyse de conformité",
+            "objectif": "Être capable d'évaluer la conformité d'un système d'information à une réglementation.",
+            "instructions": "Un nouveau règlement sur la protection des données a été mis en place et vous devez vérifier la conformité de votre entreprise. Choisissez un système d'information clé et identifiez les écarts potentiels par rapport aux exigences réglementaires.",
+            "livrable": "Un rapport d'audit identifiant les écarts par rapport aux exigences réglementaires, proposant des mesures correctives et évaluant l'impact de ces écarts sur l'entreprise."
+        },
+        {
+            "title": "Utilisation des outils d'audit",
+            "objectif": "Savoir sélectionner et utiliser des outils d'audit de sécurité selon le contexte.",
+            "instructions": "Sélectionnez trois outils d'audit de sécurité différents (par exemple un scanner de vulnérabilités, un outil d'analyse de logs et un outil de gestion des configurations). Pour chaque outil, décrivez un scénario d'utilisation spécifique dans le contexte d'un audit de sécurité et expliquez comment vous l'utiliserez pour collecter des données et évaluer les résultats de l'audit.",
+            "livrable": "Un document présentant, pour chacun des trois outils, le scénario d'utilisation, la méthode de collecte des données et l'évaluation des résultats de l'audit."
+        },
+        {
+            "title": "Planification des actions correctives",
+            "objectif": "Être capable de planifier et suivre des actions correctives à la suite d'un audit.",
+            "instructions": "À la suite d'un audit de sécurité, vous avez identifié plusieurs vulnérabilités critiques dans l'infrastructure IT de votre entreprise. Hiérarchisez les recommandations, attribuez des responsabilités, définissez des échéances et élaborez des indicateurs de suivi pour assurer l'implémentation des actions correctives.",
+            "livrable": "Un plan d'action détaillé hiérarchisant les recommandations, attribuant les responsabilités, fixant les échéances et définissant les indicateurs de suivi pour assurer l'implémentation des actions correctives."
+        },
+        {
+            "title": "Audit de sécurité d'une application web",
+            "objectif": "Savoir conduire un audit de sécurité d'une application web.",
+            "instructions": "Vous êtes chargé de réaliser un audit de sécurité pour une application web récemment développée par votre entreprise. Développez un protocole d'audit couvrant l'authentification des utilisateurs, la gestion des sessions, la validation des entrées et la sécurité des communications, puis réalisez des tests de pénétration.",
+            "livrable": "Un rapport d'audit présentant le protocole suivi, les résultats des tests de pénétration, vos conclusions et vos recommandations pour améliorer la sécurité de l'application."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "IT Auditing: Using Controls to Protect Information Assets (4e éd.)",
+            "author": "Davis, C. et al"
+        },
+        {
+            "title": "Auditor's Guide to IT Auditing (2e éd.)",
+            "author": "Cascarino, R"
+        },
+        {
+            "title": "The Hacker Playbook 3",
+            "author": "Kim, P"
+        }
+    ],
+    "OnlineResources": [
+        "ANSSI - Référentiel PASSI (https://cyber.gouv.fr) [FR]",
+        "ISACA - Audit Resources (https://www.isaca.org) [EN]",
+        "OWASP Testing Guide (https://owasp.org/www-project-web-security-testing-guide/) [EN]",
+        "NIST SP 800-115 (https://csrc.nist.gov) [EN]",
+        "CLUSIF - Méthodes d'audit (https://clusif.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39781-BC02-PR03",
+        "title": "Projet : Conception et pilotage d'infrastructure",
+        "rncpCode": "39781",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et piloter les infrastructures systèmes et réseaux",
+        "durationDays": 7,
+        "durationHours": 49,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C11",
+            "description": "Concevoir une infrastructure système et réseau optimisée et sécurisée."
+        },
+        {
+            "code": "C12",
+            "description": "Définir et contrôler les règles d’accès aux données et services."
+        },
+        {
+            "code": "C13",
+            "description": "Arbitrer les technologies d’hébergement."
+        },
+        {
+            "code": "C14",
+            "description": "Concevoir des topologies réseaux."
+        },
+        {
+            "code": "C15",
+            "description": "Contribuer à la mise en place et à l’administration de l’infrastructure."
+        },
+        {
+            "code": "C16",
+            "description": "Automatiser les processus de déploiement et maintenance."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de planification, de conception et de mise en œuvre d’une infrastructure informatique complète. Il mobilise les compétences du bloc BC02 en préparation de l’épreuve certifiante, en intégrant les contraintes techniques, budgétaires, de sécurité, de performance et de continuité de service."
+    },
+    "prerequisites": {
+        "description": "Avoir suivi l’ensemble des modules du bloc de compétences BC02."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Planification des infrastructures",
+            "context": "Analyse des besoins d’une entreprise souhaitant moderniser son infrastructure.",
+            "objective": "Définir une architecture cible, identifier les contraintes et planifier le déploiement."
+        },
+        {
+            "title": "Conception de l’architecture",
+            "context": "Conception d’une infrastructure pour une PME incluant haute disponibilité et sécurité.",
+            "objective": "Proposer une architecture cohérente, scalable et sécurisée."
+        },
+        {
+            "title": "Configuration et validation",
+            "context": "Simulation de mise en place des composants et services.",
+            "objective": "Configurer, superviser et valider le bon fonctionnement de l’infrastructure."
+        },
+        {
+            "title": "Gestion des changements",
+            "context": "Simulation d’introduction d’une nouvelle technologie dans une infrastructure existante.",
+            "objective": "Structurer un processus de gestion des changements et anticiper les impacts."
+        }
+    ],
+    "bibliography": [],
+    "teachingMethods": []
+}

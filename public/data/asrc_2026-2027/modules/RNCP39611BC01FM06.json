@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC01-FM06",
+        "title": "Techniques de Scripting Système",
+        "rncpCode": "39611",
+        "blocCode": "BC01",
+        "blocName": "Administrer et optimiser les systèmes d'exploitation et la virtualisation pour la sécurité et la performance",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C08",
+            "description": "Automatiser les tâches d'administration en développant et en appliquant des scripts en Python, Shell, et Bash, pour augmenter l'efficacité opérationnelle et réduire les délais de réponse en cas de problèmes ou de besoins de maintenance"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les principes fondamentaux de l'automatisation et du scripting système pour améliorer l'efficacité opérationnelle (Comprendre) Développer des scripts en Python, Shell et Bash pour automatiser des tâches d'administration système (Créer) Appliquer les bonnes pratiques de gestion et de maintenance des scripts pour garantir leur efficacité et leur pérennité (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en administration système et en programmation. Familiarité avec les environnements de ligne de commande sous Linux ou Unix. Notions élémentaires de logique algorithmique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'automatisation et au Scripting système",
+                "items": [
+                    "Comprendre les principes de l'automatisation des tâches d'administration",
+                    "Identifier les avantages de l'automatisation en termes d'efficacité opérationnelle",
+                    "Présenter les langages de Scripting (Python, shell POSIX, Bash) et leurs domaines d'application",
+                    "Expliquer l'importance de l'automatisation dans la réduction des délais de réponse en cas de problèmes ou de maintenance",
+                    "Définir les bonnes pratiques en matière d'automatisation et de Scripting"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Scripting système avec Python",
+                "items": [
+                    "Présenter les bases de Python en lien avec l'automatisation des tâches d'administration",
+                    "Expliquer comment développer des scripts Python pour automatiser des tâches spécifiques",
+                    "Mettre en pratique des exemples d'automatisation avec Python",
+                    "Aborder les modules et bibliothèques Python utiles à l'automatisation",
+                    "Analyser des cas concrets d'automatisation avec Python dans un environnement système"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Scripting système en shell POSIX (sh)",
+                "items": [
+                    "Présenter les bases du langage shell POSIX (sh) en relation avec l'automatisation des tâches d'administration",
+                    "Expliquer comment développer des scripts shell POSIX pour automatiser des tâches spécifiques",
+                    "Mettre en pratique des exemples d'automatisation en shell POSIX",
+                    "Aborder les commandes et outils du shell POSIX utiles à l'automatisation",
+                    "Analyser des cas concrets d'automatisation en shell POSIX dans un environnement système"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Scripting système avec Bash",
+                "items": [
+                    "Présenter les bases du langage Bash en lien avec l'automatisation des tâches d'administration",
+                    "Expliquer comment développer des scripts Bash pour automatiser des tâches spécifiques",
+                    "Mettre en pratique des exemples d'automatisation avec Bash",
+                    "Aborder les fonctionnalités avancées de Bash pour l'automatisation",
+                    "Analyser des cas concrets d'automatisation avec Bash dans un environnement système"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Bonnes pratiques et gestion des scripts",
+                "items": [
+                    "Identifier les bonnes pratiques de développement, de gestion et de documentation des scripts",
+                    "Expliquer l'importance de la gestion des versions et des mises à jour des scripts",
+                    "Présenter les outils de gestion de scripts et de suivi des modifications",
+                    "Aborder les méthodes de déploiement et de sécurisation des scripts",
+                    "Analyser des solutions pour la supervision et la maintenance des scripts automatisés"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comprendre les principes de l'automatisation des tâches d'administration",
+            "objectif": "Comprendre les principes et les avantages de l'automatisation des tâches d'administration système.",
+            "instructions": "En groupe, identifiez trois tâches d'administration courantes dans un environnement système informatique. Pour chacune, discutez des avantages potentiels de leur automatisation. Présentez ensuite vos conclusions à l'ensemble de la classe.",
+            "livrable": "Une présentation à la classe des trois tâches identifiées et des avantages potentiels de leur automatisation."
+        },
+        {
+            "title": "Mettre en pratique l'automatisation avec Python",
+            "objectif": "Mettre en pratique l'automatisation avec Python en développant un script de sauvegarde programmée.",
+            "instructions": "À l'aide des connaissances acquises sur Python et l'automatisation, développez un script Python automatisant la sauvegarde programmée d'un répertoire spécifique. Incluez des commentaires expliquant le fonctionnement du script. Partagez-le avec vos pairs pour obtenir des retours et suggestions d'amélioration.",
+            "livrable": "Un script Python de sauvegarde programmée commenté, partagé avec les pairs pour retours et suggestions d'amélioration."
+        },
+        {
+            "title": "Analyser des cas concrets d'automatisation avec Shell",
+            "objectif": "Savoir concevoir un script Shell automatisant un scénario concret d'administration système.",
+            "instructions": "En utilisant les commandes et outils du Shell vus en cours, identifiez un scénario concret d'automatisation des tâches d'administration. Proposez un script Shell pour automatiser ce scénario. Présentez-le à vos camarades en expliquant son fonctionnement.",
+            "livrable": "Un script Shell automatisant le scénario identifié, présenté aux camarades avec l'explication de son fonctionnement."
+        },
+        {
+            "title": "Approfondir les fonctionnalités avancées de Bash pour l'automatisation",
+            "objectif": "Approfondir les fonctionnalités avancées de Bash pour automatiser la gestion des fichiers de logs.",
+            "instructions": "Développez un script Bash gérant la rotation et la suppression automatique de fichiers de logs selon des critères spécifiques (taille, date, etc.). Testez ce script avec des fichiers de logs simulés. Partagez vos résultats avec le reste du groupe.",
+            "livrable": "Un script Bash de rotation et de suppression de logs, testé sur des fichiers simulés, avec résultats partagés au groupe."
+        },
+        {
+            "title": "Gestion des scripts et bonnes pratiques",
+            "objectif": "Savoir gérer et versionner ses scripts d'automatisation à l'aide d'un outil de suivi des modifications.",
+            "instructions": "En équipes, analysez un outil de gestion de scripts et de suivi des modifications (comme Git). Créez un dépôt pour y stocker vos scripts d'automatisation. Expliquez en quoi ce système de gestion peut être bénéfique pour la supervision et la maintenance de vos scripts. Présentez vos conclusions à la classe.",
+            "livrable": "Un dépôt de scripts d'automatisation et une présentation à la classe des bénéfices de l'outil pour la supervision et la maintenance."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Python Crash Course (3e éd.). No Starch Press",
+            "author": "Matthes, E"
+        },
+        {
+            "title": "Learning the bash Shell : Unix Shell Programming (3e éd.). O'Reilly",
+            "author": "Newham, C. & Rosenblatt, B"
+        },
+        {
+            "title": "Automate the Boring Stuff with Python : Practical Programming for Total Beginners (2e éd.). No Starch Press",
+            "author": "Sweigart, A"
+        }
+    ],
+    "OnlineResources": [
+        "Python Official Documentation (https://docs.python.org/fr/3/) [FR/EN]",
+        "PowerShell Documentation (https://learn.microsoft.com/powershell/) [FR/EN]",
+        "Ansible Documentation (https://docs.ansible.com) [EN]",
+        "Real Python - tutoriels scripting (https://realpython.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

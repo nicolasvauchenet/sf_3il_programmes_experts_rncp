@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC04-FM01",
+        "title": "Etude d'avant projet (MOA)",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C23",
+            "description": "Analyser les besoins opérationnels et les traduire en exigences fonctionnelles et techniques détaillées, en conduisant des études de faisabilité et en évaluant les options technologiques, pour définir des solutions informatiques qui s'alignent avec les objectifs stratégiques de l'entreprise"
+        },
+        {
+            "code": "C24",
+            "description": "Rédiger des documents de spécification technique qui serviront de référence pour les décisions technologiques et les investissements, en assurant que les solutions choisies soient viables, rentables et conformes aux normes de l'industrie"
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs du module sont de permettre aux apprenants de comprendre et analyser les besoins métier et fonctionnels, de rédiger un cahier des charges détaillé et de concevoir l'architecture technique nécessaire. Ils apprendront également à évaluer les solutions techniques et à justifier leurs choix en fonction des contraintes et besoins identifiés. Enfin, le module vise à développer la capacité à estimer la faisabilité technique et à formaliser des spécifications précises pour un projet donné."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion de projet et en informatique, une compréhension des processus métier, et une première expérience en analyse des besoins ou en rédaction de documents techniques sont recommandées."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Analyse des besoins",
+                "items": [
+                    "Comprendre les besoins métier et fonctionnels",
+                    "Identifier les attentes des utilisateurs",
+                    "Utiliser des méthodes d'analyse des besoins",
+                    "Recueillir et formaliser les besoins"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Faisabilité technique",
+                "items": [
+                    "Évaluer la compatibilité avec l'existant",
+                    "Analyser les contraintes techniques",
+                    "Estimer les coûts et délais",
+                    "Identifier les risques techniques"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Cahier des charges",
+                "items": [
+                    "Rédiger un cahier des charges détaillé",
+                    "Définir les fonctionnalités attendues",
+                    "Spécifier les contraintes techniques",
+                    "Intégrer les exigences de sécurité et de performance"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Spécifications techniques",
+                "items": [
+                    "Concevoir l'architecture technique",
+                    "Décrire les interfaces avec les autres systèmes",
+                    "Définir les normes et standards à respecter",
+                    "Préciser les choix technologiques"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Études comparatives",
+                "items": [
+                    "Comparer les solutions techniques possibles",
+                    "Évaluer les avantages et inconvénients de chaque solution",
+                    "Choisir la solution la plus adaptée aux besoins",
+                    "Justifier le choix technique retenu"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Compréhension des besoins",
+            "objectif": "Savoir identifier et formaliser les besoins métier et fonctionnels d'un projet à l'aide de méthodes d'analyse adaptées.",
+            "instructions": "Pour une entreprise souhaitant améliorer son système de gestion des ressources humaines, identifiez les besoins métier et fonctionnels associés. Formalisez ces besoins en mobilisant des méthodes d'analyse adéquates.",
+            "livrable": "Un rapport détaillé présentant les besoins identifiés et formalisés, accompagné d'une explication des méthodes d'analyse utilisées."
+        },
+        {
+            "title": "Évaluation de la faisabilité technique",
+            "objectif": "Être capable d'évaluer la faisabilité technique de la mise en place d'un nouveau système.",
+            "instructions": "À partir des besoins RH identifiés, analysez la compatibilité avec le système informatique existant, identifiez les contraintes techniques, estimez les coûts et délais, et identifiez les risques techniques potentiels.",
+            "livrable": "Un rapport détaillé présentant l'analyse de faisabilité technique, avec des recommandations pour surmonter les contraintes et risques identifiés."
+        },
+        {
+            "title": "Rédaction d'un cahier des charges détaillé",
+            "objectif": "Savoir rédiger un cahier des charges détaillé couvrant besoins, contraintes techniques et exigences de sécurité et de performance.",
+            "instructions": "Sur la base des besoins identifiés et de l'analyse de faisabilité technique, définissez les fonctionnalités attendues, spécifiez les contraintes techniques et intégrez les exigences de sécurité et de performance.",
+            "livrable": "Un cahier des charges complet et précis décrivant de manière exhaustive les besoins et spécifications du nouveau système."
+        },
+        {
+            "title": "Conception de l'architecture technique",
+            "objectif": "Être capable de concevoir l'architecture technique d'un système en respectant contraintes, besoins et standards.",
+            "instructions": "Décrivez l'architecture technique du nouveau système de gestion des ressources humaines, spécifiez les interfaces avec les autres systèmes existants et précisez les normes et standards à respecter.",
+            "livrable": "Un schéma détaillé de l'architecture technique, accompagné d'une explication claire des choix techniques et des normes retenues."
+        },
+        {
+            "title": "Comparaison et justification de solutions techniques",
+            "objectif": "Savoir comparer plusieurs solutions techniques et justifier le choix le plus adapté aux besoins de l'entreprise.",
+            "instructions": "Comparez les solutions techniques possibles pour le nouveau système, évaluez leurs avantages et inconvénients, choisissez la solution la plus adaptée aux besoins de l'entreprise et justifiez ce choix.",
+            "livrable": "Un rapport comparatif détaillé présentant les différentes solutions analysées, avec une justification claire du choix final retenu."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Management d'un projet système d'information : principes, techniques, mise en œuvre et outils (8e éd.). Dunod",
+            "author": "Morley, C"
+        },
+        {
+            "title": "Expression des besoins pour le SI : guide d'élaboration du cahier des charges (5e éd.). Eyrolles",
+            "author": "Constantinidis, Y"
+        },
+        {
+            "title": "Le génie logiciel (5e éd.). PUF, coll. « Que sais-je ? » n° 2956",
+            "author": "Printz, J"
+        }
+    ],
+    "OnlineResources": [
+        "BABOK Guide v3 - Business Analysis Body of Knowledge (https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/) [EN]",
+        "PMBOK Guide - Project Management Institute (https://www.pmi.org) [EN]",
+        "CIGREF - Cahiers des charges et expression de besoin (https://www.cigref.fr) [FR]",
+        "Méthode Agile - guide pratique DINUM (https://www.numerique.gouv.fr) [FR]",
+        "Modern Analyst - Business Analysis Resources (https://www.modernanalyst.com) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

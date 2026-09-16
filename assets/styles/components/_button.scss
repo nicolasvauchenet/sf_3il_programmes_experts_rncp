@@ -24,6 +24,18 @@
         font-size: 0.75rem;
     }
 
+    &.outline {
+        font-size: 0.85rem;
+        border-color: transparent;
+        background-color: transparent;
+
+        &:hover {
+            color: $white;
+            background-color: rgba($secondary, 1);
+            border-color: $secondary;
+        }
+    }
+
     &:disabled {
         color: rgba($black, 0.15);
         background-color: rgba($primary, 0.25);
@@ -31,6 +43,28 @@
         pointer-events: none;
         user-select: none;
         cursor: not-allowed;
+    }
+
+    &.success {
+        color: $success;
+        background-color: rgba($success, 0.25);
+        border-color: $success;
+
+        &:hover {
+            color: $white;
+            background-color: $success;
+        }
+    }
+
+    &.danger {
+        color: $error;
+        background-color: rgba($error, 0.18);
+        border-color: $error;
+
+        &:hover {
+            color: $white;
+            background-color: $error;
+        }
     }
 
     small {

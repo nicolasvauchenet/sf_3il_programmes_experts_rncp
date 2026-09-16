@@ -1,0 +1,157 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM05",
+        "title": "Mise en production et amélioration continue",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives"
+        },
+        {
+            "code": "C06",
+            "description": "Évaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité"
+        },
+        {
+            "code": "C07",
+            "description": "Élaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel"
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre"
+        },
+        {
+            "code": "C09",
+            "description": "Établir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Gérer efficacement la mise en production de projets informatiques (Appliquer) Appliquer les meilleures pratiques pour minimiser les risques en production (Évaluer) Assurer le suivi et l'optimisation post-déploiement dans une démarche d'amélioration continue (Créer)"
+    },
+    "prerequisites": {
+        "description": "Les apprenants doivent avoir des connaissances de base en gestion de projet informatique, ainsi qu'une compréhension des concepts de développement logiciel et des systèmes d'exploitation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Méthodologie de mise en production",
+                "items": [
+                    "Processus de mise en production",
+                    "Bonnes pratiques en matière de déploiement",
+                    "Gestion des risques liés à la mise en production",
+                    "Planification et coordination des opérations de mise en production",
+                    "Suivi et évaluation post-déploiement"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Environnement de mise en production",
+                "items": [
+                    "Environnement de développement, de test et de production",
+                    "Gestion des configurations",
+                    "Virtualisation et conteneurisation",
+                    "Automatisation des déploiements",
+                    "Sécurité des environnements de mise en production"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et technologies de mise en production",
+                "items": [
+                    "Gestion de versions",
+                    "Outils de déploiement continu",
+                    "Surveillance et monitoring des systèmes en production",
+                    "Ordonnancement des tâches",
+                    "Gestion des mises à jour et des correctifs"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des incidents et des changements en production",
+                "items": [
+                    "Processus de gestion des incidents",
+                    "Gestion des changements en environnement de production",
+                    "Mécanismes de retour arrière",
+                    "Communication en cas d'incident",
+                    "Analyse post-mortem des incidents"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Optimisation des performances en production",
+                "items": [
+                    "Analyse des performances",
+                    "Tuning des systèmes",
+                    "Gestion de la capacité",
+                    "Scalabilité des infrastructures",
+                    "Optimisation des ressources et des coûts"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Processus de mise en production",
+            "objectif": "Mettre en pratique la méthodologie de mise en production.",
+            "instructions": "Responsable du déploiement d'une nouvelle version d'une application dans un environnement de production, décrivez les différentes étapes à suivre pour assurer une mise en production réussie en tenant compte des bonnes pratiques et de la gestion des risques.",
+            "livrable": "La description des étapes de la mise en production, intégrant les bonnes pratiques et la prise en compte de la gestion des risques."
+        },
+        {
+            "title": "Gestion des configurations",
+            "objectif": "Maîtriser la gestion des configurations en environnement de production.",
+            "instructions": "À l'aide d'un outil de gestion des configurations de votre choix, créez une configuration standard pour un serveur d'application en environnement de production.",
+            "livrable": "Une configuration standard de serveur d'application incluant les paramètres essentiels garantissant la stabilité et la sécurité du serveur."
+        },
+        {
+            "title": "Surveillance et monitoring des systèmes en production",
+            "objectif": "Savoir mettre en place un système de surveillance et de monitoring efficace.",
+            "instructions": "Installez un outil de surveillance et de monitoring sur un serveur en environnement de production et configurez-le pour qu'il surveille les ressources système et les performances de l'application.",
+            "livrable": "Un outil de surveillance installé et configuré, surveillant les ressources système et les performances de l'application et générant des alertes en cas de dysfonctionnement."
+        },
+        {
+            "title": "Gestion des incidents en production",
+            "objectif": "Être en mesure de gérer efficacement les incidents en environnement de production.",
+            "instructions": "Simulez un incident majeur en environnement de production (par exemple une indisponibilité de l'application) et mettez en œuvre les étapes de gestion des incidents apprises.",
+            "livrable": "La documentation des actions menées lors de la gestion de l'incident et des solutions proposées pour éviter que cet incident ne se reproduise."
+        },
+        {
+            "title": "Analyse des performances et optimisation",
+            "objectif": "Savoir analyser les performances en production et les optimiser.",
+            "instructions": "À l'aide d'un outil d'analyse des performances, identifiez et analysez les goulots d'étranglement d'un serveur en environnement de production.",
+            "livrable": "L'identification des goulots d'étranglement et des mesures d'optimisation proposées pour améliorer les performances du serveur tout en garantissant la disponibilité de l'application."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Continuous Delivery: Reliable Software Releases (2e éd.)",
+            "author": "Humble, J. & Farley, D"
+        },
+        {
+            "title": "The DevOps Handbook (2e éd.)",
+            "author": "Kim, G. et al"
+        },
+        {
+            "title": "Site Reliability Engineering (2e éd.)",
+            "author": "Beyer, B. et al"
+        }
+    ],
+    "OnlineResources": [
+        "ITIL 4 - Release Management (https://www.axelos.com) [EN]",
+        "DORA - DevOps Research and Assessment (https://dora.dev) [EN]",
+        "GitLab Continuous Delivery (https://docs.gitlab.com/ee/ci/) [EN]",
+        "DevOps Institute (https://www.devopsinstitute.com) [EN]",
+        "CNCF Cloud Native Landscape (https://landscape.cncf.io) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

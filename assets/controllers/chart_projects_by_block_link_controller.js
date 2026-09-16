@@ -44,7 +44,7 @@ export default class extends Controller {
 
             const point = points[0];
             const clickedFileCode = String(fileCodes[point.index] ?? '').trim();
-            const clickedBlockCode = String(blockCodes[point.index] ?? '').trim();
+            const clickedBlockCode = String(blockCodes[point.index] ?? '').trim().toLowerCase();
 
             if (!clickedFileCode) {
                 return;

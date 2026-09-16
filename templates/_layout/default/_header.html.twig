@@ -3,7 +3,7 @@
         <img src="{{ asset('img/logo-3il.png') }}" alt="Logo 3iL"/>
     </a>
 
-    {% if 'app_home' != app.request.get('_route') and 'app_legal_' not in app.request.get('_route') %}
+    {% if app.request.get('_route') starts with 'app_promotion_' %}
         {% include '_layout/default/_navigation.html.twig' %}
     {% endif %}
 

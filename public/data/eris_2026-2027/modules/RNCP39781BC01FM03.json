@@ -1,0 +1,167 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM03",
+        "title": "Fourniture de services",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C03",
+            "description": "Établir des accords de niveaux de service (SLA) en collaboration avec les clients internes et/ou externes, en définissant des indicateurs clés de performance (KPI) et leurs valeurs cibles associées, réunis en tableaux de bord et en utilisant des outils de gestion de SLA, afin d’offrir des prestations ou des réalisations répondant aux exigences et objectifs de l’entreprise"
+        },
+        {
+            "code": "C04",
+            "description": "Élaborer, documenter et mettre en œuvre des processus et procédures standardisées en s’appuyant sur des normes et/ou référentiels tels que ISO 9001 et ITIL pour garantir la qualité et l’efficacité des services"
+        },
+        {
+            "code": "C05",
+            "description": "Analyser les causes de non-respect des SLA en s’appuyant sur les KPI et des outils d’audit et d’analyse de données afin de proposer des actions correctives"
+        },
+        {
+            "code": "C06",
+            "description": "Évaluer les risques pesant sur la production en lien avec l’informatique, en identifiant les menaces, en évaluant leurs probabilités et impacts afin de définir et documenter des plans de continuité et de reprise de l’activité"
+        },
+        {
+            "code": "C07",
+            "description": "Élaborer un plan de continuité d’activité (PCA) en s’appuyant sur les SLA et l’analyse de risques, en produisant sa documentation et en définissant les moyens humains et techniques nécessaires à sa mise en place afin de respecter le niveau de service contractuel"
+        },
+        {
+            "code": "C08",
+            "description": "Définir un plan de reprise d’activité (PRA) en priorisant les applications et services critiques et en établissant des stratégies de sauvegarde, avec respect du principe du 3-2-1, et de restauration, aussi bien matérielle et/ou logicielle qu’organisationnelle, afin d’assurer une protection optimale contre les risques de perte de données, et permettre une récupération rapide et efficace en cas de sinistre"
+        },
+        {
+            "code": "C09",
+            "description": "Établir et mettre en œuvre des tests des plans de continuité (PCA) et des plans de reprise d’activité (PRA) en simulant des situations de crise réelles ou de pannes majeures sous forme d’exercices réflexifs, pratiques ou simulés afin d’améliorer la préparation aux incidents et assurer la résilience des infrastructures systèmes et réseaux"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Maîtriser les concepts et méthodologies pour élaborer un plan de continuité des activités (PCA) efficace (Appliquer) Identifier et évaluer les risques et impacts des interruptions d'activité (Analyser) Mettre en place des stratégies, tester et améliorer continuellement le PCA pour la fourniture de services (Créer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en gestion des risques et en infrastructures systèmes et réseaux. Compréhension des fondamentaux en gestion de projet et notions de sécurité informatique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Concepts fondamentaux de la continuité des activités",
+                "items": [
+                    "Comprendre les enjeux de la continuité des activités",
+                    "Identifier les risques et les menaces pour la continuité des activités",
+                    "Connaître les normes et bonnes pratiques en matière de PCA"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Analyse d'impact sur l'activité",
+                "items": [
+                    "Identifier les processus critiques de l'organisation",
+                    "Estimer l'impact financier et opérationnel d'une interruption d'activité",
+                    "Mettre en place une méthodologie d'analyse d'impact sur l'activité"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Stratégies de continuité",
+                "items": [
+                    "Comprendre les différentes stratégies de continuité (redondance, relocalisation, etc.)",
+                    "Choisir la stratégie la plus adaptée en fonction des besoins de l'organisation",
+                    "Mettre en place un plan de continuité efficace"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Planification de la reprise d'activité",
+                "items": [
+                    "Élaborer un plan de reprise d'activité détaillé",
+                    "Mettre en place des procédures de secours pour assurer la reprise d'activité",
+                    "Tester et mettre à jour régulièrement le plan de reprise d'activité"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Gestion de crise et communication",
+                "items": [
+                    "Mettre en place une organisation pour la gestion de crise",
+                    "Définir les rôles et responsabilités en cas de crise",
+                    "Élaborer un plan de communication en cas d'incident majeur"
+                ]
+            },
+            {
+                "title": "Chapitre 6 : Exercices et tests",
+                "items": [
+                    "Organiser des exercices de simulation de crise",
+                    "Évaluer l'efficacité du plan de continuité",
+                    "Mettre en place un programme de tests réguliers"
+                ]
+            },
+            {
+                "title": "Chapitre 7 : Retour d'expérience et amélioration continue",
+                "items": [
+                    "Analyser les retours d'expérience à la suite d’incidents",
+                    "Mettre en place des actions d'amélioration continue",
+                    "Intégrer la culture de la continuité des activités dans l'organisation"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Évaluation des Risques et Menaces",
+            "objectif": "Savoir identifier et évaluer les risques et menaces pouvant affecter les opérations critiques d'une organisation.",
+            "instructions": "En tant que responsable de la continuité des activités, identifiez les risques et menaces pouvant affecter les opérations critiques de l'organisation, puis créez un tableau listant au moins 10 risques (naturels, technologiques, humains, etc.) avec leur probabilité d'occurrence et leur impact potentiel sur l'entreprise.",
+            "livrable": "Un tableau d'au moins 10 risques évalués (probabilité et impact) assorti, pour chaque risque, d'une mesure préventive réduisant sa probabilité ou son impact."
+        },
+        {
+            "title": "Analyse d'Impact sur l'Activité (AIA)",
+            "objectif": "Être capable de réaliser une analyse d'impact sur l'activité (AIA) pour prioriser les efforts de continuité.",
+            "instructions": "Pour préparer le plan de continuité des activités, réalisez une Analyse d'Impact sur l'Activité (AIA) : sélectionnez trois processus critiques de l'organisation et évaluez leur importance en termes de niveaux de service et de conséquences financières et opérationnelles en cas de défaillance, à l'aide d'une échelle de 1 à 5.",
+            "livrable": "Un bref rapport présentant l'évaluation des trois processus critiques ainsi que des conclusions et recommandations pour la priorisation des efforts de continuité."
+        },
+        {
+            "title": "Choix et Justification d'une Stratégie de Continuité",
+            "objectif": "Savoir choisir et justifier une stratégie de continuité adaptée à un processus critique.",
+            "instructions": "À partir de votre compréhension des risques et des impacts sur l'activité, choisissez une stratégie de continuité adaptée à l'un des processus critiques identifiés et rédigez une proposition décrivant la stratégie retenue (redondance, relocalisation, etc.).",
+            "livrable": "Une proposition décrivant la stratégie de continuité choisie, justifiant son adéquation aux besoins de l'entreprise pour ce processus et expliquant sa mise en œuvre opérationnelle."
+        },
+        {
+            "title": "Plan de Reprise d'Activité",
+            "objectif": "Être capable de développer un plan de reprise d'activité pour un service essentiel de l'entreprise.",
+            "instructions": "Chargé de développer un plan de reprise d'activité pour un service essentiel de l'entreprise, créez un document de planification incluant les objectifs de reprise, les ressources nécessaires, les procédures à suivre pour restaurer le service ainsi qu'un plan de communication interne et externe.",
+            "livrable": "Un document de planification de reprise d'activité comprenant les objectifs de reprise, les ressources, les procédures de restauration, un plan de communication interne et externe, et un calendrier des tests réguliers."
+        },
+        {
+            "title": "Simulation de Crise et Gestion de la Communication",
+            "objectif": "Savoir organiser une simulation de crise et gérer la communication pour tester le plan de continuité.",
+            "instructions": "Organisez un exercice de simulation de crise pour tester l'efficacité du plan de continuité : décrivez le scénario de crise et ses conséquences immédiates, assignez des rôles et responsabilités aux membres de l'équipe de gestion de crise, et rédigez le plan de communication (protocole interne et stratégie avec les médias et les parties prenantes externes).",
+            "livrable": "Le scénario de crise, la répartition des rôles, le plan de communication, et un rapport d'analyse post-simulation évaluant la réaction de l'équipe, ses points forts et ses faiblesses, et proposant des améliorations du plan de continuité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Business Continuity and Disaster Recovery Planning for IT Professionals (3e éd.)",
+            "author": "Snedaker, S"
+        },
+        {
+            "title": "The Disaster Recovery Handbook (4e éd.). AMACOM. ISO. (2023). ISO 22301 : Continuité d'activité",
+            "author": "Wallace, M. & Webber, L"
+        }
+    ],
+    "OnlineResources": [
+        "ISO 22301 - Business continuity (https://www.iso.org/iso-22301-business-continuity.html) [EN/FR]",
+        "ANSSI - PCA / PRA (https://cyber.gouv.fr) [FR]",
+        "Disaster Recovery Journal (https://www.drj.com) [EN]",
+        "Continuity Central (https://www.continuitycentral.com) [EN]",
+        "CLUSIF - Continuité d'activité (https://clusif.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

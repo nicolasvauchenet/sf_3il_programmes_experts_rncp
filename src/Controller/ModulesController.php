@@ -2,8 +2,11 @@
 
 namespace App\Controller;
 
+use App\Dto\Context\ResolvedModuleSheet;
 use App\Service\Chart\ModuleChartService;
 use App\Service\Context\Provider\FrameworkModulesProvider;
+use App\Service\Pdf\PdfGenerator;
+use App\Twig\PromotionContext;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,6 +19,8 @@ final class ModulesController extends AbstractController
         Request                  $request,
         FrameworkModulesProvider $modulesProvider,
         ModuleChartService       $moduleChartService,
+        PdfGenerator             $pdfGenerator,
+        PromotionContext         $promotionContext,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -61,13 +66,9 @@ final class ModulesController extends AbstractController
             }
         }
 
-        if ($selectedBlock === null) {
-            $selectedBlock = $this->normalizeBlockCode((string)($selectedModule->meta['blockCode'] ?? ''));
-        }
-
         $moduleVolumeChart = $moduleChartService->createModuleVolumeChart($selectedModule);
 
-        return $this->render('modules/index.html.twig', [
+        $viewData = [
             'promotion' => $promotion,
             'year' => $year,
             'modules' => $modules,
@@ -75,9 +76,28 @@ final class ModulesController extends AbstractController
             'selectedBlock' => $selectedBlock,
             'module' => $selectedModule,
             'moduleVolumeChart' => $moduleVolumeChart,
-        ]);
+        ];
+
+        if ($request->query->get('download') === 'pdf') {
+            $viewData['pdfMode'] = true;
+
+            return $pdfGenerator->download(
+                $this->renderView('modules/index.html.twig', $viewData),
+                sprintf('matiere-%s.pdf', $selectedModule->moduleCode()),
+                [
+                    'promotionTitle' => $promotionContext->getPromotionTitle() ?? strtoupper($promotion),
+                    'sheetLabel' => sprintf('Fiche Matière %s', $selectedModule->moduleCode()),
+                    'sheetTitle' => $selectedModule->title() ?: 'Matière',
+                ],
+            );
+        }
+
+        return $this->render('modules/index.html.twig', $viewData);
     }
 
+    /**
+     * @param ResolvedModuleSheet[] $modules
+     */
     private function normalizeSelectedCode(string $raw, array $modules): ?string
     {
         $raw = strtolower(trim($raw));
@@ -97,7 +117,7 @@ final class ModulesController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -106,14 +126,17 @@ final class ModulesController extends AbstractController
         return $raw;
     }
 
-    private function findFirstModuleForBlock(array $modules, ?string $blockCode): mixed
+    /**
+     * @param ResolvedModuleSheet[] $modules
+     */
+    private function findFirstModuleForBlock(array $modules, ?string $blockCode): ?ResolvedModuleSheet
     {
         if ($blockCode === null) {
             return null;
         }
 
         foreach ($modules as $module) {
-            $moduleBlockCode = strtoupper(trim((string)($module->meta['blockCode'] ?? '')));
+            $moduleBlockCode = strtolower(trim((string)($module->meta['blocCode'] ?? $module->meta['blockCode'] ?? '')));
 
             if ($moduleBlockCode === $blockCode) {
                 return $module;

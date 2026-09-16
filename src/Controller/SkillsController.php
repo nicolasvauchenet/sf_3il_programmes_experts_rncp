@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Dto\Context\ResolvedSkillSheet;
 use App\Service\Chart\SkillChartService;
 use App\Service\Context\Provider\FrameworkSkillsProvider;
+use App\Service\Pdf\PdfGenerator;
+use App\Twig\PromotionContext;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,6 +19,8 @@ final class SkillsController extends AbstractController
         Request                 $request,
         FrameworkSkillsProvider $skillsProvider,
         SkillChartService       $skillChartService,
+        PdfGenerator            $pdfGenerator,
+        PromotionContext        $promotionContext,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -57,7 +61,7 @@ final class SkillsController extends AbstractController
 
         $skillMetricsChart = $skillChartService->createSkillMetricsChart($selectedSkill);
 
-        return $this->render('skills/index.html.twig', [
+        $viewData = [
             'promotion' => $promotion,
             'year' => $year,
             'skills' => $skills,
@@ -65,7 +69,23 @@ final class SkillsController extends AbstractController
             'selectedBlock' => $selectedBlock,
             'skill' => $selectedSkill,
             'skillMetricsChart' => $skillMetricsChart,
-        ]);
+        ];
+
+        if ($request->query->get('download') === 'pdf') {
+            $viewData['pdfMode'] = true;
+
+            return $pdfGenerator->download(
+                $this->renderView('skills/index.html.twig', $viewData),
+                sprintf('competence-%s.pdf', $selectedSkill->fullSkillCode()),
+                [
+                    'promotionTitle' => $promotionContext->getPromotionTitle() ?? strtoupper($promotion),
+                    'sheetLabel' => sprintf('Fiche Compétence %s', $selectedSkill->fullSkillCode()),
+                    'sheetTitle' => $selectedSkill->title() ?: 'Compétence',
+                ],
+            );
+        }
+
+        return $this->render('skills/index.html.twig', $viewData);
     }
 
     /**
@@ -80,8 +100,8 @@ final class SkillsController extends AbstractController
         }
 
         foreach ($skills as $skill) {
-            if (strtolower($skill->fileCode) === $raw) {
-                return $skill->fileCode;
+            if (strtolower((string)$skill->fileCode) === $raw) {
+                return (string)$skill->fileCode;
             }
         }
 
@@ -90,7 +110,7 @@ final class SkillsController extends AbstractController
 
     private function normalizeBlockCode(string $raw): ?string
     {
-        $raw = strtoupper(trim($raw));
+        $raw = strtolower(trim($raw));
 
         if ($raw === '') {
             return null;
@@ -123,7 +143,7 @@ final class SkillsController extends AbstractController
         }
 
         foreach ($skills as $skill) {
-            $skillBlockCode = strtoupper(trim($this->extractBlockCodeFromFileCode($skill->fileCode)));
+            $skillBlockCode = strtolower(trim((string)($skill->meta['blocCode'] ?? '')));
 
             if ($skillBlockCode === $blockCode) {
                 return $skill;
@@ -131,10 +151,5 @@ final class SkillsController extends AbstractController
         }
 
         return null;
-    }
-
-    private function extractBlockCodeFromFileCode(string $fileCode): string
-    {
-        return strtoupper(substr($fileCode, 0, 4));
     }
 }

@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM02",
+        "title": "Analyse et modélisation (UML)",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C08",
+            "description": "Élaborer et implémenter des solutions Back-end en appliquant la programmation orientée objet (POO), en utilisant des architectures MVC ainsi que les Frameworks adaptés pour structurer un code robuste et maintenable"
+        }
+    ],
+    "objectives": {
+        "description": "Apprendre à utiliser UML pour modéliser les différents aspects d'un système logiciel. Comprendre et réaliser plusieurs types de diagrammes UML comme les cas d'utilisation, les classes, les séquences, et les états-transition. Intégrer l'utilisation d'UML dans le processus de développement pour capturer les exigences et concevoir des solutions logicielles robustes."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en programmation et en développement logiciel. Compréhension des concepts de génie logiciel et des processus de développement. Familiarité avec la modélisation et l'abstraction en informatique."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à UML",
+                "items": [
+                    "Les principes de base de l'UML",
+                    "Les différents types de diagrammes UML",
+                    "L'importance de l'UML dans le processus de développement logiciel",
+                    "Les outils de modélisation UML disponibles sur le marché",
+                    "Exemples d'utilisation de l'UML dans des projets réels"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Diagramme de cas d'utilisation",
+                "items": [
+                    "Comprendre le concept de cas d'utilisation",
+                    "Identifier les acteurs et les scénarios",
+                    "Réaliser des diagrammes de cas d'utilisation",
+                    "Utilisation de cas d'utilisation pour la capture des exigences",
+                    "Exemples pratiques de diagrammes de cas d'utilisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Diagramme de classes",
+                "items": [
+                    "Comprendre la structure d'un diagramme de classes",
+                    "Notion d'attributs, de méthodes et de relations entre les classes",
+                    "Utilisation de l'héritage et de la composition",
+                    "Exemples de modélisation de classes",
+                    "Utilisation des diagrammes de classes pour la conception logicielle"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Diagramme de séquence",
+                "items": [
+                    "Comprendre le scénario d'exécution d'un système",
+                    "Notion de messages échangés entre les objets",
+                    "Utilisation des diagrammes de séquence pour modéliser le comportement dynamique",
+                    "Exemples de modélisation de séquences d'interaction",
+                    "Intégration des diagrammes de séquence dans le processus de développement"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Diagramme d'états-transition",
+                "items": [
+                    "Comprendre le concept d'états et de transitions",
+                    "Modélisation du comportement d'un objet en fonction de son état",
+                    "Utilisation des diagrammes d'états-transition pour la modélisation des comportements complexes",
+                    "Exemples de modélisation de diagrammes d'états-transition",
+                    "Intégration des diagrammes d'états-transition dans la conception logicielle"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de cas réels d'utilisation d'UML",
+            "objectif": "Savoir identifier les usages des diagrammes UML dans un projet logiciel réel.",
+            "instructions": "Sélectionnez un projet logiciel réel et identifiez les différentes utilisations d'UML dans ce projet. Réalisez une liste des diagrammes UML utilisés en expliquant brièvement comment ils ont été employés pour la modélisation et la conception du logiciel.",
+            "livrable": "La liste commentée des diagrammes UML du projet, présentée en classe et discutée avec les camarades."
+        },
+        {
+            "title": "Modélisation d'un cas d'utilisation",
+            "objectif": "Savoir modéliser un processus métier à l'aide d'un diagramme de cas d'utilisation.",
+            "instructions": "Identifiez un processus métier simple, tel que la réservation d'un billet de train ou la gestion d'un compte client. Réalisez un diagramme de cas d'utilisation détaillé en identifiant les acteurs impliqués ainsi que les scénarios principaux et alternatifs.",
+            "livrable": "Le diagramme de cas d'utilisation présenté et expliqué aux camarades."
+        },
+        {
+            "title": "Modélisation de classes pour un système donné",
+            "objectif": "Savoir concevoir un diagramme de classes pour un système logiciel.",
+            "instructions": "Sélectionnez un système logiciel simple, tel qu'un système de gestion de bibliothèque ou de réservation en ligne. Réalisez un diagramme de classes en identifiant les différentes classes, leurs attributs, leurs méthodes et les relations entre les classes.",
+            "livrable": "Le diagramme de classes présenté en mettant en avant les choix de conception effectués."
+        },
+        {
+            "title": "Modélisation d'un scénario d'exécution",
+            "objectif": "Savoir modéliser les interactions entre objets à l'aide d'un diagramme de séquence.",
+            "instructions": "Élaborez un scénario d'exécution pour un système de votre choix en mettant en lumière les interactions entre les objets. Réalisez un diagramme de séquence décrivant le déroulement de ce scénario et identifiez les messages échangés entre les objets.",
+            "livrable": "Le diagramme de séquence présenté avec l'explication détaillée du scénario modélisé."
+        },
+        {
+            "title": "Modélisation des comportements complexes",
+            "objectif": "Savoir modéliser un comportement complexe à l'aide d'un diagramme d'états-transition.",
+            "instructions": "Choisissez un système comportant un comportement complexe, tel qu'un distributeur automatique de billets ou un système de contrôle de feux de circulation. Réalisez un diagramme d'états-transition d'un de ses composants en identifiant les états possibles et les transitions, et en justifiant vos choix de modélisation.",
+            "livrable": "Le diagramme d'états-transition présenté et discuté avec les camarades."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Database Design for Mere Mortals (4e éd.). Addison-Wesley",
+            "author": "Hernandez, M. J"
+        }
+    ],
+    "OnlineResources": [
+        "PostgreSQL Documentation (https://www.postgresql.org/docs/) [EN]",
+        "Modélisation Merise - developpez.com (https://merise.developpez.com) [FR]",
+        "UML Specification - OMG (https://www.omg.org/spec/UML) [EN]",
+        "DB-Engines Ranking (https://db-engines.com/en/ranking) [EN]",
+        "MySQL Documentation - Database Design (https://dev.mysql.com/doc/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

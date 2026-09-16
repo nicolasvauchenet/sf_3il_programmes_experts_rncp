@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM04",
+        "title": "Administration Hébergement Web",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C07",
+            "description": "Configurer et personnaliser l’environnement de développement en paramétrant un IDE et en utilisant le terminal afin de l'aligner de l'environnement de production cible"
+        },
+        {
+            "code": "C09",
+            "description": "Optimiser et sécuriser les serveurs web, en ajustant les paramètres serveur et en employant des commandes avancées via le terminal pour améliorer les performances et la sécurité (SSH, MFA) des applications web en fonction de son OS (Linux, Windows)"
+        }
+    ],
+    "objectives": {
+        "description": "Les objectifs pédagogiques de ce module sont de comprendre les principes de base de l'administration d'hébergement web, de maîtriser la gestion et la sécurité des serveurs, et d'assurer la haute disponibilité et scalabilité des services. Les apprenants sauront également installer, configurer et maintenir des services et applications web sur un serveur tout en optimisant leur performance. Enfin, ils comprendront les rôles et responsabilités en tant qu'administrateur d'hébergement web."
+    },
+    "prerequisites": {
+        "description": "Des connaissances de base en réseaux informatiques et en administration de systèmes d'exploitation, ainsi qu'une compréhension générale du fonctionnement du web."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'administration d'hébergement web",
+                "items": [
+                    "Comprendre les principes de base de l'administration d'hébergement web",
+                    "Connaître les différents types d'hébergement web et leurs caractéristiques",
+                    "Identifier les enjeux de la sécurité dans l'administration d'hébergement web",
+                    "Comprendre les rôles et responsabilités de l'administrateur d'hébergement web",
+                    "Connaître les outils et technologies utilisés dans l'administration d'hébergement web"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des serveurs",
+                "items": [
+                    "Comprendre les concepts de base de la gestion des serveurs",
+                    "Savoir installer et configurer un serveur web",
+                    "Maîtriser la gestion des utilisateurs et des permissions sur un serveur",
+                    "Connaître les bonnes pratiques de gestion des serveurs",
+                    "Savoir monitorer et optimiser les performances des serveurs"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Sécurité et sauvegarde",
+                "items": [
+                    "Comprendre les enjeux de la sécurité dans l'hébergement web",
+                    "Maîtriser la mise en place de certificats SSL et la gestion des clés",
+                    "Connaître les meilleures pratiques en matière de sauvegarde des données",
+                    "Savoir mettre en place des politiques de sécurité efficaces",
+                    "Connaître les outils et techniques de détection et de prévention des attaques"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des services et des applications",
+                "items": [
+                    "Comprendre la gestion des services et des applications web",
+                    "Savoir installer, configurer et maintenir des applications et services sur un serveur",
+                    "Maîtriser la gestion des bases de données",
+                    "Connaître les bonnes pratiques en matière de déploiement d'applications web",
+                    "Savoir monitorer et optimiser les performances des applications et services"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Haute disponibilité et scalabilité",
+                "items": [
+                    "Comprendre les concepts de haute disponibilité et de scalabilité",
+                    "Connaître les techniques de load balancing et de répartition de charge",
+                    "Savoir mettre en place des architectures redondantes",
+                    "Maîtriser les outils et technologies permettant d'assurer la haute disponibilité",
+                    "Connaître les bonnes pratiques en matière de gestion de la scalabilité"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Comprendre les principes de base de l'administration d'hébergement web",
+            "objectif": "Comprendre et assimiler les principes fondamentaux de l'administration d'hébergement web.",
+            "instructions": "Réalisez une recherche sur les principes de base de l'administration d'hébergement web et rédigez un court résumé des résultats.",
+            "livrable": "Un court résumé présentant les résultats de la recherche sur les principes de base de l'administration d'hébergement web."
+        },
+        {
+            "title": "Installer et configurer un serveur web",
+            "objectif": "Mettre en pratique l'installation et la configuration d'un serveur web.",
+            "instructions": "Installez un serveur web de votre choix (Apache, Nginx, etc.) sur un environnement local ou distant, puis configurez-le pour héberger une page HTML de test.",
+            "livrable": "Un serveur web installé et configuré hébergeant la page HTML de test."
+        },
+        {
+            "title": "Mise en place de certificats SSL et gestion des clés",
+            "objectif": "Maîtriser la mise en place de certificats SSL et la gestion des clés pour sécuriser les connexions.",
+            "instructions": "Installez un certificat SSL sur un serveur web, générez et gérez les clés associées, puis vérifiez le bon fonctionnement de la connexion sécurisée.",
+            "livrable": "Un serveur web disposant d'un certificat SSL opérationnel et d'une connexion sécurisée vérifiée."
+        },
+        {
+            "title": "Installation, configuration et maintenance d'une application web",
+            "objectif": "Mettre en pratique l'installation, la configuration et la maintenance d'une application web sur un serveur.",
+            "instructions": "Choisissez une application web (par exemple WordPress, Joomla, etc.), installez-la, configurez-la et assurez sa maintenance sur un serveur.",
+            "livrable": "Une application web installée, configurée et maintenue sur un serveur."
+        },
+        {
+            "title": "Mise en place d'une architecture redondante",
+            "objectif": "Comprendre et mettre en oeuvre les concepts de haute disponibilité et de redondance en hébergement web.",
+            "instructions": "Concevez et mettez en place une architecture redondante pour un service ou une application web spécifique, en utilisant les techniques apprises dans le cours.",
+            "livrable": "Une architecture redondante conçue et mise en place pour le service ou l'application web retenu."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Mastering NGINX (2e éd.). Packt",
+            "author": "Aivaliotis, D"
+        },
+        {
+            "title": "Linux Server Security : Hack and Defend. Wiley",
+            "author": "Binnie, C"
+        }
+    ],
+    "OnlineResources": [
+        "Apache HTTP Server Documentation (https://httpd.apache.org/docs/) [EN]",
+        "NGINX Documentation (https://nginx.org/en/docs/) [EN]",
+        "TLSRef - configurations TLS de référence Configuration (https://docs.tlsref.org/) [EN]",
+        "ANSSI - Recommandations sécurité serveurs web (https://cyber.gouv.fr/) [FR]",
+        "Let's Encrypt - Certificats SSL gratuits (https://letsencrypt.org) [EN/FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

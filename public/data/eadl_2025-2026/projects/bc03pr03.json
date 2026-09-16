@@ -1,0 +1,101 @@
+{
+    "meta": {
+        "type": "project",
+        "code": "RNCP39765-BC03-PR03",
+        "title": "Projet CI/CD et industrialisation du développement",
+        "rncpCode": "39765",
+        "blocCode": "BC03",
+        "blocName": "Piloter l'intégration et le déploiement continu dans le Système d'Information (SI)",
+        "durationDays": 20,
+        "durationHours": 140,
+        "academicYear": "2025-2026"
+    },
+    "skills": [
+        {
+            "code": "C16",
+            "description": "Définir les méthodologies de déploiement et mettre en œuvre les pipelines CI/CD..."
+        },
+        {
+            "code": "C17",
+            "description": "Intégrer les tests automatisés dans les pipelines..."
+        },
+        {
+            "code": "C18",
+            "description": "Intégrer des pratiques de sécurité DevSecOps..."
+        },
+        {
+            "code": "C19",
+            "description": "Optimiser les développements et structurer le code..."
+        },
+        {
+            "code": "C20",
+            "description": "Mettre en place et maintenir la documentation technique..."
+        }
+    ],
+    "objectives": {
+        "description": "Le projet vise à placer les apprenants en situation de conception, de mise en place et d’optimisation d’une chaîne d’intégration et de déploiement continu complète. Il mobilise les compétences du bloc BC03 en préparation de l’EC03, en intégrant les dimensions de développement avancé, de qualité logicielle, de pipelines CI/CD, de sécurité DevSecOps et de documentation technique."
+    },
+    "prerequisites": {
+        "description": "Maîtrise des bases du développement logiciel, utilisation de Git, compréhension des concepts DevOps et des architectures applicatives."
+    },
+    "outline": {
+        "chapters": []
+    },
+    "exercises": [
+        {
+            "title": "Conception et structuration du projet applicatif",
+            "context": "Les apprenants conçoivent une application support structurée et maintenable servant de base au projet.",
+            "objective": "Mettre en place une architecture applicative propre, modulaire et prête à être industrialisée."
+        },
+        {
+            "title": "Mise en place des pratiques de développement avancé",
+            "context": "Implémentation des bonnes pratiques de développement (POO, design patterns, tests, qualité).",
+            "objective": "Garantir la qualité, la maintenabilité et la testabilité du code."
+        },
+        {
+            "title": "Implémentation d’un pipeline CI/CD",
+            "context": "Mise en place d’un pipeline complet incluant build, tests et déploiement automatisé.",
+            "objective": "Automatiser le cycle de vie du logiciel et sécuriser les livraisons."
+        },
+        {
+            "title": "Intégration des tests et de la qualité logicielle",
+            "context": "Intégration de tests automatisés et d’outils d’analyse de qualité dans le pipeline.",
+            "objective": "Garantir la fiabilité des livrables et améliorer en continu la qualité du code."
+        },
+        {
+            "title": "Intégration des pratiques DevSecOps",
+            "context": "Ajout d’outils d’analyse de vulnérabilités et de sécurité dans la chaîne CI/CD.",
+            "objective": "Sécuriser les applications et intégrer la sécurité dès le développement."
+        },
+        {
+            "title": "Documentation technique et partage",
+            "context": "Production d’une documentation complète et exploitable du projet.",
+            "objective": "Faciliter la maintenance, le partage des connaissances et l’évolutivité du système."
+        },
+        {
+            "title": "Optimisation et amélioration continue",
+            "context": "Analyse du pipeline et du projet pour proposer des améliorations.",
+            "objective": "Optimiser les performances, la qualité et la robustesse de la chaîne CI/CD."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Continuous Delivery",
+            "author": "Jez Humble"
+        },
+        {
+            "title": "Clean Code",
+            "author": "Robert C. Martin"
+        },
+        {
+            "title": "DevSecOps : Intégrer la sécurité dans vos développements",
+            "author": "H. Le Bourlot"
+        }
+    ],
+    "teachingMethods": [
+        "Travaux pratiques",
+        "Projet fil rouge",
+        "Mise en situation professionnelle",
+        "Travaux de groupe"
+    ]
+}

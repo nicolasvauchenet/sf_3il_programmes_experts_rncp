@@ -1,0 +1,121 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC02-FM05",
+        "title": "Stratégie de sauvegarde et de versionning",
+        "rncpCode": "39608",
+        "blocCode": "BC02",
+        "blocName": "Concevoir et réaliser des applications et des services Back-end sur des architectures serveur complexes",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C13",
+            "description": "Mettre en œuvre des stratégies de sauvegarde et de récupération en tenant compte des politiques de sécurité et de continuité d'entreprise pour protéger les données contre les pertes et les sinistres"
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre l'importance de la sauvegarde des données et les méthodes associées. Apprendre les principes et l'utilisation des systèmes de gestion de version, en particulier Git. Acquérir les bonnes pratiques de sauvegarde et de versioning pour une gestion efficace des données et du code."
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en informatique et familiarité avec les concepts de gestion de fichiers. Expérience préalable en programmation ou développement logiciel serait un plus."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la sauvegarde et à la restauration",
+                "items": [
+                    "Importance de la sauvegarde des données",
+                    "Risques liés à l'absence de sauvegarde",
+                    "Méthodes de sauvegarde (complète, différentielle, incrémentielle)",
+                    "Les différents supports de sauvegarde",
+                    "Planification des sauvegardes"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Principes de gestion de version d'un logiciel",
+                "items": [
+                    "Comprendre le concept de gestion de version",
+                    "Avantages de la gestion de version",
+                    "Les différents systèmes de gestion de version (centralisé, décentralisé)",
+                    "Les principaux outils de gestion de version, centrés sur Git (SVN et Mercurial cités à titre historique)",
+                    "Utilisation des branches, des tags et des merges"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Utilisation de Git pour le versioning",
+                "items": [
+                    "Installation et configuration de Git",
+                    "Création d'un nouveau dépôt",
+                    "Ajout, suppression et modification de fichiers",
+                    "Gestion des branches avec Git",
+                    "Utilisation des commandes Git pour le versioning"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Bonnes pratiques de sauvegarde et de versioning",
+                "items": [
+                    "Automatisation des sauvegardes",
+                    "Vérification de l'intégrité des sauvegardes",
+                    "Stratégies de restauration des données",
+                    "Gestion des conflits de version",
+                    "Collaboration et partage de code avec les outils de versioning"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Importance de la sauvegarde et des risques liés à l'absence de sauvegarde",
+            "objectif": "Comprendre l'importance de la sauvegarde des données et les risques liés à son absence.",
+            "instructions": "En vous plaçant dans le contexte d'une petite entreprise dépourvue de système de sauvegarde efficace, rédigez un court rapport expliquant l'importance de la sauvegarde des données et les risques encourus en cas d'absence de sauvegarde. Illustrez vos propos avec des exemples concrets.",
+            "livrable": "Un court rapport expliquant l'importance de la sauvegarde et les risques associés, appuyé par des exemples concrets."
+        },
+        {
+            "title": "Planification des sauvegardes",
+            "objectif": "Savoir élaborer un plan de sauvegarde adapté aux besoins d'une entreprise.",
+            "instructions": "Élaborez un plan de sauvegarde pour une entreprise fictive de votre choix. Incluez la fréquence des sauvegardes, les types de sauvegarde à mettre en place (complète, différentielle, incrémentielle) et les supports à utiliser. Justifiez vos choix en expliquant comment le plan protège les données de l'entreprise.",
+            "livrable": "Un plan de sauvegarde précisant fréquence, types et supports, assorti de la justification de la protection des données."
+        },
+        {
+            "title": "Utilisation de Git pour le versioning",
+            "objectif": "Savoir utiliser Git pour gérer le versioning d'un ensemble de fichiers.",
+            "instructions": "Créez un dépôt Git contenant un ensemble de fichiers fictifs. Réalisez des opérations d'ajout, de suppression et de modification de fichiers. À l'aide des commandes Git, créez une nouvelle branche, fusionnez-la avec la branche principale et ajoutez des tags à des points spécifiques de l'historique.",
+            "livrable": "Un dépôt Git incluant les opérations de modification, une branche fusionnée avec la branche principale et des tags sur l'historique."
+        },
+        {
+            "title": "Bonnes pratiques de sauvegarde et de versioning",
+            "objectif": "Savoir gérer les conflits de version et faciliter la collaboration grâce aux outils de versioning.",
+            "instructions": "Identifiez une situation de conflit de version potentielle dans un scénario professionnel (par exemple des développeurs travaillant sur les mêmes fichiers) et proposez une stratégie pour gérer ce conflit efficacement à l'aide des outils de versioning. Expliquez également comment la collaboration et le partage de code sont facilités par ces outils.",
+            "livrable": "Une stratégie de gestion du conflit de version accompagnée de l'explication des apports des outils de versioning à la collaboration et au partage de code."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Modern Data Protection : Ensuring Recoverability of All Modern Workloads. O'Reilly. ISBN 9781492094050. de Guise, P. (2020). Data Protection : Ensuring Data Availability (2e éd.). Auerbach Publications",
+            "author": "Preston, W. C"
+        },
+        {
+            "title": "Business Continuity and Disaster Recovery Planning for IT Professionals (2e éd.). Syngress",
+            "author": "Snedaker, S"
+        }
+    ],
+    "OnlineResources": [
+        "ANSSI - Guide de la sauvegarde (https://cyber.gouv.fr/) [FR]",
+        "NIST SP 800-34 - Contingency Planning Guide (https://csrc.nist.gov) [EN]",
+        "AWS Backup - Documentation (https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) [EN]",
+        "Veeam Documentation (https://helpcenter.veeam.com/) [EN]",
+        "Rclone - Synchronisation cloud (https://rclone.org) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

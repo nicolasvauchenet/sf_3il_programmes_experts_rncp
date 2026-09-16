@@ -1,0 +1,144 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39611-BC04-FM02",
+        "title": "Gestion de projet (MOE)",
+        "rncpCode": "39611",
+        "blocCode": "BC04",
+        "blocName": "Conduire la gestion de projets d'infrastructure systèmes et réseaux sécurisée",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C25",
+            "description": "Orchestrer et animer des projets informatiques en utilisant des méthodologies agiles pour planifier, exécuter et surveiller le travail de développement, et en facilitant la communication entre toutes les parties prenantes y compris en situation de handicap pour atteindre les objectifs définis"
+        },
+        {
+            "code": "C26",
+            "description": "Optimiser la gestion des projets en termes d’avancement, gestion des priorités et ajustements grâce à des outils de gestion de projet tels que JIRA ou Trello afin de maximiser l'efficacité de l'équipe, respecter les délais et garantir la qualité des livrables"
+        },
+        {
+            "code": "C27",
+            "description": "Gérer le budget de projet en utilisant des outils de gestion financière (ex. Microsoft Project, Excel, ou des logiciels spécialisés comme SAP) et des techniques de budgétisation (ex. répartition des coûts, analyse de la valeur acquise), en respectant les contraintes financières et temporelles du projet, afin d'assurer une utilisation optimale des ressources et de garantir la rentabilité et le succès du projet"
+        }
+    ],
+    "objectives": {
+        "description": "Acquérir une compréhension approfondie des outils collaboratifs et savoir les utiliser pour améliorer la communication et la gestion des projets. Apprendre à sélectionner et adapter les méthodologies de gestion de projet en fonction des besoins spécifiques d'un projet donné. Développer des compétences en élaboration de plans de projet, gestion proactive des risques et surveillance des indicateurs de performance pour assurer la réussite des projets."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en gestion de projet, familier avec les principes fondamentaux de la gestion d'équipe et de communication, et expérience pratique préalable avec au moins un outil collaboratif."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Mise en œuvre d'outils collaboratifs",
+                "items": [
+                    "Comprendre l'importance des outils collaboratifs dans la coordination des équipes",
+                    "Identifier les différents types d'outils collaboratifs disponibles",
+                    "Choisir les outils collaboratifs les plus adaptés à la gestion globale du projet",
+                    "Mettre en place une communication fluide au sein des équipes grâce aux outils collaboratifs",
+                    "Assurer un suivi efficace des tâches à l'aide des outils collaboratifs"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Sélection et adaptation de la méthodologie de gestion de projet",
+                "items": [
+                    "Comprendre les spécificités des méthodologies traditionnelles et agiles",
+                    "Identifier les critères de choix entre méthodologie traditionnelle et agile",
+                    "Adapter la méthodologie choisie aux besoins et à la dynamique du projet",
+                    "Définir les étapes clés et les jalons à atteindre en fonction de la méthodologie sélectionnée",
+                    "Assurer une vision claire et un suivi précis du projet grâce à la méthodologie adaptée"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Élaboration d'un plan de projet exhaustif",
+                "items": [
+                    "Identifier les éléments essentiels à inclure dans un plan de projet",
+                    "Établir les étapes clés du projet, les jalons à atteindre et les livrables attendus",
+                    "Garantir une vision claire du projet à travers un plan exhaustif",
+                    "Assurer la cohérence et la complétude du plan de projet",
+                    "Communiquer efficacement le plan de projet à l'ensemble des parties prenantes"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Constitution d'une matrice des risques",
+                "items": [
+                    "Comprendre l'importance de la gestion proactive des risques dans un projet",
+                    "Évaluer, hiérarchiser et anticiper les risques à l'aide d'une matrice",
+                    "Mettre en place des interventions correctives ciblées pour gérer les risques",
+                    "Assurer une surveillance constante des risques tout au long du projet",
+                    "Minimiser l'impact des risques sur le déroulement du projet"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Surveillance constante des indicateurs de performance",
+                "items": [
+                    "Mettre en place un suivi budgétaire précis pour détecter les écarts éventuels",
+                    "Suivre le planning du projet pour assurer le respect des délais",
+                    "Utiliser les indicateurs de performance pour réagir et réajuster en temps réel",
+                    "Assurer une détection rapide des écarts par rapport au plan initial",
+                    "Favoriser une amélioration continue des stratégies de gestion grâce à la surveillance des indicateurs de performance"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Mise en pratique des outils collaboratifs",
+            "objectif": "Savoir sélectionner des outils collaboratifs adaptés à une équipe dispersée géographiquement.",
+            "instructions": "Pour un projet de développement logiciel mené par une équipe dispersée géographiquement, choisissez trois outils collaboratifs les plus adaptés pour faciliter la communication et la coordination. Justifiez brièvement chaque choix.",
+            "livrable": "La liste des trois outils retenus avec, pour chacun, une justification expliquant sa contribution à la gestion globale du projet."
+        },
+        {
+            "title": "Adaptation de la méthodologie de gestion de projet",
+            "objectif": "Être capable de choisir une méthodologie de gestion de projet (agile ou traditionnelle) en fonction des spécificités du projet.",
+            "instructions": "Pour un projet de lancement d'un nouveau produit, identifiez les spécificités qui favoriseraient une méthodologie agile plutôt que traditionnelle, ou l'inverse. En fonction de ces spécificités, choisissez et justifiez la méthode la plus adaptée.",
+            "livrable": "Le choix de méthode de gestion de projet retenu, argumenté à partir des spécificités identifiées du projet."
+        },
+        {
+            "title": "Élaboration d'un plan de projet exhaustif",
+            "objectif": "Savoir élaborer un plan de projet complet et cohérent intégrant étapes, jalons et livrables.",
+            "instructions": "Pour le lancement d'un nouveau service dans votre entreprise, établissez les étapes clés du projet, les jalons à atteindre et les livrables attendus. Veillez à inclure tous les éléments essentiels et expliquez comment vous garantissez la cohérence et la complétude du plan.",
+            "livrable": "Un plan de projet exhaustif présentant étapes clés, jalons et livrables, assorti d'une explication sur sa cohérence et sa complétude."
+        },
+        {
+            "title": "Gestion proactive des risques",
+            "objectif": "Être capable d'identifier, d'évaluer et de hiérarchiser les risques d'un projet et d'y répondre.",
+            "instructions": "À partir d'un exemple concret de projet, créez une matrice des risques identifiant au moins cinq risques, évaluez-les et proposez des interventions correctives pour chacun. Hiérarchisez les risques selon leur impact et leur probabilité.",
+            "livrable": "Une matrice des risques comportant au moins cinq risques évalués et hiérarchisés selon impact et probabilité, avec les interventions correctives associées."
+        },
+        {
+            "title": "Surveillance des indicateurs de performance",
+            "objectif": "Savoir définir des indicateurs de performance pour assurer le contrôle budgétaire d'un projet.",
+            "instructions": "Pour un projet à budget limité, proposez trois indicateurs de performance à surveiller régulièrement afin de détecter les écarts budgétaires et de réagir. Expliquez comment chaque indicateur aide au contrôle budgétaire et à la réussite du projet.",
+            "livrable": "Une proposition de trois indicateurs de performance, avec l'explication de leur contribution au contrôle budgétaire et à la réussite du projet."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Scrum : un outil convivial pour une agilité radicale (6e éd.). Dunod",
+            "author": "Aubry, C"
+        },
+        {
+            "title": "Manager un projet informatique (4e éd.). Eyrolles",
+            "author": "Englender, O. & Fernandes, S"
+        }
+    ],
+    "OnlineResources": [
+        "PMI - A Guide to the Project Management Body of Knowledge (PMBOK) (https://www.pmi.org) [EN]",
+        "PRINCE2 - Projects In Controlled Environments (https://www.axelos.com) [EN]",
+        "Atlassian Agile Coach (https://www.atlassian.com/agile) [EN]",
+        "Project Management Hub - DINUM (https://www.numerique.gouv.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

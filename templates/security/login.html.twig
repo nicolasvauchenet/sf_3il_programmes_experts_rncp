@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+    {% include '_layout/default/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main center">
+        <section class="app-section boxed">
+            <h1>Connexion</h1>
+            <p class="subtitle">Accès réservé aux utilisateurs autorisés.</p>
+
+            <hr/>
+
+            {% if error %}
+                <div class="app-alert error">
+                    {% if error.messageKey == "ce compte n'existe pas" %}
+                        ce compte n'existe pas
+                    {% else %}
+                        Identifiants invalides.
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            <form method="post" action="{{ path('app_login') }}" class="app-form" data-controller="password-visibility" data-turbo="false">
+                <div class="form-group">
+                    <label for="inputEmail" class="form-label required">
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        value="{{ last_username }}"
+                        name="_username"
+                        id="inputEmail"
+                        class="form-control"
+                        autocomplete="email"
+                        required
+                        autofocus
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="form-label required">
+                        Mot de passe
+                    </label>
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            name="_password"
+                            id="inputPassword"
+                            class="form-control"
+                            autocomplete="current-password"
+                            data-password-visibility-target="input"
+                            required
+                        >
+                        {% include '_components/_password_toggle.html.twig' %}
+                    </div>
+                </div>
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                <div class="form-group">
+                    <div class="hidden-xs">&nbsp;</div>
+                    <button class="app-button form-submit" type="submit">
+                        Se connecter
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <div class="hidden-xs">&nbsp;</div>
+                    <a href="{{ path('app_register') }}" class="app-button outline">
+                        Créer un compte
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

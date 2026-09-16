@@ -56,17 +56,18 @@
 }
 
 .bg-alt {
-    background-color: rgba($secondary, 1) !important;
+    border-color: $primary !important;
+}
 
-    h2 {
-        color: $white !important;
-    }
+/* TEXT COLORS */
+.text-success {
+    color: $success !important;
+}
 
-    .app-button {
-        background-color: $white !important;
+.text-warning {
+    color: $warning !important;
+}
 
-        &:hover {
-            color: $secondary !important;
-        }
-    }
+.text-danger {
+    color: $error !important;
 }

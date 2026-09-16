@@ -1,0 +1,135 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39608-BC03-FM03",
+        "title": "Versioning et gestion de versions décentralisé",
+        "rncpCode": "39608",
+        "blocCode": "BC03",
+        "blocName": "Élaborer, intégrer et optimiser les architectures de systèmes d'information et garantir l'industrialisation du développement",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C21",
+            "description": "Assurer la gestion et le suivi des révisions de code source à l’aide d'un logiciel de gestion de versions comme Git afin de garantir la traçabilité des changements et la coordination des versions au sein de l’équipe de développement"
+        },
+        {
+            "code": "C22",
+            "description": "Définir et appliquer des procédures de fusion de code et de résolution de conflits à l'aide de plateformes telles que GitHub ou GitLab pour faciliter le travail collaboratif, la révision de code et l'intégration continue (CI)"
+        }
+    ],
+    "objectives": {
+        "description": "Comprendre les concepts fondamentaux et l'importance du versionning dans le développement logiciel. Expliquer le fonctionnement et les avantages des systèmes de versionning décentralisés, ainsi que les stratégies de gestion associées. Maîtriser l'utilisation avancée du versionning dans des environnements collaboratifs."
+    },
+    "prerequisites": {
+        "description": "Connaissance de base en développement logiciel et compréhension des concepts de gestion de projets. Expérience préalable avec des outils de versionnage simple ou centralisé."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Concepts de base du versionning",
+                "items": [
+                    "Définition du versionning",
+                    "Importance du versionning dans le développement logiciel",
+                    "Les différents types de versionning",
+                    "Les principaux outils de versionning",
+                    "Bonnes pratiques en matière de versionning"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Systèmes de versionning décentralisés",
+                "items": [
+                    "Fonctionnement d'un système de versionning décentralisé",
+                    "Avantages et inconvénients des systèmes de versionning décentralisés",
+                    "Exemples de systèmes de versionning décentralisés, centrés sur Git (Mercurial cité à titre historique)",
+                    "Utilisation avancée des fonctionnalités de versionning décentralisé",
+                    "Stratégies de gestion de branches et de fusions"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Utilisation avancée du versionning",
+                "items": [
+                    "Gestion des conflits lors de la fusion de branches",
+                    "Utilisation des tags pour marquer des versions stables",
+                    "Intégration continue et déploiement continu avec le versionning",
+                    "Bonnes pratiques pour la gestion des branches et des versions",
+                    "Utilisation de hooks pour automatiser des tâches liées au versionning"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des versions dans un environnement collaboratif",
+                "items": [
+                    "Stratégies de travail collaboratif avec le versionning",
+                    "Gestion des droits d'accès aux dépôts de versionning",
+                    "Utilisation de branches partagées pour des fonctionnalités en cours de développement",
+                    "Utilisation de sous-modules pour gérer des dépendances entre différents projets",
+                    "Bonnes pratiques pour la contribution et la revue de code en utilisant le versionning"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Création d'un dépôt Git et premiers commits",
+            "objectif": "Maîtriser la création d'un dépôt Git et la réalisation de commits documentés.",
+            "instructions": "Créez un nouveau dépôt Git sur votre ordinateur et ajoutez-y un fichier README.md. Effectuez trois commits successifs en modifiant à chaque fois le contenu du fichier. Indiquez un message clair et descriptif pour chaque commit.",
+            "livrable": "Un dépôt Git contenant un fichier README.md et trois commits successifs assortis de messages clairs et descriptifs."
+        },
+        {
+            "title": "Gestion avancée des branches avec Git",
+            "objectif": "Gérer les branches Git et résoudre les conflits lors d'une fusion.",
+            "instructions": "Créez une nouvelle branche dans votre dépôt Git et apportez-y des modifications. En parallèle, effectuez des modifications sur la branche principale (main). Fusionnez la branche créée avec la branche principale en gérant les éventuels conflits. Documentez les étapes suivies.",
+            "livrable": "Un dépôt présentant une branche fusionnée avec la branche principale, les conflits résolus, et une documentation des étapes suivies."
+        },
+        {
+            "title": "Utilisation des tags pour marquer des versions stables",
+            "objectif": "Utiliser les tags Git pour marquer et distinguer des versions stables d'un projet.",
+            "instructions": "Identifiez une version stable de votre projet et créez un tag pour la marquer. Effectuez des modifications dans le code et créez une nouvelle version stable. Créez un nouveau tag pour marquer cette version. Expliquez la différence entre les deux tags.",
+            "livrable": "Un dépôt comportant deux tags marquant deux versions stables, accompagné d'une explication de la différence entre ces tags."
+        },
+        {
+            "title": "Travail collaboratif avec Git",
+            "objectif": "Simuler un environnement de développement collaboratif avec Git et l'intégration continue du code.",
+            "instructions": "Travaillez avec un ou plusieurs collègues pour simuler un environnement de développement collaboratif. Créez des branches partagées pour travailler sur des fonctionnalités spécifiques. Effectuez des fusions régulières pour assurer l'intégration continue du code. Documentez les étapes de collaboration et les actions effectuées.",
+            "livrable": "Un dépôt collaboratif avec branches partagées et fusions régulières, accompagné d'une documentation des étapes de collaboration et des actions effectuées."
+        },
+        {
+            "title": "Intégration de hooks pour automatiser des tâches avec Git",
+            "objectif": "Automatiser la vérification du code avant chaque commit à l'aide d'un hook Git.",
+            "instructions": "Créez un hook pre-commit dans votre dépôt Git pour effectuer une vérification automatique du code avant chaque commit. Paramétrez ce hook pour qu'il vérifie la présence de certaines erreurs de syntaxe ou de formatage. Effectuez des commits en introduisant délibérément des erreurs pour observer le fonctionnement du hook. Documentez les résultats obtenus et les actions correctives éventuellement nécessaires.",
+            "livrable": "Un hook pre-commit fonctionnel vérifiant la syntaxe ou le formatage, accompagné d'une documentation des résultats des tests et des actions correctives nécessaires."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Pro Git (2e éd.). Apress",
+            "author": "Chacon, S. & Straub, B"
+        },
+        {
+            "title": "Git for Humans. A Book Apart",
+            "author": "Demaree, D"
+        },
+        {
+            "title": "Version Control with Git (3e éd.). O'Reilly",
+            "author": "Ponuthorai, P. K. & Loeliger, J"
+        }
+    ],
+    "OnlineResources": [
+        "Git Documentation officielle (https://git-scm.com/docs) [FR/EN]",
+        "GitHub Docs (https://docs.github.com/fr) [FR/EN]",
+        "GitLab Docs (https://docs.gitlab.com) [EN]",
+        "Atlassian Git Tutorials (https://www.atlassian.com/git/tutorials) [EN/FR]",
+        "Conventional Commits (https://www.conventionalcommits.org/fr/v1.0.0/) [FR/EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, revues croisées)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -1,0 +1,4 @@
+Lancer un import depuis un dossier JSON :
+php bin/console app:framework:import data/referentiels/asrc_2025-2026
+
+En production, privilégier l'import depuis l'administration du site.

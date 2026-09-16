@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC04-FM06",
+        "title": "FinOps : Optimisation financière du Cloud",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing.",
+        "durationDays": 1,
+        "durationHours": 7,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C21",
+            "description": "Intégrer divers services cloud dans des applications en utilisant les API et les plateformes Cloud Provider en tenant compte de l’impact écologique notamment par le vecteur financier (FinOps) pour automatiser les processus afin de développer des solutions personnalisées qui améliorent l'efficacité opérationnelle et répondent aux besoins spécifiques des entreprises"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir une compréhension approfondie des coûts du Cloud et des modèles de tarification associés (Comprendre) Développer des compétences en gestion et optimisation des budgets Cloud (Appliquer) Analyser et appliquer des stratégies pour minimiser les coûts tout en maintenant les performances et la conformité contractuelle (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Compréhension de base des concepts de Cloud computing et de l'architecture des systèmes d'information."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Compréhension des coûts du Cloud",
+                "items": [
+                    "Comprendre les modèles de tarification des principaux fournisseurs de services Cloud",
+                    "Identifier les principaux coûts associés à l'utilisation du Cloud",
+                    "Analyser les coûts cachés du Cloud",
+                    "Comprendre l'impact financier des choix d'architecture Cloud",
+                    "Évaluer les outils de suivi et de gestion des coûts"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Gestion des budgets et des ressources",
+                "items": [
+                    "Mettre en place un processus de budgétisation des ressources Cloud",
+                    "Identifier les bonnes pratiques pour optimiser les coûts tout en maintenant la performance",
+                    "Utiliser les outils de suivi des dépenses pour gérer les budgets",
+                    "Mettre en place des alertes et des seuils pour contrôler les dépenses",
+                    "Suivre et analyser les dépenses pour identifier les opportunités d'optimisation"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Optimisation des coûts",
+                "items": [
+                    "Comprendre les différentes stratégies d'optimisation des coûts dans le Cloud",
+                    "Identifier les opportunités d'économies à travers l'optimisation des ressources",
+                    "Utiliser les instances réservées et les économies à long terme pour réduire les coûts",
+                    "Mettre en place des politiques d'arrêt automatique et de dimensionnement automatique",
+                    "Utiliser les outils d'analyse des coûts pour identifier les ressources sous-utilisées"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Gestion des licenciements et des contrats",
+                "items": [
+                    "Comprendre les implications financières des licences logicielles dans le Cloud",
+                    "Optimiser les coûts liés aux licences logicielles dans un environnement Cloud",
+                    "Négocier et gérer les contrats avec les fournisseurs Cloud",
+                    "Identifier les risques financiers liés aux contrats Cloud",
+                    "Mettre en place des processus de gestion des licences et des contrats"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Étude de cas et bonnes pratiques",
+                "items": [
+                    "Analyser des études de cas d'entreprises ayant réussi à optimiser leurs coûts Cloud",
+                    "Mettre en place des bonnes pratiques pour l'optimisation financière du Cloud",
+                    "Identifier les pièges à éviter dans la gestion des coûts Cloud",
+                    "Échanger sur les retours d'expérience des participants",
+                    "Mettre en place un plan d'action pour l'optimisation financière du Cloud"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de tarification des services Cloud",
+            "objectif": "Comprendre et analyser les modèles de tarification des fournisseurs de services Cloud afin de recommander le plus adapté.",
+            "instructions": "En tant que responsable financier d'une entreprise envisageant de migrer ses services sur le Cloud, choisissez deux principaux fournisseurs de services Cloud et comparez leurs modèles de tarification pour un service de calcul (par exemple des instances de machine virtuelle) et un service de stockage. Réalisez un tableau comparatif présentant les coûts initiaux, les coûts récurrents, les options de tarification à la demande, réservée ou spot, et tout coût caché potentiel que vous pourriez identifier.",
+            "livrable": "Un tableau comparatif des tarifications et une synthèse recommandant le fournisseur le plus adapté aux besoins de l'entreprise, justifiée en fonction des coûts et des avantages associés."
+        },
+        {
+            "title": "Simulation de budgétisation",
+            "objectif": "Être capable d'établir un budget prévisionnel des ressources Cloud et un dispositif d'alerte associé.",
+            "instructions": "Votre entreprise prévoit de développer une nouvelle application nécessitant des ressources Cloud supplémentaires. En tant que gestionnaire Cloud, créez un budget prévisionnel pour le premier mois d'exploitation de l'application : déterminez les ressources nécessaires (CPU, mémoire, stockage, bande passante, etc.) et estimez les coûts à l'aide des outils de tarification des fournisseurs Cloud. Intégrez dans votre budget des postes pour les dépenses imprévues et les coûts de gestion.",
+            "livrable": "Un budget prévisionnel du premier mois d'exploitation, incluant les postes de dépenses imprévues et de gestion, ainsi qu'un plan d'alerte déclenché si les dépenses réelles dépassent de 10 % le budget prévisionnel."
+        },
+        {
+            "title": "Stratégie d'optimisation des coûts",
+            "objectif": "Élaborer une stratégie d'optimisation des coûts pour des ressources Cloud sous-utilisées.",
+            "instructions": "Après quelques mois d'exploitation, vous constatez que les coûts Cloud de votre entreprise sont plus élevés que prévu. Analysez les données d'utilisation de vos services Cloud pendant les trois derniers mois et identifiez les ressources sous-utilisées. Proposez un plan d'action pour réduire les coûts, pouvant inclure la mise en place d'instances réservées, l'arrêt automatique des ressources inactives et le dimensionnement automatique des services en fonction de la charge.",
+            "livrable": "Une stratégie d'optimisation des coûts présentant les économies attendues et un calendrier pour la mise en œuvre."
+        },
+        {
+            "title": "Gestion des licences dans le Cloud",
+            "objectif": "Savoir optimiser les coûts liés aux licences logicielles dans un environnement Cloud tout en maintenant la conformité légale.",
+            "instructions": "En tant que responsable informatique chargé d'examiner les coûts des licences logicielles de votre entreprise dans le Cloud, faites l'inventaire des logiciels actuellement utilisés et examinez les termes des contrats de licence et les coûts associés. Identifiez les opportunités de réduction des coûts, telles que la consolidation des licences, l'achat de licences réservées ou l'utilisation de licences open source.",
+            "livrable": "Un rapport présentant vos recommandations pour réduire les coûts des licences tout en maintenant la conformité légale."
+        },
+        {
+            "title": "Plan d'action pour l'optimisation financière",
+            "objectif": "Développer un plan d'action pour améliorer la gestion financière des ressources Cloud.",
+            "instructions": "En tant que consultant en gestion des coûts Cloud pour une entreprise souhaitant améliorer sa gestion financière du Cloud, élaborez, sur la base des bonnes pratiques et des études de cas étudiés en cours, un plan d'action détaillé. Ce plan doit inclure des objectifs spécifiques, des initiatives clés pour atteindre ces objectifs (comme l'automatisation des politiques d'échelle ou l'utilisation d'outils d'analyse des coûts) et des indicateurs de performance pour mesurer l'efficacité de la gestion des coûts.",
+            "livrable": "Un plan d'action détaillé (objectifs spécifiques, initiatives clés, indicateurs de performance) accompagné d'une présentation à destination de la direction exposant les bénéfices attendus de sa mise en œuvre."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Cloud FinOps (2e éd.). O'Reilly. FinOps Foundation. (2023). FinOps Framework",
+            "author": "Storment, J. R. & Fuller, M"
+        },
+        {
+            "title": "AWS Cost Optimization",
+            "author": "Ansari, A"
+        }
+    ],
+    "OnlineResources": [
+        "FinOps Foundation (https://www.finops.org) [EN]",
+        "AWS Cost Management (https://aws.amazon.com/aws-cost-management/) [EN]",
+        "Azure Cost Management (https://learn.microsoft.com/azure/cost-management-billing/) [FR/EN]",
+        "Google Cloud Cost Management (https://cloud.google.com/cost-management) [EN]",
+        "CNCF - FinOps projects (https://www.cncf.io/projects/) [EN]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

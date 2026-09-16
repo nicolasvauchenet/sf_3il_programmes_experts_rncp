@@ -1,29 +1,51 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    {{ promotionContext.promotionLabel ?? 'Résumé du Référentiel' }}
+    {{ promotionContext.promotionLabel ? promotionContext.promotionLabel | upper : 'Résumé du Référentiel' }}
     - Évaluation {{ evaluation.evaluationCode }} -
     {{ evaluation.title ?: '' }}
 {% endblock %}
 
 {% block body %}
-    {% include '_layout/default/_header.html.twig' %}
-    {% include '_layout/default/_alert.html.twig' %}
+    {% if not pdfMode|default(false) %}
+        {% include '_layout/default/_header.html.twig' %}
+        {% include '_layout/default/_alert.html.twig' %}
+    {% endif %}
 
     <main class="app-main">
-        <div class="app-grid third layout">
-            {% include '_layout/default/_toc.html.twig' with {
+        <div class="{{ pdfMode|default(false) ? '' : 'app-grid third layout' }}">
+            {% if not pdfMode|default(false) %}{% include '_layout/default/_toc.html.twig' with {
                 'title': 'Évaluation',
                 'path': 'app_promotion_evaluations',
                 'promotion': promotion,
                 'year': year,
                 'content': evaluations,
                 'selectedCode': selectedCode
-            } %}
+            } %}{% endif %}
 
-            <article>
+            <article class="printable-content">
+                {% if pdfMode|default(false) %}
+                    <section class="pdf-cover pdf-cover--compact">
+                        <div class="pdf-cover-kicker">Fiche évaluation</div>
+                        <div class="pdf-cover-program">{{ promotionContext.promotionTitle }}</div>
+                        <div class="pdf-cover-code">{{ evaluation.evaluationCode }}</div>
+                        <h1>{{ evaluation.title ?: 'Évaluation' }}</h1>
+                        <div class="pdf-cover-rule"></div>
+                        <table class="pdf-cover-details"><tr>
+                            <td><span>Bloc de compétences</span><strong>{{ evaluation.blocCode }}</strong><small>{{ evaluation.blocName }}</small></td>
+                            <td><span>Promotion</span><strong>{{ promotion|upper }}</strong><small>{{ evaluation.academicYear ?: year }}</small></td>
+                            <td><span>Modalité</span><strong>{{ evaluation.format ?: '—' }}</strong><small>{{ evaluation.totalDuration ?: 'Durée non précisée' }}</small></td>
+                        </tr></table>
+                        <table class="pdf-cover-stats"><tr>
+                            <td><strong>{{ evaluation.skills|length }}</strong><span>Compétences</span></td>
+                            <td><strong>{{ evaluation.modules|length }}</strong><span>Matières</span></td>
+                            <td><strong>{{ evaluation.projects|length }}</strong><span>Projets</span></td>
+                        </tr></table>
+                        <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
+                    </section>
+                {% endif %}
                 <div class="app-grid third">
-                    <section class="app-section centered">
+                    {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
                         <div class="info">
@@ -38,21 +60,24 @@
                                 <span class="app-badge">{{ evaluation.evaluationCode }}</span>
                             {% endif %}
 
-                            <span class="app-badge">{{ year }}</span>
-
                             {% if evaluation.totalDuration %}
                                 <span class="app-badge">{{ evaluation.totalDuration }}</span>
                             {% endif %}
-                        </div>
-                    </section>
 
-                    <section class="app-section centered">
+                            {% if not pdfMode|default(false) %}
+                                {% include '_layout/default/_print_button.html.twig' %}
+                            {% endif %}
+                        </div>
+                    </section>{% endif %}
+
+                    {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h2>Métriques</h2>
 
                         <div style="height: 200px;">
                             {{ render_chart(evaluationVolumeChart) }}
                         </div>
                     </section>
+                    {% endif %}
                 </div>
 
                 {% if evaluation.description %}
@@ -63,7 +88,8 @@
                     </section>
                 {% endif %}
 
-                {% if evaluation.format or evaluation.delivery or evaluation.totalDuration %}
+                {% set deliverables = evaluation.modalities.deliverables ?? [] %}
+                {% if evaluation.format or evaluation.delivery or evaluation.totalDuration or deliverables is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
                         <h2>Modalités</h2>
 
@@ -75,6 +101,18 @@
                             <strong>Déroulé :</strong>
                             {{ evaluation.delivery ?: '-' }}
                         </p>
+
+                        {% if deliverables is not empty %}
+                            <p class="mb-1">
+                                <strong>Livrables :</strong>
+                            </p>
+
+                            <ul>
+                                {% for deliverable in deliverables %}
+                                    <li>{{ deliverable }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                     </section>
                 {% endif %}
 
@@ -88,7 +126,7 @@
                             {% endif %}
 
                             {% for part in examParts %}
-                                <section class="app-section mx-0 my-0">
+                                <section class="app-section pdf-exercise mx-0 my-0">
                                     <h3 class="mb-0">{{ evaluation.evaluationCode }}{{ examParts | length > 1 ? '.' ~ loop.index : '' }}</h3>
 
                                     <p class="subtitle text-left">{{ part.title }}</p>
@@ -107,7 +145,17 @@
                                     </p>
                                     <p>
                                         <strong>Durée :</strong>
-                                        {{ part.duration ?? '-' }}
+                                        {% set rawDuration = part.duration ?? null %}
+                                        {% if rawDuration is same as(null) or rawDuration is same as('') %}
+                                            -
+                                        {% elseif rawDuration matches '/^\\d+$/' %}
+                                            {% set durationMinutes = rawDuration + 0 %}
+                                            {% set hours = (durationMinutes / 60) | round(0, 'floor') %}
+                                            {% set minutes = durationMinutes % 60 %}
+                                            {{ minutes > 0 ? '%dh%02d' | format(hours, minutes) : '%dh00' | format(hours) }}
+                                        {% else %}
+                                            {{ rawDuration }}
+                                        {% endif %}
                                     </p>
                                 </section>
                             {% endfor %}
@@ -148,9 +196,13 @@
                         <h2>Compétences mobilisées</h2>
 
                         {% for s in evaluation.skillsWithCriteria %}
-                            <section class="app-section mx-0 mt-2 mb-0">
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
                                 <p>
-                                    <a href="{{ path('app_promotion_skills', {'promotion': promotion, 'year': year, 'code': (evaluation.blocCode ~ s.code) | lower}) }}">
+                                    <a href="{{ path('app_promotion_skills', {
+                                        'promotion': promotion,
+                                        'year': year,
+                                        'code': s.fileCode
+                                    }) }}">
                                         <strong>Compétence {{ s.code }}</strong>
                                     </a>
                                     :
@@ -160,56 +212,93 @@
 
                             {% if s.criteria is not empty %}
                                 <section class="app-section sub">
-                                    {% for criterion in s.criteria %}
-                                        {% set criterionDescription = criterion.description|trim %}
-                                        {% set skillDescription = s.description|trim %}
+                                    <p class="mb-1">
+                                        <strong>Critères d’évaluation</strong>
+                                    </p>
 
-                                        <p class="mb-1">
-                                            <strong>
-                                                Critère d'évaluation : {{ criterion.description }}
-                                            </strong>
-                                        </p>
-
-                                        {% if criterion.indicators is defined and criterion.indicators is not empty %}
-                                            <ul>
-                                                {% for indicator in criterion.indicators %}
-                                                    <li>{{ indicator }}</li>
-                                                {% endfor %}
-                                            </ul>
-                                        {% endif %}
-                                    {% endfor %}
+                                    <ul>
+                                        {% for criterion in s.criteria %}
+                                            <li>{{ criterion }}</li>
+                                        {% endfor %}
+                                    </ul>
                                 </section>
                             {% endif %}
                         {% endfor %}
                     </section>
-                {% endif %}
-
-                {% if evaluation.modules is not empty %}
+                {% elseif evaluation.skills is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Matières associées</h2>
+                        <h2>Compétences mobilisées</h2>
 
-                        <div class="app-grid two">
-                            {% for module in evaluation.modules %}
-                                <section class="app-section mx-0 my-0">
-                                    <p class="mb-0">
-                                        <a href="{{ path('app_promotion_modules', {
-                                            'promotion': promotion,
-                                            'year': year,
-                                            'code': module.code
-                                        }) }}">
-                                            <strong>{{ module.code | upper }}</strong>
-                                        </a>
-                                    </p>
-
-                                    <p class="subtitle text-left mb-0">{{ module.title ?: '-' }}</p>
-                                </section>
-                            {% endfor %}
-                        </div>
+                        {% for s in evaluation.skills %}
+                            <section class="app-section pdf-skill mx-0 mt-2 mb-0">
+                                <p>
+                                    <a href="{{ path('app_promotion_skills', {
+                                        'promotion': promotion,
+                                        'year': year,
+                                        'code': s.fileCode
+                                    }) }}">
+                                        <strong>Compétence {{ s.code }}</strong>
+                                    </a>
+                                    :
+                                    {{ s.description }}
+                                </p>
+                            </section>
+                        {% endfor %}
                     </section>
                 {% endif %}
+
+                <div class="app-grid two pdf-associations">
+                    {% if evaluation.modules is not empty %}
+                        <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Matières associées</h2>
+
+                            <div class="app-grid">
+                                {% for module in evaluation.modules %}
+                                    <section class="app-section mx-0 my-0">
+                                        <p class="mb-0">
+                                            <a href="{{ path('app_promotion_modules', {
+                                                'promotion': promotion,
+                                                'year': year,
+                                                'code': module.code
+                                            }) }}">
+                                                <strong>{{ module.code | upper }}</strong>
+                                            </a>
+                                        </p>
+
+                                        <p class="subtitle text-left mb-0">{{ module.title ?: '-' }}</p>
+                                    </section>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if evaluation.projects is not empty %}
+                        <section class="app-section mx-0 mt-2 mb-0">
+                            <h2>Projets associés</h2>
+
+                            <div class="app-grid">
+                                {% for project in evaluation.projects %}
+                                    <section class="app-section mx-0 my-0">
+                                        <p class="mb-0">
+                                            <a href="{{ path('app_promotion_projects', {
+                                                'promotion': promotion,
+                                                'year': year,
+                                                'code': project.code
+                                            }) }}">
+                                                <strong>{{ project.code | upper }}</strong>
+                                            </a>
+                                        </p>
+
+                                        <p class="subtitle text-left mb-0">{{ project.title ?: '-' }}</p>
+                                    </section>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+                </div>
             </article>
         </div>
     </main>
 
-    {% include '_layout/default/_footer.html.twig' %}
+    {% if not pdfMode|default(false) %}{% include '_layout/default/_footer.html.twig' %}{% endif %}
 {% endblock %}

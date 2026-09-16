@@ -1,28 +1,33 @@
 import {Controller} from '@hotwired/stimulus';
 
 export default class extends Controller {
-    static targets = ['input', 'item', 'empty'];
+    static targets = ['input', 'item', 'empty', 'count', 'label'];
 
     static values = {
         block: String,
+        singularLabel: String,
+        pluralLabel: String,
     };
 
     connect() {
-        this.blockFilterEnabled = this.hasBlockValue && this.blockValue !== '';
-
-        let initialQuery = '';
+        this.blockFilterEnabled = this.hasBlockValue && this.normalize(this.blockValue) !== '';
 
         if (this.blockFilterEnabled) {
-            initialQuery = this.blockValue;
+            const normalizedBlock = this.normalize(this.blockValue);
 
             this.inputTargets.forEach((input) => {
-                input.value = this.blockValue;
+                input.value = normalizedBlock;
             });
-        } else if (this.hasInputTarget) {
-            initialQuery = this.normalize(this.inputTargets[0].value ?? '');
+
+            this.applyFilter('');
+            return;
         }
 
-        this.applyFilter(this.normalize(initialQuery));
+        const initialQuery = this.hasInputTarget
+            ? this.normalize(this.inputTargets[0].value ?? '')
+            : '';
+
+        this.applyFilter(initialQuery);
     }
 
     filter(event) {
@@ -46,8 +51,6 @@ export default class extends Controller {
     }
 
     applyFilter(query) {
-        let visibleCount = 0;
-
         const expectedBlock = this.blockFilterEnabled && this.hasBlockValue
             ? this.normalize(this.blockValue)
             : '';
@@ -61,14 +64,36 @@ export default class extends Controller {
             const matches = matchesQuery && matchesBlock;
 
             item.toggleAttribute('hidden', !matches);
-
-            if (matches) {
-                visibleCount++;
-            }
         });
+
+        const visibleCount = this.visibleDesktopItemsCount();
 
         this.emptyTargets.forEach((empty) => {
             empty.toggleAttribute('hidden', visibleCount > 0);
+        });
+
+        this.updateCounts(visibleCount);
+    }
+
+    visibleDesktopItemsCount() {
+        return this.itemTargets.filter((item) => {
+            const isDesktopItem = item.closest('.app-toc-desktop') !== null;
+
+            return isDesktopItem && !item.hasAttribute('hidden');
+        }).length;
+    }
+
+    updateCounts(visibleCount) {
+        this.countTargets.forEach((count) => {
+            count.textContent = String(visibleCount);
+        });
+
+        const singularLabel = this.singularLabelValue || 'élément';
+        const pluralLabel = this.pluralLabelValue || `${singularLabel}s`;
+        const currentLabel = visibleCount > 1 ? pluralLabel : singularLabel;
+
+        this.labelTargets.forEach((label) => {
+            label.textContent = currentLabel;
         });
     }
 

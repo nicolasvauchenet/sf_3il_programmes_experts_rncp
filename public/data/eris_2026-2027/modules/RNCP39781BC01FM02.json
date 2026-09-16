@@ -1,0 +1,139 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM02",
+        "title": "Audit des infrastructures et conformité",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 3,
+        "durationHours": 21,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C02",
+            "description": "Auditer l’infrastructure de l’entreprise en évaluant systématiquement les volets techniques et organisationnels à l'aide de méthodes d'analyse, d'outils de surveillance et de cadres de référence pour contrôler la conformité réglementaire"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Acquérir une compréhension approfondie de l'audit des infrastructures et de la conformité aux normes (Comprendre) Utiliser les outils et techniques d'audit pour identifier et analyser les risques (Analyser) Proposer des recommandations efficaces pour améliorer la sécurité et la conformité des infrastructures (Créer)"
+    },
+    "prerequisites": {
+        "description": "Connaissances de base en infrastructures réseau et systèmes informatiques, compréhension des principes de sécurité informatique, familiarité avec les normes de conformité et les bonnes pratiques en audit."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à l'audit des infrastructures et conformité",
+                "items": [
+                    "Comprendre les enjeux de l'audit des infrastructures et de la conformité",
+                    "Identifier les normes et standards en vigueur dans le domaine",
+                    "Connaître les étapes clés d'un audit des infrastructures"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Méthodologie d'audit des infrastructures",
+                "items": [
+                    "Définir les objectifs de l'audit",
+                    "Collecter les informations nécessaires à l'audit",
+                    "Évaluer la conformité aux normes et standards",
+                    "Analyser les risques liés aux infrastructures",
+                    "Proposer des recommandations d'amélioration"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et techniques d'audit",
+                "items": [
+                    "Utiliser des outils d'analyse de configurations",
+                    "Mettre en place des outils de surveillance des infrastructures",
+                    "Maîtriser les techniques d'analyse de vulnérabilités",
+                    "Utiliser des outils de conformité et de reporting",
+                    "Interpréter les résultats des outils d'audit"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Audit des infrastructures réseau",
+                "items": [
+                    "Identifier les composants clés d'une infrastructure réseau",
+                    "Vérifier la conformité des configurations réseau",
+                    "Analyser les flux de données et de trafic réseau",
+                    "Évaluer la sécurité des équipements réseau",
+                    "Proposer des actions correctives pour optimiser les performances réseau"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Audit des infrastructures systèmes",
+                "items": [
+                    "Évaluer la conformité des configurations systèmes",
+                    "Analyser les journaux d'événements et les alertes système",
+                    "Vérifier l'application des politiques de sécurité",
+                    "Auditer les accès et les droits des utilisateurs",
+                    "Proposer des recommandations pour renforcer la sécurité des systèmes"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Étude de Cas - Planification d'un Audit d'Infrastructure",
+            "objectif": "Savoir planifier un audit d'infrastructure en définissant ses objectifs, ses étapes et les informations à collecter.",
+            "instructions": "En tant qu'auditeur chargé de planifier un audit pour une entreprise de taille moyenne, définissez les objectifs de l'audit, identifiez les différentes étapes à suivre et déterminez quelles informations seront nécessaires pour mener à bien cet audit.",
+            "livrable": "Trois objectifs clairs pour l'audit, la liste des étapes principales à suivre et l'énumération des types d'informations et de données à collecter pour chaque étape."
+        },
+        {
+            "title": "Collecte et Analyse de Données",
+            "objectif": "Être capable d'évaluer la conformité de configurations réseau et système par rapport à des normes de sécurité.",
+            "instructions": "À partir d'une liste d'équipements réseau et de configurations système d'une entreprise cliente, sélectionnez une norme de sécurité pertinente puis utilisez un outil d'analyse de configurations pour évaluer la conformité des équipements et configurations fournis.",
+            "livrable": "Un rapport bref présentant les conclusions sur la conformité et identifiant les non-conformités les plus critiques."
+        },
+        {
+            "title": "Simulation d'Analyse de Vulnérabilités",
+            "objectif": "Savoir conduire une analyse de vulnérabilités pour identifier les failles d'une infrastructure réseau.",
+            "instructions": "À l'aide d'une liste de vulnérabilités connues, simulez une analyse de vulnérabilités sur une infrastructure réseau hypothétique : choisissez trois vulnérabilités courantes spécifiques à l'infrastructure réseau et expliquez comment vous utiliseriez des outils d'analyse de vulnérabilités pour détecter ces failles.",
+            "livrable": "Trois vulnérabilités courantes identifiées, la description de la méthode et des outils de détection, et des mesures correctives proposées pour chacune des vulnérabilités."
+        },
+        {
+            "title": "Évaluation de la Sécurité des Équipements Réseau",
+            "objectif": "Être capable d'auditer la sécurité d'un équipement réseau et de proposer des améliorations.",
+            "instructions": "Chargé d'auditer la sécurité des équipements réseau d'une entreprise, choisissez un équipement réseau (par exemple un routeur ou un commutateur), décrivez le processus pour vérifier sa conformité à des standards de sécurité spécifiques, puis analysez les flux de données et de trafic afin d'identifier les éventuels problèmes ou risques de sécurité.",
+            "livrable": "La description du processus de vérification de conformité, l'analyse des flux de données et de trafic avec identification des risques, et des recommandations pour améliorer la sécurité de l'équipement audité."
+        },
+        {
+            "title": "Audit des Accès et Droits Utilisateurs",
+            "objectif": "Savoir auditer les accès et droits des utilisateurs pour vérifier l'application des politiques de sécurité.",
+            "instructions": "Dans le cadre d'un audit des infrastructures systèmes, créez un scénario détaillé incluant différents types d'utilisateurs (administrateurs, employés réguliers, prestataires externes, etc.), auditez les comptes utilisateurs pour vérifier l'application correcte des politiques de sécurité et des droits d'accès, et identifiez toute anomalie ou déviation par rapport aux politiques établies.",
+            "livrable": "Un scénario documenté d'utilisateurs, le relevé des anomalies ou déviations constatées, et des recommandations pour rectifier les problèmes d'accès et renforcer la sécurité des systèmes."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "IT Auditing: Using Controls to Protect Information Assets (4e éd.)",
+            "author": "Davis, C. et al"
+        },
+        {
+            "title": "Auditor's Guide to IT Auditing (2e éd.)",
+            "author": "Cascarino, R"
+        },
+        {
+            "title": "ISO 27001 Controls: A Guide to Implementing and Auditing (2e éd.)",
+            "author": "Calder, A"
+        }
+    ],
+    "OnlineResources": [
+        "ISACA - Audit Resources (https://www.isaca.org) [EN]",
+        "ANSSI - Référentiel PASSI (https://cyber.gouv.fr) [FR]",
+        "AFNOR - Normes ISO 27001 / 27002 (https://www.afnor.org) [FR]",
+        "NIST SP 800-53 (https://csrc.nist.gov/publications/sp800) [EN]",
+        "CLUSIF - Méthodes d'audit (https://clusif.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

@@ -2,7 +2,9 @@
     class="app-toc-wrapper"
     data-controller="toc toc-filter"
     data-toc-selected-code-value="{{ selectedCode|default('')|lower }}"
-    data-toc-filter-block-value="{{ selectedBlock|default('') }}"
+    data-toc-filter-block-value="{{ selectedBlock|default('')|lower }}"
+    data-toc-filter-singular-label-value="{{ title|lower }}"
+    data-toc-filter-plural-label-value="{{ title|lower }}s"
 >
     <div class="app-toc-mobile-trigger">
         <button
@@ -21,7 +23,10 @@
                 {% endif %}
             </span>
 
-            <span class="app-toc-mobile-button-count">
+            <span
+                class="app-toc-mobile-button-count"
+                data-toc-filter-target="count"
+            >
                 {{ content|length }}
             </span>
         </button>
@@ -30,7 +35,10 @@
     <aside class="app-section app-toc app-toc-desktop">
         <h2>{{ title }}s</h2>
         <p class="subtitle">
-            {{ content|length }} {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
+            <span data-toc-filter-target="count">{{ content|length }}</span>
+            <span data-toc-filter-target="label">
+                {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
+            </span>
         </p>
 
         <div class="app-toc-filter">
@@ -52,7 +60,9 @@
         >
             {% for c in content %}
                 {% set tocTitle = c.meta.title ?? c.fileCode|upper %}
-                {% set tocBlockCode = c.fileCode|slice(0, 4) %}
+                {% set tocCodeParts = c.fileCode|lower|split('-') %}
+                {% set tocBlockCode = tocCodeParts[1] ?? '' %}
+
                 <a
                     href="{{ path(path, {
                         'promotion': promotion,
@@ -63,7 +73,7 @@
                     class="{% if selectedCode == c.fileCode %}active{% endif %}"
                     data-code="{{ c.fileCode|lower }}"
                     data-search="{{ (c.fileCode ~ ' ' ~ tocTitle)|lower }}"
-                    data-block="{{ tocBlockCode|lower }}"
+                    data-block="{{ tocBlockCode }}"
                     data-toc-filter-target="item"
                 >
                     <span class="app-badge">{{ c.fileCode|upper }}</span>
@@ -101,7 +111,10 @@
                 <div>
                     <h2 id="mobile-toc-title">{{ title }}s</h2>
                     <p class="subtitle">
-                        {{ content|length }} {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
+                        <span data-toc-filter-target="count">{{ content|length }}</span>
+                        <span data-toc-filter-target="label">
+                            {{ title|lower }}{{ content|length > 1 ? 's' : '' }}
+                        </span>
                     </p>
                 </div>
 
@@ -135,7 +148,9 @@
                 >
                     {% for c in content %}
                         {% set tocTitle = c.meta.title ?? c.fileCode|upper %}
-                        {% set tocBlockCode = c.fileCode|slice(0, 4) %}
+                        {% set tocCodeParts = c.fileCode|lower|split('-') %}
+                        {% set tocBlockCode = tocCodeParts[1] ?? '' %}
+
                         <a
                             href="{{ path(path, {
                                 'promotion': promotion,
@@ -147,7 +162,7 @@
                             data-action="click->toc#close"
                             data-code="{{ c.fileCode|lower }}"
                             data-search="{{ (c.fileCode ~ ' ' ~ tocTitle)|lower }}"
-                            data-block="{{ tocBlockCode|lower }}"
+                            data-block="{{ tocBlockCode }}"
                             data-toc-filter-target="item"
                         >
                             <span class="app-badge">{{ c.fileCode|upper }}</span>

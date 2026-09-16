@@ -1,0 +1,130 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39781-BC01-FM06",
+        "title": "Numérique Responsable et RSE",
+        "rncpCode": "39781",
+        "blocCode": "BC01",
+        "blocName": "Gouvernance des infrastructures systèmes et réseaux",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C10",
+            "description": "Mettre en œuvre le Numérique Responsable en adaptant des pratiques durables et d’accessibilité (personnes en situation de handicap), en se basant sur l’inventaire exhaustif des actifs informatiques et en utilisant les outils de référence afin de mesurer et d’améliorer la performance environnementale du SI et les pratiques RSE afférentes"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les enjeux environnementaux, sociaux et sociétaux du numérique, ainsi que les attentes sociétales en matière de RSE (Comprendre) Développer des stratégies de numérique responsable en intégrant les principes de l'écoconception et de l'accessibilité (Créer) Évaluer et piloter la démarche RSE appliquée aux systèmes d'information (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Une compréhension générale de la Responsabilité Sociétale des Entreprises (RSE) et des notions de base en technologies de l'information est recommandée."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Enjeux du numérique responsable et RSE",
+                "items": [
+                    "Comprendre les enjeux environnementaux liés au numérique",
+                    "Appréhender les impacts sociaux et sociétaux du numérique",
+                    "Connaître les attentes sociétales vis-à-vis des entreprises en matière de RSE",
+                    "Identifier les bénéfices d'une approche responsable du numérique pour l'entreprise",
+                    "Connaître les réglementations et normes en matière de numérique responsable et RSE"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Stratégies de numérique responsable",
+                "items": [
+                    "Comprendre les principes de l'écoconception des services numériques",
+                    "Apprendre à mettre en place une politique d'achat responsable pour les équipements IT",
+                    "Maîtriser les bonnes pratiques en matière de gestion des données et de la consommation énergétique",
+                    "Mettre en place des actions concrètes pour réduire l'empreinte carbone des infrastructures IT",
+                    "Élaborer une stratégie RSE intégrant les enjeux du numérique responsable",
+                    "Intégrer l'accessibilité numérique dès la conception des services (personnes en situation de handicap), en s'appuyant sur les référentiels RGAA et WCAG et sur les obligations légales, pour garantir un usage équitable du SI"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Outils et méthodes pour le numérique responsable",
+                "items": [
+                    "Connaître les outils d'évaluation de l'empreinte environnementale des infrastructures IT",
+                    "Apprendre à réaliser un diagnostic RSE de l'entreprise dans le domaine du numérique",
+                    "Maîtriser les méthodes de mesure et de suivi des actions de numérique responsable",
+                    "Savoir mettre en place un tableau de bord RSE pour le suivi des objectifs",
+                    "Comprendre l'importance de la sensibilisation et de la formation des équipes aux enjeux du numérique responsable"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Bonnes pratiques et retours d'expérience",
+                "items": [
+                    "Étudier des cas concrets de démarches RSE réussies dans le domaine du numérique",
+                    "Analyser les bonnes pratiques mises en place par des entreprises en matière de numérique responsable",
+                    "Comprendre les bénéfices économiques et sociaux de la mise en place d'une démarche RSE dans le numérique",
+                    "Identifier les difficultés et les freins à la mise en place d'une stratégie de numérique responsable",
+                    "Apprendre des retours d'expérience pour éviter les écueils dans la mise en œuvre d'une démarche RSE"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse de l'impact environnemental",
+            "objectif": "Savoir évaluer l'impact environnemental des infrastructures IT d'une entreprise.",
+            "instructions": "Pour une entreprise souhaitant réduire son empreinte environnementale liée au numérique, réalisez un inventaire des équipements IT utilisés dans la société, puis utilisez un outil d'évaluation de l'empreinte environnementale pour estimer l'impact de ces équipements.",
+            "livrable": "Un rapport présentant les résultats de l'évaluation et identifiant les postes les plus énergivores ou les plus polluants."
+        },
+        {
+            "title": "Élaboration d'une politique d'achat responsable",
+            "objectif": "Être capable de concevoir une politique d'achat responsable pour les équipements IT.",
+            "instructions": "La direction ayant pris conscience de l'importance des achats responsables pour les équipements IT, concevez une politique d'achat responsable incluant des critères de sélection des fournisseurs et des produits (durabilité, réparabilité, certification écologique, etc.).",
+            "livrable": "Une politique d'achat responsable détaillant les critères de sélection des fournisseurs et des produits, et expliquant comment elle contribue à une approche plus responsable du numérique."
+        },
+        {
+            "title": "Diagnostic RSE et plan d'action",
+            "objectif": "Savoir réaliser un diagnostic RSE axé sur le numérique et en déduire un plan d'action.",
+            "instructions": "Votre entreprise envisageant d'intégrer les enjeux du numérique responsable dans sa stratégie RSE globale, réalisez un diagnostic RSE en mettant l'accent sur les aspects numériques, puis proposez un plan d'action basé sur les résultats du diagnostic.",
+            "livrable": "Un diagnostic RSE axé sur le numérique et un plan d'action comportant des objectifs mesurables, des indicateurs de suivi et des initiatives concrètes pour chaque objectif."
+        },
+        {
+            "title": "Sensibilisation et formation des équipes",
+            "objectif": "Être capable de concevoir un programme de sensibilisation et de formation au numérique responsable.",
+            "instructions": "La sensibilisation des équipes étant un élément clé pour le succès de la stratégie de numérique responsable, concevez un programme de formation et de sensibilisation aux enjeux du numérique responsable pour les employés, incluant des modules pédagogiques, des ateliers pratiques et des supports de communication.",
+            "livrable": "Un programme de formation et de sensibilisation complet, assorti d'une évaluation de son efficacité à travers un questionnaire de satisfaction et des indicateurs de comportement post-formation."
+        },
+        {
+            "title": "Étude de cas et amélioration continue",
+            "objectif": "Savoir analyser une étude de cas pour améliorer en continu la démarche de numérique responsable.",
+            "instructions": "Pour vous inspirer des meilleures pratiques du secteur, sélectionnez une étude de cas d'une entreprise ayant réussi à mettre en place une démarche de numérique responsable et analysez les actions mises en œuvre, les bénéfices obtenus et les difficultés rencontrées.",
+            "livrable": "Une analyse de l'étude de cas et des recommandations adaptées au contexte de l'entreprise, assorties d'un plan d'amélioration continue fondé sur cette analyse."
+        },
+        {
+            "title": "Audit d'accessibilité numérique et plan de mise en conformité",
+            "objectif": "Être capable d'évaluer le niveau d'accessibilité d'un service numérique au regard du RGAA et des WCAG, puis d'élaborer un plan de mise en conformité intégré à la démarche de numérique responsable.",
+            "instructions": "En tant que responsable SI, sélectionnez un service numérique de l'organisation (site web, application métier ou intranet) et réalisez un audit d'accessibilité sur un échantillon représentatif de pages ou d'écrans. Appuyez-vous sur les critères du RGAA (aligné sur les WCAG niveau AA) pour contrôler au moins dix critères couvrant les principaux thèmes : alternatives aux images, contrastes et usage de la couleur, navigation au clavier, structure et titrage, formulaires et libellés. Consignez pour chaque critère le constat, le niveau de conformité (conforme, non conforme, non applicable) et la non-conformité relevée, puis identifiez les corrections techniques et organisationnelles associées.",
+            "livrable": "Un rapport d'audit d'accessibilité présentant la grille d'évaluation des critères testés, le taux de conformité obtenu et un plan de mise en conformité priorisé (corrections, responsables, échéances), articulé avec la stratégie RSE et de numérique responsable de l'organisation."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Sobriété numérique : les clés pour agir",
+            "author": "Bordage, F"
+        }
+    ],
+    "OnlineResources": [
+        "Institut du Numérique Responsable (https://institutnr.org) [FR]",
+        "GreenIT.fr (https://www.greenit.fr) [FR]",
+        "DINUM - Numérique écoresponsable (https://ecoresponsable.numerique.gouv.fr) [FR]",
+        "The Shift Project - Lean ICT (https://theshiftproject.org) [FR/EN]",
+        "ADEME - Numérique responsable (https://www.ademe.fr) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

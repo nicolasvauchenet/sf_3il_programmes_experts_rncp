@@ -6,14 +6,15 @@ final readonly class ProjectSheet
 {
     /**
      * @param array<string,mixed> $meta
-     * @param array<int,array{code:string,description:string}> $skills
-     * @param array<int,array{code:string,description:string,criteria:array<int,string>}> $skillsWithCriteria
+     * @param array<int,array{code:string,fileCode:string,description:string}> $skills
+     * @param array<int,array{code:string,fileCode:string,description:string,criteria:array<int,string>}> $skillsWithCriteria
+     * @param array<int,array{code:string,title:string,blockCode:string}> $modules
      * @param array<int,array{code:string,title:string,blockCode:string}> $evaluations
      * @param array<string,mixed> $objectives
      * @param array<string,mixed> $prerequisites
      * @param array<string,mixed> $outline
-     * @param array<int,array<string,mixed>> $exercises
-     * @param array<int,array<string,mixed>> $bibliography
+     * @param array<int,mixed> $exercises
+     * @param array<int,mixed> $bibliography
      * @param array<int,string> $teachingMethods
      * @param array<string,mixed> $raw
      */
@@ -23,6 +24,7 @@ final readonly class ProjectSheet
         public array  $meta,
         public array  $skills,
         public array  $skillsWithCriteria,
+        public array  $modules,
         public array  $evaluations,
         public array  $objectives,
         public array  $prerequisites,

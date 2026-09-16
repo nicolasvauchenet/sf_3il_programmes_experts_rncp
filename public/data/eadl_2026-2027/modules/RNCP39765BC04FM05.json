@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "type": "module",
+        "code": "RNCP39765-BC04-FM05",
+        "title": "Technologies de Blockchain",
+        "rncpCode": "39765",
+        "blocCode": "BC04",
+        "blocName": "Optimiser le Système d'Information (SI) par l'apport du Cloud Computing.",
+        "durationDays": 2,
+        "durationHours": 14,
+        "academicYear": "2026-2027"
+    },
+    "skills": [
+        {
+            "code": "C26",
+            "description": "Intégrer et mettre en œuvre des technologies blockchain, en utilisant des plateformes telles que Ethereum ou Hyperledger et en réalisant des smart contract (Contrats Intelligents) pour assurer la traçabilité, la sécurité et l'intégrité des transactions et des données dans le système d'information. BLOC 5 : Concevoir et optimiser les architectures de données décisionnelles et automatiser les processus et flux métier"
+        }
+    ],
+    "objectives": {
+        "description": "À l'issue de ce module, l'apprenant sera capable de : Comprendre les fondamentaux, l'architecture et les implémentations de la blockchain ainsi que des smart contracts (Comprendre) Développer et interagir avec des smart contracts et comprendre les cas d'utilisation de la blockchain dans divers secteurs (Créer) Acquérir les connaissances nécessaires pour évaluer la pertinence d'une solution blockchain dans un contexte métier (Évaluer)"
+    },
+    "prerequisites": {
+        "description": "Avoir des connaissances de base en informatique et des notions en cryptographie et en programmation."
+    },
+    "outline": {
+        "chapters": [
+            {
+                "title": "Chapitre 1 : Introduction à la blockchain",
+                "items": [
+                    "Comprendre les fondamentaux de la technologie blockchain",
+                    "Identifier les avantages et les inconvénients de la blockchain",
+                    "Connaître les différentes applications de la blockchain dans divers secteurs",
+                    "Comprendre le fonctionnement des réseaux blockchain publics et privés",
+                    "Connaître les principaux acteurs de l'écosystème blockchain"
+                ]
+            },
+            {
+                "title": "Chapitre 2 : Architecture et fonctionnement des blockchains",
+                "items": [
+                    "Comprendre la structure et le fonctionnement des blocs et des chaînes de blocs",
+                    "Identifier les différents types de consensus (Proof of Work, Proof of Stake, etc.)",
+                    "Connaître les différents types de blockchains (publiques, privées, de consortium, etc.)",
+                    "Comprendre la notion de smart contract et son rôle dans la blockchain",
+                    "Connaître les principaux protocoles de blockchain (Bitcoin, Ethereum, etc.)"
+                ]
+            },
+            {
+                "title": "Chapitre 3 : Implémentation d'une blockchain",
+                "items": [
+                    "Comprendre les étapes pour la mise en place d'une blockchain",
+                    "Connaître les outils et les plateformes pour le développement de projets blockchain",
+                    "Apprendre à configurer et déployer un nœud sur une blockchain",
+                    "Comprendre les bonnes pratiques en matière de sécurité dans une implémentation blockchain",
+                    "Connaître les méthodes de test et de débogage d'une blockchain"
+                ]
+            },
+            {
+                "title": "Chapitre 4 : Smart Contracts",
+                "items": [
+                    "Comprendre le fonctionnement des smart contracts",
+                    "Apprendre à développer un smart contract sur une plateforme donnée",
+                    "Connaître les langages de programmation utilisés pour les smart contracts",
+                    "Comprendre les bonnes pratiques de développement et de déploiement des smart contracts",
+                    "Savoir comment interagir avec un smart contract depuis une application externe"
+                ]
+            },
+            {
+                "title": "Chapitre 5 : Cas d'utilisation et études de cas",
+                "items": [
+                    "Étudier les différents cas d'utilisation de la blockchain dans divers secteurs (finance, logistique, santé, etc.)",
+                    "Analyser des études de cas de déploiement de blockchain et de smart contracts",
+                    "Comprendre les défis et les opportunités liés à l'implémentation de la blockchain",
+                    "Identifier les tendances futures de la blockchain et des smart contracts",
+                    "Apprendre des retours d'expérience et des bonnes pratiques à travers les études de cas"
+                ]
+            }
+        ]
+    },
+    "exercises": [
+        {
+            "title": "Analyse comparative des blockchains",
+            "objectif": "Savoir distinguer les différents types de blockchain et leurs applications afin de recommander le plus adapté à un besoin.",
+            "instructions": "Vous travaillez pour une entreprise qui envisage d'adopter la technologie blockchain pour améliorer la sécurité de ses transactions. Rédigez un rapport comparatif présentant les avantages et les inconvénients des blockchains publiques, privées et de consortium. Incluez des exemples d'utilisation de chaque type de blockchain dans des secteurs d'activité spécifiques.",
+            "livrable": "Un rapport comparatif des types de blockchain, illustré d'exemples sectoriels, recommandant et justifiant le type le plus adapté aux besoins de l'entreprise."
+        },
+        {
+            "title": "Création d'un smart contract simple",
+            "objectif": "Être capable de développer et de déployer un smart contract simple répondant à un cahier des charges donné.",
+            "instructions": "En tant que développeur blockchain, créez un smart contract simple pour une plateforme de crowdfunding. Le contrat doit permettre aux utilisateurs de contribuer à des projets en envoyant de la cryptomonnaie, de suivre le montant total collecté, et de rembourser automatiquement les contributeurs si le projet n'atteint pas son objectif de financement dans un délai déterminé. Utilisez un langage de programmation adapté aux smart contracts et décrivez les étapes clés du développement et du déploiement du contrat.",
+            "livrable": "Le smart contract développé et déployé, accompagné de la description des étapes clés de son développement et de son déploiement."
+        },
+        {
+            "title": "Déploiement d'un nœud blockchain",
+            "objectif": "Savoir configurer et déployer un nœud complet sur une blockchain.",
+            "instructions": "Choisissez une plateforme blockchain populaire et déployez un nœud complet sur votre machine locale ou un serveur cloud. Testez la connexion de votre nœud au réseau et assurez-vous qu'il est bien synchronisé avec la blockchain.",
+            "livrable": "Le nœud déployé et synchronisé au réseau, accompagné d'une documentation du processus précisant les étapes, les configurations nécessaires et les difficultés rencontrées."
+        },
+        {
+            "title": "Sécurité de la blockchain",
+            "objectif": "Être capable de réaliser un audit de sécurité d'un réseau blockchain d'entreprise.",
+            "instructions": "Vous êtes chargé de réaliser un audit de sécurité pour un réseau blockchain d'entreprise. Élaborez une liste de contrôle (checklist) des points de sécurité à vérifier, comprenant la gestion des clés privées, la sécurisation des nœuds, les protocoles de communication et la résilience du réseau aux attaques. Pour chaque point de la liste, proposez une méthode ou un outil permettant d'assurer ou d'améliorer la sécurité du réseau.",
+            "livrable": "Une checklist d'audit de sécurité où chaque point est associé à une méthode ou un outil permettant d'assurer ou d'améliorer la sécurité du réseau."
+        },
+        {
+            "title": "Étude de cas et proposition de solution blockchain",
+            "objectif": "Savoir synthétiser l'analyse d'un cas réel et proposer une solution blockchain adaptée.",
+            "instructions": "En tant que consultant en blockchain pour une entreprise du secteur de la logistique souhaitant améliorer la traçabilité de ses produits et réduire les fraudes, rédigez une étude de cas détaillée d'une situation actuelle problématique dans l'entreprise, puis proposez une solution fondée sur la technologie blockchain. Expliquez comment la blockchain peut être implémentée pour résoudre le problème, en mettant en avant les smart contracts, la transparence des transactions et l'amélioration de la sécurité.",
+            "livrable": "Une étude de cas détaillée assortie d'une proposition de solution blockchain argumentée, mettant en avant les smart contracts, la transparence des transactions et l'amélioration de la sécurité."
+        }
+    ],
+    "bibliography": [
+        {
+            "title": "Mastering Ethereum",
+            "author": "Antonopoulos, A. M. & Wood, G"
+        },
+        {
+            "title": "Blockchain Basics: A Non-Technical Introduction in 25 Steps",
+            "author": "Drescher, D"
+        },
+        {
+            "title": "Bitcoin and Cryptocurrency Technologies",
+            "author": "Narayanan, A. et al"
+        }
+    ],
+    "OnlineResources": [
+        "Ethereum Documentation (https://ethereum.org/fr/developers/docs/) [FR/EN]",
+        "Hyperledger Documentation (https://www.hyperledger.org/use) [EN]",
+        "Solidity Documentation (https://docs.soliditylang.org) [EN]",
+        "ConsenSys Academy (https://consensys.net/academy/) [EN]",
+        "Blockchain France (https://blockchainfrance.net) [FR]"
+    ],
+    "teachingMethods": [
+        "Cours magistraux interactifs avec démonstrations sur des cas réels",
+        "Ateliers pratiques guidés (un par chapitre) avec livrables progressifs",
+        "Classe inversée : ressources documentaires à consulter avant les séances",
+        "Étude de cas réels issus du secteur",
+        "Évaluation formative continue (QCM, auto-évaluation, audits croisés)",
+        "Revue par les pairs",
+        "Projet fil rouge : fil conducteur tout au long de l'année mobilisant progressivement l'ensemble des compétences de chaque module"
+    ]
+}

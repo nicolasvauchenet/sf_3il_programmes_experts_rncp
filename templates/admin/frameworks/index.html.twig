@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des JSON des promotions{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main">
+        <section class="app-section">
+            <div class="admin-section-header">
+                <div>
+                    <h1>JSON des promotions</h1>
+                    <p class="subtitle">Gerez les dossiers sources utilisés par la commande d'import</p>
+                </div>
+            </div>
+
+            <form
+                method="post"
+                action="{{ path('app_admin_frameworks_upload') }}"
+                enctype="multipart/form-data"
+                class="admin-upload-form"
+            >
+                <input type="hidden" name="_token" value="{{ csrf_token('upload_framework_archive') }}">
+
+                <div class="admin-upload-field">
+                    <label for="framework-archive">Archive ZIP</label>
+                    <input id="framework-archive" type="file" name="archive" accept=".zip,application/zip" class="form-control" required>
+                </div>
+
+                <button type="submit" class="app-button success">Ajouter</button>
+            </form>
+        </section>
+
+        <section class="app-section mt-2 mb-2">
+            <div class="admin-section-header">
+                <h2>{{ datasets|length }} référentiel{{ datasets|length > 1 ? 's' : '' }}</h2>
+            </div>
+
+            <div class="admin-users-table-wrapper">
+                <table class="admin-users-table">
+                    <thead>
+                        <tr>
+                            <th>Référentiel</th>
+                            <th class="text-center">Fichiers</th>
+                            <th>Taille</th>
+                            <th>Modification</th>
+                            <th class="text-center">BDD</th>
+                            <th class="admin-users-actions-heading">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for dataset in datasets %}
+                            <tr>
+                                <td data-label="Référentiel">
+                                    <strong>{{ dataset.name|replace({'_': ' '})|upper }}</strong>
+                                </td>
+                                <td data-label="Fichiers" class="text-center">
+                                    {{ dataset.sourceExists ? dataset.fileCount : '-' }}
+                                </td>
+                                <td data-label="Taille">
+                                    {{ dataset.sourceExists ? dataset.size|number_format(0, ',', ' ') ~ ' octets' : '-' }}
+                                </td>
+                                <td data-label="Modification">
+                                    {{ dataset.sourceExists and dataset.updatedAt ? dataset.updatedAt|date('d/m/Y H:i') : '-' }}
+                                </td>
+                                <td data-label="BDD" class="text-center">
+                                    {% if dataset.database.exists %}
+                                        <span class="admin-status active">Importé</span>
+                                    {% else %}
+                                        <span class="admin-status pending">Absent</span>
+                                    {% endif %}
+                                </td>
+                                <td data-label="Actions" class="admin-users-actions-cell">
+                                    <details class="admin-actions-dropdown">
+                                        <summary aria-label="Actions référentiel">...</summary>
+
+                                        <div class="admin-actions-menu">
+                                            {% if dataset.sourceExists %}
+                                                <form
+                                                    method="post"
+                                                    action="{{ path('app_admin_frameworks_database_import', { datasetName: dataset.name }) }}"
+                                                >
+                                                    <input type="hidden" name="_token" value="{{ csrf_token('import_framework_database_' ~ dataset.name) }}">
+                                                    <button type="submit">Importer le référentiel</button>
+                                                </form>
+
+                                                <form
+                                                    method="post"
+                                                    action="{{ path('app_admin_frameworks_delete', { datasetName: dataset.name }) }}"
+                                                    onsubmit="return confirm('Confirmez-vous la suppression du dossier {{ dataset.name|e('js') }} ?')"
+                                                >
+                                                    <input type="hidden" name="_token" value="{{ csrf_token('delete_framework_dataset_' ~ dataset.name) }}">
+                                                    <button type="submit" class="text-danger">Supprimer le dossier source</button>
+                                                </form>
+                                            {% endif %}
+
+                                            {% if dataset.database.exists and dataset.promotionId %}
+                                                <form
+                                                    method="post"
+                                                    action="{{ path('app_admin_frameworks_database_delete_promotion', { promotionId: dataset.promotionId }) }}"
+                                                    onsubmit="return confirm('Confirmez-vous la suppression du référentiel {{ dataset.database.label|default(dataset.name)|e('js') }} en BDD ?')"
+                                                >
+                                                    <input type="hidden" name="_token" value="{{ csrf_token('delete_framework_database_promotion_' ~ dataset.promotionId) }}">
+                                                    <button type="submit" class="text-danger">Supprimer le référentiel</button>
+                                                </form>
+                                            {% endif %}
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="6">Aucun dossier JSON ni référentiel importé</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

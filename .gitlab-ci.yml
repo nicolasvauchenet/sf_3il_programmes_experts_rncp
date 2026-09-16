@@ -19,21 +19,25 @@ ci:composer:
         - composer validate --no-check-publish
         - composer audit
     rules:
+        -   if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
         -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
 
 ci:phpunit:
     stage: test
     image: php:8.4-cli
     before_script:
-        - apt-get update && apt-get install -y git unzip curl
+        - apt-get update && apt-get install -y git unzip curl libsqlite3-dev libzip-dev
+        - docker-php-ext-install pdo_sqlite zip
         - curl -sS https://getcomposer.org/installer | php
         - mv composer.phar /usr/local/bin/composer
         - composer install --prefer-dist --no-interaction
     script:
+        - php bin/console lint:container --env=test
+        - php bin/console lint:twig templates
         - php bin/phpunit
     rules:
-        #-   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
-        -   when: never
+        -   if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+        -   if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "main"'
 
 deploy:prod:
     stage: deploy
@@ -55,10 +59,17 @@ deploy:prod:
         - >
             ssh -p "$DEPLOY_PORT" "$DEPLOY_USER@$DEPLOY_HOST"
             "cd '$DEPLOY_PATH'
+            && test -f .env.docker.prod
             && git pull
-            && docker compose up -d --build
+            && mkdir -p data/referentiels certs var/backups/sqlite
+            && if test -f data/sf_3il_programmes_experts_rncp.db; then cp data/sf_3il_programmes_experts_rncp.db var/backups/sqlite/pre-deploy-\$(date +%Y%m%d%H%M%S).db; fi
+            && docker compose build app
+            && (docker compose stop app || true)
+            && docker compose run --rm app php bin/console doctrine:migrations:migrate --no-interaction --env=prod
+            && docker compose up -d app
+            && docker compose exec -T app php bin/console cache:clear --env=prod
             && docker compose ps
-            && curl -f http://127.0.0.1 || exit 1"
+            && curl --retry 5 --retry-delay 2 --retry-connrefused -f http://127.0.0.1 || exit 1"
     rules:
-        -   if: '$CI_COMMIT_BRANCH == "main"'
+        -   if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "main"'
             when: on_success

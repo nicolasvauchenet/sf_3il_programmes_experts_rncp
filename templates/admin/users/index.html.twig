@@ -1,0 +1,265 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des utilisateurs{% endblock %}
+
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+
+    <main class="app-main">
+        <div class="app-grid third layout">
+            <div class="app-toc-wrapper">
+                <aside class="app-section app-toc app-toc-desktop">
+                    <h2>Filtrer</h2>
+
+                    <p class="subtitle">
+                        {{ stats.total }} utilisateur{{ stats.total > 1 ? 's' : '' }}
+                    </p>
+
+                    <form method="get" action="{{ path('app_admin_users_home') }}" class="admin-users-filters">
+                        <div class="admin-filter-field">
+                            <label for="filter-role">Rôle</label>
+                            <select id="filter-role" name="role" class="form-control">
+                                <option value="">Tous</option>
+                                {% for value, label in roleChoices %}
+                                    <option value="{{ value }}" {% if filters.role == value %}selected{% endif %}>
+                                        {{ label }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="admin-filter-field">
+                            <label for="filter-status">Activité</label>
+                            <select id="filter-status" name="status" class="form-control">
+                                <option value="">Tous</option>
+                                {% for value, label in statusChoices %}
+                                    <option value="{{ value }}" {% if filters.status == value %}selected{% endif %}>
+                                        {{ label }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <input type="hidden" name="sort" value="{{ sort.column }}">
+                        <input type="hidden" name="direction" value="{{ sort.direction }}">
+                        <input type="hidden" name="perPage" value="{{ pagination.perPage }}">
+                        <input type="hidden" name="page" value="1">
+
+                        <div class="admin-filter-actions">
+                            <button type="submit" class="app-button">Appliquer</button>
+                            <a href="{{ path('app_admin_users_home') }}" class="admin-reset-link">
+                                Réinitialiser
+                            </a>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+
+            <article>
+                <div class="app-grid third">
+                    <section class="app-section centered">
+                        <h3 class="text-center alt">Administration</h3>
+
+                        <div class="info">
+                            <h4 class="text-center">Gestion des utilisateurs</h4>
+                            <h1>Liste des utilisateurs</h1>
+                        </div>
+
+                        <div class="ribbon">
+                            <span
+                                class="app-badge">{{ stats.teachers }} enseignant{{ stats.teachers > 1 ? 's' : '' }}</span>
+                            <span
+                                class="app-badge">{{ stats.students }} apprenant{{ stats.students > 1 ? 's' : '' }}</span>
+                            {# <span class="app-badge">{{ stats.inactive }} inactif{{ stats.inactive > 1 ? 's' : '' }}</span> #}
+                            <span class="app-badge">{{ stats.unaccepted }} en attente</span>
+                        </div>
+                    </section>
+
+                    <section class="app-section centered">
+                        <h2>Métriques</h2>
+
+                        <div class="summary-card" style="height: 200px;">
+                            {{ render_chart(usersDistributionChart) }}
+                        </div>
+                    </section>
+                </div>
+
+                <section class="app-section mx-0 mt-2 mb-0">
+                    <div class="admin-section-header">
+                        <h2>{{ filteredUsersCount }} utilisateur{{ filteredUsersCount > 1 ? 's' : '' }}</h2>
+                        <a href="{{ path('app_admin_users_new') }}" class="app-button admin-new-button">Nouveau</a>
+                    </div>
+
+                    <div class="admin-users-table-wrapper">
+                        {% set columns = [
+                            { key: 'role', label: 'Rôle' },
+                            { key: 'fullName', label: 'Nom' },
+                            { key: 'email', label: 'Email' },
+                            { key: 'createdAt', label: 'Création' },
+                            { key: 'loggedAt', label: 'Connexion' },
+                        ] %}
+
+                        <table class="admin-users-table">
+                            <thead>
+                                <tr>
+                                    {% for column in columns %}
+                                        {% set nextDirection = sort.column == column.key and sort.direction == 'asc' ? 'desc' : 'asc' %}
+                                        <th>
+                                            <a
+                                                href="{{ path('app_admin_users_home', app.request.query.all|merge({ sort: column.key, direction: nextDirection, page: 1 })) }}"
+                                                class="admin-sort-link {{ sort.column == column.key ? 'is-active' : '' }}"
+                                            >
+                                                {{ column.label }}
+                                                {% if sort.column == column.key %}
+                                                    <span>{{ sort.direction == 'asc' ? '↑' : '↓' }}</span>
+                                                {% else %}
+                                                    <span>↕</span>
+                                                {% endif %}
+                                            </a>
+                                        </th>
+                                    {% endfor %}
+                                    <th class="admin-users-actions-heading">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user in users %}
+                                    <tr class="{{ not user.isActive ? 'is-disabled' : '' }}">
+                                        <td data-label="Rôle">{{ user.role }}</td>
+                                        <td data-label="Nom">
+                                            {{ user.fullName }}
+                                            {% if not user.isAccepted %}
+                                                <span class="user-status-badge">En attente</span>
+                                            {% endif %}
+                                        </td>
+                                        <td data-label="Email">{{ user.email }}</td>
+                                        <td data-label="Création">
+                                            {{ user.createdAt ? user.createdAt|date('d/m/Y H:i') : '-' }}
+                                        </td>
+                                        <td data-label="Connexion">
+                                            {{ user.loggedAt ? user.loggedAt|date('d/m/Y H:i') : 'Jamais' }}
+                                        </td>
+                                        <td data-label="Actions" class="admin-users-actions-cell">
+                                            <details class="admin-actions-dropdown">
+                                                <summary aria-label="Actions utilisateur">...</summary>
+
+                                                <div class="admin-actions-menu">
+                                                    <a href="{{ path('app_admin_users_edit', { id: user.id }) }}">Modifier</a>
+                                                    {% if not user.isAccepted %}
+                                                        <a href="{{ path('app_admin_users_accept', { id: user.id }) }}"
+                                                           class="text-success">Accepter</a>
+                                                    {% endif %}
+                                                    {% if user.canDelete and user.isAccepted %}
+                                                        <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}"
+                                                           class="{% if user.isActive %}text-warning{% else %}text-success{% endif %}"
+                                                           onclick="return confirm('Confirmez-vous {% if user.isActive %}la désactivation{% else %}la réactivation{% endif %} de cet utilisateur ?')">
+                                                            {{ user.isActive ? 'Désactiver' : 'Activer' }}
+                                                        </a>
+                                                    {% endif %}
+                                                    {% if user.canDelete %}
+                                                        <form
+                                                            method="post"
+                                                            action="{{ path('app_admin_users_delete', { id: user.id }) }}"
+                                                            onsubmit="return confirm('Confirmez-vous la suppression de cet utilisateur ?')"
+                                                        >
+                                                            <input type="hidden" name="_token"
+                                                                   value="{{ csrf_token('delete_user_' ~ user.id) }}">
+                                                            <button type="submit" class="text-danger">Supprimer</button>
+                                                        </form>
+                                                    {% endif %}
+                                                </div>
+                                            </details>
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="6">Aucun utilisateur.</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="admin-pagination-footer">
+                        <form
+                            method="get"
+                            action="{{ path('app_admin_users_home') }}"
+                            class="admin-page-size-form"
+                            data-controller="auto-submit"
+                        >
+                            <input type="hidden" name="role" value="{{ filters.role }}">
+                            <input type="hidden" name="status" value="{{ filters.status }}">
+                            <input type="hidden" name="sort" value="{{ sort.column }}">
+                            <input type="hidden" name="direction" value="{{ sort.direction }}">
+                            <input type="hidden" name="page" value="1">
+
+                            <label for="users-per-page">Afficher</label>
+                            <select id="users-per-page" name="perPage" class="form-control"
+                                    data-action="change->auto-submit#submit">
+                                {% for pageSize in pagination.pageSizes %}
+                                    <option value="{{ pageSize }}"
+                                            {% if pagination.perPage == pageSize %}selected{% endif %}>
+                                        {{ pageSize == 'all' ? 'Tout' : pageSize }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </form>
+
+                        {% if pagination.pages > 1 %}
+                            <nav class="admin-pagination" aria-label="Pagination des utilisateurs">
+                                <a
+                                    href="{{ path('app_admin_users_home', app.request.query.all|merge({ page: 1 })) }}"
+                                    class="{{ pagination.page == 1 ? 'is-disabled' : '' }}"
+                                    aria-label="Première page"
+                                    title="Première page"
+                                >
+                                    &laquo;
+                                </a>
+                                <a
+                                    href="{{ path('app_admin_users_home', app.request.query.all|merge({ page: pagination.page > 1 ? pagination.page - 1 : 1 })) }}"
+                                    class="{{ pagination.page == 1 ? 'is-disabled' : '' }}"
+                                    aria-label="Page précédente"
+                                    title="Page précédente"
+                                >
+                                    &lsaquo;
+                                </a>
+
+                                {% for pageNumber in pagination.pageNumbers %}
+                                    {% if pageNumber == '...' %}
+                                        <span class="admin-pagination-ellipsis">...</span>
+                                    {% else %}
+                                        <a
+                                            href="{{ path('app_admin_users_home', app.request.query.all|merge({ page: pageNumber })) }}"
+                                            class="{{ pagination.page == pageNumber ? 'is-active' : '' }}"
+                                        >
+                                            {{ pageNumber }}
+                                        </a>
+                                    {% endif %}
+                                {% endfor %}
+
+                                <a
+                                    href="{{ path('app_admin_users_home', app.request.query.all|merge({ page: pagination.page < pagination.pages ? pagination.page + 1 : pagination.pages })) }}"
+                                    class="{{ pagination.page == pagination.pages ? 'is-disabled' : '' }}"
+                                    aria-label="Page suivante"
+                                    title="Page suivante"
+                                >
+                                    &rsaquo;
+                                </a>
+                                <a
+                                    href="{{ path('app_admin_users_home', app.request.query.all|merge({ page: pagination.pages })) }}"
+                                    class="{{ pagination.page == pagination.pages ? 'is-disabled' : '' }}"
+                                    aria-label="Dernière page"
+                                    title="Dernière page"
+                                >
+                                    &raquo;
+                                </a>
+                            </nav>
+                        {% endif %}
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}
