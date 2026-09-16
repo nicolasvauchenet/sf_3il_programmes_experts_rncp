@@ -28,20 +28,26 @@ Le `git status` doit être propre avant le déploiement. Si des fichiers sont mo
 ```bash
 cd ~/refrncp
 git pull
+mkdir -p data/referentiels certs var/backups/sqlite
+if test -f data/sf_3il_programmes_experts_rncp.db; then cp data/sf_3il_programmes_experts_rncp.db var/backups/sqlite/pre-deploy-$(date +%Y%m%d%H%M%S).db; fi
 docker compose build app
-docker compose up -d
-docker compose exec app php bin/console doctrine:migrations:migrate --no-interaction --env=prod
-docker compose exec app php bin/console cache:clear --env=prod
+docker compose stop app || true
+docker compose run --rm app php bin/console doctrine:migrations:migrate --no-interaction --env=prod
+docker compose up -d app
+docker compose exec -T app php bin/console cache:clear --env=prod
 docker compose ps
 ```
 
 L'ordre important est :
 
 1. récupérer le code avec `git pull` ;
-2. reconstruire l'image avec `docker compose build app` ;
-3. recréer/redémarrer les containers avec `docker compose up -d` ;
-4. lancer les migrations depuis le container ;
-5. vider le cache prod depuis le container.
+2. créer les dossiers persistants attendus par Docker Compose ;
+3. sauvegarder le fichier SQLite avant migration ;
+4. reconstruire l'image avec `docker compose build app` ;
+5. arrêter l'ancien container applicatif ;
+6. lancer les migrations depuis la nouvelle image ;
+7. recréer/redémarrer le container applicatif ;
+8. vider le cache prod depuis le container.
 
 ## Pourquoi ne pas lancer `php bin/console` directement ?
 
@@ -67,18 +73,13 @@ ou, si le container `app` n'est pas encore lancé :
 docker compose run --rm app php bin/console cache:clear --env=prod
 ```
 
-## Import manuel des référentiels
+## Import des référentiels
 
-L'import reste manuel et se lance en SSH, dans le container :
+L'import des référentiels se fait depuis l'administration du site, pas en SSH.
 
-```bash
-docker compose exec app php bin/console app:framework:import public/data/cdwfs_2026-2027 --env=prod
-docker compose exec app php bin/console app:framework:import public/data/asrc_2026-2027 --env=prod
-docker compose exec app php bin/console app:framework:import public/data/eadl_2026-2027 --env=prod
-docker compose exec app php bin/console app:framework:import public/data/eris_2026-2027 --env=prod
-```
+Les archives JSON envoyées par l'administration sont extraites dans `data/referentiels`. En production Docker, ce dossier correspond à `/app/data/referentiels` dans le container et à `./data/referentiels` sur le serveur.
 
-La commande détecte automatiquement la stratégie d'import selon l'état de la base.
+Ce dossier est persistant grâce au volume Docker Compose `./data:/app/data`. Il ne faut donc pas le supprimer lors d'un déploiement.
 
 ## Vérifications après MEP
 
@@ -95,17 +96,15 @@ curl --retry 5 --retry-delay 2 --retry-connrefused -f http://127.0.0.1
 - `/administration/utilisateurs` avec un compte administrateur ;
 - une page de promotion, par exemple `/promotion?promotion=cdwfs&year=2026-2027`.
 
-## PostgreSQL
+## Données persistantes
 
-Si PostgreSQL tourne aussi dans Docker Compose, vérifier que le service de base est bien démarré avant les migrations :
+Les données de production à conserver sont :
 
-```bash
-docker compose ps
-```
+- la base SQLite : `data/sf_3il_programmes_experts_rncp.db` ;
+- les référentiels déposés depuis l'administration : `data/referentiels/` ;
+- les certificats : `certs/`.
 
-Éviter `--no-deps` sur les commandes de migration si le service PostgreSQL n'est pas déjà lancé.
-
-La variable `DATABASE_URL` doit être définie dans `.env.docker.prod` et pointer vers le service PostgreSQL de Docker Compose, pas vers `127.0.0.1` depuis le container.
+Le build Docker peut être relancé sans écraser ces éléments, car ils sont montés depuis le serveur dans le container.
 
 ## Point d'attention
 

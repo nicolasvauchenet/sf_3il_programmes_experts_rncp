@@ -1,5 +1,4 @@
-Lancer un import complet :
-php bin/console app:framework:import public/data/asrc_2025-2026 --mode=full
+Lancer un import depuis un dossier JSON :
+php bin/console app:framework:import data/referentiels/asrc_2025-2026
 
-Lancer un import partiel (modules + projets) :
-php bin/console app:framework:import public/data/asrc_2025-2026 --mode=modules_projects
+En production, privilégier l'import depuis l'administration du site.

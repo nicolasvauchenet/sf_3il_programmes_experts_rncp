@@ -46,7 +46,7 @@ Elle prend un seul argument : le dossier du dataset JSON.
 Exemple de structure attendue :
 
 ```text
-public/data/cdwfs_2026-2027/
+data/referentiels/cdwfs_2026-2027/
   structure.json
   skills/
   evaluations/
@@ -59,10 +59,10 @@ Le loader parcourt le dossier de maniere recursive. Il cherche un `structure.jso
 ### Importer l'annee 2026-2027
 
 ```powershell
-php bin/console app:framework:import public/data/cdwfs_2026-2027
-php bin/console app:framework:import public/data/asrc_2026-2027
-php bin/console app:framework:import public/data/eadl_2026-2027
-php bin/console app:framework:import public/data/eris_2026-2027
+php bin/console app:framework:import data/referentiels/cdwfs_2026-2027
+php bin/console app:framework:import data/referentiels/asrc_2026-2027
+php bin/console app:framework:import data/referentiels/eadl_2026-2027
+php bin/console app:framework:import data/referentiels/eris_2026-2027
 ```
 
 ### Strategie detectee automatiquement
@@ -79,7 +79,7 @@ Si le framework n'existe pas et que le dataset est partiel, l'import est refuse.
 La commande actuelle n'accepte pas d'option `--mode`. Elle fonctionne uniquement avec le dossier :
 
 ```powershell
-php bin/console app:framework:import public/data/asrc_2026-2027
+php bin/console app:framework:import data/referentiels/asrc_2026-2027
 ```
 
 ## Verifier l'import

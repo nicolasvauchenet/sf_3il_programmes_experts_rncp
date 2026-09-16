@@ -9,7 +9,7 @@
 parameters:
     app.locale: 'fr'
     app.locale_str: 'fr_FR'
-    app.data_dir: '%kernel.project_dir%/public/data'
+    app.data_dir: '%kernel.project_dir%/data/referentiels'
 
 services:
     # default configuration for services in *this* file

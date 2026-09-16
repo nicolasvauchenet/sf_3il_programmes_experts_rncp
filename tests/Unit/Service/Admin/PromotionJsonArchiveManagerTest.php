@@ -19,7 +19,7 @@ final class PromotionJsonArchiveManagerTest extends TestCase
         parent::setUp();
 
         $this->workspace = sys_get_temp_dir() . '/promotion_json_manager_' . bin2hex(random_bytes(6));
-        $this->dataDir = $this->workspace . '/public/data';
+        $this->dataDir = $this->workspace . '/data/referentiels';
         mkdir($this->dataDir, 0775, true);
     }
 

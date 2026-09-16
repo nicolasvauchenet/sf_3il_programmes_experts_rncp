@@ -135,7 +135,7 @@ final readonly class SummaryChartService
         }
 
         return $this->createBarChart(
-            title: 'Modules par bloc',
+            title: 'Matières par bloc',
             labels: $labels,
             data: $data,
             datasetExtra: [
