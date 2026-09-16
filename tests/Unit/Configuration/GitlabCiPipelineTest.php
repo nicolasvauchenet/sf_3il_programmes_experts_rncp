@@ -54,6 +54,8 @@ final class GitlabCiPipelineTest extends TestCase
         self::assertContains('docker-php-ext-install pdo_sqlite zip', $beforeScript);
         self::assertContains('php bin/console lint:container --env=test', $script);
         self::assertContains('php bin/console lint:twig templates', $script);
+        self::assertContains('mkdir -p var', $script);
+        self::assertContains('php bin/console doctrine:migrations:migrate --no-interaction --env=test', $script);
         self::assertContains('php bin/phpunit', $script);
     }
 
