@@ -18,6 +18,7 @@ final readonly class ModuleImporter
         private RelationSyncService    $relationSyncService,
         private CodeNormalizer         $codeNormalizer,
         private ExerciseNormalizer     $exerciseNormalizer,
+        private DetailSkillCodesResolver $detailSkillCodesResolver = new DetailSkillCodesResolver(),
     )
     {
     }
@@ -91,7 +92,7 @@ final readonly class ModuleImporter
             $module->setTeachingMethods($this->nullableArray($detail['teachingMethods'] ?? null));
             $module->setPosition($index + 1);
 
-            $this->syncSkills($module, (array)($row['skills'] ?? []), $skills, $frameworkCode, $blockCode);
+            $this->syncSkills($module, $this->detailSkillCodesResolver->resolve($detail, $row), $skills, $frameworkCode, $blockCode);
             $this->syncEvaluations($module, (array)($row['evaluations'] ?? []), $evaluations);
             $this->syncChapters($module, $detail);
 

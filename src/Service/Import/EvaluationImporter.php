@@ -19,6 +19,7 @@ final readonly class EvaluationImporter
         private RelationSyncService    $relationSyncService,
         private EnumResolver           $enumResolver,
         private CodeNormalizer         $codeNormalizer,
+        private DetailSkillCodesResolver $detailSkillCodesResolver = new DetailSkillCodesResolver(),
     )
     {
     }
@@ -126,39 +127,12 @@ final readonly class EvaluationImporter
 
             $evaluation = $evaluations[$code];
             $detail = $evaluationFiles[$code] ?? null;
-            $skillCodes = $this->extractDetailSkillCodes($detail);
+            $skillCodes = $this->detailSkillCodesResolver->resolve($detail, $row);
 
             $this->syncModules($evaluation, (array)($row['modules'] ?? []), $modules);
             $this->syncProjects($evaluation, (array)($row['projects'] ?? []), $projects);
-            $this->syncSkills($evaluation, $skillCodes !== [] ? $skillCodes : (array)($row['skills'] ?? []), $skills);
+            $this->syncSkills($evaluation, $skillCodes, $skills);
         }
-    }
-
-    /**
-     * @param array<string, mixed>|null $detail
-     * @return array<int, string>
-     */
-    private function extractDetailSkillCodes(?array $detail): array
-    {
-        if ($detail === null || !isset($detail['skills']) || !is_array($detail['skills'])) {
-            return [];
-        }
-
-        $codes = [];
-
-        foreach ($detail['skills'] as $skill) {
-            if (!is_array($skill)) {
-                continue;
-            }
-
-            $code = trim((string)($skill['code'] ?? ''));
-
-            if ($code !== '') {
-                $codes[] = $code;
-            }
-        }
-
-        return array_values(array_unique($codes));
     }
 
     /**
