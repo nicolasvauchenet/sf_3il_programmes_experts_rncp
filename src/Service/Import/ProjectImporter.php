@@ -18,6 +18,7 @@ final readonly class ProjectImporter
         private EntityManagerInterface $entityManager,
         private RelationSyncService    $relationSyncService,
         private CodeNormalizer         $codeNormalizer,
+        private DetailSkillCodesResolver $detailSkillCodesResolver = new DetailSkillCodesResolver(),
     )
     {
     }
@@ -96,7 +97,7 @@ final readonly class ProjectImporter
             $project->setPosition($index + 1);
 
             $this->syncModules($project, (array)($row['modules'] ?? []), $modules);
-            $this->syncSkills($project, (array)($row['skills'] ?? []), $skills, $frameworkCode, $blockCode);
+            $this->syncSkills($project, $this->detailSkillCodesResolver->resolve($detail, $row), $skills, $frameworkCode, $blockCode);
             $this->syncEvaluations($project, (array)($row['evaluations'] ?? []), $evaluations);
             $this->syncChapters($project, $detail);
 
