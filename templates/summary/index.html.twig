@@ -6,9 +6,9 @@
     {% include '_layout/default/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
-    <main class="app-main">
+    <main id="main-content" tabindex="-1" class="app-main">
         <div class="app-grid two">
-            <section class="app-section centered">
+            <section class="app-section centered summary-intro">
                 <h1>{{ structure.meta.programTitle ?? 'Résumé du Référentiel' }}</h1>
 
                 <p class="subtitle">
@@ -17,7 +17,7 @@
                 </p>
 
                 <div class="ribbon">
-                    <span class="app-badge">RNCP{{ structure.meta.rncpCode }}</span>
+                    <span class="app-badge">{{ structure.meta.rncpCode starts with 'RNCP' ? structure.meta.rncpCode : 'RNCP' ~ structure.meta.rncpCode }}</span>
                     <span class="app-badge">{{ promotion | upper }}</span>
                     <span class="app-badge">{{ structure.meta.academicYear ?? year }}</span>
                 </div>
@@ -27,7 +27,7 @@
                 <section class="app-section centered">
                     <h2>Structure du référentiel</h2>
 
-                    <div class="summary-card" style="height: 200px;">
+                    <div class="chart-frame">
                         {{ render_chart(referentialVolumeChart) }}
                     </div>
                 </section>
@@ -65,7 +65,7 @@
         <div class="app-grid two">
             <section class="app-section">
                 <h2>Répartition des matières par bloc</h2>
-                <div class="summary-card" style="height: 200px;">
+                <div class="chart-frame">
                     {{ render_chart(modulesPerBlockChart, {
                         'data-controller': 'chart-modules-by-block-link',
                         'data-chart-modules-by-block-link-promotion-value': promotion,
@@ -76,7 +76,7 @@
 
             <section class="app-section">
                 <h2>Répartition des projets par bloc</h2>
-                <div class="summary-card" style="height: 200px;">
+                <div class="chart-frame">
                     {{ render_chart(projectsPerBlockChart, {
                         'data-controller': 'chart-projects-by-block-link',
                         'data-chart-projects-by-block-link-promotion-value': promotion,
@@ -87,7 +87,7 @@
 
             <section class="app-section">
                 <h2>Répartition des compétences par bloc</h2>
-                <div class="summary-card" style="height: 200px;">
+                <div class="chart-frame">
                     {{ render_chart(skillsPerBlockChart, {
                         'data-controller': 'chart-skills-by-block-link',
                         'data-chart-skills-by-block-link-promotion-value': promotion,
@@ -98,7 +98,7 @@
 
             <section class="app-section">
                 <h2>Répartition des évaluations par bloc</h2>
-                <div class="summary-card" style="height: 200px;">
+                <div class="chart-frame">
                     {{ render_chart(evaluationsPerBlockChart, {
                         'data-controller': 'chart-evaluations-by-block-link',
                         'data-chart-evaluations-by-block-link-promotion-value': promotion,
@@ -111,7 +111,7 @@
         <div class="app-grid two">
             <section class="app-section">
                 <h2>Répartition des matières par Évaluation (EC)</h2>
-                <div class="summary-card" style="height: 200px;">
+                <div class="chart-frame">
                     {{ render_chart(modulesPerEvaluationChart, {
                         'data-controller': 'chart-evaluations-link',
                         'data-chart-evaluations-link-promotion-value': promotion,
@@ -122,7 +122,7 @@
 
             <section class="app-section">
                 <h2>Répartition des compétences par Évaluation (EC)</h2>
-                <div class="summary-card" style="height: 200px;">
+                <div class="chart-frame">
                     {{ render_chart(skillsPerEvaluationChart, {
                         'data-controller': 'chart-evaluations-link',
                         'data-chart-evaluations-link-promotion-value': promotion,

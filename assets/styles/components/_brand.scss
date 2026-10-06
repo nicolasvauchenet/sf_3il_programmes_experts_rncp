@@ -1,0 +1,88 @@
+// Shared application chrome and product-specific applications of the brand.
+*, *::before, *::after { box-sizing: border-box; }
+:root { color-scheme: light; }
+:focus-visible { outline: 3px solid rgba($blue, 0.65); outline-offset: 3px; }
+[hidden] { display: none !important; }
+html { scroll-padding-top: 160px; }
+html body {
+    background: $surface; font-size: 0.9rem; line-height: 1.6;
+    .app-main { width: 100%; max-width: 1440px; margin: 0 auto; padding: 1.25rem 0; }
+    .app-main.center { position: relative; isolation: isolate; padding: 2.5rem 0; }
+    .app-main.center::before {
+        content: ''; position: absolute; inset: 0 0 auto; height: 210px; z-index: -1;
+        background: linear-gradient(120deg, rgba($primary, 0.97), rgba($blue, 0.88)), url('../img/brand/gradient-bg.png') center/cover;
+    }
+    .app-main.center > .app-section { box-shadow: 0 16px 48px rgba($primary, 0.1); }
+    .centered { align-content: center; justify-items: stretch; gap: 0.5rem; }
+    .app-main .summary-intro { position: relative; overflow: hidden; background: $primary; border: 0; }
+    .app-main .summary-intro::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: $gradient; }
+    .app-main .summary-intro h1, .app-main .summary-intro p.subtitle { color: $white; }
+    .app-main .summary-intro .app-badge { color: $white; background: rgba($white, 0.12); }
+    .app-main .summary-intro h1 { margin-bottom: 1.25rem; }
+    .app-main .summary-intro .ribbon { justify-content: flex-start; margin-top: 1rem; }
+    .app-main article { margin: 1rem 1rem 1rem 0; min-width: 0; }
+    .app-main aside { margin: 1rem 0 1rem 1rem; padding: 1.25rem !important; }
+    .app-section.boxed > h1, .app-section.boxed > .subtitle { text-align: center; }
+    .app-form { padding: 0; margin-top: 1.5rem; }
+    .form-label { font-size: 0.8rem; font-weight: 600; }
+    .email-suffix-field span { border-color: #b8c7cd; font-size: 0.8rem; border-radius: 0 8px 8px 0; }
+    .password-toggle { width: 2.5rem; height: 2.5rem; }
+    .app-main .admin-users-table {
+        font-size: 0.8rem;
+        th { font-family: $font-primary; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; background: #eef5f9; }
+        td { line-height: 1.6; overflow-wrap: anywhere; }
+        tbody tr:hover { background: $surface; }
+        .admin-actions-menu { border-radius: 8px; box-shadow: 0 12px 28px rgba($primary, 0.12); }
+        .admin-actions-menu a:hover, .admin-actions-menu button:hover { background: $primary; }
+    }
+    .admin-new-button { color: $white; background: $blue; border-color: $blue; &:hover { background: $primary; border-color: $primary; } }
+    .app-main .admin-pagination a.is-active, .admin-pagination a:hover { background: $primary; border-color: $primary; }
+    .app-toc-wrapper { top: 150px; }
+    .app-toc { top: 150px; }
+    .app-toc h2 { font-size: 1.5rem; }
+    .app-toc .toc { max-height: calc(100dvh - 340px); min-height: 120px; }
+    .app-toc .toc a { padding: 0.75rem; line-height: 1.6; border-color: $border; border-radius: 8px; }
+    .app-toc .toc a:hover { background: #eef5f9; border-color: #c7d8e0; }
+    .app-toc .toc a.active { background: #fff5ef; border-color: rgba($secondary, 0.45); box-shadow: inset 3px 0 $secondary; }
+    .app-toc .toc a.active .app-badge { color: $warning; }
+    .app-toc-filter .app-toc-filter-input { width: 100%; min-height: 44px; padding: 0.6rem; font-size: 0.85rem; border-color: #b8c7cd; }
+    .app-toc-drawer { border-top: 3px solid $secondary; padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+    .app-toc-mobile .toc { max-height: calc(80dvh - 230px); }
+    .app-toc-drawer-backdrop { z-index: 300; background: rgba($primary, 0.45); }
+    .chart-frame { position: relative; height: 250px; width: 100%; min-width: 0; }
+    .print-button { min-height: 36px; color: $blue; background: #eef5f9; }
+    .bg-alt { border-color: #c7d8e0 !important; background: #eef5f9; }
+    .app-section > p a, .app-section > ul a { text-decoration: underline; text-underline-offset: 3px; }
+    @include respondTo(xs) {
+        .app-main { padding: 0.5rem 0; }
+        .app-main article { margin: 0 1rem; }
+        .app-main aside { margin: 1rem; }
+        .app-toc-wrapper { position: static; }
+        .app-toc-mobile-trigger { margin: 0 1rem; position: static; }
+        .app-section.boxed { margin-top: 1rem; }
+        .app-main .admin-filter-panel { display: block; position: static; }
+        .admin-section-header { flex-wrap: wrap; }
+        .admin-users-table td { gap: 0.5rem; }
+        .admin-users-table td::before { flex-shrink: 0; max-width: 40%; }
+    }
+}
+.skip-link { position: fixed; top: -100px; left: 1rem; z-index: 500; padding: 0.75rem 1rem; color: $white; background: $primary; border-radius: 8px; &:focus { top: 1rem; } }
+.brand-eyebrow { display: block; margin-bottom: 0.65rem; color: $warning; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+.app-dialog {
+    width: min(480px, calc(100% - 2rem)); padding: 1.75rem; color: $black; font-family: $font-primary;
+    border: 1px solid $border; border-top: 3px solid $secondary; border-radius: 14px; box-shadow: 0 24px 70px rgba($primary, 0.25);
+    &::backdrop { background: rgba($primary, 0.5); backdrop-filter: blur(3px); }
+    p { font-size: 0.9rem; }
+    .dialog-actions { display: flex; gap: 0.75rem; margin-top: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+@media print {
+    .app-header, .app-footer, .app-toc-wrapper, .app-navigation, .print-button, .skip-link, .sf-toolbar { display: none !important; }
+    html body, html body .app-section { background: white; box-shadow: none; }
+    html body .app-main { max-width: none; padding: 0; }
+    .app-grid.third.layout { display: block; }
+    .app-section { break-inside: avoid; }
+}

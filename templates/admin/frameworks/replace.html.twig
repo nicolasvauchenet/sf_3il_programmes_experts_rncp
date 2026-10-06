@@ -6,7 +6,7 @@
     {% include '_layout/admin/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
-    <main class="app-main center">
+    <main id="main-content" tabindex="-1" class="app-main center">
         <section class="app-section boxed">
             <h1>Dossier déjà existant</h1>
             <p class="subtitle">Le dossier {{ pendingUpload.datasetName }} existe déjà dans le stockage persistant.</p>
@@ -29,7 +29,7 @@
                 <form
                     method="post"
                     action="{{ path('app_admin_frameworks_replace', { token: pendingUpload.token }) }}"
-                    onsubmit="return confirm('Le dossier existant sera supprimé avant extraction. Confirmez-vous le remplacement ?')"
+                    data-confirm-message="Le dossier existant sera supprimé avant extraction. Confirmez-vous le remplacement ?"
                 >
                     <input type="hidden" name="_token" value="{{ csrf_token('replace_framework_archive_' ~ pendingUpload.token) }}">
                     <button type="submit" class="app-button danger">Remplacer</button>

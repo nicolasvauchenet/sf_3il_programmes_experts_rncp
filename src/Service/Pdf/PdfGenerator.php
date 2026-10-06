@@ -22,8 +22,15 @@ final class PdfGenerator
         $html = $this->prepareHtml($html);
 
         $options = new Options();
-        $options->set('defaultFont', 'DejaVu Sans');
+        $options->set('defaultFont', 'Montserrat');
         $options->set('isRemoteEnabled', false);
+        $options->setChroot($this->kernel->getProjectDir());
+        $fontCache = $this->kernel->getCacheDir() . '/pdf-fonts';
+        if (!is_dir($fontCache) && !mkdir($fontCache, 0775, true) && !is_dir($fontCache)) {
+            throw new \RuntimeException('Unable to create the PDF font cache.');
+        }
+        $options->setFontDir($fontCache);
+        $options->setFontCache($fontCache);
 
         $dompdf = new Dompdf($options);
         $dompdf->setPaper('A4', 'portrait');
@@ -32,9 +39,9 @@ final class PdfGenerator
 
         $canvas = $dompdf->getCanvas();
         $fontMetrics = $dompdf->getFontMetrics();
-        $font = $fontMetrics->getFont('DejaVu Sans', 'normal');
-        $boldFont = $fontMetrics->getFont('DejaVu Sans', 'bold');
-        $logoPath = $this->kernel->getProjectDir() . '/assets/img/logo-3il-pdf.jpg';
+        $font = $fontMetrics->getFont('Montserrat', 'normal');
+        $boldFont = $fontMetrics->getFont('Montserrat', 'bold');
+        $logoPath = $this->kernel->getProjectDir() . '/assets/img/brand/logo-pdf.jpg';
 
         $canvas->page_script(static function (
             int $pageNumber,
@@ -43,17 +50,17 @@ final class PdfGenerator
             mixed $fontMetrics,
         ) use ($font, $boldFont, $header, $logoPath): void {
             $pageWidth = $canvas->get_width();
-            $primaryColor = [0.16, 0.36, 0.44];
+            $primaryColor = [0, 80 / 255, 103 / 255];
             $headerSideMargin = 43;
 
             if ($pageNumber === 1) {
-                $canvas->image($logoPath, $headerSideMargin, 24, 230, 22.2);
+                $canvas->image($logoPath, $headerSideMargin, 24, 145, 41.282);
 
                 return;
             }
 
             $canvas->filled_rectangle(0, 0, $pageWidth, 88, [1, 1, 1]);
-            $canvas->image($logoPath, $headerSideMargin, 23, 230, 22.2);
+            $canvas->image($logoPath, $headerSideMargin, 23, 145, 41.282);
 
             $drawRightAlignedText = static function (
                 string $text,
@@ -177,6 +184,24 @@ final class PdfGenerator
 
     private function prepareHtml(string $html): string
     {
+        // Local static TrueType fonts are also usable by Dompdf (unlike web variable fonts).
+        $fontRoot = str_replace('\\', '/', $this->kernel->getProjectDir()) . '/assets/fonts/';
+        // Dompdf strips file:// before realpath(), including on Windows drive paths.
+        $fontRoot = 'file://' . $fontRoot;
+        $fontCss = '<style>';
+        foreach ([
+            ['Montserrat', 'normal', 'normal', 'Montserrat-Regular.ttf'],
+            ['Montserrat', 'bold', 'normal', 'Montserrat-Bold.ttf'],
+            ['Montserrat', 'normal', 'italic', 'Montserrat-Italic.ttf'],
+            ['Bebas Neue', 'normal', 'normal', 'BebasNeue-Regular.ttf'],
+        ] as [$family, $weight, $style, $file]) {
+            $fontCss .= sprintf(
+                '@font-face { font-family: "%s"; font-weight: %s; font-style: %s; src: url("%s") format("truetype"); }',
+                $family, $weight, $style, htmlspecialchars($fontRoot . $file, ENT_QUOTES, 'UTF-8'),
+            );
+        }
+        $html = str_replace('</head>', $fontCss . '</style></head>', $html);
+
         $document = new \DOMDocument('1.0', 'UTF-8');
         $previousErrors = libxml_use_internal_errors(true);
         $document->loadHTML($html, LIBXML_NOERROR | LIBXML_NOWARNING);

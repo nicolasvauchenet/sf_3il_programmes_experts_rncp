@@ -8,6 +8,7 @@ programmes-experts-rncp.key
 /data/*.db
 /data/*.db-*
 /data/referentiels/
+/ui/
 ###< programmes_experts_rncp/local ###
 
 ###> symfony/framework-bundle ###

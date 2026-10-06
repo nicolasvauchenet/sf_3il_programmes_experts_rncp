@@ -1,52 +1,18 @@
 .app-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    @include displayFlex(space-between, center, 0.5rem);
-    padding: 0.5rem 1rem;
-    color: $primary;
-    background-color: $white;
-    box-shadow: 0 2px 0.25rem rgba($black, 0.5);
-
-    @include respondTo(lg) {
-        padding: 0.5rem 3rem;
-    }
-
-    .app-logo {
-        display: block;
-
-        img {
-            display: block;
-            width: 46dvw;
-
-            @include respondTo(sm) {
-                width: 20dvw;
-            }
-        }
-    }
-
+    position: sticky; top: 0; z-index: 100;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;
+    padding: 1rem clamp(1rem, 3vw, 3rem); color: $primary; background: $white;
+    border-bottom: 1px solid $border; box-shadow: 0 2px 12px rgba($primary, 0.04);
+    &::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: $gradient; }
+    .app-logo { display: block; flex-shrink: 0; }
+    .app-logo img { display: block; width: clamp(150px, 17vw, 205px); height: auto; }
     .app-sitename {
-        @include displayFlex(flex-end, null, 0.25rem, column);
-        font-size: 0.85rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: right;
-
-        @include respondTo(md) {
-            font-size: 1.25rem;
-        }
-
-        small {
-            font-family: $font-secondary;
-            font-size: 0.7rem;
-            font-weight: normal;
-            letter-spacing: 3.6px;
-            color: $secondary;
-
-            @include respondTo(md) {
-                font-size: 1.15rem;
-                letter-spacing: 4.5px;
-            }
-        }
+        display: flex; flex-direction: column; gap: 0.15rem; text-align: right;
+        span { font-size: 0.85rem; font-weight: 700; }
+        small { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: $muted; }
     }
+    @media (min-width: 768px) and (max-width: 1100px) {
+        .app-navigation { order: 3; width: 100%; justify-content: center; }
+    }
+    @media (max-width: 420px) { gap: 0.5rem; .app-sitename span { font-size: 0.75rem; } .app-sitename small { font-size: 0.55rem; } }
 }

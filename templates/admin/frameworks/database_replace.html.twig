@@ -6,7 +6,7 @@
     {% include '_layout/admin/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
-    <main class="app-main center">
+    <main id="main-content" tabindex="-1" class="app-main center">
         <section class="app-section boxed">
             <h1>Referentiel deja présent en BDD</h1>
             <p class="subtitle">Le dossier {{ datasetName }} correspond à un référentiel deja importé</p>
@@ -30,7 +30,7 @@
                 <form
                     method="post"
                     action="{{ path('app_admin_frameworks_database_replace', { datasetName: datasetName }) }}"
-                    onsubmit="return confirm('Confirmez-vous le remplacement du referentiel {{ datasetName|e('js') }} en BDD ?')"
+                    data-confirm-message="Confirmez-vous le remplacement du referentiel {{ datasetName|e('html_attr') }} en BDD ?"
                 >
                     <input type="hidden" name="_token" value="{{ csrf_token('replace_framework_database_' ~ datasetName) }}">
                     <button type="submit" class="app-button danger">Remplacer</button>
