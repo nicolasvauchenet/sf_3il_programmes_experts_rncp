@@ -1,18 +1,31 @@
 .app-header {
     position: sticky; top: 0; z-index: 100;
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;
-    padding: 1rem clamp(1rem, 3vw, 3rem); color: $primary; background: $white;
+    padding: 0.5rem clamp(0.75rem, 2vw, 2rem); color: $primary; background: $white;
     border-bottom: 1px solid $border; box-shadow: 0 2px 12px rgba($primary, 0.04);
     &::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: $gradient; }
-    .app-logo { display: block; flex-shrink: 0; }
-    .app-logo img { display: block; width: clamp(150px, 17vw, 205px); height: auto; }
+    .app-logo { display: flex; align-items: center; flex-shrink: 0; height: 3rem; overflow: hidden; }
+    // The official image includes transparent vertical margins; contain those within the header.
+    .app-logo img { display: block; width: clamp(180px, 22vw, 280px); height: auto; }
     .app-sitename {
         display: flex; flex-direction: column; gap: 0.15rem; text-align: right;
-        span { font-size: 0.85rem; font-weight: 700; }
-        small { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: $muted; }
+        span { font-size: 1.05rem; font-weight: 700; }
+        small { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: $muted; }
+        &--brand { font-size: 1.05rem; white-space: nowrap; }
+        &--brand > span { font-size: 1em; }
+        &--brand > small { font-size: 0.714286em; letter-spacing: 0.2706em; }
     }
     @media (min-width: 768px) and (max-width: 1100px) {
         .app-navigation { order: 3; width: 100%; justify-content: center; }
     }
-    @media (max-width: 420px) { gap: 0.5rem; .app-sitename span { font-size: 0.75rem; } .app-sitename small { font-size: 0.55rem; } }
+    @media (max-width: 420px) {
+        gap: 0.5rem;
+        .app-logo { height: 2.5rem; }
+        .app-logo img { width: clamp(150px, 44vw, 185px); max-width: calc(100vw - 11rem); }
+        .app-sitename span { font-size: 0.9rem; }
+        .app-sitename small { font-size: 0.65rem; letter-spacing: 0.08em; }
+        .app-sitename--brand { font-size: clamp(0.75rem, 3.5vw, 0.9rem); }
+        .app-sitename--brand > span { font-size: 1em; }
+        .app-sitename--brand > small { font-size: 0.714286em; letter-spacing: 0.2706em; }
+    }
 }
