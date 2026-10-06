@@ -1,72 +1,17 @@
 .app-section {
-    margin: 1rem 0.5rem;
-    padding: 0.75rem;
-    background-color: $white;
-    border: 1px solid rgba($black, 0.5);
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px 1px rgba($black, 0.2);
-
-    @include respondTo(sm) {
-        margin: 1.5rem;
-        padding: 1.5rem;
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    &.boxed {
-        @include respondTo(sm) {
-            margin-left: auto;
-            margin-right: auto;
-            width: 50dvw;
-        }
-    }
-
-    &.sub {
-        margin-top: 0 !important;
-        margin-left: 1rem !important;
-        margin-right: 0.5rem !important;
-        border-top: none;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-
-        @include respondTo(sm) {
-            margin-left: 3rem !important;
-            padding: 1rem;
-        }
-    }
-
-    :has(+ .app-section.sub) {
-        margin-bottom: 0 !important;
-        background-color: rgba($black, 0.05);
-    }
-
-    .app-grid {
-        &:has(> .app-section) {
-            margin: 0;
-        }
-    }
-
+    min-width: 0; margin: 1rem; padding: clamp(1rem, 2.2vw, 1.75rem);
+    background: $white; border: 1px solid $border; border-radius: 14px; box-shadow: $shadow;
+    &:last-child { margin-bottom: 0; }
+    &.boxed { width: min(100% - 2rem, 660px); margin: 2rem auto; border-top: 3px solid $secondary; }
+    &.sub { margin-top: 0 !important; margin-left: 1rem !important; border-top: 0; border-radius: 0 0 14px 14px; }
+    & > h2 { padding-bottom: 0.75rem; border-bottom: 1px solid $border; }
+    &.centered > h2 { width: 100%; }
+    .app-section { box-shadow: none; background: $surface; }
+    .app-grid:has(> .app-section) { margin: 0; }
     @import "../../components/section/ribbon";
 }
-
-.app-grid {
-    &:has(> .app-section) {
-        margin: 1rem 0.5rem;
-
-        @include respondTo(sm) {
-            margin: 1.5rem;
-        }
-
-        .app-section {
-            margin: 0;
-        }
-    }
+.app-grid:has(> .app-section) {
+    margin: 1rem;
+    > .app-section { margin: 0; }
 }
-
-article {
-    & > .app-grid {
-        margin: 0 !important;
-    }
-}
+article > .app-grid { margin: 0 !important; }

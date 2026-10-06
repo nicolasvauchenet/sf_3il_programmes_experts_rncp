@@ -1,18 +1,7 @@
 .app-badge {
-    padding: 0.5rem 0.75rem;
-    font-family: $font-secondary;
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    color:  $primary;
-    background-color: rgba($primary, 0.15);
-    border-radius: 0.25rem;
-
-    &.outline{
-        font-size: 0.85rem;
-        color:  $primary;
-        background-color: transparent;
-    }
+    display: inline-block; padding: 0.3rem 0.6rem; font-family: $font-primary;
+    font-size: 0.7rem; font-weight: 600; line-height: 1.5; letter-spacing: 0.02em;
+    text-transform: uppercase; text-align: center; color: $primary; background-color: #eef5f9;
+    border-radius: 4px; overflow-wrap: anywhere;
+    &.outline { background-color: transparent; }
 }

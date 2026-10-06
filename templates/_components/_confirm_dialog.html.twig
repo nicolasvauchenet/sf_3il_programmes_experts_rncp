@@ -1,0 +1,9 @@
+<dialog class="app-dialog" data-controller="confirm" data-confirm-target="dialog" aria-labelledby="confirm-title" aria-describedby="confirm-message" data-action="cancel->confirm#cancel close->confirm#restoreFocus">
+    <span class="brand-eyebrow">3iL Ingénieurs</span>
+    <h2 id="confirm-title">Confirmer l’action</h2>
+    <p id="confirm-message" data-confirm-target="message"></p>
+    <div class="dialog-actions">
+        <button type="button" class="app-button outline" data-action="confirm#cancel" autofocus>Annuler</button>
+        <button type="button" class="app-button" data-action="confirm#accept">Confirmer</button>
+    </div>
+</dialog>

@@ -1,15 +1,6 @@
 .form-group {
-    @include displayFlex(null, null, 0.5rem, column);
-    margin-bottom: 1rem;
-
-    @include respondTo(sm) {
-        @include displayGrid(4fr 6fr, 0.25rem);
-        align-items: center;
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
+    display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem;
+    &:last-child { margin-bottom: 0; }
+    > .hidden-xs { display: none; }
     @import "../../components/form/label";
 }

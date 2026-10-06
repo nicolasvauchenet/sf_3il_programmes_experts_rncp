@@ -1,19 +1,22 @@
-<nav class="app-navigation">
+<nav class="app-navigation" aria-label="Navigation principale">
     <a
         href="{{ path('app_admin_home') }}"
         class="{% if 'app_admin_home' == app.request.get('_route') %}active{% endif %}"
+        {% if 'app_admin_home' == app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Accueil
     </a>
     <a
         href="{{ path('app_admin_users_home') }}"
         class="{% if 'app_admin_users' in app.request.get('_route') %}active{% endif %}"
+        {% if 'app_admin_users' in app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Utilisateurs
     </a>
     <a
         href="{{ path('app_admin_frameworks_home') }}"
         class="{% if 'app_admin_frameworks' in app.request.get('_route') %}active{% endif %}"
+        {% if 'app_admin_frameworks' in app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Référentiels
     </a>

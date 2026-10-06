@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ status_code }} · Une erreur est survenue{% endblock %}
+{% block body %}
+    {% include '_layout/default/_header.html.twig' %}
+    <main id="main-content" tabindex="-1" class="app-main center">
+        <section class="app-section boxed">
+            <span class="brand-eyebrow">3iL Ingénieurs · Erreur {{ status_code }}</span>
+            <h1>{{ status_code == 404 ? 'Page introuvable' : (status_code == 403 ? 'Accès non autorisé' : 'Une erreur est survenue') }}</h1>
+            <p>{{ status_code == 404 ? 'Cette page n’existe pas ou a été déplacée.' : (status_code == 403 ? 'Ton compte ne permet pas d’accéder à cette page.' : 'Le service est momentanément indisponible. Réessaie dans quelques instants.') }}</p>
+            <a href="{{ path('app_home') }}" class="app-button">Revenir à l’accueil</a>
+        </section>
+    </main>
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

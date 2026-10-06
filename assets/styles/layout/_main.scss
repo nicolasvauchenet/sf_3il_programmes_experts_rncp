@@ -36,13 +36,14 @@
             width: auto;
             min-width: 7rem;
             font-size: 0.75rem;
-            color: $success;
-            background-color: rgba($success, 0.25);
-            border-color: $success;
+            color: $white;
+            background-color: $blue;
+            border-color: $blue;
 
             &:hover {
                 color: $white;
-                background-color: $success;
+                background-color: $primary;
+                border-color: $primary;
             }
         }
     }
@@ -272,7 +273,7 @@
         }
 
         th {
-            font-family: $font-secondary;
+            font-family: $font-primary;
             font-weight: bold;
             text-transform: uppercase;
             color: $primary;

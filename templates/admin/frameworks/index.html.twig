@@ -6,7 +6,7 @@
     {% include '_layout/admin/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
-    <main class="app-main">
+    <main id="main-content" tabindex="-1" class="app-main">
         <section class="app-section">
             <div class="admin-section-header">
                 <div>
@@ -88,7 +88,7 @@
                                                 <form
                                                     method="post"
                                                     action="{{ path('app_admin_frameworks_delete', { datasetName: dataset.name }) }}"
-                                                    onsubmit="return confirm('Confirmez-vous la suppression du dossier {{ dataset.name|e('js') }} ?')"
+                                                    data-confirm-message="Confirmez-vous la suppression du dossier {{ dataset.name|e('html_attr') }} ?"
                                                 >
                                                     <input type="hidden" name="_token" value="{{ csrf_token('delete_framework_dataset_' ~ dataset.name) }}">
                                                     <button type="submit" class="text-danger">Supprimer le dossier source</button>
@@ -99,7 +99,7 @@
                                                 <form
                                                     method="post"
                                                     action="{{ path('app_admin_frameworks_database_delete_promotion', { promotionId: dataset.promotionId }) }}"
-                                                    onsubmit="return confirm('Confirmez-vous la suppression du référentiel {{ dataset.database.label|default(dataset.name)|e('js') }} en BDD ?')"
+                                                    data-confirm-message="Confirmez-vous la suppression du référentiel {{ dataset.database.label|default(dataset.name)|e('html_attr') }} en BDD ?"
                                                 >
                                                     <input type="hidden" name="_token" value="{{ csrf_token('delete_framework_database_promotion_' ~ dataset.promotionId) }}">
                                                     <button type="submit" class="text-danger">Supprimer le référentiel</button>

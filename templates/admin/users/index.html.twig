@@ -6,10 +6,10 @@
     {% include '_layout/admin/_header.html.twig' %}
     {% include '_layout/default/_alert.html.twig' %}
 
-    <main class="app-main">
+    <main id="main-content" tabindex="-1" class="app-main">
         <div class="app-grid third layout">
             <div class="app-toc-wrapper">
-                <aside class="app-section app-toc app-toc-desktop">
+                <aside class="app-section app-toc app-toc-desktop admin-filter-panel">
                     <h2>Filtrer</h2>
 
                     <p class="subtitle">
@@ -79,7 +79,7 @@
                     <section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div class="summary-card" style="height: 200px;">
+                        <div class="chart-frame">
                             {{ render_chart(usersDistributionChart) }}
                         </div>
                     </section>
@@ -152,7 +152,7 @@
                                                     {% if user.canDelete and user.isAccepted %}
                                                         <a href="{{ path('app_admin_users_toggle_active', { id: user.id }) }}"
                                                            class="{% if user.isActive %}text-warning{% else %}text-success{% endif %}"
-                                                           onclick="return confirm('Confirmez-vous {% if user.isActive %}la désactivation{% else %}la réactivation{% endif %} de cet utilisateur ?')">
+                                                           data-confirm-message="Confirmez-vous {% if user.isActive %}la désactivation{% else %}la réactivation{% endif %} de cet utilisateur ?">
                                                             {{ user.isActive ? 'Désactiver' : 'Activer' }}
                                                         </a>
                                                     {% endif %}
@@ -160,7 +160,7 @@
                                                         <form
                                                             method="post"
                                                             action="{{ path('app_admin_users_delete', { id: user.id }) }}"
-                                                            onsubmit="return confirm('Confirmez-vous la suppression de cet utilisateur ?')"
+                                                            data-confirm-message="Confirmez-vous la suppression de cet utilisateur ?"
                                                         >
                                                             <input type="hidden" name="_token"
                                                                    value="{{ csrf_token('delete_user_' ~ user.id) }}">

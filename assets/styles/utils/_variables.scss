@@ -1,15 +1,19 @@
-/* COLORS */
-$black: #111111;
+// 3iL Ingénieurs — official web colours, with readable semantic shades.
+$black: #24333b;
 $white: #ffffff;
-
-$info: #4343f2;
-$success: #2a9a2a;
-$warning: #b17e20;
-$error: #ab1f1f;
-
-$primary: #00556a;
+$primary: #005067;
 $secondary: #e84d0d;
-
-/*FONTS */
-$font-primary: system-ui, sans-serif;
-$font-secondary: "Roboto Condensed", sans-serif;
+$blue: #086694;
+$teal: #00a9a6;
+$purple: #3e338b;
+$info: #086694;
+$success: #007976;
+$warning: #a63709;
+$error: #b81367;
+$surface: #f7f9fa;
+$border: #e3e7e9;
+$muted: #586970;
+$gradient: linear-gradient(100deg, #3e338b, #b81367 55%, #e84d0d);
+$shadow: 0 6px 24px rgba($primary, 0.06);
+$font-primary: "Montserrat", system-ui, sans-serif;
+$font-secondary: "Bebas Neue", sans-serif;
