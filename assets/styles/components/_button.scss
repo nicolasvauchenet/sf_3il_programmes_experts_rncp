@@ -8,7 +8,7 @@
     &:hover { color: $white; background: $primary; border-color: $primary; box-shadow: $shadow; }
     &:active { transform: translateY(1px); }
     &.form-submit, &.accent {
-        background: $secondary; border-color: $secondary; color: #10242e;
+        background: $secondary; border-color: $secondary; color: $white;
         &:hover { background: #b93a08; border-color: #b93a08; color: $white; }
     }
     &.download, &.outline {
