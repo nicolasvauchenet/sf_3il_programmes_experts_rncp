@@ -1,31 +1,36 @@
-<nav class="app-navigation">
+<nav class="app-navigation" aria-label="Navigation principale">
     <a
         href="{{ path('app_promotion_summary', { promotion: promotion, year: year }) }}"
         class="{% if 'app_promotion_summary' == app.request.get('_route') %}active{% endif %}"
+        {% if 'app_promotion_summary' == app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Résumé
     </a>
     <a
         href="{{ path('app_promotion_modules', { promotion: promotion, year: year }) }}"
         class="{% if 'app_promotion_modules' == app.request.get('_route') %}active{% endif %}"
+        {% if 'app_promotion_modules' == app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Matières
     </a>
     <a
         href="{{ path('app_promotion_projects', { promotion: promotion, year: year }) }}"
         class="{% if 'app_promotion_projects' == app.request.get('_route') %}active{% endif %}"
+        {% if 'app_promotion_projects' == app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Projets
     </a>
     <a
         href="{{ path('app_promotion_skills', { promotion: promotion, year: year }) }}"
         class="{% if 'app_promotion_skills' == app.request.get('_route') %}active{% endif %}"
+        {% if 'app_promotion_skills' == app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Compétences
     </a>
     <a
         href="{{ path('app_promotion_evaluations', { promotion: promotion, year: year }) }}"
         class="{% if 'app_promotion_evaluations' == app.request.get('_route') %}active{% endif %}"
+        {% if 'app_promotion_evaluations' == app.request.get('_route') %}aria-current="page"{% endif %}
     >
         Évaluations
     </a>

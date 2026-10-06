@@ -59,9 +59,9 @@ final readonly class AdminUserChartService
 
         $colors = [
             '#005067',
-            '#0f766e',
+            '#00a9a6',
             '#e84d0d',
-            '#b45309',
+            '#b81367',
         ];
 
         $chart->setData([

@@ -25,6 +25,7 @@ export default class extends Controller {
         }
 
         this.isOpen = true;
+        this.previousFocus = document.activeElement;
         this.backdropTarget.hidden = false;
 
         requestAnimationFrame(() => {
@@ -40,6 +41,7 @@ export default class extends Controller {
 
         requestAnimationFrame(() => {
             this.scrollMobileToActiveItem();
+            this.panelTarget.querySelector('button, input, a[href]')?.focus();
         });
     }
 
@@ -56,6 +58,7 @@ export default class extends Controller {
         if (this.hasTriggerTarget) {
             this.triggerTarget.setAttribute('aria-expanded', 'false');
         }
+        this.previousFocus?.focus();
 
         window.setTimeout(() => {
             if (!this.isOpen) {
@@ -73,6 +76,19 @@ export default class extends Controller {
     handleKeydown(event) {
         if (event.key === 'Escape') {
             this.close();
+        }
+        if (event.key === 'Tab') {
+            const focusable = [...this.panelTarget.querySelectorAll('button, input, a[href], select, [tabindex="0"]')]
+                .filter(element => !element.disabled && element.getClientRects().length);
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last?.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first?.focus();
+            }
         }
     }
 
@@ -104,7 +120,7 @@ export default class extends Controller {
 
         container.scrollTo({
             top: Math.max(targetTop, 0),
-            behavior: 'smooth',
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
         });
     }
 

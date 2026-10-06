@@ -316,10 +316,10 @@ final readonly class SummaryChartService
 
         $colors = [
             '#005067',
-            '#0f766e',
+            '#00a9a6',
             '#e84d0d',
-            '#b45309',
-            '#7c3aed',
+            '#b81367',
+            '#3e338b',
         ];
 
         $chart->setData([

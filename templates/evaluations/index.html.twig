@@ -12,7 +12,7 @@
         {% include '_layout/default/_alert.html.twig' %}
     {% endif %}
 
-    <main class="app-main">
+    <main id="main-content" tabindex="-1" class="app-main">
         <div class="{{ pdfMode|default(false) ? '' : 'app-grid third layout' }}">
             {% if not pdfMode|default(false) %}{% include '_layout/default/_toc.html.twig' with {
                 'title': 'Évaluation',
@@ -73,7 +73,7 @@
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div style="height: 200px;">
+                        <div class="chart-frame">
                             {{ render_chart(evaluationVolumeChart) }}
                         </div>
                     </section>

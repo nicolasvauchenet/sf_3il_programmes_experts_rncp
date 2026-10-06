@@ -1,37 +1,10 @@
 .app-alert {
-    margin: 1.5rem 0.5rem;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid $black;
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px 1px rgba($black, 0.2);
-
-    @include respondTo(sm) {
-        margin: 1.5rem;
-    }
-
-    &.info {
-        color: $info;
-        background-color: rgba($info, 0.25);
-        border-color: $info;
-    }
-
-    &.success {
-        color: $success;
-        background-color: rgba($success, 0.25);
-        border-color: $success;
-    }
-
-    &.warning {
-        color: $warning;
-        background-color: rgba($warning, 0.25);
-        border-color: $warning;
-    }
-
-    &.error {
-        color: $error;
-        background-color: rgba($error, 0.25);
-        border-color: $error;
-    }
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+    margin: 1rem; padding: 1rem 1.25rem; font-size: 0.875rem; line-height: 1.6;
+    border: 1px solid $border; border-left-width: 4px; border-radius: 8px; background: $white;
+    &.info { color: $info; background: #eef5f9; border-color: rgba($info, 0.3); }
+    &.success { color: $success; background: #edf8f6; border-color: rgba($success, 0.3); }
+    &.warning { color: $warning; background: #fff5ef; border-color: rgba($warning, 0.3); }
+    &.error, &.danger { color: $error; background: #fceff5; border-color: rgba($error, 0.3); }
+    button { flex-shrink: 0; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; padding: 0.15rem 0.4rem; }
 }

@@ -1,6 +1,6 @@
 <footer class="app-footer">
     <p class="copyrights">
-        © {{ "now"|date("Y") }} 3iL Programmes Experts - Tous Droits Réservés
+        © {{ "now"|date("Y") }} 3iL Ingénieurs - Tous Droits Réservés
     </p>
 
     <div class="footerlinks">
@@ -25,7 +25,7 @@
             {% endif %}
             <a href="{{ path('app_profile') }}"
                class="{% if 'app_profile' == app.request.get('_route') %}active{% endif %}">Profil</a>
-            <a href="{{ path('app_logout') }}" onclick="return confirm('Vous partez ?')">Déconnexion</a>
+            <a href="{{ path('app_logout') }}" data-confirm-message="Vous partez ?">Déconnexion</a>
         {% endif %}
     </div>
 </footer>

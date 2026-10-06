@@ -1,11 +1,14 @@
 .form-control {
-    box-sizing: border-box;
-    padding: 0.5rem;
-    width: 100%;
-    font-family: $font-primary;
-    font-size: 1rem;
-    color: $black;
-    background-color: $white;
-    border: 1px solid rgba($black, 0.5);
-    border-radius: 0.5rem;
+    box-sizing: border-box; min-height: 46px; padding: 0.65rem 0.8rem; width: 100%; min-width: 0;
+    font-family: $font-primary; font-size: 1rem; line-height: 1.5;
+    color: $black; background-color: $white; border: 1px solid #b8c7cd; border-radius: 8px;
+    transition: border-color 160ms, box-shadow 160ms;
+    &:focus { border-color: $blue; box-shadow: 0 0 0 3px rgba($blue, 0.15); }
+    &:disabled { background: #eff2f3; color: $muted; cursor: not-allowed; }
+    &[aria-invalid="true"] { border-color: $error; }
+}
+input[type="checkbox"], input[type="radio"] { accent-color: $blue; width: 1.1rem; height: 1.1rem; }
+input[type="file"]::file-selector-button {
+    padding: 0.45rem 0.65rem; margin-right: 0.75rem; border: 0; border-radius: 4px;
+    background: #eef5f9; color: $primary; font: inherit; cursor: pointer;
 }

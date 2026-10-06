@@ -1,120 +1,45 @@
-h1,
-h2,
-h3,
-h4 {
-    margin-bottom: 1rem;
-    font-family: $font-secondary;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-    color: $primary;
-
-    &.alt {
-        color: rgba($black, 0.75);
-    }
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-variable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-display: swap;
 }
-
-h3,
-h4 {
-    font-size: 1.15rem;
-    line-height: 1.25rem;
-    text-transform: initial;
-    text-align: left;
-}
-
-hr {
-    margin-bottom: 1rem;
-    border: 1px solid rgba($black, 0.2);
-}
-
-ul {
-    padding-left: 0.85rem;
-    list-style: initial;
-    margin-bottom: 1rem;
-
-    @include respondTo(sm) {
-        padding-left: 1.25rem;
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    li {
-        margin-left: 0.85rem;
-        margin-bottom: 0.5rem;
-        line-height: 1.15rem;
-        text-align: justify;
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        orphans: 2;
-        widows: 2;
-
-        @include respondTo(sm) {
-            margin-left: 1.25rem;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-p {
-    margin-bottom: 1rem;
-    line-height: 1.15rem;
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    orphans: 2;
-    widows: 2;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    &.subtitle {
-        font-style: italic;
-        line-height: 1.25rem;
-        text-align: center;
-        color: rgba($black, 0.75);
-    }
-}
-
-strong {
-    font-family: $font-secondary;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: $primary;
-    transition: all 0.3s;
-}
-
-em {
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-italic-variable.woff2') format('woff2');
+    font-weight: 100 900;
     font-style: italic;
+    font-display: swap;
 }
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s;
-
-    &:hover {
-        color: $secondary;
-
-        strong {
-            color: $secondary;
-        }
-    }
+@font-face {
+    font-family: "Bebas Neue";
+    src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
 }
-
-small {
-    font-size: 0.85em;
+h1, h2, h3, h4 { margin-bottom: 1rem; color: $primary; overflow-wrap: anywhere; }
+h1, h2 {
+    font-family: $font-secondary; font-weight: 400; text-transform: uppercase;
+    letter-spacing: 0.025em; line-height: 1.12;
 }
+h1 { font-size: clamp(2rem, 3vw, 2.75rem); }
+h2 { font-size: 1.75rem; }
+h3, h4 { font-family: $font-primary; font-weight: 600; line-height: 1.5; }
+h3 { font-size: 1.05rem; }
+h4 { font-size: 0.9rem; }
+h3.alt, h4.alt { color: $muted; font-size: 0.8rem; font-weight: 500; }
+hr { margin: 1.5rem 0; border: 0; border-top: 1px solid $border; }
+p, ul, ol { margin-bottom: 1rem; line-height: 1.7; }
+p { overflow-wrap: break-word; }
+ul, ol { padding-left: 1.25rem; }
+ul { list-style: disc; }
+ol { list-style: decimal; }
+li { margin-bottom: 0.5rem; overflow-wrap: break-word; }
+p:last-child, ul:last-child, ol:last-child, li:last-child { margin-bottom: 0; }
+p.subtitle { font-size: 0.875rem; color: $muted; line-height: 1.65; }
+strong { font-weight: 700; color: $primary; }
+em { font-style: italic; }
+a { color: $blue; text-decoration: none; transition: color 160ms; }
+a:hover { color: $warning; }
+small { font-size: 0.85em; }
+::selection { background: rgba($teal, 0.2); color: $primary; }
