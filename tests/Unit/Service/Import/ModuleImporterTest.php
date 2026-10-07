@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
 final class ModuleImporterTest extends TestCase
 {
     #[DataProvider('skillSources')]
-    public function testImportsAuthoritativeSkills(?array $detail, array $expectedCodes, bool $existing): void
+    public function testImportsAuthoritativeSkills(?array $detail, array $expectedCodes, bool $existing, array $skillNumbers = [18, 19, 20, 21, 22, 23, 24, 25]): void
     {
         $code = 'RNCP39608-BC03-FM03';
         $framework = (new Framework())->setCode('RNCP39608');
@@ -31,8 +31,8 @@ final class ModuleImporterTest extends TestCase
         $skills = [];
         $shortCodes = [];
         $module = (new Module())->setCode($code)->setPromotion($promotion);
-        foreach (range(18, 25) as $number) {
-            $shortCode = 'C' . $number;
+        foreach ($skillNumbers as $number) {
+            $shortCode = sprintf('C%02d', $number);
             $fullCode = 'RNCP39608-BC03-' . $shortCode;
             $skills[$fullCode] = (new Skill())->setCode($fullCode);
             $shortCodes[] = $shortCode;
@@ -60,6 +60,8 @@ final class ModuleImporterTest extends TestCase
 
     public static function skillSources(): iterable
     {
+        yield 'unpadded detail codes match stored skills' => [['skills' => [['code' => 'C4'], ['code' => 'C5']]], ['C04', 'C05'], false, [4, 5]];
+        yield 'unpadded detail codes preserve relations on reimport' => [['skills' => ['C4', 'C5']], ['C04', 'C05'], true, [4, 5]];
         yield 'new module uses the two detail skills' => [['skills' => [['code' => 'C21'], ['code' => 'C22']]], ['C21', 'C22'], false];
         yield 'reimport removes the six obsolete relations' => [['skills' => [['code' => 'C21'], ['code' => 'C22']]], ['C21', 'C22'], true];
         yield 'explicit empty list clears relations' => [['skills' => []], [], true];

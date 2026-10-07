@@ -44,7 +44,7 @@
                         <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
                     </section>
                 {% endif %}
-                <div class="app-grid third">
+                <div class="app-grid third sheet-header">
                     {% if not pdfMode|default(false) %}
                         <section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
@@ -54,7 +54,7 @@
                             <h1 class="text-center">{{ project.title ?: 'Projet' }}</h1>
                         </div>
 
-                        <div class="ribbon mt-2">
+                        <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
                             {% if project.blocCode and project.projectCode %}
@@ -75,9 +75,7 @@
                         <section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div class="chart-frame">
-                            {{ render_chart(projectVolumeChart) }}
-                        </div>
+                        {% include '_components/_metrics_chart.html.twig' with {chart: projectVolumeChart, anchors: ["competences","matieres","evaluations"]} only %}
                         </section>
                     {% endif %}
                 </div>
@@ -160,7 +158,7 @@
 
                 {% if project.skillsWithCriteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Compétences mobilisées</h2>
+                        <h2 id="competences" tabindex="-1">Compétences mobilisées</h2>
 
                         {% for s in project.skillsWithCriteria %}
                             <section class="app-section pdf-skill mx-0 mt-2 mb-0">
@@ -194,7 +192,7 @@
                     </section>
                 {% elseif project.skills is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Compétences mobilisées</h2>
+                        <h2 id="competences" tabindex="-1">Compétences mobilisées</h2>
 
                         {% for s in project.skills %}
                             <section class="app-section pdf-skill mx-0 mt-2 mb-0">
@@ -217,7 +215,7 @@
                 <div class="app-grid two pdf-associations">
                     {% if project.modules is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Matières associées</h2>
+                            <h2 id="matieres" tabindex="-1">Matières associées</h2>
 
                             <div class="app-grid">
                                 {% for module in project.modules %}
@@ -241,7 +239,7 @@
 
                     {% if project.evaluations is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Évaluations associées</h2>
+                            <h2 id="evaluations" tabindex="-1">Évaluations associées</h2>
 
                             <div class="app-grid">
                                 {% for evaluation in project.evaluations %}

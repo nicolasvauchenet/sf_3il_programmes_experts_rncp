@@ -5,15 +5,15 @@
     text-align: center; color: $white; background: $blue; border: 1px solid $blue;
     border-radius: 8px; cursor: pointer;
     transition: background-color 160ms, border-color 160ms, box-shadow 160ms;
-    &:hover { color: $white; background: $primary; border-color: $primary; box-shadow: $shadow; }
-    &:active { transform: translateY(1px); }
+    &:hover:where(:not(:disabled)) { color: $white; background: $primary; border-color: $primary; box-shadow: $shadow; }
+    &:active:where(:not(:disabled)) { transform: translateY(1px); }
     &.form-submit, &.accent {
         background: $secondary; border-color: $secondary; color: $white;
-        &:hover { background: #b93a08; border-color: #b93a08; color: $white; }
+        &:hover:where(:not(:disabled)) { background: #b93a08; border-color: #b93a08; color: $white; }
     }
     &.download, &.outline {
         color: $blue; background: $white; border-color: #c7d8e0;
-        &:hover { background: #eef5f9; border-color: $blue; }
+        &:hover:where(:not(:disabled)) { background: #eef5f9; border-color: $blue; }
     }
     &.download { font-size: 0.8rem; }
     &.success { background: $success; border-color: $success; color: $white; }

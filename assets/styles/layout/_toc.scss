@@ -1,9 +1,4 @@
 .app-toc {
-    @include respondTo(sm) {
-        position: sticky;
-        top: 5.2em;
-    }
-
     h2 {
         margin-bottom: 0.25rem;
     }

@@ -48,7 +48,10 @@ final class CodeNormalizer
 
     public function normalizeShortSkillCode(string $skillCode): string
     {
-        return strtoupper(trim($skillCode));
+        $skillCode = strtoupper(trim($skillCode));
+
+        // Detail sheets may use C4 where structure.json uses C04.
+        return preg_replace('/(^|-)C(\d)$/', '${1}C0${2}', $skillCode) ?? $skillCode;
     }
 
     public function normalizeSkillCode(string $frameworkCode, string $blockCode, string $skillCode): string

@@ -1,0 +1,5 @@
+<div data-controller="chart-section-link" data-chart-section-link-anchors-value="{{ anchors|json_encode|e('html_attr') }}" data-action="chartjs:connect->chart-section-link#onChartConnect">
+    <div class="chart-frame">
+        {{ render_chart(chart) }}
+    </div>
+</div>

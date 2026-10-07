@@ -44,7 +44,7 @@
                         <div class="pdf-cover-footer">Référentiels RNCP · 3iL Ingénieurs</div>
                     </section>
                 {% endif %}
-                <div class="app-grid third">
+                <div class="app-grid third sheet-header">
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
@@ -69,9 +69,7 @@
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div class="chart-frame">
-                            {{ render_chart(skillMetricsChart) }}
-                        </div>
+                        {% include '_components/_metrics_chart.html.twig' with {chart: skillMetricsChart, anchors: ["matieres","projets","evaluations"]} only %}
                     </section>
                     {% endif %}
                 </div>
@@ -114,7 +112,7 @@
                 <div class="app-grid two pdf-associations">
                     {% if skill.modules is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Matières associées</h2>
+                            <h2 id="matieres" tabindex="-1">Matières associées</h2>
 
                             <div class="app-grid">
                                 {% for module in skill.modules %}
@@ -138,7 +136,7 @@
 
                     {% if skill.projects is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Projets associés</h2>
+                            <h2 id="projets" tabindex="-1">Projets associés</h2>
 
                             <div class="app-grid">
                                 {% for project in skill.projects %}
@@ -162,7 +160,7 @@
 
                     {% if skill.evaluations is not empty %}
                         <section class="app-section mx-0  mb-0">
-                            <h2>Évaluations associées</h2>
+                            <h2 id="evaluations" tabindex="-1">Évaluations associées</h2>
 
                             <div class="app-grid">
                                 {% for evaluation in skill.evaluations %}
