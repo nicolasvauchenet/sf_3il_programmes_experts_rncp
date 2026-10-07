@@ -40,7 +40,7 @@
             background-color: $blue;
             border-color: $blue;
 
-            &:hover {
+            &:hover:where(:not(:disabled)) {
                 color: $white;
                 background-color: $primary;
                 border-color: $primary;
@@ -179,7 +179,7 @@
         border: 0;
         cursor: pointer;
 
-        &:hover {
+        &:hover:where(:not(:disabled)) {
             color: $secondary;
         }
     }
@@ -225,7 +225,7 @@
             display: none;
         }
 
-        &:hover,
+        &:hover:where(:not(:disabled)),
         &:focus-visible,
         &.is-visible {
             color: $secondary;
@@ -418,7 +418,7 @@
                 cursor: pointer;
                 white-space: nowrap;
 
-                &:hover {
+                &:hover:where(:not(:disabled)) {
                     color: $white !important;
                     background-color: $secondary;
                 }

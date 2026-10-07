@@ -68,7 +68,7 @@
                     </section>
                 {% endif %}
 
-                <div class="app-grid third">
+                <div class="app-grid third sheet-header">
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h3 class="text-center alt">{{ promotionContext.promotionTitle }}</h3>
 
@@ -77,7 +77,7 @@
                             <h1 class="text-center">{{ module.title ?: 'Matière' }}</h1>
                         </div>
 
-                        <div class="ribbon mt-2">
+                        <div class="ribbon">
                             <span class="app-badge">{{ promotion | upper }}</span>
 
                             {% if module.blocCode and module.moduleCode %}
@@ -97,9 +97,7 @@
                     {% if not pdfMode|default(false) %}<section class="app-section centered">
                         <h2>Métriques</h2>
 
-                        <div class="chart-frame">
-                            {{ render_chart(moduleVolumeChart) }}
-                        </div>
+                        {% include '_components/_metrics_chart.html.twig' with {chart: moduleVolumeChart, anchors: ["competences","projets","evaluations"]} only %}
                     </section>{% endif %}
                 </div>
 
@@ -178,7 +176,7 @@
 
                 {% if module.skillsWithCriteria is not empty %}
                     <section class="app-section mx-0 mt-2 mb-0">
-                        <h2>Compétences mobilisées</h2>
+                        <h2 id="competences" tabindex="-1">Compétences mobilisées</h2>
 
                         {% for s in module.skillsWithCriteria %}
                             <section class="app-section pdf-skill mx-0 mt-2 mb-0">
@@ -265,7 +263,7 @@
                 <div class="app-grid two pdf-associations">
                     {% if module.projects is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Projets associés</h2>
+                            <h2 id="projets" tabindex="-1">Projets associés</h2>
 
                             <div class="app-grid">
                                 {% for project in module.projects %}
@@ -289,7 +287,7 @@
 
                     {% if module.evaluations is not empty %}
                         <section class="app-section mx-0 mt-2 mb-0">
-                            <h2>Évaluations associées</h2>
+                            <h2 id="evaluations" tabindex="-1">Évaluations associées</h2>
 
                             <div class="app-grid">
                                 {% for evaluation in module.evaluations %}
