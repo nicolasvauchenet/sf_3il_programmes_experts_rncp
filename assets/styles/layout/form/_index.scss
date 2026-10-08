@@ -17,5 +17,14 @@
         color: $error;
     }
 
+    .form-checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        label, input { margin: 0; }
+        input { flex-shrink: 0; }
+    }
+
     @import "./group";
 }

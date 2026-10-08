@@ -109,11 +109,21 @@
 
         @include respondTo(sm) {
             @include displayGrid(1fr auto, 0.75rem);
-            align-items: end;
+            align-items: center;
+            row-gap: 0.35rem;
+
+            .admin-upload-field {
+                label { grid-column: 1; grid-row: 1; }
+                input { grid-column: 1; grid-row: 2; }
+            }
+
+            .app-button { grid-column: 2; grid-row: 2; }
         }
 
         .admin-upload-field {
             @include displayFlex(null, stretch, 0.35rem, column);
+
+            @include respondTo(sm) { display: contents; }
 
             label {
                 font-size: 0.75rem;

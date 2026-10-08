@@ -65,7 +65,7 @@ final readonly class FrameworkStructureLoader
         );
     }
 
-    private function resolvePromotion(string $promotion, string $year): Promotion
+    public function resolvePromotion(string $promotion, string $year): Promotion
     {
         $program = Program::tryFrom(strtolower(trim($promotion)));
 

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ document.id ? 'Modifier' : 'Ajouter' }} un document{% endblock %}
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+    <main id="main-content" tabindex="-1" class="app-main center banner-offset">
+        <section class="app-section boxed">
+            <h1>{{ document.id ? 'Modifier' : 'Ajouter' }} un document</h1>
+            <p class="subtitle">{{ promotion.label }}</p>
+            {% if document.id %}<p>Fichier actuel : {{ document.originalName }}</p>{% endif %}
+            {{ form_start(form, {attr: {class: 'app-form'}}) }}
+                {{ form_errors(form) }}
+                {% for field in form %}
+                    {% if field.vars.name != '_token' %}<div class="form-group">{{ form_row(field) }}</div>{% endif %}
+                {% endfor %}
+                <div class="app-actions">
+                    <a href="{{ path('app_admin_documents_index', {promotionId: promotion.id}) }}" class="app-button outline">&laquo; Retour aux documents</a>
+                    <button class="app-button form-submit" type="submit">Enregistrer</button>
+                </div>
+            {{ form_end(form) }}
+        </section>
+    </main>
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

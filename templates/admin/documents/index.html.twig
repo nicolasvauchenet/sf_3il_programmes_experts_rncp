@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}Documents — {{ promotion.label }}{% endblock %}
+{% block body %}
+    {% include '_layout/admin/_header.html.twig' %}
+    {% include '_layout/default/_alert.html.twig' %}
+    <main id="main-content" tabindex="-1" class="app-main">
+        <article class="app-section">
+            <div class="admin-section-header">
+                <div><h1>Documents</h1><p class="subtitle">{{ promotion.label }}</p></div>
+            </div>
+            <div class="app-actions mb-2">
+                <a href="{{ path('app_admin_frameworks_home') }}" class="app-button outline">&laquo; Retour aux référentiels</a>
+                <a class="app-button success" href="{{ path('app_admin_documents_new', {promotionId: promotion.id}) }}">Ajouter</a>
+            </div>
+            <div class="admin-users-table-wrapper">
+                <table class="admin-users-table">
+                    <thead><tr><th>Libellé</th><th>Fichier</th><th>Ordre</th><th>Visibilité</th><th>Actions</th></tr></thead>
+                    <tbody>
+                    {% for document in documents %}
+                        <tr>
+                            <td data-label="Libellé">{{ document.label }}</td>
+                            <td data-label="Fichier"><a href="{{ path('app_document_download', {id: document.id}) }}">{{ document.originalName }}</a></td>
+                            <td data-label="Ordre">{{ document.position }}</td>
+                            <td data-label="Visibilité">{{ document.visible ? 'Visible' : 'Masqué' }}</td>
+                            <td data-label="Actions">
+                                <a href="{{ path('app_admin_documents_edit', {promotionId: promotion.id, id: document.id}) }}">Modifier / remplacer</a>
+                                <form method="post" action="{{ path('app_admin_documents_delete', {promotionId: promotion.id, id: document.id}) }}" data-confirm-message="Supprimer ce document ?">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete_document_' ~ document.id) }}">
+                                    <button class="form-link-button text-danger" type="submit">Supprimer</button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% else %}<tr><td colspan="5">Aucun document pour cette promotion.</td></tr>{% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+    {% include '_layout/default/_footer.html.twig' %}
+{% endblock %}

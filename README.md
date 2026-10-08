@@ -103,3 +103,18 @@ Autres exemples :
 L'application lit les promotions et les referentiels depuis Doctrine pour afficher les pages. La page d'accueil utilise notamment `PromotionRepository`, et les pages metier reconstruisent les vues depuis les entites `Promotion`, `Framework`, `Block`, `Skill`, `Module`, `Project` et `Evaluation`.
 
 Sans base creee, migrations appliquees et donnees importees, l'application ne peut pas afficher les referentiels.
+
+### Documents téléchargeables des promotions
+
+Après déploiement, appliquer la migration et reprendre les documents historiques :
+
+```powershell
+php bin/console doctrine:migrations:migrate --no-interaction
+php bin/console app:documents:import-sources
+```
+
+Dans Administration → Référentiels, le menu **Documents** est disponible pour chaque promotion importée en base. Il permet d’ajouter un PDF ou XLSX (20 Mo maximum, sous réserve des limites PHP du serveur), de modifier son libellé, son ordre ou sa visibilité, de remplacer le fichier et de le supprimer.
+
+Les métadonnées sont rattachées à une promotion et les fichiers sont stockés dans `data/documents`, couvert par le volume Docker `data`. Inclure ce dossier dans les sauvegardes avec la base de données. Le Résumé affiche uniquement les documents visibles de la promotion sélectionnée.
+
+La commande de reprise copie les fichiers connus de `public/source/<programme>_<année>` pour les promotions déjà importées qui ne possèdent aucun document. Elle conserve les originaux et ignore les promotions ayant déjà des documents. Exécuter cette reprise avant toute saisie manuelle. Une réimportation JSON conserve les documents ; supprimer la promotion supprime ses documents et leurs fichiers. Les téléchargements gérés passent par une route authentifiée.

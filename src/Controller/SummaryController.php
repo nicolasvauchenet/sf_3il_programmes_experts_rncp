@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Service\Chart\SummaryChartService;
+use App\Entity\PromotionDocument;
+use Doctrine\ORM\EntityManagerInterface;
 use App\Service\Context\Loader\FrameworkStructureLoader;
 use App\Service\Context\Provider\FrameworkEvaluationsProvider;
 use App\Service\Context\Provider\FrameworkProjectsProvider;
@@ -20,6 +22,7 @@ final class SummaryController extends AbstractController
         SummaryChartService          $summaryChartService,
         FrameworkProjectsProvider    $projectsProvider,
         FrameworkEvaluationsProvider $evaluationsProvider,
+        EntityManagerInterface       $entityManager,
     ): Response
     {
         $promotion = (string)$request->query->get('promotion', '');
@@ -50,6 +53,10 @@ final class SummaryController extends AbstractController
             'promotion' => $promotion,
             'year' => $year,
             'structure' => $structure,
+            'documents' => $entityManager->getRepository(PromotionDocument::class)->findBy(
+                ['promotion' => $loader->resolvePromotion($promotion, $year), 'visible' => true],
+                ['position' => 'ASC', 'id' => 'ASC'],
+            ),
             'referentialVolumeChart' => $summaryChartService->createReferentialVolumeChart($structure, count($projects)),
             'skillsPerBlockChart' => $summaryChartService->createSkillsPerBlockChart($structure),
             'evaluationsPerBlockChart' => $summaryChartService->createEvaluationsPerBlockChart($structure),
