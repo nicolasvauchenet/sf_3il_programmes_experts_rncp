@@ -21,6 +21,7 @@ final readonly class PromotionJsonDatabaseManager
         private ImportStrategyResolver $resolver,
         private FrameworkImportService $importService,
         private EntityManagerInterface $entityManager,
+        private PromotionDocumentStorage $documentStorage,
     ) {
     }
 
@@ -116,6 +117,7 @@ final readonly class PromotionJsonDatabaseManager
             throw new \RuntimeException('Aucun referentiel correspondant n existe en base.');
         }
 
+        $documentFiles = $this->documentFiles((int) $promotion->getId());
         $this->entityManager->wrapInTransaction(function () use ($promotion): void {
             if ($promotion->getId() === null) {
                 return;
@@ -130,6 +132,7 @@ final readonly class PromotionJsonDatabaseManager
 
             $this->entityManager->clear();
         });
+        foreach ($documentFiles as $filename) $this->documentStorage->remove($filename);
     }
 
     public function deletePromotion(int $promotionId): string
@@ -141,6 +144,7 @@ final readonly class PromotionJsonDatabaseManager
         }
 
         $label = (string) $promotion->getLabel();
+        $documentFiles = $this->documentFiles($promotionId);
 
         $this->entityManager->wrapInTransaction(function () use ($promotion): void {
             if ($promotion->getId() === null) {
@@ -157,7 +161,17 @@ final readonly class PromotionJsonDatabaseManager
             $this->entityManager->clear();
         });
 
+        foreach ($documentFiles as $filename) $this->documentStorage->remove($filename);
+
         return $label;
+    }
+
+    /** @return list<string> */
+    private function documentFiles(int $promotionId): array
+    {
+        return $this->entityManager->getConnection()->fetchFirstColumn(
+            'SELECT filename FROM promotion_document WHERE promotion_id = ?', [$promotionId],
+        );
     }
 
     /**
@@ -323,6 +337,7 @@ final readonly class PromotionJsonDatabaseManager
         $this->deleteByIds('chapter', 'project_id', $projectIds);
         $this->deleteByIds('module', 'id', $moduleIds);
         $this->deleteByIds('project', 'id', $projectIds);
+        $this->deleteByIds('promotion_document', 'promotion_id', $promotionIds);
         $this->deleteByIds('promotion', 'id', $promotionIds);
     }
 

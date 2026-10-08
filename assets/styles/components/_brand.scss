@@ -24,6 +24,10 @@ html body {
     .app-main aside { margin: 1rem 0 1rem 1rem; padding: 1.25rem !important; }
     .app-section.boxed > h1, .app-section.boxed > .subtitle { text-align: center; }
     .app-form { padding: 0; margin-top: 1.5rem; }
+    .app-actions {
+        display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin-top: 1rem;
+        > .app-button { min-width: 0; }
+    }
     .form-label { font-size: 0.8rem; font-weight: 600; }
     .email-suffix-field span { border-color: #b8c7cd; font-size: 0.8rem; border-radius: 0 8px 8px 0; }
     .password-toggle { width: 2.5rem; height: 2.5rem; }
@@ -97,13 +101,14 @@ html body {
         // Keep a single gap around the content instead of accumulating card/footer margins.
         .app-main { padding-block: var(--layout-gap); }
         .app-main.center { justify-content: flex-start; padding-block: var(--layout-gap); }
+        .app-main.center.banner-offset { padding-top: clamp(3.5rem, 6vw, 4.5rem); }
         .app-main > :is(.app-grid, .app-section, article):first-child { margin-top: 0; }
         .app-main > :is(.app-grid, .app-section, article):last-child { margin-bottom: 0; }
         .app-main + .app-footer { margin-top: 0; }
     }
 }
 .skip-link { position: fixed; top: -100px; left: 1rem; z-index: 500; padding: 0.75rem 1rem; color: $white; background: $primary; border-radius: 8px; &:focus { top: 1rem; } }
-.brand-eyebrow { display: block; margin-bottom: 0.65rem; color: $warning; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+.brand-eyebrow { display: block; margin-bottom: 0.65rem; color: $warning; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-align: center; text-transform: uppercase; }
 .app-dialog {
     width: min(480px, calc(100% - 2rem)); padding: 1.75rem; color: $black; font-family: $font-primary;
     border: 1px solid $border; border-top: 3px solid $secondary; border-radius: 14px; box-shadow: 0 24px 70px rgba($primary, 0.25);

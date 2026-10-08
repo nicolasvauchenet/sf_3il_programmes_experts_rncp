@@ -8,6 +8,7 @@ programmes-experts-rncp.key
 /data/*.db
 /data/*.db-*
 /data/referentiels/
+/data/documents/
 /ui/
 ###< programmes_experts_rncp/local ###
 
