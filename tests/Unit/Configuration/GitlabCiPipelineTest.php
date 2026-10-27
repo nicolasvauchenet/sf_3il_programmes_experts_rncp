@@ -66,7 +66,7 @@ final class GitlabCiPipelineTest extends TestCase
         $remoteScript = implode("\n", $configuration['deploy:prod']['script'] ?? []);
 
         self::assertStringContainsString('mkdir -p data/referentiels certs var/backups/sqlite', $remoteScript);
-        self::assertStringContainsString('docker compose build app', $remoteScript);
+        self::assertStringContainsString('docker compose build --pull app', $remoteScript);
         self::assertStringContainsString('(docker compose stop app || true)', $remoteScript);
         self::assertStringContainsString('docker compose run --rm app php bin/console doctrine:migrations:migrate --no-interaction --env=prod', $remoteScript);
         self::assertStringContainsString('docker compose up -d app', $remoteScript);
