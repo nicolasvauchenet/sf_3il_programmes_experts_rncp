@@ -30,7 +30,7 @@ cd ~/refrncp
 git pull
 mkdir -p data/referentiels certs var/backups/sqlite
 if test -f data/sf_3il_programmes_experts_rncp.db; then cp data/sf_3il_programmes_experts_rncp.db var/backups/sqlite/pre-deploy-$(date +%Y%m%d%H%M%S).db; fi
-docker compose build app
+docker compose build --pull app
 docker compose stop app || true
 docker compose run --rm app php bin/console doctrine:migrations:migrate --no-interaction --env=prod
 docker compose up -d app
@@ -43,11 +43,13 @@ L'ordre important est :
 1. récupérer le code avec `git pull` ;
 2. créer les dossiers persistants attendus par Docker Compose ;
 3. sauvegarder le fichier SQLite avant migration ;
-4. reconstruire l'image avec `docker compose build app` ;
+4. reconstruire l'image avec `docker compose build --pull app` ;
 5. arrêter l'ancien container applicatif ;
 6. lancer les migrations depuis la nouvelle image ;
 7. recréer/redémarrer le container applicatif ;
 8. vider le cache prod depuis le container.
+
+L'option `--pull` récupère la version disponible des images de base avant la construction, notamment FrankenPHP/PHP. Elle conserve la branche PHP 8.4 définie dans le Dockerfile. Un simple redémarrage du container ne met pas PHP à jour.
 
 ## Pourquoi ne pas lancer `php bin/console` directement ?
 
@@ -84,6 +86,7 @@ Ce dossier est persistant grâce au volume Docker Compose `./data:/app/data`. Il
 ## Vérifications après MEP
 
 ```bash
+docker compose exec -T app php -v
 docker compose exec app php bin/console debug:router app_register --env=prod
 docker compose exec app php bin/console doctrine:migrations:status --env=prod
 curl --retry 5 --retry-delay 2 --retry-connrefused -f http://127.0.0.1
@@ -113,7 +116,7 @@ Le cache Symfony est reconstruit pendant le build de l'image, mais il est quand 
 Si les modifications n'apparaissent pas après un `git pull`, le premier réflexe doit être :
 
 ```bash
-docker compose build app
+docker compose build --pull app
 docker compose up -d app
 ```
 
